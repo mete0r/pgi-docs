@@ -1,0 +1,1047 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstAudio.AudioDecoder -
+    
+      Classes -
+    
+      GstAudio 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="GstAudio.AudioEncoder" href="AudioEncoder.html"/>
+        <link rel="prev" title="GstAudio.AudioClock" href="AudioClock.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GstAudio 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GstAudio.AudioDecoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GstAudio 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">GstAudio.AudioDecoder</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstAudio_1.0/classes/AudioDecoder" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gstaudio-audiodecoder">
+<h1>GstAudio.AudioDecoder<a class="headerlink" href="#gstaudio-audiodecoder" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-24fe51fefec4513b51ded40b20d30e854d2f0190.png" alt="Inheritance diagram of GstAudio.AudioDecoder" usemap="#inheritance120ef93310" class="inheritance"/>
+<map id="inheritance120ef93310" name="inheritance120ef93310">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="29,5,125,29"/>
+<area shape="rect" id="node2" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="5,77,149,101"/>
+<area shape="rect" id="node4" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object" alt="" coords="41,149,113,173"/>
+<area shape="rect" id="node6" href="../../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element" alt="" coords="37,221,117,245"/>
+<area shape="rect" id="node7" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder" alt="" coords="9,293,145,317"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.allocate_output_buffer" title="GstAudio.AudioDecoder.allocate_output_buffer"><tt class="xref py py-obj docutils literal"><span class="pre">allocate_output_buffer</span></tt></a>(size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.finish_frame" title="GstAudio.AudioDecoder.finish_frame"><tt class="xref py py-obj docutils literal"><span class="pre">finish_frame</span></tt></a>(buf, frames)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_allocator" title="GstAudio.AudioDecoder.get_allocator"><tt class="xref py py-obj docutils literal"><span class="pre">get_allocator</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_audio_info" title="GstAudio.AudioDecoder.get_audio_info"><tt class="xref py py-obj docutils literal"><span class="pre">get_audio_info</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_delay" title="GstAudio.AudioDecoder.get_delay"><tt class="xref py py-obj docutils literal"><span class="pre">get_delay</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_drainable" title="GstAudio.AudioDecoder.get_drainable"><tt class="xref py py-obj docutils literal"><span class="pre">get_drainable</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_estimate_rate" title="GstAudio.AudioDecoder.get_estimate_rate"><tt class="xref py py-obj docutils literal"><span class="pre">get_estimate_rate</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_latency" title="GstAudio.AudioDecoder.get_latency"><tt class="xref py py-obj docutils literal"><span class="pre">get_latency</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_max_errors" title="GstAudio.AudioDecoder.get_max_errors"><tt class="xref py py-obj docutils literal"><span class="pre">get_max_errors</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_min_latency" title="GstAudio.AudioDecoder.get_min_latency"><tt class="xref py py-obj docutils literal"><span class="pre">get_min_latency</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_needs_format" title="GstAudio.AudioDecoder.get_needs_format"><tt class="xref py py-obj docutils literal"><span class="pre">get_needs_format</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_parse_state" title="GstAudio.AudioDecoder.get_parse_state"><tt class="xref py py-obj docutils literal"><span class="pre">get_parse_state</span></tt></a>(sync, eos)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_plc" title="GstAudio.AudioDecoder.get_plc"><tt class="xref py py-obj docutils literal"><span class="pre">get_plc</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_plc_aware" title="GstAudio.AudioDecoder.get_plc_aware"><tt class="xref py py-obj docutils literal"><span class="pre">get_plc_aware</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.get_tolerance" title="GstAudio.AudioDecoder.get_tolerance"><tt class="xref py py-obj docutils literal"><span class="pre">get_tolerance</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.merge_tags" title="GstAudio.AudioDecoder.merge_tags"><tt class="xref py py-obj docutils literal"><span class="pre">merge_tags</span></tt></a>(tags, mode)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.negotiate" title="GstAudio.AudioDecoder.negotiate"><tt class="xref py py-obj docutils literal"><span class="pre">negotiate</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_drainable" title="GstAudio.AudioDecoder.set_drainable"><tt class="xref py py-obj docutils literal"><span class="pre">set_drainable</span></tt></a>(enabled)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_estimate_rate" title="GstAudio.AudioDecoder.set_estimate_rate"><tt class="xref py py-obj docutils literal"><span class="pre">set_estimate_rate</span></tt></a>(enabled)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_latency" title="GstAudio.AudioDecoder.set_latency"><tt class="xref py py-obj docutils literal"><span class="pre">set_latency</span></tt></a>(min, max)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_max_errors" title="GstAudio.AudioDecoder.set_max_errors"><tt class="xref py py-obj docutils literal"><span class="pre">set_max_errors</span></tt></a>(num)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_min_latency" title="GstAudio.AudioDecoder.set_min_latency"><tt class="xref py py-obj docutils literal"><span class="pre">set_min_latency</span></tt></a>(num)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_needs_format" title="GstAudio.AudioDecoder.set_needs_format"><tt class="xref py py-obj docutils literal"><span class="pre">set_needs_format</span></tt></a>(enabled)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_output_format" title="GstAudio.AudioDecoder.set_output_format"><tt class="xref py py-obj docutils literal"><span class="pre">set_output_format</span></tt></a>(info)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_plc" title="GstAudio.AudioDecoder.set_plc"><tt class="xref py py-obj docutils literal"><span class="pre">set_plc</span></tt></a>(enabled)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_plc_aware" title="GstAudio.AudioDecoder.set_plc_aware"><tt class="xref py py-obj docutils literal"><span class="pre">set_plc_aware</span></tt></a>(plc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioDecoder.set_tolerance" title="GstAudio.AudioDecoder.set_tolerance"><tt class="xref py py-obj docutils literal"><span class="pre">set_tolerance</span></tt></a>(tolerance)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gstaudio-audiodecoder-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="min-latency">min-latency</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Aggregate output data to a minimum of latency time (ns)</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="plc">plc</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Perform packet loss concealment (if supported)</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="tolerance">tolerance</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Perfect ts while timestamp jitter/imperfection within tolerance (ns)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gstaudio-audiodecoder-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>element</td>
+<td><a class="reference internal" href="../../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>input_segment</td>
+<td><a class="reference internal" href="../../Gst_1.0/structs/Segment.html#Gst.Segment" title="Gst.Segment"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Segment</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>output_segment</td>
+<td><a class="reference internal" href="../../Gst_1.0/structs/Segment.html#Gst.Segment" title="Gst.Segment"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Segment</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>sinkpad</td>
+<td><a class="reference internal" href="../../Gst_1.0/classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>srcpad</td>
+<td><a class="reference internal" href="../../Gst_1.0/classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>stream_lock</td>
+<td><a class="reference internal" href="../../GLib_2.0/structs/RecMutex.html#GLib.RecMutex" title="GLib.RecMutex"><tt class="xref py py-class docutils literal"><span class="pre">GLib.RecMutex</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstAudio.AudioDecoder">
+<em class="property">class </em><tt class="descclassname">GstAudio.</tt><tt class="descname">AudioDecoder</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a></p>
+<p>This base class is for audio decoders turning encoded data into
+raw audio samples.</p>
+<p><a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> and subclass should cooperate as follows.</p>
+<ul class="simple">
+<li>Configuration</li>
+</ul>
+<p>Initially, <a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> calls <cite>start</cite> when the decoder element
+is activated, which allows subclass to perform any global setup.
+Base class (context) parameters can already be set according to subclass
+capabilities (or possibly upon receive more information in subsequent
+<cite>set_format</cite> ).</p>
+<p><a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> calls <cite>set_format</cite> to inform subclass of the format
+of input audio data that it is about to receive.
+While unlikely, it might be called more than once, if changing input
+parameters require reconfiguration.</p>
+<p><a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> calls <cite>stop</cite> at end of all processing.</p>
+<p>As of configuration stage, and throughout processing, <a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> 
+provides various (context) parameters, e.g. describing the format of
+output audio data (valid when output caps have been set) or current parsing state.
+Conversely, subclass can and should configure context to inform
+base class of its expectation w.r.t. buffer handling.</p>
+<ul class="simple">
+<li>Data processing</li>
+</ul>
+<p>Base class gathers input data, and optionally allows subclass
+to parse this into subsequently manageable (as defined by subclass)
+chunks.  Such chunks are subsequently referred to as &#8216;frames&#8217;,
+though they may or may not correspond to 1 (or more) audio format frame.</p>
+<p>Input frame is provided to subclass&#8217; <cite>handle_frame</cite>.</p>
+<p>If codec processing results in decoded data, subclass should call
+<cite>gst_audio_decoder_finish_frame</cite> to have decoded data pushed
+downstream.</p>
+<p>Just prior to actually pushing a buffer downstream,
+it is passed to <cite>pre_push</cite>.  Subclass should either use this callback
+to arrange for additional downstream pushing or otherwise ensure such
+custom pushing occurs after at least a method call has finished since
+setting src pad caps.</p>
+<p>During the parsing process <tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoderClass</span></tt> will handle both
+srcpad and sinkpad events. Sink events will be passed to subclass
+if <cite>event</cite> callback has been provided.</p>
+<ul class="simple">
+<li>Shutdown phase</li>
+</ul>
+<p><a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> class calls <cite>stop</cite> to inform the subclass that data
+parsing will be stopped.</p>
+<p>Subclass is responsible for providing pad template caps for
+source and sink pads. The pads need to be named &#8220;sink&#8221; and &#8220;src&#8221;. It also
+needs to set the fixed caps on srcpad, when the format is ensured.  This
+is typically when base class calls subclass&#8217; <cite>set_format</cite> function, though
+it might be delayed until calling <cite>gst_audio_decoder_finish_frame</cite>.</p>
+<p>In summary, above process should have subclass concentrating on
+codec data processing while leaving other matters to base class,
+such as most notably timestamp handling.  While it may exert more control
+in this area (see e.g. <cite>pre_push</cite> ), it is very much not recommended.</p>
+<p>In particular, base class will try to arrange for perfect output timestamps
+as much as possible while tracking upstream timestamps.
+To this end, if deviation between the next ideal expected perfect timestamp
+and upstream exceeds <a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> <a class="reference internal" href="../../GstController_1.0/classes/TriggerControlSource.html#tolerance"><em>:tolerance</em></a>, then resync to upstream
+occurs (which would happen always if the tolerance mechanism is disabled).</p>
+<p>In non-live pipelines, baseclass can also (configurably) arrange for
+output buffer aggregation which may help to redue large(r) numbers of
+small(er) buffers being pushed and processed downstream.</p>
+<p>On the other hand, it should be noted that baseclass only provides limited
+seeking support (upon explicit subclass request), as full-fledged support
+should rather be left to upstream demuxer, parser or alike.  This simple
+approach caters for seeking and duration reporting using estimated input
+bitrates.</p>
+<p>Things that subclass need to take care of:</p>
+<ul class="simple">
+<li>Provide pad templates</li>
+<li>Set source pad caps when appropriate</li>
+<li>Set user-configurable properties to sane defaults for format and      implementing codec at hand, and convey some subclass capabilities and      expectations in context.</li>
+<li>Accept data in <cite>handle_frame</cite> and provide encoded results to      <cite>gst_audio_decoder_finish_frame</cite>.  If it is prepared to perform      PLC, it should also accept <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> data in <cite>handle_frame</cite> and provide for      data for indicated duration.</li>
+</ul>
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.allocate_output_buffer">
+<tt class="descname">allocate_output_buffer</tt><big>(</big><em>size</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.allocate_output_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; size of the buffer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">allocated buffer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Helper function that allocates a buffer to hold an audio frame
+for <cite>dec</cite> &#8216;s current output format.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.finish_frame">
+<tt class="descname">finish_frame</tt><big>(</big><em>buf</em>, <em>frames</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.finish_frame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; decoded data</li>
+<li><strong>frames</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; number of decoded frames represented by decoded data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../../Gst_1.0/enums.html#Gst.FlowReturn" title="Gst.FlowReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn</span></tt></a> that should be escalated to caller (of caller)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../../Gst_1.0/enums.html#Gst.FlowReturn" title="Gst.FlowReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Collects decoded data and pushes it downstream.</p>
+<p><cite>buf</cite> may be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> in which case the indicated number of frames
+are discarded and considered to have produced no output
+(e.g. lead-in or setup frames).
+Otherwise, source pad caps must be set when it is called with valid
+data in <cite>buf</cite>.</p>
+<p>Note that a frame received in gst_audio_decoder_handle_frame() may be
+invalidated by a call to this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_allocator">
+<tt class="descname">get_allocator</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_allocator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">allocator: <a class="reference internal" href="../../Gst_1.0/classes/Allocator.html#Gst.Allocator" title="Gst.Allocator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator</span></tt></a>, params: <a class="reference internal" href="../../Gst_1.0/structs/AllocationParams.html#Gst.AllocationParams" title="Gst.AllocationParams"><tt class="xref py py-class docutils literal"><span class="pre">Gst.AllocationParams</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Lets <a class="reference internal" href="#GstAudio.AudioDecoder" title="GstAudio.AudioDecoder"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioDecoder</span></tt></a> sub-classes to know the memory <cite>allocator</cite>
+used by the base class and its <cite>params</cite>.</p>
+<p>Unref the <cite>allocator</cite> after use it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_audio_info">
+<tt class="descname">get_audio_info</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_audio_info" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../structs/AudioInfo.html#GstAudio.AudioInfo" title="GstAudio.AudioInfo"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioInfo</span></tt></a> describing the input audio format</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/AudioInfo.html#GstAudio.AudioInfo" title="GstAudio.AudioInfo"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_delay">
+<tt class="descname">get_delay</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_delay" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">currently configured decoder delay</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_drainable">
+<tt class="descname">get_drainable</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_drainable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if drainable handling is enabled.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Queries decoder drain handling.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_estimate_rate">
+<tt class="descname">get_estimate_rate</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_estimate_rate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">currently configured byte to time conversion setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_latency">
+<tt class="descname">get_latency</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">min: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, max: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the variables pointed to by <cite>min</cite> and <cite>max</cite> to the currently configured
+latency.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_max_errors">
+<tt class="descname">get_max_errors</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_max_errors" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">currently configured decoder tolerated error count.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_min_latency">
+<tt class="descname">get_min_latency</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_min_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">aggregation latency.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Queries decoder&#8217;s latency aggregation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_needs_format">
+<tt class="descname">get_needs_format</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_needs_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if required format handling is enabled.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Queries decoder required format handling.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_parse_state">
+<tt class="descname">get_parse_state</tt><big>(</big><em>sync</em>, <em>eos</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_parse_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sync</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; a pointer to a variable to hold the current sync state</li>
+<li><strong>eos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; a pointer to a variable to hold the current eos state</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Return current parsing (sync and eos) state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_plc">
+<tt class="descname">get_plc</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_plc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if packet loss concealment is enabled.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Queries decoder packet loss concealment handling.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_plc_aware">
+<tt class="descname">get_plc_aware</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_plc_aware" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">currently configured plc handling</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.get_tolerance">
+<tt class="descname">get_tolerance</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.get_tolerance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">decoder audio jitter tolerance threshold.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Queries current audio jitter tolerance threshold.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.merge_tags">
+<tt class="descname">merge_tags</tt><big>(</big><em>tags</em>, <em>mode</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.merge_tags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tags</strong> (<a class="reference internal" href="../../Gst_1.0/structs/TagList.html#Gst.TagList" title="Gst.TagList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagList</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/TagList.html#Gst.TagList" title="Gst.TagList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagList</span></tt></a> to merge</li>
+<li><strong>mode</strong> (<a class="reference internal" href="../../Gst_1.0/enums.html#Gst.TagMergeMode" title="Gst.TagMergeMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagMergeMode</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gst_1.0/enums.html#Gst.TagMergeMode" title="Gst.TagMergeMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagMergeMode</span></tt></a> to use</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds tags to so-called pending tags, which will be processed
+before pushing out data downstream.</p>
+<p>Note that this is provided for convenience, and the subclass is
+not required to use this and can still do tag handling on its own,
+although it should be aware that baseclass already takes care
+of the usual CODEC/AUDIO_CODEC tags.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.negotiate">
+<tt class="descname">negotiate</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.negotiate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the negotiation succeeded, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Negotiate with downstreame elements to currently configured <a class="reference internal" href="../structs/AudioInfo.html#GstAudio.AudioInfo" title="GstAudio.AudioInfo"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioInfo</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_drainable">
+<tt class="descname">set_drainable</tt><big>(</big><em>enabled</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_drainable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; new state</td>
+</tr>
+</tbody>
+</table>
+<p>Configures decoder drain handling.  If drainable, subclass might
+be handed a <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> buffer to have it return any leftover decoded data.
+Otherwise, it is not considered so capable and will only ever be passed
+real data.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_estimate_rate">
+<tt class="descname">set_estimate_rate</tt><big>(</big><em>enabled</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_estimate_rate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether to enable byte to time conversion</td>
+</tr>
+</tbody>
+</table>
+<p>Allows baseclass to perform byte to time estimated conversion.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_latency">
+<tt class="descname">set_latency</tt><big>(</big><em>min</em>, <em>max</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>min</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; minimum latency</li>
+<li><strong>max</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; maximum latency</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets decoder latency.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_max_errors">
+<tt class="descname">set_max_errors</tt><big>(</big><em>num</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_max_errors" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>num</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; max tolerated errors</td>
+</tr>
+</tbody>
+</table>
+<p>Sets numbers of tolerated decoder errors, where a tolerated one is then only
+warned about, but more than tolerated will lead to fatal error.  Default
+is set to <a class="reference internal" href="../constants.html#GstAudio.AUDIO_DECODER_MAX_ERRORS" title="GstAudio.AUDIO_DECODER_MAX_ERRORS"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AUDIO_DECODER_MAX_ERRORS</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_min_latency">
+<tt class="descname">set_min_latency</tt><big>(</big><em>num</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_min_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>num</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; new minimum latency</td>
+</tr>
+</tbody>
+</table>
+<p>Sets decoder minimum aggregation latency.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_needs_format">
+<tt class="descname">set_needs_format</tt><big>(</big><em>enabled</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_needs_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; new state</td>
+</tr>
+</tbody>
+</table>
+<p>Configures decoder format needs.  If enabled, subclass needs to be
+negotiated with format caps before it can process any data.  It will then
+never be handed any data before it has been configured.
+Otherwise, it might be handed data without having been configured and
+is then expected being able to do so either by default
+or based on the input data.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_output_format">
+<tt class="descname">set_output_format</tt><big>(</big><em>info</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_output_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>info</strong> (<a class="reference internal" href="../structs/AudioInfo.html#GstAudio.AudioInfo" title="GstAudio.AudioInfo"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioInfo</span></tt></a>) &#8211; <a class="reference internal" href="../structs/AudioInfo.html#GstAudio.AudioInfo" title="GstAudio.AudioInfo"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioInfo</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> on success.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Configure output info on the srcpad of <cite>dec</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_plc">
+<tt class="descname">set_plc</tt><big>(</big><em>enabled</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_plc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; new state</td>
+</tr>
+</tbody>
+</table>
+<p>Enable or disable decoder packet loss concealment, provided subclass
+and codec are capable and allow handling plc.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_plc_aware">
+<tt class="descname">set_plc_aware</tt><big>(</big><em>plc</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_plc_aware" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>plc</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; new plc state</td>
+</tr>
+</tbody>
+</table>
+<p>Indicates whether or not subclass handles packet loss concealment (plc).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioDecoder.set_tolerance">
+<tt class="descname">set_tolerance</tt><big>(</big><em>tolerance</em><big>)</big><a class="headerlink" href="#GstAudio.AudioDecoder.set_tolerance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tolerance</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; new tolerance</td>
+</tr>
+</tbody>
+</table>
+<p>Configures decoder audio jitter tolerance threshold.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="AudioEncoder.html" class="btn btn-neutral float-right" title="GstAudio.AudioEncoder"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="AudioClock.html" class="btn btn-neutral" title="GstAudio.AudioClock"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

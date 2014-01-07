@@ -1,0 +1,939 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Clutter.Path -
+    
+      Classes -
+    
+      Clutter 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Clutter.PathConstraint" href="PathConstraint.html"/>
+        <link rel="prev" title="Clutter.ParamSpecUnit" href="ParamSpecUnit.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Clutter 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Clutter.Path</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Clutter 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Clutter.Path</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Clutter_1.0/classes/Path" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="clutter-path">
+<h1>Clutter.Path<a class="headerlink" href="#clutter-path" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-4e7b8b78261435f1c16d593c1b224d6708eb6942.png" alt="Inheritance diagram of Clutter.Path" usemap="#inheritance2494b09a6f" class="inheritance"/>
+<map id="inheritance2494b09a6f" name="inheritance2494b09a6f">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="29,5,125,29"/>
+<area shape="rect" id="node2" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="5,77,149,101"/>
+<area shape="rect" id="node4" href="#Clutter.Path" title="Clutter.Path" alt="" coords="37,149,117,173"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Clutter.Path.new" title="Clutter.Path.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Clutter.Path.new_with_description" title="Clutter.Path.new_with_description"><tt class="xref py py-obj docutils literal"><span class="pre">new_with_description</span></tt></a>(desc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_cairo_path" title="Clutter.Path.add_cairo_path"><tt class="xref py py-obj docutils literal"><span class="pre">add_cairo_path</span></tt></a>(cpath)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_close" title="Clutter.Path.add_close"><tt class="xref py py-obj docutils literal"><span class="pre">add_close</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_curve_to" title="Clutter.Path.add_curve_to"><tt class="xref py py-obj docutils literal"><span class="pre">add_curve_to</span></tt></a>(x_1, y_1, x_2, y_2, x_3, y_3)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_line_to" title="Clutter.Path.add_line_to"><tt class="xref py py-obj docutils literal"><span class="pre">add_line_to</span></tt></a>(x, y)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_move_to" title="Clutter.Path.add_move_to"><tt class="xref py py-obj docutils literal"><span class="pre">add_move_to</span></tt></a>(x, y)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_node" title="Clutter.Path.add_node"><tt class="xref py py-obj docutils literal"><span class="pre">add_node</span></tt></a>(node)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_rel_curve_to" title="Clutter.Path.add_rel_curve_to"><tt class="xref py py-obj docutils literal"><span class="pre">add_rel_curve_to</span></tt></a>(x_1, y_1, x_2, y_2, x_3, y_3)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_rel_line_to" title="Clutter.Path.add_rel_line_to"><tt class="xref py py-obj docutils literal"><span class="pre">add_rel_line_to</span></tt></a>(x, y)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_rel_move_to" title="Clutter.Path.add_rel_move_to"><tt class="xref py py-obj docutils literal"><span class="pre">add_rel_move_to</span></tt></a>(x, y)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.add_string" title="Clutter.Path.add_string"><tt class="xref py py-obj docutils literal"><span class="pre">add_string</span></tt></a>(str)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.clear" title="Clutter.Path.clear"><tt class="xref py py-obj docutils literal"><span class="pre">clear</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.foreach" title="Clutter.Path.foreach"><tt class="xref py py-obj docutils literal"><span class="pre">foreach</span></tt></a>(callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.get_description" title="Clutter.Path.get_description"><tt class="xref py py-obj docutils literal"><span class="pre">get_description</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.get_length" title="Clutter.Path.get_length"><tt class="xref py py-obj docutils literal"><span class="pre">get_length</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.get_n_nodes" title="Clutter.Path.get_n_nodes"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_nodes</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.get_node" title="Clutter.Path.get_node"><tt class="xref py py-obj docutils literal"><span class="pre">get_node</span></tt></a>(index_)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.get_nodes" title="Clutter.Path.get_nodes"><tt class="xref py py-obj docutils literal"><span class="pre">get_nodes</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.get_position" title="Clutter.Path.get_position"><tt class="xref py py-obj docutils literal"><span class="pre">get_position</span></tt></a>(progress)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.insert_node" title="Clutter.Path.insert_node"><tt class="xref py py-obj docutils literal"><span class="pre">insert_node</span></tt></a>(index_, node)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.remove_node" title="Clutter.Path.remove_node"><tt class="xref py py-obj docutils literal"><span class="pre">remove_node</span></tt></a>(index_)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.replace_node" title="Clutter.Path.replace_node"><tt class="xref py py-obj docutils literal"><span class="pre">replace_node</span></tt></a>(index_, node)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.set_description" title="Clutter.Path.set_description"><tt class="xref py py-obj docutils literal"><span class="pre">set_description</span></tt></a>(str)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.Path.to_cairo_path" title="Clutter.Path.to_cairo_path"><tt class="xref py py-obj docutils literal"><span class="pre">to_cairo_path</span></tt></a>(cr)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="clutter-path-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="description">description</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>SVG-style description of the path</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="length">length</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>An approximation of the total length of the path.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="clutter-path-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned"><tt class="xref py py-class docutils literal"><span class="pre">GObject.InitiallyUnowned</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.Path">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">Path</tt><big>(</big><em>description=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#Clutter.Path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned"><tt class="xref py py-class docutils literal"><span class="pre">GObject.InitiallyUnowned</span></tt></a></p>
+<p>The <a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a> struct contains only private data and should
+be accessed with the functions below.</p>
+<dl class="staticmethod">
+<dt id="Clutter.Path.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.Path.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the newly created <a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a> instance with no nodes.</p>
+<p>The object has a floating reference so if you add it to a
+<a class="reference internal" href="BehaviourPath.html#Clutter.BehaviourPath" title="Clutter.BehaviourPath"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BehaviourPath</span></tt></a> then you do not need to unref it.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Clutter.Path.new_with_description">
+<em class="property">static </em><tt class="descname">new_with_description</tt><big>(</big><em>desc</em><big>)</big><a class="headerlink" href="#Clutter.Path.new_with_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>desc</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a string describing the path</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the newly created <a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a> instance with the nodes described in
+<cite>desc</cite>. See <a class="reference internal" href="#Clutter.Path.add_string" title="Clutter.Path.add_string"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path.add_string</span></tt></a> () for details of the format of
+the string.</p>
+<p>The object has a floating reference so if you add it to a
+<a class="reference internal" href="BehaviourPath.html#Clutter.BehaviourPath" title="Clutter.BehaviourPath"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BehaviourPath</span></tt></a> then you do not need to unref it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_cairo_path">
+<tt class="descname">add_cairo_path</tt><big>(</big><em>cpath</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_cairo_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cpath</strong> (<a class="reference external" href="http://cairographics.org/documentation/pycairo/2/reference/paths.html#cairo.Path" title="(in Pycairo v1.10)"><tt class="xref py py-class docutils literal"><span class="pre">cairo.Path</span></tt></a>) &#8211; a Cairo path</td>
+</tr>
+</tbody>
+</table>
+<p>Add the nodes of the Cairo path to the end of <cite>path</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_close">
+<tt class="descname">add_close</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.Path.add_close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.CLOSE" title="Clutter.PathNodeType.CLOSE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.CLOSE</span></tt></a> type node to the path. This creates a
+straight line from the last node to the last <a class="reference internal" href="../enums.html#Clutter.PathNodeType.MOVE_TO" title="Clutter.PathNodeType.MOVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.MOVE_TO</span></tt></a>
+type node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_curve_to">
+<tt class="descname">add_curve_to</tt><big>(</big><em>x_1</em>, <em>y_1</em>, <em>x_2</em>, <em>y_2</em>, <em>x_3</em>, <em>y_3</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_curve_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x_1</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate of the first control point</li>
+<li><strong>y_1</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate of the first control point</li>
+<li><strong>x_2</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate of the second control point</li>
+<li><strong>y_2</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate of the second control point</li>
+<li><strong>x_3</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate of the third control point</li>
+<li><strong>y_3</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate of the third control point</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.CURVE_TO" title="Clutter.PathNodeType.CURVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.CURVE_TO</span></tt></a> type node to the path. This causes
+the actor to follow a bezier from the last node to (<cite>x_3</cite>, <cite>y_3</cite> ) using
+(<cite>x_1</cite>, <cite>y_1</cite> ) and (<cite>x_2</cite>,`y_2` ) as control points.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_line_to">
+<tt class="descname">add_line_to</tt><big>(</big><em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_line_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate</li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.LINE_TO" title="Clutter.PathNodeType.LINE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.LINE_TO</span></tt></a> type node to the path. This causes the
+actor to move to the new coordinates in a straight line.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_move_to">
+<tt class="descname">add_move_to</tt><big>(</big><em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_move_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate</li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.MOVE_TO" title="Clutter.PathNodeType.MOVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.MOVE_TO</span></tt></a> type node to the path. This is usually
+used as the first node in a path. It can also be used in the middle
+of the path to cause the actor to jump to the new coordinate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_node">
+<tt class="descname">add_node</tt><big>(</big><em>node</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_node" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<a class="reference internal" href="../structs/PathNode.html#Clutter.PathNode" title="Clutter.PathNode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNode</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/PathNode.html#Clutter.PathNode" title="Clutter.PathNode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>node</cite> to the end of the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_rel_curve_to">
+<tt class="descname">add_rel_curve_to</tt><big>(</big><em>x_1</em>, <em>y_1</em>, <em>x_2</em>, <em>y_2</em>, <em>x_3</em>, <em>y_3</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_rel_curve_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x_1</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate of the first control point</li>
+<li><strong>y_1</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate of the first control point</li>
+<li><strong>x_2</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate of the second control point</li>
+<li><strong>y_2</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate of the second control point</li>
+<li><strong>x_3</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate of the third control point</li>
+<li><strong>y_3</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate of the third control point</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Same as <a class="reference internal" href="#Clutter.Path.add_curve_to" title="Clutter.Path.add_curve_to"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path.add_curve_to</span></tt></a> () except the coordinates are
+relative to the previous node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_rel_line_to">
+<tt class="descname">add_rel_line_to</tt><big>(</big><em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_rel_line_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate</li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Same as <a class="reference internal" href="#Clutter.Path.add_line_to" title="Clutter.Path.add_line_to"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path.add_line_to</span></tt></a> () except the coordinates are
+relative to the previous node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_rel_move_to">
+<tt class="descname">add_rel_move_to</tt><big>(</big><em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_rel_move_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the x coordinate</li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the y coordinate</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Same as <a class="reference internal" href="#Clutter.Path.add_move_to" title="Clutter.Path.add_move_to"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path.add_move_to</span></tt></a> () except the coordinates are
+relative to the previous node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.add_string">
+<tt class="descname">add_string</tt><big>(</big><em>str</em><big>)</big><a class="headerlink" href="#Clutter.Path.add_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>str</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a string describing the new nodes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> is the path description was valid or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds new nodes to the end of the path as described in <cite>str</cite>. The
+format is a subset of the SVG path format. Each node is represented
+by a letter and is followed by zero, one or three pairs of
+coordinates. The coordinates can be separated by spaces or a
+comma. The types are:</p>
+<dl class="docutils">
+<dt>M</dt>
+<dd>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.MOVE_TO" title="Clutter.PathNodeType.MOVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.MOVE_TO</span></tt></a> node. Takes one pair of coordinates.</dd>
+<dt>L</dt>
+<dd>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.LINE_TO" title="Clutter.PathNodeType.LINE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.LINE_TO</span></tt></a> node. Takes one pair of coordinates.</dd>
+<dt>C</dt>
+<dd>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.CURVE_TO" title="Clutter.PathNodeType.CURVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.CURVE_TO</span></tt></a> node. Takes three pairs of coordinates.</dd>
+<dt>z</dt>
+<dd>Adds a <a class="reference internal" href="../enums.html#Clutter.PathNodeType.CLOSE" title="Clutter.PathNodeType.CLOSE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.CLOSE</span></tt></a> node. No coordinates are needed.</dd>
+</dl>
+<p>The M, L and C commands can also be specified in lower case which
+means the coordinates are relative to the previous node.</p>
+<p>For example, to move an actor in a 100 by 100 pixel square centered
+on the point 300,300 you could use the following path:</p>
+<p><tt class="docutils literal"><span class="pre">M</span> <span class="pre">250,350</span> <span class="pre">l</span> <span class="pre">0</span> <span class="pre">-100</span> <span class="pre">L</span> <span class="pre">350,250</span> <span class="pre">l</span> <span class="pre">0</span> <span class="pre">100</span> <span class="pre">z</span></tt></p>
+<p>If the path description isn&#8217;t valid <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> will be returned and no
+nodes will be added.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.clear">
+<tt class="descname">clear</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.Path.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all nodes from the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.foreach">
+<tt class="descname">foreach</tt><big>(</big><em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Clutter.Path.foreach" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#Clutter.PathCallback" title="Clutter.PathCallback"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathCallback</span></tt></a>) &#8211; the function to call with each node</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data to pass to the function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calls a function for each node of the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.get_description">
+<tt class="descname">get_description</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.Path.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a string description of the path. Free with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a newly allocated string describing the path in the same
+format as used by <a class="reference internal" href="#Clutter.Path.add_string" title="Clutter.Path.add_string"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path.add_string</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.get_length">
+<tt class="descname">get_length</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.Path.get_length" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the length of the path.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves an approximation of the total length of the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.get_n_nodes">
+<tt class="descname">get_n_nodes</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.Path.get_n_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of nodes.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the number of nodes in the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.get_node">
+<tt class="descname">get_node</tt><big>(</big><em>index_</em><big>)</big><a class="headerlink" href="#Clutter.Path.get_node" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the node number to retrieve</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">node: <a class="reference internal" href="../structs/PathNode.html#Clutter.PathNode" title="Clutter.PathNode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the node of the path indexed by <cite>index</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.get_nodes">
+<tt class="descname">get_nodes</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.Path.get_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of nodes in the path.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="../structs/PathNode.html#Clutter.PathNode" title="Clutter.PathNode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNode</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns a <a class="reference internal" href="../../GLib_2.0/structs/SList.html#GLib.SList" title="GLib.SList"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SList</span></tt></a> of <a class="reference internal" href="../structs/PathNode.html#Clutter.PathNode" title="Clutter.PathNode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNode</span></tt></a> s. The list should be
+freed with <tt class="xref py py-class docutils literal"><span class="pre">GLib.SList.free</span></tt> (). The nodes are owned by the path and
+should not be freed. Altering the path may cause the nodes in the
+list to become invalid so you should copy them if you want to keep
+the list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.get_position">
+<tt class="descname">get_position</tt><big>(</big><em>progress</em><big>)</big><a class="headerlink" href="#Clutter.Path.get_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>progress</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; a position along the path as a fraction of its length</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">index of the node used to calculate the position.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, position: <a class="reference internal" href="../structs/Knot.html#Clutter.Knot" title="Clutter.Knot"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Knot</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>The value in <cite>progress</cite> represents a position along the path where
+0.0 is the beginning and 1.0 is the end of the path. An
+interpolated position is then stored in <cite>position</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.insert_node">
+<tt class="descname">insert_node</tt><big>(</big><em>index_</em>, <em>node</em><big>)</big><a class="headerlink" href="#Clutter.Path.insert_node" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; offset of where to insert the node</li>
+<li><strong>node</strong> (<a class="reference internal" href="../structs/PathNode.html#Clutter.PathNode" title="Clutter.PathNode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNode</span></tt></a>) &#8211; the node to insert</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts <cite>node</cite> into the path before the node at the given offset. If
+<cite>index_</cite> is negative it will append the node to the end of the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.remove_node">
+<tt class="descname">remove_node</tt><big>(</big><em>index_</em><big>)</big><a class="headerlink" href="#Clutter.Path.remove_node" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; index of the node to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Removes the node at the given offset from the path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.replace_node">
+<tt class="descname">replace_node</tt><big>(</big><em>index_</em>, <em>node</em><big>)</big><a class="headerlink" href="#Clutter.Path.replace_node" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; index to the existing node</li>
+<li><strong>node</strong> (<a class="reference internal" href="../structs/PathNode.html#Clutter.PathNode" title="Clutter.PathNode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNode</span></tt></a>) &#8211; the replacement node</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replaces the node at offset <cite>index_</cite> with <cite>node</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.set_description">
+<tt class="descname">set_description</tt><big>(</big><em>str</em><big>)</big><a class="headerlink" href="#Clutter.Path.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>str</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a string describing the path</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> is the path was valid, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Replaces all of the nodes in the path with nodes described by
+<cite>str</cite>. See <a class="reference internal" href="#Clutter.Path.add_string" title="Clutter.Path.add_string"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path.add_string</span></tt></a> () for details of the format.</p>
+<p>If the string is invalid then <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> is returned and the path is
+unaltered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.Path.to_cairo_path">
+<tt class="descname">to_cairo_path</tt><big>(</big><em>cr</em><big>)</big><a class="headerlink" href="#Clutter.Path.to_cairo_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cr</strong> (<a class="reference external" href="http://cairographics.org/documentation/pycairo/2/reference/context.html#cairo.Context" title="(in Pycairo v1.10)"><tt class="xref py py-class docutils literal"><span class="pre">cairo.Context</span></tt></a>) &#8211; a Cairo context</td>
+</tr>
+</tbody>
+</table>
+<p>Add the nodes of the <a class="reference internal" href="#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a> to the path in the Cairo context.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="PathConstraint.html" class="btn btn-neutral float-right" title="Clutter.PathConstraint"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="ParamSpecUnit.html" class="btn btn-neutral" title="Clutter.ParamSpecUnit"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

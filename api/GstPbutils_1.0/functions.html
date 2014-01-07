@@ -1,0 +1,1448 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Functions -
+    
+      GstPbutils 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="GstPbutils 1.0" href="index.html"/>
+        <link rel="next" title="Callbacks" href="callbacks.html"/>
+        <link rel="prev" title="GstPbutils 1.0" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">GstPbutils 1.0</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Functions</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">GstPbutils 1.0</a> &raquo;</li>
+  
+  <li><a href="">Functions</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstPbutils_1.0/functions" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_aac_caps_set_level_and_profile" title="GstPbutils.codec_utils_aac_caps_set_level_and_profile"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_aac_caps_set_level_and_profile</span></tt></a>(caps, audio_config, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_aac_get_index_from_sample_rate" title="GstPbutils.codec_utils_aac_get_index_from_sample_rate"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_aac_get_index_from_sample_rate</span></tt></a>(rate)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_aac_get_level" title="GstPbutils.codec_utils_aac_get_level"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_aac_get_level</span></tt></a>(audio_config, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_aac_get_profile" title="GstPbutils.codec_utils_aac_get_profile"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_aac_get_profile</span></tt></a>(audio_config, len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_aac_get_sample_rate_from_index" title="GstPbutils.codec_utils_aac_get_sample_rate_from_index"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_aac_get_sample_rate_from_index</span></tt></a>(sr_idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_h264_caps_set_level_and_profile" title="GstPbutils.codec_utils_h264_caps_set_level_and_profile"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_h264_caps_set_level_and_profile</span></tt></a>(caps, sps, len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_h264_get_level" title="GstPbutils.codec_utils_h264_get_level"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_h264_get_level</span></tt></a>(sps, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_h264_get_level_idc" title="GstPbutils.codec_utils_h264_get_level_idc"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_h264_get_level_idc</span></tt></a>(level)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_h264_get_profile" title="GstPbutils.codec_utils_h264_get_profile"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_h264_get_profile</span></tt></a>(sps, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_mpeg4video_caps_set_level_and_profile" title="GstPbutils.codec_utils_mpeg4video_caps_set_level_and_profile"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_mpeg4video_caps_set_level_and_profile</span></tt></a>(caps, vis_obj_seq, len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_mpeg4video_get_level" title="GstPbutils.codec_utils_mpeg4video_get_level"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_mpeg4video_get_level</span></tt></a>(vis_obj_seq, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.codec_utils_mpeg4video_get_profile" title="GstPbutils.codec_utils_mpeg4video_get_profile"><tt class="xref py py-obj docutils literal"><span class="pre">codec_utils_mpeg4video_get_profile</span></tt></a>(vis_obj_seq, len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.encoding_list_all_targets" title="GstPbutils.encoding_list_all_targets"><tt class="xref py py-obj docutils literal"><span class="pre">encoding_list_all_targets</span></tt></a>(categoryname)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.encoding_list_available_categories" title="GstPbutils.encoding_list_available_categories"><tt class="xref py py-obj docutils literal"><span class="pre">encoding_list_available_categories</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-obj docutils literal"><span class="pre">install_plugins_async</span></tt></a>(details, ctx, func, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.install_plugins_installation_in_progress" title="GstPbutils.install_plugins_installation_in_progress"><tt class="xref py py-obj docutils literal"><span class="pre">install_plugins_installation_in_progress</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.install_plugins_return_get_name" title="GstPbutils.install_plugins_return_get_name"><tt class="xref py py-obj docutils literal"><span class="pre">install_plugins_return_get_name</span></tt></a>(ret)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.install_plugins_supported" title="GstPbutils.install_plugins_supported"><tt class="xref py py-obj docutils literal"><span class="pre">install_plugins_supported</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.install_plugins_sync" title="GstPbutils.install_plugins_sync"><tt class="xref py py-obj docutils literal"><span class="pre">install_plugins_sync</span></tt></a>(details, ctx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.is_missing_plugin_message" title="GstPbutils.is_missing_plugin_message"><tt class="xref py py-obj docutils literal"><span class="pre">is_missing_plugin_message</span></tt></a>(msg)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_decoder_installer_detail_new" title="GstPbutils.missing_decoder_installer_detail_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_decoder_installer_detail_new</span></tt></a>(decode_caps)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_decoder_message_new" title="GstPbutils.missing_decoder_message_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_decoder_message_new</span></tt></a>(element, decode_caps)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_element_installer_detail_new" title="GstPbutils.missing_element_installer_detail_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_element_installer_detail_new</span></tt></a>(factory_name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_element_message_new" title="GstPbutils.missing_element_message_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_element_message_new</span></tt></a>(element, factory_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_encoder_installer_detail_new" title="GstPbutils.missing_encoder_installer_detail_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_encoder_installer_detail_new</span></tt></a>(encode_caps)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_encoder_message_new" title="GstPbutils.missing_encoder_message_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_encoder_message_new</span></tt></a>(element, encode_caps)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_plugin_message_get_description" title="GstPbutils.missing_plugin_message_get_description"><tt class="xref py py-obj docutils literal"><span class="pre">missing_plugin_message_get_description</span></tt></a>(msg)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_plugin_message_get_installer_detail" title="GstPbutils.missing_plugin_message_get_installer_detail"><tt class="xref py py-obj docutils literal"><span class="pre">missing_plugin_message_get_installer_detail</span></tt></a>(msg)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_uri_sink_installer_detail_new" title="GstPbutils.missing_uri_sink_installer_detail_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_uri_sink_installer_detail_new</span></tt></a>(protocol)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_uri_sink_message_new" title="GstPbutils.missing_uri_sink_message_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_uri_sink_message_new</span></tt></a>(element, protocol)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_uri_source_installer_detail_new" title="GstPbutils.missing_uri_source_installer_detail_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_uri_source_installer_detail_new</span></tt></a>(protocol)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.missing_uri_source_message_new" title="GstPbutils.missing_uri_source_message_new"><tt class="xref py py-obj docutils literal"><span class="pre">missing_uri_source_message_new</span></tt></a>(element, protocol)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_add_codec_description_to_tag_list" title="GstPbutils.pb_utils_add_codec_description_to_tag_list"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_add_codec_description_to_tag_list</span></tt></a>(taglist, codec_tag, caps)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_get_codec_description" title="GstPbutils.pb_utils_get_codec_description"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_get_codec_description</span></tt></a>(caps)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_get_decoder_description" title="GstPbutils.pb_utils_get_decoder_description"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_get_decoder_description</span></tt></a>(caps)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_get_element_description" title="GstPbutils.pb_utils_get_element_description"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_get_element_description</span></tt></a>(factory_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_get_encoder_description" title="GstPbutils.pb_utils_get_encoder_description"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_get_encoder_description</span></tt></a>(caps)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_get_sink_description" title="GstPbutils.pb_utils_get_sink_description"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_get_sink_description</span></tt></a>(protocol)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_get_source_description" title="GstPbutils.pb_utils_get_source_description"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_get_source_description</span></tt></a>(protocol)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.pb_utils_init" title="GstPbutils.pb_utils_init"><tt class="xref py py-obj docutils literal"><span class="pre">pb_utils_init</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstPbutils.plugins_base_version" title="GstPbutils.plugins_base_version"><tt class="xref py py-obj docutils literal"><span class="pre">plugins_base_version</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstPbutils.plugins_base_version_string" title="GstPbutils.plugins_base_version_string"><tt class="xref py py-obj docutils literal"><span class="pre">plugins_base_version_string</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="GstPbutils.codec_utils_aac_caps_set_level_and_profile">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_aac_caps_set_level_and_profile</tt><big>(</big><em>caps</em>, <em>audio_config</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_aac_caps_set_level_and_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a> to which level and profile fields are to be added</li>
+<li><strong>audio_config</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a pointer to the AudioSpecificConfig as specified in the Elementary Stream Descriptor (esds) in ISO/IEC 14496-1 (see below for a more details).</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of <cite>audio_config</cite> in bytes</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the level and profile could be set, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the level and profile on <cite>caps</cite> if it can be determined from
+<cite>audio_config</cite>. See <a class="reference internal" href="#GstPbutils.codec_utils_aac_get_level" title="GstPbutils.codec_utils_aac_get_level"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_aac_get_level</span></tt></a> () and
+<a class="reference internal" href="#GstPbutils.codec_utils_aac_get_profile" title="GstPbutils.codec_utils_aac_get_profile"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_aac_get_profile</span></tt></a> () for more details on the parameters.
+<cite>caps</cite> must be audio/mpeg caps with an &#8220;mpegversion&#8221; field of either 2 or 4.
+If mpegversion is 4, the &#8220;base-profile&#8221; field is also set in <cite>caps</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_aac_get_index_from_sample_rate">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_aac_get_index_from_sample_rate</tt><big>(</big><em>rate</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_aac_get_index_from_sample_rate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rate</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Sample rate</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The AAC index for this sample rate, -1 if the rate is not a valid AAC sample rate.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Translates the sample rate to the index corresponding to it in AAC spec.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_aac_get_level">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_aac_get_level</tt><big>(</big><em>audio_config</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_aac_get_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>audio_config</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a pointer to the AudioSpecificConfig as specified in the Elementary Stream Descriptor (esds) in ISO/IEC 14496-1.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of <cite>audio_config</cite> in bytes</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The level as a const string and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the level could not be determined.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Determines the level of a stream as defined in ISO/IEC 14496-3. For AAC LC
+streams, the constraints from the AAC audio profile are applied. For AAC
+Main, LTP, SSR and others, the Main profile is used.</p>
+<p>The <cite>audio_config</cite> parameter follows the following format, starting from the
+most significant bit of the first byte:</p>
+<ul class="simple">
+<li>Bit 0 <em class="xref std std-ref">:4</em> contains the AudioObjectType</li>
+<li>Bit 5 <em class="xref std std-ref">:8</em> contains the sample frequency index (if this is 0xf, then the             next 24 bits define the actual sample frequency, and subsequent             fields are appropriately shifted).</li>
+<li>Bit 9 <em class="xref std std-ref">:12</em> contains the channel configuration</li>
+</ul>
+<p>HE-AAC support has not yet been implemented.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_aac_get_profile">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_aac_get_profile</tt><big>(</big><em>audio_config</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_aac_get_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>audio_config</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a pointer to the AudioSpecificConfig as specified in the Elementary Stream Descriptor (esds) in ISO/IEC 14496-1 (see <a class="reference internal" href="#GstPbutils.codec_utils_aac_get_level" title="GstPbutils.codec_utils_aac_get_level"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_aac_get_level</span></tt></a> () for a more details).</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of <cite>audio_config</cite> in bytes</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The profile as a const string and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the profile could not be determined.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the profile of the given AAC stream as a string. The profile is
+determined using the AudioObjectType field which is in the first 5 bits of
+<cite>audio_config</cite>.</p>
+<p>HE-AAC support has not yet been implemented.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_aac_get_sample_rate_from_index">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_aac_get_sample_rate_from_index</tt><big>(</big><em>sr_idx</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_aac_get_sample_rate_from_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sr_idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Sample rate index as from the AudioSpecificConfig (MPEG-4 container) or ADTS frame header</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The sample rate if <cite>sr_idx</cite> is valid, 0 otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Translates the sample rate index found in AAC headers to the actual sample
+rate.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_h264_caps_set_level_and_profile">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_h264_caps_set_level_and_profile</tt><big>(</big><em>caps</em>, <em>sps</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_h264_caps_set_level_and_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a> to which the level and profile are to be added</li>
+<li><strong>sps</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to the sequence parameter set for the stream.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of the data available in <cite>sps</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the level and profile could be set, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the level and profile in <cite>caps</cite> if it can be determined from <cite>sps</cite>. See
+<a class="reference internal" href="#GstPbutils.codec_utils_h264_get_level" title="GstPbutils.codec_utils_h264_get_level"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_h264_get_level</span></tt></a> () and <a class="reference internal" href="#GstPbutils.codec_utils_h264_get_profile" title="GstPbutils.codec_utils_h264_get_profile"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_h264_get_profile</span></tt></a> ()
+for more details on the parameters.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_h264_get_level">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_h264_get_level</tt><big>(</big><em>sps</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_h264_get_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sps</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to the sequence parameter set for the stream.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of the data available in <cite>sps</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The level as a const string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if there is an error.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Converts the level indication (level_idc) in the stream&#8217;s
+sequence parameter set into a string. The SPS is expected to have the
+same format as for <a class="reference internal" href="#GstPbutils.codec_utils_h264_get_profile" title="GstPbutils.codec_utils_h264_get_profile"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_h264_get_profile</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_h264_get_level_idc">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_h264_get_level_idc</tt><big>(</big><em>level</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_h264_get_level_idc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>level</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; A level string from caps</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the level_idc or 0 if the level is unknown</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Transform a level string from the caps into the level_idc</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_h264_get_profile">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_h264_get_profile</tt><big>(</big><em>sps</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_h264_get_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sps</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to the sequence parameter set for the stream.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of the data available in <cite>sps</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The profile as a const string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if there is an error.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Converts the profile indication (profile_idc) in the stream&#8217;s
+sequence parameter set into a string. The SPS is expected to have the
+following format, as defined in the H.264 specification. The SPS is viewed
+as a bitstream here, with bit 0 being the most significant bit of the first
+byte.</p>
+<ul class="simple">
+<li>Bit 0 <em class="xref std std-ref">:7</em>   - Profile indication</li>
+<li>Bit 8     - constraint_set0_flag</li>
+<li>Bit 9     - constraint_set1_flag</li>
+<li>Bit 10    - constraint_set2_flag</li>
+<li>Bit 11    - constraint_set3_flag</li>
+<li>Bit 12    - constraint_set3_flag</li>
+<li>Bit 13 <em class="xref std std-ref">:15</em> - Reserved</li>
+<li>Bit 16 <em class="xref std std-ref">:24</em> - Level indication</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_mpeg4video_caps_set_level_and_profile">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_mpeg4video_caps_set_level_and_profile</tt><big>(</big><em>caps</em>, <em>vis_obj_seq</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_mpeg4video_caps_set_level_and_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a> to which the level and profile are to be added</li>
+<li><strong>vis_obj_seq</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to the visual object sequence for the stream.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of the data available in <cite>sps</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the level and profile could be set, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the level and profile in <cite>caps</cite> if it can be determined from
+<cite>vis_obj_seq</cite>. See <a class="reference internal" href="#GstPbutils.codec_utils_mpeg4video_get_level" title="GstPbutils.codec_utils_mpeg4video_get_level"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_mpeg4video_get_level</span></tt></a> () and
+<a class="reference internal" href="#GstPbutils.codec_utils_mpeg4video_get_profile" title="GstPbutils.codec_utils_mpeg4video_get_profile"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.codec_utils_mpeg4video_get_profile</span></tt></a> () for more details on the
+parameters.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_mpeg4video_get_level">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_mpeg4video_get_level</tt><big>(</big><em>vis_obj_seq</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_mpeg4video_get_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vis_obj_seq</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to the visual object sequence for the stream.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of the data available in <cite>sps</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The level as a const string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if there is an error.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Converts the level indication in the stream&#8217;s visual object sequence into
+a string. <cite>vis_obj_seq</cite> is expected to be the data following the visual
+object sequence start code. Only the first byte
+(profile_and_level_indication) is used.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.codec_utils_mpeg4video_get_profile">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">codec_utils_mpeg4video_get_profile</tt><big>(</big><em>vis_obj_seq</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstPbutils.codec_utils_mpeg4video_get_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vis_obj_seq</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to the visual object sequence for the stream.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of the data available in <cite>sps</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The profile as a const string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if there is an error.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Converts the profile indication in the stream&#8217;s visual object sequence into
+a string. <cite>vis_obj_seq</cite> is expected to be the data following the visual
+object sequence start code. Only the first byte
+(profile_and_level_indication) is used.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.encoding_list_all_targets">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">encoding_list_all_targets</tt><big>(</big><em>categoryname</em><big>)</big><a class="headerlink" href="#GstPbutils.encoding_list_all_targets" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>categoryname</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The category, for ex: <a class="reference internal" href="constants.html#GstPbutils.ENCODING_CATEGORY_DEVICE" title="GstPbutils.ENCODING_CATEGORY_DEVICE"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.ENCODING_CATEGORY_DEVICE</span></tt></a>. Can be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The list of <a class="reference internal" href="classes/EncodingTarget.html#GstPbutils.EncodingTarget" title="GstPbutils.EncodingTarget"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.EncodingTarget</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="classes/EncodingTarget.html#GstPbutils.EncodingTarget" title="GstPbutils.EncodingTarget"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.EncodingTarget</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>List all available <a class="reference internal" href="classes/EncodingTarget.html#GstPbutils.EncodingTarget" title="GstPbutils.EncodingTarget"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.EncodingTarget</span></tt></a> for the specified category, or all categories
+if <cite>categoryname</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.encoding_list_available_categories">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">encoding_list_available_categories</tt><big>(</big><big>)</big><a class="headerlink" href="#GstPbutils.encoding_list_available_categories" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of <a class="reference internal" href="classes/EncodingTarget.html#GstPbutils.EncodingTarget" title="GstPbutils.EncodingTarget"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.EncodingTarget</span></tt></a> categories.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Lists all <a class="reference internal" href="classes/EncodingTarget.html#GstPbutils.EncodingTarget" title="GstPbutils.EncodingTarget"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.EncodingTarget</span></tt></a> categories present on disk.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.install_plugins_async">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">install_plugins_async</tt><big>(</big><em>details</em>, <em>ctx</em>, <em>func</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#GstPbutils.install_plugins_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>details</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated array of installer string details (see below)</li>
+<li><strong>ctx</strong> (<a class="reference internal" href="structs/InstallPluginsContext.html#GstPbutils.InstallPluginsContext" title="GstPbutils.InstallPluginsContext"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsContext</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="structs/InstallPluginsContext.html#GstPbutils.InstallPluginsContext" title="GstPbutils.InstallPluginsContext"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsContext</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>func</strong> (<a class="reference internal" href="callbacks.html#GstPbutils.InstallPluginsResultFunc" title="GstPbutils.InstallPluginsResultFunc"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsResultFunc</span></tt></a>) &#8211; the function to call when the installer program returns</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the user data to pass to <cite>func</cite> when called, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">result code whether an external installer could be started</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GstPbutils.InstallPluginsReturn" title="GstPbutils.InstallPluginsReturn"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Requests plugin installation without blocking. Once the plugins have been
+installed or installation has failed, <cite>func</cite> will be called with the result
+of the installation and your provided <cite>user_data</cite> pointer.</p>
+<p>This function requires a running GLib/Gtk main loop. If you are not
+running a GLib/Gtk main loop, make sure to regularly call
+<a class="reference internal" href="../GLib_2.0/structs/MainContext.html#GLib.MainContext.iteration" title="GLib.MainContext.iteration"><tt class="xref py py-class docutils literal"><span class="pre">GLib.MainContext.iteration</span></tt></a> (<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>,:obj:<cite>False</cite> ).</p>
+<p>The installer strings that make up <cite>detail</cite> are typically obtained by
+calling <a class="reference internal" href="#GstPbutils.missing_plugin_message_get_installer_detail" title="GstPbutils.missing_plugin_message_get_installer_detail"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.missing_plugin_message_get_installer_detail</span></tt></a> () on missing-plugin
+messages that have been caught on a pipeline&#8217;s bus or created by the
+application via the provided API, such as <a class="reference internal" href="#GstPbutils.missing_element_message_new" title="GstPbutils.missing_element_message_new"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.missing_element_message_new</span></tt></a> ().</p>
+<p>It is possible to request the installation of multiple missing plugins in
+one go (as might be required if there is a demuxer for a certain format
+installed but no suitable video decoder and no suitable audio decoder).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.install_plugins_installation_in_progress">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">install_plugins_installation_in_progress</tt><big>(</big><big>)</big><a class="headerlink" href="#GstPbutils.install_plugins_installation_in_progress" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if plugin installation is in progress, otherwise <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether plugin installation (initiated by this application only)
+is currently in progress.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.install_plugins_return_get_name">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">install_plugins_return_get_name</tt><big>(</big><em>ret</em><big>)</big><a class="headerlink" href="#GstPbutils.install_plugins_return_get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ret</strong> (<a class="reference internal" href="enums.html#GstPbutils.InstallPluginsReturn" title="GstPbutils.InstallPluginsReturn"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsReturn</span></tt></a>) &#8211; the return status code</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a descriptive string for the status code in <cite>ret</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function to return the descriptive string associated
+with a status code.  This function returns English strings and
+should not be used for user messages. It is here only to assist
+in debugging.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.install_plugins_supported">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">install_plugins_supported</tt><big>(</big><big>)</big><a class="headerlink" href="#GstPbutils.install_plugins_supported" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if plugin installation is likely to be supported.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether plugin installation is likely to be supported by the
+current environment. This currently only checks whether the helper script
+that is to be provided by the distribution or operating system vendor
+exists.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.install_plugins_sync">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">install_plugins_sync</tt><big>(</big><em>details</em>, <em>ctx</em><big>)</big><a class="headerlink" href="#GstPbutils.install_plugins_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>details</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated array of installer string details</li>
+<li><strong>ctx</strong> (<a class="reference internal" href="structs/InstallPluginsContext.html#GstPbutils.InstallPluginsContext" title="GstPbutils.InstallPluginsContext"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsContext</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="structs/InstallPluginsContext.html#GstPbutils.InstallPluginsContext" title="GstPbutils.InstallPluginsContext"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsContext</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the result of the installation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GstPbutils.InstallPluginsReturn" title="GstPbutils.InstallPluginsReturn"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.InstallPluginsReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Requests plugin installation and block until the plugins have been
+installed or installation has failed.</p>
+<p>This function should almost never be used, it only exists for cases where
+a non-GLib main loop is running and the user wants to run it in a separate
+thread and marshal the result back asynchronously into the main thread
+using the other non-GLib main loop. You should almost always use
+<a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_async</span></tt></a> () instead of this function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.is_missing_plugin_message">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">is_missing_plugin_message</tt><big>(</big><em>msg</em><big>)</big><a class="headerlink" href="#GstPbutils.is_missing_plugin_message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>msg</strong> (<a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; a <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>msg</cite> is a missing-plugins message, otherwise <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether <cite>msg</cite> is a missing plugins message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_decoder_installer_detail_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_decoder_installer_detail_new</tt><big>(</big><em>decode_caps</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_decoder_installer_detail_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>decode_caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) caps for which a decoder element is needed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated detail string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an opaque string containing all the details about the missing
+element to be passed to an external installer called via
+<a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_async</span></tt></a> () or <a class="reference internal" href="#GstPbutils.install_plugins_sync" title="GstPbutils.install_plugins_sync"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_sync</span></tt></a> ().</p>
+<p>This function is mainly for applications that call external plugin
+installation mechanisms using one of the two above-mentioned functions in
+the case where the application knows exactly what kind of plugin it is
+missing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_decoder_message_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_decoder_message_new</tt><big>(</big><em>element</em>, <em>decode_caps</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_decoder_message_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>element</strong> (<a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a> posting the message</li>
+<li><strong>decode_caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) caps for which a decoder element is needed</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a missing-plugin message for <cite>element</cite> to notify the application
+that a decoder element for a particular set of (fixed) caps is missing.
+This function is mainly for use in plugins.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_element_installer_detail_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_element_installer_detail_new</tt><big>(</big><em>factory_name</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_element_installer_detail_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>factory_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the missing element (element factory), e.g. &#8220;videoscale&#8221; or &#8220;cdparanoiasrc&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated detail string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an opaque string containing all the details about the missing
+element to be passed to an external installer called via
+<a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_async</span></tt></a> () or <a class="reference internal" href="#GstPbutils.install_plugins_sync" title="GstPbutils.install_plugins_sync"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_sync</span></tt></a> ().</p>
+<p>This function is mainly for applications that call external plugin
+installation mechanisms using one of the two above-mentioned functions in
+the case where the application knows exactly what kind of plugin it is
+missing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_element_message_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_element_message_new</tt><big>(</big><em>element</em>, <em>factory_name</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_element_message_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>element</strong> (<a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a> posting the message</li>
+<li><strong>factory_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the missing element (element factory), e.g. &#8220;videoscale&#8221; or &#8220;cdparanoiasrc&#8221;</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a missing-plugin message for <cite>element</cite> to notify the application
+that a certain required element is missing. This function is mainly for
+use in plugins.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_encoder_installer_detail_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_encoder_installer_detail_new</tt><big>(</big><em>encode_caps</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_encoder_installer_detail_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>encode_caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) caps for which an encoder element is needed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated detail string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an opaque string containing all the details about the missing
+element to be passed to an external installer called via
+<a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_async</span></tt></a> () or <a class="reference internal" href="#GstPbutils.install_plugins_sync" title="GstPbutils.install_plugins_sync"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_sync</span></tt></a> ().</p>
+<p>This function is mainly for applications that call external plugin
+installation mechanisms using one of the two above-mentioned functions in
+the case where the application knows exactly what kind of plugin it is
+missing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_encoder_message_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_encoder_message_new</tt><big>(</big><em>element</em>, <em>encode_caps</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_encoder_message_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>element</strong> (<a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a> posting the message</li>
+<li><strong>encode_caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) caps for which an encoder element is needed</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a missing-plugin message for <cite>element</cite> to notify the application
+that an encoder element for a particular set of (fixed) caps is missing.
+This function is mainly for use in plugins.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_plugin_message_get_description">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_plugin_message_get_description</tt><big>(</big><em>msg</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_plugin_message_get_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>msg</strong> (<a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; a missing-plugin <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> of type <a class="reference internal" href="../Gst_1.0/flags.html#Gst.MessageType.ELEMENT" title="Gst.MessageType.ELEMENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType.ELEMENT</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated description string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a localised string describing the missing feature, for use in
+error dialogs and the like. Should never return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> unless <cite>msg</cite> is not
+a valid missing-plugin message.</p>
+<p>This function is mainly for applications that need a human-readable string
+describing a missing plugin, given a previously collected missing-plugin
+message</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_plugin_message_get_installer_detail">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_plugin_message_get_installer_detail</tt><big>(</big><em>msg</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_plugin_message_get_installer_detail" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>msg</strong> (<a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; a missing-plugin <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> of type <a class="reference internal" href="../Gst_1.0/flags.html#Gst.MessageType.ELEMENT" title="Gst.MessageType.ELEMENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType.ELEMENT</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated detail string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an opaque string containing all the details about the missing
+element to be passed to an external installer called via
+<a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_async</span></tt></a> () or <a class="reference internal" href="#GstPbutils.install_plugins_sync" title="GstPbutils.install_plugins_sync"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_sync</span></tt></a> ().</p>
+<p>This function is mainly for applications that call external plugin
+installation mechanisms using one of the two above-mentioned functions.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_uri_sink_installer_detail_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_uri_sink_installer_detail_new</tt><big>(</big><em>protocol</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_uri_sink_installer_detail_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the URI protocol the missing source needs to implement, e.g. &#8220;http&#8221; or &#8220;mms&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated detail string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an opaque string containing all the details about the missing
+element to be passed to an external installer called via
+<a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_async</span></tt></a> () or <a class="reference internal" href="#GstPbutils.install_plugins_sync" title="GstPbutils.install_plugins_sync"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_sync</span></tt></a> ().</p>
+<p>This function is mainly for applications that call external plugin
+installation mechanisms using one of the two above-mentioned functions in
+the case where the application knows exactly what kind of plugin it is
+missing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_uri_sink_message_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_uri_sink_message_new</tt><big>(</big><em>element</em>, <em>protocol</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_uri_sink_message_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>element</strong> (<a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a> posting the message</li>
+<li><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the URI protocol the missing sink needs to implement, e.g. &#8220;http&#8221; or &#8220;smb&#8221;</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a missing-plugin message for <cite>element</cite> to notify the application
+that a sink element for a particular URI protocol is missing. This
+function is mainly for use in plugins.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_uri_source_installer_detail_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_uri_source_installer_detail_new</tt><big>(</big><em>protocol</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_uri_source_installer_detail_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the URI protocol the missing source needs to implement, e.g. &#8220;http&#8221; or &#8220;mms&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated detail string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns an opaque string containing all the details about the missing
+element to be passed to an external installer called via
+<a class="reference internal" href="#GstPbutils.install_plugins_async" title="GstPbutils.install_plugins_async"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_async</span></tt></a> () or <a class="reference internal" href="#GstPbutils.install_plugins_sync" title="GstPbutils.install_plugins_sync"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.install_plugins_sync</span></tt></a> ().</p>
+<p>This function is mainly for applications that call external plugin
+installation mechanisms using one of the two above-mentioned functions in
+the case where the application knows exactly what kind of plugin it is
+missing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.missing_uri_source_message_new">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">missing_uri_source_message_new</tt><big>(</big><em>element</em>, <em>protocol</em><big>)</big><a class="headerlink" href="#GstPbutils.missing_uri_source_message_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>element</strong> (<a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a>) &#8211; the <a class="reference internal" href="../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a> posting the message</li>
+<li><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the URI protocol the missing source needs to implement, e.g. &#8220;http&#8221; or &#8220;mms&#8221;</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a missing-plugin message for <cite>element</cite> to notify the application
+that a source element for a particular URI protocol is missing. This
+function is mainly for use in plugins.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_add_codec_description_to_tag_list">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_add_codec_description_to_tag_list</tt><big>(</big><em>taglist</em>, <em>codec_tag</em>, <em>caps</em><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_add_codec_description_to_tag_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>taglist</strong> (<a class="reference internal" href="../Gst_1.0/structs/TagList.html#Gst.TagList" title="Gst.TagList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagList</span></tt></a>) &#8211; a <a class="reference internal" href="../Gst_1.0/structs/TagList.html#Gst.TagList" title="Gst.TagList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagList</span></tt></a></li>
+<li><strong>codec_tag</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a GStreamer codec tag such as <a class="reference internal" href="../Gst_1.0/constants.html#Gst.TAG_AUDIO_CODEC" title="Gst.TAG_AUDIO_CODEC"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TAG_AUDIO_CODEC</span></tt></a>, <a class="reference internal" href="../Gst_1.0/constants.html#Gst.TAG_VIDEO_CODEC" title="Gst.TAG_VIDEO_CODEC"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TAG_VIDEO_CODEC</span></tt></a> or <a class="reference internal" href="../Gst_1.0/constants.html#Gst.TAG_CODEC" title="Gst.TAG_CODEC"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TAG_CODEC</span></tt></a>. If none is specified, the function will attempt to detect the appropriate category.</li>
+<li><strong>caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) <a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a> for which a codec tag should be added.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if a codec tag was added, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a codec tag describing the format specified by <cite>caps</cite> to <cite>taglist</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_get_codec_description">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_get_codec_description</tt><big>(</big><em>caps</em><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_get_codec_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) <a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a> for which an format description is needed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated description string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a localised (as far as this is possible) string describing the
+media format specified in <cite>caps</cite>, for use in error dialogs or other messages
+to be seen by the user. Should never return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> unless <cite>caps</cite> is invalid.</p>
+<p>Also see the convenience function
+<a class="reference internal" href="#GstPbutils.pb_utils_add_codec_description_to_tag_list" title="GstPbutils.pb_utils_add_codec_description_to_tag_list"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.pb_utils_add_codec_description_to_tag_list</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_get_decoder_description">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_get_decoder_description</tt><big>(</big><em>caps</em><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_get_decoder_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) <a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a> for which an decoder description is needed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated description string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a localised string describing an decoder for the format specified
+in <cite>caps</cite>, for use in error dialogs or other messages to be seen by the user.
+Should never return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> unless <cite>factory_name</cite> or <cite>caps</cite> are invalid.</p>
+<p>This function is mainly for internal use, applications would typically
+use <a class="reference internal" href="#GstPbutils.missing_plugin_message_get_description" title="GstPbutils.missing_plugin_message_get_description"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.missing_plugin_message_get_description</span></tt></a> () to get a description of
+a missing feature from a missing-plugin message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_get_element_description">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_get_element_description</tt><big>(</big><em>factory_name</em><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_get_element_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>factory_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the element, e.g. &#8220;giosrc&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated description string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a localised string describing the given element, for use in
+error dialogs or other messages to be seen by the user. Should never
+return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> unless <cite>factory_name</cite> is invalid.</p>
+<p>This function is mainly for internal use, applications would typically
+use <a class="reference internal" href="#GstPbutils.missing_plugin_message_get_description" title="GstPbutils.missing_plugin_message_get_description"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.missing_plugin_message_get_description</span></tt></a> () to get a description of
+a missing feature from a missing-plugin message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_get_encoder_description">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_get_encoder_description</tt><big>(</big><em>caps</em><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_get_encoder_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the (fixed) <a class="reference internal" href="../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a> for which an encoder description is needed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated description string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a localised string describing an encoder for the format specified
+in <cite>caps</cite>, for use in error dialogs or other messages to be seen by the user.
+Should never return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> unless <cite>factory_name</cite> or <cite>caps</cite> are invalid.</p>
+<p>This function is mainly for internal use, applications would typically
+use <a class="reference internal" href="#GstPbutils.missing_plugin_message_get_description" title="GstPbutils.missing_plugin_message_get_description"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.missing_plugin_message_get_description</span></tt></a> () to get a description of
+a missing feature from a missing-plugin message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_get_sink_description">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_get_sink_description</tt><big>(</big><em>protocol</em><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_get_sink_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the protocol the sink element needs to handle, e.g. &#8220;http&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated description string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a localised string describing a sink element handling the protocol
+specified in <cite>protocol</cite>, for use in error dialogs or other messages to be
+seen by the user. Should never return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> unless <cite>protocol</cite> is invalid.</p>
+<p>This function is mainly for internal use, applications would typically
+use <a class="reference internal" href="#GstPbutils.missing_plugin_message_get_description" title="GstPbutils.missing_plugin_message_get_description"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.missing_plugin_message_get_description</span></tt></a> () to get a description of
+a missing feature from a missing-plugin message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_get_source_description">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_get_source_description</tt><big>(</big><em>protocol</em><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_get_source_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the protocol the source element needs to handle, e.g. &#8220;http&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a newly-allocated description string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. Free string with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when not needed any longer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a localised string describing a source element handling the protocol
+specified in <cite>protocol</cite>, for use in error dialogs or other messages to be
+seen by the user. Should never return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> unless <cite>protocol</cite> is invalid.</p>
+<p>This function is mainly for internal use, applications would typically
+use <a class="reference internal" href="#GstPbutils.missing_plugin_message_get_description" title="GstPbutils.missing_plugin_message_get_description"><tt class="xref py py-class docutils literal"><span class="pre">GstPbutils.missing_plugin_message_get_description</span></tt></a> () to get a description of
+a missing feature from a missing-plugin message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.pb_utils_init">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">pb_utils_init</tt><big>(</big><big>)</big><a class="headerlink" href="#GstPbutils.pb_utils_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialises the base utils support library. This function is not
+thread-safe. Applications should call it after calling <a class="reference internal" href="../Gst_1.0/functions.html#Gst.init" title="Gst.init"><tt class="xref py py-class docutils literal"><span class="pre">Gst.init</span></tt></a> (),
+plugins should call it from their plugin_init function.</p>
+<p>This function may be called multiple times. It will do nothing if the
+library has already been initialised.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.plugins_base_version">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">plugins_base_version</tt><big>(</big><big>)</big><a class="headerlink" href="#GstPbutils.plugins_base_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">major: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, minor: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, micro: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, nano: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the version number of the GStreamer Plugins Base libraries.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GstPbutils.plugins_base_version_string">
+<tt class="descclassname">GstPbutils.</tt><tt class="descname">plugins_base_version_string</tt><big>(</big><big>)</big><a class="headerlink" href="#GstPbutils.plugins_base_version_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a newly allocated string describing this version of gst-plugins-base</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns a string that is useful for describing this version
+of GStreamer&#8217;s gst-plugins-base libraries to the outside world: user agent
+strings, logging, about dialogs ...</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="callbacks.html" class="btn btn-neutral float-right" title="Callbacks"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="GstPbutils 1.0"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

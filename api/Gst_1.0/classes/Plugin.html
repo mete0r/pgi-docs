@@ -1,0 +1,842 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gst.Plugin -
+    
+      Classes -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gst.PluginFeature" href="PluginFeature.html"/>
+        <link rel="prev" title="Gst.Pipeline" href="Pipeline.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gst.Plugin</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gst.Plugin</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/classes/Plugin" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gst-plugin">
+<h1>Gst.Plugin<a class="headerlink" href="#gst-plugin" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-b3fbf16fc9d30abbdbaa46dc06ebce47a3bc7de0.png" alt="Inheritance diagram of Gst.Plugin" usemap="#inheritance236788fd78" class="inheritance"/>
+<map id="inheritance236788fd78" name="inheritance236788fd78">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="29,5,125,29"/>
+<area shape="rect" id="node2" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="5,77,149,101"/>
+<area shape="rect" id="node4" href="Object.html#Gst.Object" title="Gst.Object" alt="" coords="41,149,113,173"/>
+<area shape="rect" id="node6" href="#Gst.Plugin" title="Gst.Plugin" alt="" coords="41,221,113,245"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Plugin.list_free" title="Gst.Plugin.list_free"><tt class="xref py py-obj docutils literal"><span class="pre">list_free</span></tt></a>(list)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Plugin.load_by_name" title="Gst.Plugin.load_by_name"><tt class="xref py py-obj docutils literal"><span class="pre">load_by_name</span></tt></a>(name)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Plugin.load_file" title="Gst.Plugin.load_file"><tt class="xref py py-obj docutils literal"><span class="pre">load_file</span></tt></a>(filename)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Plugin.register_static" title="Gst.Plugin.register_static"><tt class="xref py py-obj docutils literal"><span class="pre">register_static</span></tt></a>(major_version, minor_version, name, description, init_func, version, license, source, ...)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Plugin.register_static_full" title="Gst.Plugin.register_static_full"><tt class="xref py py-obj docutils literal"><span class="pre">register_static_full</span></tt></a>(major_version, minor_version, name, description, init_full_func, version, license, source, ...)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.add_dependency" title="Gst.Plugin.add_dependency"><tt class="xref py py-obj docutils literal"><span class="pre">add_dependency</span></tt></a>(env_vars, paths, names, flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.add_dependency_simple" title="Gst.Plugin.add_dependency_simple"><tt class="xref py py-obj docutils literal"><span class="pre">add_dependency_simple</span></tt></a>(env_vars, paths, names, flags)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_cache_data" title="Gst.Plugin.get_cache_data"><tt class="xref py py-obj docutils literal"><span class="pre">get_cache_data</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_description" title="Gst.Plugin.get_description"><tt class="xref py py-obj docutils literal"><span class="pre">get_description</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_filename" title="Gst.Plugin.get_filename"><tt class="xref py py-obj docutils literal"><span class="pre">get_filename</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_license" title="Gst.Plugin.get_license"><tt class="xref py py-obj docutils literal"><span class="pre">get_license</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_name" title="Gst.Plugin.get_name"><tt class="xref py py-obj docutils literal"><span class="pre">get_name</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_origin" title="Gst.Plugin.get_origin"><tt class="xref py py-obj docutils literal"><span class="pre">get_origin</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_package" title="Gst.Plugin.get_package"><tt class="xref py py-obj docutils literal"><span class="pre">get_package</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_release_date_string" title="Gst.Plugin.get_release_date_string"><tt class="xref py py-obj docutils literal"><span class="pre">get_release_date_string</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_source" title="Gst.Plugin.get_source"><tt class="xref py py-obj docutils literal"><span class="pre">get_source</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.get_version" title="Gst.Plugin.get_version"><tt class="xref py py-obj docutils literal"><span class="pre">get_version</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.is_loaded" title="Gst.Plugin.is_loaded"><tt class="xref py py-obj docutils literal"><span class="pre">is_loaded</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.load" title="Gst.Plugin.load"><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Plugin.set_cache_data" title="Gst.Plugin.set_cache_data"><tt class="xref py py-obj docutils literal"><span class="pre">set_cache_data</span></tt></a>(cache_data)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gst-plugin-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gst-plugin-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gst.Plugin">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">Plugin</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gst.Plugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a></p>
+<p>GStreamer is extensible, so <a class="reference internal" href="Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a> instances can be loaded at runtime.
+A plugin system can provide one or more of the basic
+GStreamer <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a> subclasses.</p>
+<p>A plugin should export a symbol gst_plugin_desc that is a
+struct of type <a class="reference internal" href="../structs/PluginDesc.html#Gst.PluginDesc" title="Gst.PluginDesc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDesc</span></tt></a>.
+the plugin loader will check the version of the core library the plugin was
+linked against and will create a new <a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>. It will then call the
+<a class="reference internal" href="../callbacks.html#Gst.PluginInitFunc" title="Gst.PluginInitFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginInitFunc</span></tt></a> function that was provided in the
+gst_plugin_desc.</p>
+<p>Once you have a handle to a <a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a> (e.g. from the <a class="reference internal" href="Registry.html#Gst.Registry" title="Gst.Registry"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry</span></tt></a> ), you
+can add any object that subclasses <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>.</p>
+<p>Usually plugins are always automaticlly loaded so you don&#8217;t need to call
+<a class="reference internal" href="#Gst.Plugin.load" title="Gst.Plugin.load"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin.load</span></tt></a> () explicitly to bring it into memory. There are options to
+statically link plugins to an app or even use GStreamer without a plugin
+repository in which case <a class="reference internal" href="#Gst.Plugin.load" title="Gst.Plugin.load"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin.load</span></tt></a> () can be needed to bring the plugin
+into memory.</p>
+<dl class="staticmethod">
+<dt id="Gst.Plugin.list_free">
+<em class="property">static </em><tt class="descname">list_free</tt><big>(</big><em>list</em><big>)</big><a class="headerlink" href="#Gst.Plugin.list_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>list</strong> ([<a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>]) &#8211; list of <a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Unrefs each member of <cite>list</cite>, then frees the list.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Plugin.load_by_name">
+<em class="property">static </em><tt class="descname">load_by_name</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Gst.Plugin.load_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; name of plugin to load</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a reference to a loaded plugin, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Load the named plugin. Refs the plugin.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Plugin.load_file">
+<em class="property">static </em><tt class="descname">load_file</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#Gst.Plugin.load_file" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the plugin filename to load</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a reference to the existing loaded <a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>, a reference to the newly-loaded <a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if an error occurred.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Loads the given plugin and refs it.  Caller needs to unref after use.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Plugin.register_static">
+<em class="property">static </em><tt class="descname">register_static</tt><big>(</big><em>major_version</em>, <em>minor_version</em>, <em>name</em>, <em>description</em>, <em>init_func</em>, <em>version</em>, <em>license</em>, <em>source</em>, <em>package</em>, <em>origin</em><big>)</big><a class="headerlink" href="#Gst.Plugin.register_static" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>major_version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the major version number of the GStreamer core that the plugin was compiled for, you can just use GST_VERSION_MAJOR here</li>
+<li><strong>minor_version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the minor version number of the GStreamer core that the plugin was compiled for, you can just use GST_VERSION_MINOR here</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a unique name of the plugin (ideally prefixed with an application- or library-specific namespace prefix in order to avoid name conflicts in case a similar plugin with the same name ever gets added to GStreamer)</li>
+<li><strong>description</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; description of the plugin</li>
+<li><strong>init_func</strong> (<a class="reference internal" href="../callbacks.html#Gst.PluginInitFunc" title="Gst.PluginInitFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginInitFunc</span></tt></a>) &#8211; pointer to the init function of this plugin.</li>
+<li><strong>version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; version string of the plugin</li>
+<li><strong>license</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; effective license of plugin. Must be one of the approved licenses (see <a class="reference internal" href="../structs/PluginDesc.html#Gst.PluginDesc" title="Gst.PluginDesc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDesc</span></tt></a> above) or the plugin will not be registered.</li>
+<li><strong>source</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; source module plugin belongs to</li>
+<li><strong>package</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; shipped package plugin belongs to</li>
+<li><strong>origin</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; URL to provider of plugin</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the plugin was registered correctly, otherwise <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Registers a static plugin, ie. a plugin which is private to an application
+or library and contained within the application or library (as opposed to
+being shipped as a separate module file).</p>
+<p>You must make sure that GStreamer has been initialised (with <a class="reference internal" href="../functions.html#Gst.init" title="Gst.init"><tt class="xref py py-class docutils literal"><span class="pre">Gst.init</span></tt></a> () or
+via <tt class="xref py py-class docutils literal"><span class="pre">Gst.init_get_option_group</span></tt> ()) before calling this function.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Plugin.register_static_full">
+<em class="property">static </em><tt class="descname">register_static_full</tt><big>(</big><em>major_version</em>, <em>minor_version</em>, <em>name</em>, <em>description</em>, <em>init_full_func</em>, <em>version</em>, <em>license</em>, <em>source</em>, <em>package</em>, <em>origin</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gst.Plugin.register_static_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>major_version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the major version number of the GStreamer core that the plugin was compiled for, you can just use GST_VERSION_MAJOR here</li>
+<li><strong>minor_version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the minor version number of the GStreamer core that the plugin was compiled for, you can just use GST_VERSION_MINOR here</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a unique name of the plugin (ideally prefixed with an application- or library-specific namespace prefix in order to avoid name conflicts in case a similar plugin with the same name ever gets added to GStreamer)</li>
+<li><strong>description</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; description of the plugin</li>
+<li><strong>init_full_func</strong> (<a class="reference internal" href="../callbacks.html#Gst.PluginInitFullFunc" title="Gst.PluginInitFullFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginInitFullFunc</span></tt></a>) &#8211; pointer to the init function with user data of this plugin.</li>
+<li><strong>version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; version string of the plugin</li>
+<li><strong>license</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; effective license of plugin. Must be one of the approved licenses (see <a class="reference internal" href="../structs/PluginDesc.html#Gst.PluginDesc" title="Gst.PluginDesc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDesc</span></tt></a> above) or the plugin will not be registered.</li>
+<li><strong>source</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; source module plugin belongs to</li>
+<li><strong>package</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; shipped package plugin belongs to</li>
+<li><strong>origin</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; URL to provider of plugin</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> to user data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the plugin was registered correctly, otherwise <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Registers a static plugin, ie. a plugin which is private to an application
+or library and contained within the application or library (as opposed to
+being shipped as a separate module file) with a <a class="reference internal" href="../callbacks.html#Gst.PluginInitFullFunc" title="Gst.PluginInitFullFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginInitFullFunc</span></tt></a>
+which allows user data to be passed to the callback function (useful
+for bindings).</p>
+<p>You must make sure that GStreamer has been initialised (with <a class="reference internal" href="../functions.html#Gst.init" title="Gst.init"><tt class="xref py py-class docutils literal"><span class="pre">Gst.init</span></tt></a> () or
+via <tt class="xref py py-class docutils literal"><span class="pre">Gst.init_get_option_group</span></tt> ()) before calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.add_dependency">
+<tt class="descname">add_dependency</tt><big>(</big><em>env_vars</em>, <em>paths</em>, <em>names</em>, <em>flags</em><big>)</big><a class="headerlink" href="#Gst.Plugin.add_dependency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>env_vars</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated array of environment variables affecting the feature set of the plugin (e.g. an environment variable containing paths where to look for additional modules/plugins of a library), or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. Environment variable names may be followed by a path component which will be added to the content of the environment variable, e.g. &#8220;HOME/.mystuff/plugins&#8221;.</li>
+<li><strong>paths</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated array of directories/paths where dependent files may be, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>names</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated array of file names (or file name suffixes, depending on <cite>flags</cite> ) to be used in combination with the paths from <cite>paths</cite> and/or the paths extracted from the environment variables in <cite>env_vars</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.PluginDependencyFlags" title="Gst.PluginDependencyFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDependencyFlags</span></tt></a>) &#8211; optional flags, or <a class="reference internal" href="../flags.html#Gst.PluginDependencyFlags.NONE" title="Gst.PluginDependencyFlags.NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDependencyFlags.NONE</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Make GStreamer aware of external dependencies which affect the feature
+set of this plugin (ie. the elements or typefinders associated with it).</p>
+<p>GStreamer will re-inspect plugins with external dependencies whenever any
+of the external dependencies change. This is useful for plugins which wrap
+other plugin systems, e.g. a plugin which wraps a plugin-based visualisation
+library and makes visualisations available as GStreamer elements, or a
+codec loader which exposes elements and/or caps dependent on what external
+codec libraries are currently installed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.add_dependency_simple">
+<tt class="descname">add_dependency_simple</tt><big>(</big><em>env_vars</em>, <em>paths</em>, <em>names</em>, <em>flags</em><big>)</big><a class="headerlink" href="#Gst.Plugin.add_dependency_simple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>env_vars</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; one or more environment variables (separated by &#8216;:&#8217;, &#8216;;&#8217; or &#8216;,&#8217;), or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. Environment variable names may be followed by a path component which will be added to the content of the environment variable, e.g. &#8220;HOME/.mystuff/plugins:MYSTUFF_PLUGINS_PATH&#8221;</li>
+<li><strong>paths</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; one ore more directory paths (separated by &#8216;:&#8217; or &#8216;;&#8217; or &#8216;,&#8217;), or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. Example: &#8220;/usr/lib/mystuff/plugins&#8221;</li>
+<li><strong>names</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; one or more file names or file name suffixes (separated by commas), or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.PluginDependencyFlags" title="Gst.PluginDependencyFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDependencyFlags</span></tt></a>) &#8211; optional flags, or <a class="reference internal" href="../flags.html#Gst.PluginDependencyFlags.NONE" title="Gst.PluginDependencyFlags.NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDependencyFlags.NONE</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Make GStreamer aware of external dependencies which affect the feature
+set of this plugin (ie. the elements or typefinders associated with it).</p>
+<p>GStreamer will re-inspect plugins with external dependencies whenever any
+of the external dependencies change. This is useful for plugins which wrap
+other plugin systems, e.g. a plugin which wraps a plugin-based visualisation
+library and makes visualisations available as GStreamer elements, or a
+codec loader which exposes elements and/or caps dependent on what external
+codec libraries are currently installed.</p>
+<p>Convenience wrapper function for <a class="reference internal" href="#Gst.Plugin.add_dependency" title="Gst.Plugin.add_dependency"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin.add_dependency</span></tt></a> () which
+takes simple strings as arguments instead of string arrays, with multiple
+arguments separated by predefined delimiters (see above).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_cache_data">
+<tt class="descname">get_cache_data</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_cache_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The cached data as a <a class="reference internal" href="../structs/Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the plugin specific data cache. If it is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> there is no cached data
+stored. This is the case when the registry is getting rebuilt.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_description">
+<tt class="descname">get_description</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the long name of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the long descriptive name of the plugin</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_filename">
+<tt class="descname">get_filename</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the filename of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>get the filename of the plugin</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_license">
+<tt class="descname">get_license</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_license" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the license of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>get the license of the plugin</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_name">
+<tt class="descname">get_name</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the name of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the short name of the plugin</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_origin">
+<tt class="descname">get_origin</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_origin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the origin of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>get the URL where the plugin comes from</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_package">
+<tt class="descname">get_package</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_package" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the package of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>get the package the plugin belongs to.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_release_date_string">
+<tt class="descname">get_release_date_string</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_release_date_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the date string of the plugin, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if not available.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the release date (and possibly time) in form of a string, if available.</p>
+<p>For normal GStreamer plugin releases this will usually just be a date in
+the form of &#8220;YYYY-MM-DD&#8221;, while pre-releases and builds from git may contain
+a time component after the date as well, in which case the string will be
+formatted like &#8220;YYYY-MM-DDTHH:MMZ&#8221; (e.g. &#8220;2012-04-30T09:30Z&#8221;).</p>
+<p>There may be plugins that do not have a valid release date set on them.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_source">
+<tt class="descname">get_source</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the source of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>get the source module the plugin belongs to.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.get_version">
+<tt class="descname">get_version</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the version of the plugin</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>get the version of the plugin</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.is_loaded">
+<tt class="descname">is_loaded</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.is_loaded" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> is loaded, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>queries if the plugin is loaded into memory</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.load">
+<tt class="descname">load</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Plugin.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a reference to a loaded plugin, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Loads <cite>plugin</cite>. Note that the *return value* is the loaded plugin; <cite>plugin</cite> is
+untouched. The normal use pattern of this function goes like this:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">GstPlugin</span> <span class="o">*</span><span class="n">loaded_plugin</span><span class="p">;</span>
+<span class="n">loaded_plugin</span> <span class="o">=</span> <span class="n">gst_plugin_load</span> <span class="p">(</span><span class="n">plugin</span><span class="p">);</span>
+<span class="c1">// presumably, we&#39;re no longer interested in the potentially-unloaded plugin</span>
+<span class="n">gst_object_unref</span> <span class="p">(</span><span class="n">plugin</span><span class="p">);</span>
+<span class="n">plugin</span> <span class="o">=</span> <span class="n">loaded_plugin</span><span class="p">;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Plugin.set_cache_data">
+<tt class="descname">set_cache_data</tt><big>(</big><em>cache_data</em><big>)</big><a class="headerlink" href="#Gst.Plugin.set_cache_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cache_data</strong> (<a class="reference internal" href="../structs/Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a>) &#8211; a structure containing the data to cache</td>
+</tr>
+</tbody>
+</table>
+<p>Adds plugin specific data to cache. Passes the ownership of the structure to
+the <cite>plugin</cite>.</p>
+<p>The cache is flushed every time the registry is rebuilt.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="PluginFeature.html" class="btn btn-neutral float-right" title="Gst.PluginFeature"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Pipeline.html" class="btn btn-neutral" title="Gst.Pipeline"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,985 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      GData 0.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="GData 0.0" href="index.html"/>
+        <link rel="next" title="Constants" href="constants.html"/>
+        <link rel="prev" title="GData.Color" href="structs/Color.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">GData 0.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">GData 0.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GData_0.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#GData.BatchOperationType" title="GData.BatchOperationType"><tt class="xref py py-class docutils literal"><span class="pre">GData.BatchOperationType</span></tt></a></li>
+<li><a class="reference internal" href="#GData.ClientLoginAuthorizerError" title="GData.ClientLoginAuthorizerError"><tt class="xref py py-class docutils literal"><span class="pre">GData.ClientLoginAuthorizerError</span></tt></a></li>
+<li><a class="reference internal" href="#GData.DocumentsServiceError" title="GData.DocumentsServiceError"><tt class="xref py py-class docutils literal"><span class="pre">GData.DocumentsServiceError</span></tt></a></li>
+<li><a class="reference internal" href="#GData.MediaExpression" title="GData.MediaExpression"><tt class="xref py py-class docutils literal"><span class="pre">GData.MediaExpression</span></tt></a></li>
+<li><a class="reference internal" href="#GData.MediaMedium" title="GData.MediaMedium"><tt class="xref py py-class docutils literal"><span class="pre">GData.MediaMedium</span></tt></a></li>
+<li><a class="reference internal" href="#GData.OperationType" title="GData.OperationType"><tt class="xref py py-class docutils literal"><span class="pre">GData.OperationType</span></tt></a></li>
+<li><a class="reference internal" href="#GData.ParserError" title="GData.ParserError"><tt class="xref py py-class docutils literal"><span class="pre">GData.ParserError</span></tt></a></li>
+<li><a class="reference internal" href="#GData.PicasaWebVisibility" title="GData.PicasaWebVisibility"><tt class="xref py py-class docutils literal"><span class="pre">GData.PicasaWebVisibility</span></tt></a></li>
+<li><a class="reference internal" href="#GData.ServiceError" title="GData.ServiceError"><tt class="xref py py-class docutils literal"><span class="pre">GData.ServiceError</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubeAge" title="GData.YouTubeAge"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeAge</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubeFormat" title="GData.YouTubeFormat"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeFormat</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubePermission" title="GData.YouTubePermission"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubePermission</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubeSafeSearch" title="GData.YouTubeSafeSearch"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeSafeSearch</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubeServiceError" title="GData.YouTubeServiceError"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeServiceError</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubeSortOrder" title="GData.YouTubeSortOrder"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeSortOrder</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubeStandardFeedType" title="GData.YouTubeStandardFeedType"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeStandardFeedType</span></tt></a></li>
+<li><a class="reference internal" href="#GData.YouTubeUploader" title="GData.YouTubeUploader"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeUploader</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="batchoperationtype">
+<h2>BatchOperationType<a class="headerlink" href="#batchoperationtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.BatchOperationType">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">BatchOperationType</tt><a class="headerlink" href="#GData.BatchOperationType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Indicates which type of batch operation caused the current <a class="reference internal" href="callbacks.html#GData.BatchOperationCallback" title="GData.BatchOperationCallback"><tt class="xref py py-class docutils literal"><span class="pre">GData.BatchOperationCallback</span></tt></a> to be called.</p>
+<dl class="attribute">
+<dt id="GData.BatchOperationType.QUERY">
+<tt class="descname">QUERY</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.BatchOperationType.QUERY" title="Permalink to this definition">¶</a></dt>
+<dd><p>a query operation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.BatchOperationType.INSERTION">
+<tt class="descname">INSERTION</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.BatchOperationType.INSERTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>an insertion operation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.BatchOperationType.UPDATE">
+<tt class="descname">UPDATE</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.BatchOperationType.UPDATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>an update operation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.BatchOperationType.DELETION">
+<tt class="descname">DELETION</tt><em class="property"> = 3</em><a class="headerlink" href="#GData.BatchOperationType.DELETION" title="Permalink to this definition">¶</a></dt>
+<dd><p>a deletion operation</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="clientloginauthorizererror">
+<h2>ClientLoginAuthorizerError<a class="headerlink" href="#clientloginauthorizererror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.ClientLoginAuthorizerError">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">ClientLoginAuthorizerError</tt><a class="headerlink" href="#GData.ClientLoginAuthorizerError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error codes for authentication and authorization operations on <a class="reference internal" href="classes/ClientLoginAuthorizer.html#GData.ClientLoginAuthorizer" title="GData.ClientLoginAuthorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.ClientLoginAuthorizer</span></tt></a>. See the
+online ClientLogin documentation for
+more information.</p>
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.BAD_AUTHENTICATION">
+<tt class="descname">BAD_AUTHENTICATION</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.BAD_AUTHENTICATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The login request used a username or password that is not recognized.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.NOT_VERIFIED">
+<tt class="descname">NOT_VERIFIED</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.NOT_VERIFIED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The account email address has not been verified. The user will need to access their Google account directly to resolve the issue before logging in using a non-Google application.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.TERMS_NOT_AGREED">
+<tt class="descname">TERMS_NOT_AGREED</tt><em class="property"> = 3</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.TERMS_NOT_AGREED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user has not agreed to terms. The user will need to access their Google account directly to resolve the issue before logging in using a non-Google application.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.CAPTCHA_REQUIRED">
+<tt class="descname">CAPTCHA_REQUIRED</tt><em class="property"> = 4</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.CAPTCHA_REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd><p>A CAPTCHA is required. (A response with this error code will also contain an image URI and a CAPTCHA token.)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.ACCOUNT_DELETED">
+<tt class="descname">ACCOUNT_DELETED</tt><em class="property"> = 5</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.ACCOUNT_DELETED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user account has been deleted.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.ACCOUNT_DISABLED">
+<tt class="descname">ACCOUNT_DISABLED</tt><em class="property"> = 6</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.ACCOUNT_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user account has been disabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.SERVICE_DISABLED">
+<tt class="descname">SERVICE_DISABLED</tt><em class="property"> = 7</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.SERVICE_DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user&#8217;s access to the specified service has been disabled. (The user account may still be valid.)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.ACCOUNT_MIGRATED">
+<tt class="descname">ACCOUNT_MIGRATED</tt><em class="property"> = 8</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.ACCOUNT_MIGRATED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user&#8217;s account login details have been migrated to a new system. (This is used for the transition from the old YouTube login details to the new ones.)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ClientLoginAuthorizerError.INVALID_SECOND_FACTOR">
+<tt class="descname">INVALID_SECOND_FACTOR</tt><em class="property"> = 9</em><a class="headerlink" href="#GData.ClientLoginAuthorizerError.INVALID_SECOND_FACTOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user&#8217;s account requires an application-specific password to be used.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="documentsserviceerror">
+<h2>DocumentsServiceError<a class="headerlink" href="#documentsserviceerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.DocumentsServiceError">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">DocumentsServiceError</tt><a class="headerlink" href="#GData.DocumentsServiceError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error codes for <a class="reference internal" href="classes/DocumentsService.html#GData.DocumentsService" title="GData.DocumentsService"><tt class="xref py py-class docutils literal"><span class="pre">GData.DocumentsService</span></tt></a> operations.</p>
+<dl class="attribute">
+<dt id="GData.DocumentsServiceError.TYPE">
+<tt class="descname">TYPE</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.DocumentsServiceError.TYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the content type of a provided file was invalid</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="mediaexpression">
+<h2>MediaExpression<a class="headerlink" href="#mediaexpression" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.MediaExpression">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">MediaExpression</tt><a class="headerlink" href="#GData.MediaExpression" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>An enum representing the possible values of <a class="reference internal" href="classes/MediaContent.html#GData.MediaContent" title="GData.MediaContent"><tt class="xref py py-class docutils literal"><span class="pre">GData.MediaContent</span></tt></a> <a class="reference internal" href="../GUPnPAV_1.0/classes/SearchCriteriaParser.html#expression"><em>:expression</em></a>.</p>
+<dl class="attribute">
+<dt id="GData.MediaExpression.SAMPLE">
+<tt class="descname">SAMPLE</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.MediaExpression.SAMPLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is a sample of a larger video</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.MediaExpression.FULL">
+<tt class="descname">FULL</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.MediaExpression.FULL" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is the full version</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.MediaExpression.NONSTOP">
+<tt class="descname">NONSTOP</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.MediaExpression.NONSTOP" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is a continuous stream</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="mediamedium">
+<h2>MediaMedium<a class="headerlink" href="#mediamedium" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.MediaMedium">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">MediaMedium</tt><a class="headerlink" href="#GData.MediaMedium" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>An enum representing the possible values of <a class="reference internal" href="classes/MediaContent.html#GData.MediaContent" title="GData.MediaContent"><tt class="xref py py-class docutils literal"><span class="pre">GData.MediaContent</span></tt></a> <a class="reference internal" href="classes/MediaContent.html#medium"><em>:medium</em></a>.</p>
+<dl class="attribute">
+<dt id="GData.MediaMedium.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.MediaMedium.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>the type of the media is unknown</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.MediaMedium.IMAGE">
+<tt class="descname">IMAGE</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.MediaMedium.IMAGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is an image</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.MediaMedium.AUDIO">
+<tt class="descname">AUDIO</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.MediaMedium.AUDIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is an audio stream</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.MediaMedium.VIDEO">
+<tt class="descname">VIDEO</tt><em class="property"> = 3</em><a class="headerlink" href="#GData.MediaMedium.VIDEO" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is a video</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.MediaMedium.DOCUMENT">
+<tt class="descname">DOCUMENT</tt><em class="property"> = 4</em><a class="headerlink" href="#GData.MediaMedium.DOCUMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is another type of document</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.MediaMedium.EXECUTABLE">
+<tt class="descname">EXECUTABLE</tt><em class="property"> = 5</em><a class="headerlink" href="#GData.MediaMedium.EXECUTABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the media is an executable file</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="operationtype">
+<h2>OperationType<a class="headerlink" href="#operationtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.OperationType">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">OperationType</tt><a class="headerlink" href="#GData.OperationType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Representations of the different operations performed by the library.</p>
+<dl class="attribute">
+<dt id="GData.OperationType.QUERY">
+<tt class="descname">QUERY</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.OperationType.QUERY" title="Permalink to this definition">¶</a></dt>
+<dd><p>a query</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.OperationType.INSERTION">
+<tt class="descname">INSERTION</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.OperationType.INSERTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>an insertion of a <a class="reference internal" href="classes/Entry.html#GData.Entry" title="GData.Entry"><tt class="xref py py-class docutils literal"><span class="pre">GData.Entry</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.OperationType.UPDATE">
+<tt class="descname">UPDATE</tt><em class="property"> = 3</em><a class="headerlink" href="#GData.OperationType.UPDATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>an update of a <a class="reference internal" href="classes/Entry.html#GData.Entry" title="GData.Entry"><tt class="xref py py-class docutils literal"><span class="pre">GData.Entry</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.OperationType.DELETION">
+<tt class="descname">DELETION</tt><em class="property"> = 4</em><a class="headerlink" href="#GData.OperationType.DELETION" title="Permalink to this definition">¶</a></dt>
+<dd><p>a deletion of a <a class="reference internal" href="classes/Entry.html#GData.Entry" title="GData.Entry"><tt class="xref py py-class docutils literal"><span class="pre">GData.Entry</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.OperationType.DOWNLOAD">
+<tt class="descname">DOWNLOAD</tt><em class="property"> = 5</em><a class="headerlink" href="#GData.OperationType.DOWNLOAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>a download of a file</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.OperationType.UPLOAD">
+<tt class="descname">UPLOAD</tt><em class="property"> = 6</em><a class="headerlink" href="#GData.OperationType.UPLOAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>an upload of a file</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.OperationType.AUTHENTICATION">
+<tt class="descname">AUTHENTICATION</tt><em class="property"> = 7</em><a class="headerlink" href="#GData.OperationType.AUTHENTICATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>authentication with the service</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.OperationType.BATCH">
+<tt class="descname">BATCH</tt><em class="property"> = 8</em><a class="headerlink" href="#GData.OperationType.BATCH" title="Permalink to this definition">¶</a></dt>
+<dd><p>a batch operation with <a class="reference internal" href="classes/BatchOperation.html#GData.BatchOperation" title="GData.BatchOperation"><tt class="xref py py-class docutils literal"><span class="pre">GData.BatchOperation</span></tt></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="parsererror">
+<h2>ParserError<a class="headerlink" href="#parsererror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.ParserError">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">ParserError</tt><a class="headerlink" href="#GData.ParserError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error codes for XML parsing operations.</p>
+<dl class="attribute">
+<dt id="GData.ParserError.PARSING_STRING">
+<tt class="descname">PARSING_STRING</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.ParserError.PARSING_STRING" title="Permalink to this definition">¶</a></dt>
+<dd><p>Error parsing the XML syntax itself</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ParserError.EMPTY_DOCUMENT">
+<tt class="descname">EMPTY_DOCUMENT</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.ParserError.EMPTY_DOCUMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Empty document</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="picasawebvisibility">
+<h2>PicasaWebVisibility<a class="headerlink" href="#picasawebvisibility" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.PicasaWebVisibility">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">PicasaWebVisibility</tt><a class="headerlink" href="#GData.PicasaWebVisibility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Visibility statuses available for albums on PicasaWeb. For more information, see the
+online documentation.</p>
+<dl class="attribute">
+<dt id="GData.PicasaWebVisibility.PUBLIC">
+<tt class="descname">PUBLIC</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.PicasaWebVisibility.PUBLIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>the album is visible to everyone, regardless of whether they&#8217;re authenticated</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.PicasaWebVisibility.PRIVATE">
+<tt class="descname">PRIVATE</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.PicasaWebVisibility.PRIVATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the album is visible only to authenticated users in a whitelist</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="serviceerror">
+<h2>ServiceError<a class="headerlink" href="#serviceerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.ServiceError">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">ServiceError</tt><a class="headerlink" href="#GData.ServiceError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error codes for <a class="reference internal" href="classes/Service.html#GData.Service" title="GData.Service"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service</span></tt></a> operations.</p>
+<dl class="attribute">
+<dt id="GData.ServiceError.UNAVAILABLE">
+<tt class="descname">UNAVAILABLE</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.ServiceError.UNAVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The service is unavailable due to maintainence or other reasons (e.g. network errors at the server end)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.PROTOCOL_ERROR">
+<tt class="descname">PROTOCOL_ERROR</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.ServiceError.PROTOCOL_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The client or server unexpectedly strayed from the protocol (fatal error)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.ENTRY_ALREADY_INSERTED">
+<tt class="descname">ENTRY_ALREADY_INSERTED</tt><em class="property"> = 3</em><a class="headerlink" href="#GData.ServiceError.ENTRY_ALREADY_INSERTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>An entry has already been inserted, and cannot be re-inserted</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.AUTHENTICATION_REQUIRED">
+<tt class="descname">AUTHENTICATION_REQUIRED</tt><em class="property"> = 4</em><a class="headerlink" href="#GData.ServiceError.AUTHENTICATION_REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The user attempted to do something which required authentication, and they weren&#8217;t authenticated or didn&#8217;t have authorization for the operation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.NOT_FOUND">
+<tt class="descname">NOT_FOUND</tt><em class="property"> = 5</em><a class="headerlink" href="#GData.ServiceError.NOT_FOUND" title="Permalink to this definition">¶</a></dt>
+<dd><p>A requested resource (feed or entry) was not found on the server</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.CONFLICT">
+<tt class="descname">CONFLICT</tt><em class="property"> = 6</em><a class="headerlink" href="#GData.ServiceError.CONFLICT" title="Permalink to this definition">¶</a></dt>
+<dd><p>There was a conflict when updating an entry on the server; the server-side copy was modified inbetween downloading and uploading the modified entry</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.FORBIDDEN">
+<tt class="descname">FORBIDDEN</tt><em class="property"> = 7</em><a class="headerlink" href="#GData.ServiceError.FORBIDDEN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic error for a forbidden action (not due to having insufficient permissions)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.BAD_QUERY_PARAMETER">
+<tt class="descname">BAD_QUERY_PARAMETER</tt><em class="property"> = 8</em><a class="headerlink" href="#GData.ServiceError.BAD_QUERY_PARAMETER" title="Permalink to this definition">¶</a></dt>
+<dd><p>A given query parameter was invalid for the query type</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.NETWORK_ERROR">
+<tt class="descname">NETWORK_ERROR</tt><em class="property"> = 9</em><a class="headerlink" href="#GData.ServiceError.NETWORK_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The service is unavailable due to local network errors (e.g. no Internet connection)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.PROXY_ERROR">
+<tt class="descname">PROXY_ERROR</tt><em class="property"> = 10</em><a class="headerlink" href="#GData.ServiceError.PROXY_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The service is unavailable due to proxy network errors (e.g. proxy unreachable)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.ServiceError.WITH_BATCH_OPERATION">
+<tt class="descname">WITH_BATCH_OPERATION</tt><em class="property"> = 11</em><a class="headerlink" href="#GData.ServiceError.WITH_BATCH_OPERATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic error when running a batch operation and the whole operation fails</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubeage">
+<h2>YouTubeAge<a class="headerlink" href="#youtubeage" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubeAge">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubeAge</tt><a class="headerlink" href="#GData.YouTubeAge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Video ages, allowing queries to be limited to videos uploaded in a recent time period.</p>
+<dl class="attribute">
+<dt id="GData.YouTubeAge.ALL_TIME">
+<tt class="descname">ALL_TIME</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubeAge.ALL_TIME" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve all videos, regardless of the date they were uploaded</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeAge.TODAY">
+<tt class="descname">TODAY</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubeAge.TODAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve only videos uploaded in the past day</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeAge.THIS_WEEK">
+<tt class="descname">THIS_WEEK</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.YouTubeAge.THIS_WEEK" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve only videos uploaded in the past week</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeAge.THIS_MONTH">
+<tt class="descname">THIS_MONTH</tt><em class="property"> = 3</em><a class="headerlink" href="#GData.YouTubeAge.THIS_MONTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve only videos uploaded in the past month</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubeformat">
+<h2>YouTubeFormat<a class="headerlink" href="#youtubeformat" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubeFormat">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubeFormat</tt><a class="headerlink" href="#GData.YouTubeFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Video formats available on YouTube. For more information, see the
+online documentation.</p>
+<dl class="attribute">
+<dt id="GData.YouTubeFormat.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubeFormat.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve videos in all formats when querying the service</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeFormat.RTSP_H263_AMR">
+<tt class="descname">RTSP_H263_AMR</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubeFormat.RTSP_H263_AMR" title="Permalink to this definition">¶</a></dt>
+<dd><p>RTSP streaming URI for mobile video playback; H.263 video (up to 176×144) and AMR audio</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeFormat.HTTP_SWF">
+<tt class="descname">HTTP_SWF</tt><em class="property"> = 5</em><a class="headerlink" href="#GData.YouTubeFormat.HTTP_SWF" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP URI to the embeddable player (SWF) for this video</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeFormat.RTSP_MPEG4_AAC">
+<tt class="descname">RTSP_MPEG4_AAC</tt><em class="property"> = 6</em><a class="headerlink" href="#GData.YouTubeFormat.RTSP_MPEG4_AAC" title="Permalink to this definition">¶</a></dt>
+<dd><p>RTSP streaming URI for mobile video playback; MPEG-4 SP video (up to 176×144) and AAC audio</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubepermission">
+<h2>YouTubePermission<a class="headerlink" href="#youtubepermission" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubePermission">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubePermission</tt><a class="headerlink" href="#GData.YouTubePermission" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Permissions for actions which can be set on a <a class="reference internal" href="classes/YouTubeVideo.html#GData.YouTubeVideo" title="GData.YouTubeVideo"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeVideo</span></tt></a> using <a class="reference internal" href="classes/YouTubeVideo.html#GData.YouTubeVideo.set_access_control" title="GData.YouTubeVideo.set_access_control"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeVideo.set_access_control</span></tt></a> ().</p>
+<p>The only actions which can have the <a class="reference internal" href="#GData.YouTubePermission.MODERATED" title="GData.YouTubePermission.MODERATED"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubePermission.MODERATED</span></tt></a> permission are
+<a class="reference internal" href="constants.html#GData.YOUTUBE_ACTION_RATE" title="GData.YOUTUBE_ACTION_RATE"><tt class="xref py py-class docutils literal"><span class="pre">GData.YOUTUBE_ACTION_RATE</span></tt></a> and <a class="reference internal" href="constants.html#GData.YOUTUBE_ACTION_COMMENT" title="GData.YOUTUBE_ACTION_COMMENT"><tt class="xref py py-class docutils literal"><span class="pre">GData.YOUTUBE_ACTION_COMMENT</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="GData.YouTubePermission.ALLOWED">
+<tt class="descname">ALLOWED</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubePermission.ALLOWED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the action is allowed for everyone</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubePermission.DENIED">
+<tt class="descname">DENIED</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubePermission.DENIED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the action is denied for everyone</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubePermission.MODERATED">
+<tt class="descname">MODERATED</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.YouTubePermission.MODERATED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the action is moderated by the video owner</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubesafesearch">
+<h2>YouTubeSafeSearch<a class="headerlink" href="#youtubesafesearch" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubeSafeSearch">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubeSafeSearch</tt><a class="headerlink" href="#GData.YouTubeSafeSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Safe search levels for removing restricted entries from query results. For more information, see the
+online documentation.</p>
+<dl class="attribute">
+<dt id="GData.YouTubeSafeSearch.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubeSafeSearch.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>YouTube will not perform any filtering on the search result set</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeSafeSearch.MODERATE">
+<tt class="descname">MODERATE</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubeSafeSearch.MODERATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>YouTube will filter some content from search results and, at the least, will filter content that is restricted in your locale</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeSafeSearch.STRICT">
+<tt class="descname">STRICT</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.YouTubeSafeSearch.STRICT" title="Permalink to this definition">¶</a></dt>
+<dd><p>YouTube will try to exclude all restricted content from the search result set</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubeserviceerror">
+<h2>YouTubeServiceError<a class="headerlink" href="#youtubeserviceerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubeServiceError">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubeServiceError</tt><a class="headerlink" href="#GData.YouTubeServiceError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error codes for <a class="reference internal" href="classes/YouTubeService.html#GData.YouTubeService" title="GData.YouTubeService"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeService</span></tt></a> operations.</p>
+<dl class="attribute">
+<dt id="GData.YouTubeServiceError.API_QUOTA_EXCEEDED">
+<tt class="descname">API_QUOTA_EXCEEDED</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubeServiceError.API_QUOTA_EXCEEDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the API request quota for this developer account has been exceeded</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeServiceError.ENTRY_QUOTA_EXCEEDED">
+<tt class="descname">ENTRY_QUOTA_EXCEEDED</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubeServiceError.ENTRY_QUOTA_EXCEEDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the entry (e.g. video) quota for this user account has been exceeded</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeServiceError.CHANNEL_REQUIRED">
+<tt class="descname">CHANNEL_REQUIRED</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.YouTubeServiceError.CHANNEL_REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the currently authenticated user doesn&#8217;t have a YouTube channel, but the current action requires one; if this error is received, inform the user that they need a YouTube channel, and provide a link to https://www.youtube.com/create_channel</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubesortorder">
+<h2>YouTubeSortOrder<a class="headerlink" href="#youtubesortorder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubeSortOrder">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubeSortOrder</tt><a class="headerlink" href="#GData.YouTubeSortOrder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Sort orders for the search results from queries. They specify the order of the designated order field.</p>
+<dl class="attribute">
+<dt id="GData.YouTubeSortOrder.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubeSortOrder.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>do not explicitly sort in any sense</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeSortOrder.ASCENDING">
+<tt class="descname">ASCENDING</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubeSortOrder.ASCENDING" title="Permalink to this definition">¶</a></dt>
+<dd><p>sort results in ascending order of the order field</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeSortOrder.DESCENDING">
+<tt class="descname">DESCENDING</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.YouTubeSortOrder.DESCENDING" title="Permalink to this definition">¶</a></dt>
+<dd><p>sort results in descending order of the order field</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubestandardfeedtype">
+<h2>YouTubeStandardFeedType<a class="headerlink" href="#youtubestandardfeedtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubeStandardFeedType">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubeStandardFeedType</tt><a class="headerlink" href="#GData.YouTubeStandardFeedType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Standard feed types for standard feed queries with <a class="reference internal" href="classes/YouTubeService.html#GData.YouTubeService.query_standard_feed" title="GData.YouTubeService.query_standard_feed"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeService.query_standard_feed</span></tt></a> (). For more information, see
+the online documentation.</p>
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.TOP_RATED_FEED">
+<tt class="descname">TOP_RATED_FEED</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.TOP_RATED_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains the most highly rated YouTube videos.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.TOP_FAVORITES_FEED">
+<tt class="descname">TOP_FAVORITES_FEED</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.TOP_FAVORITES_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains videos most frequently flagged as favorite videos.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.MOST_VIEWED_FEED">
+<tt class="descname">MOST_VIEWED_FEED</tt><em class="property"> = 2</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.MOST_VIEWED_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains the most frequently watched YouTube videos.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.MOST_POPULAR_FEED">
+<tt class="descname">MOST_POPULAR_FEED</tt><em class="property"> = 3</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.MOST_POPULAR_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains the most popular YouTube videos, selected using an algorithm that combines many different signals to determine overall popularity.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.MOST_RECENT_FEED">
+<tt class="descname">MOST_RECENT_FEED</tt><em class="property"> = 4</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.MOST_RECENT_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains the videos most recently submitted to YouTube.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.MOST_DISCUSSED_FEED">
+<tt class="descname">MOST_DISCUSSED_FEED</tt><em class="property"> = 5</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.MOST_DISCUSSED_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains the YouTube videos that have received the most comments.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.MOST_LINKED_FEED">
+<tt class="descname">MOST_LINKED_FEED</tt><em class="property"> = 6</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.MOST_LINKED_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains the YouTube videos that receive the most links from other websites.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.MOST_RESPONDED_FEED">
+<tt class="descname">MOST_RESPONDED_FEED</tt><em class="property"> = 7</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.MOST_RESPONDED_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains YouTube videos that receive the most video responses.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.RECENTLY_FEATURED_FEED">
+<tt class="descname">RECENTLY_FEATURED_FEED</tt><em class="property"> = 8</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.RECENTLY_FEATURED_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains videos recently featured on the YouTube home page or featured videos tab.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeStandardFeedType.WATCH_ON_MOBILE_FEED">
+<tt class="descname">WATCH_ON_MOBILE_FEED</tt><em class="property"> = 9</em><a class="headerlink" href="#GData.YouTubeStandardFeedType.WATCH_ON_MOBILE_FEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This feed contains videos suitable for playback on mobile devices.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="youtubeuploader">
+<h2>YouTubeUploader<a class="headerlink" href="#youtubeuploader" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.YouTubeUploader">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">YouTubeUploader</tt><a class="headerlink" href="#GData.YouTubeUploader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Video uploaders, allowing queries to be limited to returning videos uploaded by YouTube partners.</p>
+<dl class="attribute">
+<dt id="GData.YouTubeUploader.ALL">
+<tt class="descname">ALL</tt><em class="property"> = 0</em><a class="headerlink" href="#GData.YouTubeUploader.ALL" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve all videos, regardless of who uploaded them</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GData.YouTubeUploader.PARTNER">
+<tt class="descname">PARTNER</tt><em class="property"> = 1</em><a class="headerlink" href="#GData.YouTubeUploader.PARTNER" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve only videos uploaded by YouTube partners</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="constants.html" class="btn btn-neutral float-right" title="Constants"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="structs/Color.html" class="btn btn-neutral" title="GData.Color"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

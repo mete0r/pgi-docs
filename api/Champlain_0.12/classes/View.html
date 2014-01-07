@@ -1,0 +1,1316 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Champlain.View -
+    
+      Classes -
+    
+      Champlain 0.12 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Champlain.Viewport" href="Viewport.html"/>
+        <link rel="prev" title="Champlain.TileSource" href="TileSource.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Champlain 0.12</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Champlain.View</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Champlain 0.12</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Champlain.View</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Champlain_0.12/classes/View" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="champlain-view">
+<h1>Champlain.View<a class="headerlink" href="#champlain-view" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-76839b313c5e020d2d84674f4e6b2529ba2256d0.png" alt="Inheritance diagram of Champlain.View" usemap="#inheritance9637aadd73" class="inheritance"/>
+<map id="inheritance9637aadd73" name="inheritance9637aadd73">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="220,5,335,29"/>
+<area shape="rect" id="node2" href="../../Atk_1.0/interfaces/ImplementorIface.html#Atk.ImplementorIface" title="Atk.ImplementorIface" alt="" coords="5,77,131,101"/>
+<area shape="rect" id="node4" href="../../Clutter_1.0/interfaces/Animatable.html#Clutter.Animatable" title="Clutter.Animatable" alt="" coords="155,77,267,101"/>
+<area shape="rect" id="node6" href="../../Clutter_1.0/interfaces/Container.html#Clutter.Container" title="Clutter.Container" alt="" coords="291,77,397,101"/>
+<area shape="rect" id="node8" href="../../Clutter_1.0/interfaces/Scriptable.html#Clutter.Scriptable" title="Clutter.Scriptable" alt="" coords="421,77,531,101"/>
+<area shape="rect" id="node13" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor" alt="" coords="303,149,385,173"/>
+<area shape="rect" id="node10" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="579,5,675,29"/>
+<area shape="rect" id="node11" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="555,77,699,101"/>
+<area shape="rect" id="node19" href="#Champlain.View" title="Champlain.View" alt="" coords="295,221,393,245"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Champlain.View.new" title="Champlain.View.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.add_layer" title="Champlain.View.add_layer"><tt class="xref py py-obj docutils literal"><span class="pre">add_layer</span></tt></a>(layer)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.add_overlay_source" title="Champlain.View.add_overlay_source"><tt class="xref py py-obj docutils literal"><span class="pre">add_overlay_source</span></tt></a>(map_source, opacity)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.bin_layout_add" title="Champlain.View.bin_layout_add"><tt class="xref py py-obj docutils literal"><span class="pre">bin_layout_add</span></tt></a>(child, x_align, y_align)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.center_on" title="Champlain.View.center_on"><tt class="xref py py-obj docutils literal"><span class="pre">center_on</span></tt></a>(latitude, longitude)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.ensure_layers_visible" title="Champlain.View.ensure_layers_visible"><tt class="xref py py-obj docutils literal"><span class="pre">ensure_layers_visible</span></tt></a>(animate)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.ensure_visible" title="Champlain.View.ensure_visible"><tt class="xref py py-obj docutils literal"><span class="pre">ensure_visible</span></tt></a>(bbox, animate)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_animate_zoom" title="Champlain.View.get_animate_zoom"><tt class="xref py py-obj docutils literal"><span class="pre">get_animate_zoom</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_background_pattern" title="Champlain.View.get_background_pattern"><tt class="xref py py-obj docutils literal"><span class="pre">get_background_pattern</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_bounding_box" title="Champlain.View.get_bounding_box"><tt class="xref py py-obj docutils literal"><span class="pre">get_bounding_box</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_center_latitude" title="Champlain.View.get_center_latitude"><tt class="xref py py-obj docutils literal"><span class="pre">get_center_latitude</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_center_longitude" title="Champlain.View.get_center_longitude"><tt class="xref py py-obj docutils literal"><span class="pre">get_center_longitude</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_deceleration" title="Champlain.View.get_deceleration"><tt class="xref py py-obj docutils literal"><span class="pre">get_deceleration</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_keep_center_on_resize" title="Champlain.View.get_keep_center_on_resize"><tt class="xref py py-obj docutils literal"><span class="pre">get_keep_center_on_resize</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_kinetic_mode" title="Champlain.View.get_kinetic_mode"><tt class="xref py py-obj docutils literal"><span class="pre">get_kinetic_mode</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_license_actor" title="Champlain.View.get_license_actor"><tt class="xref py py-obj docutils literal"><span class="pre">get_license_actor</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_map_source" title="Champlain.View.get_map_source"><tt class="xref py py-obj docutils literal"><span class="pre">get_map_source</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_max_zoom_level" title="Champlain.View.get_max_zoom_level"><tt class="xref py py-obj docutils literal"><span class="pre">get_max_zoom_level</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_min_zoom_level" title="Champlain.View.get_min_zoom_level"><tt class="xref py py-obj docutils literal"><span class="pre">get_min_zoom_level</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_overlay_sources" title="Champlain.View.get_overlay_sources"><tt class="xref py py-obj docutils literal"><span class="pre">get_overlay_sources</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_state" title="Champlain.View.get_state"><tt class="xref py py-obj docutils literal"><span class="pre">get_state</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_viewport_origin" title="Champlain.View.get_viewport_origin"><tt class="xref py py-obj docutils literal"><span class="pre">get_viewport_origin</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_zoom_level" title="Champlain.View.get_zoom_level"><tt class="xref py py-obj docutils literal"><span class="pre">get_zoom_level</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.get_zoom_on_double_click" title="Champlain.View.get_zoom_on_double_click"><tt class="xref py py-obj docutils literal"><span class="pre">get_zoom_on_double_click</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.go_to" title="Champlain.View.go_to"><tt class="xref py py-obj docutils literal"><span class="pre">go_to</span></tt></a>(latitude, longitude)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.latitude_to_y" title="Champlain.View.latitude_to_y"><tt class="xref py py-obj docutils literal"><span class="pre">latitude_to_y</span></tt></a>(latitude)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.longitude_to_x" title="Champlain.View.longitude_to_x"><tt class="xref py py-obj docutils literal"><span class="pre">longitude_to_x</span></tt></a>(longitude)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.reload_tiles" title="Champlain.View.reload_tiles"><tt class="xref py py-obj docutils literal"><span class="pre">reload_tiles</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.remove_layer" title="Champlain.View.remove_layer"><tt class="xref py py-obj docutils literal"><span class="pre">remove_layer</span></tt></a>(layer)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.remove_overlay_source" title="Champlain.View.remove_overlay_source"><tt class="xref py py-obj docutils literal"><span class="pre">remove_overlay_source</span></tt></a>(map_source)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_animate_zoom" title="Champlain.View.set_animate_zoom"><tt class="xref py py-obj docutils literal"><span class="pre">set_animate_zoom</span></tt></a>(value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_background_pattern" title="Champlain.View.set_background_pattern"><tt class="xref py py-obj docutils literal"><span class="pre">set_background_pattern</span></tt></a>(background)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_deceleration" title="Champlain.View.set_deceleration"><tt class="xref py py-obj docutils literal"><span class="pre">set_deceleration</span></tt></a>(rate)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_keep_center_on_resize" title="Champlain.View.set_keep_center_on_resize"><tt class="xref py py-obj docutils literal"><span class="pre">set_keep_center_on_resize</span></tt></a>(value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_kinetic_mode" title="Champlain.View.set_kinetic_mode"><tt class="xref py py-obj docutils literal"><span class="pre">set_kinetic_mode</span></tt></a>(kinetic)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_map_source" title="Champlain.View.set_map_source"><tt class="xref py py-obj docutils literal"><span class="pre">set_map_source</span></tt></a>(map_source)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_max_zoom_level" title="Champlain.View.set_max_zoom_level"><tt class="xref py py-obj docutils literal"><span class="pre">set_max_zoom_level</span></tt></a>(zoom_level)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_min_zoom_level" title="Champlain.View.set_min_zoom_level"><tt class="xref py py-obj docutils literal"><span class="pre">set_min_zoom_level</span></tt></a>(zoom_level)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_zoom_level" title="Champlain.View.set_zoom_level"><tt class="xref py py-obj docutils literal"><span class="pre">set_zoom_level</span></tt></a>(zoom_level)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.set_zoom_on_double_click" title="Champlain.View.set_zoom_on_double_click"><tt class="xref py py-obj docutils literal"><span class="pre">set_zoom_on_double_click</span></tt></a>(value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.stop_go_to" title="Champlain.View.stop_go_to"><tt class="xref py py-obj docutils literal"><span class="pre">stop_go_to</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.x_to_longitude" title="Champlain.View.x_to_longitude"><tt class="xref py py-obj docutils literal"><span class="pre">x_to_longitude</span></tt></a>(x)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.y_to_latitude" title="Champlain.View.y_to_latitude"><tt class="xref py py-obj docutils literal"><span class="pre">y_to_latitude</span></tt></a>(y)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Champlain.View.zoom_in" title="Champlain.View.zoom_in"><tt class="xref py py-obj docutils literal"><span class="pre">zoom_in</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Champlain.View.zoom_out" title="Champlain.View.zoom_out"><tt class="xref py py-obj docutils literal"><span class="pre">zoom_out</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="champlain-view-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="animate-zoom">animate-zoom</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Animate zoom change when zooming in/out</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="background-pattern">background-pattern</span></td>
+<td><a class="reference internal" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></td>
+<td>r/w</td>
+<td>The tile&#8217;s background pattern</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="deceleration">deceleration</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+<td>Rate at which the view will decelerate in kinetic mode.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="goto-animation-duration">goto-animation-duration</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>The duration of an animation when going to a location</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="goto-animation-mode">goto-animation-mode</span></td>
+<td><a class="reference internal" href="../../Clutter_1.0/enums.html#Clutter.AnimationMode" title="Clutter.AnimationMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode</span></tt></a></td>
+<td>r/w</td>
+<td>The mode of animation when going to a location</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="keep-center-on-resize">keep-center-on-resize</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Keep the current centered position upon resizing</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="kinetic-mode">kinetic-mode</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Determines whether the view should use kinetic mode.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="latitude">latitude</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+<td>The latitude coordonate of the map</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="longitude">longitude</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+<td>The longitude coordonate of the map</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="map-source">map-source</span></td>
+<td><a class="reference internal" href="MapSource.html#Champlain.MapSource" title="Champlain.MapSource"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.MapSource</span></tt></a></td>
+<td>r/w</td>
+<td>The map source being displayed</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="max-zoom-level">max-zoom-level</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>The highest allowed level of zoom</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="min-zoom-level">min-zoom-level</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>The lowest allowed level of zoom</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="zoom-level">zoom-level</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>The level of zoom of the map</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="zoom-on-double-click">zoom-on-double-click</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Zoom in and recenter on double click on the map</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="champlain-view-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="animation-completed">animation-completed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="#Champlain.View" title="Champlain.View"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.View</span></tt></a> <a class="reference internal" href="#animation-completed"><em>::animation-completed</em></a> signal is emitted when any animation in the view ends.  This is a detailed signal.  For example, if you want to be signaled only for go-to animation, you should connect to &#8220;animation-completed::go-to&#8221;.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="layer-relocated">layer-relocated</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Indicates that the layers have been &#8220;relocated&#8221;. In practice this means that every layer should connect to this signal and redraw itself when the signal is emitted. Layer relocation happens when zooming in/out and when panning for more than MAX_INT pixels.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Champlain.View">
+<em class="property">class </em><tt class="descclassname">Champlain.</tt><tt class="descname">View</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Champlain.View" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>, <a class="reference internal" href="../../Clutter_1.0/interfaces/Container.html#Clutter.Container" title="Clutter.Container"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Container</span></tt></a></p>
+<p>The <a class="reference internal" href="#Champlain.View" title="Champlain.View"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.View</span></tt></a> structure contains only private data
+and should be accessed using the provided API</p>
+<dl class="staticmethod">
+<dt id="Champlain.View.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Champlain.View" title="Champlain.View"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.View</span></tt></a> ready to be used as a <a class="reference internal" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates an instance of <a class="reference internal" href="#Champlain.View" title="Champlain.View"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.View</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.add_layer">
+<tt class="descname">add_layer</tt><big>(</big><em>layer</em><big>)</big><a class="headerlink" href="#Champlain.View.add_layer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>layer</strong> (<a class="reference internal" href="Layer.html#Champlain.Layer" title="Champlain.Layer"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.Layer</span></tt></a>) &#8211; a <a class="reference internal" href="Layer.html#Champlain.Layer" title="Champlain.Layer"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.Layer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a new layer to the view</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.add_overlay_source">
+<tt class="descname">add_overlay_source</tt><big>(</big><em>map_source</em>, <em>opacity</em><big>)</big><a class="headerlink" href="#Champlain.View.add_overlay_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>map_source</strong> (<a class="reference internal" href="MapSource.html#Champlain.MapSource" title="Champlain.MapSource"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.MapSource</span></tt></a>) &#8211; </li>
+<li><strong>opacity</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; opacity to use</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a new overlay map source to render tiles with the supplied opacity on top
+of the ordinary map source. Multiple overlay sources can be added.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.bin_layout_add">
+<tt class="descname">bin_layout_add</tt><big>(</big><em>child</em>, <em>x_align</em>, <em>y_align</em><big>)</big><a class="headerlink" href="#Champlain.View.bin_layout_add" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>child</strong> (<a class="reference internal" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; The child to be inserted</li>
+<li><strong>x_align</strong> (<a class="reference internal" href="../../Clutter_1.0/enums.html#Clutter.BinAlignment" title="Clutter.BinAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BinAlignment</span></tt></a>) &#8211; x alignment</li>
+<li><strong>y_align</strong> (<a class="reference internal" href="../../Clutter_1.0/enums.html#Clutter.BinAlignment" title="Clutter.BinAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BinAlignment</span></tt></a>) &#8211; y alignment</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This function inserts a custom actor to the undrelying <a class="reference internal" href="../../Clutter_1.0/classes/BinLayout.html#Clutter.BinLayout" title="Clutter.BinLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BinLayout</span></tt></a>
+manager. The inserted actors appear on top of the map. See <a class="reference internal" href="../../Clutter_1.0/classes/BinLayout.html#Clutter.BinLayout.add" title="Clutter.BinLayout.add"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BinLayout.add</span></tt></a> ()
+for reference.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.center_on">
+<tt class="descname">center_on</tt><big>(</big><em>latitude</em>, <em>longitude</em><big>)</big><a class="headerlink" href="#Champlain.View.center_on" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>latitude</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the longitude to center the map at</li>
+<li><strong>longitude</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the longitude to center the map at</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Centers the map on these coordinates.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.ensure_layers_visible">
+<tt class="descname">ensure_layers_visible</tt><big>(</big><em>animate</em><big>)</big><a class="headerlink" href="#Champlain.View.ensure_layers_visible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>animate</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> to perform animation, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+</tbody>
+</table>
+<p>Changes the map&#8217;s zoom level and center to make sure that the bounding
+boxes of all inserted layers are visible.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.ensure_visible">
+<tt class="descname">ensure_visible</tt><big>(</big><em>bbox</em>, <em>animate</em><big>)</big><a class="headerlink" href="#Champlain.View.ensure_visible" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>bbox</strong> (<a class="reference internal" href="../structs/BoundingBox.html#Champlain.BoundingBox" title="Champlain.BoundingBox"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.BoundingBox</span></tt></a>) &#8211; bounding box of the area that should be visible</li>
+<li><strong>animate</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> to perform animation, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Changes the map&#8217;s zoom level and center to make sure the given area
+is visible</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_animate_zoom">
+<tt class="descname">get_animate_zoom</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_animate_zoom" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the view animates zooms, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether the view animates zoom level changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_background_pattern">
+<tt class="descname">get_background_pattern</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_background_pattern" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The texture.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Clutter_1.0/interfaces/Content.html#Clutter.Content" title="Clutter.Content"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Content</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the current background texture displayed behind the map.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_bounding_box">
+<tt class="descname">get_bounding_box</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_bounding_box" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the bounding box</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/BoundingBox.html#Champlain.BoundingBox" title="Champlain.BoundingBox"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.BoundingBox</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the bounding box for view <cite>view</cite> at current zoom-level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_center_latitude">
+<tt class="descname">get_center_latitude</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_center_latitude" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the latitude.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the latitude of the view&#8217;s center.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_center_longitude">
+<tt class="descname">get_center_longitude</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_center_longitude" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the longitude.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the longitude of the view&#8217;s center.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_deceleration">
+<tt class="descname">get_deceleration</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_deceleration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the view&#8217;s deceleration rate.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the view&#8217;s deceleration rate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_keep_center_on_resize">
+<tt class="descname">get_keep_center_on_resize</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_keep_center_on_resize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the view keeps the center on resize, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether to keep the center on resize</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_kinetic_mode">
+<tt class="descname">get_kinetic_mode</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_kinetic_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for kinetic mode, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for push mode.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the view&#8217;s scroll mode behaviour.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_license_actor">
+<tt class="descname">get_license_actor</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_license_actor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the license actor</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="License.html#Champlain.License" title="Champlain.License"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.License</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <a class="reference internal" href="License.html#Champlain.License" title="Champlain.License"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.License</span></tt></a> actor which is inserted by default into the
+layout manager. It can be manipulated using standard <a class="reference internal" href="../../Clutter_1.0/classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> methods
+(hidden and so on).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_map_source">
+<tt class="descname">get_map_source</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_map_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the view&#8217;s current map source. If you need to keep a reference to the map source then you have to call <tt class="xref py py-class docutils literal"><span class="pre">GObject.Object.ref</span></tt> ().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="MapSource.html#Champlain.MapSource" title="Champlain.MapSource"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.MapSource</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the view&#8217;s current map source.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_max_zoom_level">
+<tt class="descname">get_max_zoom_level</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_max_zoom_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the view&#8217;s maximum allowed zoom level.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the view&#8217;s maximum allowed zoom level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_min_zoom_level">
+<tt class="descname">get_min_zoom_level</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_min_zoom_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the view&#8217;s minimal allowed zoom level.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the view&#8217;s minimal allowed zoom level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_overlay_sources">
+<tt class="descname">get_overlay_sources</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_overlay_sources" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="MapSource.html#Champlain.MapSource" title="Champlain.MapSource"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.MapSource</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Gets a list of overlay sources.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_state">
+<tt class="descname">get_state</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the state.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Champlain.State" title="Champlain.State"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.State</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the view&#8217;s state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_viewport_origin">
+<tt class="descname">get_viewport_origin</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_viewport_origin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">x: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, y: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the x and y coordinate of the viewport in respect to the layer origin.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_zoom_level">
+<tt class="descname">get_zoom_level</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_zoom_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the view&#8217;s current zoom level.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the view&#8217;s current zoom level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.get_zoom_on_double_click">
+<tt class="descname">get_zoom_on_double_click</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.get_zoom_on_double_click" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the view zooms on double click, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether the view zooms on double click.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.go_to">
+<tt class="descname">go_to</tt><big>(</big><em>latitude</em>, <em>longitude</em><big>)</big><a class="headerlink" href="#Champlain.View.go_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>latitude</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the longitude to center the map at</li>
+<li><strong>longitude</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the longitude to center the map at</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Move from the current position to these coordinates. All tiles in the
+intermediate view WILL be loaded!</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.latitude_to_y">
+<tt class="descname">latitude_to_y</tt><big>(</big><em>latitude</em><big>)</big><a class="headerlink" href="#Champlain.View.latitude_to_y" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>latitude</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the latitude</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the y coordinate</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Converts the latitude to view&#8217;s y coordinate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.longitude_to_x">
+<tt class="descname">longitude_to_x</tt><big>(</big><em>longitude</em><big>)</big><a class="headerlink" href="#Champlain.View.longitude_to_x" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>longitude</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the longitude</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the x coordinate</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Converts the longitude to view&#8217;s x coordinate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.reload_tiles">
+<tt class="descname">reload_tiles</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.reload_tiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reloads all visible tiles.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.remove_layer">
+<tt class="descname">remove_layer</tt><big>(</big><em>layer</em><big>)</big><a class="headerlink" href="#Champlain.View.remove_layer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>layer</strong> (<a class="reference internal" href="Layer.html#Champlain.Layer" title="Champlain.Layer"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.Layer</span></tt></a>) &#8211; a <a class="reference internal" href="Layer.html#Champlain.Layer" title="Champlain.Layer"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.Layer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Removes the given layer from the view</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.remove_overlay_source">
+<tt class="descname">remove_overlay_source</tt><big>(</big><em>map_source</em><big>)</big><a class="headerlink" href="#Champlain.View.remove_overlay_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>map_source</strong> (<a class="reference internal" href="MapSource.html#Champlain.MapSource" title="Champlain.MapSource"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.MapSource</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+<p>Removes an overlay source from <a class="reference internal" href="#Champlain.View" title="Champlain.View"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.View</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_animate_zoom">
+<tt class="descname">set_animate_zoom</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#Champlain.View.set_animate_zoom" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Should the view animate zoom level changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_background_pattern">
+<tt class="descname">set_background_pattern</tt><big>(</big><em>background</em><big>)</big><a class="headerlink" href="#Champlain.View.set_background_pattern" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>background</strong> (<a class="reference internal" href="../../Clutter_1.0/interfaces/Content.html#Clutter.Content" title="Clutter.Content"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Content</span></tt></a>) &#8211; The background texture</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the background texture displayed behind the map. Setting the background
+pattern affects performence slightly - use reasonably large patterns for
+better performance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_deceleration">
+<tt class="descname">set_deceleration</tt><big>(</big><em>rate</em><big>)</big><a class="headerlink" href="#Champlain.View.set_deceleration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rate</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt></a> between 1.001 and 2.0</td>
+</tr>
+</tbody>
+</table>
+<p>The deceleration rate for the kinetic mode.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_keep_center_on_resize">
+<tt class="descname">set_keep_center_on_resize</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#Champlain.View.set_keep_center_on_resize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Keep the current centered position when resizing the view.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_kinetic_mode">
+<tt class="descname">set_kinetic_mode</tt><big>(</big><em>kinetic</em><big>)</big><a class="headerlink" href="#Champlain.View.set_kinetic_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kinetic</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for kinetic mode, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for push mode</td>
+</tr>
+</tbody>
+</table>
+<p>Determines the way the view reacts to scroll events.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_map_source">
+<tt class="descname">set_map_source</tt><big>(</big><em>map_source</em><big>)</big><a class="headerlink" href="#Champlain.View.set_map_source" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>map_source</strong> (<a class="reference internal" href="MapSource.html#Champlain.MapSource" title="Champlain.MapSource"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.MapSource</span></tt></a>) &#8211; a <a class="reference internal" href="MapSource.html#Champlain.MapSource" title="Champlain.MapSource"><tt class="xref py py-class docutils literal"><span class="pre">Champlain.MapSource</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Changes the currently used map source. <tt class="xref py py-class docutils literal"><span class="pre">GObject.Object.unref</span></tt> () will be called on
+the previous one.</p>
+<p>As a side effect, changing the primary map source will also clear all
+secondary map sources.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_max_zoom_level">
+<tt class="descname">set_max_zoom_level</tt><big>(</big><em>zoom_level</em><big>)</big><a class="headerlink" href="#Champlain.View.set_max_zoom_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zoom_level</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the level of zoom</td>
+</tr>
+</tbody>
+</table>
+<p>Changes the highest allowed level of zoom</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_min_zoom_level">
+<tt class="descname">set_min_zoom_level</tt><big>(</big><em>zoom_level</em><big>)</big><a class="headerlink" href="#Champlain.View.set_min_zoom_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zoom_level</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the level of zoom</td>
+</tr>
+</tbody>
+</table>
+<p>Changes the lowest allowed level of zoom</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_zoom_level">
+<tt class="descname">set_zoom_level</tt><big>(</big><em>zoom_level</em><big>)</big><a class="headerlink" href="#Champlain.View.set_zoom_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zoom_level</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the level of zoom, a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> between 1 and 20</td>
+</tr>
+</tbody>
+</table>
+<p>Changes the current level of zoom</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.set_zoom_on_double_click">
+<tt class="descname">set_zoom_on_double_click</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#Champlain.View.set_zoom_on_double_click" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Should the view zoom in and recenter when the user double click on the map.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.stop_go_to">
+<tt class="descname">stop_go_to</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.stop_go_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop the go to animation.  The view will stay where it was when the
+animation was stopped.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.x_to_longitude">
+<tt class="descname">x_to_longitude</tt><big>(</big><em>x</em><big>)</big><a class="headerlink" href="#Champlain.View.x_to_longitude" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; x coordinate of the view</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the longitude</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Converts the view&#8217;s x coordinate to longitude.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.y_to_latitude">
+<tt class="descname">y_to_latitude</tt><big>(</big><em>y</em><big>)</big><a class="headerlink" href="#Champlain.View.y_to_latitude" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; y coordinate of the view</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the latitude</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Converts the view&#8217;s y coordinate to latitude.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.zoom_in">
+<tt class="descname">zoom_in</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.zoom_in" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zoom in the map by one level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Champlain.View.zoom_out">
+<tt class="descname">zoom_out</tt><big>(</big><big>)</big><a class="headerlink" href="#Champlain.View.zoom_out" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zoom out the map by one level.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Viewport.html" class="btn btn-neutral float-right" title="Champlain.Viewport"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="TileSource.html" class="btn btn-neutral" title="Champlain.TileSource"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

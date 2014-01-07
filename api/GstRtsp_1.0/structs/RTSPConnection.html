@@ -1,0 +1,1085 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstRtsp.RTSPConnection -
+    
+      Structures -
+    
+      GstRtsp 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="GstRtsp.RTSPMessage" href="RTSPMessage.html"/>
+        <link rel="prev" title="Structures" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GstRtsp 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GstRtsp.RTSPConnection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GstRtsp 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">GstRtsp.RTSPConnection</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstRtsp_1.0/structs/RTSPConnection" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gstrtsp-rtspconnection">
+<h1>GstRtsp.RTSPConnection<a class="headerlink" href="#gstrtsp-rtspconnection" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.accept" title="GstRtsp.RTSPConnection.accept"><tt class="xref py py-obj docutils literal"><span class="pre">accept</span></tt></a>(socket, cancellable)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.create" title="GstRtsp.RTSPConnection.create"><tt class="xref py py-obj docutils literal"><span class="pre">create</span></tt></a>(url)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.create_from_socket" title="GstRtsp.RTSPConnection.create_from_socket"><tt class="xref py py-obj docutils literal"><span class="pre">create_from_socket</span></tt></a>(socket, ip, port, initial_buffer)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.clear_auth_params" title="GstRtsp.RTSPConnection.clear_auth_params"><tt class="xref py py-obj docutils literal"><span class="pre">clear_auth_params</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.close" title="GstRtsp.RTSPConnection.close"><tt class="xref py py-obj docutils literal"><span class="pre">close</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.connect" title="GstRtsp.RTSPConnection.connect"><tt class="xref py py-obj docutils literal"><span class="pre">connect</span></tt></a>(timeout)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.do_tunnel" title="GstRtsp.RTSPConnection.do_tunnel"><tt class="xref py py-obj docutils literal"><span class="pre">do_tunnel</span></tt></a>(conn2)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.flush" title="GstRtsp.RTSPConnection.flush"><tt class="xref py py-obj docutils literal"><span class="pre">flush</span></tt></a>(flush)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.free" title="GstRtsp.RTSPConnection.free"><tt class="xref py py-obj docutils literal"><span class="pre">free</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.get_ip" title="GstRtsp.RTSPConnection.get_ip"><tt class="xref py py-obj docutils literal"><span class="pre">get_ip</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.get_remember_session_id" title="GstRtsp.RTSPConnection.get_remember_session_id"><tt class="xref py py-obj docutils literal"><span class="pre">get_remember_session_id</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.get_tls" title="GstRtsp.RTSPConnection.get_tls"><tt class="xref py py-obj docutils literal"><span class="pre">get_tls</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.get_tls_validation_flags" title="GstRtsp.RTSPConnection.get_tls_validation_flags"><tt class="xref py py-obj docutils literal"><span class="pre">get_tls_validation_flags</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.get_tunnelid" title="GstRtsp.RTSPConnection.get_tunnelid"><tt class="xref py py-obj docutils literal"><span class="pre">get_tunnelid</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.get_url" title="GstRtsp.RTSPConnection.get_url"><tt class="xref py py-obj docutils literal"><span class="pre">get_url</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.is_tunneled" title="GstRtsp.RTSPConnection.is_tunneled"><tt class="xref py py-obj docutils literal"><span class="pre">is_tunneled</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.next_timeout" title="GstRtsp.RTSPConnection.next_timeout"><tt class="xref py py-obj docutils literal"><span class="pre">next_timeout</span></tt></a>(timeout)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.poll" title="GstRtsp.RTSPConnection.poll"><tt class="xref py py-obj docutils literal"><span class="pre">poll</span></tt></a>(events, revents, timeout)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.read" title="GstRtsp.RTSPConnection.read"><tt class="xref py py-obj docutils literal"><span class="pre">read</span></tt></a>(data, size, timeout)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.receive" title="GstRtsp.RTSPConnection.receive"><tt class="xref py py-obj docutils literal"><span class="pre">receive</span></tt></a>(message, timeout)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.reset_timeout" title="GstRtsp.RTSPConnection.reset_timeout"><tt class="xref py py-obj docutils literal"><span class="pre">reset_timeout</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.send" title="GstRtsp.RTSPConnection.send"><tt class="xref py py-obj docutils literal"><span class="pre">send</span></tt></a>(message, timeout)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_auth" title="GstRtsp.RTSPConnection.set_auth"><tt class="xref py py-obj docutils literal"><span class="pre">set_auth</span></tt></a>(method, user, pass_)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_auth_param" title="GstRtsp.RTSPConnection.set_auth_param"><tt class="xref py py-obj docutils literal"><span class="pre">set_auth_param</span></tt></a>(param, value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_http_mode" title="GstRtsp.RTSPConnection.set_http_mode"><tt class="xref py py-obj docutils literal"><span class="pre">set_http_mode</span></tt></a>(enable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_ip" title="GstRtsp.RTSPConnection.set_ip"><tt class="xref py py-obj docutils literal"><span class="pre">set_ip</span></tt></a>(ip)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_proxy" title="GstRtsp.RTSPConnection.set_proxy"><tt class="xref py py-obj docutils literal"><span class="pre">set_proxy</span></tt></a>(host, port)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_qos_dscp" title="GstRtsp.RTSPConnection.set_qos_dscp"><tt class="xref py py-obj docutils literal"><span class="pre">set_qos_dscp</span></tt></a>(qos_dscp)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_remember_session_id" title="GstRtsp.RTSPConnection.set_remember_session_id"><tt class="xref py py-obj docutils literal"><span class="pre">set_remember_session_id</span></tt></a>(remember)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_tls_validation_flags" title="GstRtsp.RTSPConnection.set_tls_validation_flags"><tt class="xref py py-obj docutils literal"><span class="pre">set_tls_validation_flags</span></tt></a>(flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.set_tunneled" title="GstRtsp.RTSPConnection.set_tunneled"><tt class="xref py py-obj docutils literal"><span class="pre">set_tunneled</span></tt></a>(tunneled)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtsp.RTSPConnection.write" title="GstRtsp.RTSPConnection.write"><tt class="xref py py-obj docutils literal"><span class="pre">write</span></tt></a>(data, size, timeout)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstRtsp.RTSPConnection">
+<em class="property">class </em><tt class="descclassname">GstRtsp.</tt><tt class="descname">RTSPConnection</tt><a class="headerlink" href="#GstRtsp.RTSPConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>This object manages the RTSP connection to the server. It provides function
+to receive and send bytes and messages.</p>
+<p>Last reviewed on 2007-07-24 (0.10.14)</p>
+<dl class="staticmethod">
+<dt id="GstRtsp.RTSPConnection.accept">
+<em class="property">static </em><tt class="descname">accept</tt><big>(</big><em>socket</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.accept" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>socket</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Socket.html#Gio.Socket" title="Gio.Socket"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Socket</span></tt></a>) &#8211; a socket</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> to cancel the operation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> when <cite>conn</cite> contains a valid connection.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a>, conn: <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Accept a new connection on <cite>socket</cite> and create a new <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a> for
+handling communication on new socket.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtsp.RTSPConnection.create">
+<em class="property">static </em><tt class="descname">create</tt><big>(</big><em>url</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.create" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> (<a class="reference internal" href="RTSPUrl.html#GstRtsp.RTSPUrl" title="GstRtsp.RTSPUrl"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPUrl</span></tt></a>) &#8211; a <a class="reference internal" href="RTSPUrl.html#GstRtsp.RTSPUrl" title="GstRtsp.RTSPUrl"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPUrl</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> when <cite>conn</cite> contains a valid connection.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a>, conn: <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a newly allocated <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a> from <cite>url</cite> and store it in <cite>conn</cite>.
+The connection will not yet attempt to connect to <cite>url</cite>, use
+<a class="reference internal" href="#GstRtsp.RTSPConnection.connect" title="GstRtsp.RTSPConnection.connect"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.connect</span></tt></a> ().</p>
+<p>A copy of <cite>url</cite> will be made.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtsp.RTSPConnection.create_from_socket">
+<em class="property">static </em><tt class="descname">create_from_socket</tt><big>(</big><em>socket</em>, <em>ip</em>, <em>port</em>, <em>initial_buffer</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.create_from_socket" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>socket</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Socket.html#Gio.Socket" title="Gio.Socket"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Socket</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Socket.html#Gio.Socket" title="Gio.Socket"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Socket</span></tt></a></li>
+<li><strong>ip</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the IP address of the other end</li>
+<li><strong>port</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the port used by the other end</li>
+<li><strong>initial_buffer</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.data</span></tt> already read from <cite>fd</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> when <cite>conn</cite> contains a valid connection.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a>, conn: <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Create a new <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a> for handling communication on the existing
+socket <cite>socket</cite>. The <cite>initial_buffer</cite> contains zero terminated <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.data</span></tt> already
+read from <cite>socket</cite> which should be used before starting to read new <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.data</span></tt>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.clear_auth_params">
+<tt class="descname">clear_auth_params</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.clear_auth_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the list of authentication directives stored in <cite>conn</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.close">
+<tt class="descname">close</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.close" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Close the connected <cite>conn</cite>. After this call, the connection is in the same
+state as when it was first created.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.connect">
+<tt class="descname">connect</tt><big>(</big><em>timeout</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.connect" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a>) &#8211; a <a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a> timeout</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> when a connection could be made.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Attempt to connect to the url of <cite>conn</cite> made with
+<a class="reference internal" href="#GstRtsp.RTSPConnection.create" title="GstRtsp.RTSPConnection.create"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.create</span></tt></a> (). If <cite>timeout</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> this function can block
+forever. If <cite>timeout</cite> contains a valid timeout, this function will return
+<a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.ETIMEOUT" title="GstRtsp.RTSPResult.ETIMEOUT"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.ETIMEOUT</span></tt></a> after the timeout expired.</p>
+<p>This function can be cancelled with <a class="reference internal" href="#GstRtsp.RTSPConnection.flush" title="GstRtsp.RTSPConnection.flush"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.flush</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.do_tunnel">
+<tt class="descname">do_tunnel</tt><big>(</big><em>conn2</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.do_tunnel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>conn2</strong> (<a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a>) &#8211; a <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">return <a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>If <cite>conn</cite> received the first tunnel connection and <cite>conn2</cite> received
+the second tunnel connection, link the two connections together so that
+<cite>conn</cite> manages the tunneled connection.</p>
+<p>After this call, <cite>conn2</cite> cannot be used anymore and must be freed with
+<a class="reference internal" href="#GstRtsp.RTSPConnection.free" title="GstRtsp.RTSPConnection.free"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.free</span></tt></a> ().</p>
+<p>If <cite>conn2</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> then only the base64 decoding context will be setup for
+<cite>conn</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.flush">
+<tt class="descname">flush</tt><big>(</big><em>flush</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.flush" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flush</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; start or stop the flush</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Start or stop the flushing action on <cite>conn</cite>. When flushing, all current
+and future actions on <cite>conn</cite> will return <a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.EINTR" title="GstRtsp.RTSPResult.EINTR"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.EINTR</span></tt></a> until the connection
+is set to non-flushing mode again.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.free">
+<tt class="descname">free</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Close and free <cite>conn</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.get_ip">
+<tt class="descname">get_ip</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.get_ip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The IP address as a string. this value remains valid until the connection is closed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the IP address of the other end of <cite>conn</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.get_remember_session_id">
+<tt class="descname">get_remember_session_id</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.get_remember_session_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a> remembers the session id in the last <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.response</span></tt> to set it on any further <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.request</span></tt>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.get_tls">
+<tt class="descname">get_tls</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.get_tls" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the TLS connection for <cite>conn</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gio_2.0/classes/TlsConnection.html#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the TLS connection of <cite>conn</cite>.</p>
+<p>For client side this will return the <a class="reference internal" href="../../Gio_2.0/interfaces/TlsClientConnection.html#Gio.TlsClientConnection" title="Gio.TlsClientConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection</span></tt></a> when connected
+over TLS.</p>
+<p>For server side connections, this function will create a <a class="reference internal" href="../../Gio_2.0/interfaces/TlsServerConnection.html#Gio.TlsServerConnection" title="Gio.TlsServerConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsServerConnection</span></tt></a>
+when called the first time and will return that same connection on subsequent
+calls. The server is then responsible for configuring the TLS connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.get_tls_validation_flags">
+<tt class="descname">get_tls_validation_flags</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.get_tls_validation_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the validationg flags.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gio_2.0/flags.html#Gio.TlsCertificateFlags" title="Gio.TlsCertificateFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the TLS validation flags used to verify the peer certificate
+when a TLS connection is established.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.get_tunnelid">
+<tt class="descname">get_tunnelid</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.get_tunnelid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">returns a non-empty string if <cite>conn</cite> is being tunneled over HTTP.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the tunnel session id the connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.get_url">
+<tt class="descname">get_url</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.get_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The URL. This value remains valid until the connection is freed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="RTSPUrl.html#GstRtsp.RTSPUrl" title="GstRtsp.RTSPUrl"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPUrl</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the URL of the other end of <cite>conn</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.is_tunneled">
+<tt class="descname">is_tunneled</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.is_tunneled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">if <cite>conn</cite> is using HTTP tunneling.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the tunneling state of the connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.next_timeout">
+<tt class="descname">next_timeout</tt><big>(</big><em>timeout</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.next_timeout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a>) &#8211; a timeout</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Calculate the next timeout for <cite>conn</cite>, storing the result in <cite>timeout</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.poll">
+<tt class="descname">poll</tt><big>(</big><em>events</em>, <em>revents</em>, <em>timeout</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.poll" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>events</strong> (<a class="reference internal" href="../flags.html#GstRtsp.RTSPEvent" title="GstRtsp.RTSPEvent"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPEvent</span></tt></a>) &#8211; a bitmask of <a class="reference internal" href="../flags.html#GstRtsp.RTSPEvent" title="GstRtsp.RTSPEvent"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPEvent</span></tt></a> flags to check</li>
+<li><strong>revents</strong> (<a class="reference internal" href="../flags.html#GstRtsp.RTSPEvent" title="GstRtsp.RTSPEvent"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPEvent</span></tt></a>) &#8211; location for result flags</li>
+<li><strong>timeout</strong> (<a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a>) &#8211; a timeout</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Wait up to the specified <cite>timeout</cite> for the connection to become available for
+at least one of the operations specified in <cite>events</cite>. When the function returns
+with <a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a>, <cite>revents</cite> will contain a bitmask of available operations on
+<cite>conn</cite>.</p>
+<p><cite>timeout</cite> can be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, in which case this function might block forever.</p>
+<p>This function can be cancelled with <a class="reference internal" href="#GstRtsp.RTSPConnection.flush" title="GstRtsp.RTSPConnection.flush"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.flush</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.read">
+<tt class="descname">read</tt><big>(</big><em>data</em>, <em>size</em>, <em>timeout</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.read" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.data</span></tt> to read</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size of <cite>data</cite></li>
+<li><strong>timeout</strong> (<a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a>) &#8211; a timeout value or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attempt to read <cite>size</cite> bytes into <cite>data</cite> from the connected <cite>conn</cite>, blocking up to
+the specified <cite>timeout</cite>. <cite>timeout</cite> can be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, in which case this function
+might block forever.</p>
+<p>This function can be cancelled with <a class="reference internal" href="#GstRtsp.RTSPConnection.flush" title="GstRtsp.RTSPConnection.flush"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.flush</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.receive">
+<tt class="descname">receive</tt><big>(</big><em>message</em>, <em>timeout</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.receive" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference internal" href="RTSPMessage.html#GstRtsp.RTSPMessage" title="GstRtsp.RTSPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPMessage</span></tt></a>) &#8211; the message to read</li>
+<li><strong>timeout</strong> (<a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a>) &#8211; a timeout value or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attempt to read into <cite>message</cite> from the connected <cite>conn</cite>, blocking up to
+the specified <cite>timeout</cite>. <cite>timeout</cite> can be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, in which case this function
+might block forever.</p>
+<p>This function can be cancelled with <a class="reference internal" href="#GstRtsp.RTSPConnection.flush" title="GstRtsp.RTSPConnection.flush"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.flush</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.reset_timeout">
+<tt class="descname">reset_timeout</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.reset_timeout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Reset the timeout of <cite>conn</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.send">
+<tt class="descname">send</tt><big>(</big><em>message</em>, <em>timeout</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.send" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference internal" href="RTSPMessage.html#GstRtsp.RTSPMessage" title="GstRtsp.RTSPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPMessage</span></tt></a>) &#8211; the message to send</li>
+<li><strong>timeout</strong> (<a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a>) &#8211; a timeout value or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attempt to send <cite>message</cite> to the connected <cite>conn</cite>, blocking up to
+the specified <cite>timeout</cite>. <cite>timeout</cite> can be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, in which case this function
+might block forever.</p>
+<p>This function can be cancelled with <a class="reference internal" href="#GstRtsp.RTSPConnection.flush" title="GstRtsp.RTSPConnection.flush"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.flush</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_auth">
+<tt class="descname">set_auth</tt><big>(</big><em>method</em>, <em>user</em>, <em>pass_</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_auth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>method</strong> (<a class="reference internal" href="../enums.html#GstRtsp.RTSPAuthMethod" title="GstRtsp.RTSPAuthMethod"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPAuthMethod</span></tt></a>) &#8211; authentication method</li>
+<li><strong>user</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the user</li>
+<li><strong>pass_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the password</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Configure <cite>conn</cite> for authentication mode <cite>method</cite> with <cite>user</cite> and <cite>pass</cite> as the
+user and password respectively.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_auth_param">
+<tt class="descname">set_auth_param</tt><big>(</big><em>param</em>, <em>value</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_auth_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>param</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; authentication directive</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; value</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Setup <cite>conn</cite> with authentication directives. This is not necesary for
+methods <a class="reference internal" href="../enums.html#GstRtsp.RTSPAuthMethod.NONE" title="GstRtsp.RTSPAuthMethod.NONE"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPAuthMethod.NONE</span></tt></a> and <a class="reference internal" href="../enums.html#GstRtsp.RTSPAuthMethod.BASIC" title="GstRtsp.RTSPAuthMethod.BASIC"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPAuthMethod.BASIC</span></tt></a>. For
+<a class="reference internal" href="../enums.html#GstRtsp.RTSPAuthMethod.DIGEST" title="GstRtsp.RTSPAuthMethod.DIGEST"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPAuthMethod.DIGEST</span></tt></a>, directives should be taken from the digest challenge
+in the WWW-Authenticate <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.response</span></tt> header and can include realm, domain,
+nonce, opaque, stale, algorithm, qop as per RFC2617.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_http_mode">
+<tt class="descname">set_http_mode</tt><big>(</big><em>enable</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_http_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enable</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> to enable manual HTTP mode</td>
+</tr>
+</tbody>
+</table>
+<p>By setting the HTTP mode to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> the message parsing will support HTTP
+messages in addition to the RTSP messages. It will also disable the
+automatic handling of setting up an HTTP tunnel.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_ip">
+<tt class="descname">set_ip</tt><big>(</big><em>ip</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_ip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ip</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; an ip address</td>
+</tr>
+</tbody>
+</table>
+<p>Set the IP address of the server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_proxy">
+<tt class="descname">set_proxy</tt><big>(</big><em>host</em>, <em>port</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_proxy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>host</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the proxy host</li>
+<li><strong>port</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the proxy port</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the proxy host and port.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_qos_dscp">
+<tt class="descname">set_qos_dscp</tt><big>(</big><em>qos_dscp</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_qos_dscp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>qos_dscp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; DSCP value</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Configure <cite>conn</cite> to use the specified DSCP value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_remember_session_id">
+<tt class="descname">set_remember_session_id</tt><big>(</big><em>remember</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_remember_session_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>remember</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the connection should remember the session id</td>
+</tr>
+</tbody>
+</table>
+<p>Sets if the <a class="reference internal" href="#GstRtsp.RTSPConnection" title="GstRtsp.RTSPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection</span></tt></a> should remember the session id from the last
+<tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.response</span></tt> received and force it onto any further requests.</p>
+<p>The default value is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_tls_validation_flags">
+<tt class="descname">set_tls_validation_flags</tt><big>(</big><em>flags</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_tls_validation_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flags</strong> (<a class="reference internal" href="../../Gio_2.0/flags.html#Gio.TlsCertificateFlags" title="Gio.TlsCertificateFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags</span></tt></a>) &#8211; the validation flags.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the validation flags are set correctly, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if <cite>conn</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> or is not a TLS connection.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the TLS validation flags to be used to verify the peer
+certificate when a TLS connection is established.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.set_tunneled">
+<tt class="descname">set_tunneled</tt><big>(</big><em>tunneled</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.set_tunneled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tunneled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new state</td>
+</tr>
+</tbody>
+</table>
+<p>Set the HTTP tunneling state of the connection. This must be configured before
+the <cite>conn</cite> is connected.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtsp.RTSPConnection.write">
+<tt class="descname">write</tt><big>(</big><em>data</em>, <em>size</em>, <em>timeout</em><big>)</big><a class="headerlink" href="#GstRtsp.RTSPConnection.write" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the <tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.data</span></tt> to write</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size of <cite>data</cite></li>
+<li><strong>timeout</strong> (<a class="reference internal" href="../../GLib_2.0/structs/TimeVal.html#GLib.TimeVal" title="GLib.TimeVal"><tt class="xref py py-class docutils literal"><span class="pre">GLib.TimeVal</span></tt></a>) &#8211; a timeout value or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult.OK" title="GstRtsp.RTSPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult.OK</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstRtsp.RTSPResult" title="GstRtsp.RTSPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Attempt to write <cite>size</cite> bytes of <cite>data</cite> to the connected <cite>conn</cite>, blocking up to
+the specified <cite>timeout</cite>. <cite>timeout</cite> can be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, in which case this function
+might block forever.</p>
+<p>This function can be cancelled with <a class="reference internal" href="#GstRtsp.RTSPConnection.flush" title="GstRtsp.RTSPConnection.flush"><tt class="xref py py-class docutils literal"><span class="pre">GstRtsp.RTSPConnection.flush</span></tt></a> ().</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="RTSPMessage.html" class="btn btn-neutral float-right" title="GstRtsp.RTSPMessage"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Structures"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,986 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    EvinceView.View -
+    
+      Classes -
+    
+      EvinceView 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="EvinceView.ViewPresentation" href="ViewPresentation.html"/>
+        <link rel="prev" title="EvinceView.PrintOperation" href="PrintOperation.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">EvinceView 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">EvinceView.View</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">EvinceView 3.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">EvinceView.View</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/EvinceView_3.0/classes/View" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="evinceview-view">
+<h1>EvinceView.View<a class="headerlink" href="#evinceview-view" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-815a94d0ea489381f58dc609bc6dd151f7aa114f.png" alt="Inheritance diagram of EvinceView.View" usemap="#inheritancee100be3f4d" class="inheritance"/>
+<map id="inheritancee100be3f4d" name="inheritancee100be3f4d">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="21,5,136,29"/>
+<area shape="rect" id="node2" href="../../Atk_1.0/interfaces/ImplementorIface.html#Atk.ImplementorIface" title="Atk.ImplementorIface" alt="" coords="145,77,271,101"/>
+<area shape="rect" id="node4" href="../../Gtk_3.0/interfaces/Buildable.html#Gtk.Buildable" title="Gtk.Buildable" alt="" coords="36,77,121,101"/>
+<area shape="rect" id="node6" href="../../Gtk_3.0/interfaces/Scrollable.html#Gtk.Scrollable" title="Gtk.Scrollable" alt="" coords="5,149,96,173"/>
+<area shape="rect" id="node11" href="../../Gtk_3.0/classes/Widget.html#Gtk.Widget" title="Gtk.Widget" alt="" coords="145,149,217,173"/>
+<area shape="rect" id="node16" href="#EvinceView.View" title="EvinceView.View" alt="" coords="72,293,171,317"/>
+<area shape="rect" id="node8" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="319,5,415,29"/>
+<area shape="rect" id="node9" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="295,77,439,101"/>
+<area shape="rect" id="node15" href="../../Gtk_3.0/classes/Container.html#Gtk.Container" title="Gtk.Container" alt="" coords="124,221,212,245"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#EvinceView.View.new" title="EvinceView.View.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.autoscroll_start" title="EvinceView.View.autoscroll_start"><tt class="xref py py-obj docutils literal"><span class="pre">autoscroll_start</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.autoscroll_stop" title="EvinceView.View.autoscroll_stop"><tt class="xref py py-obj docutils literal"><span class="pre">autoscroll_stop</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.begin_add_annotation" title="EvinceView.View.begin_add_annotation"><tt class="xref py py-obj docutils literal"><span class="pre">begin_add_annotation</span></tt></a>(annot_type)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.can_zoom_in" title="EvinceView.View.can_zoom_in"><tt class="xref py py-obj docutils literal"><span class="pre">can_zoom_in</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.can_zoom_out" title="EvinceView.View.can_zoom_out"><tt class="xref py py-obj docutils literal"><span class="pre">can_zoom_out</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.cancel_add_annotation" title="EvinceView.View.cancel_add_annotation"><tt class="xref py py-obj docutils literal"><span class="pre">cancel_add_annotation</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.copy" title="EvinceView.View.copy"><tt class="xref py py-obj docutils literal"><span class="pre">copy</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.copy_link_address" title="EvinceView.View.copy_link_address"><tt class="xref py py-obj docutils literal"><span class="pre">copy_link_address</span></tt></a>(action)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.find_cancel" title="EvinceView.View.find_cancel"><tt class="xref py py-obj docutils literal"><span class="pre">find_cancel</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.find_next" title="EvinceView.View.find_next"><tt class="xref py py-obj docutils literal"><span class="pre">find_next</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.find_previous" title="EvinceView.View.find_previous"><tt class="xref py py-obj docutils literal"><span class="pre">find_previous</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.find_search_changed" title="EvinceView.View.find_search_changed"><tt class="xref py py-obj docutils literal"><span class="pre">find_search_changed</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.find_set_highlight_search" title="EvinceView.View.find_set_highlight_search"><tt class="xref py py-obj docutils literal"><span class="pre">find_set_highlight_search</span></tt></a>(value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.find_set_result" title="EvinceView.View.find_set_result"><tt class="xref py py-obj docutils literal"><span class="pre">find_set_result</span></tt></a>(page, result)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.find_started" title="EvinceView.View.find_started"><tt class="xref py py-obj docutils literal"><span class="pre">find_started</span></tt></a>(job)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.focus_annotation" title="EvinceView.View.focus_annotation"><tt class="xref py py-obj docutils literal"><span class="pre">focus_annotation</span></tt></a>(annot_mapping)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.get_has_selection" title="EvinceView.View.get_has_selection"><tt class="xref py py-obj docutils literal"><span class="pre">get_has_selection</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.get_page_extents" title="EvinceView.View.get_page_extents"><tt class="xref py py-obj docutils literal"><span class="pre">get_page_extents</span></tt></a>(page, page_area, border)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.handle_link" title="EvinceView.View.handle_link"><tt class="xref py py-obj docutils literal"><span class="pre">handle_link</span></tt></a>(link)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.hide_cursor" title="EvinceView.View.hide_cursor"><tt class="xref py py-obj docutils literal"><span class="pre">hide_cursor</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.highlight_forward_search" title="EvinceView.View.highlight_forward_search"><tt class="xref py py-obj docutils literal"><span class="pre">highlight_forward_search</span></tt></a>(link)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.is_caret_navigation_enabled" title="EvinceView.View.is_caret_navigation_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">is_caret_navigation_enabled</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.is_loading" title="EvinceView.View.is_loading"><tt class="xref py py-obj docutils literal"><span class="pre">is_loading</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.next_page" title="EvinceView.View.next_page"><tt class="xref py py-obj docutils literal"><span class="pre">next_page</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.previous_page" title="EvinceView.View.previous_page"><tt class="xref py py-obj docutils literal"><span class="pre">previous_page</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.reload" title="EvinceView.View.reload"><tt class="xref py py-obj docutils literal"><span class="pre">reload</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.scroll" title="EvinceView.View.scroll"><tt class="xref py py-obj docutils literal"><span class="pre">scroll</span></tt></a>(scroll, horizontal)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.select_all" title="EvinceView.View.select_all"><tt class="xref py py-obj docutils literal"><span class="pre">select_all</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.set_caret_cursor_position" title="EvinceView.View.set_caret_cursor_position"><tt class="xref py py-obj docutils literal"><span class="pre">set_caret_cursor_position</span></tt></a>(page, offset)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.set_caret_navigation_enabled" title="EvinceView.View.set_caret_navigation_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">set_caret_navigation_enabled</span></tt></a>(enabled)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.set_loading" title="EvinceView.View.set_loading"><tt class="xref py py-obj docutils literal"><span class="pre">set_loading</span></tt></a>(loading)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.set_model" title="EvinceView.View.set_model"><tt class="xref py py-obj docutils literal"><span class="pre">set_model</span></tt></a>(model)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.set_page_cache_size" title="EvinceView.View.set_page_cache_size"><tt class="xref py py-obj docutils literal"><span class="pre">set_page_cache_size</span></tt></a>(cache_size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.show_cursor" title="EvinceView.View.show_cursor"><tt class="xref py py-obj docutils literal"><span class="pre">show_cursor</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.supports_caret_navigation" title="EvinceView.View.supports_caret_navigation"><tt class="xref py py-obj docutils literal"><span class="pre">supports_caret_navigation</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.zoom_in" title="EvinceView.View.zoom_in"><tt class="xref py py-obj docutils literal"><span class="pre">zoom_in</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#EvinceView.View.zoom_out" title="EvinceView.View.zoom_out"><tt class="xref py py-obj docutils literal"><span class="pre">zoom_out</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="evinceview-view-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="can-zoom-in">can-zoom-in</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r</td>
+<td>Whether the view can be zoomed in further</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="can-zoom-out">can-zoom-out</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r</td>
+<td>Whether the view can be zoomed out further</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="is-loading">is-loading</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r</td>
+<td>Whether the view is loading</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="evinceview-view-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="annot-added">annot-added</span></td>
+<td><a class="reference internal" href="../../EvinceDocument_3.0/classes/Annotation.html#EvinceDocument.Annotation" title="EvinceDocument.Annotation"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.Annotation</span></tt></a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="cursor-moved">cursor-moved</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>, <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="external-link">external-link</span></td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="handle-link">handle-link</span></td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="layers-changed">layers-changed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="move-cursor">move-cursor</span></td>
+<td><a class="reference internal" href="../../Gtk_3.0/enums.html#Gtk.MovementStep" title="Gtk.MovementStep"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.MovementStep</span></tt></a>, <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>, <tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="popup">popup</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="scroll">scroll</span></td>
+<td><a class="reference internal" href="../../Gtk_3.0/enums.html#Gtk.ScrollType" title="Gtk.ScrollType"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.ScrollType</span></tt></a>, <a class="reference internal" href="../../Gtk_3.0/enums.html#Gtk.Orientation" title="Gtk.Orientation"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Orientation</span></tt></a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="selection-changed">selection-changed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="sync-source">sync-source</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceView.View">
+<em class="property">class </em><tt class="descclassname">EvinceView.</tt><tt class="descname">View</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#EvinceView.View" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../Gtk_3.0/classes/Container.html#Gtk.Container" title="Gtk.Container"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Container</span></tt></a>, <a class="reference internal" href="../../Gtk_3.0/interfaces/Scrollable.html#Gtk.Scrollable" title="Gtk.Scrollable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Scrollable</span></tt></a></p>
+<dl class="staticmethod">
+<dt id="EvinceView.View.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gtk_3.0/classes/Widget.html#Gtk.Widget" title="Gtk.Widget"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Widget</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.autoscroll_start">
+<tt class="descname">autoscroll_start</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.autoscroll_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.autoscroll_stop">
+<tt class="descname">autoscroll_stop</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.autoscroll_stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.begin_add_annotation">
+<tt class="descname">begin_add_annotation</tt><big>(</big><em>annot_type</em><big>)</big><a class="headerlink" href="#EvinceView.View.begin_add_annotation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>annot_type</strong> (<a class="reference internal" href="../../EvinceDocument_3.0/enums.html#EvinceDocument.AnnotationType" title="EvinceDocument.AnnotationType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.AnnotationType</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.can_zoom_in">
+<tt class="descname">can_zoom_in</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.can_zoom_in" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.can_zoom_out">
+<tt class="descname">can_zoom_out</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.can_zoom_out" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.cancel_add_annotation">
+<tt class="descname">cancel_add_annotation</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.cancel_add_annotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.copy">
+<tt class="descname">copy</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.copy_link_address">
+<tt class="descname">copy_link_address</tt><big>(</big><em>action</em><big>)</big><a class="headerlink" href="#EvinceView.View.copy_link_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action</strong> (<a class="reference internal" href="../../EvinceDocument_3.0/classes/LinkAction.html#EvinceDocument.LinkAction" title="EvinceDocument.LinkAction"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.LinkAction</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.find_cancel">
+<tt class="descname">find_cancel</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.find_cancel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.find_next">
+<tt class="descname">find_next</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.find_next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.find_previous">
+<tt class="descname">find_previous</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.find_previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.find_search_changed">
+<tt class="descname">find_search_changed</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.find_search_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.find_set_highlight_search">
+<tt class="descname">find_set_highlight_search</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#EvinceView.View.find_set_highlight_search" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.find_set_result">
+<tt class="descname">find_set_result</tt><big>(</big><em>page</em>, <em>result</em><big>)</big><a class="headerlink" href="#EvinceView.View.find_set_result" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>page</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+<li><strong>result</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>FIXME</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.find_started">
+<tt class="descname">find_started</tt><big>(</big><em>job</em><big>)</big><a class="headerlink" href="#EvinceView.View.find_started" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>job</strong> (<a class="reference internal" href="JobFind.html#EvinceView.JobFind" title="EvinceView.JobFind"><tt class="xref py py-class docutils literal"><span class="pre">EvinceView.JobFind</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.focus_annotation">
+<tt class="descname">focus_annotation</tt><big>(</big><em>annot_mapping</em><big>)</big><a class="headerlink" href="#EvinceView.View.focus_annotation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>annot_mapping</strong> (<a class="reference internal" href="../../EvinceDocument_3.0/structs/Mapping.html#EvinceDocument.Mapping" title="EvinceDocument.Mapping"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.Mapping</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.get_has_selection">
+<tt class="descname">get_has_selection</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.get_has_selection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.get_page_extents">
+<tt class="descname">get_page_extents</tt><big>(</big><em>page</em>, <em>page_area</em>, <em>border</em><big>)</big><a class="headerlink" href="#EvinceView.View.get_page_extents" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>page</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+<li><strong>page_area</strong> (<tt class="xref py py-class docutils literal"><span class="pre">cairo.RectangleInt</span></tt>) &#8211; </li>
+<li><strong>border</strong> (<a class="reference internal" href="../../Gtk_3.0/structs/Border.html#Gtk.Border" title="Gtk.Border"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Border</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.handle_link">
+<tt class="descname">handle_link</tt><big>(</big><em>link</em><big>)</big><a class="headerlink" href="#EvinceView.View.handle_link" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>link</strong> (<a class="reference internal" href="../../EvinceDocument_3.0/classes/Link.html#EvinceDocument.Link" title="EvinceDocument.Link"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.Link</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.hide_cursor">
+<tt class="descname">hide_cursor</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.hide_cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.highlight_forward_search">
+<tt class="descname">highlight_forward_search</tt><big>(</big><em>link</em><big>)</big><a class="headerlink" href="#EvinceView.View.highlight_forward_search" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>link</strong> (<a class="reference internal" href="../../EvinceDocument_3.0/structs/SourceLink.html#EvinceDocument.SourceLink" title="EvinceDocument.SourceLink"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.SourceLink</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.is_caret_navigation_enabled">
+<tt class="descname">is_caret_navigation_enabled</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.is_caret_navigation_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.is_loading">
+<tt class="descname">is_loading</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.is_loading" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> iff the view is currently loading a document</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.next_page">
+<tt class="descname">next_page</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.next_page" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.previous_page">
+<tt class="descname">previous_page</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.previous_page" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.reload">
+<tt class="descname">reload</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.reload" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.scroll">
+<tt class="descname">scroll</tt><big>(</big><em>scroll</em>, <em>horizontal</em><big>)</big><a class="headerlink" href="#EvinceView.View.scroll" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>scroll</strong> (<a class="reference internal" href="../../Gtk_3.0/enums.html#Gtk.ScrollType" title="Gtk.ScrollType"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.ScrollType</span></tt></a>) &#8211; </li>
+<li><strong>horizontal</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.select_all">
+<tt class="descname">select_all</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.select_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.set_caret_cursor_position">
+<tt class="descname">set_caret_cursor_position</tt><big>(</big><em>page</em>, <em>offset</em><big>)</big><a class="headerlink" href="#EvinceView.View.set_caret_cursor_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>page</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.set_caret_navigation_enabled">
+<tt class="descname">set_caret_navigation_enabled</tt><big>(</big><em>enabled</em><big>)</big><a class="headerlink" href="#EvinceView.View.set_caret_navigation_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether to enable caret navigation mode</td>
+</tr>
+</tbody>
+</table>
+<p>Enables or disables caret navigation mode for the document.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.set_loading">
+<tt class="descname">set_loading</tt><big>(</big><em>loading</em><big>)</big><a class="headerlink" href="#EvinceView.View.set_loading" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>loading</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.set_model">
+<tt class="descname">set_model</tt><big>(</big><em>model</em><big>)</big><a class="headerlink" href="#EvinceView.View.set_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model</strong> (<a class="reference internal" href="DocumentModel.html#EvinceView.DocumentModel" title="EvinceView.DocumentModel"><tt class="xref py py-class docutils literal"><span class="pre">EvinceView.DocumentModel</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.set_page_cache_size">
+<tt class="descname">set_page_cache_size</tt><big>(</big><em>cache_size</em><big>)</big><a class="headerlink" href="#EvinceView.View.set_page_cache_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cache_size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; size in bytes</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the maximum size in bytes that will be used to cache
+rendered pages. Use 0 to disable caching rendered pages.</p>
+<p>Note that this limit doesn&#8217;t affect the current visible page range,
+which will always be rendered. In order to limit the total memory used
+you have to use <a class="reference internal" href="DocumentModel.html#EvinceView.DocumentModel.set_max_scale" title="EvinceView.DocumentModel.set_max_scale"><tt class="xref py py-class docutils literal"><span class="pre">EvinceView.DocumentModel.set_max_scale</span></tt></a> () too.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.show_cursor">
+<tt class="descname">show_cursor</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.show_cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.supports_caret_navigation">
+<tt class="descname">supports_caret_navigation</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.supports_caret_navigation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the document supports caret navigation</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.zoom_in">
+<tt class="descname">zoom_in</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.zoom_in" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EvinceView.View.zoom_out">
+<tt class="descname">zoom_out</tt><big>(</big><big>)</big><a class="headerlink" href="#EvinceView.View.zoom_out" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="ViewPresentation.html" class="btn btn-neutral float-right" title="EvinceView.ViewPresentation"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="PrintOperation.html" class="btn btn-neutral" title="EvinceView.PrintOperation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

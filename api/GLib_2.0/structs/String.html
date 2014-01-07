@@ -1,0 +1,1027 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GLib.String -
+    
+      Structures -
+    
+      GLib 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="GLib.StringChunk" href="StringChunk.html"/>
+        <link rel="prev" title="GLib.StatBuf" href="StatBuf.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GLib 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GLib.String</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GLib 2.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">GLib.String</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GLib_2.0/structs/String" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="glib-string">
+<h1>GLib.String<a class="headerlink" href="#glib-string" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>str</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+<td>r/w</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.append" title="GLib.String.append"><tt class="xref py py-obj docutils literal"><span class="pre">append</span></tt></a>(val)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.append_c" title="GLib.String.append_c"><tt class="xref py py-obj docutils literal"><span class="pre">append_c</span></tt></a>(c)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.append_len" title="GLib.String.append_len"><tt class="xref py py-obj docutils literal"><span class="pre">append_len</span></tt></a>(val, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.append_unichar" title="GLib.String.append_unichar"><tt class="xref py py-obj docutils literal"><span class="pre">append_unichar</span></tt></a>(wc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.append_uri_escaped" title="GLib.String.append_uri_escaped"><tt class="xref py py-obj docutils literal"><span class="pre">append_uri_escaped</span></tt></a>(unescaped, reserved_chars_allowed, allow_utf8)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.ascii_down" title="GLib.String.ascii_down"><tt class="xref py py-obj docutils literal"><span class="pre">ascii_down</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.ascii_up" title="GLib.String.ascii_up"><tt class="xref py py-obj docutils literal"><span class="pre">ascii_up</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.assign" title="GLib.String.assign"><tt class="xref py py-obj docutils literal"><span class="pre">assign</span></tt></a>(rval)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.down" title="GLib.String.down"><tt class="xref py py-obj docutils literal"><span class="pre">down</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.equal" title="GLib.String.equal"><tt class="xref py py-obj docutils literal"><span class="pre">equal</span></tt></a>(v2)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.erase" title="GLib.String.erase"><tt class="xref py py-obj docutils literal"><span class="pre">erase</span></tt></a>(pos, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.free" title="GLib.String.free"><tt class="xref py py-obj docutils literal"><span class="pre">free</span></tt></a>(free_segment)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.free_to_bytes" title="GLib.String.free_to_bytes"><tt class="xref py py-obj docutils literal"><span class="pre">free_to_bytes</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.hash" title="GLib.String.hash"><tt class="xref py py-obj docutils literal"><span class="pre">hash</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.insert" title="GLib.String.insert"><tt class="xref py py-obj docutils literal"><span class="pre">insert</span></tt></a>(pos, val)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.insert_c" title="GLib.String.insert_c"><tt class="xref py py-obj docutils literal"><span class="pre">insert_c</span></tt></a>(pos, c)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.insert_len" title="GLib.String.insert_len"><tt class="xref py py-obj docutils literal"><span class="pre">insert_len</span></tt></a>(pos, val, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.insert_unichar" title="GLib.String.insert_unichar"><tt class="xref py py-obj docutils literal"><span class="pre">insert_unichar</span></tt></a>(pos, wc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.overwrite" title="GLib.String.overwrite"><tt class="xref py py-obj docutils literal"><span class="pre">overwrite</span></tt></a>(pos, val)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.overwrite_len" title="GLib.String.overwrite_len"><tt class="xref py py-obj docutils literal"><span class="pre">overwrite_len</span></tt></a>(pos, val, len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.prepend" title="GLib.String.prepend"><tt class="xref py py-obj docutils literal"><span class="pre">prepend</span></tt></a>(val)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.prepend_c" title="GLib.String.prepend_c"><tt class="xref py py-obj docutils literal"><span class="pre">prepend_c</span></tt></a>(c)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.prepend_len" title="GLib.String.prepend_len"><tt class="xref py py-obj docutils literal"><span class="pre">prepend_len</span></tt></a>(val, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.prepend_unichar" title="GLib.String.prepend_unichar"><tt class="xref py py-obj docutils literal"><span class="pre">prepend_unichar</span></tt></a>(wc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.set_size" title="GLib.String.set_size"><tt class="xref py py-obj docutils literal"><span class="pre">set_size</span></tt></a>(len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.String.truncate" title="GLib.String.truncate"><tt class="xref py py-obj docutils literal"><span class="pre">truncate</span></tt></a>(len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.String.up" title="GLib.String.up"><tt class="xref py py-obj docutils literal"><span class="pre">up</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GLib.String">
+<em class="property">class </em><tt class="descclassname">GLib.</tt><tt class="descname">String</tt><a class="headerlink" href="#GLib.String" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> struct contains the public fields of a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>.</p>
+<dl class="method">
+<dt id="GLib.String.append">
+<tt class="descname">append</tt><big>(</big><em>val</em><big>)</big><a class="headerlink" href="#GLib.String.append" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the string to append onto the end of <cite>string</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a string onto the end of a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>, expanding
+it if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.append_c">
+<tt class="descname">append_c</tt><big>(</big><em>c</em><big>)</big><a class="headerlink" href="#GLib.String.append_c" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>c</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the byte to append onto the end of <cite>string</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a byte onto the end of a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>, expanding
+it if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.append_len">
+<tt class="descname">append_len</tt><big>(</big><em>val</em>, <em>len</em><big>)</big><a class="headerlink" href="#GLib.String.append_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; bytes to append</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; number of bytes of <cite>val</cite> to use</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Appends <cite>len</cite> bytes of <cite>val</cite> to <cite>string</cite>. Because <cite>len</cite> is
+provided, <cite>val</cite> may contain embedded nuls and need not
+be nul-terminated.</p>
+<p>Since this function does not stop at nul bytes, it is
+the caller&#8217;s responsibility to ensure that <cite>val</cite> has at
+least <cite>len</cite> addressable bytes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.append_unichar">
+<tt class="descname">append_unichar</tt><big>(</big><em>wc</em><big>)</big><a class="headerlink" href="#GLib.String.append_unichar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>wc</strong> (<tt class="xref py py-class docutils literal"><span class="pre">unicode</span></tt>) &#8211; a Unicode character</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a Unicode character into UTF-8, and appends it
+to the string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.append_uri_escaped">
+<tt class="descname">append_uri_escaped</tt><big>(</big><em>unescaped</em>, <em>reserved_chars_allowed</em>, <em>allow_utf8</em><big>)</big><a class="headerlink" href="#GLib.String.append_uri_escaped" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>unescaped</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a string</li>
+<li><strong>reserved_chars_allowed</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a string of reserved characters allowed to be used, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>allow_utf8</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; set <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the escaped string may include UTF8 characters</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Appends <cite>unescaped</cite> to <cite>string</cite>, escaped any characters that
+are reserved in URIs using URI-style escape sequences.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.ascii_down">
+<tt class="descname">ascii_down</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.String.ascii_down" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">passed-in <cite>string</cite> pointer, with all the uppercase characters converted to lowercase in place, with semantics that exactly match <a class="reference internal" href="../functions.html#GLib.ascii_tolower" title="GLib.ascii_tolower"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ascii_tolower</span></tt></a> ().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts all uppercase ASCII letters to lowercase ASCII letters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.ascii_up">
+<tt class="descname">ascii_up</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.String.ascii_up" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">passed-in <cite>string</cite> pointer, with all the lowercase characters converted to uppercase in place, with semantics that exactly match <a class="reference internal" href="../functions.html#GLib.ascii_toupper" title="GLib.ascii_toupper"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ascii_toupper</span></tt></a> ().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts all lowercase ASCII letters to uppercase ASCII letters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.assign">
+<tt class="descname">assign</tt><big>(</big><em>rval</em><big>)</big><a class="headerlink" href="#GLib.String.assign" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rval</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the string to copy into <cite>string</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Copies the bytes from a string into a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>,
+destroying any previous contents. It is rather like
+the standard strcpy() function, except that you do not
+have to worry about having enough space to copy the string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.down">
+<tt class="descname">down</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.String.down" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> to lowercase.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.equal">
+<tt class="descname">equal</tt><big>(</big><em>v2</em><big>)</big><a class="headerlink" href="#GLib.String.equal" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>v2</strong> (<a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>) &#8211; another <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if they strings are the same length and contain the same bytes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Compares two strings for equality, returning <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if they are equal.
+For use with <a class="reference internal" href="HashTable.html#GLib.HashTable" title="GLib.HashTable"><tt class="xref py py-class docutils literal"><span class="pre">GLib.HashTable</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.erase">
+<tt class="descname">erase</tt><big>(</big><em>pos</em>, <em>len</em><big>)</big><a class="headerlink" href="#GLib.String.erase" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the position of the content to remove</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of bytes to remove, or -1 to remove all following bytes</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Removes <cite>len</cite> bytes from a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>, starting at position <cite>pos</cite>.
+The rest of the <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> is shifted down to fill the gap.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.free">
+<tt class="descname">free</tt><big>(</big><em>free_segment</em><big>)</big><a class="headerlink" href="#GLib.String.free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>free_segment</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; if <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, the actual character data is freed as well</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the character data of <cite>string</cite> (i.e. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if <cite>free_segment</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> )</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Frees the memory allocated for the <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>.
+If <cite>free_segment</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> it also frees the character data.  If
+it&#8217;s <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>, the caller gains ownership of the buffer and must
+free it after use with <a class="reference internal" href="../functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.free_to_bytes">
+<tt class="descname">free_to_bytes</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.String.free_to_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A newly allocated <a class="reference internal" href="Bytes.html#GLib.Bytes" title="GLib.Bytes"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Bytes</span></tt></a> containing contents of <cite>string</cite> ; <cite>string</cite> itself is freed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Bytes.html#GLib.Bytes" title="GLib.Bytes"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Bytes</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Transfers ownership of the contents of <cite>string</cite> to a newly allocated
+<a class="reference internal" href="Bytes.html#GLib.Bytes" title="GLib.Bytes"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Bytes</span></tt></a>.  The <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> structure itself is deallocated, and it is
+therefore invalid to use <cite>string</cite> after invoking this function.</p>
+<p>Note that while <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> ensures that its buffer always has a
+trailing nul character (not reflected in its &#8220;len&#8221;), the returned
+<a class="reference internal" href="Bytes.html#GLib.Bytes" title="GLib.Bytes"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Bytes</span></tt></a> does not include this extra nul; i.e. it has length exactly
+equal to the &#8220;len&#8221; member.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.hash">
+<tt class="descname">hash</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.String.hash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">hash code for <cite>str</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a hash code for <cite>str</cite> ; for use with <a class="reference internal" href="HashTable.html#GLib.HashTable" title="GLib.HashTable"><tt class="xref py py-class docutils literal"><span class="pre">GLib.HashTable</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.insert">
+<tt class="descname">insert</tt><big>(</big><em>pos</em>, <em>val</em><big>)</big><a class="headerlink" href="#GLib.String.insert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the position to insert the copy of the string</li>
+<li><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the string to insert</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a copy of a string into a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>,
+expanding it if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.insert_c">
+<tt class="descname">insert_c</tt><big>(</big><em>pos</em>, <em>c</em><big>)</big><a class="headerlink" href="#GLib.String.insert_c" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the position to insert the byte</li>
+<li><strong>c</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the byte to insert</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a byte into a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>, expanding it if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.insert_len">
+<tt class="descname">insert_len</tt><big>(</big><em>pos</em>, <em>val</em>, <em>len</em><big>)</big><a class="headerlink" href="#GLib.String.insert_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in <cite>string</cite> where insertion should happen, or -1 for at the end</li>
+<li><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; bytes to insert</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; number of bytes of <cite>val</cite> to insert</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts <cite>len</cite> bytes of <cite>val</cite> into <cite>string</cite> at <cite>pos</cite>.
+Because <cite>len</cite> is provided, <cite>val</cite> may contain embedded
+nuls and need not be nul-terminated. If <cite>pos</cite> is -1,
+bytes are inserted at the end of the string.</p>
+<p>Since this function does not stop at nul bytes, it is
+the caller&#8217;s responsibility to ensure that <cite>val</cite> has at
+least <cite>len</cite> addressable bytes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.insert_unichar">
+<tt class="descname">insert_unichar</tt><big>(</big><em>pos</em>, <em>wc</em><big>)</big><a class="headerlink" href="#GLib.String.insert_unichar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the position at which to insert character, or -1 to append at the end of the string</li>
+<li><strong>wc</strong> (<tt class="xref py py-class docutils literal"><span class="pre">unicode</span></tt>) &#8211; a Unicode character</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Converts a Unicode character into UTF-8, and insert it
+into the string at the given position.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.overwrite">
+<tt class="descname">overwrite</tt><big>(</big><em>pos</em>, <em>val</em><big>)</big><a class="headerlink" href="#GLib.String.overwrite" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the position at which to start overwriting</li>
+<li><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the string that will overwrite the <cite>string</cite> starting at <cite>pos</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Overwrites part of a string, lengthening it if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.overwrite_len">
+<tt class="descname">overwrite_len</tt><big>(</big><em>pos</em>, <em>val</em>, <em>len</em><big>)</big><a class="headerlink" href="#GLib.String.overwrite_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the position at which to start overwriting</li>
+<li><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the string that will overwrite the <cite>string</cite> starting at <cite>pos</cite></li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of bytes to write from <cite>val</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Overwrites part of a string, lengthening it if necessary.
+This function will work with embedded nuls.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.prepend">
+<tt class="descname">prepend</tt><big>(</big><em>val</em><big>)</big><a class="headerlink" href="#GLib.String.prepend" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the string to prepend on the start of <cite>string</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a string on to the start of a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>,
+expanding it if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.prepend_c">
+<tt class="descname">prepend_c</tt><big>(</big><em>c</em><big>)</big><a class="headerlink" href="#GLib.String.prepend_c" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>c</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the byte to prepend on the start of the <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a byte onto the start of a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>,
+expanding it if necessary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.prepend_len">
+<tt class="descname">prepend_len</tt><big>(</big><em>val</em>, <em>len</em><big>)</big><a class="headerlink" href="#GLib.String.prepend_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; bytes to prepend</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; number of bytes in <cite>val</cite> to prepend</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>string</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Prepends <cite>len</cite> bytes of <cite>val</cite> to <cite>string</cite>.
+Because <cite>len</cite> is provided, <cite>val</cite> may contain
+embedded nuls and need not be nul-terminated.</p>
+<p>Since this function does not stop at nul bytes,
+it is the caller&#8217;s responsibility to ensure that
+<cite>val</cite> has at least <cite>len</cite> addressable bytes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.prepend_unichar">
+<tt class="descname">prepend_unichar</tt><big>(</big><em>wc</em><big>)</big><a class="headerlink" href="#GLib.String.prepend_unichar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>wc</strong> (<tt class="xref py py-class docutils literal"><span class="pre">unicode</span></tt>) &#8211; a Unicode character</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a Unicode character into UTF-8, and prepends it
+to the string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.set_size">
+<tt class="descname">set_size</tt><big>(</big><em>len</em><big>)</big><a class="headerlink" href="#GLib.String.set_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new length</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the length of a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>. If the length is less than
+the current length, the string will be truncated. If the
+length is greater than the current length, the contents
+of the newly added area are undefined. (However, as
+always, string-&gt;str[string-&gt;len] will be a nul byte.)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.truncate">
+<tt class="descname">truncate</tt><big>(</big><em>len</em><big>)</big><a class="headerlink" href="#GLib.String.truncate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new size of <cite>string</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Cuts off the end of the <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>, leaving the first <cite>len</cite> bytes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.String.up">
+<tt class="descname">up</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.String.up" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><cite>string</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a <a class="reference internal" href="#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> to uppercase.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="StringChunk.html" class="btn btn-neutral float-right" title="GLib.StringChunk"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="StatBuf.html" class="btn btn-neutral" title="GLib.StatBuf"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,1064 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Atk.Table -
+    
+      Interfaces -
+    
+      Atk 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Interfaces" href="index.html"/>
+        <link rel="next" title="Atk.Text" href="Text.html"/>
+        <link rel="prev" title="Atk.StreamableContent" href="StreamableContent.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Atk 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Interfaces</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Atk.Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Atk 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Interfaces</a> &raquo;</li>
+  
+  <li><a href="">Atk.Table</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Atk_1.0/interfaces/Table" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="atk-table">
+<h1>Atk.Table<a class="headerlink" href="#atk-table" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-f06c7a1cafca6a354f60430e0646c653433c8117.png" alt="Inheritance diagram of Atk.Table" usemap="#inheritancea023a63ef7" class="inheritance"/>
+<map id="inheritancea023a63ef7" name="inheritancea023a63ef7">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="5,5,120,29"/>
+<area shape="rect" id="node2" href="#Atk.Table" title="Atk.Table" alt="" coords="27,77,99,101"/>
+</map>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="../classes/NoOpObject.html#Atk.NoOpObject" title="Atk.NoOpObject"><tt class="xref py py-class docutils literal"><span class="pre">Atk.NoOpObject</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.add_column_selection" title="Atk.Table.add_column_selection"><tt class="xref py py-obj docutils literal"><span class="pre">add_column_selection</span></tt></a>(column)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.add_row_selection" title="Atk.Table.add_row_selection"><tt class="xref py py-obj docutils literal"><span class="pre">add_row_selection</span></tt></a>(row)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_caption" title="Atk.Table.get_caption"><tt class="xref py py-obj docutils literal"><span class="pre">get_caption</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_column_at_index" title="Atk.Table.get_column_at_index"><tt class="xref py py-obj docutils literal"><span class="pre">get_column_at_index</span></tt></a>(index_)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_column_description" title="Atk.Table.get_column_description"><tt class="xref py py-obj docutils literal"><span class="pre">get_column_description</span></tt></a>(column)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_column_extent_at" title="Atk.Table.get_column_extent_at"><tt class="xref py py-obj docutils literal"><span class="pre">get_column_extent_at</span></tt></a>(row, column)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_column_header" title="Atk.Table.get_column_header"><tt class="xref py py-obj docutils literal"><span class="pre">get_column_header</span></tt></a>(column)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_index_at" title="Atk.Table.get_index_at"><tt class="xref py py-obj docutils literal"><span class="pre">get_index_at</span></tt></a>(row, column)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_n_columns" title="Atk.Table.get_n_columns"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_columns</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_n_rows" title="Atk.Table.get_n_rows"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_rows</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_row_at_index" title="Atk.Table.get_row_at_index"><tt class="xref py py-obj docutils literal"><span class="pre">get_row_at_index</span></tt></a>(index_)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_row_description" title="Atk.Table.get_row_description"><tt class="xref py py-obj docutils literal"><span class="pre">get_row_description</span></tt></a>(row)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_row_extent_at" title="Atk.Table.get_row_extent_at"><tt class="xref py py-obj docutils literal"><span class="pre">get_row_extent_at</span></tt></a>(row, column)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_row_header" title="Atk.Table.get_row_header"><tt class="xref py py-obj docutils literal"><span class="pre">get_row_header</span></tt></a>(row)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_selected_columns" title="Atk.Table.get_selected_columns"><tt class="xref py py-obj docutils literal"><span class="pre">get_selected_columns</span></tt></a>(selected)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_selected_rows" title="Atk.Table.get_selected_rows"><tt class="xref py py-obj docutils literal"><span class="pre">get_selected_rows</span></tt></a>(selected)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.get_summary" title="Atk.Table.get_summary"><tt class="xref py py-obj docutils literal"><span class="pre">get_summary</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.is_column_selected" title="Atk.Table.is_column_selected"><tt class="xref py py-obj docutils literal"><span class="pre">is_column_selected</span></tt></a>(column)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.is_row_selected" title="Atk.Table.is_row_selected"><tt class="xref py py-obj docutils literal"><span class="pre">is_row_selected</span></tt></a>(row)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.is_selected" title="Atk.Table.is_selected"><tt class="xref py py-obj docutils literal"><span class="pre">is_selected</span></tt></a>(row, column)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.ref_at" title="Atk.Table.ref_at"><tt class="xref py py-obj docutils literal"><span class="pre">ref_at</span></tt></a>(row, column)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.remove_column_selection" title="Atk.Table.remove_column_selection"><tt class="xref py py-obj docutils literal"><span class="pre">remove_column_selection</span></tt></a>(column)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.remove_row_selection" title="Atk.Table.remove_row_selection"><tt class="xref py py-obj docutils literal"><span class="pre">remove_row_selection</span></tt></a>(row)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.set_caption" title="Atk.Table.set_caption"><tt class="xref py py-obj docutils literal"><span class="pre">set_caption</span></tt></a>(caption)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.set_column_description" title="Atk.Table.set_column_description"><tt class="xref py py-obj docutils literal"><span class="pre">set_column_description</span></tt></a>(column, description)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.set_column_header" title="Atk.Table.set_column_header"><tt class="xref py py-obj docutils literal"><span class="pre">set_column_header</span></tt></a>(column, header)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.set_row_description" title="Atk.Table.set_row_description"><tt class="xref py py-obj docutils literal"><span class="pre">set_row_description</span></tt></a>(row, description)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Atk.Table.set_row_header" title="Atk.Table.set_row_header"><tt class="xref py py-obj docutils literal"><span class="pre">set_row_header</span></tt></a>(row, header)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Atk.Table.set_summary" title="Atk.Table.set_summary"><tt class="xref py py-obj docutils literal"><span class="pre">set_summary</span></tt></a>(accessible)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="atk-table-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="atk-table-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="column-deleted">column-deleted</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>, <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>&nbsp;</td>
+<td>The &#8220;column-deleted&#8221; signal is emitted by an object which implements the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> interface when a column is deleted.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="column-inserted">column-inserted</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>, <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>&nbsp;</td>
+<td>The &#8220;column-inserted&#8221; signal is emitted by an object which implements the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> interface when a column is inserted.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="column-reordered">column-reordered</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The &#8220;column-reordered&#8221; signal is emitted by an object which implements the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> interface when the columns are reordered.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="model-changed">model-changed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The &#8220;model-changed&#8221; signal is emitted by an object which implements the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> interface when the model displayed by the table changes.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="row-deleted">row-deleted</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>, <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>&nbsp;</td>
+<td>The &#8220;row-deleted&#8221; signal is emitted by an object which implements the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> interface when a row is deleted.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="row-inserted">row-inserted</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>, <tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>&nbsp;</td>
+<td>The &#8220;row-inserted&#8221; signal is emitted by an object which implements the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> interface when a row is inserted.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="row-reordered">row-reordered</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The &#8220;row-reordered&#8221; signal is emitted by an object which implements the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> interface when the rows are reordered.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atk.Table">
+<em class="property">class </em><tt class="descclassname">Atk.</tt><tt class="descname">Table</tt><a class="headerlink" href="#Atk.Table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GInterface</span></tt></a></p>
+<p><a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> should be implemented by components which present
+elements ordered via rows and columns.  It may also be used to
+present tree-structured information if the nodes of the trees can
+be said to contain multiple &#8220;columns&#8221;.  Individual elements of an
+<a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> are typically referred to as &#8220;cells&#8221;, and these cells are
+exposed by <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> as child <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Objects</span></tt></a> of the <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a>.  Both
+row/column and child-index-based access to these children is
+provided.</p>
+<p>Children of <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> are frequently &#8220;lightweight&#8221; objects, that
+is, they may not have backing widgets in the host UI toolkit.  They
+are therefore often transient.
+Since tables are often very complex, <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> includes provision
+for offering simplified summary information, as well as row and
+column headers and captions.  Headers and captions are <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Objects</span></tt></a> 
+which may implement other interfaces (<a class="reference internal" href="Text.html#Atk.Text" title="Atk.Text"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Text</span></tt></a>, <a class="reference internal" href="Image.html#Atk.Image" title="Atk.Image"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Image</span></tt></a>, etc.) as
+appropriate.  <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a> summaries may themselves be (simplified)
+<a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Tables</span></tt></a>, etc.</p>
+<dl class="method">
+<dt id="Atk.Table.add_column_selection">
+<tt class="descname">add_column_selection</tt><big>(</big><em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.add_column_selection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> representing if the column was successfully added to the selection, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds the specified <cite>column</cite> to the selection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.add_row_selection">
+<tt class="descname">add_row_selection</tt><big>(</big><em>row</em><big>)</big><a class="headerlink" href="#Atk.Table.add_row_selection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> representing if row was successfully added to selection, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds the specified <cite>row</cite> to the selection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_caption">
+<tt class="descname">get_caption</tt><big>(</big><big>)</big><a class="headerlink" href="#Atk.Table.get_caption" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a> representing the table caption, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if value does not implement this interface.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the caption for the <cite>table</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_column_at_index">
+<tt class="descname">get_column_at_index</tt><big>(</big><em>index_</em><big>)</big><a class="headerlink" href="#Atk.Table.get_column_at_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing an index in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the column at the specified index, or -1 if the table does not implement this interface</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the column at the specified <cite>index_</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_column_description">
+<tt class="descname">get_column_description</tt><big>(</big><em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.get_column_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> representing the column description, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the description text of the specified <cite>column</cite> in the table</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_column_extent_at">
+<tt class="descname">get_column_extent_at</tt><big>(</big><em>row</em>, <em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.get_column_extent_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></li>
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the column extent at specified position, or 0 if value does not implement this interface.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the number of columns occupied by the accessible object
+at the specified <cite>row</cite> and <cite>column</cite> in the <cite>table</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_column_header">
+<tt class="descname">get_column_header</tt><big>(</big><em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.get_column_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in the table</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a> representing the specified column header, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the column header of a specified column in an accessible table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_index_at">
+<tt class="descname">get_index_at</tt><big>(</big><em>row</em>, <em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.get_index_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></li>
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the index at specified position. The value -1 is returned if the object at row,column is not a child of table or table does not implement this interface.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the index at the specified <cite>row</cite> and <cite>column</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_n_columns">
+<tt class="descname">get_n_columns</tt><big>(</big><big>)</big><a class="headerlink" href="#Atk.Table.get_n_columns" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the number of columns, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the number of columns in the table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_n_rows">
+<tt class="descname">get_n_rows</tt><big>(</big><big>)</big><a class="headerlink" href="#Atk.Table.get_n_rows" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the number of rows, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the number of rows in the table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_row_at_index">
+<tt class="descname">get_row_at_index</tt><big>(</big><em>index_</em><big>)</big><a class="headerlink" href="#Atk.Table.get_row_at_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing an index in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the row at the specified index, or -1 if the table does not implement this interface</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the row at the specified <cite>index_</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_row_description">
+<tt class="descname">get_row_description</tt><big>(</big><em>row</em><big>)</big><a class="headerlink" href="#Atk.Table.get_row_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> representing the row description, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the description text of the specified row in the table</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_row_extent_at">
+<tt class="descname">get_row_extent_at</tt><big>(</big><em>row</em>, <em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.get_row_extent_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></li>
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the row extent at specified position, or 0 if value does not implement this interface.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the number of rows occupied by the accessible object
+at a specified <cite>row</cite> and <cite>column</cite> in the <cite>table</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_row_header">
+<tt class="descname">get_row_header</tt><big>(</big><em>row</em><big>)</big><a class="headerlink" href="#Atk.Table.get_row_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in the table</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a> representing the specified row header, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the row header of a specified row in an accessible table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_selected_columns">
+<tt class="descname">get_selected_columns</tt><big>(</big><em>selected</em><big>)</big><a class="headerlink" href="#Atk.Table.get_selected_columns" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>selected</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> that is to contain the selected columns numbers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the number of selected columns, or %0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the selected columns of the table by initializing **selected with
+the selected column numbers. This array should be freed by the caller.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_selected_rows">
+<tt class="descname">get_selected_rows</tt><big>(</big><em>selected</em><big>)</big><a class="headerlink" href="#Atk.Table.get_selected_rows" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>selected</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> that is to contain the selected row numbers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing the number of selected rows, or zero if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the selected rows of the table by initializing **selected with
+the selected row numbers. This array should be freed by the caller.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.get_summary">
+<tt class="descname">get_summary</tt><big>(</big><big>)</big><a class="headerlink" href="#Atk.Table.get_summary" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a> representing a summary description of the table, or zero if value does not implement this interface.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the summary description of the table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.is_column_selected">
+<tt class="descname">is_column_selected</tt><big>(</big><em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.is_column_selected" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> representing if the column is selected, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a boolean value indicating whether the specified <cite>column</cite>
+is selected</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.is_row_selected">
+<tt class="descname">is_row_selected</tt><big>(</big><em>row</em><big>)</big><a class="headerlink" href="#Atk.Table.is_row_selected" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> representing if the row is selected, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets a boolean value indicating whether the specified <cite>row</cite>
+is selected</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.is_selected">
+<tt class="descname">is_selected</tt><big>(</big><em>row</em>, <em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.is_selected" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></li>
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> representing if the cell is selected, or 0 if value does not implement this interface.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets a boolean value indicating whether the accessible object
+at the specified <cite>row</cite> and <cite>column</cite> is selected</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.ref_at">
+<tt class="descname">ref_at</tt><big>(</big><em>row</em>, <em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.ref_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></li>
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a> representing the referred to accessible</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get a reference to the table cell at <cite>row</cite>, <cite>column</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.remove_column_selection">
+<tt class="descname">remove_column_selection</tt><big>(</big><em>column</em><big>)</big><a class="headerlink" href="#Atk.Table.remove_column_selection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> representing if the column was successfully removed from the selection, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds the specified <cite>column</cite> to the selection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.remove_row_selection">
+<tt class="descname">remove_row_selection</tt><big>(</big><em>row</em><big>)</big><a class="headerlink" href="#Atk.Table.remove_row_selection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> representing if the row was successfully removed from the selection, or 0 if value does not implement this interface.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Removes the specified <cite>row</cite> from the selection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.set_caption">
+<tt class="descname">set_caption</tt><big>(</big><em>caption</em><big>)</big><a class="headerlink" href="#Atk.Table.set_caption" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caption</strong> (<a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a>) &#8211; a <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a> representing the caption to set for <cite>table</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the caption for the table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.set_column_description">
+<tt class="descname">set_column_description</tt><big>(</big><em>column</em>, <em>description</em><big>)</big><a class="headerlink" href="#Atk.Table.set_column_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></li>
+<li><strong>description</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> representing the description text to set for the specified <cite>column</cite> of the <cite>table</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the description text for the specified <cite>column</cite> of the <cite>table</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.set_column_header">
+<tt class="descname">set_column_header</tt><big>(</big><em>column</em>, <em>header</em><big>)</big><a class="headerlink" href="#Atk.Table.set_column_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a column in <cite>table</cite></li>
+<li><strong>header</strong> (<a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a>) &#8211; an <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the specified column header to <cite>header</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.set_row_description">
+<tt class="descname">set_row_description</tt><big>(</big><em>row</em>, <em>description</em><big>)</big><a class="headerlink" href="#Atk.Table.set_row_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></li>
+<li><strong>description</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> representing the description text to set for the specified <cite>row</cite> of <cite>table</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the description text for the specified <cite>row</cite> of <cite>table</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.set_row_header">
+<tt class="descname">set_row_header</tt><big>(</big><em>row</em>, <em>header</em><big>)</big><a class="headerlink" href="#Atk.Table.set_row_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>row</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> representing a row in <cite>table</cite></li>
+<li><strong>header</strong> (<a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a>) &#8211; an <a class="reference internal" href="#Atk.Table" title="Atk.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Table</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the specified row header to <cite>header</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Atk.Table.set_summary">
+<tt class="descname">set_summary</tt><big>(</big><em>accessible</em><big>)</big><a class="headerlink" href="#Atk.Table.set_summary" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>accessible</strong> (<a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a>) &#8211; an <a class="reference internal" href="../classes/Object.html#Atk.Object" title="Atk.Object"><tt class="xref py py-class docutils literal"><span class="pre">Atk.Object</span></tt></a> representing the summary description to set for <cite>table</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the summary description of the table.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Text.html" class="btn btn-neutral float-right" title="Atk.Text"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="StreamableContent.html" class="btn btn-neutral" title="Atk.StreamableContent"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

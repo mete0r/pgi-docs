@@ -1,0 +1,936 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Constants -
+    
+      Colord 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Colord 1.0" href="index.html"/>
+        <link rel="next" title="ColordGtk 1.0" href="../ColordGtk_1.0/index.html"/>
+        <link rel="prev" title="Enums" href="enums.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Colord 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Constants</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Colord 1.0</a> &raquo;</li>
+  
+  <li><a href="">Constants</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Colord_1.0/constants" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="constants">
+<h1>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#Colord.CLIENT_PROPERTY_DAEMON_VERSION" title="Colord.CLIENT_PROPERTY_DAEMON_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.CLIENT_PROPERTY_DAEMON_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.CLIENT_PROPERTY_SYSTEM_MODEL" title="Colord.CLIENT_PROPERTY_SYSTEM_MODEL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.CLIENT_PROPERTY_SYSTEM_MODEL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.CLIENT_PROPERTY_SYSTEM_VENDOR" title="Colord.CLIENT_PROPERTY_SYSTEM_VENDOR"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.CLIENT_PROPERTY_SYSTEM_VENDOR</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_METADATA_OUTPUT_EDID_MD5" title="Colord.DEVICE_METADATA_OUTPUT_EDID_MD5"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_METADATA_OUTPUT_EDID_MD5</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_METADATA_OUTPUT_PRIORITY" title="Colord.DEVICE_METADATA_OUTPUT_PRIORITY"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_METADATA_OUTPUT_PRIORITY</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_METADATA_OUTPUT_PRIORITY_PRIMARY" title="Colord.DEVICE_METADATA_OUTPUT_PRIORITY_PRIMARY"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_METADATA_OUTPUT_PRIORITY_PRIMARY</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_METADATA_OUTPUT_PRIORITY_SECONDARY" title="Colord.DEVICE_METADATA_OUTPUT_PRIORITY_SECONDARY"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_METADATA_OUTPUT_PRIORITY_SECONDARY</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_METADATA_OWNER_CMDLINE" title="Colord.DEVICE_METADATA_OWNER_CMDLINE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_METADATA_OWNER_CMDLINE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_METADATA_XRANDR_NAME" title="Colord.DEVICE_METADATA_XRANDR_NAME"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_METADATA_XRANDR_NAME</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_COLORSPACE" title="Colord.DEVICE_PROPERTY_COLORSPACE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_COLORSPACE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_CREATED" title="Colord.DEVICE_PROPERTY_CREATED"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_CREATED</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_EMBEDDED" title="Colord.DEVICE_PROPERTY_EMBEDDED"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_EMBEDDED</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_ENABLED" title="Colord.DEVICE_PROPERTY_ENABLED"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_ENABLED</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_FORMAT" title="Colord.DEVICE_PROPERTY_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_ID" title="Colord.DEVICE_PROPERTY_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_KIND" title="Colord.DEVICE_PROPERTY_KIND"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_KIND</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_METADATA" title="Colord.DEVICE_PROPERTY_METADATA"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_METADATA</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_MODE" title="Colord.DEVICE_PROPERTY_MODE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_MODE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_MODEL" title="Colord.DEVICE_PROPERTY_MODEL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_MODEL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_MODIFIED" title="Colord.DEVICE_PROPERTY_MODIFIED"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_MODIFIED</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_OWNER" title="Colord.DEVICE_PROPERTY_OWNER"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_OWNER</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_PROFILES" title="Colord.DEVICE_PROPERTY_PROFILES"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_PROFILES</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_PROFILING_INHIBITORS" title="Colord.DEVICE_PROPERTY_PROFILING_INHIBITORS"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_PROFILING_INHIBITORS</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_SCOPE" title="Colord.DEVICE_PROPERTY_SCOPE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_SCOPE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_SEAT" title="Colord.DEVICE_PROPERTY_SEAT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_SEAT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_SERIAL" title="Colord.DEVICE_PROPERTY_SERIAL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_SERIAL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.DEVICE_PROPERTY_VENDOR" title="Colord.DEVICE_PROPERTY_VENDOR"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.DEVICE_PROPERTY_VENDOR</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.MAJOR_VERSION" title="Colord.MAJOR_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.MAJOR_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.MICRO_VERSION" title="Colord.MICRO_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.MICRO_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.MINOR_VERSION" title="Colord.MINOR_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.MINOR_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PIXEL_FORMAT_ARGB32" title="Colord.PIXEL_FORMAT_ARGB32"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PIXEL_FORMAT_ARGB32</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PIXEL_FORMAT_BGRA32" title="Colord.PIXEL_FORMAT_BGRA32"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PIXEL_FORMAT_BGRA32</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PIXEL_FORMAT_CMYK32" title="Colord.PIXEL_FORMAT_CMYK32"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PIXEL_FORMAT_CMYK32</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PIXEL_FORMAT_RGB24" title="Colord.PIXEL_FORMAT_RGB24"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PIXEL_FORMAT_RGB24</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PIXEL_FORMAT_UNKNOWN" title="Colord.PIXEL_FORMAT_UNKNOWN"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PIXEL_FORMAT_UNKNOWN</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_ACCURACY_DE76_AVG" title="Colord.PROFILE_METADATA_ACCURACY_DE76_AVG"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_ACCURACY_DE76_AVG</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_ACCURACY_DE76_MAX" title="Colord.PROFILE_METADATA_ACCURACY_DE76_MAX"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_ACCURACY_DE76_MAX</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_ACCURACY_DE76_RMS" title="Colord.PROFILE_METADATA_ACCURACY_DE76_RMS"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_ACCURACY_DE76_RMS</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CMF_BINARY" title="Colord.PROFILE_METADATA_CMF_BINARY"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CMF_BINARY</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CMF_PRODUCT" title="Colord.PROFILE_METADATA_CMF_PRODUCT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CMF_PRODUCT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CMF_VERSION" title="Colord.PROFILE_METADATA_CMF_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CMF_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE" title="Colord.PROFILE_METADATA_CONNECTION_TYPE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CONNECTION_TYPE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_DISPLAYPORT" title="Colord.PROFILE_METADATA_CONNECTION_TYPE_DISPLAYPORT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CONNECTION_TYPE_DISPLAYPORT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_DVI" title="Colord.PROFILE_METADATA_CONNECTION_TYPE_DVI"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CONNECTION_TYPE_DVI</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_HDMI" title="Colord.PROFILE_METADATA_CONNECTION_TYPE_HDMI"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CONNECTION_TYPE_HDMI</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_INTERNAL" title="Colord.PROFILE_METADATA_CONNECTION_TYPE_INTERNAL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CONNECTION_TYPE_INTERNAL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_VGA" title="Colord.PROFILE_METADATA_CONNECTION_TYPE_VGA"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_CONNECTION_TYPE_VGA</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_DATA_SOURCE" title="Colord.PROFILE_METADATA_DATA_SOURCE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_DATA_SOURCE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_DATA_SOURCE_CALIB" title="Colord.PROFILE_METADATA_DATA_SOURCE_CALIB"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_DATA_SOURCE_CALIB</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_DATA_SOURCE_EDID" title="Colord.PROFILE_METADATA_DATA_SOURCE_EDID"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_DATA_SOURCE_EDID</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_DATA_SOURCE_STANDARD" title="Colord.PROFILE_METADATA_DATA_SOURCE_STANDARD"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_DATA_SOURCE_STANDARD</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_DATA_SOURCE_TEST" title="Colord.PROFILE_METADATA_DATA_SOURCE_TEST"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_DATA_SOURCE_TEST</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_EDID_MD5" title="Colord.PROFILE_METADATA_EDID_MD5"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_EDID_MD5</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_EDID_MNFT" title="Colord.PROFILE_METADATA_EDID_MNFT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_EDID_MNFT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_EDID_MODEL" title="Colord.PROFILE_METADATA_EDID_MODEL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_EDID_MODEL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_EDID_SERIAL" title="Colord.PROFILE_METADATA_EDID_SERIAL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_EDID_SERIAL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_EDID_VENDOR" title="Colord.PROFILE_METADATA_EDID_VENDOR"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_EDID_VENDOR</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_FILE_CHECKSUM" title="Colord.PROFILE_METADATA_FILE_CHECKSUM"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_FILE_CHECKSUM</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_LICENSE" title="Colord.PROFILE_METADATA_LICENSE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_LICENSE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_MAPPING_DEVICE_ID" title="Colord.PROFILE_METADATA_MAPPING_DEVICE_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_MAPPING_DEVICE_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_MAPPING_FORMAT" title="Colord.PROFILE_METADATA_MAPPING_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_MAPPING_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_MAPPING_QUALIFIER" title="Colord.PROFILE_METADATA_MAPPING_QUALIFIER"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_MAPPING_QUALIFIER</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_MEASUREMENT_DEVICE" title="Colord.PROFILE_METADATA_MEASUREMENT_DEVICE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_MEASUREMENT_DEVICE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_QUALITY" title="Colord.PROFILE_METADATA_QUALITY"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_QUALITY</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_QUALITY_HIGH" title="Colord.PROFILE_METADATA_QUALITY_HIGH"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_QUALITY_HIGH</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_QUALITY_LOW" title="Colord.PROFILE_METADATA_QUALITY_LOW"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_QUALITY_LOW</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_QUALITY_MEDIUM" title="Colord.PROFILE_METADATA_QUALITY_MEDIUM"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_QUALITY_MEDIUM</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_SCREEN_BRIGHTNESS" title="Colord.PROFILE_METADATA_SCREEN_BRIGHTNESS"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_SCREEN_BRIGHTNESS</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_SCREEN_SURFACE" title="Colord.PROFILE_METADATA_SCREEN_SURFACE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_SCREEN_SURFACE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_SCREEN_SURFACE_GLOSSY" title="Colord.PROFILE_METADATA_SCREEN_SURFACE_GLOSSY"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_SCREEN_SURFACE_GLOSSY</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_SCREEN_SURFACE_MATTE" title="Colord.PROFILE_METADATA_SCREEN_SURFACE_MATTE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_SCREEN_SURFACE_MATTE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_METADATA_STANDARD_SPACE" title="Colord.PROFILE_METADATA_STANDARD_SPACE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_METADATA_STANDARD_SPACE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_COLORSPACE" title="Colord.PROFILE_PROPERTY_COLORSPACE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_COLORSPACE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_CREATED" title="Colord.PROFILE_PROPERTY_CREATED"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_CREATED</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_FILENAME" title="Colord.PROFILE_PROPERTY_FILENAME"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_FILENAME</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_FORMAT" title="Colord.PROFILE_PROPERTY_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_HAS_VCGT" title="Colord.PROFILE_PROPERTY_HAS_VCGT"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_HAS_VCGT</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_ID" title="Colord.PROFILE_PROPERTY_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_IS_SYSTEM_WIDE" title="Colord.PROFILE_PROPERTY_IS_SYSTEM_WIDE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_IS_SYSTEM_WIDE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_KIND" title="Colord.PROFILE_PROPERTY_KIND"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_KIND</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_METADATA" title="Colord.PROFILE_PROPERTY_METADATA"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_METADATA</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_OWNER" title="Colord.PROFILE_PROPERTY_OWNER"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_OWNER</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_QUALIFIER" title="Colord.PROFILE_PROPERTY_QUALIFIER"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_QUALIFIER</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_SCOPE" title="Colord.PROFILE_PROPERTY_SCOPE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_SCOPE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_TITLE" title="Colord.PROFILE_PROPERTY_TITLE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_TITLE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.PROFILE_PROPERTY_WARNINGS" title="Colord.PROFILE_PROPERTY_WARNINGS"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.PROFILE_PROPERTY_WARNINGS</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_METADATA_IMAGE_ATTACH" title="Colord.SENSOR_METADATA_IMAGE_ATTACH"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_METADATA_IMAGE_ATTACH</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_METADATA_IMAGE_CALIBRATE" title="Colord.SENSOR_METADATA_IMAGE_CALIBRATE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_METADATA_IMAGE_CALIBRATE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_METADATA_IMAGE_SCREEN" title="Colord.SENSOR_METADATA_IMAGE_SCREEN"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_METADATA_IMAGE_SCREEN</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_CAPABILITIES" title="Colord.SENSOR_PROPERTY_CAPABILITIES"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_CAPABILITIES</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_EMBEDDED" title="Colord.SENSOR_PROPERTY_EMBEDDED"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_EMBEDDED</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_ID" title="Colord.SENSOR_PROPERTY_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_KIND" title="Colord.SENSOR_PROPERTY_KIND"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_KIND</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_LOCKED" title="Colord.SENSOR_PROPERTY_LOCKED"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_LOCKED</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_METADATA" title="Colord.SENSOR_PROPERTY_METADATA"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_METADATA</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_MODE" title="Colord.SENSOR_PROPERTY_MODE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_MODE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_MODEL" title="Colord.SENSOR_PROPERTY_MODEL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_MODEL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_NATIVE" title="Colord.SENSOR_PROPERTY_NATIVE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_NATIVE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_OPTIONS" title="Colord.SENSOR_PROPERTY_OPTIONS"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_OPTIONS</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_SERIAL" title="Colord.SENSOR_PROPERTY_SERIAL"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_SERIAL</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_STATE" title="Colord.SENSOR_PROPERTY_STATE"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_STATE</span></tt></a></li>
+<li><a class="reference internal" href="#Colord.SENSOR_PROPERTY_VENDOR" title="Colord.SENSOR_PROPERTY_VENDOR"><tt class="xref py py-obj docutils literal"><span class="pre">Colord.SENSOR_PROPERTY_VENDOR</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Colord.CLIENT_PROPERTY_DAEMON_VERSION">
+<tt class="descclassname">Colord.</tt><tt class="descname">CLIENT_PROPERTY_DAEMON_VERSION</tt><em class="property"> = 'DaemonVersion'</em><a class="headerlink" href="#Colord.CLIENT_PROPERTY_DAEMON_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.CLIENT_PROPERTY_SYSTEM_MODEL">
+<tt class="descclassname">Colord.</tt><tt class="descname">CLIENT_PROPERTY_SYSTEM_MODEL</tt><em class="property"> = 'SystemModel'</em><a class="headerlink" href="#Colord.CLIENT_PROPERTY_SYSTEM_MODEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.CLIENT_PROPERTY_SYSTEM_VENDOR">
+<tt class="descclassname">Colord.</tt><tt class="descname">CLIENT_PROPERTY_SYSTEM_VENDOR</tt><em class="property"> = 'SystemVendor'</em><a class="headerlink" href="#Colord.CLIENT_PROPERTY_SYSTEM_VENDOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_METADATA_OUTPUT_EDID_MD5">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_METADATA_OUTPUT_EDID_MD5</tt><em class="property"> = 'OutputEdidMd5'</em><a class="headerlink" href="#Colord.DEVICE_METADATA_OUTPUT_EDID_MD5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_METADATA_OUTPUT_PRIORITY">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_METADATA_OUTPUT_PRIORITY</tt><em class="property"> = 'OutputPriority'</em><a class="headerlink" href="#Colord.DEVICE_METADATA_OUTPUT_PRIORITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_METADATA_OUTPUT_PRIORITY_PRIMARY">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_METADATA_OUTPUT_PRIORITY_PRIMARY</tt><em class="property"> = 'primary'</em><a class="headerlink" href="#Colord.DEVICE_METADATA_OUTPUT_PRIORITY_PRIMARY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_METADATA_OUTPUT_PRIORITY_SECONDARY">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_METADATA_OUTPUT_PRIORITY_SECONDARY</tt><em class="property"> = 'secondary'</em><a class="headerlink" href="#Colord.DEVICE_METADATA_OUTPUT_PRIORITY_SECONDARY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_METADATA_OWNER_CMDLINE">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_METADATA_OWNER_CMDLINE</tt><em class="property"> = 'OwnerCmdline'</em><a class="headerlink" href="#Colord.DEVICE_METADATA_OWNER_CMDLINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_METADATA_XRANDR_NAME">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_METADATA_XRANDR_NAME</tt><em class="property"> = 'XRANDR_name'</em><a class="headerlink" href="#Colord.DEVICE_METADATA_XRANDR_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_COLORSPACE">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_COLORSPACE</tt><em class="property"> = 'Colorspace'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_COLORSPACE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_CREATED">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_CREATED</tt><em class="property"> = 'Created'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_CREATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_EMBEDDED">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_EMBEDDED</tt><em class="property"> = 'Embedded'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_EMBEDDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_ENABLED">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_ENABLED</tt><em class="property"> = 'Enabled'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_FORMAT">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_FORMAT</tt><em class="property"> = 'Format'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_ID">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_ID</tt><em class="property"> = 'DeviceId'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_KIND">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_KIND</tt><em class="property"> = 'Kind'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_KIND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_METADATA">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_METADATA</tt><em class="property"> = 'Metadata'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_METADATA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_MODE">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_MODE</tt><em class="property"> = 'Mode'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_MODE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_MODEL">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_MODEL</tt><em class="property"> = 'Model'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_MODEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_MODIFIED">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_MODIFIED</tt><em class="property"> = 'Modified'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_MODIFIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_OWNER">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_OWNER</tt><em class="property"> = 'Owner'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_OWNER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_PROFILES">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_PROFILES</tt><em class="property"> = 'Profiles'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_PROFILES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_PROFILING_INHIBITORS">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_PROFILING_INHIBITORS</tt><em class="property"> = 'ProfilingInhibitors'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_PROFILING_INHIBITORS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_SCOPE">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_SCOPE</tt><em class="property"> = 'Scope'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_SCOPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_SEAT">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_SEAT</tt><em class="property"> = 'Seat'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_SEAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_SERIAL">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_SERIAL</tt><em class="property"> = 'Serial'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_SERIAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.DEVICE_PROPERTY_VENDOR">
+<tt class="descclassname">Colord.</tt><tt class="descname">DEVICE_PROPERTY_VENDOR</tt><em class="property"> = 'Vendor'</em><a class="headerlink" href="#Colord.DEVICE_PROPERTY_VENDOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.MAJOR_VERSION">
+<tt class="descclassname">Colord.</tt><tt class="descname">MAJOR_VERSION</tt><em class="property"> = 1</em><a class="headerlink" href="#Colord.MAJOR_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The compile-time major version</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Colord.MICRO_VERSION">
+<tt class="descclassname">Colord.</tt><tt class="descname">MICRO_VERSION</tt><em class="property"> = 5</em><a class="headerlink" href="#Colord.MICRO_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The compile-time micro version</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Colord.MINOR_VERSION">
+<tt class="descclassname">Colord.</tt><tt class="descname">MINOR_VERSION</tt><em class="property"> = 0</em><a class="headerlink" href="#Colord.MINOR_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The compile-time minor version</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="Colord.PIXEL_FORMAT_ARGB32">
+<tt class="descclassname">Colord.</tt><tt class="descname">PIXEL_FORMAT_ARGB32</tt><em class="property"> = 278681</em><a class="headerlink" href="#Colord.PIXEL_FORMAT_ARGB32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PIXEL_FORMAT_BGRA32">
+<tt class="descclassname">Colord.</tt><tt class="descname">PIXEL_FORMAT_BGRA32</tt><em class="property"> = 279705</em><a class="headerlink" href="#Colord.PIXEL_FORMAT_BGRA32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PIXEL_FORMAT_CMYK32">
+<tt class="descclassname">Colord.</tt><tt class="descname">PIXEL_FORMAT_CMYK32</tt><em class="property"> = 393249</em><a class="headerlink" href="#Colord.PIXEL_FORMAT_CMYK32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PIXEL_FORMAT_RGB24">
+<tt class="descclassname">Colord.</tt><tt class="descname">PIXEL_FORMAT_RGB24</tt><em class="property"> = 262169</em><a class="headerlink" href="#Colord.PIXEL_FORMAT_RGB24" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PIXEL_FORMAT_UNKNOWN">
+<tt class="descclassname">Colord.</tt><tt class="descname">PIXEL_FORMAT_UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#Colord.PIXEL_FORMAT_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_ACCURACY_DE76_AVG">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_ACCURACY_DE76_AVG</tt><em class="property"> = 'ACCURACY_dE76_avg'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_ACCURACY_DE76_AVG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_ACCURACY_DE76_MAX">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_ACCURACY_DE76_MAX</tt><em class="property"> = 'ACCURACY_dE76_max'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_ACCURACY_DE76_MAX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_ACCURACY_DE76_RMS">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_ACCURACY_DE76_RMS</tt><em class="property"> = 'ACCURACY_dE76_rms'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_ACCURACY_DE76_RMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CMF_BINARY">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CMF_BINARY</tt><em class="property"> = 'CMF_binary'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CMF_BINARY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CMF_PRODUCT">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CMF_PRODUCT</tt><em class="property"> = 'CMF_product'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CMF_PRODUCT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CMF_VERSION">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CMF_VERSION</tt><em class="property"> = 'CMF_version'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CMF_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CONNECTION_TYPE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CONNECTION_TYPE</tt><em class="property"> = 'CONNECTION_type'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CONNECTION_TYPE_DISPLAYPORT">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CONNECTION_TYPE_DISPLAYPORT</tt><em class="property"> = 'displayport'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_DISPLAYPORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CONNECTION_TYPE_DVI">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CONNECTION_TYPE_DVI</tt><em class="property"> = 'dvi'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_DVI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CONNECTION_TYPE_HDMI">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CONNECTION_TYPE_HDMI</tt><em class="property"> = 'hdmi'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_HDMI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CONNECTION_TYPE_INTERNAL">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CONNECTION_TYPE_INTERNAL</tt><em class="property"> = 'internal'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_INTERNAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_CONNECTION_TYPE_VGA">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_CONNECTION_TYPE_VGA</tt><em class="property"> = 'vga'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_CONNECTION_TYPE_VGA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_DATA_SOURCE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_DATA_SOURCE</tt><em class="property"> = 'DATA_source'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_DATA_SOURCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_DATA_SOURCE_CALIB">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_DATA_SOURCE_CALIB</tt><em class="property"> = 'calib'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_DATA_SOURCE_CALIB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_DATA_SOURCE_EDID">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_DATA_SOURCE_EDID</tt><em class="property"> = 'edid'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_DATA_SOURCE_EDID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_DATA_SOURCE_STANDARD">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_DATA_SOURCE_STANDARD</tt><em class="property"> = 'standard'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_DATA_SOURCE_STANDARD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_DATA_SOURCE_TEST">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_DATA_SOURCE_TEST</tt><em class="property"> = 'test'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_DATA_SOURCE_TEST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_EDID_MD5">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_EDID_MD5</tt><em class="property"> = 'EDID_md5'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_EDID_MD5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_EDID_MNFT">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_EDID_MNFT</tt><em class="property"> = 'EDID_mnft'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_EDID_MNFT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_EDID_MODEL">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_EDID_MODEL</tt><em class="property"> = 'EDID_model'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_EDID_MODEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_EDID_SERIAL">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_EDID_SERIAL</tt><em class="property"> = 'EDID_serial'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_EDID_SERIAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_EDID_VENDOR">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_EDID_VENDOR</tt><em class="property"> = 'EDID_manufacturer'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_EDID_VENDOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_FILE_CHECKSUM">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_FILE_CHECKSUM</tt><em class="property"> = 'FILE_checksum'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_FILE_CHECKSUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_LICENSE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_LICENSE</tt><em class="property"> = 'License'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_LICENSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_MAPPING_DEVICE_ID">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_MAPPING_DEVICE_ID</tt><em class="property"> = 'MAPPING_device_id'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_MAPPING_DEVICE_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_MAPPING_FORMAT">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_MAPPING_FORMAT</tt><em class="property"> = 'MAPPING_format'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_MAPPING_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_MAPPING_QUALIFIER">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_MAPPING_QUALIFIER</tt><em class="property"> = 'MAPPING_qualifier'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_MAPPING_QUALIFIER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_MEASUREMENT_DEVICE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_MEASUREMENT_DEVICE</tt><em class="property"> = 'MEASUREMENT_device'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_MEASUREMENT_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_QUALITY">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_QUALITY</tt><em class="property"> = 'Quality'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_QUALITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_QUALITY_HIGH">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_QUALITY_HIGH</tt><em class="property"> = 'high'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_QUALITY_HIGH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_QUALITY_LOW">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_QUALITY_LOW</tt><em class="property"> = 'low'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_QUALITY_LOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_QUALITY_MEDIUM">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_QUALITY_MEDIUM</tt><em class="property"> = 'medium'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_QUALITY_MEDIUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_SCREEN_BRIGHTNESS">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_SCREEN_BRIGHTNESS</tt><em class="property"> = 'SCREEN_brightness'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_SCREEN_BRIGHTNESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_SCREEN_SURFACE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_SCREEN_SURFACE</tt><em class="property"> = 'SCREEN_surface'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_SCREEN_SURFACE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_SCREEN_SURFACE_GLOSSY">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_SCREEN_SURFACE_GLOSSY</tt><em class="property"> = 'glossy'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_SCREEN_SURFACE_GLOSSY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_SCREEN_SURFACE_MATTE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_SCREEN_SURFACE_MATTE</tt><em class="property"> = 'matte'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_SCREEN_SURFACE_MATTE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_METADATA_STANDARD_SPACE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_METADATA_STANDARD_SPACE</tt><em class="property"> = 'STANDARD_space'</em><a class="headerlink" href="#Colord.PROFILE_METADATA_STANDARD_SPACE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_COLORSPACE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_COLORSPACE</tt><em class="property"> = 'Colorspace'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_COLORSPACE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_CREATED">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_CREATED</tt><em class="property"> = 'Created'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_CREATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_FILENAME">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_FILENAME</tt><em class="property"> = 'Filename'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_FILENAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_FORMAT">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_FORMAT</tt><em class="property"> = 'Format'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_HAS_VCGT">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_HAS_VCGT</tt><em class="property"> = 'HasVcgt'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_HAS_VCGT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_ID">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_ID</tt><em class="property"> = 'ProfileId'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_IS_SYSTEM_WIDE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_IS_SYSTEM_WIDE</tt><em class="property"> = 'IsSystemWide'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_IS_SYSTEM_WIDE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_KIND">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_KIND</tt><em class="property"> = 'Kind'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_KIND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_METADATA">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_METADATA</tt><em class="property"> = 'Metadata'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_METADATA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_OWNER">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_OWNER</tt><em class="property"> = 'Owner'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_OWNER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_QUALIFIER">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_QUALIFIER</tt><em class="property"> = 'Qualifier'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_QUALIFIER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_SCOPE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_SCOPE</tt><em class="property"> = 'Scope'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_SCOPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_TITLE">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_TITLE</tt><em class="property"> = 'Title'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_TITLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.PROFILE_PROPERTY_WARNINGS">
+<tt class="descclassname">Colord.</tt><tt class="descname">PROFILE_PROPERTY_WARNINGS</tt><em class="property"> = 'Warnings'</em><a class="headerlink" href="#Colord.PROFILE_PROPERTY_WARNINGS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_METADATA_IMAGE_ATTACH">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_METADATA_IMAGE_ATTACH</tt><em class="property"> = 'ImageAttach'</em><a class="headerlink" href="#Colord.SENSOR_METADATA_IMAGE_ATTACH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_METADATA_IMAGE_CALIBRATE">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_METADATA_IMAGE_CALIBRATE</tt><em class="property"> = 'ImageCalibrate'</em><a class="headerlink" href="#Colord.SENSOR_METADATA_IMAGE_CALIBRATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_METADATA_IMAGE_SCREEN">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_METADATA_IMAGE_SCREEN</tt><em class="property"> = 'ImageScreen'</em><a class="headerlink" href="#Colord.SENSOR_METADATA_IMAGE_SCREEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_CAPABILITIES">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_CAPABILITIES</tt><em class="property"> = 'Capabilities'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_CAPABILITIES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_EMBEDDED">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_EMBEDDED</tt><em class="property"> = 'Embedded'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_EMBEDDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_ID">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_ID</tt><em class="property"> = 'SensorId'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_KIND">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_KIND</tt><em class="property"> = 'Kind'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_KIND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_LOCKED">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_LOCKED</tt><em class="property"> = 'Locked'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_LOCKED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_METADATA">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_METADATA</tt><em class="property"> = 'Metadata'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_METADATA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_MODE">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_MODE</tt><em class="property"> = 'Mode'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_MODE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_MODEL">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_MODEL</tt><em class="property"> = 'Model'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_MODEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_NATIVE">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_NATIVE</tt><em class="property"> = 'Native'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_NATIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_OPTIONS">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_OPTIONS</tt><em class="property"> = 'Options'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_OPTIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_SERIAL">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_SERIAL</tt><em class="property"> = 'Serial'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_SERIAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_STATE">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_STATE</tt><em class="property"> = 'State'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_STATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Colord.SENSOR_PROPERTY_VENDOR">
+<tt class="descclassname">Colord.</tt><tt class="descname">SENSOR_PROPERTY_VENDOR</tt><em class="property"> = 'Vendor'</em><a class="headerlink" href="#Colord.SENSOR_PROPERTY_VENDOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../ColordGtk_1.0/index.html" class="btn btn-neutral float-right" title="ColordGtk 1.0"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="enums.html" class="btn btn-neutral" title="Enums"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

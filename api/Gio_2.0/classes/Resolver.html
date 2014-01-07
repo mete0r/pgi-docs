@@ -1,0 +1,832 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gio.Resolver -
+    
+      Classes -
+    
+      Gio 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gio.Settings" href="Settings.html"/>
+        <link rel="prev" title="Gio.ProxyAddressEnumerator" href="ProxyAddressEnumerator.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gio 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gio.Resolver</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gio 2.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gio.Resolver</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gio_2.0/classes/Resolver" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gio-resolver">
+<h1>Gio.Resolver<a class="headerlink" href="#gio-resolver" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-06c41659d62cfc257a02424b72b1e7bcc24c3213.png" alt="Inheritance diagram of Gio.Resolver" usemap="#inheritancea58e7ae216" class="inheritance"/>
+<map id="inheritancea58e7ae216" name="inheritancea58e7ae216">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="5,5,101,29"/>
+<area shape="rect" id="node2" href="#Gio.Resolver" title="Gio.Resolver" alt="" coords="12,77,95,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gio.Resolver.get_default" title="Gio.Resolver.get_default"><tt class="xref py py-obj docutils literal"><span class="pre">get_default</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_by_address" title="Gio.Resolver.lookup_by_address"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_by_address</span></tt></a>(address, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_by_address_async" title="Gio.Resolver.lookup_by_address_async"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_by_address_async</span></tt></a>(address, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_by_address_finish" title="Gio.Resolver.lookup_by_address_finish"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_by_address_finish</span></tt></a>(result)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_by_name" title="Gio.Resolver.lookup_by_name"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_by_name</span></tt></a>(hostname, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_by_name_async" title="Gio.Resolver.lookup_by_name_async"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_by_name_async</span></tt></a>(hostname, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_by_name_finish" title="Gio.Resolver.lookup_by_name_finish"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_by_name_finish</span></tt></a>(result)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_records" title="Gio.Resolver.lookup_records"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_records</span></tt></a>(rrname, record_type, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_records_async" title="Gio.Resolver.lookup_records_async"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_records_async</span></tt></a>(rrname, record_type, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_records_finish" title="Gio.Resolver.lookup_records_finish"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_records_finish</span></tt></a>(result)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_service" title="Gio.Resolver.lookup_service"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_service</span></tt></a>(service, protocol, domain, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_service_async" title="Gio.Resolver.lookup_service_async"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_service_async</span></tt></a>(service, protocol, domain, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.lookup_service_finish" title="Gio.Resolver.lookup_service_finish"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_service_finish</span></tt></a>(result)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.Resolver.set_default" title="Gio.Resolver.set_default"><tt class="xref py py-obj docutils literal"><span class="pre">set_default</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gio-resolver-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gio-resolver-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="reload">reload</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Emitted when the resolver notices that the system resolver configuration has changed.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gio.Resolver">
+<em class="property">class </em><tt class="descclassname">Gio.</tt><tt class="descname">Resolver</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gio.Resolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<p><a class="reference internal" href="#Gio.Resolver" title="Gio.Resolver"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver</span></tt></a> provides cancellable synchronous and asynchronous DNS
+resolution, for hostnames (<a class="reference internal" href="#Gio.Resolver.lookup_by_address" title="Gio.Resolver.lookup_by_address"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_address</span></tt></a> (),
+<a class="reference internal" href="#Gio.Resolver.lookup_by_name" title="Gio.Resolver.lookup_by_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_name</span></tt></a> () and their async variants) and SRV
+(service) records (<a class="reference internal" href="#Gio.Resolver.lookup_service" title="Gio.Resolver.lookup_service"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_service</span></tt></a> ()).</p>
+<p><a class="reference internal" href="NetworkAddress.html#Gio.NetworkAddress" title="Gio.NetworkAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.NetworkAddress</span></tt></a> and <a class="reference internal" href="NetworkService.html#Gio.NetworkService" title="Gio.NetworkService"><tt class="xref py py-class docutils literal"><span class="pre">Gio.NetworkService</span></tt></a> provide wrappers around
+<a class="reference internal" href="#Gio.Resolver" title="Gio.Resolver"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver</span></tt></a> functionality that also implement <a class="reference internal" href="../interfaces/SocketConnectable.html#Gio.SocketConnectable" title="Gio.SocketConnectable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SocketConnectable</span></tt></a>,
+making it easy to connect to a remote host/service.</p>
+<dl class="staticmethod">
+<dt id="Gio.Resolver.get_default">
+<em class="property">static </em><tt class="descname">get_default</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.Resolver.get_default" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the default <a class="reference internal" href="#Gio.Resolver" title="Gio.Resolver"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gio.Resolver" title="Gio.Resolver"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the default <a class="reference internal" href="#Gio.Resolver" title="Gio.Resolver"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver</span></tt></a>. You should unref it when you are done
+with it. <a class="reference internal" href="#Gio.Resolver" title="Gio.Resolver"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver</span></tt></a> may use its reference count as a hint about how
+many threads it should allocate for concurrent DNS resolutions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_by_address">
+<tt class="descname">lookup_by_address</tt><big>(</big><em>address</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_by_address" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>address</strong> (<a class="reference internal" href="InetAddress.html#Gio.InetAddress" title="Gio.InetAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress</span></tt></a>) &#8211; the address to reverse-resolve</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a hostname (either ASCII-only, or in ASCII-encoded form), or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously reverse-resolves <cite>address</cite> to determine its
+associated hostname.</p>
+<p>If the DNS resolution fails, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+a value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>.</p>
+<p>If <cite>cancellable</cite> is non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, it can be used to cancel the
+operation, in which case <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+<a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_by_address_async">
+<tt class="descname">lookup_by_address_async</tt><big>(</big><em>address</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_by_address_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>address</strong> (<a class="reference internal" href="InetAddress.html#Gio.InetAddress" title="Gio.InetAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress</span></tt></a>) &#8211; the address to reverse-resolve</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; callback to call after resolution completes</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data for <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Begins asynchronously reverse-resolving <cite>address</cite> to determine its
+associated hostname, and eventually calls <cite>callback</cite>, which must
+call <a class="reference internal" href="#Gio.Resolver.lookup_by_address_finish" title="Gio.Resolver.lookup_by_address_finish"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_address_finish</span></tt></a> () to get the final result.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_by_address_finish">
+<tt class="descname">lookup_by_address_finish</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_by_address_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference internal" href="../interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the result passed to your <a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a hostname (either ASCII-only, or in ASCII-encoded form), or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the result of a previous call to
+<a class="reference internal" href="#Gio.Resolver.lookup_by_address_async" title="Gio.Resolver.lookup_by_address_async"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_address_async</span></tt></a> ().</p>
+<p>If the DNS resolution failed, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+a value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>. If the operation was cancelled,
+<cite>error</cite> will be set to <a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_by_name">
+<tt class="descname">lookup_by_name</tt><big>(</big><em>hostname</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hostname</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the hostname to look up</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="InetAddress.html#Gio.InetAddress" title="Gio.InetAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. You must unref each of the addresses and free the list when you are done with it. (You can use <tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.free_addresses</span></tt> () to do this.)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference internal" href="InetAddress.html#Gio.InetAddress" title="Gio.InetAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously resolves <cite>hostname</cite> to determine its associated IP
+address(es). <cite>hostname</cite> may be an ASCII-only or UTF-8 hostname, or
+the textual form of an IP address (in which case this just becomes
+a wrapper around <a class="reference internal" href="InetAddress.html#Gio.InetAddress.new_from_string" title="Gio.InetAddress.new_from_string"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress.new_from_string</span></tt></a> ()).</p>
+<p>On success, <a class="reference internal" href="#Gio.Resolver.lookup_by_name" title="Gio.Resolver.lookup_by_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_name</span></tt></a> () will return a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of
+<a class="reference internal" href="InetAddress.html#Gio.InetAddress" title="Gio.InetAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress</span></tt></a>, sorted in order of preference and guaranteed to not
+contain duplicates. That is, if using the result to connect to
+<cite>hostname</cite>, you should attempt to connect to the first address
+first, then the second if the first fails, etc. If you are using
+the result to listen on a socket, it is appropriate to add each
+result using e.g. <a class="reference internal" href="SocketListener.html#Gio.SocketListener.add_address" title="Gio.SocketListener.add_address"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SocketListener.add_address</span></tt></a> ().</p>
+<p>If the DNS resolution fails, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to a
+value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>.</p>
+<p>If <cite>cancellable</cite> is non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, it can be used to cancel the
+operation, in which case <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+<a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+<p>If you are planning to connect to a socket on the resolved IP
+address, it may be easier to create a <a class="reference internal" href="NetworkAddress.html#Gio.NetworkAddress" title="Gio.NetworkAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.NetworkAddress</span></tt></a> and use its
+<a class="reference internal" href="../interfaces/SocketConnectable.html#Gio.SocketConnectable" title="Gio.SocketConnectable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SocketConnectable</span></tt></a> interface.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_by_name_async">
+<tt class="descname">lookup_by_name_async</tt><big>(</big><em>hostname</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_by_name_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>hostname</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the hostname to look up the address of</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; callback to call after resolution completes</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data for <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Begins asynchronously resolving <cite>hostname</cite> to determine its
+associated IP address(es), and eventually calls <cite>callback</cite>, which
+must call <a class="reference internal" href="#Gio.Resolver.lookup_by_name_finish" title="Gio.Resolver.lookup_by_name_finish"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_name_finish</span></tt></a> () to get the result.
+See <a class="reference internal" href="#Gio.Resolver.lookup_by_name" title="Gio.Resolver.lookup_by_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_name</span></tt></a> () for more details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_by_name_finish">
+<tt class="descname">lookup_by_name_finish</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_by_name_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference internal" href="../interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the result passed to your <a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="InetAddress.html#Gio.InetAddress" title="Gio.InetAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. See <a class="reference internal" href="#Gio.Resolver.lookup_by_name" title="Gio.Resolver.lookup_by_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_name</span></tt></a> () for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="InetAddress.html#Gio.InetAddress" title="Gio.InetAddress"><tt class="xref py py-class docutils literal"><span class="pre">Gio.InetAddress</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the result of a call to
+<a class="reference internal" href="#Gio.Resolver.lookup_by_name_async" title="Gio.Resolver.lookup_by_name_async"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_by_name_async</span></tt></a> ().</p>
+<p>If the DNS resolution failed, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+a value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>. If the operation was cancelled,
+<cite>error</cite> will be set to <a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_records">
+<tt class="descname">lookup_records</tt><big>(</big><em>rrname</em>, <em>record_type</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_records" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rrname</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the DNS name to lookup the record for</li>
+<li><strong>record_type</strong> (<a class="reference internal" href="../enums.html#Gio.ResolverRecordType" title="Gio.ResolverRecordType"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverRecordType</span></tt></a>) &#8211; the type of DNS record to lookup</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. You must free each of the records and the list when you are done with it. (You can use <tt class="xref py py-class docutils literal"><span class="pre">GLib.List.free_full</span></tt> () with <a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant.unref" title="GLib.Variant.unref"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant.unref</span></tt></a> () to do this.)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously performs a DNS record lookup for the given <cite>rrname</cite> and returns
+a list of records as <a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> tuples. See <a class="reference internal" href="../enums.html#Gio.ResolverRecordType" title="Gio.ResolverRecordType"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverRecordType</span></tt></a> for
+information on what the records contain for each <cite>record_type</cite>.</p>
+<p>If the DNS resolution fails, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+a value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>.</p>
+<p>If <cite>cancellable</cite> is non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, it can be used to cancel the
+operation, in which case <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+<a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_records_async">
+<tt class="descname">lookup_records_async</tt><big>(</big><em>rrname</em>, <em>record_type</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_records_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rrname</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the DNS name to lookup the record for</li>
+<li><strong>record_type</strong> (<a class="reference internal" href="../enums.html#Gio.ResolverRecordType" title="Gio.ResolverRecordType"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverRecordType</span></tt></a>) &#8211; the type of DNS record to lookup</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; callback to call after resolution completes</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data for <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Begins asynchronously performing a DNS lookup for the given
+<cite>rrname</cite>, and eventually calls <cite>callback</cite>, which must call
+<a class="reference internal" href="#Gio.Resolver.lookup_records_finish" title="Gio.Resolver.lookup_records_finish"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_records_finish</span></tt></a> () to get the final result. See
+<a class="reference internal" href="#Gio.Resolver.lookup_records" title="Gio.Resolver.lookup_records"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_records</span></tt></a> () for more details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_records_finish">
+<tt class="descname">lookup_records_finish</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_records_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference internal" href="../interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the result passed to your <a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. You must free each of the records and the list when you are done with it. (You can use <tt class="xref py py-class docutils literal"><span class="pre">GLib.List.free_full</span></tt> () with <a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant.unref" title="GLib.Variant.unref"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant.unref</span></tt></a> () to do this.)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the result of a previous call to
+<a class="reference internal" href="#Gio.Resolver.lookup_records_async" title="Gio.Resolver.lookup_records_async"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_records_async</span></tt></a> (). Returns a list of records as <a class="reference internal" href="../../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>
+tuples. See <a class="reference internal" href="../enums.html#Gio.ResolverRecordType" title="Gio.ResolverRecordType"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverRecordType</span></tt></a> for information on what the records contain.</p>
+<p>If the DNS resolution failed, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+a value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>. If the operation was cancelled,
+<cite>error</cite> will be set to <a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_service">
+<tt class="descname">lookup_service</tt><big>(</big><em>service</em>, <em>protocol</em>, <em>domain</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_service" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>service</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the service type to look up (eg, &#8220;ldap&#8221;)</li>
+<li><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the networking protocol to use for <cite>service</cite> (eg, &#8220;tcp&#8221;)</li>
+<li><strong>domain</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the DNS domain to look up the service in</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="../structs/SrvTarget.html#Gio.SrvTarget" title="Gio.SrvTarget"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SrvTarget</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. You must free each of the targets and the list when you are done with it. (You can use <tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.free_targets</span></tt> () to do this.)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference internal" href="../structs/SrvTarget.html#Gio.SrvTarget" title="Gio.SrvTarget"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SrvTarget</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Synchronously performs a DNS SRV lookup for the given <cite>service</cite> and
+<cite>protocol</cite> in the given <cite>domain</cite> and returns an array of <a class="reference internal" href="../structs/SrvTarget.html#Gio.SrvTarget" title="Gio.SrvTarget"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SrvTarget</span></tt></a>.
+<cite>domain</cite> may be an ASCII-only or UTF-8 hostname. Note also that the
+<cite>service</cite> and <cite>protocol</cite> arguments do not
+include the leading underscore that appears in the actual DNS
+entry.</p>
+<p>On success, <a class="reference internal" href="#Gio.Resolver.lookup_service" title="Gio.Resolver.lookup_service"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_service</span></tt></a> () will return a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of
+<a class="reference internal" href="../structs/SrvTarget.html#Gio.SrvTarget" title="Gio.SrvTarget"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SrvTarget</span></tt></a>, sorted in order of preference. (That is, you should
+attempt to connect to the first target first, then the second if
+the first fails, etc.)</p>
+<p>If the DNS resolution fails, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+a value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>.</p>
+<p>If <cite>cancellable</cite> is non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, it can be used to cancel the
+operation, in which case <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+<a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+<p>If you are planning to connect to the service, it is usually easier
+to create a <a class="reference internal" href="NetworkService.html#Gio.NetworkService" title="Gio.NetworkService"><tt class="xref py py-class docutils literal"><span class="pre">Gio.NetworkService</span></tt></a> and use its <a class="reference internal" href="../interfaces/SocketConnectable.html#Gio.SocketConnectable" title="Gio.SocketConnectable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SocketConnectable</span></tt></a>
+interface.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_service_async">
+<tt class="descname">lookup_service_async</tt><big>(</big><em>service</em>, <em>protocol</em>, <em>domain</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_service_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>service</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the service type to look up (eg, &#8220;ldap&#8221;)</li>
+<li><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the networking protocol to use for <cite>service</cite> (eg, &#8220;tcp&#8221;)</li>
+<li><strong>domain</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the DNS domain to look up the service in</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; callback to call after resolution completes</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data for <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Begins asynchronously performing a DNS SRV lookup for the given
+<cite>service</cite> and <cite>protocol</cite> in the given <cite>domain</cite>, and eventually calls
+<cite>callback</cite>, which must call <a class="reference internal" href="#Gio.Resolver.lookup_service_finish" title="Gio.Resolver.lookup_service_finish"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_service_finish</span></tt></a> () to
+get the final result. See <a class="reference internal" href="#Gio.Resolver.lookup_service" title="Gio.Resolver.lookup_service"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_service</span></tt></a> () for more
+details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.lookup_service_finish">
+<tt class="descname">lookup_service_finish</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#Gio.Resolver.lookup_service_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference internal" href="../interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the result passed to your <a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="../structs/SrvTarget.html#Gio.SrvTarget" title="Gio.SrvTarget"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SrvTarget</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on error. See <a class="reference internal" href="#Gio.Resolver.lookup_service" title="Gio.Resolver.lookup_service"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_service</span></tt></a> () for more details.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="../structs/SrvTarget.html#Gio.SrvTarget" title="Gio.SrvTarget"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SrvTarget</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the result of a previous call to
+<a class="reference internal" href="#Gio.Resolver.lookup_service_async" title="Gio.Resolver.lookup_service_async"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.lookup_service_async</span></tt></a> ().</p>
+<p>If the DNS resolution failed, <cite>error</cite> (if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) will be set to
+a value from <a class="reference internal" href="../enums.html#Gio.ResolverError" title="Gio.ResolverError"><tt class="xref py py-class docutils literal"><span class="pre">Gio.ResolverError</span></tt></a>. If the operation was cancelled,
+<cite>error</cite> will be set to <a class="reference internal" href="../enums.html#Gio.IOErrorEnum.CANCELLED" title="Gio.IOErrorEnum.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOErrorEnum.CANCELLED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.Resolver.set_default">
+<tt class="descname">set_default</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.Resolver.set_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets <cite>resolver</cite> to be the application&#8217;s default resolver (reffing
+<cite>resolver</cite>, and unreffing the previous default resolver, if any).
+Future calls to <a class="reference internal" href="#Gio.Resolver.get_default" title="Gio.Resolver.get_default"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver.get_default</span></tt></a> () will return this resolver.</p>
+<p>This can be used if an application wants to perform any sort of DNS
+caching or &#8220;pinning&#8221;; it can implement its own <a class="reference internal" href="#Gio.Resolver" title="Gio.Resolver"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Resolver</span></tt></a> that
+calls the original default resolver for DNS operations, and
+implements its own cache policies on top of that, and then set
+itself as the default resolver for all later code to use.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Settings.html" class="btn btn-neutral float-right" title="Gio.Settings"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="ProxyAddressEnumerator.html" class="btn btn-neutral" title="Gio.ProxyAddressEnumerator"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

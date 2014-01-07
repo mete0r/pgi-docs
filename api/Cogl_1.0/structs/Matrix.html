@@ -1,0 +1,866 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Cogl.Matrix -
+    
+      Structures -
+    
+      Cogl 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="Cogl.Offscreen" href="Offscreen.html"/>
+        <link rel="prev" title="Cogl.MaterialLayer" href="MaterialLayer.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Cogl 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Cogl.Matrix</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Cogl 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">Cogl.Matrix</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Cogl_1.0/structs/Matrix" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="cogl-matrix">
+<h1>Cogl.Matrix<a class="headerlink" href="#cogl-matrix" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>flags</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>type</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>ww</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>wx</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>wy</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>wz</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>xw</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>xx</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>xy</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>xz</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>yw</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>yx</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>yy</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>yz</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>zw</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>zx</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>zy</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>zz</td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+<td>r/w</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Cogl.Matrix.equal" title="Cogl.Matrix.equal"><tt class="xref py py-obj docutils literal"><span class="pre">equal</span></tt></a>(v1, v2)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.free" title="Cogl.Matrix.free"><tt class="xref py py-obj docutils literal"><span class="pre">free</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.frustum" title="Cogl.Matrix.frustum"><tt class="xref py py-obj docutils literal"><span class="pre">frustum</span></tt></a>(left, right, bottom, top, z_near, z_far)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.get_array" title="Cogl.Matrix.get_array"><tt class="xref py py-obj docutils literal"><span class="pre">get_array</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.get_inverse" title="Cogl.Matrix.get_inverse"><tt class="xref py py-obj docutils literal"><span class="pre">get_inverse</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.init_from_array" title="Cogl.Matrix.init_from_array"><tt class="xref py py-obj docutils literal"><span class="pre">init_from_array</span></tt></a>(array)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.init_identity" title="Cogl.Matrix.init_identity"><tt class="xref py py-obj docutils literal"><span class="pre">init_identity</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.init_translation" title="Cogl.Matrix.init_translation"><tt class="xref py py-obj docutils literal"><span class="pre">init_translation</span></tt></a>(tx, ty, tz)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.is_identity" title="Cogl.Matrix.is_identity"><tt class="xref py py-obj docutils literal"><span class="pre">is_identity</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.look_at" title="Cogl.Matrix.look_at"><tt class="xref py py-obj docutils literal"><span class="pre">look_at</span></tt></a>(eye_position_x, eye_position_y, eye_position_z, object_x, object_y, object_z, world_up_x, ...)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.multiply" title="Cogl.Matrix.multiply"><tt class="xref py py-obj docutils literal"><span class="pre">multiply</span></tt></a>(a, b)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.ortho" title="Cogl.Matrix.ortho"><tt class="xref py py-obj docutils literal"><span class="pre">ortho</span></tt></a>(left, right, bottom, top, near, far)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.perspective" title="Cogl.Matrix.perspective"><tt class="xref py py-obj docutils literal"><span class="pre">perspective</span></tt></a>(fov_y, aspect, z_near, z_far)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.rotate" title="Cogl.Matrix.rotate"><tt class="xref py py-obj docutils literal"><span class="pre">rotate</span></tt></a>(angle, x, y, z)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.scale" title="Cogl.Matrix.scale"><tt class="xref py py-obj docutils literal"><span class="pre">scale</span></tt></a>(sx, sy, sz)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.transform_point" title="Cogl.Matrix.transform_point"><tt class="xref py py-obj docutils literal"><span class="pre">transform_point</span></tt></a>(x, y, z, w)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.translate" title="Cogl.Matrix.translate"><tt class="xref py py-obj docutils literal"><span class="pre">translate</span></tt></a>(x, y, z)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Cogl.Matrix.transpose" title="Cogl.Matrix.transpose"><tt class="xref py py-obj docutils literal"><span class="pre">transpose</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.Matrix">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">Matrix</tt><a class="headerlink" href="#Cogl.Matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>A <a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a> holds a 4x4 transform matrix. This is a single precision,
+column-major matrix which means it is compatible with what OpenGL expects.</p>
+<p>A <a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a> can represent transforms such as, rotations, scaling,
+translation, sheering, and linear projections. You can combine these
+transforms by multiplying multiple matrices in the order you want them
+applied.</p>
+<p>The transformation of a vertex (x, y, z, w) by a <a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a> is given by:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">x_new</span> <span class="o">=</span> <span class="n">xx</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">xy</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">xz</span> <span class="o">*</span> <span class="n">z</span> <span class="o">+</span> <span class="n">xw</span> <span class="o">*</span> <span class="n">w</span>
+<span class="n">y_new</span> <span class="o">=</span> <span class="n">yx</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">yy</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">yz</span> <span class="o">*</span> <span class="n">z</span> <span class="o">+</span> <span class="n">yw</span> <span class="o">*</span> <span class="n">w</span>
+<span class="n">z_new</span> <span class="o">=</span> <span class="n">zx</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">zy</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">zz</span> <span class="o">*</span> <span class="n">z</span> <span class="o">+</span> <span class="n">zw</span> <span class="o">*</span> <span class="n">w</span>
+<span class="n">w_new</span> <span class="o">=</span> <span class="n">wx</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">wy</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">wz</span> <span class="o">*</span> <span class="n">z</span> <span class="o">+</span> <span class="n">ww</span> <span class="o">*</span> <span class="n">w</span>
+</pre></div>
+</div>
+<p>Where w is normally 1</p>
+<p>You must consider the members of the <a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a> structure read only,
+and all matrix modifications must be done via the cogl_matrix API. This
+allows Cogl to annotate the matrices internally. Violation of this will give
+undefined results. If you need to initialize a matrix with a constant other
+than the identity matrix you can use <a class="reference internal" href="#Cogl.Matrix.init_from_array" title="Cogl.Matrix.init_from_array"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix.init_from_array</span></tt></a> ().</p>
+<dl class="staticmethod">
+<dt id="Cogl.Matrix.equal">
+<em class="property">static </em><tt class="descname">equal</tt><big>(</big><em>v1</em>, <em>v2</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.equal" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>v1</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; A 4x4 transformation matrix</li>
+<li><strong>v2</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; A 4x4 transformation matrix</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Compares two matrices to see if they represent the same
+transformation. Although internally the matrices may have different
+annotations associated with them and may potentially have a cached
+inverse matrix these are not considered in the comparison.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.free">
+<tt class="descname">free</tt><big>(</big><big>)</big><a class="headerlink" href="#Cogl.Matrix.free" title="Permalink to this definition">¶</a></dt>
+<dd><p>Frees a <a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a> that was previously allocated via a call to
+<tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix.copy</span></tt> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.frustum">
+<tt class="descname">frustum</tt><big>(</big><em>left</em>, <em>right</em>, <em>bottom</em>, <em>top</em>, <em>z_near</em>, <em>z_far</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.frustum" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>left</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; X position of the left clipping plane where it intersects the near clipping plane</li>
+<li><strong>right</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; X position of the right clipping plane where it intersects the near clipping plane</li>
+<li><strong>bottom</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Y position of the bottom clipping plane where it intersects the near clipping plane</li>
+<li><strong>top</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Y position of the top clipping plane where it intersects the near clipping plane</li>
+<li><strong>z_near</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The distance to the near clipping plane (Must be positive)</li>
+<li><strong>z_far</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The distance to the far clipping plane (Must be positive)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Multiplies <cite>matrix</cite> by the given frustum perspective matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.get_array">
+<tt class="descname">get_array</tt><big>(</big><big>)</big><a class="headerlink" href="#Cogl.Matrix.get_array" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the float array</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Casts <cite>matrix</cite> to a float array which can be directly passed to OpenGL.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.get_inverse">
+<tt class="descname">get_inverse</tt><big>(</big><big>)</big><a class="headerlink" href="#Cogl.Matrix.get_inverse" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the inverse was successfully calculated or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for degenerate transformations that can&#8217;t be inverted (in this case the <cite>inverse</cite> matrix will simply be initialized with the identity matrix)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, inverse: <a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the inverse transform of a given matrix and uses it to initialize
+a new <a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a>.</p>
+<p>Although the first parameter is annotated as const to indicate
+that the transform it represents isn&#8217;t modified this function may
+technically save a copy of the inverse transform within the given
+<a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a> so that subsequent requests for the inverse transform may
+avoid costly inversion calculations.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.init_from_array">
+<tt class="descname">init_from_array</tt><big>(</big><em>array</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.init_from_array" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>array</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; A linear array of 16 floats (column-major order)</td>
+</tr>
+</tbody>
+</table>
+<p>Initializes <cite>matrix</cite> with the contents of <cite>array</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.init_identity">
+<tt class="descname">init_identity</tt><big>(</big><big>)</big><a class="headerlink" href="#Cogl.Matrix.init_identity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets matrix to the identity matrix:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="p">.</span><span class="n">xx</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="p">.</span><span class="n">xy</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">xz</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">xw</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">.</span><span class="n">yx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">yy</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="p">.</span><span class="n">yz</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">yw</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">.</span><span class="n">zx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">zy</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">zz</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="p">.</span><span class="n">zw</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">.</span><span class="n">wx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">wy</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">wz</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">ww</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.init_translation">
+<tt class="descname">init_translation</tt><big>(</big><em>tx</em>, <em>ty</em>, <em>tz</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.init_translation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tx</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; x coordinate of the translation vector</li>
+<li><strong>ty</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; y coordinate of the translation vector</li>
+<li><strong>tz</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; z coordinate of the translation vector</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Resets matrix to the (tx, ty, tz) translation matrix:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="p">.</span><span class="n">xx</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="p">.</span><span class="n">xy</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">xz</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">xw</span><span class="o">=</span><span class="n">tx</span><span class="p">;</span>
+<span class="p">.</span><span class="n">yx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">yy</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="p">.</span><span class="n">yz</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">yw</span><span class="o">=</span><span class="n">ty</span><span class="p">;</span>
+<span class="p">.</span><span class="n">zx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">zy</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">zz</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="p">.</span><span class="n">zw</span><span class="o">=</span><span class="n">tz</span><span class="p">;</span>
+<span class="p">.</span><span class="n">wx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">wy</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">wz</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="p">.</span><span class="n">ww</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.is_identity">
+<tt class="descname">is_identity</tt><big>(</big><big>)</big><a class="headerlink" href="#Cogl.Matrix.is_identity" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>matrix</cite> is an identity matrix else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given matrix is an identity matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.look_at">
+<tt class="descname">look_at</tt><big>(</big><em>eye_position_x</em>, <em>eye_position_y</em>, <em>eye_position_z</em>, <em>object_x</em>, <em>object_y</em>, <em>object_z</em>, <em>world_up_x</em>, <em>world_up_y</em>, <em>world_up_z</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.look_at" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>eye_position_x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The X coordinate to look from</li>
+<li><strong>eye_position_y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Y coordinate to look from</li>
+<li><strong>eye_position_z</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Z coordinate to look from</li>
+<li><strong>object_x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The X coordinate of the object to look at</li>
+<li><strong>object_y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Y coordinate of the object to look at</li>
+<li><strong>object_z</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Z coordinate of the object to look at</li>
+<li><strong>world_up_x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The X component of the world&#8217;s up direction vector</li>
+<li><strong>world_up_y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Y component of the world&#8217;s up direction vector</li>
+<li><strong>world_up_z</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Z component of the world&#8217;s up direction vector</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Applies a view transform <cite>matrix</cite> that positions the camera at
+the coordinate (<cite>eye_position_x</cite>, <cite>eye_position_y</cite>, <cite>eye_position_z</cite> )
+looking towards an object at the coordinate (<cite>object_x</cite>, <cite>object_y</cite>,
+<cite>object_z</cite> ). The top of the camera is aligned to the given world up
+vector, which is normally simply (0, 1, 0) to map up to the
+positive direction of the y axis.</p>
+<p>Because there is a lot of missleading documentation online for
+gluLookAt regarding the up vector we want to try and be a bit
+clearer here.</p>
+<p>The up vector should simply be relative to your world coordinates
+and does not need to change as you move the eye and object
+positions.  Many online sources may claim that the up vector needs
+to be perpendicular to the vector between the eye and object
+position (partly because the man page is somewhat missleading) but
+that is not necessary for this function.</p>
+<p>You should never look directly along the world-up
+vector.
+It is assumed you are using a typical projection matrix where
+your origin maps to the center of your viewport.
+Almost always when you use this function it should be the first
+transform applied to a new modelview transform</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.multiply">
+<tt class="descname">multiply</tt><big>(</big><em>a</em>, <em>b</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.multiply" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>a</strong> (<a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a>) &#8211; A 4x4 transformation matrix</li>
+<li><strong>b</strong> (<a class="reference internal" href="#Cogl.Matrix" title="Cogl.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Matrix</span></tt></a>) &#8211; A 4x4 transformation matrix</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Multiplies the two supplied matrices together and stores
+the resulting matrix inside <cite>result</cite>.</p>
+<p>It is possible to multiply the <cite>a</cite> matrix in-place, so
+<cite>result</cite> can be equal to <cite>a</cite> but can&#8217;t be equal to <cite>b</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.ortho">
+<tt class="descname">ortho</tt><big>(</big><em>left</em>, <em>right</em>, <em>bottom</em>, <em>top</em>, <em>near</em>, <em>far</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.ortho" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>left</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The coordinate for the left clipping plane</li>
+<li><strong>right</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The coordinate for the right clipping plane</li>
+<li><strong>bottom</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The coordinate for the bottom clipping plane</li>
+<li><strong>top</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The coordinate for the top clipping plane</li>
+<li><strong>near</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The distance to the near clipping plane (will be negative if the plane is behind the viewer)</li>
+<li><strong>far</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The distance to the far clipping plane (will be negative if the plane is behind the viewer)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Multiplies <cite>matrix</cite> by a parallel projection matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.perspective">
+<tt class="descname">perspective</tt><big>(</big><em>fov_y</em>, <em>aspect</em>, <em>z_near</em>, <em>z_far</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.perspective" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>fov_y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Vertical field of view angle in degrees.</li>
+<li><strong>aspect</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The (width over height) aspect ratio for display</li>
+<li><strong>z_near</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The distance to the near clipping plane (Must be positive, and must not be 0)</li>
+<li><strong>z_far</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The distance to the far clipping plane (Must be positive)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Multiplies <cite>matrix</cite> by the described perspective matrix</p>
+<p>You should be careful not to have to great a <cite>z_far</cite> / <cite>z_near</cite>
+ratio since that will reduce the effectiveness of depth testing
+since there wont be enough precision to identify the depth of
+objects near to each other.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.rotate">
+<tt class="descname">rotate</tt><big>(</big><em>angle</em>, <em>x</em>, <em>y</em>, <em>z</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.rotate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>angle</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The angle you want to rotate in degrees</li>
+<li><strong>x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; X component of your rotation vector</li>
+<li><strong>y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Y component of your rotation vector</li>
+<li><strong>z</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Z component of your rotation vector</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Multiplies <cite>matrix</cite> with a rotation matrix that applies a rotation
+of <cite>angle</cite> degrees around the specified 3D vector.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.scale">
+<tt class="descname">scale</tt><big>(</big><em>sx</em>, <em>sy</em>, <em>sz</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.scale" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sx</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The X scale factor</li>
+<li><strong>sy</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Y scale factor</li>
+<li><strong>sz</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Z scale factor</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Multiplies <cite>matrix</cite> with a transform matrix that scales along the X,
+Y and Z axis.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.transform_point">
+<tt class="descname">transform_point</tt><big>(</big><em>x</em>, <em>y</em>, <em>z</em>, <em>w</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.transform_point" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The X component of your points position</li>
+<li><strong>y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Y component of your points position</li>
+<li><strong>z</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Z component of your points position</li>
+<li><strong>w</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The W component of your points position</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">x: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>, y: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>, z: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>, w: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Transforms a point whos position is given and returned as four float
+components.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.translate">
+<tt class="descname">translate</tt><big>(</big><em>x</em>, <em>y</em>, <em>z</em><big>)</big><a class="headerlink" href="#Cogl.Matrix.translate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The X translation you want to apply</li>
+<li><strong>y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Y translation you want to apply</li>
+<li><strong>z</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The Z translation you want to apply</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Multiplies <cite>matrix</cite> with a transform matrix that translates along
+the X, Y and Z axis.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cogl.Matrix.transpose">
+<tt class="descname">transpose</tt><big>(</big><big>)</big><a class="headerlink" href="#Cogl.Matrix.transpose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces <cite>matrix</cite> with its transpose. Ie, every element (i,j) in the
+new matrix is taken from element (j,i) in the old matrix.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Offscreen.html" class="btn btn-neutral float-right" title="Cogl.Offscreen"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="MaterialLayer.html" class="btn btn-neutral" title="Cogl.MaterialLayer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

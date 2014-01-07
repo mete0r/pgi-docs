@@ -1,0 +1,1360 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstRtp.RTPBuffer -
+    
+      Structures -
+    
+      GstRtp 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="GstRtp.RTPPayloadInfo" href="RTPPayloadInfo.html"/>
+        <link rel="prev" title="GstRtp.RTCPPacket" href="RTCPPacket.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GstRtp 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GstRtp.RTPBuffer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GstRtp 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">GstRtp.RTPBuffer</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstRtp_1.0/structs/RTPBuffer" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gstrtp-rtpbuffer">
+<h1>GstRtp.RTPBuffer<a class="headerlink" href="#gstrtp-rtpbuffer" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>buffer</td>
+<td><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>state</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r/w</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.allocate_data" title="GstRtp.RTPBuffer.allocate_data"><tt class="xref py py-obj docutils literal"><span class="pre">allocate_data</span></tt></a>(buffer, payload_len, pad_len, csrc_count)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.calc_header_len" title="GstRtp.RTPBuffer.calc_header_len"><tt class="xref py py-obj docutils literal"><span class="pre">calc_header_len</span></tt></a>(csrc_count)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.calc_packet_len" title="GstRtp.RTPBuffer.calc_packet_len"><tt class="xref py py-obj docutils literal"><span class="pre">calc_packet_len</span></tt></a>(payload_len, pad_len, csrc_count)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.calc_payload_len" title="GstRtp.RTPBuffer.calc_payload_len"><tt class="xref py py-obj docutils literal"><span class="pre">calc_payload_len</span></tt></a>(packet_len, pad_len, csrc_count)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.compare_seqnum" title="GstRtp.RTPBuffer.compare_seqnum"><tt class="xref py py-obj docutils literal"><span class="pre">compare_seqnum</span></tt></a>(seqnum1, seqnum2)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.default_clock_rate" title="GstRtp.RTPBuffer.default_clock_rate"><tt class="xref py py-obj docutils literal"><span class="pre">default_clock_rate</span></tt></a>(payload_type)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.ext_timestamp" title="GstRtp.RTPBuffer.ext_timestamp"><tt class="xref py py-obj docutils literal"><span class="pre">ext_timestamp</span></tt></a>(exttimestamp, timestamp)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.new_allocate" title="GstRtp.RTPBuffer.new_allocate"><tt class="xref py py-obj docutils literal"><span class="pre">new_allocate</span></tt></a>(payload_len, pad_len, csrc_count)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.new_allocate_len" title="GstRtp.RTPBuffer.new_allocate_len"><tt class="xref py py-obj docutils literal"><span class="pre">new_allocate_len</span></tt></a>(packet_len, pad_len, csrc_count)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.new_copy_data" title="GstRtp.RTPBuffer.new_copy_data"><tt class="xref py py-obj docutils literal"><span class="pre">new_copy_data</span></tt></a>(data)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.new_take_data" title="GstRtp.RTPBuffer.new_take_data"><tt class="xref py py-obj docutils literal"><span class="pre">new_take_data</span></tt></a>(data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.add_extension_onebyte_header" title="GstRtp.RTPBuffer.add_extension_onebyte_header"><tt class="xref py py-obj docutils literal"><span class="pre">add_extension_onebyte_header</span></tt></a>(id, data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.add_extension_twobytes_header" title="GstRtp.RTPBuffer.add_extension_twobytes_header"><tt class="xref py py-obj docutils literal"><span class="pre">add_extension_twobytes_header</span></tt></a>(appbits, id, data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_csrc" title="GstRtp.RTPBuffer.get_csrc"><tt class="xref py py-obj docutils literal"><span class="pre">get_csrc</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_csrc_count" title="GstRtp.RTPBuffer.get_csrc_count"><tt class="xref py py-obj docutils literal"><span class="pre">get_csrc_count</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_extension" title="GstRtp.RTPBuffer.get_extension"><tt class="xref py py-obj docutils literal"><span class="pre">get_extension</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_extension_data" title="GstRtp.RTPBuffer.get_extension_data"><tt class="xref py py-obj docutils literal"><span class="pre">get_extension_data</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_extension_onebyte_header" title="GstRtp.RTPBuffer.get_extension_onebyte_header"><tt class="xref py py-obj docutils literal"><span class="pre">get_extension_onebyte_header</span></tt></a>(id, nth)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_extension_twobytes_header" title="GstRtp.RTPBuffer.get_extension_twobytes_header"><tt class="xref py py-obj docutils literal"><span class="pre">get_extension_twobytes_header</span></tt></a>(id, nth)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_header_len" title="GstRtp.RTPBuffer.get_header_len"><tt class="xref py py-obj docutils literal"><span class="pre">get_header_len</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_marker" title="GstRtp.RTPBuffer.get_marker"><tt class="xref py py-obj docutils literal"><span class="pre">get_marker</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_packet_len" title="GstRtp.RTPBuffer.get_packet_len"><tt class="xref py py-obj docutils literal"><span class="pre">get_packet_len</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_padding" title="GstRtp.RTPBuffer.get_padding"><tt class="xref py py-obj docutils literal"><span class="pre">get_padding</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_payload" title="GstRtp.RTPBuffer.get_payload"><tt class="xref py py-obj docutils literal"><span class="pre">get_payload</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_payload_buffer" title="GstRtp.RTPBuffer.get_payload_buffer"><tt class="xref py py-obj docutils literal"><span class="pre">get_payload_buffer</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_payload_len" title="GstRtp.RTPBuffer.get_payload_len"><tt class="xref py py-obj docutils literal"><span class="pre">get_payload_len</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_payload_subbuffer" title="GstRtp.RTPBuffer.get_payload_subbuffer"><tt class="xref py py-obj docutils literal"><span class="pre">get_payload_subbuffer</span></tt></a>(offset, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_payload_type" title="GstRtp.RTPBuffer.get_payload_type"><tt class="xref py py-obj docutils literal"><span class="pre">get_payload_type</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_seq" title="GstRtp.RTPBuffer.get_seq"><tt class="xref py py-obj docutils literal"><span class="pre">get_seq</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_ssrc" title="GstRtp.RTPBuffer.get_ssrc"><tt class="xref py py-obj docutils literal"><span class="pre">get_ssrc</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_timestamp" title="GstRtp.RTPBuffer.get_timestamp"><tt class="xref py py-obj docutils literal"><span class="pre">get_timestamp</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.get_version" title="GstRtp.RTPBuffer.get_version"><tt class="xref py py-obj docutils literal"><span class="pre">get_version</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.pad_to" title="GstRtp.RTPBuffer.pad_to"><tt class="xref py py-obj docutils literal"><span class="pre">pad_to</span></tt></a>(len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_csrc" title="GstRtp.RTPBuffer.set_csrc"><tt class="xref py py-obj docutils literal"><span class="pre">set_csrc</span></tt></a>(idx, csrc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_extension" title="GstRtp.RTPBuffer.set_extension"><tt class="xref py py-obj docutils literal"><span class="pre">set_extension</span></tt></a>(extension)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_extension_data" title="GstRtp.RTPBuffer.set_extension_data"><tt class="xref py py-obj docutils literal"><span class="pre">set_extension_data</span></tt></a>(bits, length)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_marker" title="GstRtp.RTPBuffer.set_marker"><tt class="xref py py-obj docutils literal"><span class="pre">set_marker</span></tt></a>(marker)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_packet_len" title="GstRtp.RTPBuffer.set_packet_len"><tt class="xref py py-obj docutils literal"><span class="pre">set_packet_len</span></tt></a>(len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_padding" title="GstRtp.RTPBuffer.set_padding"><tt class="xref py py-obj docutils literal"><span class="pre">set_padding</span></tt></a>(padding)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_payload_type" title="GstRtp.RTPBuffer.set_payload_type"><tt class="xref py py-obj docutils literal"><span class="pre">set_payload_type</span></tt></a>(payload_type)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_seq" title="GstRtp.RTPBuffer.set_seq"><tt class="xref py py-obj docutils literal"><span class="pre">set_seq</span></tt></a>(seq)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_ssrc" title="GstRtp.RTPBuffer.set_ssrc"><tt class="xref py py-obj docutils literal"><span class="pre">set_ssrc</span></tt></a>(ssrc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_timestamp" title="GstRtp.RTPBuffer.set_timestamp"><tt class="xref py py-obj docutils literal"><span class="pre">set_timestamp</span></tt></a>(timestamp)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.set_version" title="GstRtp.RTPBuffer.set_version"><tt class="xref py py-obj docutils literal"><span class="pre">set_version</span></tt></a>(version)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstRtp.RTPBuffer.unmap" title="GstRtp.RTPBuffer.unmap"><tt class="xref py py-obj docutils literal"><span class="pre">unmap</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstRtp.RTPBuffer">
+<em class="property">class </em><tt class="descclassname">GstRtp.</tt><tt class="descname">RTPBuffer</tt><a class="headerlink" href="#GstRtp.RTPBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#GstRtp.RTPBuffer" title="GstRtp.RTPBuffer"><tt class="xref py py-class docutils literal"><span class="pre">GstRtp.RTPBuffer</span></tt></a> helper functions makes it easy to parse and create regular 
+<a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> objects that contain RTP payloads. These buffers are typically of
+&#8216;application/x-rtp&#8217; <a class="reference internal" href="../../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>.</p>
+<p>Last reviewed on 2006-07-17 (0.10.10)</p>
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.allocate_data">
+<em class="property">static </em><tt class="descname">allocate_data</tt><big>(</big><em>buffer</em>, <em>payload_len</em>, <em>pad_len</em>, <em>csrc_count</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.allocate_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>buffer</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></li>
+<li><strong>payload_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the length of the payload</li>
+<li><strong>pad_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the amount of padding</li>
+<li><strong>csrc_count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of CSRC entries</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Allocate enough data in <cite>buffer</cite> to hold an RTP packet with <cite>csrc_count</cite> CSRCs,
+a payload length of <cite>payload_len</cite> and padding of <cite>pad_len</cite>.
+<cite>buffer</cite> must be writable and all previous memory in <cite>buffer</cite> will be freed.
+If <cite>pad_len</cite> is &gt;0, the padding bit will be set. All other RTP header fields
+will be set to 0/FALSE.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.calc_header_len">
+<em class="property">static </em><tt class="descname">calc_header_len</tt><big>(</big><em>csrc_count</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.calc_header_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>csrc_count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of CSRC entries</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The length of an RTP header with <cite>csrc_count</cite> CSRC entries.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Calculate the header length of an RTP packet with <cite>csrc_count</cite> CSRC entries.
+An RTP packet can have at most 15 CSRC entries.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.calc_packet_len">
+<em class="property">static </em><tt class="descname">calc_packet_len</tt><big>(</big><em>payload_len</em>, <em>pad_len</em>, <em>csrc_count</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.calc_packet_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>payload_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the length of the payload</li>
+<li><strong>pad_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the amount of padding</li>
+<li><strong>csrc_count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of CSRC entries</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The total length of an RTP header with given parameters.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate the total length of an RTP packet with a payload size of <cite>payload_len</cite>,
+a padding of <cite>pad_len</cite> and a <cite>csrc_count</cite> CSRC entries.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.calc_payload_len">
+<em class="property">static </em><tt class="descname">calc_payload_len</tt><big>(</big><em>packet_len</em>, <em>pad_len</em>, <em>csrc_count</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.calc_payload_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>packet_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the length of the total RTP packet</li>
+<li><strong>pad_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the amount of padding</li>
+<li><strong>csrc_count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of CSRC entries</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The length of the payload of an RTP packet  with given parameters.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate the length of the payload of an RTP packet with size <cite>packet_len</cite>,
+a padding of <cite>pad_len</cite> and a <cite>csrc_count</cite> CSRC entries.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.compare_seqnum">
+<em class="property">static </em><tt class="descname">compare_seqnum</tt><big>(</big><em>seqnum1</em>, <em>seqnum2</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.compare_seqnum" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>seqnum1</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a sequence number</li>
+<li><strong>seqnum2</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a sequence number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a negative value if <cite>seqnum1</cite> is bigger than <cite>seqnum2</cite>, 0 if they are equal or a positive value if <cite>seqnum1</cite> is smaller than <cite>segnum2</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Compare two sequence numbers, taking care of wraparounds. This function
+returns the difference between <cite>seqnum1</cite> and <cite>seqnum2</cite>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.default_clock_rate">
+<em class="property">static </em><tt class="descname">default_clock_rate</tt><big>(</big><em>payload_type</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.default_clock_rate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>payload_type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the static payload type</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the default clock rate or -1 if the payload type is not static or the clock-rate is undefined.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the default clock-rate for the static payload type <cite>payload_type</cite>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.ext_timestamp">
+<em class="property">static </em><tt class="descname">ext_timestamp</tt><big>(</big><em>exttimestamp</em>, <em>timestamp</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.ext_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>exttimestamp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a previous extended timestamp</li>
+<li><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a new timestamp</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The extended timestamp of <cite>timestamp</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Update the <cite>exttimestamp</cite> field with <cite>timestamp</cite>. For the first call of the
+method, <cite>exttimestamp</cite> should point to a location with a value of -1.</p>
+<p>This function makes sure that the returned value is a constantly increasing
+value even in the case where there is a timestamp wraparound.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.new_allocate">
+<em class="property">static </em><tt class="descname">new_allocate</tt><big>(</big><em>payload_len</em>, <em>pad_len</em>, <em>csrc_count</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.new_allocate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>payload_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the length of the payload</li>
+<li><strong>pad_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the amount of padding</li>
+<li><strong>csrc_count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of CSRC entries</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A newly allocated buffer that can hold an RTP packet with given parameters.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Allocate a new <a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> with enough data to hold an RTP packet with
+<cite>csrc_count</cite> CSRCs, a payload length of <cite>payload_len</cite> and padding of <cite>pad_len</cite>.
+All other RTP header fields will be set to 0/FALSE.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.new_allocate_len">
+<em class="property">static </em><tt class="descname">new_allocate_len</tt><big>(</big><em>packet_len</em>, <em>pad_len</em>, <em>csrc_count</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.new_allocate_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>packet_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the total length of the packet</li>
+<li><strong>pad_len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the amount of padding</li>
+<li><strong>csrc_count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of CSRC entries</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A newly allocated buffer that can hold an RTP packet of <cite>packet_len</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Create a new <a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> that can hold an RTP packet that is exactly
+<cite>packet_len</cite> long. The length of the payload depends on <cite>pad_len</cite> and
+<cite>csrc_count</cite> and can be calculated with <a class="reference internal" href="#GstRtp.RTPBuffer.calc_payload_len" title="GstRtp.RTPBuffer.calc_payload_len"><tt class="xref py py-class docutils literal"><span class="pre">GstRtp.RTPBuffer.calc_payload_len</span></tt></a> ().
+All RTP header fields will be set to 0/FALSE.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.new_copy_data">
+<em class="property">static </em><tt class="descname">new_copy_data</tt><big>(</big><em>data</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.new_copy_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; data for the new buffer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A newly allocated buffer with a copy of <cite>data</cite> and of size <cite>len</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a new buffer and set the data to a copy of <cite>len</cite>
+bytes of <cite>data</cite> and the size to <cite>len</cite>. The data will be freed when the buffer
+is freed.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstRtp.RTPBuffer.new_take_data">
+<em class="property">static </em><tt class="descname">new_take_data</tt><big>(</big><em>data</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.new_take_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; data for the new buffer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A newly allocated buffer with <cite>data</cite> and of size <cite>len</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a new buffer and set the data and size of the buffer to <cite>data</cite> and <cite>len</cite>
+respectively. <cite>data</cite> will be freed when the buffer is unreffed, so this
+function transfers ownership of <cite>data</cite> to the new buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.add_extension_onebyte_header">
+<tt class="descname">add_extension_onebyte_header</tt><big>(</big><em>id</em>, <em>data</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.add_extension_onebyte_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The ID of the header extension (between 1 and 14).</li>
+<li><strong>data</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; location for data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if header extension could be added</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a RFC 5285 header extension with a one byte header to the end of the
+RTP header. If there is already a RFC 5285 header extension with a one byte
+header, the new extension will be appended.
+It will not work if there is already a header extension that does not follow
+the mecanism described in RFC 5285 or if there is a header extension with
+a two bytes header as described in RFC 5285. In that case, use
+<a class="reference internal" href="#GstRtp.RTPBuffer.add_extension_twobytes_header" title="GstRtp.RTPBuffer.add_extension_twobytes_header"><tt class="xref py py-class docutils literal"><span class="pre">GstRtp.RTPBuffer.add_extension_twobytes_header</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.add_extension_twobytes_header">
+<tt class="descname">add_extension_twobytes_header</tt><big>(</big><em>appbits</em>, <em>id</em>, <em>data</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.add_extension_twobytes_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>appbits</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Application specific bits</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The ID of the header extension</li>
+<li><strong>data</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; location for data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if header extension could be added</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a RFC 5285 header extension with a two bytes header to the end of the
+RTP header. If there is already a RFC 5285 header extension with a two bytes
+header, the new extension will be appended.
+It will not work if there is already a header extension that does not follow
+the mecanism described in RFC 5285 or if there is a header extension with
+a one byte header as described in RFC 5285. In that case, use
+<a class="reference internal" href="#GstRtp.RTPBuffer.add_extension_onebyte_header" title="GstRtp.RTPBuffer.add_extension_onebyte_header"><tt class="xref py py-class docutils literal"><span class="pre">GstRtp.RTPBuffer.add_extension_onebyte_header</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_csrc">
+<tt class="descname">get_csrc</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_csrc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of the CSRC to get</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the CSRC at index <cite>idx</cite> in host order.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the CSRC at index <cite>idx</cite> in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_csrc_count">
+<tt class="descname">get_csrc_count</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_csrc_count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the CSRC count of <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the CSRC count of the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_extension">
+<tt class="descname">get_extension</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_extension" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>buffer</cite> has the extension bit set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if the extension bit is set on the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_extension_data">
+<tt class="descname">get_extension_data</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_extension_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>buffer</cite> had the extension bit set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/structs/Bytes.html#GLib.Bytes" title="GLib.Bytes"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Bytes</span></tt></a>, bits: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the extension data. <cite>bits</cite> will contain the extension 16 bits of custom
+data. <cite>data</cite> will point to the data in the extension and <cite>wordlen</cite> will contain
+the length of <cite>data</cite> in 32 bits words.</p>
+<p>If <cite>buffer</cite> did not contain an extension, this function will return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>
+with <cite>bits</cite>, <cite>data</cite> and <cite>wordlen</cite> unchanged.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_extension_onebyte_header">
+<tt class="descname">get_extension_onebyte_header</tt><big>(</big><em>id</em>, <em>nth</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_extension_onebyte_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The ID of the header extension to be read (between 1 and 14).</li>
+<li><strong>nth</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Read the nth extension packet with the requested ID</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>buffer</cite> had the requested header extension</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, data: [<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parses RFC 5285 style header extensions with a one byte header. It will
+return the nth extension with the requested id.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_extension_twobytes_header">
+<tt class="descname">get_extension_twobytes_header</tt><big>(</big><em>id</em>, <em>nth</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_extension_twobytes_header" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The ID of the header extension to be read (between 1 and 14).</li>
+<li><strong>nth</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Read the nth extension packet with the requested ID</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>buffer</cite> had the requested header extension</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, appbits: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, data: [<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parses RFC 5285 style header extensions with a two bytes header. It will
+return the nth extension with the requested id.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_header_len">
+<tt class="descname">get_header_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_header_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The total length of the header in <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Return the total length of the header in <cite>buffer</cite>. This include the length of
+the fixed header, the CSRC list and the extension header.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_marker">
+<tt class="descname">get_marker</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_marker" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>buffer</cite> has the marker bit set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if the marker bit is set on the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_packet_len">
+<tt class="descname">get_packet_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_packet_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The total length of the packet in <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Return the total length of the packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_padding">
+<tt class="descname">get_padding</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_padding" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>buffer</cite> has the padding bit set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if the padding bit is set on the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_payload">
+<tt class="descname">get_payload</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_payload" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A pointer to the payload data in <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/structs/Bytes.html#GLib.Bytes" title="GLib.Bytes"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Bytes</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get a pointer to the payload data in <cite>buffer</cite>. This pointer is valid as long
+as a reference to <cite>buffer</cite> is held.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_payload_buffer">
+<tt class="descname">get_payload_buffer</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_payload_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A new buffer with the data of the payload.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a buffer of the payload of the RTP packet in <cite>buffer</cite>. This function
+will internally create a subbuffer of <cite>buffer</cite> so that a memcpy can be
+avoided.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_payload_len">
+<tt class="descname">get_payload_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_payload_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The length of the payload in <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the length of the payload of the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_payload_subbuffer">
+<tt class="descname">get_payload_subbuffer</tt><big>(</big><em>offset</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_payload_subbuffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset in the payload</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the length in the payload</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A new buffer with the specified data of the payload.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Create a subbuffer of the payload of the RTP packet in <cite>buffer</cite>. <cite>offset</cite> bytes
+are skipped in the payload and the subbuffer will be of size <cite>len</cite>.
+If <cite>len</cite> is -1 the total payload starting from <cite>offset</cite> if subbuffered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_payload_type">
+<tt class="descname">get_payload_type</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_payload_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The payload type.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the payload type of the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_seq">
+<tt class="descname">get_seq</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_seq" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The sequence number in host order.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the sequence number of the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_ssrc">
+<tt class="descname">get_ssrc</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_ssrc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the SSRC of <cite>buffer</cite> in host order.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the SSRC of the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_timestamp">
+<tt class="descname">get_timestamp</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The timestamp in host order.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the timestamp of the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.get_version">
+<tt class="descname">get_version</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The version of <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the version number of the RTP packet in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.pad_to">
+<tt class="descname">pad_to</tt><big>(</big><em>len</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.pad_to" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new amount of padding</td>
+</tr>
+</tbody>
+</table>
+<p>Set the amount of padding in the RTP packet in <cite>buffer</cite> to
+<cite>len</cite>. If <cite>len</cite> is 0, the padding is removed.</p>
+<p>NOTE: This function does not work correctly.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_csrc">
+<tt class="descname">set_csrc</tt><big>(</big><em>idx</em>, <em>csrc</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_csrc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the CSRC index to set</li>
+<li><strong>csrc</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the CSRC in host order to set at <cite>idx</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Modify the CSRC at index <cite>idx</cite> in <cite>buffer</cite> to <cite>csrc</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_extension">
+<tt class="descname">set_extension</tt><big>(</big><em>extension</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_extension" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>extension</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new extension</td>
+</tr>
+</tbody>
+</table>
+<p>Set the extension bit on the RTP packet in <cite>buffer</cite> to <cite>extension</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_extension_data">
+<tt class="descname">set_extension_data</tt><big>(</big><em>bits</em>, <em>length</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_extension_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>bits</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the bits specific for the extension</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the length that counts the number of 32-bit words in the extension, excluding the extension header ( therefore zero is a valid length)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if done.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the extension bit of the rtp buffer and fill in the <cite>bits</cite> and <cite>length</cite> of the
+extension header. If the existing extension data is not large enough, it will
+be made larger.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_marker">
+<tt class="descname">set_marker</tt><big>(</big><em>marker</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_marker" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>marker</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new marker</td>
+</tr>
+</tbody>
+</table>
+<p>Set the marker bit on the RTP packet in <cite>buffer</cite> to <cite>marker</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_packet_len">
+<tt class="descname">set_packet_len</tt><big>(</big><em>len</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_packet_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new packet length</td>
+</tr>
+</tbody>
+</table>
+<p>Set the total <cite>rtp</cite> size to <cite>len</cite>. The data in the buffer will be made
+larger if needed. Any padding will be removed from the packet.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_padding">
+<tt class="descname">set_padding</tt><big>(</big><em>padding</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_padding" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>padding</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new padding</td>
+</tr>
+</tbody>
+</table>
+<p>Set the padding bit on the RTP packet in <cite>buffer</cite> to <cite>padding</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_payload_type">
+<tt class="descname">set_payload_type</tt><big>(</big><em>payload_type</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_payload_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>payload_type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new type</td>
+</tr>
+</tbody>
+</table>
+<p>Set the payload type of the RTP packet in <cite>buffer</cite> to <cite>payload_type</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_seq">
+<tt class="descname">set_seq</tt><big>(</big><em>seq</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_seq" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>seq</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new sequence number</td>
+</tr>
+</tbody>
+</table>
+<p>Set the sequence number of the RTP packet in <cite>buffer</cite> to <cite>seq</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_ssrc">
+<tt class="descname">set_ssrc</tt><big>(</big><em>ssrc</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_ssrc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ssrc</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new SSRC</td>
+</tr>
+</tbody>
+</table>
+<p>Set the SSRC on the RTP packet in <cite>buffer</cite> to <cite>ssrc</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_timestamp">
+<tt class="descname">set_timestamp</tt><big>(</big><em>timestamp</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new timestamp</td>
+</tr>
+</tbody>
+</table>
+<p>Set the timestamp of the RTP packet in <cite>buffer</cite> to <cite>timestamp</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.set_version">
+<tt class="descname">set_version</tt><big>(</big><em>version</em><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.set_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new version</td>
+</tr>
+</tbody>
+</table>
+<p>Set the version of the RTP packet in <cite>buffer</cite> to <cite>version</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstRtp.RTPBuffer.unmap">
+<tt class="descname">unmap</tt><big>(</big><big>)</big><a class="headerlink" href="#GstRtp.RTPBuffer.unmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unmap <cite>rtp</cite> previously mapped with <tt class="xref py py-class docutils literal"><span class="pre">GstRtp.RTPBuffer.map</span></tt> ().</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="RTPPayloadInfo.html" class="btn btn-neutral float-right" title="GstRtp.RTPPayloadInfo"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="RTCPPacket.html" class="btn btn-neutral" title="GstRtp.RTCPPacket"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

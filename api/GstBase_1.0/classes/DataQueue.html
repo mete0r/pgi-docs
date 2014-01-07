@@ -1,0 +1,664 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstBase.DataQueue -
+    
+      Classes -
+    
+      GstBase 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="GstBase.PushSrc" href="PushSrc.html"/>
+        <link rel="prev" title="GstBase.CollectPads" href="CollectPads.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GstBase 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GstBase.DataQueue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GstBase 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">GstBase.DataQueue</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstBase_1.0/classes/DataQueue" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gstbase-dataqueue">
+<h1>GstBase.DataQueue<a class="headerlink" href="#gstbase-dataqueue" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-00bd1929aeb1d42e29285c366b6db198d0547ae0.png" alt="Inheritance diagram of GstBase.DataQueue" usemap="#inheritance5a811770da" class="inheritance"/>
+<map id="inheritance5a811770da" name="inheritance5a811770da">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="16,5,112,29"/>
+<area shape="rect" id="node2" href="#GstBase.DataQueue" title="GstBase.DataQueue" alt="" coords="5,77,123,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.drop_head" title="GstBase.DataQueue.drop_head"><tt class="xref py py-obj docutils literal"><span class="pre">drop_head</span></tt></a>(type)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.flush" title="GstBase.DataQueue.flush"><tt class="xref py py-obj docutils literal"><span class="pre">flush</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.get_level" title="GstBase.DataQueue.get_level"><tt class="xref py py-obj docutils literal"><span class="pre">get_level</span></tt></a>(level)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.is_empty" title="GstBase.DataQueue.is_empty"><tt class="xref py py-obj docutils literal"><span class="pre">is_empty</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.is_full" title="GstBase.DataQueue.is_full"><tt class="xref py py-obj docutils literal"><span class="pre">is_full</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.limits_changed" title="GstBase.DataQueue.limits_changed"><tt class="xref py py-obj docutils literal"><span class="pre">limits_changed</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.peek" title="GstBase.DataQueue.peek"><tt class="xref py py-obj docutils literal"><span class="pre">peek</span></tt></a>(item)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.pop" title="GstBase.DataQueue.pop"><tt class="xref py py-obj docutils literal"><span class="pre">pop</span></tt></a>(item)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.push" title="GstBase.DataQueue.push"><tt class="xref py py-obj docutils literal"><span class="pre">push</span></tt></a>(item)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.push_force" title="GstBase.DataQueue.push_force"><tt class="xref py py-obj docutils literal"><span class="pre">push_force</span></tt></a>(item)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstBase.DataQueue.set_flushing" title="GstBase.DataQueue.set_flushing"><tt class="xref py py-obj docutils literal"><span class="pre">set_flushing</span></tt></a>(flushing)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gstbase-dataqueue-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="current-level-bytes">current-level-bytes</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>Current amount of data in the queue (bytes)</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="current-level-time">current-level-time</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>Current amount of data in the queue (in ns)</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="current-level-visible">current-level-visible</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>Current number of visible items in the queue</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gstbase-dataqueue-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="empty">empty</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Reports that the queue became empty (empty). A queue is empty if the total amount of visible items inside it (num-visible, time, size) is lower than the boundary values which can be set through the <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>  properties.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="full">full</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Reports that the queue became full (full). A queue is full if the total amount of data inside it (num-visible, time, size) is higher than the boundary values which can be set through the <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>  properties.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>object</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstBase.DataQueue">
+<em class="property">class </em><tt class="descclassname">GstBase.</tt><tt class="descname">DataQueue</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<p><a class="reference internal" href="#GstBase.DataQueue" title="GstBase.DataQueue"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueue</span></tt></a> is an object that handles threadsafe queueing of objects. It
+also provides size-related functionality. This object should be used for
+any <a class="reference internal" href="../../Gst_1.0/classes/Element.html#Gst.Element" title="Gst.Element"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element</span></tt></a> that wishes to provide some sort of queueing functionality.</p>
+<dl class="method">
+<dt id="GstBase.DataQueue.drop_head">
+<tt class="descname">drop_head</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue.drop_head" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; The <tt class="xref py py-class docutils literal"><span class="pre">GLib.Type</span></tt> of the item to drop.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if an element was removed.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Pop and unref the head-most <a class="reference internal" href="../../Gst_1.0/structs/MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a> with the given <tt class="xref py py-class docutils literal"><span class="pre">GLib.Type</span></tt>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.flush">
+<tt class="descname">flush</tt><big>(</big><big>)</big><a class="headerlink" href="#GstBase.DataQueue.flush" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flushes all the contents of the <cite>queue</cite>. Any call to <a class="reference internal" href="#GstBase.DataQueue.push" title="GstBase.DataQueue.push"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueue.push</span></tt></a> and
+<a class="reference internal" href="#GstBase.DataQueue.pop" title="GstBase.DataQueue.pop"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueue.pop</span></tt></a> will be released.
+MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.get_level">
+<tt class="descname">get_level</tt><big>(</big><em>level</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue.get_level" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>level</strong> (<a class="reference internal" href="../structs/DataQueueSize.html#GstBase.DataQueueSize" title="GstBase.DataQueueSize"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueSize</span></tt></a>) &#8211; the location to store the result</td>
+</tr>
+</tbody>
+</table>
+<p>Get the current level of the queue.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.is_empty">
+<tt class="descname">is_empty</tt><big>(</big><big>)</big><a class="headerlink" href="#GstBase.DataQueue.is_empty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>queue</cite> is empty.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Queries if there are any items in the <cite>queue</cite>.
+MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.is_full">
+<tt class="descname">is_full</tt><big>(</big><big>)</big><a class="headerlink" href="#GstBase.DataQueue.is_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>queue</cite> is full.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Queries if <cite>queue</cite> is full. This check will be done using the
+<a class="reference internal" href="../callbacks.html#GstBase.DataQueueCheckFullFunction" title="GstBase.DataQueueCheckFullFunction"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueCheckFullFunction</span></tt></a> registered with <cite>queue</cite>.
+MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.limits_changed">
+<tt class="descname">limits_changed</tt><big>(</big><big>)</big><a class="headerlink" href="#GstBase.DataQueue.limits_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inform the queue that the limits for the fullness check have changed and that
+any blocking <a class="reference internal" href="#GstBase.DataQueue.push" title="GstBase.DataQueue.push"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueue.push</span></tt></a> () should be unblocked to recheck the limts.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.peek">
+<tt class="descname">peek</tt><big>(</big><em>item</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue.peek" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>) &#8211; pointer to store the returned <a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if an <cite>item</cite> was successfully retrieved from the <cite>queue</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the first <cite>item</cite> available on the <cite>queue</cite> without removing it.
+If the queue is currently empty, the call will block until at least
+one item is available, OR the <cite>queue</cite> is set to the flushing state.
+MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.pop">
+<tt class="descname">pop</tt><big>(</big><em>item</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue.pop" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>) &#8211; pointer to store the returned <a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if an <cite>item</cite> was successfully retrieved from the <cite>queue</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the first <cite>item</cite> available on the <cite>queue</cite>. If the queue is currently
+empty, the call will block until at least one item is available, OR the
+<cite>queue</cite> is set to the flushing state.
+MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.push">
+<tt class="descname">push</tt><big>(</big><em>item</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue.push" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <cite>item</cite> was successfully pushed on the <cite>queue</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Pushes a <a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a> (or a structure that begins with the same fields)
+on the <cite>queue</cite>. If the <cite>queue</cite> is full, the call will block until space is
+available, OR the <cite>queue</cite> is set to flushing state.
+MT safe.</p>
+<p>Note that this function has slightly different semantics than <a class="reference internal" href="../../Gst_1.0/classes/Pad.html#Gst.Pad.push" title="Gst.Pad.push"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.push</span></tt></a> ()
+and <a class="reference internal" href="../../Gst_1.0/classes/Pad.html#Gst.Pad.push_event" title="Gst.Pad.push_event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.push_event</span></tt></a> (): this function only takes ownership of <cite>item</cite> and
+the <a class="reference internal" href="../../Gst_1.0/structs/MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a> contained in <cite>item</cite> if the push was successful. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>
+is returned, the caller is responsible for freeing <cite>item</cite> and its contents.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.push_force">
+<tt class="descname">push_force</tt><big>(</big><em>item</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue.push_force" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item</strong> (<a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <cite>item</cite> was successfully pushed on the <cite>queue</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Pushes a <a class="reference internal" href="../structs/DataQueueItem.html#GstBase.DataQueueItem" title="GstBase.DataQueueItem"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueueItem</span></tt></a> (or a structure that begins with the same fields)
+on the <cite>queue</cite>. It ignores if the <cite>queue</cite> is full or not and forces the <cite>item</cite>
+to be pushed anyway.
+MT safe.</p>
+<p>Note that this function has slightly different semantics than <a class="reference internal" href="../../Gst_1.0/classes/Pad.html#Gst.Pad.push" title="Gst.Pad.push"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.push</span></tt></a> ()
+and <a class="reference internal" href="../../Gst_1.0/classes/Pad.html#Gst.Pad.push_event" title="Gst.Pad.push_event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.push_event</span></tt></a> (): this function only takes ownership of <cite>item</cite> and
+the <a class="reference internal" href="../../Gst_1.0/structs/MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a> contained in <cite>item</cite> if the push was successful. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>
+is returned, the caller is responsible for freeing <cite>item</cite> and its contents.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstBase.DataQueue.set_flushing">
+<tt class="descname">set_flushing</tt><big>(</big><em>flushing</em><big>)</big><a class="headerlink" href="#GstBase.DataQueue.set_flushing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flushing</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> stating if the queue will be flushing or not.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the queue to flushing state if <cite>flushing</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>. If set to flushing
+state, any incoming data on the <cite>queue</cite> will be discarded. Any call currently
+blocking on <a class="reference internal" href="#GstBase.DataQueue.push" title="GstBase.DataQueue.push"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueue.push</span></tt></a> or <a class="reference internal" href="#GstBase.DataQueue.pop" title="GstBase.DataQueue.pop"><tt class="xref py py-class docutils literal"><span class="pre">GstBase.DataQueue.pop</span></tt></a> will return straight
+away with a return value of <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>. While the <cite>queue</cite> is in flushing state,
+all calls to those two functions will return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+<p>MT Safe.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="PushSrc.html" class="btn btn-neutral float-right" title="GstBase.PushSrc"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="CollectPads.html" class="btn btn-neutral" title="GstBase.CollectPads"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

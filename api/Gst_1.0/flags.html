@@ -1,0 +1,1852 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Flags -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Gst 1.0" href="index.html"/>
+        <link rel="next" title="Enums" href="enums.html"/>
+        <link rel="prev" title="Gst.ValueTable" href="structs/ValueTable.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Flags</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li><a href="">Flags</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/flags" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="flags">
+<h1>Flags<a class="headerlink" href="#flags" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#Gst.AllocatorFlags" title="Gst.AllocatorFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.AllocatorFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.BinFlags" title="Gst.BinFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BinFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.BufferCopyFlags" title="Gst.BufferCopyFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferCopyFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.BufferFlags" title="Gst.BufferFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.BufferPoolAcquireFlags" title="Gst.BufferPoolAcquireFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPoolAcquireFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.BusFlags" title="Gst.BusFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.CapsFlags" title="Gst.CapsFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CapsFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.ClockFlags" title="Gst.ClockFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ClockFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.DebugGraphDetails" title="Gst.DebugGraphDetails"><tt class="xref py py-class docutils literal"><span class="pre">Gst.DebugGraphDetails</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.ElementFlags" title="Gst.ElementFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ElementFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.EventTypeFlags" title="Gst.EventTypeFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.EventTypeFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.LockFlags" title="Gst.LockFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.LockFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.MapFlags" title="Gst.MapFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.MemoryFlags" title="Gst.MemoryFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.MessageType" title="Gst.MessageType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.MetaFlags" title="Gst.MetaFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MetaFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.MiniObjectFlags" title="Gst.MiniObjectFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObjectFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.ObjectFlags" title="Gst.ObjectFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ObjectFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.PadFlags" title="Gst.PadFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.PadLinkCheck" title="Gst.PadLinkCheck"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadLinkCheck</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.PadProbeType" title="Gst.PadProbeType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadProbeType</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.PadTemplateFlags" title="Gst.PadTemplateFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadTemplateFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.ParseFlags" title="Gst.ParseFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ParseFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.PipelineFlags" title="Gst.PipelineFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PipelineFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.PluginDependencyFlags" title="Gst.PluginDependencyFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginDependencyFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.PluginFlags" title="Gst.PluginFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.QueryTypeFlags" title="Gst.QueryTypeFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryTypeFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.SchedulingFlags" title="Gst.SchedulingFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SchedulingFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.SeekFlags" title="Gst.SeekFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SeekFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.SegmentFlags" title="Gst.SegmentFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SegmentFlags</span></tt></a></li>
+<li><a class="reference internal" href="#Gst.StreamFlags" title="Gst.StreamFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.StreamFlags</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="allocatorflags">
+<h3>AllocatorFlags<a class="headerlink" href="#allocatorflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.AllocatorFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">AllocatorFlags</tt><a class="headerlink" href="#Gst.AllocatorFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags for allocators.</p>
+<dl class="attribute">
+<dt id="Gst.AllocatorFlags.CUSTOM_ALLOC">
+<tt class="descname">CUSTOM_ALLOC</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.AllocatorFlags.CUSTOM_ALLOC" title="Permalink to this definition">¶</a></dt>
+<dd><p>The allocator has a custom alloc function.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.AllocatorFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 1048576</em><a class="headerlink" href="#Gst.AllocatorFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>first flag that can be used for custom purposes</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="binflags">
+<h3>BinFlags<a class="headerlink" href="#binflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.BinFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">BinFlags</tt><a class="headerlink" href="#Gst.BinFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p><a class="reference internal" href="#Gst.BinFlags" title="Gst.BinFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BinFlags</span></tt></a> are a set of flags specific to bins. Most are set/used
+internally. They can be checked using the GST_OBJECT_FLAG_IS_SET () macro,
+and (un)set using GST_OBJECT_FLAG_SET () and GST_OBJECT_FLAG_UNSET ().</p>
+<dl class="attribute">
+<dt id="Gst.BinFlags.NO_RESYNC">
+<tt class="descname">NO_RESYNC</tt><em class="property"> = 16384</em><a class="headerlink" href="#Gst.BinFlags.NO_RESYNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>don&#8217;t resync a state change when elements are added or linked in the bin.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BinFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 524288</em><a class="headerlink" href="#Gst.BinFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>the last enum in the series of flags for bins. Derived classes can use this as first value in a list of flags.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="buffercopyflags">
+<h3>BufferCopyFlags<a class="headerlink" href="#buffercopyflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.BufferCopyFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">BufferCopyFlags</tt><a class="headerlink" href="#Gst.BufferCopyFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>A set of flags that can be provided to the <a class="reference internal" href="structs/Buffer.html#Gst.Buffer.copy_into" title="Gst.Buffer.copy_into"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.copy_into</span></tt></a> ()
+function to specify which items should be copied.</p>
+<dl class="attribute">
+<dt id="Gst.BufferCopyFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.BufferCopyFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>copy nothing</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferCopyFlags.FLAGS">
+<tt class="descname">FLAGS</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.BufferCopyFlags.FLAGS" title="Permalink to this definition">¶</a></dt>
+<dd><p>flag indicating that buffer flags should be copied</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferCopyFlags.TIMESTAMPS">
+<tt class="descname">TIMESTAMPS</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.BufferCopyFlags.TIMESTAMPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>flag indicating that buffer pts, dts, duration, offset and offset_end should be copied</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferCopyFlags.META">
+<tt class="descname">META</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.BufferCopyFlags.META" title="Permalink to this definition">¶</a></dt>
+<dd><p>flag indicating that buffer meta should be copied</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferCopyFlags.MEMORY">
+<tt class="descname">MEMORY</tt><em class="property"> = 8</em><a class="headerlink" href="#Gst.BufferCopyFlags.MEMORY" title="Permalink to this definition">¶</a></dt>
+<dd><p>flag indicating that buffer memory should be reffed and appended to already existing memory. Unless the memory is marked as NO_SHARE, no actual copy of the memory is made but it is simply reffed. Add <a class="reference internal" href="#Gst.BufferCopyFlags.DEEP" title="Gst.BufferCopyFlags.DEEP"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferCopyFlags.DEEP</span></tt></a> to force a real copy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferCopyFlags.MERGE">
+<tt class="descname">MERGE</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.BufferCopyFlags.MERGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>flag indicating that buffer memory should be merged</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferCopyFlags.DEEP">
+<tt class="descname">DEEP</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.BufferCopyFlags.DEEP" title="Permalink to this definition">¶</a></dt>
+<dd><p>flag indicating that memory should always be copied instead of reffed (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.2)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="bufferflags">
+<h3>BufferFlags<a class="headerlink" href="#bufferflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.BufferFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">BufferFlags</tt><a class="headerlink" href="#Gst.BufferFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>A set of buffer flags used to describe properties of a <a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Gst.BufferFlags.LIVE">
+<tt class="descname">LIVE</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.BufferFlags.LIVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer is live data and should be discarded in the PAUSED state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.DECODE_ONLY">
+<tt class="descname">DECODE_ONLY</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.BufferFlags.DECODE_ONLY" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer contains data that should be dropped because it will be clipped against the segment boundaries or because it does not contain data that should be shown to the user.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.DISCONT">
+<tt class="descname">DISCONT</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.BufferFlags.DISCONT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer marks a data discontinuity in the stream. This typically occurs after a seek or a dropped buffer from a live or network source.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.RESYNC">
+<tt class="descname">RESYNC</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.BufferFlags.RESYNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer timestamps might have a discontinuity and this buffer is a good point to resynchronize.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.CORRUPTED">
+<tt class="descname">CORRUPTED</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.BufferFlags.CORRUPTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer data is corrupted.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.MARKER">
+<tt class="descname">MARKER</tt><em class="property"> = 512</em><a class="headerlink" href="#Gst.BufferFlags.MARKER" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer contains a media specific marker. for video this is typically the end of a frame boundary, for audio this is usually the start of a talkspurt.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.HEADER">
+<tt class="descname">HEADER</tt><em class="property"> = 1024</em><a class="headerlink" href="#Gst.BufferFlags.HEADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer contains header information that is needed to decode the following data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.GAP">
+<tt class="descname">GAP</tt><em class="property"> = 2048</em><a class="headerlink" href="#Gst.BufferFlags.GAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer has been created to fill a gap in the stream and contains media neutral data (elements can switch to optimized code path that ignores the buffer content).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.DROPPABLE">
+<tt class="descname">DROPPABLE</tt><em class="property"> = 4096</em><a class="headerlink" href="#Gst.BufferFlags.DROPPABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the buffer can be dropped without breaking the stream, for example to reduce bandwidth.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.DELTA_UNIT">
+<tt class="descname">DELTA_UNIT</tt><em class="property"> = 8192</em><a class="headerlink" href="#Gst.BufferFlags.DELTA_UNIT" title="Permalink to this definition">¶</a></dt>
+<dd><p>this unit cannot be decoded independently.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 1048576</em><a class="headerlink" href="#Gst.BufferFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>additional media specific flags can be added starting from this flag.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="bufferpoolacquireflags">
+<h3>BufferPoolAcquireFlags<a class="headerlink" href="#bufferpoolacquireflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.BufferPoolAcquireFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">BufferPoolAcquireFlags</tt><a class="headerlink" href="#Gst.BufferPoolAcquireFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Additional flags to control the allocation of a buffer</p>
+<dl class="attribute">
+<dt id="Gst.BufferPoolAcquireFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.BufferPoolAcquireFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>no flags</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferPoolAcquireFlags.KEY_UNIT">
+<tt class="descname">KEY_UNIT</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.BufferPoolAcquireFlags.KEY_UNIT" title="Permalink to this definition">¶</a></dt>
+<dd><p>buffer is keyframe</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferPoolAcquireFlags.DONTWAIT">
+<tt class="descname">DONTWAIT</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.BufferPoolAcquireFlags.DONTWAIT" title="Permalink to this definition">¶</a></dt>
+<dd><p>when the bufferpool is empty, acquire_buffer will by default block until a buffer is released into the pool again. Setting this flag makes acquire_buffer return <a class="reference internal" href="enums.html#Gst.FlowReturn.EOS" title="Gst.FlowReturn.EOS"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn.EOS</span></tt></a> instead of blocking.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferPoolAcquireFlags.DISCONT">
+<tt class="descname">DISCONT</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.BufferPoolAcquireFlags.DISCONT" title="Permalink to this definition">¶</a></dt>
+<dd><p>buffer is discont</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BufferPoolAcquireFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 65536</em><a class="headerlink" href="#Gst.BufferPoolAcquireFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>last flag, subclasses can use private flags starting from this value.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="busflags">
+<h3>BusFlags<a class="headerlink" href="#busflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.BusFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">BusFlags</tt><a class="headerlink" href="#Gst.BusFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The standard flags that a bus may have.</p>
+<dl class="attribute">
+<dt id="Gst.BusFlags.FLUSHING">
+<tt class="descname">FLUSHING</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.BusFlags.FLUSHING" title="Permalink to this definition">¶</a></dt>
+<dd><p>The bus is currently dropping all messages</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.BusFlags.FLAG_LAST">
+<tt class="descname">FLAG_LAST</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.BusFlags.FLAG_LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>offset to define more flags</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="capsflags">
+<h3>CapsFlags<a class="headerlink" href="#capsflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.CapsFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">CapsFlags</tt><a class="headerlink" href="#Gst.CapsFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Extra flags for a caps.</p>
+<dl class="attribute">
+<dt id="Gst.CapsFlags.ANY">
+<tt class="descname">ANY</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.CapsFlags.ANY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Caps has no specific content, but can contain anything.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="clockflags">
+<h3>ClockFlags<a class="headerlink" href="#clockflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.ClockFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">ClockFlags</tt><a class="headerlink" href="#Gst.ClockFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The capabilities of this clock</p>
+<dl class="attribute">
+<dt id="Gst.ClockFlags.CAN_DO_SINGLE_SYNC">
+<tt class="descname">CAN_DO_SINGLE_SYNC</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.ClockFlags.CAN_DO_SINGLE_SYNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>clock can do a single sync timeout request</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ClockFlags.CAN_DO_SINGLE_ASYNC">
+<tt class="descname">CAN_DO_SINGLE_ASYNC</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.ClockFlags.CAN_DO_SINGLE_ASYNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>clock can do a single async timeout request</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ClockFlags.CAN_DO_PERIODIC_SYNC">
+<tt class="descname">CAN_DO_PERIODIC_SYNC</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.ClockFlags.CAN_DO_PERIODIC_SYNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>clock can do sync periodic timeout requests</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ClockFlags.CAN_DO_PERIODIC_ASYNC">
+<tt class="descname">CAN_DO_PERIODIC_ASYNC</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.ClockFlags.CAN_DO_PERIODIC_ASYNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>clock can do async periodic timeout callbacks</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ClockFlags.CAN_SET_RESOLUTION">
+<tt class="descname">CAN_SET_RESOLUTION</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.ClockFlags.CAN_SET_RESOLUTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>clock&#8217;s resolution can be changed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ClockFlags.CAN_SET_MASTER">
+<tt class="descname">CAN_SET_MASTER</tt><em class="property"> = 512</em><a class="headerlink" href="#Gst.ClockFlags.CAN_SET_MASTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>clock can be slaved to a master clock</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ClockFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 4096</em><a class="headerlink" href="#Gst.ClockFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>subclasses can add additional flags starting from this flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="debuggraphdetails">
+<h3>DebugGraphDetails<a class="headerlink" href="#debuggraphdetails" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.DebugGraphDetails">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">DebugGraphDetails</tt><a class="headerlink" href="#Gst.DebugGraphDetails" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Available details for pipeline graphs produced by GST_DEBUG_BIN_TO_DOT_FILE()
+and GST_DEBUG_BIN_TO_DOT_FILE_WITH_TS().</p>
+<dl class="attribute">
+<dt id="Gst.DebugGraphDetails.MEDIA_TYPE">
+<tt class="descname">MEDIA_TYPE</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.DebugGraphDetails.MEDIA_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>show caps-name on edges</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.DebugGraphDetails.CAPS_DETAILS">
+<tt class="descname">CAPS_DETAILS</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.DebugGraphDetails.CAPS_DETAILS" title="Permalink to this definition">¶</a></dt>
+<dd><p>show caps-details on edges</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.DebugGraphDetails.NON_DEFAULT_PARAMS">
+<tt class="descname">NON_DEFAULT_PARAMS</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.DebugGraphDetails.NON_DEFAULT_PARAMS" title="Permalink to this definition">¶</a></dt>
+<dd><p>show modified parameters on elements</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.DebugGraphDetails.STATES">
+<tt class="descname">STATES</tt><em class="property"> = 8</em><a class="headerlink" href="#Gst.DebugGraphDetails.STATES" title="Permalink to this definition">¶</a></dt>
+<dd><p>show element states</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.DebugGraphDetails.ALL">
+<tt class="descname">ALL</tt><em class="property"> = 15</em><a class="headerlink" href="#Gst.DebugGraphDetails.ALL" title="Permalink to this definition">¶</a></dt>
+<dd><p>show all details</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="elementflags">
+<h3>ElementFlags<a class="headerlink" href="#elementflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.ElementFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">ElementFlags</tt><a class="headerlink" href="#Gst.ElementFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The standard flags that an element may have.</p>
+<dl class="attribute">
+<dt id="Gst.ElementFlags.LOCKED_STATE">
+<tt class="descname">LOCKED_STATE</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.ElementFlags.LOCKED_STATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>ignore state changes from parent</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ElementFlags.SINK">
+<tt class="descname">SINK</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.ElementFlags.SINK" title="Permalink to this definition">¶</a></dt>
+<dd><p>the element is a sink</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ElementFlags.SOURCE">
+<tt class="descname">SOURCE</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.ElementFlags.SOURCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the element is a source.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ElementFlags.PROVIDE_CLOCK">
+<tt class="descname">PROVIDE_CLOCK</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.ElementFlags.PROVIDE_CLOCK" title="Permalink to this definition">¶</a></dt>
+<dd><p>the element can provide a clock</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ElementFlags.REQUIRE_CLOCK">
+<tt class="descname">REQUIRE_CLOCK</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.ElementFlags.REQUIRE_CLOCK" title="Permalink to this definition">¶</a></dt>
+<dd><p>the element requires a clock</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ElementFlags.INDEXABLE">
+<tt class="descname">INDEXABLE</tt><em class="property"> = 512</em><a class="headerlink" href="#Gst.ElementFlags.INDEXABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the element can use an index</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ElementFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 16384</em><a class="headerlink" href="#Gst.ElementFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>offset to define more flags</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="eventtypeflags">
+<h3>EventTypeFlags<a class="headerlink" href="#eventtypeflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.EventTypeFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">EventTypeFlags</tt><a class="headerlink" href="#Gst.EventTypeFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p><a class="reference internal" href="#Gst.EventTypeFlags" title="Gst.EventTypeFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.EventTypeFlags</span></tt></a> indicate the aspects of the different <a class="reference internal" href="enums.html#Gst.EventType" title="Gst.EventType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.EventType</span></tt></a> 
+values. You can get the type flags of a <a class="reference internal" href="enums.html#Gst.EventType" title="Gst.EventType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.EventType</span></tt></a> with the
+<tt class="xref py py-class docutils literal"><span class="pre">Gst.EventType.get_flags</span></tt> () function.</p>
+<dl class="attribute">
+<dt id="Gst.EventTypeFlags.UPSTREAM">
+<tt class="descname">UPSTREAM</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.EventTypeFlags.UPSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set if the event can travel upstream.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.EventTypeFlags.DOWNSTREAM">
+<tt class="descname">DOWNSTREAM</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.EventTypeFlags.DOWNSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set if the event can travel downstream.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.EventTypeFlags.SERIALIZED">
+<tt class="descname">SERIALIZED</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.EventTypeFlags.SERIALIZED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set if the event should be serialized with data flow.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.EventTypeFlags.STICKY">
+<tt class="descname">STICKY</tt><em class="property"> = 8</em><a class="headerlink" href="#Gst.EventTypeFlags.STICKY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set if the event is sticky on the pads.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.EventTypeFlags.STICKY_MULTI">
+<tt class="descname">STICKY_MULTI</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.EventTypeFlags.STICKY_MULTI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiple sticky events can be on a pad, each identified by the event name.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="lockflags">
+<h3>LockFlags<a class="headerlink" href="#lockflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.LockFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">LockFlags</tt><a class="headerlink" href="#Gst.LockFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags used when locking miniobjects</p>
+<dl class="attribute">
+<dt id="Gst.LockFlags.READ">
+<tt class="descname">READ</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.LockFlags.READ" title="Permalink to this definition">¶</a></dt>
+<dd><p>lock for read access</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.LockFlags.WRITE">
+<tt class="descname">WRITE</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.LockFlags.WRITE" title="Permalink to this definition">¶</a></dt>
+<dd><p>lock for write access</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.LockFlags.EXCLUSIVE">
+<tt class="descname">EXCLUSIVE</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.LockFlags.EXCLUSIVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>lock for exclusive access</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.LockFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.LockFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>first flag that can be used for custom purposes</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="mapflags">
+<h3>MapFlags<a class="headerlink" href="#mapflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.MapFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">MapFlags</tt><a class="headerlink" href="#Gst.MapFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags used when mapping memory</p>
+<dl class="attribute">
+<dt id="Gst.MapFlags.READ">
+<tt class="descname">READ</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.MapFlags.READ" title="Permalink to this definition">¶</a></dt>
+<dd><p>map for read access</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MapFlags.WRITE">
+<tt class="descname">WRITE</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.MapFlags.WRITE" title="Permalink to this definition">¶</a></dt>
+<dd><p>map for write access</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MapFlags.FLAG_LAST">
+<tt class="descname">FLAG_LAST</tt><em class="property"> = 65536</em><a class="headerlink" href="#Gst.MapFlags.FLAG_LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>first flag that can be used for custom purposes</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="memoryflags">
+<h3>MemoryFlags<a class="headerlink" href="#memoryflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.MemoryFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">MemoryFlags</tt><a class="headerlink" href="#Gst.MemoryFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags for wrapped memory.</p>
+<dl class="attribute">
+<dt id="Gst.MemoryFlags.READONLY">
+<tt class="descname">READONLY</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.MemoryFlags.READONLY" title="Permalink to this definition">¶</a></dt>
+<dd><p>memory is readonly. It is not allowed to map the memory with <a class="reference internal" href="#Gst.MapFlags.WRITE" title="Gst.MapFlags.WRITE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags.WRITE</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MemoryFlags.NO_SHARE">
+<tt class="descname">NO_SHARE</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.MemoryFlags.NO_SHARE" title="Permalink to this definition">¶</a></dt>
+<dd><p>memory must not be shared. Copies will have to be made when this memory needs to be shared between buffers.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MemoryFlags.ZERO_PREFIXED">
+<tt class="descname">ZERO_PREFIXED</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.MemoryFlags.ZERO_PREFIXED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the memory prefix is filled with 0 bytes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MemoryFlags.ZERO_PADDED">
+<tt class="descname">ZERO_PADDED</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.MemoryFlags.ZERO_PADDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the memory padding is filled with 0 bytes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MemoryFlags.PHYSICALLY_CONTIGUOUS">
+<tt class="descname">PHYSICALLY_CONTIGUOUS</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.MemoryFlags.PHYSICALLY_CONTIGUOUS" title="Permalink to this definition">¶</a></dt>
+<dd><p>the memory is physically contiguous.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.2</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MemoryFlags.NOT_MAPPABLE">
+<tt class="descname">NOT_MAPPABLE</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.MemoryFlags.NOT_MAPPABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the memory can&#8217;t be mapped via <a class="reference internal" href="structs/Memory.html#Gst.Memory.map" title="Gst.Memory.map"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.map</span></tt></a> () without any preconditions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.2</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MemoryFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 1048576</em><a class="headerlink" href="#Gst.MemoryFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>first flag that can be used for custom purposes</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="messagetype">
+<h3>MessageType<a class="headerlink" href="#messagetype" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.MessageType">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">MessageType</tt><a class="headerlink" href="#Gst.MessageType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The different message types that are available.</p>
+<dl class="attribute">
+<dt id="Gst.MessageType.ANY">
+<tt class="descname">ANY</tt><em class="property"> = -1</em><a class="headerlink" href="#Gst.MessageType.ANY" title="Permalink to this definition">¶</a></dt>
+<dd><p>mask for all of the above messages.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.MessageType.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>an undefined message</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.EOS">
+<tt class="descname">EOS</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.MessageType.EOS" title="Permalink to this definition">¶</a></dt>
+<dd><p>end-of-stream reached in a pipeline. The application will only receive this message in the PLAYING state and every time it sets a pipeline to PLAYING that is in the EOS state. The application can perform a flushing seek in the pipeline, which will undo the EOS state again.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.ERROR">
+<tt class="descname">ERROR</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.MessageType.ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>an error occured. When the application receives an error message it should stop playback of the pipeline and not assume that more data will be played.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.WARNING">
+<tt class="descname">WARNING</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.MessageType.WARNING" title="Permalink to this definition">¶</a></dt>
+<dd><p>a warning occured.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.INFO">
+<tt class="descname">INFO</tt><em class="property"> = 8</em><a class="headerlink" href="#Gst.MessageType.INFO" title="Permalink to this definition">¶</a></dt>
+<dd><p>an info message occured</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.TAG">
+<tt class="descname">TAG</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.MessageType.TAG" title="Permalink to this definition">¶</a></dt>
+<dd><p>a tag was found.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.BUFFERING">
+<tt class="descname">BUFFERING</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.MessageType.BUFFERING" title="Permalink to this definition">¶</a></dt>
+<dd><p>the pipeline is buffering. When the application receives a buffering message in the PLAYING state for a non-live pipeline it must PAUSE the pipeline until the buffering completes, when the percentage field in the message is 100%. For live pipelines, no action must be performed and the buffering percentage can be used to inform the user about the progress.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.STATE_CHANGED">
+<tt class="descname">STATE_CHANGED</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.MessageType.STATE_CHANGED" title="Permalink to this definition">¶</a></dt>
+<dd><p>a state change happened</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.STATE_DIRTY">
+<tt class="descname">STATE_DIRTY</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.MessageType.STATE_DIRTY" title="Permalink to this definition">¶</a></dt>
+<dd><p>an element changed state in a streaming thread. This message is deprecated.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.STEP_DONE">
+<tt class="descname">STEP_DONE</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.MessageType.STEP_DONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>a stepping operation finished.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.CLOCK_PROVIDE">
+<tt class="descname">CLOCK_PROVIDE</tt><em class="property"> = 512</em><a class="headerlink" href="#Gst.MessageType.CLOCK_PROVIDE" title="Permalink to this definition">¶</a></dt>
+<dd><p>an element notifies its capability of providing a clock. This message is used internally and never forwarded to the application.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.CLOCK_LOST">
+<tt class="descname">CLOCK_LOST</tt><em class="property"> = 1024</em><a class="headerlink" href="#Gst.MessageType.CLOCK_LOST" title="Permalink to this definition">¶</a></dt>
+<dd><p>The current clock as selected by the pipeline became unusable. The pipeline will select a new clock on the next PLAYING state change. The application should set the pipeline to PAUSED and back to PLAYING when this message is received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.NEW_CLOCK">
+<tt class="descname">NEW_CLOCK</tt><em class="property"> = 2048</em><a class="headerlink" href="#Gst.MessageType.NEW_CLOCK" title="Permalink to this definition">¶</a></dt>
+<dd><p>a new clock was selected in the pipeline.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.STRUCTURE_CHANGE">
+<tt class="descname">STRUCTURE_CHANGE</tt><em class="property"> = 4096</em><a class="headerlink" href="#Gst.MessageType.STRUCTURE_CHANGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the structure of the pipeline changed. This message is used internally and never forwarded to the application.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.STREAM_STATUS">
+<tt class="descname">STREAM_STATUS</tt><em class="property"> = 8192</em><a class="headerlink" href="#Gst.MessageType.STREAM_STATUS" title="Permalink to this definition">¶</a></dt>
+<dd><p>status about a stream, emitted when it starts, stops, errors, etc..</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.APPLICATION">
+<tt class="descname">APPLICATION</tt><em class="property"> = 16384</em><a class="headerlink" href="#Gst.MessageType.APPLICATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>message posted by the application, possibly via an application-specific element.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.ELEMENT">
+<tt class="descname">ELEMENT</tt><em class="property"> = 32768</em><a class="headerlink" href="#Gst.MessageType.ELEMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>element-specific message, see the specific element&#8217;s documentation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.SEGMENT_START">
+<tt class="descname">SEGMENT_START</tt><em class="property"> = 65536</em><a class="headerlink" href="#Gst.MessageType.SEGMENT_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>pipeline started playback of a segment. This message is used internally and never forwarded to the application.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.SEGMENT_DONE">
+<tt class="descname">SEGMENT_DONE</tt><em class="property"> = 131072</em><a class="headerlink" href="#Gst.MessageType.SEGMENT_DONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>pipeline completed playback of a segment. This message is forwarded to the application after all elements that posted <a class="reference internal" href="#Gst.MessageType.SEGMENT_START" title="Gst.MessageType.SEGMENT_START"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType.SEGMENT_START</span></tt></a> posted a <a class="reference internal" href="#Gst.MessageType.SEGMENT_DONE" title="Gst.MessageType.SEGMENT_DONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType.SEGMENT_DONE</span></tt></a> message.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.DURATION_CHANGED">
+<tt class="descname">DURATION_CHANGED</tt><em class="property"> = 262144</em><a class="headerlink" href="#Gst.MessageType.DURATION_CHANGED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The duration of a pipeline changed. The application can get the new duration with a duration query.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.LATENCY">
+<tt class="descname">LATENCY</tt><em class="property"> = 524288</em><a class="headerlink" href="#Gst.MessageType.LATENCY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posted by elements when their latency changes. The application should recalculate and distribute a new latency.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.ASYNC_START">
+<tt class="descname">ASYNC_START</tt><em class="property"> = 1048576</em><a class="headerlink" href="#Gst.MessageType.ASYNC_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posted by elements when they start an ASYNC <a class="reference internal" href="enums.html#Gst.StateChange" title="Gst.StateChange"><tt class="xref py py-class docutils literal"><span class="pre">Gst.StateChange</span></tt></a>. This message is not forwarded to the application but is used internally.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.ASYNC_DONE">
+<tt class="descname">ASYNC_DONE</tt><em class="property"> = 2097152</em><a class="headerlink" href="#Gst.MessageType.ASYNC_DONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posted by elements when they complete an ASYNC <a class="reference internal" href="enums.html#Gst.StateChange" title="Gst.StateChange"><tt class="xref py py-class docutils literal"><span class="pre">Gst.StateChange</span></tt></a>. The application will only receive this message from the toplevel pipeline.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.REQUEST_STATE">
+<tt class="descname">REQUEST_STATE</tt><em class="property"> = 4194304</em><a class="headerlink" href="#Gst.MessageType.REQUEST_STATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posted by elements when they want the pipeline to change state. This message is a suggestion to the application which can decide to perform the state change on (part of) the pipeline.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.STEP_START">
+<tt class="descname">STEP_START</tt><em class="property"> = 8388608</em><a class="headerlink" href="#Gst.MessageType.STEP_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>A stepping operation was started.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.QOS">
+<tt class="descname">QOS</tt><em class="property"> = 16777216</em><a class="headerlink" href="#Gst.MessageType.QOS" title="Permalink to this definition">¶</a></dt>
+<dd><p>A buffer was dropped or an element changed its processing strategy for Quality of Service reasons.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.PROGRESS">
+<tt class="descname">PROGRESS</tt><em class="property"> = 33554432</em><a class="headerlink" href="#Gst.MessageType.PROGRESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>A progress message.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.TOC">
+<tt class="descname">TOC</tt><em class="property"> = 67108864</em><a class="headerlink" href="#Gst.MessageType.TOC" title="Permalink to this definition">¶</a></dt>
+<dd><p>A new table of contents (TOC) was found or previously found TOC was updated.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.RESET_TIME">
+<tt class="descname">RESET_TIME</tt><em class="property"> = 134217728</em><a class="headerlink" href="#Gst.MessageType.RESET_TIME" title="Permalink to this definition">¶</a></dt>
+<dd><p>Message to request resetting the pipeline&#8217;s running time from the pipeline. This is an internal message which applications will likely never receive.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.STREAM_START">
+<tt class="descname">STREAM_START</tt><em class="property"> = 268435456</em><a class="headerlink" href="#Gst.MessageType.STREAM_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Message indicating start of a new stream. Useful e.g. when using playbin in gapless playback mode, to get notified when the next title actually starts playing (which will be some time after the URI for the next title has been set).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.NEED_CONTEXT">
+<tt class="descname">NEED_CONTEXT</tt><em class="property"> = 536870912</em><a class="headerlink" href="#Gst.MessageType.NEED_CONTEXT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Message indicating that an element wants a specific context (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.2)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MessageType.HAVE_CONTEXT">
+<tt class="descname">HAVE_CONTEXT</tt><em class="property"> = 1073741824</em><a class="headerlink" href="#Gst.MessageType.HAVE_CONTEXT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Message indicating that an element created a context (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.2)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="metaflags">
+<h3>MetaFlags<a class="headerlink" href="#metaflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.MetaFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">MetaFlags</tt><a class="headerlink" href="#Gst.MetaFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Extra metadata flags.</p>
+<dl class="attribute">
+<dt id="Gst.MetaFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.MetaFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>no flags</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MetaFlags.READONLY">
+<tt class="descname">READONLY</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.MetaFlags.READONLY" title="Permalink to this definition">¶</a></dt>
+<dd><p>metadata should not be modified</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MetaFlags.POOLED">
+<tt class="descname">POOLED</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.MetaFlags.POOLED" title="Permalink to this definition">¶</a></dt>
+<dd><p>metadata is managed by a bufferpool</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MetaFlags.LOCKED">
+<tt class="descname">LOCKED</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.MetaFlags.LOCKED" title="Permalink to this definition">¶</a></dt>
+<dd><p>metadata should not be removed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MetaFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 65536</em><a class="headerlink" href="#Gst.MetaFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>additional flags can be added starting from this flag.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="miniobjectflags">
+<h3>MiniObjectFlags<a class="headerlink" href="#miniobjectflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.MiniObjectFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">MiniObjectFlags</tt><a class="headerlink" href="#Gst.MiniObjectFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags for the mini object</p>
+<dl class="attribute">
+<dt id="Gst.MiniObjectFlags.LOCKABLE">
+<tt class="descname">LOCKABLE</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.MiniObjectFlags.LOCKABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the object can be locked and unlocked with <a class="reference internal" href="structs/MiniObject.html#Gst.MiniObject.lock" title="Gst.MiniObject.lock"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject.lock</span></tt></a> () and <a class="reference internal" href="structs/MiniObject.html#Gst.MiniObject.unlock" title="Gst.MiniObject.unlock"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject.unlock</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MiniObjectFlags.LOCK_READONLY">
+<tt class="descname">LOCK_READONLY</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.MiniObjectFlags.LOCK_READONLY" title="Permalink to this definition">¶</a></dt>
+<dd><p>the object is permanently locked in READONLY mode. Only read locks can be performed on the object.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.MiniObjectFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.MiniObjectFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>first flag that can be used by subclasses.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="objectflags">
+<h3>ObjectFlags<a class="headerlink" href="#objectflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.ObjectFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">ObjectFlags</tt><a class="headerlink" href="#Gst.ObjectFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The standard flags that an gstobject may have.</p>
+<dl class="attribute">
+<dt id="Gst.ObjectFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.ObjectFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>subclasses can add additional flags starting from this flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="padflags">
+<h3>PadFlags<a class="headerlink" href="#padflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.PadFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">PadFlags</tt><a class="headerlink" href="#Gst.PadFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Pad state flags</p>
+<dl class="attribute">
+<dt id="Gst.PadFlags.BLOCKED">
+<tt class="descname">BLOCKED</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.PadFlags.BLOCKED" title="Permalink to this definition">¶</a></dt>
+<dd><p>is dataflow on a pad blocked</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.FLUSHING">
+<tt class="descname">FLUSHING</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.PadFlags.FLUSHING" title="Permalink to this definition">¶</a></dt>
+<dd><p>is pad flushing</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.EOS">
+<tt class="descname">EOS</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.PadFlags.EOS" title="Permalink to this definition">¶</a></dt>
+<dd><p>is pad in EOS state</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.BLOCKING">
+<tt class="descname">BLOCKING</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.PadFlags.BLOCKING" title="Permalink to this definition">¶</a></dt>
+<dd><p>is pad currently blocking on a buffer or event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.NEED_PARENT">
+<tt class="descname">NEED_PARENT</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.PadFlags.NEED_PARENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>ensure that there is a parent object before calling into the pad callbacks.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.NEED_RECONFIGURE">
+<tt class="descname">NEED_RECONFIGURE</tt><em class="property"> = 512</em><a class="headerlink" href="#Gst.PadFlags.NEED_RECONFIGURE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the pad should be reconfigured/renegotiated. The flag has to be unset manually after reconfiguration happened.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.PENDING_EVENTS">
+<tt class="descname">PENDING_EVENTS</tt><em class="property"> = 1024</em><a class="headerlink" href="#Gst.PadFlags.PENDING_EVENTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>the pad has pending events</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.FIXED_CAPS">
+<tt class="descname">FIXED_CAPS</tt><em class="property"> = 2048</em><a class="headerlink" href="#Gst.PadFlags.FIXED_CAPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>the pad is using fixed caps this means that once the caps are set on the pad, the caps query function only returns those caps.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.PROXY_CAPS">
+<tt class="descname">PROXY_CAPS</tt><em class="property"> = 4096</em><a class="headerlink" href="#Gst.PadFlags.PROXY_CAPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>the default event and query handler will forward all events and queries to the internally linked pads instead of discarding them.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.PROXY_ALLOCATION">
+<tt class="descname">PROXY_ALLOCATION</tt><em class="property"> = 8192</em><a class="headerlink" href="#Gst.PadFlags.PROXY_ALLOCATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>the default query handler will forward allocation queries to the internally linked pads instead of discarding them.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.PROXY_SCHEDULING">
+<tt class="descname">PROXY_SCHEDULING</tt><em class="property"> = 16384</em><a class="headerlink" href="#Gst.PadFlags.PROXY_SCHEDULING" title="Permalink to this definition">¶</a></dt>
+<dd><p>the default query handler will forward scheduling queries to the internally linked pads instead of discarding them.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 1048576</em><a class="headerlink" href="#Gst.PadFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>offset to define more flags</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="padlinkcheck">
+<h3>PadLinkCheck<a class="headerlink" href="#padlinkcheck" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.PadLinkCheck">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">PadLinkCheck</tt><a class="headerlink" href="#Gst.PadLinkCheck" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The amount of checking to be done when linking pads. <a class="reference internal" href="#Gst.PadLinkCheck.CAPS" title="Gst.PadLinkCheck.CAPS"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadLinkCheck.CAPS</span></tt></a> 
+and <a class="reference internal" href="#Gst.PadLinkCheck.TEMPLATE_CAPS" title="Gst.PadLinkCheck.TEMPLATE_CAPS"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadLinkCheck.TEMPLATE_CAPS</span></tt></a> are mutually exclusive. If both are
+specified, expensive but safe <a class="reference internal" href="#Gst.PadLinkCheck.CAPS" title="Gst.PadLinkCheck.CAPS"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadLinkCheck.CAPS</span></tt></a> are performed.</p>
+<p>Only disable some of the checks if you are 100% certain you know the link
+will not fail because of hierarchy/caps compatibility failures. If uncertain,
+use the default checks (<a class="reference internal" href="#Gst.PadLinkCheck.DEFAULT" title="Gst.PadLinkCheck.DEFAULT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadLinkCheck.DEFAULT</span></tt></a> ) or the regular methods
+for linking the pads.</p>
+<dl class="attribute">
+<dt id="Gst.PadLinkCheck.NOTHING">
+<tt class="descname">NOTHING</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.PadLinkCheck.NOTHING" title="Permalink to this definition">¶</a></dt>
+<dd><p>Don&#8217;t check hierarchy or caps compatibility.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadLinkCheck.HIERARCHY">
+<tt class="descname">HIERARCHY</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.PadLinkCheck.HIERARCHY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the pads have same parents/grandparents. Could be omitted if it is already known that the two elements that own the pads are in the same bin.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadLinkCheck.TEMPLATE_CAPS">
+<tt class="descname">TEMPLATE_CAPS</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.PadLinkCheck.TEMPLATE_CAPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the pads are compatible by using their template caps. This is much faster than <a class="reference internal" href="#Gst.PadLinkCheck.CAPS" title="Gst.PadLinkCheck.CAPS"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadLinkCheck.CAPS</span></tt></a>, but would be unsafe e.g. if one pad has %GST_CAPS_ANY.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadLinkCheck.CAPS">
+<tt class="descname">CAPS</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.PadLinkCheck.CAPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the pads are compatible by comparing the caps returned by <a class="reference internal" href="classes/Pad.html#Gst.Pad.query_caps" title="Gst.Pad.query_caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.query_caps</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadLinkCheck.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 5</em><a class="headerlink" href="#Gst.PadLinkCheck.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default checks done when linking pads (i.e. the ones used by <a class="reference internal" href="classes/Pad.html#Gst.Pad.link" title="Gst.Pad.link"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.link</span></tt></a> ()).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="padprobetype">
+<h3>PadProbeType<a class="headerlink" href="#padprobetype" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.PadProbeType">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">PadProbeType</tt><a class="headerlink" href="#Gst.PadProbeType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The different probing types that can occur. When either one of
+<a class="reference internal" href="#Gst.PadProbeType.IDLE" title="Gst.PadProbeType.IDLE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadProbeType.IDLE</span></tt></a> or <a class="reference internal" href="#Gst.PadProbeType.BLOCK" title="Gst.PadProbeType.BLOCK"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadProbeType.BLOCK</span></tt></a> is used, the probe will be a
+blocking probe.</p>
+<dl class="attribute">
+<dt id="Gst.PadProbeType.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.PadProbeType.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>invalid probe type</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.IDLE">
+<tt class="descname">IDLE</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.PadProbeType.IDLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe idle pads and block</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.BLOCK">
+<tt class="descname">BLOCK</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.PadProbeType.BLOCK" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe and block pads</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.BLOCKING">
+<tt class="descname">BLOCKING</tt><em class="property"> = 3</em><a class="headerlink" href="#Gst.PadProbeType.BLOCKING" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe and block at the next opportunity, at data flow or when idle</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.BUFFER">
+<tt class="descname">BUFFER</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.PadProbeType.BUFFER" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe buffers</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.BUFFER_LIST">
+<tt class="descname">BUFFER_LIST</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.PadProbeType.BUFFER_LIST" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe buffer lists</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.EVENT_DOWNSTREAM">
+<tt class="descname">EVENT_DOWNSTREAM</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.PadProbeType.EVENT_DOWNSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe downstream events</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.DATA_DOWNSTREAM">
+<tt class="descname">DATA_DOWNSTREAM</tt><em class="property"> = 112</em><a class="headerlink" href="#Gst.PadProbeType.DATA_DOWNSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe downstream data (buffers, buffer lists, and events)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.BLOCK_DOWNSTREAM">
+<tt class="descname">BLOCK_DOWNSTREAM</tt><em class="property"> = 114</em><a class="headerlink" href="#Gst.PadProbeType.BLOCK_DOWNSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe and block downstream data (buffers, buffer lists, and events)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.DATA_UPSTREAM">
+<tt class="descname">DATA_UPSTREAM</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.PadProbeType.DATA_UPSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe upstream data (events)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.EVENT_UPSTREAM">
+<tt class="descname">EVENT_UPSTREAM</tt><em class="property"> = 128</em><a class="headerlink" href="#Gst.PadProbeType.EVENT_UPSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe upstream events</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.BLOCK_UPSTREAM">
+<tt class="descname">BLOCK_UPSTREAM</tt><em class="property"> = 130</em><a class="headerlink" href="#Gst.PadProbeType.BLOCK_UPSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe and block upstream data (events)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.EVENT_BOTH">
+<tt class="descname">EVENT_BOTH</tt><em class="property"> = 192</em><a class="headerlink" href="#Gst.PadProbeType.EVENT_BOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe upstream and downstream events</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.DATA_BOTH">
+<tt class="descname">DATA_BOTH</tt><em class="property"> = 240</em><a class="headerlink" href="#Gst.PadProbeType.DATA_BOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe upstream and downstream data (buffers, buffer lists, and events)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.EVENT_FLUSH">
+<tt class="descname">EVENT_FLUSH</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.PadProbeType.EVENT_FLUSH" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe flush events. This probe has to be explicitly enabled and is not included in the &#64;&#64;GST_PAD_PROBE_TYPE_EVENT_DOWNSTREAM or &#64;&#64;GST_PAD_PROBE_TYPE_EVENT_UPSTREAM probe types.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.QUERY_DOWNSTREAM">
+<tt class="descname">QUERY_DOWNSTREAM</tt><em class="property"> = 512</em><a class="headerlink" href="#Gst.PadProbeType.QUERY_DOWNSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe downstream queries</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.QUERY_UPSTREAM">
+<tt class="descname">QUERY_UPSTREAM</tt><em class="property"> = 1024</em><a class="headerlink" href="#Gst.PadProbeType.QUERY_UPSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe upstream queries</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.QUERY_BOTH">
+<tt class="descname">QUERY_BOTH</tt><em class="property"> = 1536</em><a class="headerlink" href="#Gst.PadProbeType.QUERY_BOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe upstream and downstream queries</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.ALL_BOTH">
+<tt class="descname">ALL_BOTH</tt><em class="property"> = 1776</em><a class="headerlink" href="#Gst.PadProbeType.ALL_BOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe upstream events and queries and downstream buffers, buffer lists, events and queries</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.PUSH">
+<tt class="descname">PUSH</tt><em class="property"> = 4096</em><a class="headerlink" href="#Gst.PadProbeType.PUSH" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe push</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.PULL">
+<tt class="descname">PULL</tt><em class="property"> = 8192</em><a class="headerlink" href="#Gst.PadProbeType.PULL" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe pull</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PadProbeType.SCHEDULING">
+<tt class="descname">SCHEDULING</tt><em class="property"> = 12288</em><a class="headerlink" href="#Gst.PadProbeType.SCHEDULING" title="Permalink to this definition">¶</a></dt>
+<dd><p>probe push and pull</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="padtemplateflags">
+<h3>PadTemplateFlags<a class="headerlink" href="#padtemplateflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.PadTemplateFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">PadTemplateFlags</tt><a class="headerlink" href="#Gst.PadTemplateFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags for the padtemplate</p>
+<dl class="attribute">
+<dt id="Gst.PadTemplateFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 256</em><a class="headerlink" href="#Gst.PadTemplateFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>first flag that can be used by subclasses.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="parseflags">
+<h3>ParseFlags<a class="headerlink" href="#parseflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.ParseFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">ParseFlags</tt><a class="headerlink" href="#Gst.ParseFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Parsing options.</p>
+<dl class="attribute">
+<dt id="Gst.ParseFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.ParseFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do not use any special parsing options.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ParseFlags.FATAL_ERRORS">
+<tt class="descname">FATAL_ERRORS</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.ParseFlags.FATAL_ERRORS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> when an error occurs (default behaviour is to return partially constructed bins or elements in some cases)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.ParseFlags.NO_SINGLE_ELEMENT_BINS">
+<tt class="descname">NO_SINGLE_ELEMENT_BINS</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.ParseFlags.NO_SINGLE_ELEMENT_BINS" title="Permalink to this definition">¶</a></dt>
+<dd><p>If a bin only has a single element, just return the element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pipelineflags">
+<h3>PipelineFlags<a class="headerlink" href="#pipelineflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.PipelineFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">PipelineFlags</tt><a class="headerlink" href="#Gst.PipelineFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Pipeline flags</p>
+<dl class="attribute">
+<dt id="Gst.PipelineFlags.FIXED_CLOCK">
+<tt class="descname">FIXED_CLOCK</tt><em class="property"> = 524288</em><a class="headerlink" href="#Gst.PipelineFlags.FIXED_CLOCK" title="Permalink to this definition">¶</a></dt>
+<dd><p>this pipeline works with a fixed clock</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PipelineFlags.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 8388608</em><a class="headerlink" href="#Gst.PipelineFlags.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>offset to define more flags</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="plugindependencyflags">
+<h3>PluginDependencyFlags<a class="headerlink" href="#plugindependencyflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.PluginDependencyFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">PluginDependencyFlags</tt><a class="headerlink" href="#Gst.PluginDependencyFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags used in connection with <a class="reference internal" href="classes/Plugin.html#Gst.Plugin.add_dependency" title="Gst.Plugin.add_dependency"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin.add_dependency</span></tt></a> ().</p>
+<dl class="attribute">
+<dt id="Gst.PluginDependencyFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.PluginDependencyFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>no special flags</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PluginDependencyFlags.RECURSE">
+<tt class="descname">RECURSE</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.PluginDependencyFlags.RECURSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>recurse into subdirectories</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PluginDependencyFlags.PATHS_ARE_DEFAULT_ONLY">
+<tt class="descname">PATHS_ARE_DEFAULT_ONLY</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.PluginDependencyFlags.PATHS_ARE_DEFAULT_ONLY" title="Permalink to this definition">¶</a></dt>
+<dd><p>use paths argument only if none of the environment variables is set</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PluginDependencyFlags.FILE_NAME_IS_SUFFIX">
+<tt class="descname">FILE_NAME_IS_SUFFIX</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.PluginDependencyFlags.FILE_NAME_IS_SUFFIX" title="Permalink to this definition">¶</a></dt>
+<dd><p>interpret filename argument as filter suffix and check all matching files in the directory</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pluginflags">
+<h3>PluginFlags<a class="headerlink" href="#pluginflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.PluginFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">PluginFlags</tt><a class="headerlink" href="#Gst.PluginFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The plugin loading state</p>
+<dl class="attribute">
+<dt id="Gst.PluginFlags.CACHED">
+<tt class="descname">CACHED</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.PluginFlags.CACHED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Temporarily loaded plugins</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.PluginFlags.BLACKLISTED">
+<tt class="descname">BLACKLISTED</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.PluginFlags.BLACKLISTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The plugin won&#8217;t be scanned (again)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="querytypeflags">
+<h3>QueryTypeFlags<a class="headerlink" href="#querytypeflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.QueryTypeFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">QueryTypeFlags</tt><a class="headerlink" href="#Gst.QueryTypeFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p><a class="reference internal" href="#Gst.QueryTypeFlags" title="Gst.QueryTypeFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryTypeFlags</span></tt></a> indicate the aspects of the different <a class="reference internal" href="enums.html#Gst.QueryType" title="Gst.QueryType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType</span></tt></a> 
+values. You can get the type flags of a <a class="reference internal" href="enums.html#Gst.QueryType" title="Gst.QueryType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType</span></tt></a> with the
+<tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType.get_flags</span></tt> () function.</p>
+<dl class="attribute">
+<dt id="Gst.QueryTypeFlags.UPSTREAM">
+<tt class="descname">UPSTREAM</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.QueryTypeFlags.UPSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set if the query can travel upstream.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.QueryTypeFlags.DOWNSTREAM">
+<tt class="descname">DOWNSTREAM</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.QueryTypeFlags.DOWNSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set if the query can travel downstream.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.QueryTypeFlags.SERIALIZED">
+<tt class="descname">SERIALIZED</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.QueryTypeFlags.SERIALIZED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set if the query should be serialized with data flow.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="schedulingflags">
+<h3>SchedulingFlags<a class="headerlink" href="#schedulingflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.SchedulingFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">SchedulingFlags</tt><a class="headerlink" href="#Gst.SchedulingFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>The different scheduling flags.</p>
+<dl class="attribute">
+<dt id="Gst.SchedulingFlags.SEEKABLE">
+<tt class="descname">SEEKABLE</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.SchedulingFlags.SEEKABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>if seeking is possible</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SchedulingFlags.SEQUENTIAL">
+<tt class="descname">SEQUENTIAL</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.SchedulingFlags.SEQUENTIAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>if sequential access is recommended</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SchedulingFlags.BANDWIDTH_LIMITED">
+<tt class="descname">BANDWIDTH_LIMITED</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.SchedulingFlags.BANDWIDTH_LIMITED" title="Permalink to this definition">¶</a></dt>
+<dd><p>if bandwidth is limited and buffering possible (since 1.2)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="seekflags">
+<h3>SeekFlags<a class="headerlink" href="#seekflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.SeekFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">SeekFlags</tt><a class="headerlink" href="#Gst.SeekFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags to be used with <a class="reference internal" href="classes/Element.html#Gst.Element.seek" title="Gst.Element.seek"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element.seek</span></tt></a> () or <a class="reference internal" href="structs/Event.html#Gst.Event.new_seek" title="Gst.Event.new_seek"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event.new_seek</span></tt></a> (). All flags
+can be used together.</p>
+<p>A non flushing seek might take some time to perform as the currently
+playing data in the pipeline will not be cleared.</p>
+<p>An accurate seek might be slower for formats that don&#8217;t have any indexes
+or timestamp markers in the stream. Specifying this flag might require a
+complete scan of the file in those cases.</p>
+<p>When performing a segment seek: after the playback of the segment completes,
+no EOS will be emmited by the element that performed the seek, but a
+<a class="reference internal" href="#Gst.MessageType.SEGMENT_DONE" title="Gst.MessageType.SEGMENT_DONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType.SEGMENT_DONE</span></tt></a> message will be posted on the bus by the element.
+When this message is posted, it is possible to send a new seek event to
+continue playback. With this seek method it is possible to perform seamless
+looping or simple linear editing.</p>
+<p>When doing fast forward (rate &gt; 1.0) or fast reverse (rate &lt; -1.0) trickmode
+playback, the <a class="reference internal" href="#Gst.SeekFlags.SKIP" title="Gst.SeekFlags.SKIP"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SeekFlags.SKIP</span></tt></a> flag can be used to instruct decoders
+and demuxers to adjust the playback rate by skipping frames. This can improve
+performance and decrease CPU usage because not all frames need to be decoded.</p>
+<p>The <a class="reference internal" href="#Gst.SeekFlags.SNAP_BEFORE" title="Gst.SeekFlags.SNAP_BEFORE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SeekFlags.SNAP_BEFORE</span></tt></a> flag can be used to snap to the previous
+relevant location, and the <a class="reference internal" href="#Gst.SeekFlags.SNAP_AFTER" title="Gst.SeekFlags.SNAP_AFTER"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SeekFlags.SNAP_AFTER</span></tt></a> flag can be used to
+select the next relevant location. If KEY_UNIT is specified, the relevant
+location is a keyframe. If both flags are specified, the nearest of these
+locations will be selected. If none are specified, the implementation is
+free to select whichever it wants.
+The before and after here are in running time, so when playing backwards,
+the next location refers to the one that will played in next, and not the
+one that is located after in the actual source stream.</p>
+<p>Also see part-seeking.txt in the GStreamer design documentation for more
+details on the meaning of these flags and the behaviour expected of
+elements that handle them.</p>
+<dl class="attribute">
+<dt id="Gst.SeekFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.SeekFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>no flag</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.FLUSH">
+<tt class="descname">FLUSH</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.SeekFlags.FLUSH" title="Permalink to this definition">¶</a></dt>
+<dd><p>flush pipeline</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.ACCURATE">
+<tt class="descname">ACCURATE</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.SeekFlags.ACCURATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>accurate position is requested, this might be considerably slower for some formats.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.KEY_UNIT">
+<tt class="descname">KEY_UNIT</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.SeekFlags.KEY_UNIT" title="Permalink to this definition">¶</a></dt>
+<dd><p>seek to the nearest keyframe. This might be faster but less accurate.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.SEGMENT">
+<tt class="descname">SEGMENT</tt><em class="property"> = 8</em><a class="headerlink" href="#Gst.SeekFlags.SEGMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>perform a segment seek.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.SKIP">
+<tt class="descname">SKIP</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.SeekFlags.SKIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>when doing fast foward or fast reverse playback, allow elements to skip frames instead of generating all frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.SNAP_BEFORE">
+<tt class="descname">SNAP_BEFORE</tt><em class="property"> = 32</em><a class="headerlink" href="#Gst.SeekFlags.SNAP_BEFORE" title="Permalink to this definition">¶</a></dt>
+<dd><p>go to a location before the requested position, if KEY_UNIT this means the keyframe at or before the requested position the one at or before the seek target.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.SNAP_AFTER">
+<tt class="descname">SNAP_AFTER</tt><em class="property"> = 64</em><a class="headerlink" href="#Gst.SeekFlags.SNAP_AFTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>go to a location after the requested position, if KEY_UNIT this means the keyframe at of after the requested position.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SeekFlags.SNAP_NEAREST">
+<tt class="descname">SNAP_NEAREST</tt><em class="property"> = 96</em><a class="headerlink" href="#Gst.SeekFlags.SNAP_NEAREST" title="Permalink to this definition">¶</a></dt>
+<dd><p>go to a position near the requested position, if KEY_UNIT this means the keyframe closest to the requested position, if both keyframes are at an equal distance, behaves like SNAP_BEFORE.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="segmentflags">
+<h3>SegmentFlags<a class="headerlink" href="#segmentflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.SegmentFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">SegmentFlags</tt><a class="headerlink" href="#Gst.SegmentFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<p>Flags for the <a class="reference internal" href="structs/Segment.html#Gst.Segment" title="Gst.Segment"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Segment</span></tt></a> structure. Currently mapped to the corresponding
+values of the seek flags.</p>
+<dl class="attribute">
+<dt id="Gst.SegmentFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.SegmentFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>no flags</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SegmentFlags.RESET">
+<tt class="descname">RESET</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.SegmentFlags.RESET" title="Permalink to this definition">¶</a></dt>
+<dd><p>reset the pipeline running_time to the segment running_time</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SegmentFlags.SEGMENT">
+<tt class="descname">SEGMENT</tt><em class="property"> = 8</em><a class="headerlink" href="#Gst.SegmentFlags.SEGMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>send SEGMENT_DONE instead of EOS</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.SegmentFlags.SKIP">
+<tt class="descname">SKIP</tt><em class="property"> = 16</em><a class="headerlink" href="#Gst.SegmentFlags.SKIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>perform skip playback</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="streamflags">
+<h3>StreamFlags<a class="headerlink" href="#streamflags" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Gst.StreamFlags">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">StreamFlags</tt><a class="headerlink" href="#Gst.StreamFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/flags.html#GObject.GFlags" title="GObject.GFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GFlags</span></tt></a></p>
+<dl class="attribute">
+<dt id="Gst.StreamFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Gst.StreamFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>This stream has no special attributes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.StreamFlags.SPARSE">
+<tt class="descname">SPARSE</tt><em class="property"> = 1</em><a class="headerlink" href="#Gst.StreamFlags.SPARSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>This stream is a sparse stream (e.g. a subtitle stream), data may flow only in irregular intervals with large gaps in between.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.StreamFlags.SELECT">
+<tt class="descname">SELECT</tt><em class="property"> = 2</em><a class="headerlink" href="#Gst.StreamFlags.SELECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This stream should be selected by default. This flag may be used by demuxers to signal that a stream should be selected by default in a playback scenario.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gst.StreamFlags.UNSELECT">
+<tt class="descname">UNSELECT</tt><em class="property"> = 4</em><a class="headerlink" href="#Gst.StreamFlags.UNSELECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This stream should not be selected by default. This flag may be used by demuxers to signal that a stream should not be selected by default in a playback scenario, but only if explicitly selected by the user (e.g. an audio track for the hard of hearing or a director&#8217;s commentary track).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="enums.html" class="btn btn-neutral float-right" title="Enums"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="structs/ValueTable.html" class="btn btn-neutral" title="Gst.ValueTable"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

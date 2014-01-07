@@ -1,0 +1,1974 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      Atspi 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Atspi 2.0" href="index.html"/>
+        <link rel="next" title="Constants" href="constants.html"/>
+        <link rel="prev" title="Flags" href="flags.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Atspi 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Atspi 2.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Atspi_2.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#Atspi.CollectionMatchType" title="Atspi.CollectionMatchType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.CollectionMatchType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.CollectionSortOrder" title="Atspi.CollectionSortOrder"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.CollectionSortOrder</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.CollectionTreeTraversalType" title="Atspi.CollectionTreeTraversalType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.CollectionTreeTraversalType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.ComponentLayer" title="Atspi.ComponentLayer"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.CoordType" title="Atspi.CoordType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.CoordType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.Error" title="Atspi.Error"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Error</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.EventType" title="Atspi.EventType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.EventType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.KeyEventType" title="Atspi.KeyEventType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.KeyEventType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.KeySynthType" title="Atspi.KeySynthType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.KeySynthType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.LocaleType" title="Atspi.LocaleType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.LocaleType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.ModifierType" title="Atspi.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ModifierType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.RelationType" title="Atspi.RelationType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.Role" title="Atspi.Role"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.StateType" title="Atspi.StateType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.TextBoundaryType" title="Atspi.TextBoundaryType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.TextBoundaryType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.TextClipType" title="Atspi.TextClipType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.TextClipType</span></tt></a></li>
+<li><a class="reference internal" href="#Atspi.TextGranularity" title="Atspi.TextGranularity"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.TextGranularity</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="collectionmatchtype">
+<h2>CollectionMatchType<a class="headerlink" href="#collectionmatchtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.CollectionMatchType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">CollectionMatchType</tt><a class="headerlink" href="#Atspi.CollectionMatchType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used by <a class="reference internal" href="classes/MatchRule.html#Atspi.MatchRule" title="Atspi.MatchRule"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.MatchRule</span></tt></a> to specify
+how to interpret <a class="reference internal" href="classes/Accessible.html#Atspi.Accessible" title="Atspi.Accessible"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Accessible</span></tt></a> objects.</p>
+<dl class="attribute">
+<dt id="Atspi.CollectionMatchType.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.CollectionMatchType.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates an error condition or uninitialized value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionMatchType.ALL">
+<tt class="descname">ALL</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.CollectionMatchType.ALL" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if all of the criteria are met.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionMatchType.ANY">
+<tt class="descname">ANY</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.CollectionMatchType.ANY" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if any of the criteria are met.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionMatchType.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.CollectionMatchType.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if none of the criteria are met.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionMatchType.EMPTY">
+<tt class="descname">EMPTY</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.CollectionMatchType.EMPTY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#Atspi.CollectionMatchType.ALL" title="Atspi.CollectionMatchType.ALL"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.CollectionMatchType.ALL</span></tt></a> if the criteria is non-empty; for empty criteria this rule requires returned value to also have empty set.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionMatchType.LAST_DEFINED">
+<tt class="descname">LAST_DEFINED</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.CollectionMatchType.LAST_DEFINED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used only to determine the end of the enumeration.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="collectionsortorder">
+<h2>CollectionSortOrder<a class="headerlink" href="#collectionsortorder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.CollectionSortOrder">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">CollectionSortOrder</tt><a class="headerlink" href="#Atspi.CollectionSortOrder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used by interface <a class="reference internal" href="interfaces/Collection.html#Atspi.Collection" title="Atspi.Collection"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Collection</span></tt></a> to specify
+the way #AtspiAccesible objects should be sorted.</p>
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.CollectionSortOrder.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.CANONICAL">
+<tt class="descname">CANONICAL</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.CollectionSortOrder.CANONICAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.FLOW">
+<tt class="descname">FLOW</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.CollectionSortOrder.FLOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.TAB">
+<tt class="descname">TAB</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.CollectionSortOrder.TAB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.REVERSE_CANONICAL">
+<tt class="descname">REVERSE_CANONICAL</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.CollectionSortOrder.REVERSE_CANONICAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.REVERSE_FLOW">
+<tt class="descname">REVERSE_FLOW</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.CollectionSortOrder.REVERSE_FLOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.REVERSE_TAB">
+<tt class="descname">REVERSE_TAB</tt><em class="property"> = 6</em><a class="headerlink" href="#Atspi.CollectionSortOrder.REVERSE_TAB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionSortOrder.LAST_DEFINED">
+<tt class="descname">LAST_DEFINED</tt><em class="property"> = 7</em><a class="headerlink" href="#Atspi.CollectionSortOrder.LAST_DEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="collectiontreetraversaltype">
+<h2>CollectionTreeTraversalType<a class="headerlink" href="#collectiontreetraversaltype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.CollectionTreeTraversalType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">CollectionTreeTraversalType</tt><a class="headerlink" href="#Atspi.CollectionTreeTraversalType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used by interface <a class="reference internal" href="interfaces/Collection.html#Atspi.Collection" title="Atspi.Collection"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Collection</span></tt></a> to specify
+restrictions on #AtspiAccesible objects to be traversed.</p>
+<dl class="attribute">
+<dt id="Atspi.CollectionTreeTraversalType.RESTRICT_CHILDREN">
+<tt class="descname">RESTRICT_CHILDREN</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.CollectionTreeTraversalType.RESTRICT_CHILDREN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionTreeTraversalType.RESTRICT_SIBLING">
+<tt class="descname">RESTRICT_SIBLING</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.CollectionTreeTraversalType.RESTRICT_SIBLING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionTreeTraversalType.INORDER">
+<tt class="descname">INORDER</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.CollectionTreeTraversalType.INORDER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CollectionTreeTraversalType.LAST_DEFINED">
+<tt class="descname">LAST_DEFINED</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.CollectionTreeTraversalType.LAST_DEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="componentlayer">
+<h2>ComponentLayer<a class="headerlink" href="#componentlayer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.ComponentLayer">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">ComponentLayer</tt><a class="headerlink" href="#Atspi.ComponentLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The <a class="reference internal" href="#Atspi.ComponentLayer" title="Atspi.ComponentLayer"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer</span></tt></a> of an <a class="reference internal" href="interfaces/Component.html#Atspi.Component" title="Atspi.Component"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Component</span></tt></a> instance indicates its 
+relative stacking order with respect to the onscreen visual representation 
+of the UI. <a class="reference internal" href="#Atspi.ComponentLayer" title="Atspi.ComponentLayer"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer</span></tt></a>, in combination with <a class="reference internal" href="interfaces/Component.html#Atspi.Component" title="Atspi.Component"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Component</span></tt></a> bounds 
+information, can be used to compute the visibility of all or part of a 
+component.  This is important in programmatic determination of 
+region-of-interest for magnification, and in 
+flat screen review models of the screen, as well as
+for other uses. Objects residing in two of the <a class="reference internal" href="#Atspi.ComponentLayer" title="Atspi.ComponentLayer"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer</span></tt></a> 
+categories support further z-ordering information, with respect to their 
+peers in the same layer: namely, <a class="reference internal" href="#Atspi.ComponentLayer.WINDOW" title="Atspi.ComponentLayer.WINDOW"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.WINDOW</span></tt></a> and 
+<a class="reference internal" href="#Atspi.ComponentLayer.MDI" title="Atspi.ComponentLayer.MDI"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.MDI</span></tt></a>.  Relative stacking order for other objects within the 
+same layer is not available; the recommended heuristic is 
+first child paints first. In other words, assume that the 
+first siblings in the child list are subject to being overpainted by later 
+siblings if their bounds intersect. The order of layers, from bottom to top,
+is: <a class="reference internal" href="#Atspi.ComponentLayer.BACKGROUND" title="Atspi.ComponentLayer.BACKGROUND"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.BACKGROUND</span></tt></a>, <a class="reference internal" href="#Atspi.ComponentLayer.WINDOW" title="Atspi.ComponentLayer.WINDOW"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.WINDOW</span></tt></a>, <a class="reference internal" href="#Atspi.ComponentLayer.MDI" title="Atspi.ComponentLayer.MDI"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.MDI</span></tt></a>,
+<a class="reference internal" href="#Atspi.ComponentLayer.CANVAS" title="Atspi.ComponentLayer.CANVAS"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.CANVAS</span></tt></a>, <a class="reference internal" href="#Atspi.ComponentLayer.WIDGET" title="Atspi.ComponentLayer.WIDGET"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.WIDGET</span></tt></a>, <a class="reference internal" href="#Atspi.ComponentLayer.POPUP" title="Atspi.ComponentLayer.POPUP"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.POPUP</span></tt></a>, and       
+<a class="reference internal" href="#Atspi.ComponentLayer.OVERLAY" title="Atspi.ComponentLayer.OVERLAY"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.OVERLAY</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.ComponentLayer.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates an error condition or uninitialized value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.BACKGROUND">
+<tt class="descname">BACKGROUND</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.ComponentLayer.BACKGROUND" title="Permalink to this definition">¶</a></dt>
+<dd><p>The bottom-most layer, over which everything else is painted.        The &#8216;desktop background&#8217; is generally in this layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.CANVAS">
+<tt class="descname">CANVAS</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.ComponentLayer.CANVAS" title="Permalink to this definition">¶</a></dt>
+<dd><p>The &#8216;background&#8217; layer for most content renderers and UI <a class="reference internal" href="interfaces/Component.html#Atspi.Component" title="Atspi.Component"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Component</span></tt></a> containers.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.WIDGET">
+<tt class="descname">WIDGET</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.ComponentLayer.WIDGET" title="Permalink to this definition">¶</a></dt>
+<dd><p>The layer in which the majority of ordinary &#8216;foreground&#8217; widgets reside.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.MDI">
+<tt class="descname">MDI</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.ComponentLayer.MDI" title="Permalink to this definition">¶</a></dt>
+<dd><p>A special layer between <a class="reference internal" href="#Atspi.ComponentLayer.CANVAS" title="Atspi.ComponentLayer.CANVAS"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.CANVAS</span></tt></a> and <a class="reference internal" href="#Atspi.ComponentLayer.WIDGET" title="Atspi.ComponentLayer.WIDGET"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.WIDGET</span></tt></a>, in which the &#8216;pseudo windows&#8217; (e.g. the MDI frames) reside. See <a class="reference internal" href="interfaces/Component.html#Atspi.Component.get_mdi_z_order" title="Atspi.Component.get_mdi_z_order"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Component.get_mdi_z_order</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.POPUP">
+<tt class="descname">POPUP</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.ComponentLayer.POPUP" title="Permalink to this definition">¶</a></dt>
+<dd><p>A layer for popup window content, above <a class="reference internal" href="#Atspi.ComponentLayer.WIDGET" title="Atspi.ComponentLayer.WIDGET"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ComponentLayer.WIDGET</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.OVERLAY">
+<tt class="descname">OVERLAY</tt><em class="property"> = 6</em><a class="headerlink" href="#Atspi.ComponentLayer.OVERLAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The topmost layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.WINDOW">
+<tt class="descname">WINDOW</tt><em class="property"> = 7</em><a class="headerlink" href="#Atspi.ComponentLayer.WINDOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>The layer in which a toplevel window background usually resides.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ComponentLayer.LAST_DEFINED">
+<tt class="descname">LAST_DEFINED</tt><em class="property"> = 8</em><a class="headerlink" href="#Atspi.ComponentLayer.LAST_DEFINED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used only to determine the end of the enumeration.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="coordtype">
+<h2>CoordType<a class="headerlink" href="#coordtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.CoordType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">CoordType</tt><a class="headerlink" href="#Atspi.CoordType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used by <a class="reference internal" href="interfaces/Component.html#Atspi.Component" title="Atspi.Component"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Component</span></tt></a>, <a class="reference internal" href="interfaces/Image.html#Atspi.Image" title="Atspi.Image"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Image</span></tt></a>, and <a class="reference internal" href="interfaces/Text.html#Atspi.Text" title="Atspi.Text"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text</span></tt></a> interfaces
+to specify whether coordinates are relative to the window or the screen.</p>
+<dl class="attribute">
+<dt id="Atspi.CoordType.SCREEN">
+<tt class="descname">SCREEN</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.CoordType.SCREEN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies xy coordinates relative to the screen.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.CoordType.WINDOW">
+<tt class="descname">WINDOW</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.CoordType.WINDOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies xy coordinates relative to the widget&#8217;s top-level window.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="error">
+<h2>Error<a class="headerlink" href="#error" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.Error">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">Error</tt><a class="headerlink" href="#Atspi.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="Atspi.Error.APPLICATION_GONE">
+<tt class="descname">APPLICATION_GONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.Error.APPLICATION_GONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Error.IPC">
+<tt class="descname">IPC</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.Error.IPC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="eventtype">
+<h2>EventType<a class="headerlink" href="#eventtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.EventType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">EventType</tt><a class="headerlink" href="#Atspi.EventType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used to specify the event types of interest to an 
+<a class="reference internal" href="classes/EventListener.html#Atspi.EventListener" title="Atspi.EventListener"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.EventListener</span></tt></a>, or 
+to identify the type of an event for which notification has been sent.</p>
+<dl class="attribute">
+<dt id="Atspi.EventType.KEY_PRESSED_EVENT">
+<tt class="descname">KEY_PRESSED_EVENT</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.EventType.KEY_PRESSED_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that a key on a keyboard device was pressed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.EventType.KEY_RELEASED_EVENT">
+<tt class="descname">KEY_RELEASED_EVENT</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.EventType.KEY_RELEASED_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that a key on a keyboard device was released.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.EventType.BUTTON_PRESSED_EVENT">
+<tt class="descname">BUTTON_PRESSED_EVENT</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.EventType.BUTTON_PRESSED_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that a button on a non-keyboard human interface device (HID) was pressed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.EventType.BUTTON_RELEASED_EVENT">
+<tt class="descname">BUTTON_RELEASED_EVENT</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.EventType.BUTTON_RELEASED_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that a button on a non-keyboard human interface device (HID) was released.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="keyeventtype">
+<h2>KeyEventType<a class="headerlink" href="#keyeventtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.KeyEventType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">KeyEventType</tt><a class="headerlink" href="#Atspi.KeyEventType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Deprecated. Should not be used.</p>
+<dl class="attribute">
+<dt id="Atspi.KeyEventType.PRESSED">
+<tt class="descname">PRESSED</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.KeyEventType.PRESSED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.KeyEventType.RELEASED">
+<tt class="descname">RELEASED</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.KeyEventType.RELEASED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="keysynthtype">
+<h2>KeySynthType<a class="headerlink" href="#keysynthtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.KeySynthType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">KeySynthType</tt><a class="headerlink" href="#Atspi.KeySynthType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used when synthesizing keyboard input via
+<a class="reference internal" href="functions.html#Atspi.generate_keyboard_event" title="Atspi.generate_keyboard_event"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.generate_keyboard_event</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Atspi.KeySynthType.PRESS">
+<tt class="descname">PRESS</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.KeySynthType.PRESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emulates the pressing of a hardware keyboard key.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.KeySynthType.RELEASE">
+<tt class="descname">RELEASE</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.KeySynthType.RELEASE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emulates the release of a hardware keyboard key.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.KeySynthType.PRESSRELEASE">
+<tt class="descname">PRESSRELEASE</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.KeySynthType.PRESSRELEASE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emulates the pressing and immediate releasing of a hardware keyboard key.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.KeySynthType.SYM">
+<tt class="descname">SYM</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.KeySynthType.SYM" title="Permalink to this definition">¶</a></dt>
+<dd><p>A symbolic key event is generated, without specifying a hardware key. Note: if the keysym is not present in the current keyboard map, the #AtspiDeviceEventController instance has a limited ability to generate such keysyms on-the-fly. Reliability of GenerateKeyboardEvent calls using out-of-keymap keysyms will vary from system to system, and on the number of different out-of-keymap keysyms being generated in quick succession. In practice this is rarely significant, since the keysyms of interest to AT clients and keyboard emulators are usually part of the current keymap, i.e., present on the system keyboard for the current locale (even if a physical hardware keyboard is not connected).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.KeySynthType.STRING">
+<tt class="descname">STRING</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.KeySynthType.STRING" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string is converted to its equivalent keyboard events and emitted. If the string consists of complex characters or composed characters which are not in the current keymap, string emission is subject to the out-of-keymap limitations described for <a class="reference internal" href="#Atspi.KeySynthType.SYM" title="Atspi.KeySynthType.SYM"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.KeySynthType.SYM</span></tt></a>. In practice this limitation primarily effects Chinese and Japanese locales.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="localetype">
+<h2>LocaleType<a class="headerlink" href="#localetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.LocaleType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">LocaleType</tt><a class="headerlink" href="#Atspi.LocaleType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Used by interfaces <a class="reference internal" href="interfaces/Text.html#Atspi.Text" title="Atspi.Text"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text</span></tt></a> and <a class="reference internal" href="interfaces/Document.html#Atspi.Document" title="Atspi.Document"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Document</span></tt></a>, this
+enumeration corresponds to the POSIX &#8216;setlocale&#8217; enum values.</p>
+<dl class="attribute">
+<dt id="Atspi.LocaleType.MESSAGES">
+<tt class="descname">MESSAGES</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.LocaleType.MESSAGES" title="Permalink to this definition">¶</a></dt>
+<dd><p>For localizable natural-language messages.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.LocaleType.COLLATE">
+<tt class="descname">COLLATE</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.LocaleType.COLLATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>For regular expression matching and string collation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.LocaleType.CTYPE">
+<tt class="descname">CTYPE</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.LocaleType.CTYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>For regular expression matching, character classification, conversion, case-sensitive comparison, and wide character functions.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.LocaleType.MONETARY">
+<tt class="descname">MONETARY</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.LocaleType.MONETARY" title="Permalink to this definition">¶</a></dt>
+<dd><p>For monetary formatting.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.LocaleType.NUMERIC">
+<tt class="descname">NUMERIC</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.LocaleType.NUMERIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>For number formatting (such as the decimal point and the thousands separator).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.LocaleType.TIME">
+<tt class="descname">TIME</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.LocaleType.TIME" title="Permalink to this definition">¶</a></dt>
+<dd><p>For time and date formatting.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="modifiertype">
+<h2>ModifierType<a class="headerlink" href="#modifiertype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.ModifierType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">ModifierType</tt><a class="headerlink" href="#Atspi.ModifierType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="Atspi.ModifierType.SHIFT">
+<tt class="descname">SHIFT</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.ModifierType.SHIFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The left or right &#8216;Shift&#8217; key.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ModifierType.SHIFTLOCK">
+<tt class="descname">SHIFTLOCK</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.ModifierType.SHIFTLOCK" title="Permalink to this definition">¶</a></dt>
+<dd><p>The ShiftLock or CapsLock key.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ModifierType.CONTROL">
+<tt class="descname">CONTROL</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.ModifierType.CONTROL" title="Permalink to this definition">¶</a></dt>
+<dd><p>&#8216;Control&#8217;/&#8217;Ctrl&#8217;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ModifierType.ALT">
+<tt class="descname">ALT</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.ModifierType.ALT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Alt key (as opposed to AltGr).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ModifierType.META">
+<tt class="descname">META</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.ModifierType.META" title="Permalink to this definition">¶</a></dt>
+<dd><p>Depending on the platform, this may map to &#8216;Window&#8217;, &#8216;Function&#8217;, &#8216;Meta&#8217;, &#8216;Menu&#8217;, or &#8216;NumLock&#8217;. Such &#8216;Meta keys&#8217; will map to one of META, META2, META3. On X Windows platforms these META values map to the modifier masks Mod1Mask, Mod2Mask, Mod3Mask, e.g. an event having <a class="reference internal" href="#Atspi.ModifierType.META2" title="Atspi.ModifierType.META2"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ModifierType.META2</span></tt></a> means that the &#8216;Mod2Mask&#8217; bit is set in the corresponding XEvent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ModifierType.META2">
+<tt class="descname">META2</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.ModifierType.META2" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#Atspi.ModifierType.META" title="Atspi.ModifierType.META"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ModifierType.META</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ModifierType.META3">
+<tt class="descname">META3</tt><em class="property"> = 6</em><a class="headerlink" href="#Atspi.ModifierType.META3" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#Atspi.ModifierType.META" title="Atspi.ModifierType.META"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.ModifierType.META</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.ModifierType.NUMLOCK">
+<tt class="descname">NUMLOCK</tt><em class="property"> = 14</em><a class="headerlink" href="#Atspi.ModifierType.NUMLOCK" title="Permalink to this definition">¶</a></dt>
+<dd><p>A symbolic meta key name that is mapped by AT-SPI to the appropriate META value, for the convenience of the client.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="relationtype">
+<h2>RelationType<a class="headerlink" href="#relationtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.RelationType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">RelationType</tt><a class="headerlink" href="#Atspi.RelationType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#Atspi.RelationType" title="Atspi.RelationType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType</span></tt></a> specifies a relationship between objects 
+(possibly one-to-many
+or many-to-one) outside of the normal parent/child hierarchical
+relationship. It allows better semantic       identification of how objects
+are associated with one another.       For instance the 
+<a class="reference internal" href="#Atspi.RelationType.LABELLED_BY" title="Atspi.RelationType.LABELLED_BY"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.LABELLED_BY</span></tt></a> 
+relationship may be used to identify labelling information       that should
+accompany the accessible name property when presenting an object&#8217;s content or
+identity       to the end user.  Similarly, 
+<a class="reference internal" href="#Atspi.RelationType.CONTROLLER_FOR" title="Atspi.RelationType.CONTROLLER_FOR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.CONTROLLER_FOR</span></tt></a> can be used
+to further specify the context in which a valuator is useful, and/or the
+other UI components which are directly effected by user interactions with
+the valuator. Common examples include association of scrollbars with the
+viewport or panel which they control.</p>
+<p>Enumeration used to specify
+the type of relation encapsulated in an <a class="reference internal" href="classes/Relation.html#Atspi.Relation" title="Atspi.Relation"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Relation</span></tt></a> object.</p>
+<dl class="attribute">
+<dt id="Atspi.RelationType.NULL">
+<tt class="descname">NULL</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.RelationType.NULL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Not a meaningful relationship; clients should not normally encounter this <a class="reference internal" href="#Atspi.RelationType" title="Atspi.RelationType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType</span></tt></a> value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.LABEL_FOR">
+<tt class="descname">LABEL_FOR</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.RelationType.LABEL_FOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is a label for one or more other objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.LABELLED_BY">
+<tt class="descname">LABELLED_BY</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.RelationType.LABELLED_BY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is labelled by one or more other objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.CONTROLLER_FOR">
+<tt class="descname">CONTROLLER_FOR</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.RelationType.CONTROLLER_FOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is an interactive object which modifies the state, onscreen location, or other attributes of one or more target objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.CONTROLLED_BY">
+<tt class="descname">CONTROLLED_BY</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.RelationType.CONTROLLED_BY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object state, position, etc. is modified/controlled by user interaction with one or more other objects. For instance a viewport or scroll pane may be <a class="reference internal" href="#Atspi.RelationType.CONTROLLED_BY" title="Atspi.RelationType.CONTROLLED_BY"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.CONTROLLED_BY</span></tt></a> scrollbars.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.MEMBER_OF">
+<tt class="descname">MEMBER_OF</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.RelationType.MEMBER_OF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object has a grouping relationship (e.g. &#8216;same group as&#8217;) to one or more other objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.TOOLTIP_FOR">
+<tt class="descname">TOOLTIP_FOR</tt><em class="property"> = 6</em><a class="headerlink" href="#Atspi.RelationType.TOOLTIP_FOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is a tooltip associated with another object.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.NODE_CHILD_OF">
+<tt class="descname">NODE_CHILD_OF</tt><em class="property"> = 7</em><a class="headerlink" href="#Atspi.RelationType.NODE_CHILD_OF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is a child of the target.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.NODE_PARENT_OF">
+<tt class="descname">NODE_PARENT_OF</tt><em class="property"> = 8</em><a class="headerlink" href="#Atspi.RelationType.NODE_PARENT_OF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is a parent of the target.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.EXTENDED">
+<tt class="descname">EXTENDED</tt><em class="property"> = 9</em><a class="headerlink" href="#Atspi.RelationType.EXTENDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to indicate that a relationship exists, but its type is not specified in the enumeration.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.FLOWS_TO">
+<tt class="descname">FLOWS_TO</tt><em class="property"> = 10</em><a class="headerlink" href="#Atspi.RelationType.FLOWS_TO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object renders content which flows logically to another object. For instance, text in a paragraph may flow to another object which is not the &#8216;next sibling&#8217; in the accessibility hierarchy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.FLOWS_FROM">
+<tt class="descname">FLOWS_FROM</tt><em class="property"> = 11</em><a class="headerlink" href="#Atspi.RelationType.FLOWS_FROM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reciprocal of <a class="reference internal" href="#Atspi.RelationType.FLOWS_TO" title="Atspi.RelationType.FLOWS_TO"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.FLOWS_TO</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.SUBWINDOW_OF">
+<tt class="descname">SUBWINDOW_OF</tt><em class="property"> = 12</em><a class="headerlink" href="#Atspi.RelationType.SUBWINDOW_OF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is visually and semantically considered a subwindow of another object, even though it is not the object&#8217;s child. Useful when dealing with embedded applications and other cases where the widget hierarchy does not map cleanly to the onscreen presentation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.EMBEDS">
+<tt class="descname">EMBEDS</tt><em class="property"> = 13</em><a class="headerlink" href="#Atspi.RelationType.EMBEDS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Similar to <a class="reference internal" href="#Atspi.RelationType.SUBWINDOW_OF" title="Atspi.RelationType.SUBWINDOW_OF"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.SUBWINDOW_OF</span></tt></a>, but specifically used for cross-process embedding.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.EMBEDDED_BY">
+<tt class="descname">EMBEDDED_BY</tt><em class="property"> = 14</em><a class="headerlink" href="#Atspi.RelationType.EMBEDDED_BY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reciprocal of <a class="reference internal" href="#Atspi.RelationType.EMBEDS" title="Atspi.RelationType.EMBEDS"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.EMBEDS</span></tt></a>. Used to denote content rendered by embedded renderers that live in a separate process space from the embedding context.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.POPUP_FOR">
+<tt class="descname">POPUP_FOR</tt><em class="property"> = 15</em><a class="headerlink" href="#Atspi.RelationType.POPUP_FOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Denotes that the object is a transient window or frame associated with another onscreen object. Similar to ATSPI_TOOLTIP_FOR, but more general. Useful for windows which are technically toplevels but which, for one or more reasons, do not explicitly cause their associated window to lose &#8216;window focus&#8217;. Creation of an <a class="reference internal" href="#Atspi.Role.WINDOW" title="Atspi.Role.WINDOW"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.WINDOW</span></tt></a> object with the <a class="reference internal" href="#Atspi.RelationType.POPUP_FOR" title="Atspi.RelationType.POPUP_FOR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.POPUP_FOR</span></tt></a> relation usually requires some presentation action on the part of assistive technology clients, even though the previous toplevel <a class="reference internal" href="#Atspi.Role.FRAME" title="Atspi.Role.FRAME"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.FRAME</span></tt></a> object may still be the active window.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.PARENT_WINDOW_OF">
+<tt class="descname">PARENT_WINDOW_OF</tt><em class="property"> = 16</em><a class="headerlink" href="#Atspi.RelationType.PARENT_WINDOW_OF" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the reciprocal relation to <a class="reference internal" href="#Atspi.RelationType.POPUP_FOR" title="Atspi.RelationType.POPUP_FOR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.POPUP_FOR</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.DESCRIPTION_FOR">
+<tt class="descname">DESCRIPTION_FOR</tt><em class="property"> = 17</em><a class="headerlink" href="#Atspi.RelationType.DESCRIPTION_FOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that an object provides descriptive information about another object; more verbose than <a class="reference internal" href="#Atspi.RelationType.LABEL_FOR" title="Atspi.RelationType.LABEL_FOR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.LABEL_FOR</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.DESCRIBED_BY">
+<tt class="descname">DESCRIBED_BY</tt><em class="property"> = 18</em><a class="headerlink" href="#Atspi.RelationType.DESCRIBED_BY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that another object provides descriptive information about this object; more verbose than <a class="reference internal" href="#Atspi.RelationType.LABELLED_BY" title="Atspi.RelationType.LABELLED_BY"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.LABELLED_BY</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.RelationType.LAST_DEFINED">
+<tt class="descname">LAST_DEFINED</tt><em class="property"> = 19</em><a class="headerlink" href="#Atspi.RelationType.LAST_DEFINED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do not use as a parameter value, used to determine the size of the enumeration.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="role">
+<h2>Role<a class="headerlink" href="#role" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.Role">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">Role</tt><a class="headerlink" href="#Atspi.Role" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used by interface <a class="reference internal" href="classes/Accessible.html#Atspi.Accessible" title="Atspi.Accessible"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Accessible</span></tt></a> to specify the role
+of an <a class="reference internal" href="classes/Accessible.html#Atspi.Accessible" title="Atspi.Accessible"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Accessible</span></tt></a> object.</p>
+<dl class="attribute">
+<dt id="Atspi.Role.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.Role.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>A role indicating an error condition, such as uninitialized Role data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ACCELERATOR_LABEL">
+<tt class="descname">ACCELERATOR_LABEL</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.Role.ACCELERATOR_LABEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is a label indicating the keyboard accelerators for the parent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ALERT">
+<tt class="descname">ALERT</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.Role.ALERT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is used to alert the user about something.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ANIMATION">
+<tt class="descname">ANIMATION</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.Role.ANIMATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object contains a dynamic or moving image of some kind.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ARROW">
+<tt class="descname">ARROW</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.Role.ARROW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is a 2d directional indicator.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.CALENDAR">
+<tt class="descname">CALENDAR</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.Role.CALENDAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object contains one or more dates, usually arranged into a 2d list.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.CANVAS">
+<tt class="descname">CANVAS</tt><em class="property"> = 6</em><a class="headerlink" href="#Atspi.Role.CANVAS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object that can be drawn into and is used to trap events.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.CHECK_BOX">
+<tt class="descname">CHECK_BOX</tt><em class="property"> = 7</em><a class="headerlink" href="#Atspi.Role.CHECK_BOX" title="Permalink to this definition">¶</a></dt>
+<dd><p>A choice that can be checked or unchecked and provides a separate       indicator for the current state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.CHECK_MENU_ITEM">
+<tt class="descname">CHECK_MENU_ITEM</tt><em class="property"> = 8</em><a class="headerlink" href="#Atspi.Role.CHECK_MENU_ITEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>A menu item that behaves like a check box. See <a class="reference internal" href="#Atspi.Role.CHECK_BOX" title="Atspi.Role.CHECK_BOX"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.CHECK_BOX</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.COLOR_CHOOSER">
+<tt class="descname">COLOR_CHOOSER</tt><em class="property"> = 9</em><a class="headerlink" href="#Atspi.Role.COLOR_CHOOSER" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized dialog that lets the user choose a color.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.COLUMN_HEADER">
+<tt class="descname">COLUMN_HEADER</tt><em class="property"> = 10</em><a class="headerlink" href="#Atspi.Role.COLUMN_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The header for a column of data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.COMBO_BOX">
+<tt class="descname">COMBO_BOX</tt><em class="property"> = 11</em><a class="headerlink" href="#Atspi.Role.COMBO_BOX" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of choices the user can select from.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DATE_EDITOR">
+<tt class="descname">DATE_EDITOR</tt><em class="property"> = 12</em><a class="headerlink" href="#Atspi.Role.DATE_EDITOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object which allows entry of a date.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DESKTOP_ICON">
+<tt class="descname">DESKTOP_ICON</tt><em class="property"> = 13</em><a class="headerlink" href="#Atspi.Role.DESKTOP_ICON" title="Permalink to this definition">¶</a></dt>
+<dd><p>An inconifed internal frame within a DESKTOP_PANE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DESKTOP_FRAME">
+<tt class="descname">DESKTOP_FRAME</tt><em class="property"> = 14</em><a class="headerlink" href="#Atspi.Role.DESKTOP_FRAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>A pane that supports internal frames and iconified versions of those internal frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DIAL">
+<tt class="descname">DIAL</tt><em class="property"> = 15</em><a class="headerlink" href="#Atspi.Role.DIAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that allows a value to be changed via rotating a visual element, or which displays a value via such a rotating element.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DIALOG">
+<tt class="descname">DIALOG</tt><em class="property"> = 16</em><a class="headerlink" href="#Atspi.Role.DIALOG" title="Permalink to this definition">¶</a></dt>
+<dd><p>A top level window with title bar and a border.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DIRECTORY_PANE">
+<tt class="descname">DIRECTORY_PANE</tt><em class="property"> = 17</em><a class="headerlink" href="#Atspi.Role.DIRECTORY_PANE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A pane that allows the user to navigate through and select the contents of a directory.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DRAWING_AREA">
+<tt class="descname">DRAWING_AREA</tt><em class="property"> = 18</em><a class="headerlink" href="#Atspi.Role.DRAWING_AREA" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized dialog that displays the files in the directory and lets the user select a file, browse a different directory, or specify a filename.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.FILE_CHOOSER">
+<tt class="descname">FILE_CHOOSER</tt><em class="property"> = 19</em><a class="headerlink" href="#Atspi.Role.FILE_CHOOSER" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object used for drawing custom user interface elements.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.FILLER">
+<tt class="descname">FILLER</tt><em class="property"> = 20</em><a class="headerlink" href="#Atspi.Role.FILLER" title="Permalink to this definition">¶</a></dt>
+<dd><p>A object that fills up space in a user interface.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.FOCUS_TRAVERSABLE">
+<tt class="descname">FOCUS_TRAVERSABLE</tt><em class="property"> = 21</em><a class="headerlink" href="#Atspi.Role.FOCUS_TRAVERSABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Don&#8217;t use, reserved for future use.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.FONT_CHOOSER">
+<tt class="descname">FONT_CHOOSER</tt><em class="property"> = 22</em><a class="headerlink" href="#Atspi.Role.FONT_CHOOSER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows selection of a display font.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.FRAME">
+<tt class="descname">FRAME</tt><em class="property"> = 23</em><a class="headerlink" href="#Atspi.Role.FRAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>A top level window with a title bar, border, menubar, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.GLASS_PANE">
+<tt class="descname">GLASS_PANE</tt><em class="property"> = 24</em><a class="headerlink" href="#Atspi.Role.GLASS_PANE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A pane that is guaranteed to be painted on top of all panes beneath it.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.HTML_CONTAINER">
+<tt class="descname">HTML_CONTAINER</tt><em class="property"> = 25</em><a class="headerlink" href="#Atspi.Role.HTML_CONTAINER" title="Permalink to this definition">¶</a></dt>
+<dd><p>A document container for HTML, whose children represent the document content.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ICON">
+<tt class="descname">ICON</tt><em class="property"> = 26</em><a class="headerlink" href="#Atspi.Role.ICON" title="Permalink to this definition">¶</a></dt>
+<dd><p>A small fixed size picture, typically used to decorate components.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.IMAGE">
+<tt class="descname">IMAGE</tt><em class="property"> = 27</em><a class="headerlink" href="#Atspi.Role.IMAGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>An image, typically static.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.INTERNAL_FRAME">
+<tt class="descname">INTERNAL_FRAME</tt><em class="property"> = 28</em><a class="headerlink" href="#Atspi.Role.INTERNAL_FRAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>A frame-like object that is clipped by a desktop pane.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LABEL">
+<tt class="descname">LABEL</tt><em class="property"> = 29</em><a class="headerlink" href="#Atspi.Role.LABEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object used to present an icon or short string in an interface.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LAYERED_PANE">
+<tt class="descname">LAYERED_PANE</tt><em class="property"> = 30</em><a class="headerlink" href="#Atspi.Role.LAYERED_PANE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized pane that allows its children to be drawn in layers, providing a form of stacking order.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LIST">
+<tt class="descname">LIST</tt><em class="property"> = 31</em><a class="headerlink" href="#Atspi.Role.LIST" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that presents a list of objects to the user and allows the user to select one or more of them.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LIST_ITEM">
+<tt class="descname">LIST_ITEM</tt><em class="property"> = 32</em><a class="headerlink" href="#Atspi.Role.LIST_ITEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that represents an element of a list.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.MENU">
+<tt class="descname">MENU</tt><em class="property"> = 33</em><a class="headerlink" href="#Atspi.Role.MENU" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object usually found inside a menu bar that contains a list of actions the user can choose from.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.MENU_BAR">
+<tt class="descname">MENU_BAR</tt><em class="property"> = 34</em><a class="headerlink" href="#Atspi.Role.MENU_BAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object usually drawn at the top of the primary dialog box of an application that contains a list of menus the user can choose from.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.MENU_ITEM">
+<tt class="descname">MENU_ITEM</tt><em class="property"> = 35</em><a class="headerlink" href="#Atspi.Role.MENU_ITEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object usually contained in a menu that presents an action the user can choose.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.OPTION_PANE">
+<tt class="descname">OPTION_PANE</tt><em class="property"> = 36</em><a class="headerlink" href="#Atspi.Role.OPTION_PANE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized pane whose primary use is inside a dialog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PAGE_TAB">
+<tt class="descname">PAGE_TAB</tt><em class="property"> = 37</em><a class="headerlink" href="#Atspi.Role.PAGE_TAB" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that is a child of a page tab list.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PAGE_TAB_LIST">
+<tt class="descname">PAGE_TAB_LIST</tt><em class="property"> = 38</em><a class="headerlink" href="#Atspi.Role.PAGE_TAB_LIST" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that presents a series of panels (or page tabs), one at a time,through some mechanism provided by the object.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PANEL">
+<tt class="descname">PANEL</tt><em class="property"> = 39</em><a class="headerlink" href="#Atspi.Role.PANEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generic container that is often used to group objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PASSWORD_TEXT">
+<tt class="descname">PASSWORD_TEXT</tt><em class="property"> = 40</em><a class="headerlink" href="#Atspi.Role.PASSWORD_TEXT" title="Permalink to this definition">¶</a></dt>
+<dd><p>A text object uses for passwords, or other places where the text content is not shown visibly to the user.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.POPUP_MENU">
+<tt class="descname">POPUP_MENU</tt><em class="property"> = 41</em><a class="headerlink" href="#Atspi.Role.POPUP_MENU" title="Permalink to this definition">¶</a></dt>
+<dd><p>A temporary window that is usually used to offer the user a list of choices, and then hides when the user selects one of those choices.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PROGRESS_BAR">
+<tt class="descname">PROGRESS_BAR</tt><em class="property"> = 42</em><a class="headerlink" href="#Atspi.Role.PROGRESS_BAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object used to indicate how much of a task has been completed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PUSH_BUTTON">
+<tt class="descname">PUSH_BUTTON</tt><em class="property"> = 43</em><a class="headerlink" href="#Atspi.Role.PUSH_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object the user can manipulate to tell the application to do something.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.RADIO_BUTTON">
+<tt class="descname">RADIO_BUTTON</tt><em class="property"> = 44</em><a class="headerlink" href="#Atspi.Role.RADIO_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized check box that will cause other radio buttons in the same group to become unchecked when this one is checked.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.RADIO_MENU_ITEM">
+<tt class="descname">RADIO_MENU_ITEM</tt><em class="property"> = 45</em><a class="headerlink" href="#Atspi.Role.RADIO_MENU_ITEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object is both a menu item and a &#8220;radio button&#8221; . See <a class="reference internal" href="#Atspi.Role.RADIO_BUTTON" title="Atspi.Role.RADIO_BUTTON"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.RADIO_BUTTON</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ROOT_PANE">
+<tt class="descname">ROOT_PANE</tt><em class="property"> = 46</em><a class="headerlink" href="#Atspi.Role.ROOT_PANE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized pane that has a glass pane and a layered pane as its children.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ROW_HEADER">
+<tt class="descname">ROW_HEADER</tt><em class="property"> = 47</em><a class="headerlink" href="#Atspi.Role.ROW_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The header for a row of data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.SCROLL_BAR">
+<tt class="descname">SCROLL_BAR</tt><em class="property"> = 48</em><a class="headerlink" href="#Atspi.Role.SCROLL_BAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object usually used to allow a user to incrementally view a large amount of data by moving the bounds of a viewport along a one-dimensional axis.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.SCROLL_PANE">
+<tt class="descname">SCROLL_PANE</tt><em class="property"> = 49</em><a class="headerlink" href="#Atspi.Role.SCROLL_PANE" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that allows a user to incrementally view a large amount of information. <a class="reference internal" href="#Atspi.Role.SCROLL_PANE" title="Atspi.Role.SCROLL_PANE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.SCROLL_PANE</span></tt></a> objects are usually accompanied by <a class="reference internal" href="#Atspi.Role.SCROLL_BAR" title="Atspi.Role.SCROLL_BAR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.SCROLL_BAR</span></tt></a> controllers, on which the <a class="reference internal" href="#Atspi.RelationType.CONTROLLER_FOR" title="Atspi.RelationType.CONTROLLER_FOR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.CONTROLLER_FOR</span></tt></a> and <a class="reference internal" href="#Atspi.RelationType.CONTROLLED_BY" title="Atspi.RelationType.CONTROLLED_BY"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.CONTROLLED_BY</span></tt></a> reciprocal relations are set. See  #atspi_get_relation_set.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.SEPARATOR">
+<tt class="descname">SEPARATOR</tt><em class="property"> = 50</em><a class="headerlink" href="#Atspi.Role.SEPARATOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object usually contained in a menu to provide a visible and logical separation of the contents in a menu.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.SLIDER">
+<tt class="descname">SLIDER</tt><em class="property"> = 51</em><a class="headerlink" href="#Atspi.Role.SLIDER" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that allows the user to select from a bounded range.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.SPIN_BUTTON">
+<tt class="descname">SPIN_BUTTON</tt><em class="property"> = 52</em><a class="headerlink" href="#Atspi.Role.SPIN_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object which allows one of a set of choices to be selected, and which displays the current choice.  Unlike <a class="reference internal" href="#Atspi.Role.SCROLL_BAR" title="Atspi.Role.SCROLL_BAR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.SCROLL_BAR</span></tt></a>, <a class="reference internal" href="#Atspi.Role.SLIDER" title="Atspi.Role.SLIDER"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.SLIDER</span></tt></a> objects need not control &#8216;viewport&#8217;-like objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.SPLIT_PANE">
+<tt class="descname">SPLIT_PANE</tt><em class="property"> = 53</em><a class="headerlink" href="#Atspi.Role.SPLIT_PANE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized panel that presents two other panels at the same time.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.STATUS_BAR">
+<tt class="descname">STATUS_BAR</tt><em class="property"> = 54</em><a class="headerlink" href="#Atspi.Role.STATUS_BAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object displays non-quantitative status information (c.f. <a class="reference internal" href="#Atspi.Role.PROGRESS_BAR" title="Atspi.Role.PROGRESS_BAR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.PROGRESS_BAR</span></tt></a> )</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TABLE">
+<tt class="descname">TABLE</tt><em class="property"> = 55</em><a class="headerlink" href="#Atspi.Role.TABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object used to repesent information in terms of rows and columns.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TABLE_CELL">
+<tt class="descname">TABLE_CELL</tt><em class="property"> = 56</em><a class="headerlink" href="#Atspi.Role.TABLE_CELL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A &#8216;cell&#8217; or discrete child within a Table. Note: Table cells need not have <a class="reference internal" href="#Atspi.Role.TABLE_CELL" title="Atspi.Role.TABLE_CELL"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.TABLE_CELL</span></tt></a>, other #AtspiRoleType values are valid as well.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TABLE_COLUMN_HEADER">
+<tt class="descname">TABLE_COLUMN_HEADER</tt><em class="property"> = 57</em><a class="headerlink" href="#Atspi.Role.TABLE_COLUMN_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object which labels a particular column in an <a class="reference internal" href="interfaces/Table.html#Atspi.Table" title="Atspi.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Table</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TABLE_ROW_HEADER">
+<tt class="descname">TABLE_ROW_HEADER</tt><em class="property"> = 58</em><a class="headerlink" href="#Atspi.Role.TABLE_ROW_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object which labels a particular row in a <a class="reference internal" href="interfaces/Table.html#Atspi.Table" title="Atspi.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Table</span></tt></a>. <a class="reference internal" href="interfaces/Table.html#Atspi.Table" title="Atspi.Table"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Table</span></tt></a> rows and columns may also be labelled via the <a class="reference internal" href="#Atspi.RelationType.LABEL_FOR" title="Atspi.RelationType.LABEL_FOR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.LABEL_FOR</span></tt></a> <a class="reference external" href="mailto:/&#37;&#52;&#48;ATSPI_RELATION_LABELLED_BY">/<span>&#64;</span>ATSPI_RELATION_LABELLED_BY</a> relationships. See #atspi_get_relation_set.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TEAROFF_MENU_ITEM">
+<tt class="descname">TEAROFF_MENU_ITEM</tt><em class="property"> = 59</em><a class="headerlink" href="#Atspi.Role.TEAROFF_MENU_ITEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object allows menu to be removed from menubar and shown in its own window.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TERMINAL">
+<tt class="descname">TERMINAL</tt><em class="property"> = 60</em><a class="headerlink" href="#Atspi.Role.TERMINAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that emulates a terminal.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TEXT">
+<tt class="descname">TEXT</tt><em class="property"> = 61</em><a class="headerlink" href="#Atspi.Role.TEXT" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that presents text to the user, of nonspecific type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TOGGLE_BUTTON">
+<tt class="descname">TOGGLE_BUTTON</tt><em class="property"> = 62</em><a class="headerlink" href="#Atspi.Role.TOGGLE_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd><p>A specialized push button that can be checked or unchecked, but does not procide a separate indicator for the current state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TOOL_BAR">
+<tt class="descname">TOOL_BAR</tt><em class="property"> = 63</em><a class="headerlink" href="#Atspi.Role.TOOL_BAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>A bar or palette usually composed of push buttons or toggle buttons.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TOOL_TIP">
+<tt class="descname">TOOL_TIP</tt><em class="property"> = 64</em><a class="headerlink" href="#Atspi.Role.TOOL_TIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that provides information about another object.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TREE">
+<tt class="descname">TREE</tt><em class="property"> = 65</em><a class="headerlink" href="#Atspi.Role.TREE" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object used to repsent hierarchical information to the user.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TREE_TABLE">
+<tt class="descname">TREE_TABLE</tt><em class="property"> = 66</em><a class="headerlink" href="#Atspi.Role.TREE_TABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that presents both tabular and hierarchical info to the user.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 67</em><a class="headerlink" href="#Atspi.Role.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object contains some <a class="reference internal" href="classes/Accessible.html#Atspi.Accessible" title="Atspi.Accessible"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Accessible</span></tt></a> information, but its role is not known.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.VIEWPORT">
+<tt class="descname">VIEWPORT</tt><em class="property"> = 68</em><a class="headerlink" href="#Atspi.Role.VIEWPORT" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object usually used in a scroll pane, or to otherwise clip a larger object or content renderer to a specific onscreen viewport.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.WINDOW">
+<tt class="descname">WINDOW</tt><em class="property"> = 69</em><a class="headerlink" href="#Atspi.Role.WINDOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>A top level window with no title or border.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.EXTENDED">
+<tt class="descname">EXTENDED</tt><em class="property"> = 70</em><a class="headerlink" href="#Atspi.Role.EXTENDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>means that the role for this item is known, but not included in the core enumeration.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.HEADER">
+<tt class="descname">HEADER</tt><em class="property"> = 71</em><a class="headerlink" href="#Atspi.Role.HEADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that serves as a document header.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.FOOTER">
+<tt class="descname">FOOTER</tt><em class="property"> = 72</em><a class="headerlink" href="#Atspi.Role.FOOTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that serves as a document footer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PARAGRAPH">
+<tt class="descname">PARAGRAPH</tt><em class="property"> = 73</em><a class="headerlink" href="#Atspi.Role.PARAGRAPH" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object which is contains a single paragraph of text content. See also <a class="reference internal" href="#Atspi.Role.TEXT" title="Atspi.Role.TEXT"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.TEXT</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.RULER">
+<tt class="descname">RULER</tt><em class="property"> = 74</em><a class="headerlink" href="#Atspi.Role.RULER" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object which describes margins and tab stops, etc. for text objects which it controls (should have <a class="reference internal" href="#Atspi.RelationType.CONTROLLER_FOR" title="Atspi.RelationType.CONTROLLER_FOR"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.RelationType.CONTROLLER_FOR</span></tt></a> relation to such).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.APPLICATION">
+<tt class="descname">APPLICATION</tt><em class="property"> = 75</em><a class="headerlink" href="#Atspi.Role.APPLICATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object corresponding to the toplevel accessible of an application, which may contain <a class="reference internal" href="#Atspi.Role.FRAME" title="Atspi.Role.FRAME"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.FRAME</span></tt></a> objects or other accessible objects. Children of #AccessibleDesktop objects  are generally <a class="reference internal" href="#Atspi.Role.APPLICATION" title="Atspi.Role.APPLICATION"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.APPLICATION</span></tt></a> objects.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.AUTOCOMPLETE">
+<tt class="descname">AUTOCOMPLETE</tt><em class="property"> = 76</em><a class="headerlink" href="#Atspi.Role.AUTOCOMPLETE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a dialog or list containing items for insertion into an entry widget, for instance a list of words for completion of a text entry.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.EDITBAR">
+<tt class="descname">EDITBAR</tt><em class="property"> = 77</em><a class="headerlink" href="#Atspi.Role.EDITBAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is an editable text object in a toolbar.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.EMBEDDED">
+<tt class="descname">EMBEDDED</tt><em class="property"> = 78</em><a class="headerlink" href="#Atspi.Role.EMBEDDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is an embedded component container.  This role is a &#8220;grouping&#8221; hint that the contained objects share a context which is different from the container in which this accessible is embedded. In particular, it is used for some kinds of document embedding, and for embedding of out-of-process component, &#8220;panel applets&#8221;, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.ENTRY">
+<tt class="descname">ENTRY</tt><em class="property"> = 79</em><a class="headerlink" href="#Atspi.Role.ENTRY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a component whose textual content may be entered or modified by the user, provided <a class="reference internal" href="#Atspi.StateType.EDITABLE" title="Atspi.StateType.EDITABLE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.EDITABLE</span></tt></a> is present. A readonly <a class="reference internal" href="#Atspi.Role.ENTRY" title="Atspi.Role.ENTRY"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.ENTRY</span></tt></a> object (i.e. where <a class="reference internal" href="#Atspi.StateType.EDITABLE" title="Atspi.StateType.EDITABLE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.EDITABLE</span></tt></a> is not present) implies a read-only &#8216;text field&#8217; in a form, as opposed to a title, label, or caption.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.CHART">
+<tt class="descname">CHART</tt><em class="property"> = 80</em><a class="headerlink" href="#Atspi.Role.CHART" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a graphical depiction of quantitative data. It may contain multiple subelements whose attributes and/or description may be queried to obtain both the  quantitative data and information about how the data is being presented. The ATSPI_LABELLED_BY relation is particularly important in interpreting objects of this type, as is the accessible description property. See <a class="reference internal" href="#Atspi.Role.CAPTION" title="Atspi.Role.CAPTION"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.CAPTION</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.CAPTION">
+<tt class="descname">CAPTION</tt><em class="property"> = 81</em><a class="headerlink" href="#Atspi.Role.CAPTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object contains descriptive information, usually textual, about another user interface element such as a table, chart, or image.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DOCUMENT_FRAME">
+<tt class="descname">DOCUMENT_FRAME</tt><em class="property"> = 82</em><a class="headerlink" href="#Atspi.Role.DOCUMENT_FRAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either this object, or a singleton descendant, should implement the <a class="reference internal" href="interfaces/Document.html#Atspi.Document" title="Atspi.Document"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Document</span></tt></a> interface.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.HEADING">
+<tt class="descname">HEADING</tt><em class="property"> = 83</em><a class="headerlink" href="#Atspi.Role.HEADING" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object serves as a heading for content which follows it in a document. The &#8216;heading level&#8217; of the heading, if availabe,  may be obtained by       querying the object&#8217;s attributes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.PAGE">
+<tt class="descname">PAGE</tt><em class="property"> = 84</em><a class="headerlink" href="#Atspi.Role.PAGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a containing instance which encapsulates a page of information. <a class="reference internal" href="#Atspi.Role.PAGE" title="Atspi.Role.PAGE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.PAGE</span></tt></a> is used in documents and content which support a paginated navigation model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.SECTION">
+<tt class="descname">SECTION</tt><em class="property"> = 85</em><a class="headerlink" href="#Atspi.Role.SECTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a containing instance of document content which constitutes a particular &#8216;logical&#8217; section of the document.  The type of content within a section, and the nature of the section division itself, may be obtained by querying the object&#8217;s attributes.  Sections may be nested.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.REDUNDANT_OBJECT">
+<tt class="descname">REDUNDANT_OBJECT</tt><em class="property"> = 86</em><a class="headerlink" href="#Atspi.Role.REDUNDANT_OBJECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is redundant with another object in the hierarchy, and is exposed for purely technical reasons.  Objects of this role should be ignored by clients, if they are encountered at all.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.FORM">
+<tt class="descname">FORM</tt><em class="property"> = 87</em><a class="headerlink" href="#Atspi.Role.FORM" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a containing instance of document content which has within it components with which the user can interact in order to input information; i.e. the object is a container for pushbuttons, comboboxes, text input fields, and other &#8216;GUI&#8217; components. <a class="reference internal" href="#Atspi.Role.FORM" title="Atspi.Role.FORM"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.FORM</span></tt></a> should not, in general, be used for toplevel GUI containers or dialogs, but should be reserved for &#8216;GUI&#8217; containers which occur within document content, for instance within Web documents, presentations, or text documents.  Unlike other GUI containers and dialogs which occur inside application instances, <a class="reference internal" href="#Atspi.Role.FORM" title="Atspi.Role.FORM"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Role.FORM</span></tt></a> containers&#8217; components are associated with the current document, rather than the current foreground application or viewer instance.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LINK">
+<tt class="descname">LINK</tt><em class="property"> = 88</em><a class="headerlink" href="#Atspi.Role.LINK" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a hypertext anchor, i.e. a &#8220;link&#8221; in a hypertext document.  Such objects are distinct from &#8216;inline&#8217;       content which may also use the <a class="reference internal" href="interfaces/Hypertext.html#Atspi.Hypertext" title="Atspi.Hypertext"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Hypertext</span></tt></a> /#AtspiHyperlink interfacesto indicate the range/location within a text object where an inline or embedded object lies.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.INPUT_METHOD_WINDOW">
+<tt class="descname">INPUT_METHOD_WINDOW</tt><em class="property"> = 89</em><a class="headerlink" href="#Atspi.Role.INPUT_METHOD_WINDOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>The object is a window or similar viewport which is used to allow composition or input of a &#8216;complex character&#8217;, in other words it is an &#8220;input method window&#8221;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TABLE_ROW">
+<tt class="descname">TABLE_ROW</tt><em class="property"> = 90</em><a class="headerlink" href="#Atspi.Role.TABLE_ROW" title="Permalink to this definition">¶</a></dt>
+<dd><p>A row in a table.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.TREE_ITEM">
+<tt class="descname">TREE_ITEM</tt><em class="property"> = 91</em><a class="headerlink" href="#Atspi.Role.TREE_ITEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object that represents an element of a tree.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DOCUMENT_SPREADSHEET">
+<tt class="descname">DOCUMENT_SPREADSHEET</tt><em class="property"> = 92</em><a class="headerlink" href="#Atspi.Role.DOCUMENT_SPREADSHEET" title="Permalink to this definition">¶</a></dt>
+<dd><p>A document frame which contains a spreadsheet.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DOCUMENT_PRESENTATION">
+<tt class="descname">DOCUMENT_PRESENTATION</tt><em class="property"> = 93</em><a class="headerlink" href="#Atspi.Role.DOCUMENT_PRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>A document frame which contains a presentation or slide content.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DOCUMENT_TEXT">
+<tt class="descname">DOCUMENT_TEXT</tt><em class="property"> = 94</em><a class="headerlink" href="#Atspi.Role.DOCUMENT_TEXT" title="Permalink to this definition">¶</a></dt>
+<dd><p>A document frame which contains textual content, such as found in a word processing application.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DOCUMENT_WEB">
+<tt class="descname">DOCUMENT_WEB</tt><em class="property"> = 95</em><a class="headerlink" href="#Atspi.Role.DOCUMENT_WEB" title="Permalink to this definition">¶</a></dt>
+<dd><p>A document frame which contains HTML or other markup suitable for display in a web browser.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.DOCUMENT_EMAIL">
+<tt class="descname">DOCUMENT_EMAIL</tt><em class="property"> = 96</em><a class="headerlink" href="#Atspi.Role.DOCUMENT_EMAIL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A document frame which contains email content to be displayed or composed either in plain text or HTML.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.COMMENT">
+<tt class="descname">COMMENT</tt><em class="property"> = 97</em><a class="headerlink" href="#Atspi.Role.COMMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object found within a document and designed to present a comment, note, or other annotation. In some cases, this object might not be visible until activated.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LIST_BOX">
+<tt class="descname">LIST_BOX</tt><em class="property"> = 98</em><a class="headerlink" href="#Atspi.Role.LIST_BOX" title="Permalink to this definition">¶</a></dt>
+<dd><p>A non-collapsible list of choices the user can select from.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.GROUPING">
+<tt class="descname">GROUPING</tt><em class="property"> = 99</em><a class="headerlink" href="#Atspi.Role.GROUPING" title="Permalink to this definition">¶</a></dt>
+<dd><p>A group of related widgets. This group typically has a label.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.IMAGE_MAP">
+<tt class="descname">IMAGE_MAP</tt><em class="property"> = 100</em><a class="headerlink" href="#Atspi.Role.IMAGE_MAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>An image map object. Usually a graphic with multiple hotspots, where each hotspot can be activated resulting in the loading of another document or section of a document.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.NOTIFICATION">
+<tt class="descname">NOTIFICATION</tt><em class="property"> = 101</em><a class="headerlink" href="#Atspi.Role.NOTIFICATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>A transitory object designed to present a message to the user, typically at the desktop level rather than inside a particular application.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.INFO_BAR">
+<tt class="descname">INFO_BAR</tt><em class="property"> = 102</em><a class="headerlink" href="#Atspi.Role.INFO_BAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An object designed to present a message to the user within an existing window.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LEVEL_BAR">
+<tt class="descname">LEVEL_BAR</tt><em class="property"> = 103</em><a class="headerlink" href="#Atspi.Role.LEVEL_BAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>A bar that serves as a level indicator to, for instance, show the strength of a password or the state of a battery.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.Role.LAST_DEFINED">
+<tt class="descname">LAST_DEFINED</tt><em class="property"> = 104</em><a class="headerlink" href="#Atspi.Role.LAST_DEFINED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Not a valid role, used for finding end of enumeration.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="statetype">
+<h2>StateType<a class="headerlink" href="#statetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.StateType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">StateType</tt><a class="headerlink" href="#Atspi.StateType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used by various interfaces indicating every possible state 
+an #AtspiAccesible object can assume.</p>
+<dl class="attribute">
+<dt id="Atspi.StateType.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.StateType.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates an invalid state - probably an error condition.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.ACTIVE">
+<tt class="descname">ACTIVE</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.StateType.ACTIVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates a window is currently the active window, or is an active subelement within a container or table.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.ARMED">
+<tt class="descname">ARMED</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.StateType.ARMED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that the object is armed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.BUSY">
+<tt class="descname">BUSY</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.StateType.BUSY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the current object is busy, i.e. onscreen representation is in the process of changing, or       the object is temporarily unavailable for interaction due to activity already in progress.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.CHECKED">
+<tt class="descname">CHECKED</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.StateType.CHECKED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is currently checked.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.COLLAPSED">
+<tt class="descname">COLLAPSED</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.StateType.COLLAPSED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is collapsed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.DEFUNCT">
+<tt class="descname">DEFUNCT</tt><em class="property"> = 6</em><a class="headerlink" href="#Atspi.StateType.DEFUNCT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that this object no longer has a valid backing widget        (for instance, if its peer object has been destroyed).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.EDITABLE">
+<tt class="descname">EDITABLE</tt><em class="property"> = 7</em><a class="headerlink" href="#Atspi.StateType.EDITABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the user can change the contents of this object.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 8</em><a class="headerlink" href="#Atspi.StateType.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that this object is enabled, i.e. that it currently reflects some application state. Objects that are &#8220;greyed out&#8221; may lack this state, and may lack the <a class="reference internal" href="#Atspi.StateType.SENSITIVE" title="Atspi.StateType.SENSITIVE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.SENSITIVE</span></tt></a> if direct user interaction cannot cause them to acquire <a class="reference internal" href="#Atspi.StateType.ENABLED" title="Atspi.StateType.ENABLED"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.ENABLED</span></tt></a>. See <a class="reference internal" href="#Atspi.StateType.SENSITIVE" title="Atspi.StateType.SENSITIVE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.SENSITIVE</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.EXPANDABLE">
+<tt class="descname">EXPANDABLE</tt><em class="property"> = 9</em><a class="headerlink" href="#Atspi.StateType.EXPANDABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object allows progressive disclosure of its children.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.EXPANDED">
+<tt class="descname">EXPANDED</tt><em class="property"> = 10</em><a class="headerlink" href="#Atspi.StateType.EXPANDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is expanded.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.FOCUSABLE">
+<tt class="descname">FOCUSABLE</tt><em class="property"> = 11</em><a class="headerlink" href="#Atspi.StateType.FOCUSABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object can accept keyboard focus, which means all       events resulting from typing on the keyboard will normally be passed       to it when it has focus.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.FOCUSED">
+<tt class="descname">FOCUSED</tt><em class="property"> = 12</em><a class="headerlink" href="#Atspi.StateType.FOCUSED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object currently has the keyboard focus.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.HAS_TOOLTIP">
+<tt class="descname">HAS_TOOLTIP</tt><em class="property"> = 13</em><a class="headerlink" href="#Atspi.StateType.HAS_TOOLTIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that the object has an associated tooltip.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.HORIZONTAL">
+<tt class="descname">HORIZONTAL</tt><em class="property"> = 14</em><a class="headerlink" href="#Atspi.StateType.HORIZONTAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the orientation of this object is horizontal.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.ICONIFIED">
+<tt class="descname">ICONIFIED</tt><em class="property"> = 15</em><a class="headerlink" href="#Atspi.StateType.ICONIFIED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is minimized and is represented only by an icon.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.MODAL">
+<tt class="descname">MODAL</tt><em class="property"> = 16</em><a class="headerlink" href="#Atspi.StateType.MODAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates something must be done with this object before the user can interact with an object in a different window.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.MULTI_LINE">
+<tt class="descname">MULTI_LINE</tt><em class="property"> = 17</em><a class="headerlink" href="#Atspi.StateType.MULTI_LINE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this (text) object can contain multiple lines of text.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.MULTISELECTABLE">
+<tt class="descname">MULTISELECTABLE</tt><em class="property"> = 18</em><a class="headerlink" href="#Atspi.StateType.MULTISELECTABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object allows more than one of its children to be selected at the same time, or in the case of text objects, that the object supports non-contiguous text selections.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.OPAQUE">
+<tt class="descname">OPAQUE</tt><em class="property"> = 19</em><a class="headerlink" href="#Atspi.StateType.OPAQUE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object paints every pixel within its rectangular region. It also indicates an alpha value of unity, if it supports alpha blending.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.PRESSED">
+<tt class="descname">PRESSED</tt><em class="property"> = 20</em><a class="headerlink" href="#Atspi.StateType.PRESSED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is currently pressed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.RESIZABLE">
+<tt class="descname">RESIZABLE</tt><em class="property"> = 21</em><a class="headerlink" href="#Atspi.StateType.RESIZABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the size of this object&#8217;s size is not fixed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.SELECTABLE">
+<tt class="descname">SELECTABLE</tt><em class="property"> = 22</em><a class="headerlink" href="#Atspi.StateType.SELECTABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is the child of an object that allows its children to be selected and that this child is one of those children       that can be selected.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.SELECTED">
+<tt class="descname">SELECTED</tt><em class="property"> = 23</em><a class="headerlink" href="#Atspi.StateType.SELECTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is the child of an object that allows its children to be selected and that this child is one of those children that has been selected.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.SENSITIVE">
+<tt class="descname">SENSITIVE</tt><em class="property"> = 24</em><a class="headerlink" href="#Atspi.StateType.SENSITIVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is sensitive, e.g. to user interaction. <a class="reference internal" href="#Atspi.StateType.SENSITIVE" title="Atspi.StateType.SENSITIVE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.SENSITIVE</span></tt></a> usually accompanies. <a class="reference internal" href="#Atspi.StateType.ENABLED" title="Atspi.StateType.ENABLED"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.ENABLED</span></tt></a> for user-actionable controls, but may be found in the absence of <a class="reference internal" href="#Atspi.StateType.ENABLED" title="Atspi.StateType.ENABLED"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.ENABLED</span></tt></a> if the current visible state of the control is &#8220;disconnected&#8221; from the application state.  In such cases, direct user interaction can often result in the object gaining <a class="reference internal" href="#Atspi.StateType.SENSITIVE" title="Atspi.StateType.SENSITIVE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.SENSITIVE</span></tt></a>, for instance if a user makes an explicit selection using an object whose current state is ambiguous or undefined. See <a class="reference internal" href="#Atspi.StateType.ENABLED" title="Atspi.StateType.ENABLED"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.ENABLED</span></tt></a>, <a class="reference internal" href="#Atspi.StateType.INDETERMINATE" title="Atspi.StateType.INDETERMINATE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.INDETERMINATE</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.SHOWING">
+<tt class="descname">SHOWING</tt><em class="property"> = 25</em><a class="headerlink" href="#Atspi.StateType.SHOWING" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object, the object&#8217;s parent, the object&#8217;s parent&#8217;s parent, and so on, are all &#8216;shown&#8217; to the end-user, i.e. subject to &#8220;exposure&#8221; if blocking or obscuring objects do not interpose between this object and the top of the window stack.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.SINGLE_LINE">
+<tt class="descname">SINGLE_LINE</tt><em class="property"> = 26</em><a class="headerlink" href="#Atspi.StateType.SINGLE_LINE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this (text) object can contain only a single line of text.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.STALE">
+<tt class="descname">STALE</tt><em class="property"> = 27</em><a class="headerlink" href="#Atspi.StateType.STALE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that the information returned for this object may no longer be synchronized with the application state.  This can occur if the object has <a class="reference internal" href="#Atspi.StateType.TRANSIENT" title="Atspi.StateType.TRANSIENT"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.TRANSIENT</span></tt></a>, and can also occur towards the end of the object peer&#8217;s lifecycle.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.TRANSIENT">
+<tt class="descname">TRANSIENT</tt><em class="property"> = 28</em><a class="headerlink" href="#Atspi.StateType.TRANSIENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is transient.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.VERTICAL">
+<tt class="descname">VERTICAL</tt><em class="property"> = 29</em><a class="headerlink" href="#Atspi.StateType.VERTICAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the orientation of this object is vertical; for example this state may appear on such objects as scrollbars, text objects (with vertical text flow), separators, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.VISIBLE">
+<tt class="descname">VISIBLE</tt><em class="property"> = 30</em><a class="headerlink" href="#Atspi.StateType.VISIBLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object is visible, e.g. has been explicitly marked for exposure to the user. <a class="reference internal" href="#Atspi.StateType.VISIBLE" title="Atspi.StateType.VISIBLE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.VISIBLE</span></tt></a> is no guarantee that the object is actually unobscured on the screen, only that it is &#8216;potentially&#8217; visible, barring obstruction, being scrolled or clipped out of the field of view, or having an ancestor container that has not yet made visible. A widget is potentially onscreen if it has both <a class="reference internal" href="#Atspi.StateType.VISIBLE" title="Atspi.StateType.VISIBLE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.VISIBLE</span></tt></a> and <a class="reference internal" href="#Atspi.StateType.SHOWING" title="Atspi.StateType.SHOWING"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.SHOWING</span></tt></a>. The absence of <a class="reference internal" href="#Atspi.StateType.VISIBLE" title="Atspi.StateType.VISIBLE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.VISIBLE</span></tt></a> and <a class="reference internal" href="#Atspi.StateType.SHOWING" title="Atspi.StateType.SHOWING"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.SHOWING</span></tt></a> is semantically equivalent to saying that an object is &#8216;hidden&#8217;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.MANAGES_DESCENDANTS">
+<tt class="descname">MANAGES_DESCENDANTS</tt><em class="property"> = 31</em><a class="headerlink" href="#Atspi.StateType.MANAGES_DESCENDANTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that &#8220;active-descendant-changed&#8221; event is sent when children become &#8216;active&#8217; (i.e. are selected or navigated to onscreen).  Used to prevent need to enumerate all children in very large containers, like tables. The presence of <a class="reference internal" href="#Atspi.StateType.MANAGES_DESCENDANTS" title="Atspi.StateType.MANAGES_DESCENDANTS"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.MANAGES_DESCENDANTS</span></tt></a> is an indication to the client that the children should not, and need not, be enumerated by the client. Objects implementing this state are expected to provide relevant state notifications to listening clients, for instance notifications of visibility changes and activation of their contained child objects, without the client having previously requested references to those children.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.INDETERMINATE">
+<tt class="descname">INDETERMINATE</tt><em class="property"> = 32</em><a class="headerlink" href="#Atspi.StateType.INDETERMINATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that a check box or other boolean indicator is in a state other than checked or not checked.  This usually means that the boolean value reflected or controlled by the object does not apply consistently to the entire current context. For example, a checkbox for the &#8220;Bold&#8221; attribute of text may have <a class="reference internal" href="#Atspi.StateType.INDETERMINATE" title="Atspi.StateType.INDETERMINATE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.INDETERMINATE</span></tt></a> if the currently selected text contains a mixture of weight attributes. In many cases interacting with a <a class="reference internal" href="#Atspi.StateType.INDETERMINATE" title="Atspi.StateType.INDETERMINATE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.INDETERMINATE</span></tt></a> object will cause the context&#8217;s corresponding boolean attribute to be homogenized, whereupon the object will lose <a class="reference internal" href="#Atspi.StateType.INDETERMINATE" title="Atspi.StateType.INDETERMINATE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.INDETERMINATE</span></tt></a> and a corresponding state-changed event will be fired.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.REQUIRED">
+<tt class="descname">REQUIRED</tt><em class="property"> = 33</em><a class="headerlink" href="#Atspi.StateType.REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that user interaction with this object is &#8216;required&#8217; from the user, for instance before completing the processing of a form.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.TRUNCATED">
+<tt class="descname">TRUNCATED</tt><em class="property"> = 34</em><a class="headerlink" href="#Atspi.StateType.TRUNCATED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that an object&#8217;s onscreen content is truncated, e.g. a text value in a spreadsheet cell.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.ANIMATED">
+<tt class="descname">ANIMATED</tt><em class="property"> = 35</em><a class="headerlink" href="#Atspi.StateType.ANIMATED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates this object&#8217;s visual representation is dynamic, not static. This state may be applied to an object during an animated &#8216;effect&#8217; and be removed from the object once its visual representation becomes static. Some applications, notably content viewers, may not be able to detect all kinds of animated content.  Therefore the absence of this state should not be taken as definitive evidence that the object&#8217;s visual representation is static; this state is advisory.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.INVALID_ENTRY">
+<tt class="descname">INVALID_ENTRY</tt><em class="property"> = 36</em><a class="headerlink" href="#Atspi.StateType.INVALID_ENTRY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This object has indicated an error condition due to failure of input validation.  For instance, a form control may acquire this state in response to invalid or malformed user input.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.SUPPORTS_AUTOCOMPLETION">
+<tt class="descname">SUPPORTS_AUTOCOMPLETION</tt><em class="property"> = 37</em><a class="headerlink" href="#Atspi.StateType.SUPPORTS_AUTOCOMPLETION" title="Permalink to this definition">¶</a></dt>
+<dd><p>This state indicates that the object in question implements some form of typeahead or pre-selection behavior whereby entering the first character of one or more sub-elements causes those elements to scroll into view or become selected. Subsequent character input may narrow the selection further as long as one or more sub-elements match the string. This state is normally only useful and encountered on objects that implement <a class="reference internal" href="interfaces/Selection.html#Atspi.Selection" title="Atspi.Selection"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Selection</span></tt></a>. In some cases the typeahead behavior may result in full or partial completion of the data in the input field, in which case these input events may trigger text-changed events from the source.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.SELECTABLE_TEXT">
+<tt class="descname">SELECTABLE_TEXT</tt><em class="property"> = 38</em><a class="headerlink" href="#Atspi.StateType.SELECTABLE_TEXT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This state indicates that the object in question supports text selection. It should only be exposed on objects which implement the <a class="reference internal" href="interfaces/Text.html#Atspi.Text" title="Atspi.Text"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text</span></tt></a> interface, in order to distinguish this state from <a class="reference internal" href="#Atspi.StateType.SELECTABLE" title="Atspi.StateType.SELECTABLE"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType.SELECTABLE</span></tt></a>, which infers that the object in question is a selectable child of an object which implements <a class="reference internal" href="interfaces/Selection.html#Atspi.Selection" title="Atspi.Selection"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Selection</span></tt></a>. While similar, text selection and subelement selection are distinct operations.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.IS_DEFAULT">
+<tt class="descname">IS_DEFAULT</tt><em class="property"> = 39</em><a class="headerlink" href="#Atspi.StateType.IS_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This state indicates that the object in question is the &#8216;default&#8217; interaction object in a dialog, i.e. the one that gets activated if the user presses &#8220;Enter&#8221; when the dialog is initially posted.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.VISITED">
+<tt class="descname">VISITED</tt><em class="property"> = 40</em><a class="headerlink" href="#Atspi.StateType.VISITED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This state indicates that the object (typically a hyperlink) has already been activated or invoked, with the result that some backing data has been downloaded or rendered.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.StateType.LAST_DEFINED">
+<tt class="descname">LAST_DEFINED</tt><em class="property"> = 41</em><a class="headerlink" href="#Atspi.StateType.LAST_DEFINED" title="Permalink to this definition">¶</a></dt>
+<dd><p>This value of the enumeration should not be used as a parameter, it indicates the number of items in the <a class="reference internal" href="#Atspi.StateType" title="Atspi.StateType"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.StateType</span></tt></a> enumeration.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="textboundarytype">
+<h2>TextBoundaryType<a class="headerlink" href="#textboundarytype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.TextBoundaryType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">TextBoundaryType</tt><a class="headerlink" href="#Atspi.TextBoundaryType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Specifies the boundary conditions determining a run of text as returned from
+<a class="reference internal" href="interfaces/Text.html#Atspi.Text.get_text_at_offset" title="Atspi.Text.get_text_at_offset"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text.get_text_at_offset</span></tt></a>, <a class="reference internal" href="interfaces/Text.html#Atspi.Text.get_text_after_offset" title="Atspi.Text.get_text_after_offset"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text.get_text_after_offset</span></tt></a>, and
+<a class="reference internal" href="interfaces/Text.html#Atspi.Text.get_text_before_offset" title="Atspi.Text.get_text_before_offset"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text.get_text_before_offset</span></tt></a>.</p>
+<p>This enumerationis deprecated since 2.9.90 and should not be used. Use
+<a class="reference internal" href="#Atspi.TextGranularity" title="Atspi.TextGranularity"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.TextGranularity</span></tt></a> with <a class="reference internal" href="interfaces/Text.html#Atspi.Text.get_string_at_offset" title="Atspi.Text.get_string_at_offset"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text.get_string_at_offset</span></tt></a> instead.</p>
+<dl class="attribute">
+<dt id="Atspi.TextBoundaryType.CHAR">
+<tt class="descname">CHAR</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.TextBoundaryType.CHAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>An <a class="reference internal" href="interfaces/Text.html#Atspi.Text" title="Atspi.Text"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text</span></tt></a> instance is bounded by this character only. Start and end offsets differ by one, by definition, for this value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextBoundaryType.WORD_START">
+<tt class="descname">WORD_START</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.TextBoundaryType.WORD_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boundary condition is start of a word; i.e. range is from start of one word to the start of another word.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextBoundaryType.WORD_END">
+<tt class="descname">WORD_END</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.TextBoundaryType.WORD_END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boundary condition is the end of a word; i.e. range is from the end of one word to the end of another. Some locales may not distinguish between words and characters or glyphs. In particular, those locales which use wholly or partially ideographic character sets. In these cases, characters may be returned in lieu of multi-character substrings.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextBoundaryType.SENTENCE_START">
+<tt class="descname">SENTENCE_START</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.TextBoundaryType.SENTENCE_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boundary condition is start of a sentence, as determined by the application. Some locales or character sets may not include explicit sentence delimiters, so this boundary type can not always be honored. Some locales will return lines of text instead of grammatical sentences.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextBoundaryType.SENTENCE_END">
+<tt class="descname">SENTENCE_END</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.TextBoundaryType.SENTENCE_END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boundary condition is end of a sentence, as determined by the application, including the sentence-delimiting character, for instance &#8216;.&#8217; Some locales or character sets may not include explicit sentence delimiters, so this boundary type can not always be honored. Some locales will return lines of text instead of grammatical sentences.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextBoundaryType.LINE_START">
+<tt class="descname">LINE_START</tt><em class="property"> = 5</em><a class="headerlink" href="#Atspi.TextBoundaryType.LINE_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boundary condition is the start of a line; i.e. range is from start of one line to the start of another.  This generally means that an end-of-line character will appear at the end of the range.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextBoundaryType.LINE_END">
+<tt class="descname">LINE_END</tt><em class="property"> = 6</em><a class="headerlink" href="#Atspi.TextBoundaryType.LINE_END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boundary condition is the end of a line; i.e. range is from start of one line to the start of another.  This generally means that an end-of-line character will be the first character of the range.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="textcliptype">
+<h2>TextClipType<a class="headerlink" href="#textcliptype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.TextClipType">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">TextClipType</tt><a class="headerlink" href="#Atspi.TextClipType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumeration used by interface <a class="reference internal" href="interfaces/Text.html#Atspi.Text" title="Atspi.Text"><tt class="xref py py-class docutils literal"><span class="pre">Atspi.Text</span></tt></a> to indicate
+how to treat characters intersecting bounding boxes.</p>
+<dl class="attribute">
+<dt id="Atspi.TextClipType.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.TextClipType.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>No characters/glyphs are omitted.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextClipType.MIN">
+<tt class="descname">MIN</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.TextClipType.MIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Characters/glyphs clipped by the minimum coordinate are omitted.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextClipType.MAX">
+<tt class="descname">MAX</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.TextClipType.MAX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Characters/glyphs which intersect the maximum coordinate are omitted.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextClipType.BOTH">
+<tt class="descname">BOTH</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.TextClipType.BOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Only glyphs falling entirely within the region bounded by min and max are retained.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="textgranularity">
+<h2>TextGranularity<a class="headerlink" href="#textgranularity" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Atspi.TextGranularity">
+<em class="property">class </em><tt class="descclassname">Atspi.</tt><tt class="descname">TextGranularity</tt><a class="headerlink" href="#Atspi.TextGranularity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Text granularity types used for specifying the granularity of the region of
+text we are interested in.</p>
+<dl class="attribute">
+<dt id="Atspi.TextGranularity.CHAR">
+<tt class="descname">CHAR</tt><em class="property"> = 0</em><a class="headerlink" href="#Atspi.TextGranularity.CHAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Granularity is defined by the boundaries between characters (including non-printing characters)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextGranularity.WORD">
+<tt class="descname">WORD</tt><em class="property"> = 1</em><a class="headerlink" href="#Atspi.TextGranularity.WORD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Granularity is defined by the boundaries of a word, starting at the beginning of the current word and finishing at the beginning of the following one, if present.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextGranularity.SENTENCE">
+<tt class="descname">SENTENCE</tt><em class="property"> = 2</em><a class="headerlink" href="#Atspi.TextGranularity.SENTENCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Granularity is defined by the boundaries of a sentence, starting at the beginning of the current sentence and finishing at the beginning of the following one, if present.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextGranularity.LINE">
+<tt class="descname">LINE</tt><em class="property"> = 3</em><a class="headerlink" href="#Atspi.TextGranularity.LINE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Granularity is defined by the boundaries of a line, starting at the beginning of the current line and finishing at the beginning of the following one, if present.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Atspi.TextGranularity.PARAGRAPH">
+<tt class="descname">PARAGRAPH</tt><em class="property"> = 4</em><a class="headerlink" href="#Atspi.TextGranularity.PARAGRAPH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Granularity is defined by the boundaries of a paragraph, starting at the beginning of the current paragraph and finishing at the beginning of the following one, if present.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="constants.html" class="btn btn-neutral float-right" title="Constants"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="flags.html" class="btn btn-neutral" title="Flags"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

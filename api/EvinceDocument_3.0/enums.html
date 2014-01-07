@@ -1,0 +1,862 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      EvinceDocument 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="EvinceDocument 3.0" href="index.html"/>
+        <link rel="next" title="Constants" href="constants.html"/>
+        <link rel="prev" title="Flags" href="flags.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">EvinceDocument 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">EvinceDocument 3.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/EvinceDocument_3.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#EvinceDocument.AnnotationTextIcon" title="EvinceDocument.AnnotationTextIcon"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.AnnotationTextIcon</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.AnnotationType" title="EvinceDocument.AnnotationType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.AnnotationType</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.CompressionType" title="EvinceDocument.CompressionType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.CompressionType</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.DocumentError" title="EvinceDocument.DocumentError"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.DocumentError</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.DocumentLayout" title="EvinceDocument.DocumentLayout"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.DocumentLayout</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.DocumentMode" title="EvinceDocument.DocumentMode"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.DocumentMode</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.FileExporterFormat" title="EvinceDocument.FileExporterFormat"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.FileExporterFormat</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.FormFieldButtonType" title="EvinceDocument.FormFieldButtonType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.FormFieldButtonType</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.FormFieldChoiceType" title="EvinceDocument.FormFieldChoiceType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.FormFieldChoiceType</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.FormFieldTextType" title="EvinceDocument.FormFieldTextType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.FormFieldTextType</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.LinkActionType" title="EvinceDocument.LinkActionType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.LinkActionType</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.LinkDestType" title="EvinceDocument.LinkDestType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.LinkDestType</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.SelectionStyle" title="EvinceDocument.SelectionStyle"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.SelectionStyle</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.TransitionEffectAlignment" title="EvinceDocument.TransitionEffectAlignment"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.TransitionEffectAlignment</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.TransitionEffectDirection" title="EvinceDocument.TransitionEffectDirection"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.TransitionEffectDirection</span></tt></a></li>
+<li><a class="reference internal" href="#EvinceDocument.TransitionEffectType" title="EvinceDocument.TransitionEffectType"><tt class="xref py py-class docutils literal"><span class="pre">EvinceDocument.TransitionEffectType</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="annotationtexticon">
+<h2>AnnotationTextIcon<a class="headerlink" href="#annotationtexticon" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.AnnotationTextIcon">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">AnnotationTextIcon</tt><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.NOTE">
+<tt class="descname">NOTE</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.NOTE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.COMMENT">
+<tt class="descname">COMMENT</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.COMMENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.KEY">
+<tt class="descname">KEY</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.KEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.HELP">
+<tt class="descname">HELP</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.HELP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.NEW_PARAGRAPH">
+<tt class="descname">NEW_PARAGRAPH</tt><em class="property"> = 4</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.NEW_PARAGRAPH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.PARAGRAPH">
+<tt class="descname">PARAGRAPH</tt><em class="property"> = 5</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.PARAGRAPH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.INSERT">
+<tt class="descname">INSERT</tt><em class="property"> = 6</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.INSERT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.CROSS">
+<tt class="descname">CROSS</tt><em class="property"> = 7</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.CROSS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.CIRCLE">
+<tt class="descname">CIRCLE</tt><em class="property"> = 8</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.CIRCLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationTextIcon.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 9</em><a class="headerlink" href="#EvinceDocument.AnnotationTextIcon.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="annotationtype">
+<h2>AnnotationType<a class="headerlink" href="#annotationtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.AnnotationType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">AnnotationType</tt><a class="headerlink" href="#EvinceDocument.AnnotationType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationType.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.AnnotationType.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationType.TEXT">
+<tt class="descname">TEXT</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.AnnotationType.TEXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.AnnotationType.ATTACHMENT">
+<tt class="descname">ATTACHMENT</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.AnnotationType.ATTACHMENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="compressiontype">
+<h2>CompressionType<a class="headerlink" href="#compressiontype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.CompressionType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">CompressionType</tt><a class="headerlink" href="#EvinceDocument.CompressionType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.CompressionType.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.CompressionType.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.CompressionType.BZIP2">
+<tt class="descname">BZIP2</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.CompressionType.BZIP2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.CompressionType.GZIP">
+<tt class="descname">GZIP</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.CompressionType.GZIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.CompressionType.LZMA">
+<tt class="descname">LZMA</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.CompressionType.LZMA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="documenterror">
+<h2>DocumentError<a class="headerlink" href="#documenterror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.DocumentError">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">DocumentError</tt><a class="headerlink" href="#EvinceDocument.DocumentError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentError.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.DocumentError.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentError.ENCRYPTED">
+<tt class="descname">ENCRYPTED</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.DocumentError.ENCRYPTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="documentlayout">
+<h2>DocumentLayout<a class="headerlink" href="#documentlayout" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.DocumentLayout">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">DocumentLayout</tt><a class="headerlink" href="#EvinceDocument.DocumentLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentLayout.SINGLE_PAGE">
+<tt class="descname">SINGLE_PAGE</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.DocumentLayout.SINGLE_PAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentLayout.ONE_COLUMN">
+<tt class="descname">ONE_COLUMN</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.DocumentLayout.ONE_COLUMN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentLayout.TWO_COLUMN_LEFT">
+<tt class="descname">TWO_COLUMN_LEFT</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.DocumentLayout.TWO_COLUMN_LEFT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentLayout.TWO_COLUMN_RIGHT">
+<tt class="descname">TWO_COLUMN_RIGHT</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.DocumentLayout.TWO_COLUMN_RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentLayout.TWO_PAGE_LEFT">
+<tt class="descname">TWO_PAGE_LEFT</tt><em class="property"> = 4</em><a class="headerlink" href="#EvinceDocument.DocumentLayout.TWO_PAGE_LEFT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentLayout.TWO_PAGE_RIGHT">
+<tt class="descname">TWO_PAGE_RIGHT</tt><em class="property"> = 5</em><a class="headerlink" href="#EvinceDocument.DocumentLayout.TWO_PAGE_RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="documentmode">
+<h2>DocumentMode<a class="headerlink" href="#documentmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.DocumentMode">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">DocumentMode</tt><a class="headerlink" href="#EvinceDocument.DocumentMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentMode.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.DocumentMode.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentMode.USE_OC">
+<tt class="descname">USE_OC</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.DocumentMode.USE_OC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentMode.USE_THUMBS">
+<tt class="descname">USE_THUMBS</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.DocumentMode.USE_THUMBS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentMode.FULL_SCREEN">
+<tt class="descname">FULL_SCREEN</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.DocumentMode.FULL_SCREEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentMode.PRESENTATION">
+<tt class="descname">PRESENTATION</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.DocumentMode.PRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.DocumentMode.USE_ATTACHMENTS">
+<tt class="descname">USE_ATTACHMENTS</tt><em class="property"> = 4</em><a class="headerlink" href="#EvinceDocument.DocumentMode.USE_ATTACHMENTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="fileexporterformat">
+<h2>FileExporterFormat<a class="headerlink" href="#fileexporterformat" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.FileExporterFormat">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">FileExporterFormat</tt><a class="headerlink" href="#EvinceDocument.FileExporterFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.FileExporterFormat.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.FileExporterFormat.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.FileExporterFormat.PS">
+<tt class="descname">PS</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.FileExporterFormat.PS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.FileExporterFormat.PDF">
+<tt class="descname">PDF</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.FileExporterFormat.PDF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="formfieldbuttontype">
+<h2>FormFieldButtonType<a class="headerlink" href="#formfieldbuttontype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.FormFieldButtonType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">FormFieldButtonType</tt><a class="headerlink" href="#EvinceDocument.FormFieldButtonType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldButtonType.PUSH">
+<tt class="descname">PUSH</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.FormFieldButtonType.PUSH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldButtonType.CHECK">
+<tt class="descname">CHECK</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.FormFieldButtonType.CHECK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldButtonType.RADIO">
+<tt class="descname">RADIO</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.FormFieldButtonType.RADIO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="formfieldchoicetype">
+<h2>FormFieldChoiceType<a class="headerlink" href="#formfieldchoicetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.FormFieldChoiceType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">FormFieldChoiceType</tt><a class="headerlink" href="#EvinceDocument.FormFieldChoiceType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldChoiceType.COMBO">
+<tt class="descname">COMBO</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.FormFieldChoiceType.COMBO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldChoiceType.LIST">
+<tt class="descname">LIST</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.FormFieldChoiceType.LIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="formfieldtexttype">
+<h2>FormFieldTextType<a class="headerlink" href="#formfieldtexttype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.FormFieldTextType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">FormFieldTextType</tt><a class="headerlink" href="#EvinceDocument.FormFieldTextType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldTextType.NORMAL">
+<tt class="descname">NORMAL</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.FormFieldTextType.NORMAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldTextType.MULTILINE">
+<tt class="descname">MULTILINE</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.FormFieldTextType.MULTILINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.FormFieldTextType.FILE_SELECT">
+<tt class="descname">FILE_SELECT</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.FormFieldTextType.FILE_SELECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="linkactiontype">
+<h2>LinkActionType<a class="headerlink" href="#linkactiontype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.LinkActionType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">LinkActionType</tt><a class="headerlink" href="#EvinceDocument.LinkActionType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.LinkActionType.GOTO_DEST">
+<tt class="descname">GOTO_DEST</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.LinkActionType.GOTO_DEST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkActionType.GOTO_REMOTE">
+<tt class="descname">GOTO_REMOTE</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.LinkActionType.GOTO_REMOTE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkActionType.EXTERNAL_URI">
+<tt class="descname">EXTERNAL_URI</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.LinkActionType.EXTERNAL_URI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkActionType.LAUNCH">
+<tt class="descname">LAUNCH</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.LinkActionType.LAUNCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkActionType.NAMED">
+<tt class="descname">NAMED</tt><em class="property"> = 4</em><a class="headerlink" href="#EvinceDocument.LinkActionType.NAMED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkActionType.LAYERS_STATE">
+<tt class="descname">LAYERS_STATE</tt><em class="property"> = 5</em><a class="headerlink" href="#EvinceDocument.LinkActionType.LAYERS_STATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="linkdesttype">
+<h2>LinkDestType<a class="headerlink" href="#linkdesttype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.LinkDestType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">LinkDestType</tt><a class="headerlink" href="#EvinceDocument.LinkDestType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.PAGE">
+<tt class="descname">PAGE</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.LinkDestType.PAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.XYZ">
+<tt class="descname">XYZ</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.LinkDestType.XYZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.FIT">
+<tt class="descname">FIT</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.LinkDestType.FIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.FITH">
+<tt class="descname">FITH</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.LinkDestType.FITH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.FITV">
+<tt class="descname">FITV</tt><em class="property"> = 4</em><a class="headerlink" href="#EvinceDocument.LinkDestType.FITV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.FITR">
+<tt class="descname">FITR</tt><em class="property"> = 5</em><a class="headerlink" href="#EvinceDocument.LinkDestType.FITR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.NAMED">
+<tt class="descname">NAMED</tt><em class="property"> = 6</em><a class="headerlink" href="#EvinceDocument.LinkDestType.NAMED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.PAGE_LABEL">
+<tt class="descname">PAGE_LABEL</tt><em class="property"> = 7</em><a class="headerlink" href="#EvinceDocument.LinkDestType.PAGE_LABEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.LinkDestType.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 8</em><a class="headerlink" href="#EvinceDocument.LinkDestType.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="selectionstyle">
+<h2>SelectionStyle<a class="headerlink" href="#selectionstyle" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.SelectionStyle">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">SelectionStyle</tt><a class="headerlink" href="#EvinceDocument.SelectionStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.SelectionStyle.GLYPH">
+<tt class="descname">GLYPH</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.SelectionStyle.GLYPH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.SelectionStyle.WORD">
+<tt class="descname">WORD</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.SelectionStyle.WORD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.SelectionStyle.LINE">
+<tt class="descname">LINE</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.SelectionStyle.LINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="transitioneffectalignment">
+<h2>TransitionEffectAlignment<a class="headerlink" href="#transitioneffectalignment" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.TransitionEffectAlignment">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">TransitionEffectAlignment</tt><a class="headerlink" href="#EvinceDocument.TransitionEffectAlignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectAlignment.HORIZONTAL">
+<tt class="descname">HORIZONTAL</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.TransitionEffectAlignment.HORIZONTAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectAlignment.VERTICAL">
+<tt class="descname">VERTICAL</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.TransitionEffectAlignment.VERTICAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="transitioneffectdirection">
+<h2>TransitionEffectDirection<a class="headerlink" href="#transitioneffectdirection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.TransitionEffectDirection">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">TransitionEffectDirection</tt><a class="headerlink" href="#EvinceDocument.TransitionEffectDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectDirection.INWARD">
+<tt class="descname">INWARD</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.TransitionEffectDirection.INWARD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectDirection.OUTWARD">
+<tt class="descname">OUTWARD</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.TransitionEffectDirection.OUTWARD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="transitioneffecttype">
+<h2>TransitionEffectType<a class="headerlink" href="#transitioneffecttype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="EvinceDocument.TransitionEffectType">
+<em class="property">class </em><tt class="descclassname">EvinceDocument.</tt><tt class="descname">TransitionEffectType</tt><a class="headerlink" href="#EvinceDocument.TransitionEffectType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.REPLACE">
+<tt class="descname">REPLACE</tt><em class="property"> = 0</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.REPLACE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.SPLIT">
+<tt class="descname">SPLIT</tt><em class="property"> = 1</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.SPLIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.BLINDS">
+<tt class="descname">BLINDS</tt><em class="property"> = 2</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.BLINDS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.BOX">
+<tt class="descname">BOX</tt><em class="property"> = 3</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.BOX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.WIPE">
+<tt class="descname">WIPE</tt><em class="property"> = 4</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.WIPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.DISSOLVE">
+<tt class="descname">DISSOLVE</tt><em class="property"> = 5</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.DISSOLVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.GLITTER">
+<tt class="descname">GLITTER</tt><em class="property"> = 6</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.GLITTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.FLY">
+<tt class="descname">FLY</tt><em class="property"> = 7</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.FLY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.PUSH">
+<tt class="descname">PUSH</tt><em class="property"> = 8</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.PUSH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.COVER">
+<tt class="descname">COVER</tt><em class="property"> = 9</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.COVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.UNCOVER">
+<tt class="descname">UNCOVER</tt><em class="property"> = 10</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.UNCOVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="EvinceDocument.TransitionEffectType.FADE">
+<tt class="descname">FADE</tt><em class="property"> = 11</em><a class="headerlink" href="#EvinceDocument.TransitionEffectType.FADE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="constants.html" class="btn btn-neutral float-right" title="Constants"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="flags.html" class="btn btn-neutral" title="Flags"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

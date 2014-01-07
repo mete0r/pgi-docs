@@ -1,0 +1,921 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gio.TlsConnection -
+    
+      Classes -
+    
+      Gio 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gio.TlsDatabase" href="TlsDatabase.html"/>
+        <link rel="prev" title="Gio.TlsCertificate" href="TlsCertificate.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gio 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gio.TlsConnection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gio 2.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gio.TlsConnection</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gio_2.0/classes/TlsConnection" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gio-tlsconnection">
+<h1>Gio.TlsConnection<a class="headerlink" href="#gio-tlsconnection" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-e4527250a84f407f8a3e8071ce450da69a738d92.png" alt="Inheritance diagram of Gio.TlsConnection" usemap="#inheritance1771572a2f" class="inheritance"/>
+<map id="inheritance1771572a2f" name="inheritance1771572a2f">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="12,5,108,29"/>
+<area shape="rect" id="node2" href="IOStream.html#Gio.IOStream" title="Gio.IOStream" alt="" coords="17,77,103,101"/>
+<area shape="rect" id="node4" href="#Gio.TlsConnection" title="Gio.TlsConnection" alt="" coords="5,149,115,173"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.emit_accept_certificate" title="Gio.TlsConnection.emit_accept_certificate"><tt class="xref py py-obj docutils literal"><span class="pre">emit_accept_certificate</span></tt></a>(peer_cert, errors)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_certificate" title="Gio.TlsConnection.get_certificate"><tt class="xref py py-obj docutils literal"><span class="pre">get_certificate</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_database" title="Gio.TlsConnection.get_database"><tt class="xref py py-obj docutils literal"><span class="pre">get_database</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_interaction" title="Gio.TlsConnection.get_interaction"><tt class="xref py py-obj docutils literal"><span class="pre">get_interaction</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_peer_certificate" title="Gio.TlsConnection.get_peer_certificate"><tt class="xref py py-obj docutils literal"><span class="pre">get_peer_certificate</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_peer_certificate_errors" title="Gio.TlsConnection.get_peer_certificate_errors"><tt class="xref py py-obj docutils literal"><span class="pre">get_peer_certificate_errors</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_rehandshake_mode" title="Gio.TlsConnection.get_rehandshake_mode"><tt class="xref py py-obj docutils literal"><span class="pre">get_rehandshake_mode</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_require_close_notify" title="Gio.TlsConnection.get_require_close_notify"><tt class="xref py py-obj docutils literal"><span class="pre">get_require_close_notify</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.get_use_system_certdb" title="Gio.TlsConnection.get_use_system_certdb"><tt class="xref py py-obj docutils literal"><span class="pre">get_use_system_certdb</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.handshake" title="Gio.TlsConnection.handshake"><tt class="xref py py-obj docutils literal"><span class="pre">handshake</span></tt></a>(cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.handshake_async" title="Gio.TlsConnection.handshake_async"><tt class="xref py py-obj docutils literal"><span class="pre">handshake_async</span></tt></a>(io_priority, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.handshake_finish" title="Gio.TlsConnection.handshake_finish"><tt class="xref py py-obj docutils literal"><span class="pre">handshake_finish</span></tt></a>(result)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.set_certificate" title="Gio.TlsConnection.set_certificate"><tt class="xref py py-obj docutils literal"><span class="pre">set_certificate</span></tt></a>(certificate)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.set_database" title="Gio.TlsConnection.set_database"><tt class="xref py py-obj docutils literal"><span class="pre">set_database</span></tt></a>(database)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.set_interaction" title="Gio.TlsConnection.set_interaction"><tt class="xref py py-obj docutils literal"><span class="pre">set_interaction</span></tt></a>(interaction)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.set_rehandshake_mode" title="Gio.TlsConnection.set_rehandshake_mode"><tt class="xref py py-obj docutils literal"><span class="pre">set_rehandshake_mode</span></tt></a>(mode)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.set_require_close_notify" title="Gio.TlsConnection.set_require_close_notify"><tt class="xref py py-obj docutils literal"><span class="pre">set_require_close_notify</span></tt></a>(require_close_notify)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TlsConnection.set_use_system_certdb" title="Gio.TlsConnection.set_use_system_certdb"><tt class="xref py py-obj docutils literal"><span class="pre">set_use_system_certdb</span></tt></a>(use_system_certdb)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gio-tlsconnection-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="base-io-stream">base-io-stream</span></td>
+<td><a class="reference internal" href="IOStream.html#Gio.IOStream" title="Gio.IOStream"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOStream</span></tt></a></td>
+<td>r/w/c</td>
+<td>The <a class="reference internal" href="IOStream.html#Gio.IOStream" title="Gio.IOStream"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOStream</span></tt></a> that the connection wraps</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="certificate">certificate</span></td>
+<td><a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a></td>
+<td>r/w</td>
+<td>The connection&#8217;s certificate</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="database">database</span></td>
+<td><a class="reference internal" href="TlsDatabase.html#Gio.TlsDatabase" title="Gio.TlsDatabase"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsDatabase</span></tt></a></td>
+<td>r/w</td>
+<td>Certificate database to use for looking up or verifying certificates</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="interaction">interaction</span></td>
+<td><a class="reference internal" href="TlsInteraction.html#Gio.TlsInteraction" title="Gio.TlsInteraction"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsInteraction</span></tt></a></td>
+<td>r/w</td>
+<td>Optional object for user interaction</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="peer-certificate">peer-certificate</span></td>
+<td><a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a></td>
+<td>r</td>
+<td>The connection&#8217;s peer&#8217;s certificate</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="peer-certificate-errors">peer-certificate-errors</span></td>
+<td><a class="reference internal" href="../flags.html#Gio.TlsCertificateFlags" title="Gio.TlsCertificateFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags</span></tt></a></td>
+<td>r</td>
+<td>Errors found with the peer&#8217;s certificate</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="rehandshake-mode">rehandshake-mode</span></td>
+<td><a class="reference internal" href="../enums.html#Gio.TlsRehandshakeMode" title="Gio.TlsRehandshakeMode"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsRehandshakeMode</span></tt></a></td>
+<td>r/w</td>
+<td>When to allow rehandshaking</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="require-close-notify">require-close-notify</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether to require proper TLS close notification</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="use-system-certdb">use-system-certdb</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether to verify peer certificates against the system certificate database</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gio-tlsconnection-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="accept-certificate">accept-certificate</span></td>
+<td><a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a>, <a class="reference internal" href="../flags.html#Gio.TlsCertificateFlags" title="Gio.TlsCertificateFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags</span></tt></a></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>Emitted during the TLS handshake after the peer certificate has been received. You can examine <cite>peer_cert</cite> &#8216;s certification path by calling <a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate.get_issuer" title="Gio.TlsCertificate.get_issuer"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate.get_issuer</span></tt></a> () on it.  For a client-side connection, <cite>peer_cert</cite> is the server&#8217;s certificate, and the signal will only be emitted if the certificate was not acceptable according to <cite>conn</cite> &#8216;s <a class="reference internal" href="../interfaces/TlsClientConnection.html#Gio.TlsClientConnection" title="Gio.TlsClientConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection</span></tt></a> <a class="reference internal" href="../interfaces/TlsClientConnection.html#validation-flags"><em>:validation-flags</em></a>. If you would like the certificate to be accepted despite <cite>errors</cite>, return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> from the signal handler. Otherwise, if no handler accepts the certificate, the handshake will fail with <a class="reference internal" href="../enums.html#Gio.TlsError.BAD_CERTIFICATE" title="Gio.TlsError.BAD_CERTIFICATE"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsError.BAD_CERTIFICATE</span></tt></a>.  For a server-side connection, <cite>peer_cert</cite> is the certificate presented by the client, if this was requested via the server&#8217;s <a class="reference internal" href="../interfaces/TlsServerConnection.html#Gio.TlsServerConnection" title="Gio.TlsServerConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsServerConnection</span></tt></a> <a class="reference internal" href="../interfaces/TlsServerConnection.html#authentication-mode"><em>:authentication-mode</em></a>. On the server side, the signal is always emitted when the client presents a certificate, and the certificate will only be accepted if a handler returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>.  Note that if this signal is emitted as part of asynchronous I/O in the main thread, then you should not attempt to interact with the user before returning from the signal handler. If you want to let the user decide whether or not to accept the certificate, you would have to return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> from the signal handler on the first attempt, and then after the connection attempt returns a <a class="reference internal" href="../enums.html#Gio.TlsError.HANDSHAKE" title="Gio.TlsError.HANDSHAKE"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsError.HANDSHAKE</span></tt></a>, you can interact with the user, and if the user decides to accept the certificate, remember that fact, create a new connection, and return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> from the signal handler the next time.  If you are doing I/O in another thread, you do not need to worry about this, and can simply block in the signal handler until the UI thread returns an answer.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference internal" href="IOStream.html#Gio.IOStream" title="Gio.IOStream"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOStream</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gio.TlsConnection">
+<em class="property">class </em><tt class="descclassname">Gio.</tt><tt class="descname">TlsConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="IOStream.html#Gio.IOStream" title="Gio.IOStream"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOStream</span></tt></a></p>
+<p><a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> is the base TLS connection class type, which wraps
+a <a class="reference internal" href="IOStream.html#Gio.IOStream" title="Gio.IOStream"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOStream</span></tt></a> and provides TLS encryption on top of it. Its
+subclasses, <a class="reference internal" href="../interfaces/TlsClientConnection.html#Gio.TlsClientConnection" title="Gio.TlsClientConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection</span></tt></a> and <a class="reference internal" href="../interfaces/TlsServerConnection.html#Gio.TlsServerConnection" title="Gio.TlsServerConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsServerConnection</span></tt></a>,
+implement client-side and server-side TLS, respectively.</p>
+<dl class="method">
+<dt id="Gio.TlsConnection.emit_accept_certificate">
+<tt class="descname">emit_accept_certificate</tt><big>(</big><em>peer_cert</em>, <em>errors</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.emit_accept_certificate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>peer_cert</strong> (<a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a>) &#8211; the peer&#8217;s <a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a></li>
+<li><strong>errors</strong> (<a class="reference internal" href="../flags.html#Gio.TlsCertificateFlags" title="Gio.TlsCertificateFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags</span></tt></a>) &#8211; the problems with <cite>peer_cert</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if one of the signal handlers has returned <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> to accept <cite>peer_cert</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Used by <a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> implementations to emit the
+<a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> <a class="reference internal" href="#accept-certificate"><em>::accept-certificate</em></a> signal.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_certificate">
+<tt class="descname">get_certificate</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_certificate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><cite>conn</cite> &#8216;s certificate, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets <cite>conn</cite> &#8216;s certificate, as set by
+<a class="reference internal" href="#Gio.TlsConnection.set_certificate" title="Gio.TlsConnection.set_certificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.set_certificate</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_database">
+<tt class="descname">get_database</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_database" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the certificate database that <cite>conn</cite> uses or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TlsDatabase.html#Gio.TlsDatabase" title="Gio.TlsDatabase"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsDatabase</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the certificate database that <cite>conn</cite> uses to verify
+peer certificates. See <a class="reference internal" href="#Gio.TlsConnection.set_database" title="Gio.TlsConnection.set_database"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.set_database</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_interaction">
+<tt class="descname">get_interaction</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_interaction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The interaction object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TlsInteraction.html#Gio.TlsInteraction" title="Gio.TlsInteraction"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsInteraction</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the object that will be used to interact with the user. It will be used
+for things like prompting the user for passwords. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is returned, then
+no user interaction will occur for this connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_peer_certificate">
+<tt class="descname">get_peer_certificate</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_peer_certificate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><cite>conn</cite> &#8216;s peer&#8217;s certificate, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets <cite>conn</cite> &#8216;s peer&#8217;s certificate after the handshake has completed.
+(It is not set during the emission of
+<a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> <a class="reference internal" href="#accept-certificate"><em>::accept-certificate</em></a>.)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_peer_certificate_errors">
+<tt class="descname">get_peer_certificate_errors</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_peer_certificate_errors" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><cite>conn</cite> &#8216;s peer&#8217;s certificate errors</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Gio.TlsCertificateFlags" title="Gio.TlsCertificateFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the errors associated with validating <cite>conn</cite> &#8216;s peer&#8217;s
+certificate, after the handshake has completed. (It is not set
+during the emission of <a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> <a class="reference internal" href="#accept-certificate"><em>::accept-certificate</em></a>.)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_rehandshake_mode">
+<tt class="descname">get_rehandshake_mode</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_rehandshake_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><cite>conn</cite> &#8216;s rehandshaking mode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gio.TlsRehandshakeMode" title="Gio.TlsRehandshakeMode"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsRehandshakeMode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets <cite>conn</cite> rehandshaking mode. See
+<a class="reference internal" href="#Gio.TlsConnection.set_rehandshake_mode" title="Gio.TlsConnection.set_rehandshake_mode"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.set_rehandshake_mode</span></tt></a> () for details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_require_close_notify">
+<tt class="descname">get_require_close_notify</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_require_close_notify" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>conn</cite> requires a proper TLS close notification.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Tests whether or not <cite>conn</cite> expects a proper TLS close notification
+when the connection is closed. See
+<a class="reference internal" href="#Gio.TlsConnection.set_require_close_notify" title="Gio.TlsConnection.set_require_close_notify"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.set_require_close_notify</span></tt></a> () for details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.get_use_system_certdb">
+<tt class="descname">get_use_system_certdb</tt><big>(</big><big>)</big><a class="headerlink" href="#Gio.TlsConnection.get_use_system_certdb" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether <cite>conn</cite> uses the system certificate database</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets whether <cite>conn</cite> uses the system certificate database to verify
+peer certificates. See <a class="reference internal" href="#Gio.TlsConnection.set_use_system_certdb" title="Gio.TlsConnection.set_use_system_certdb"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.set_use_system_certdb</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.handshake">
+<tt class="descname">handshake</tt><big>(</big><em>cancellable</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.handshake" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success or failure</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Attempts a TLS handshake on <cite>conn</cite>.</p>
+<p>On the client side, it is never necessary to call this method;
+although the connection needs to perform a handshake after
+connecting (or after sending a &#8220;STARTTLS&#8221;-type command) and may
+need to rehandshake later if the server requests it,
+<a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> will handle this for you automatically when you try
+to send or receive data on the connection. However, you can call
+<a class="reference internal" href="#Gio.TlsConnection.handshake" title="Gio.TlsConnection.handshake"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.handshake</span></tt></a> () manually if you want to know for sure
+whether the initial handshake succeeded or failed (as opposed to
+just immediately trying to write to <cite>conn</cite> &#8216;s output stream, in which
+case if it fails, it may not be possible to tell if it failed
+before or after completing the handshake).</p>
+<p>Likewise, on the server side, although a handshake is necessary at
+the beginning of the communication, you do not need to call this
+function explicitly unless you want clearer error reporting.
+However, you may call <a class="reference internal" href="#Gio.TlsConnection.handshake" title="Gio.TlsConnection.handshake"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.handshake</span></tt></a> () later on to
+renegotiate parameters (encryption methods, etc) with the client.</p>
+<p><a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> <a class="reference internal" href="#accept-certificate"><em>::accept-certificate</em></a> may be emitted during the
+handshake.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.handshake_async">
+<tt class="descname">handshake_async</tt><big>(</big><em>io_priority</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.handshake_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>io_priority</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the I/O priority of the request.</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; callback to call when the handshake is complete</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to the callback function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Asynchronously performs a TLS handshake on <cite>conn</cite>. See
+<a class="reference internal" href="#Gio.TlsConnection.handshake" title="Gio.TlsConnection.handshake"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.handshake</span></tt></a> () for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.handshake_finish">
+<tt class="descname">handshake_finish</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.handshake_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference internal" href="../interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; a <a class="reference internal" href="../interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> on success, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on failure, in which case <cite>error</cite> will be set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finish an asynchronous TLS handshake operation. See
+<a class="reference internal" href="#Gio.TlsConnection.handshake" title="Gio.TlsConnection.handshake"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.handshake</span></tt></a> () for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.set_certificate">
+<tt class="descname">set_certificate</tt><big>(</big><em>certificate</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.set_certificate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>certificate</strong> (<a class="reference internal" href="TlsCertificate.html#Gio.TlsCertificate" title="Gio.TlsCertificate"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificate</span></tt></a>) &#8211; the certificate to use for <cite>conn</cite></td>
+</tr>
+</tbody>
+</table>
+<p>This sets the certificate that <cite>conn</cite> will present to its peer
+during the TLS handshake. For a <a class="reference internal" href="../interfaces/TlsServerConnection.html#Gio.TlsServerConnection" title="Gio.TlsServerConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsServerConnection</span></tt></a>, it is
+mandatory to set this, and that will normally be done at construct
+time.</p>
+<p>For a <a class="reference internal" href="../interfaces/TlsClientConnection.html#Gio.TlsClientConnection" title="Gio.TlsClientConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection</span></tt></a>, this is optional. If a handshake fails
+with <a class="reference internal" href="../enums.html#Gio.TlsError.CERTIFICATE_REQUIRED" title="Gio.TlsError.CERTIFICATE_REQUIRED"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsError.CERTIFICATE_REQUIRED</span></tt></a>, that means that the server
+requires a certificate, and if you try connecting again, you should
+call this method first. You can call
+<tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection.get_accepted_cas</span></tt> () on the failed connection
+to get a list of Certificate Authorities that the server will
+accept certificates from.</p>
+<p>(It is also possible that a server will allow the connection with
+or without a certificate; in that case, if you don&#8217;t provide a
+certificate, you can tell that the server requested one by the fact
+that <tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection.get_accepted_cas</span></tt> () will return
+non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.set_database">
+<tt class="descname">set_database</tt><big>(</big><em>database</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.set_database" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>database</strong> (<a class="reference internal" href="TlsDatabase.html#Gio.TlsDatabase" title="Gio.TlsDatabase"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsDatabase</span></tt></a>) &#8211; a <a class="reference internal" href="TlsDatabase.html#Gio.TlsDatabase" title="Gio.TlsDatabase"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsDatabase</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the certificate database that is used to verify peer certificates.
+This is set to the default database by default. See
+<a class="reference internal" href="../interfaces/TlsBackend.html#Gio.TlsBackend.get_default_database" title="Gio.TlsBackend.get_default_database"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsBackend.get_default_database</span></tt></a> (). If set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then
+peer certificate validation will always set the
+<a class="reference internal" href="../flags.html#Gio.TlsCertificateFlags.UNKNOWN_CA" title="Gio.TlsCertificateFlags.UNKNOWN_CA"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags.UNKNOWN_CA</span></tt></a> error (meaning
+<a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> <a class="reference internal" href="#accept-certificate"><em>::accept-certificate</em></a> will always be emitted on
+client-side connections, unless that bit is not set in
+<a class="reference internal" href="../interfaces/TlsClientConnection.html#Gio.TlsClientConnection" title="Gio.TlsClientConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection</span></tt></a> <a class="reference internal" href="../interfaces/TlsClientConnection.html#validation-flags"><em>:validation-flags</em></a> ).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.set_interaction">
+<tt class="descname">set_interaction</tt><big>(</big><em>interaction</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.set_interaction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>interaction</strong> (<a class="reference internal" href="TlsInteraction.html#Gio.TlsInteraction" title="Gio.TlsInteraction"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsInteraction</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; an interaction object, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the object that will be used to interact with the user. It will be used
+for things like prompting the user for passwords.</p>
+<p>The <cite>interaction</cite> argument will normally be a derived subclass of
+<a class="reference internal" href="TlsInteraction.html#Gio.TlsInteraction" title="Gio.TlsInteraction"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsInteraction</span></tt></a>. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> can also be provided if no user interaction
+should occur for this connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.set_rehandshake_mode">
+<tt class="descname">set_rehandshake_mode</tt><big>(</big><em>mode</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.set_rehandshake_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mode</strong> (<a class="reference internal" href="../enums.html#Gio.TlsRehandshakeMode" title="Gio.TlsRehandshakeMode"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsRehandshakeMode</span></tt></a>) &#8211; the rehandshaking mode</td>
+</tr>
+</tbody>
+</table>
+<p>Sets how <cite>conn</cite> behaves with respect to rehandshaking requests.</p>
+<p><a class="reference internal" href="../enums.html#Gio.TlsRehandshakeMode.NEVER" title="Gio.TlsRehandshakeMode.NEVER"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsRehandshakeMode.NEVER</span></tt></a> means that it will never agree to
+rehandshake after the initial handshake is complete. (For a client,
+this means it will refuse rehandshake requests from the server, and
+for a server, this means it will close the connection with an error
+if the client attempts to rehandshake.)</p>
+<p><a class="reference internal" href="../enums.html#Gio.TlsRehandshakeMode.SAFELY" title="Gio.TlsRehandshakeMode.SAFELY"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsRehandshakeMode.SAFELY</span></tt></a> means that the connection will allow a
+rehandshake only if the other end of the connection supports the
+TLS <tt class="docutils literal"><span class="pre">renegotiation_info</span></tt> extension. This is the
+default behavior, but means that rehandshaking will not work
+against older implementations that do not support that extension.</p>
+<p><a class="reference internal" href="../enums.html#Gio.TlsRehandshakeMode.UNSAFELY" title="Gio.TlsRehandshakeMode.UNSAFELY"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsRehandshakeMode.UNSAFELY</span></tt></a> means that the connection will allow
+rehandshaking even without the
+<tt class="docutils literal"><span class="pre">renegotiation_info</span></tt> extension. On the server side
+in particular, this is not recommended, since it leaves the server
+open to certain attacks. However, this mode is necessary if you
+need to allow renegotiation with older client software.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.set_require_close_notify">
+<tt class="descname">set_require_close_notify</tt><big>(</big><em>require_close_notify</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.set_require_close_notify" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>require_close_notify</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether or not to require close notification</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether or not <cite>conn</cite> expects a proper TLS close notification
+before the connection is closed. If this is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> (the default),
+then <cite>conn</cite> will expect to receive a TLS close notification from its
+peer before the connection is closed, and will return a
+<a class="reference internal" href="../enums.html#Gio.TlsError.EOF" title="Gio.TlsError.EOF"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsError.EOF</span></tt></a> error if the connection is closed without proper
+notification (since this may indicate a network error, or
+man-in-the-middle attack).</p>
+<p>In some protocols, the application will know whether or not the
+connection was closed cleanly based on application-level data
+(because the application-level data includes a length field, or is
+somehow self-delimiting); in this case, the close notify is
+redundant and sometimes omitted. (TLS 1.1 explicitly allows this;
+in TLS 1.0 it is technically an error, but often done anyway.) You
+can use <a class="reference internal" href="#Gio.TlsConnection.set_require_close_notify" title="Gio.TlsConnection.set_require_close_notify"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection.set_require_close_notify</span></tt></a> () to tell <cite>conn</cite>
+to allow an &#8220;unannounced&#8221; connection close, in which case the close
+will show up as a 0-length read, as in a non-TLS
+<a class="reference internal" href="SocketConnection.html#Gio.SocketConnection" title="Gio.SocketConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SocketConnection</span></tt></a>, and it is up to the application to check that
+the data has been fully received.</p>
+<p>Note that this only affects the behavior when the peer closes the
+connection; when the application calls <a class="reference internal" href="IOStream.html#Gio.IOStream.close" title="Gio.IOStream.close"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOStream.close</span></tt></a> () itself
+on <cite>conn</cite>, this will send a close notification regardless of the
+setting of this property. If you explicitly want to do an unclean
+close, you can close <cite>conn</cite> &#8216;s <a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> <a class="reference internal" href="#base-io-stream"><em>:base-io-stream</em></a> rather
+than closing <cite>conn</cite> itself.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gio.TlsConnection.set_use_system_certdb">
+<tt class="descname">set_use_system_certdb</tt><big>(</big><em>use_system_certdb</em><big>)</big><a class="headerlink" href="#Gio.TlsConnection.set_use_system_certdb" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>use_system_certdb</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether to use the system certificate database</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether <cite>conn</cite> uses the system certificate database to verify
+peer certificates. This is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> by default. If set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>, then
+peer certificate validation will always set the
+<a class="reference internal" href="../flags.html#Gio.TlsCertificateFlags.UNKNOWN_CA" title="Gio.TlsCertificateFlags.UNKNOWN_CA"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsCertificateFlags.UNKNOWN_CA</span></tt></a> error (meaning
+<a class="reference internal" href="#Gio.TlsConnection" title="Gio.TlsConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsConnection</span></tt></a> <a class="reference internal" href="#accept-certificate"><em>::accept-certificate</em></a> will always be emitted on
+client-side connections, unless that bit is not set in
+<a class="reference internal" href="../interfaces/TlsClientConnection.html#Gio.TlsClientConnection" title="Gio.TlsClientConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TlsClientConnection</span></tt></a> <a class="reference internal" href="../interfaces/TlsClientConnection.html#validation-flags"><em>:validation-flags</em></a> ).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="TlsDatabase.html" class="btn btn-neutral float-right" title="Gio.TlsDatabase"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="TlsCertificate.html" class="btn btn-neutral" title="Gio.TlsCertificate"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

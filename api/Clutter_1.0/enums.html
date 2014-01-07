@@ -1,0 +1,2479 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      Clutter 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Clutter 1.0" href="index.html"/>
+        <link rel="next" title="Constants" href="constants.html"/>
+        <link rel="prev" title="Flags" href="flags.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Clutter 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Clutter 1.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Clutter_1.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#Clutter.ActorAlign" title="Clutter.ActorAlign"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ActorAlign</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.AlignAxis" title="Clutter.AlignAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AlignAxis</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.AnimationMode" title="Clutter.AnimationMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.BinAlignment" title="Clutter.BinAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BinAlignment</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.BindCoordinate" title="Clutter.BindCoordinate"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BindCoordinate</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.BoxAlignment" title="Clutter.BoxAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxAlignment</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ContentGravity" title="Clutter.ContentGravity"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ContentGravity</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.DragAxis" title="Clutter.DragAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.DragAxis</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.EventType" title="Clutter.EventType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventType</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.FlowOrientation" title="Clutter.FlowOrientation"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.FlowOrientation</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.Gravity" title="Clutter.Gravity"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Gravity</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.GridPosition" title="Clutter.GridPosition"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.GridPosition</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ImageError" title="Clutter.ImageError"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ImageError</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.InitError" title="Clutter.InitError"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InitError</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.InputAxis" title="Clutter.InputAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputAxis</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.InputDeviceType" title="Clutter.InputDeviceType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDeviceType</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.InputMode" title="Clutter.InputMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputMode</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.Interpolation" title="Clutter.Interpolation"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Interpolation</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.LongPressState" title="Clutter.LongPressState"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.LongPressState</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.Orientation" title="Clutter.Orientation"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Orientation</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.PanAxis" title="Clutter.PanAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PanAxis</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.PathNodeType" title="Clutter.PathNodeType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.PickMode" title="Clutter.PickMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PickMode</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.RequestMode" title="Clutter.RequestMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.RequestMode</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.RotateAxis" title="Clutter.RotateAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.RotateAxis</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.RotateDirection" title="Clutter.RotateDirection"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.RotateDirection</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ScalingFilter" title="Clutter.ScalingFilter"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ScalingFilter</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ScriptError" title="Clutter.ScriptError"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ScriptError</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ScrollDirection" title="Clutter.ScrollDirection"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ScrollDirection</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ShaderError" title="Clutter.ShaderError"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ShaderError</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ShaderType" title="Clutter.ShaderType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ShaderType</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.SnapEdge" title="Clutter.SnapEdge"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.SnapEdge</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.StaticColor" title="Clutter.StaticColor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.StaticColor</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.StepMode" title="Clutter.StepMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.StepMode</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.TableAlignment" title="Clutter.TableAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.TableAlignment</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.TextDirection" title="Clutter.TextDirection"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.TextDirection</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.TextureError" title="Clutter.TextureError"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.TextureError</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.TextureQuality" title="Clutter.TextureQuality"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.TextureQuality</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.TimelineDirection" title="Clutter.TimelineDirection"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.TimelineDirection</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.UnitType" title="Clutter.UnitType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.UnitType</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.X11FilterReturn" title="Clutter.X11FilterReturn"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.X11FilterReturn</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.X11XInputEventTypes" title="Clutter.X11XInputEventTypes"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.X11XInputEventTypes</span></tt></a></li>
+<li><a class="reference internal" href="#Clutter.ZoomAxis" title="Clutter.ZoomAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ZoomAxis</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="actoralign">
+<h2>ActorAlign<a class="headerlink" href="#actoralign" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ActorAlign">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ActorAlign</tt><a class="headerlink" href="#Clutter.ActorAlign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Controls how a <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> should align itself inside the extra space
+assigned to it during the allocation.</p>
+<p>Alignment only matters if the allocated space given to an actor is
+bigger than its natural size; for example, when the <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> <a class="reference internal" href="../Mx_1.0/classes/TableChild.html#x-expand"><em>:x-expand</em></a> 
+or the <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> <a class="reference internal" href="../Mx_1.0/classes/TableChild.html#y-expand"><em>:y-expand</em></a> properties of <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> are set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Clutter.ActorAlign.FILL">
+<tt class="descname">FILL</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ActorAlign.FILL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stretch to cover the whole allocated space</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ActorAlign.START">
+<tt class="descname">START</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ActorAlign.START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snap to left or top side, leaving space to the right or bottom. For horizontal layouts, in right-to-left locales this should be reversed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ActorAlign.CENTER">
+<tt class="descname">CENTER</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.ActorAlign.CENTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Center the actor inside the allocation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ActorAlign.END">
+<tt class="descname">END</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.ActorAlign.END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snap to right or bottom side, leaving space to the left or top. For horizontal layouts, in right-to-left locales this should be reversed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="alignaxis">
+<h2>AlignAxis<a class="headerlink" href="#alignaxis" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.AlignAxis">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">AlignAxis</tt><a class="headerlink" href="#Clutter.AlignAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Specifies the axis on which <a class="reference internal" href="classes/AlignConstraint.html#Clutter.AlignConstraint" title="Clutter.AlignConstraint"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AlignConstraint</span></tt></a> should maintain
+the alignment.</p>
+<dl class="attribute">
+<dt id="Clutter.AlignAxis.X_AXIS">
+<tt class="descname">X_AXIS</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.AlignAxis.X_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maintain the alignment on the X axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AlignAxis.Y_AXIS">
+<tt class="descname">Y_AXIS</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.AlignAxis.Y_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maintain the alignment on the Y axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AlignAxis.BOTH">
+<tt class="descname">BOTH</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.AlignAxis.BOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maintain the alignment on both the X and Y axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="animationmode">
+<h2>AnimationMode<a class="headerlink" href="#animationmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.AnimationMode">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">AnimationMode</tt><a class="headerlink" href="#Clutter.AnimationMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The animation modes used by <a class="reference internal" href="classes/Alpha.html#Clutter.Alpha" title="Clutter.Alpha"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Alpha</span></tt></a> and <a class="reference internal" href="classes/Animation.html#Clutter.Animation" title="Clutter.Animation"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Animation</span></tt></a>. This
+enumeration can be expanded in later versions of Clutter.</p>
+<p>Easing modes provided by Clutter</p>
+<p>Every global alpha function registered using <a class="reference internal" href="classes/Alpha.html#Clutter.Alpha.register_func" title="Clutter.Alpha.register_func"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Alpha.register_func</span></tt></a> ()
+or <a class="reference internal" href="classes/Alpha.html#Clutter.Alpha.register_func" title="Clutter.Alpha.register_func"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Alpha.register_func</span></tt></a> () will have a logical id greater than
+<a class="reference internal" href="#Clutter.AnimationMode.ANIMATION_LAST" title="Clutter.AnimationMode.ANIMATION_LAST"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.ANIMATION_LAST</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.CUSTOM_MODE">
+<tt class="descname">CUSTOM_MODE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.AnimationMode.CUSTOM_MODE" title="Permalink to this definition">¶</a></dt>
+<dd><p>custom progress function</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.LINEAR">
+<tt class="descname">LINEAR</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.AnimationMode.LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>linear tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_QUAD">
+<tt class="descname">EASE_IN_QUAD</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_QUAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>quadratic tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_QUAD">
+<tt class="descname">EASE_OUT_QUAD</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_QUAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>quadratic tweening, inverse of <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_QUAD" title="Clutter.AnimationMode.EASE_IN_QUAD"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_QUAD</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_QUAD">
+<tt class="descname">EASE_IN_OUT_QUAD</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_QUAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>quadratic tweening, combininig <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_QUAD" title="Clutter.AnimationMode.EASE_IN_QUAD"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_QUAD</span></tt></a> and <a class="reference internal" href="#Clutter.AnimationMode.EASE_OUT_QUAD" title="Clutter.AnimationMode.EASE_OUT_QUAD"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_OUT_QUAD</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_CUBIC">
+<tt class="descname">EASE_IN_CUBIC</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_CUBIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>cubic tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_CUBIC">
+<tt class="descname">EASE_OUT_CUBIC</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_CUBIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>cubic tweening, invers of <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_CUBIC" title="Clutter.AnimationMode.EASE_IN_CUBIC"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_CUBIC</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_CUBIC">
+<tt class="descname">EASE_IN_OUT_CUBIC</tt><em class="property"> = 7</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_CUBIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>cubic tweening, combining <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_CUBIC" title="Clutter.AnimationMode.EASE_IN_CUBIC"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_CUBIC</span></tt></a> and <a class="reference internal" href="#Clutter.AnimationMode.EASE_OUT_CUBIC" title="Clutter.AnimationMode.EASE_OUT_CUBIC"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_OUT_CUBIC</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_QUART">
+<tt class="descname">EASE_IN_QUART</tt><em class="property"> = 8</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_QUART" title="Permalink to this definition">¶</a></dt>
+<dd><p>quartic tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_QUART">
+<tt class="descname">EASE_OUT_QUART</tt><em class="property"> = 9</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_QUART" title="Permalink to this definition">¶</a></dt>
+<dd><p>quartic tweening, inverse of <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_QUART" title="Clutter.AnimationMode.EASE_IN_QUART"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_QUART</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_QUART">
+<tt class="descname">EASE_IN_OUT_QUART</tt><em class="property"> = 10</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_QUART" title="Permalink to this definition">¶</a></dt>
+<dd><p>quartic tweening, combining <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_QUART" title="Clutter.AnimationMode.EASE_IN_QUART"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_QUART</span></tt></a> and <a class="reference internal" href="#Clutter.AnimationMode.EASE_OUT_QUART" title="Clutter.AnimationMode.EASE_OUT_QUART"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_OUT_QUART</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_QUINT">
+<tt class="descname">EASE_IN_QUINT</tt><em class="property"> = 11</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_QUINT" title="Permalink to this definition">¶</a></dt>
+<dd><p>quintic tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_QUINT">
+<tt class="descname">EASE_OUT_QUINT</tt><em class="property"> = 12</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_QUINT" title="Permalink to this definition">¶</a></dt>
+<dd><p>quintic tweening, inverse of <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_QUINT" title="Clutter.AnimationMode.EASE_IN_QUINT"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_QUINT</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_QUINT">
+<tt class="descname">EASE_IN_OUT_QUINT</tt><em class="property"> = 13</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_QUINT" title="Permalink to this definition">¶</a></dt>
+<dd><p>fifth power tweening, combining <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_QUINT" title="Clutter.AnimationMode.EASE_IN_QUINT"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_QUINT</span></tt></a> and <a class="reference internal" href="#Clutter.AnimationMode.EASE_OUT_QUINT" title="Clutter.AnimationMode.EASE_OUT_QUINT"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_OUT_QUINT</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_SINE">
+<tt class="descname">EASE_IN_SINE</tt><em class="property"> = 14</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_SINE" title="Permalink to this definition">¶</a></dt>
+<dd><p>sinusoidal tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_SINE">
+<tt class="descname">EASE_OUT_SINE</tt><em class="property"> = 15</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_SINE" title="Permalink to this definition">¶</a></dt>
+<dd><p>sinusoidal tweening, inverse of <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_SINE" title="Clutter.AnimationMode.EASE_IN_SINE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_SINE</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_SINE">
+<tt class="descname">EASE_IN_OUT_SINE</tt><em class="property"> = 16</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_SINE" title="Permalink to this definition">¶</a></dt>
+<dd><p>sine wave tweening, combining <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_SINE" title="Clutter.AnimationMode.EASE_IN_SINE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_SINE</span></tt></a> and <a class="reference internal" href="#Clutter.AnimationMode.EASE_OUT_SINE" title="Clutter.AnimationMode.EASE_OUT_SINE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_OUT_SINE</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_EXPO">
+<tt class="descname">EASE_IN_EXPO</tt><em class="property"> = 17</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_EXPO" title="Permalink to this definition">¶</a></dt>
+<dd><p>exponential tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_EXPO">
+<tt class="descname">EASE_OUT_EXPO</tt><em class="property"> = 18</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_EXPO" title="Permalink to this definition">¶</a></dt>
+<dd><p>exponential tweening, inverse of <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_EXPO" title="Clutter.AnimationMode.EASE_IN_EXPO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_EXPO</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_EXPO">
+<tt class="descname">EASE_IN_OUT_EXPO</tt><em class="property"> = 19</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_EXPO" title="Permalink to this definition">¶</a></dt>
+<dd><p>exponential tweening, combining <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_EXPO" title="Clutter.AnimationMode.EASE_IN_EXPO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_EXPO</span></tt></a> and <a class="reference internal" href="#Clutter.AnimationMode.EASE_OUT_EXPO" title="Clutter.AnimationMode.EASE_OUT_EXPO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_OUT_EXPO</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_CIRC">
+<tt class="descname">EASE_IN_CIRC</tt><em class="property"> = 20</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_CIRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>circular tweening</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_CIRC">
+<tt class="descname">EASE_OUT_CIRC</tt><em class="property"> = 21</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_CIRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>circular tweening, inverse of <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_CIRC" title="Clutter.AnimationMode.EASE_IN_CIRC"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_CIRC</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_CIRC">
+<tt class="descname">EASE_IN_OUT_CIRC</tt><em class="property"> = 22</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_CIRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>circular tweening, combining <a class="reference internal" href="#Clutter.AnimationMode.EASE_IN_CIRC" title="Clutter.AnimationMode.EASE_IN_CIRC"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_IN_CIRC</span></tt></a> and <a class="reference internal" href="#Clutter.AnimationMode.EASE_OUT_CIRC" title="Clutter.AnimationMode.EASE_OUT_CIRC"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.EASE_OUT_CIRC</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_ELASTIC">
+<tt class="descname">EASE_IN_ELASTIC</tt><em class="property"> = 23</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_ELASTIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>elastic tweening, with offshoot on start</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_ELASTIC">
+<tt class="descname">EASE_OUT_ELASTIC</tt><em class="property"> = 24</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_ELASTIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>elastic tweening, with offshoot on end</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_ELASTIC">
+<tt class="descname">EASE_IN_OUT_ELASTIC</tt><em class="property"> = 25</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_ELASTIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>elastic tweening with offshoot on both ends</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_BACK">
+<tt class="descname">EASE_IN_BACK</tt><em class="property"> = 26</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_BACK" title="Permalink to this definition">¶</a></dt>
+<dd><p>overshooting cubic tweening, with backtracking on start</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_BACK">
+<tt class="descname">EASE_OUT_BACK</tt><em class="property"> = 27</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_BACK" title="Permalink to this definition">¶</a></dt>
+<dd><p>overshooting cubic tweening, with backtracking on end</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_BACK">
+<tt class="descname">EASE_IN_OUT_BACK</tt><em class="property"> = 28</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_BACK" title="Permalink to this definition">¶</a></dt>
+<dd><p>overshooting cubic tweening, with backtracking on both ends</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_BOUNCE">
+<tt class="descname">EASE_IN_BOUNCE</tt><em class="property"> = 29</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_BOUNCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>exponentially decaying parabolic (bounce) tweening, with bounce on start</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT_BOUNCE">
+<tt class="descname">EASE_OUT_BOUNCE</tt><em class="property"> = 30</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT_BOUNCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>exponentially decaying parabolic (bounce) tweening, with bounce on end</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT_BOUNCE">
+<tt class="descname">EASE_IN_OUT_BOUNCE</tt><em class="property"> = 31</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT_BOUNCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>exponentially decaying parabolic (bounce) tweening, with bounce on both ends</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.STEPS">
+<tt class="descname">STEPS</tt><em class="property"> = 32</em><a class="headerlink" href="#Clutter.AnimationMode.STEPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>parametrized step function; see <a class="reference internal" href="classes/Timeline.html#Clutter.Timeline.set_step_progress" title="Clutter.Timeline.set_step_progress"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Timeline.set_step_progress</span></tt></a> () for further details. (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.STEP_START">
+<tt class="descname">STEP_START</tt><em class="property"> = 33</em><a class="headerlink" href="#Clutter.AnimationMode.STEP_START" title="Permalink to this definition">¶</a></dt>
+<dd><p>equivalent to <a class="reference internal" href="#Clutter.AnimationMode.STEPS" title="Clutter.AnimationMode.STEPS"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.STEPS</span></tt></a> with a number of steps equal to 1, and a step mode of <a class="reference internal" href="#Clutter.StepMode.START" title="Clutter.StepMode.START"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.StepMode.START</span></tt></a>. (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.STEP_END">
+<tt class="descname">STEP_END</tt><em class="property"> = 34</em><a class="headerlink" href="#Clutter.AnimationMode.STEP_END" title="Permalink to this definition">¶</a></dt>
+<dd><p>equivalent to <a class="reference internal" href="#Clutter.AnimationMode.STEPS" title="Clutter.AnimationMode.STEPS"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.STEPS</span></tt></a> with a number of steps equal to 1, and a step mode of <a class="reference internal" href="#Clutter.StepMode.END" title="Clutter.StepMode.END"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.StepMode.END</span></tt></a>. (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.CUBIC_BEZIER">
+<tt class="descname">CUBIC_BEZIER</tt><em class="property"> = 35</em><a class="headerlink" href="#Clutter.AnimationMode.CUBIC_BEZIER" title="Permalink to this definition">¶</a></dt>
+<dd><p>cubic bezier between (0, 0) and (1, 1) with two control points; see <a class="reference internal" href="classes/Timeline.html#Clutter.Timeline.set_cubic_bezier_progress" title="Clutter.Timeline.set_cubic_bezier_progress"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Timeline.set_cubic_bezier_progress</span></tt></a> (). (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE">
+<tt class="descname">EASE</tt><em class="property"> = 36</em><a class="headerlink" href="#Clutter.AnimationMode.EASE" title="Permalink to this definition">¶</a></dt>
+<dd><p>equivalent to <a class="reference internal" href="#Clutter.AnimationMode.CUBIC_BEZIER" title="Clutter.AnimationMode.CUBIC_BEZIER"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.CUBIC_BEZIER</span></tt></a> with control points in (0.25, 0.1) and (0.25, 1.0). (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN">
+<tt class="descname">EASE_IN</tt><em class="property"> = 37</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN" title="Permalink to this definition">¶</a></dt>
+<dd><p>equivalent to <a class="reference internal" href="#Clutter.AnimationMode.CUBIC_BEZIER" title="Clutter.AnimationMode.CUBIC_BEZIER"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.CUBIC_BEZIER</span></tt></a> with control points in (0.42, 0) and (1.0, 1.0). (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_OUT">
+<tt class="descname">EASE_OUT</tt><em class="property"> = 38</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_OUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>equivalent to <a class="reference internal" href="#Clutter.AnimationMode.CUBIC_BEZIER" title="Clutter.AnimationMode.CUBIC_BEZIER"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.CUBIC_BEZIER</span></tt></a> with control points in (0, 0) and (0.58, 1.0). (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.EASE_IN_OUT">
+<tt class="descname">EASE_IN_OUT</tt><em class="property"> = 39</em><a class="headerlink" href="#Clutter.AnimationMode.EASE_IN_OUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>equivalent to <a class="reference internal" href="#Clutter.AnimationMode.CUBIC_BEZIER" title="Clutter.AnimationMode.CUBIC_BEZIER"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode.CUBIC_BEZIER</span></tt></a> with control points in (0.42, 0) and (0.58, 1.0). (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.AnimationMode.ANIMATION_LAST">
+<tt class="descname">ANIMATION_LAST</tt><em class="property"> = 40</em><a class="headerlink" href="#Clutter.AnimationMode.ANIMATION_LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>last animation mode, used as a guard for registered global alpha functions</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="binalignment">
+<h2>BinAlignment<a class="headerlink" href="#binalignment" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.BinAlignment">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">BinAlignment</tt><a class="headerlink" href="#Clutter.BinAlignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The alignment policies available on each axis for <a class="reference internal" href="classes/BinLayout.html#Clutter.BinLayout" title="Clutter.BinLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BinLayout</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.BinAlignment.FIXED">
+<tt class="descname">FIXED</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.BinAlignment.FIXED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fixed position alignment; the <a class="reference internal" href="classes/BinLayout.html#Clutter.BinLayout" title="Clutter.BinLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BinLayout</span></tt></a> will honour the fixed position provided by the actors themselves when allocating them</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BinAlignment.FILL">
+<tt class="descname">FILL</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.BinAlignment.FILL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fill the allocation size</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BinAlignment.START">
+<tt class="descname">START</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.BinAlignment.START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position the actors at the top or left side of the container, depending on the axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BinAlignment.END">
+<tt class="descname">END</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.BinAlignment.END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position the actors at the bottom or right side of the container, depending on the axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BinAlignment.CENTER">
+<tt class="descname">CENTER</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.BinAlignment.CENTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position the actors at the center of the container, depending on the axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="bindcoordinate">
+<h2>BindCoordinate<a class="headerlink" href="#bindcoordinate" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.BindCoordinate">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">BindCoordinate</tt><a class="headerlink" href="#Clutter.BindCoordinate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Specifies which property should be used in a binding</p>
+<dl class="attribute">
+<dt id="Clutter.BindCoordinate.X">
+<tt class="descname">X</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.BindCoordinate.X" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bind the X coordinate</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BindCoordinate.Y">
+<tt class="descname">Y</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.BindCoordinate.Y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bind the Y coordinate</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BindCoordinate.WIDTH">
+<tt class="descname">WIDTH</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.BindCoordinate.WIDTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bind the width</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BindCoordinate.HEIGHT">
+<tt class="descname">HEIGHT</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.BindCoordinate.HEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bind the height</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BindCoordinate.POSITION">
+<tt class="descname">POSITION</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.BindCoordinate.POSITION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Equivalent to to <a class="reference internal" href="#Clutter.BindCoordinate.X" title="Clutter.BindCoordinate.X"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BindCoordinate.X</span></tt></a> and <a class="reference internal" href="#Clutter.BindCoordinate.Y" title="Clutter.BindCoordinate.Y"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BindCoordinate.Y</span></tt></a> (added in Clutter 1.6)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BindCoordinate.SIZE">
+<tt class="descname">SIZE</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.BindCoordinate.SIZE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Equivalent to <a class="reference internal" href="#Clutter.BindCoordinate.WIDTH" title="Clutter.BindCoordinate.WIDTH"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BindCoordinate.WIDTH</span></tt></a> and <a class="reference internal" href="#Clutter.BindCoordinate.HEIGHT" title="Clutter.BindCoordinate.HEIGHT"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BindCoordinate.HEIGHT</span></tt></a> (added in Clutter 1.6)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BindCoordinate.ALL">
+<tt class="descname">ALL</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.BindCoordinate.ALL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Equivalent to <a class="reference internal" href="#Clutter.BindCoordinate.POSITION" title="Clutter.BindCoordinate.POSITION"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BindCoordinate.POSITION</span></tt></a> and <a class="reference internal" href="#Clutter.BindCoordinate.SIZE" title="Clutter.BindCoordinate.SIZE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BindCoordinate.SIZE</span></tt></a> (added in Clutter 1.10)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="boxalignment">
+<h2>BoxAlignment<a class="headerlink" href="#boxalignment" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.BoxAlignment">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">BoxAlignment</tt><a class="headerlink" href="#Clutter.BoxAlignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The alignment policies available on each axis of the <a class="reference internal" href="classes/BoxLayout.html#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.BoxAlignment.START">
+<tt class="descname">START</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.BoxAlignment.START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the child to the top or to to the left, depending on the used axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BoxAlignment.END">
+<tt class="descname">END</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.BoxAlignment.END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the child to the bottom or to the right, depending on the used axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.BoxAlignment.CENTER">
+<tt class="descname">CENTER</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.BoxAlignment.CENTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the child to the center</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="contentgravity">
+<h2>ContentGravity<a class="headerlink" href="#contentgravity" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ContentGravity">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ContentGravity</tt><a class="headerlink" href="#Clutter.ContentGravity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Controls the alignment of the <a class="reference internal" href="interfaces/Content.html#Clutter.Content" title="Clutter.Content"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Content</span></tt></a> inside a <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.TOP_LEFT">
+<tt class="descname">TOP_LEFT</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ContentGravity.TOP_LEFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the top left corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.TOP">
+<tt class="descname">TOP</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ContentGravity.TOP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the top edge</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.TOP_RIGHT">
+<tt class="descname">TOP_RIGHT</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.ContentGravity.TOP_RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the top right corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.LEFT">
+<tt class="descname">LEFT</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.ContentGravity.LEFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the left edge</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.CENTER">
+<tt class="descname">CENTER</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.ContentGravity.CENTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the center</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.RIGHT">
+<tt class="descname">RIGHT</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.ContentGravity.RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the right edge</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.BOTTOM_LEFT">
+<tt class="descname">BOTTOM_LEFT</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.ContentGravity.BOTTOM_LEFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the bottom left corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.BOTTOM">
+<tt class="descname">BOTTOM</tt><em class="property"> = 7</em><a class="headerlink" href="#Clutter.ContentGravity.BOTTOM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the bottom edge</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.BOTTOM_RIGHT">
+<tt class="descname">BOTTOM_RIGHT</tt><em class="property"> = 8</em><a class="headerlink" href="#Clutter.ContentGravity.BOTTOM_RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the content to the bottom right corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.RESIZE_FILL">
+<tt class="descname">RESIZE_FILL</tt><em class="property"> = 9</em><a class="headerlink" href="#Clutter.ContentGravity.RESIZE_FILL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resize the content to fill the allocation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ContentGravity.RESIZE_ASPECT">
+<tt class="descname">RESIZE_ASPECT</tt><em class="property"> = 10</em><a class="headerlink" href="#Clutter.ContentGravity.RESIZE_ASPECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resize the content to remain within the allocation, while maintaining the aspect ratio</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="dragaxis">
+<h2>DragAxis<a class="headerlink" href="#dragaxis" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.DragAxis">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">DragAxis</tt><a class="headerlink" href="#Clutter.DragAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The axis of the constraint that should be applied on the
+dragging action</p>
+<dl class="attribute">
+<dt id="Clutter.DragAxis.AXIS_NONE">
+<tt class="descname">AXIS_NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.DragAxis.AXIS_NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>No constraint</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.DragAxis.X_AXIS">
+<tt class="descname">X_AXIS</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.DragAxis.X_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a constraint on the X axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.DragAxis.Y_AXIS">
+<tt class="descname">Y_AXIS</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.DragAxis.Y_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a constraint on the Y axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="eventtype">
+<h2>EventType<a class="headerlink" href="#eventtype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.EventType">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">EventType</tt><a class="headerlink" href="#Clutter.EventType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Types of events.</p>
+<dl class="attribute">
+<dt id="Clutter.EventType.NOTHING">
+<tt class="descname">NOTHING</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.EventType.NOTHING" title="Permalink to this definition">¶</a></dt>
+<dd><p>Empty event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.KEY_PRESS">
+<tt class="descname">KEY_PRESS</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.EventType.KEY_PRESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key press event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.KEY_RELEASE">
+<tt class="descname">KEY_RELEASE</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.EventType.KEY_RELEASE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key release event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.MOTION">
+<tt class="descname">MOTION</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.EventType.MOTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer motion event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.ENTER">
+<tt class="descname">ENTER</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.EventType.ENTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actor enter event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.LEAVE">
+<tt class="descname">LEAVE</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.EventType.LEAVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actor leave event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.BUTTON_PRESS">
+<tt class="descname">BUTTON_PRESS</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.EventType.BUTTON_PRESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer button press event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.BUTTON_RELEASE">
+<tt class="descname">BUTTON_RELEASE</tt><em class="property"> = 7</em><a class="headerlink" href="#Clutter.EventType.BUTTON_RELEASE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer button release event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.SCROLL">
+<tt class="descname">SCROLL</tt><em class="property"> = 8</em><a class="headerlink" href="#Clutter.EventType.SCROLL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer scroll event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.STAGE_STATE">
+<tt class="descname">STAGE_STATE</tt><em class="property"> = 9</em><a class="headerlink" href="#Clutter.EventType.STAGE_STATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stage state change event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.DESTROY_NOTIFY">
+<tt class="descname">DESTROY_NOTIFY</tt><em class="property"> = 10</em><a class="headerlink" href="#Clutter.EventType.DESTROY_NOTIFY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Destroy notification event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.CLIENT_MESSAGE">
+<tt class="descname">CLIENT_MESSAGE</tt><em class="property"> = 11</em><a class="headerlink" href="#Clutter.EventType.CLIENT_MESSAGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Client message event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.DELETE">
+<tt class="descname">DELETE</tt><em class="property"> = 12</em><a class="headerlink" href="#Clutter.EventType.DELETE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stage delete event</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.TOUCH_BEGIN">
+<tt class="descname">TOUCH_BEGIN</tt><em class="property"> = 13</em><a class="headerlink" href="#Clutter.EventType.TOUCH_BEGIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>A new touch event sequence has started; event added in 1.10</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.TOUCH_UPDATE">
+<tt class="descname">TOUCH_UPDATE</tt><em class="property"> = 14</em><a class="headerlink" href="#Clutter.EventType.TOUCH_UPDATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A touch event sequence has been updated; event added in 1.10</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.TOUCH_END">
+<tt class="descname">TOUCH_END</tt><em class="property"> = 15</em><a class="headerlink" href="#Clutter.EventType.TOUCH_END" title="Permalink to this definition">¶</a></dt>
+<dd><p>A touch event sequence has finished; event added in 1.10</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.TOUCH_CANCEL">
+<tt class="descname">TOUCH_CANCEL</tt><em class="property"> = 16</em><a class="headerlink" href="#Clutter.EventType.TOUCH_CANCEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A touch event sequence has been canceled; event added in 1.10</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.EventType.EVENT_LAST">
+<tt class="descname">EVENT_LAST</tt><em class="property"> = 17</em><a class="headerlink" href="#Clutter.EventType.EVENT_LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marks the end of the <a class="reference internal" href="#Clutter.EventType" title="Clutter.EventType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventType</span></tt></a> enumeration; added in 1.10</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="floworientation">
+<h2>FlowOrientation<a class="headerlink" href="#floworientation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.FlowOrientation">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">FlowOrientation</tt><a class="headerlink" href="#Clutter.FlowOrientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The direction of the arrangement of the children inside
+a <a class="reference internal" href="classes/FlowLayout.html#Clutter.FlowLayout" title="Clutter.FlowLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.FlowLayout</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.FlowOrientation.HORIZONTAL">
+<tt class="descname">HORIZONTAL</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.FlowOrientation.HORIZONTAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Arrange the children of the flow layout horizontally first</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.FlowOrientation.VERTICAL">
+<tt class="descname">VERTICAL</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.FlowOrientation.VERTICAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Arrange the children of the flow layout vertically first</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="gravity">
+<h2>Gravity<a class="headerlink" href="#gravity" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.Gravity">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">Gravity</tt><a class="headerlink" href="#Clutter.Gravity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Gravity of the scaling operations. When a gravity different than
+<a class="reference internal" href="#Clutter.Gravity.NONE" title="Clutter.Gravity.NONE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Gravity.NONE</span></tt></a> is used, an actor is scaled keeping the position
+of the specified portion at the same coordinates.</p>
+<dl class="attribute">
+<dt id="Clutter.Gravity.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.Gravity.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do not apply any gravity</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.NORTH">
+<tt class="descname">NORTH</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.Gravity.NORTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from topmost downwards</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.NORTH_EAST">
+<tt class="descname">NORTH_EAST</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.Gravity.NORTH_EAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the top right corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.EAST">
+<tt class="descname">EAST</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.Gravity.EAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the right side</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.SOUTH_EAST">
+<tt class="descname">SOUTH_EAST</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.Gravity.SOUTH_EAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the bottom right corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.SOUTH">
+<tt class="descname">SOUTH</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.Gravity.SOUTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the bottom upwards</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.SOUTH_WEST">
+<tt class="descname">SOUTH_WEST</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.Gravity.SOUTH_WEST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the bottom left corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.WEST">
+<tt class="descname">WEST</tt><em class="property"> = 7</em><a class="headerlink" href="#Clutter.Gravity.WEST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the left side</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.NORTH_WEST">
+<tt class="descname">NORTH_WEST</tt><em class="property"> = 8</em><a class="headerlink" href="#Clutter.Gravity.NORTH_WEST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the top left corner</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Gravity.CENTER">
+<tt class="descname">CENTER</tt><em class="property"> = 9</em><a class="headerlink" href="#Clutter.Gravity.CENTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale from the center.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="gridposition">
+<h2>GridPosition<a class="headerlink" href="#gridposition" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.GridPosition">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">GridPosition</tt><a class="headerlink" href="#Clutter.GridPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Grid position modes.</p>
+<dl class="attribute">
+<dt id="Clutter.GridPosition.LEFT">
+<tt class="descname">LEFT</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.GridPosition.LEFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>left position</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.GridPosition.RIGHT">
+<tt class="descname">RIGHT</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.GridPosition.RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>right position</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.GridPosition.TOP">
+<tt class="descname">TOP</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.GridPosition.TOP" title="Permalink to this definition">¶</a></dt>
+<dd><p>top position</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.GridPosition.BOTTOM">
+<tt class="descname">BOTTOM</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.GridPosition.BOTTOM" title="Permalink to this definition">¶</a></dt>
+<dd><p>bottom position</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="imageerror">
+<h2>ImageError<a class="headerlink" href="#imageerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ImageError">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ImageError</tt><a class="headerlink" href="#Clutter.ImageError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error enumeration for <a class="reference internal" href="classes/Image.html#Clutter.Image" title="Clutter.Image"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Image</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Clutter.ImageError.DATA">
+<tt class="descname">DATA</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ImageError.DATA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invalid data passed to the <a class="reference internal" href="classes/Image.html#Clutter.Image.set_data" title="Clutter.Image.set_data"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Image.set_data</span></tt></a> () function.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="initerror">
+<h2>InitError<a class="headerlink" href="#initerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.InitError">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">InitError</tt><a class="headerlink" href="#Clutter.InitError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error conditions returned by <a class="reference internal" href="functions.html#Clutter.init" title="Clutter.init"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.init</span></tt></a> () and <a class="reference internal" href="functions.html#Clutter.init_with_args" title="Clutter.init_with_args"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.init_with_args</span></tt></a> ().</p>
+<dl class="attribute">
+<dt id="Clutter.InitError.ERROR_INTERNAL">
+<tt class="descname">ERROR_INTERNAL</tt><em class="property"> = -3</em><a class="headerlink" href="#Clutter.InitError.ERROR_INTERNAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal error</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InitError.ERROR_BACKEND">
+<tt class="descname">ERROR_BACKEND</tt><em class="property"> = -2</em><a class="headerlink" href="#Clutter.InitError.ERROR_BACKEND" title="Permalink to this definition">¶</a></dt>
+<dd><p>Backend initialisation failed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InitError.ERROR_THREADS">
+<tt class="descname">ERROR_THREADS</tt><em class="property"> = -1</em><a class="headerlink" href="#Clutter.InitError.ERROR_THREADS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thread initialisation failed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InitError.ERROR_UNKNOWN">
+<tt class="descname">ERROR_UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.InitError.ERROR_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unknown error</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InitError.SUCCESS">
+<tt class="descname">SUCCESS</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.InitError.SUCCESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialisation successful</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="inputaxis">
+<h2>InputAxis<a class="headerlink" href="#inputaxis" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.InputAxis">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">InputAxis</tt><a class="headerlink" href="#Clutter.InputAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The type of axes Clutter recognizes on a <a class="reference internal" href="classes/InputDevice.html#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.InputAxis.IGNORE">
+<tt class="descname">IGNORE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.InputAxis.IGNORE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unused axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.X">
+<tt class="descname">X</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.InputAxis.X" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position on the X axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.Y">
+<tt class="descname">Y</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.InputAxis.Y" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position of the Y axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.PRESSURE">
+<tt class="descname">PRESSURE</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.InputAxis.PRESSURE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The pressure information</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.XTILT">
+<tt class="descname">XTILT</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.InputAxis.XTILT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The tilt on the X axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.YTILT">
+<tt class="descname">YTILT</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.InputAxis.YTILT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The tile on the Y axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.WHEEL">
+<tt class="descname">WHEEL</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.InputAxis.WHEEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wheel</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.DISTANCE">
+<tt class="descname">DISTANCE</tt><em class="property"> = 7</em><a class="headerlink" href="#Clutter.InputAxis.DISTANCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Distance (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputAxis.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 8</em><a class="headerlink" href="#Clutter.InputAxis.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Last value of the enumeration; this value is useful when iterating over the enumeration values (</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>1.12)</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="inputdevicetype">
+<h2>InputDeviceType<a class="headerlink" href="#inputdevicetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.InputDeviceType">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">InputDeviceType</tt><a class="headerlink" href="#Clutter.InputDeviceType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The types of input devices available.</p>
+<p>The <a class="reference internal" href="#Clutter.InputDeviceType" title="Clutter.InputDeviceType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDeviceType</span></tt></a> enumeration can be extended at later
+date; not every platform supports every input device type.</p>
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.POINTER_DEVICE">
+<tt class="descname">POINTER_DEVICE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.InputDeviceType.POINTER_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A pointer device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.KEYBOARD_DEVICE">
+<tt class="descname">KEYBOARD_DEVICE</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.InputDeviceType.KEYBOARD_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A keyboard device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.EXTENSION_DEVICE">
+<tt class="descname">EXTENSION_DEVICE</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.InputDeviceType.EXTENSION_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generic extension device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.JOYSTICK_DEVICE">
+<tt class="descname">JOYSTICK_DEVICE</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.InputDeviceType.JOYSTICK_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A joystick device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.TABLET_DEVICE">
+<tt class="descname">TABLET_DEVICE</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.InputDeviceType.TABLET_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tablet device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.TOUCHPAD_DEVICE">
+<tt class="descname">TOUCHPAD_DEVICE</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.InputDeviceType.TOUCHPAD_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A touchpad device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.TOUCHSCREEN_DEVICE">
+<tt class="descname">TOUCHSCREEN_DEVICE</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.InputDeviceType.TOUCHSCREEN_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A touch screen device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.PEN_DEVICE">
+<tt class="descname">PEN_DEVICE</tt><em class="property"> = 7</em><a class="headerlink" href="#Clutter.InputDeviceType.PEN_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A pen device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.ERASER_DEVICE">
+<tt class="descname">ERASER_DEVICE</tt><em class="property"> = 8</em><a class="headerlink" href="#Clutter.InputDeviceType.ERASER_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>An eraser device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.CURSOR_DEVICE">
+<tt class="descname">CURSOR_DEVICE</tt><em class="property"> = 9</em><a class="headerlink" href="#Clutter.InputDeviceType.CURSOR_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A cursor device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputDeviceType.N_DEVICE_TYPES">
+<tt class="descname">N_DEVICE_TYPES</tt><em class="property"> = 10</em><a class="headerlink" href="#Clutter.InputDeviceType.N_DEVICE_TYPES" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of device types</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="inputmode">
+<h2>InputMode<a class="headerlink" href="#inputmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.InputMode">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">InputMode</tt><a class="headerlink" href="#Clutter.InputMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The mode for input devices available.</p>
+<dl class="attribute">
+<dt id="Clutter.InputMode.MASTER">
+<tt class="descname">MASTER</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.InputMode.MASTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>A master, virtual device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputMode.SLAVE">
+<tt class="descname">SLAVE</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.InputMode.SLAVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A slave, physical device, attached to a master device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.InputMode.FLOATING">
+<tt class="descname">FLOATING</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.InputMode.FLOATING" title="Permalink to this definition">¶</a></dt>
+<dd><p>A slave, physical device, not attached to a master device</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="interpolation">
+<h2>Interpolation<a class="headerlink" href="#interpolation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.Interpolation">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">Interpolation</tt><a class="headerlink" href="#Clutter.Interpolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The mode of interpolation between key frames</p>
+<dl class="attribute">
+<dt id="Clutter.Interpolation.LINEAR">
+<tt class="descname">LINEAR</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.Interpolation.LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>linear interpolation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Interpolation.CUBIC">
+<tt class="descname">CUBIC</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.Interpolation.CUBIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>cubic interpolation</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="longpressstate">
+<h2>LongPressState<a class="headerlink" href="#longpressstate" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.LongPressState">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">LongPressState</tt><a class="headerlink" href="#Clutter.LongPressState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The states for the <a class="reference internal" href="classes/ClickAction.html#Clutter.ClickAction" title="Clutter.ClickAction"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ClickAction</span></tt></a> <a class="reference internal" href="../Mx_1.0/classes/Widget.html#long-press"><em>::long-press</em></a> signal.</p>
+<dl class="attribute">
+<dt id="Clutter.LongPressState.QUERY">
+<tt class="descname">QUERY</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.LongPressState.QUERY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the action whether it supports long presses</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.LongPressState.ACTIVATE">
+<tt class="descname">ACTIVATE</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.LongPressState.ACTIVATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Activates the action on a long press</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.LongPressState.CANCEL">
+<tt class="descname">CANCEL</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.LongPressState.CANCEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>The long press was cancelled</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="orientation">
+<h2>Orientation<a class="headerlink" href="#orientation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.Orientation">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">Orientation</tt><a class="headerlink" href="#Clutter.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Represents the orientation of actors or layout managers.</p>
+<dl class="attribute">
+<dt id="Clutter.Orientation.HORIZONTAL">
+<tt class="descname">HORIZONTAL</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.Orientation.HORIZONTAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>An horizontal orientation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.Orientation.VERTICAL">
+<tt class="descname">VERTICAL</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.Orientation.VERTICAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A vertical orientation</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="panaxis">
+<h2>PanAxis<a class="headerlink" href="#panaxis" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.PanAxis">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">PanAxis</tt><a class="headerlink" href="#Clutter.PanAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The axis of the constraint that should be applied on the
+panning action</p>
+<dl class="attribute">
+<dt id="Clutter.PanAxis.AXIS_NONE">
+<tt class="descname">AXIS_NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.PanAxis.AXIS_NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>No constraint</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PanAxis.X_AXIS">
+<tt class="descname">X_AXIS</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.PanAxis.X_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a constraint on the X axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PanAxis.Y_AXIS">
+<tt class="descname">Y_AXIS</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.PanAxis.Y_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a constraint on the Y axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pathnodetype">
+<h2>PathNodeType<a class="headerlink" href="#pathnodetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.PathNodeType">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">PathNodeType</tt><a class="headerlink" href="#Clutter.PathNodeType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Types of nodes in a <a class="reference internal" href="classes/Path.html#Clutter.Path" title="Clutter.Path"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Path</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Clutter.PathNodeType.MOVE_TO">
+<tt class="descname">MOVE_TO</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.PathNodeType.MOVE_TO" title="Permalink to this definition">¶</a></dt>
+<dd><p>jump to the given position</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PathNodeType.LINE_TO">
+<tt class="descname">LINE_TO</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.PathNodeType.LINE_TO" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a line from the last node to the given position</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PathNodeType.CURVE_TO">
+<tt class="descname">CURVE_TO</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.PathNodeType.CURVE_TO" title="Permalink to this definition">¶</a></dt>
+<dd><p>bezier curve using the last position and three control points.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PathNodeType.CLOSE">
+<tt class="descname">CLOSE</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.PathNodeType.CLOSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a line from the last node to the last <a class="reference internal" href="#Clutter.PathNodeType.MOVE_TO" title="Clutter.PathNodeType.MOVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.MOVE_TO</span></tt></a> node.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PathNodeType.REL_MOVE_TO">
+<tt class="descname">REL_MOVE_TO</tt><em class="property"> = 32</em><a class="headerlink" href="#Clutter.PathNodeType.REL_MOVE_TO" title="Permalink to this definition">¶</a></dt>
+<dd><p>same as <a class="reference internal" href="#Clutter.PathNodeType.MOVE_TO" title="Clutter.PathNodeType.MOVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.MOVE_TO</span></tt></a> but with coordinates relative to the last node.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PathNodeType.REL_LINE_TO">
+<tt class="descname">REL_LINE_TO</tt><em class="property"> = 33</em><a class="headerlink" href="#Clutter.PathNodeType.REL_LINE_TO" title="Permalink to this definition">¶</a></dt>
+<dd><p>same as <a class="reference internal" href="#Clutter.PathNodeType.LINE_TO" title="Clutter.PathNodeType.LINE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.LINE_TO</span></tt></a> but with coordinates relative to the last node.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PathNodeType.REL_CURVE_TO">
+<tt class="descname">REL_CURVE_TO</tt><em class="property"> = 34</em><a class="headerlink" href="#Clutter.PathNodeType.REL_CURVE_TO" title="Permalink to this definition">¶</a></dt>
+<dd><p>same as <a class="reference internal" href="#Clutter.PathNodeType.CURVE_TO" title="Clutter.PathNodeType.CURVE_TO"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.PathNodeType.CURVE_TO</span></tt></a> but with coordinates relative to the last node.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pickmode">
+<h2>PickMode<a class="headerlink" href="#pickmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.PickMode">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">PickMode</tt><a class="headerlink" href="#Clutter.PickMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Controls the paint cycle of the scene graph when in pick mode</p>
+<dl class="attribute">
+<dt id="Clutter.PickMode.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.PickMode.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do not paint any actor</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PickMode.REACTIVE">
+<tt class="descname">REACTIVE</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.PickMode.REACTIVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Paint only the reactive actors</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.PickMode.ALL">
+<tt class="descname">ALL</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.PickMode.ALL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Paint all actors</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="requestmode">
+<h2>RequestMode<a class="headerlink" href="#requestmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.RequestMode">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">RequestMode</tt><a class="headerlink" href="#Clutter.RequestMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Specifies the type of requests for a <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Clutter.RequestMode.HEIGHT_FOR_WIDTH">
+<tt class="descname">HEIGHT_FOR_WIDTH</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.RequestMode.HEIGHT_FOR_WIDTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Height for width requests</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.RequestMode.WIDTH_FOR_HEIGHT">
+<tt class="descname">WIDTH_FOR_HEIGHT</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.RequestMode.WIDTH_FOR_HEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Width for height requests</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="rotateaxis">
+<h2>RotateAxis<a class="headerlink" href="#rotateaxis" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.RotateAxis">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">RotateAxis</tt><a class="headerlink" href="#Clutter.RotateAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Axis of a rotation.</p>
+<dl class="attribute">
+<dt id="Clutter.RotateAxis.X_AXIS">
+<tt class="descname">X_AXIS</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.RotateAxis.X_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotate around the X axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.RotateAxis.Y_AXIS">
+<tt class="descname">Y_AXIS</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.RotateAxis.Y_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotate around the Y axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.RotateAxis.Z_AXIS">
+<tt class="descname">Z_AXIS</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.RotateAxis.Z_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotate around the Z axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="rotatedirection">
+<h2>RotateDirection<a class="headerlink" href="#rotatedirection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.RotateDirection">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">RotateDirection</tt><a class="headerlink" href="#Clutter.RotateDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Direction of a rotation.</p>
+<dl class="attribute">
+<dt id="Clutter.RotateDirection.CW">
+<tt class="descname">CW</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.RotateDirection.CW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clockwise rotation</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.RotateDirection.CCW">
+<tt class="descname">CCW</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.RotateDirection.CCW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counter-clockwise rotation</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="scalingfilter">
+<h2>ScalingFilter<a class="headerlink" href="#scalingfilter" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ScalingFilter">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ScalingFilter</tt><a class="headerlink" href="#Clutter.ScalingFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The scaling filters to be used with the <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> <a class="reference internal" href="classes/Actor.html#minification-filter"><em>:minification-filter</em></a> 
+and <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> <a class="reference internal" href="classes/Actor.html#magnification-filter"><em>:magnification-filter</em></a> properties.</p>
+<dl class="attribute">
+<dt id="Clutter.ScalingFilter.LINEAR">
+<tt class="descname">LINEAR</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ScalingFilter.LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linear interpolation filter</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScalingFilter.NEAREST">
+<tt class="descname">NEAREST</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ScalingFilter.NEAREST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nearest neighbor interpolation filter</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScalingFilter.TRILINEAR">
+<tt class="descname">TRILINEAR</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.ScalingFilter.TRILINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trilinear minification filter, with mipmap generation; this filter linearly interpolates on every axis, as well as between mipmap levels.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="scripterror">
+<h2>ScriptError<a class="headerlink" href="#scripterror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ScriptError">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ScriptError</tt><a class="headerlink" href="#Clutter.ScriptError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="classes/Script.html#Clutter.Script" title="Clutter.Script"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Script</span></tt></a> error enumeration.</p>
+<dl class="attribute">
+<dt id="Clutter.ScriptError.TYPE_FUNCTION">
+<tt class="descname">TYPE_FUNCTION</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ScriptError.TYPE_FUNCTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type function not found or invalid</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScriptError.PROPERTY">
+<tt class="descname">PROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ScriptError.PROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Property not found or invalid</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScriptError.VALUE">
+<tt class="descname">VALUE</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.ScriptError.VALUE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invalid value</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="scrolldirection">
+<h2>ScrollDirection<a class="headerlink" href="#scrolldirection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ScrollDirection">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ScrollDirection</tt><a class="headerlink" href="#Clutter.ScrollDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Direction of a pointer scroll event.</p>
+<p>The <a class="reference internal" href="#Clutter.ScrollDirection.SMOOTH" title="Clutter.ScrollDirection.SMOOTH"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ScrollDirection.SMOOTH</span></tt></a> value implies that the <a class="reference internal" href="structs/ScrollEvent.html#Clutter.ScrollEvent" title="Clutter.ScrollEvent"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ScrollEvent</span></tt></a> 
+has precise scrolling delta information.</p>
+<dl class="attribute">
+<dt id="Clutter.ScrollDirection.UP">
+<tt class="descname">UP</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ScrollDirection.UP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scroll up</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScrollDirection.DOWN">
+<tt class="descname">DOWN</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ScrollDirection.DOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scroll down</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScrollDirection.LEFT">
+<tt class="descname">LEFT</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.ScrollDirection.LEFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scroll left</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScrollDirection.RIGHT">
+<tt class="descname">RIGHT</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.ScrollDirection.RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scroll right</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ScrollDirection.SMOOTH">
+<tt class="descname">SMOOTH</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.ScrollDirection.SMOOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Precise scrolling delta (available in 1.10)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="shadererror">
+<h2>ShaderError<a class="headerlink" href="#shadererror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ShaderError">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ShaderError</tt><a class="headerlink" href="#Clutter.ShaderError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="classes/Shader.html#Clutter.Shader" title="Clutter.Shader"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Shader</span></tt></a> error enumeration</p>
+<dl class="attribute">
+<dt id="Clutter.ShaderError.NO_ASM">
+<tt class="descname">NO_ASM</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ShaderError.NO_ASM" title="Permalink to this definition">¶</a></dt>
+<dd><p>No ASM shaders support</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ShaderError.NO_GLSL">
+<tt class="descname">NO_GLSL</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ShaderError.NO_GLSL" title="Permalink to this definition">¶</a></dt>
+<dd><p>No GLSL shaders support</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ShaderError.COMPILE">
+<tt class="descname">COMPILE</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.ShaderError.COMPILE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compilation error</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="shadertype">
+<h2>ShaderType<a class="headerlink" href="#shadertype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ShaderType">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ShaderType</tt><a class="headerlink" href="#Clutter.ShaderType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The type of GLSL shader program</p>
+<dl class="attribute">
+<dt id="Clutter.ShaderType.VERTEX_SHADER">
+<tt class="descname">VERTEX_SHADER</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ShaderType.VERTEX_SHADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>a vertex shader</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ShaderType.FRAGMENT_SHADER">
+<tt class="descname">FRAGMENT_SHADER</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ShaderType.FRAGMENT_SHADER" title="Permalink to this definition">¶</a></dt>
+<dd><p>a fragment shader</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="snapedge">
+<h2>SnapEdge<a class="headerlink" href="#snapedge" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.SnapEdge">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">SnapEdge</tt><a class="headerlink" href="#Clutter.SnapEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The edge to snap</p>
+<dl class="attribute">
+<dt id="Clutter.SnapEdge.TOP">
+<tt class="descname">TOP</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.SnapEdge.TOP" title="Permalink to this definition">¶</a></dt>
+<dd><p>the top edge</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.SnapEdge.RIGHT">
+<tt class="descname">RIGHT</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.SnapEdge.RIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the right edge</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.SnapEdge.BOTTOM">
+<tt class="descname">BOTTOM</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.SnapEdge.BOTTOM" title="Permalink to this definition">¶</a></dt>
+<dd><p>the bottom edge</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.SnapEdge.LEFT">
+<tt class="descname">LEFT</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.SnapEdge.LEFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the left edge</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="staticcolor">
+<h2>StaticColor<a class="headerlink" href="#staticcolor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.StaticColor">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">StaticColor</tt><a class="headerlink" href="#Clutter.StaticColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Named colors, for accessing global colors defined by Clutter</p>
+<dl class="attribute">
+<dt id="Clutter.StaticColor.WHITE">
+<tt class="descname">WHITE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.StaticColor.WHITE" title="Permalink to this definition">¶</a></dt>
+<dd><p>White color (ffffffff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.BLACK">
+<tt class="descname">BLACK</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.StaticColor.BLACK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Black color (000000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.RED">
+<tt class="descname">RED</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.StaticColor.RED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Red color (ff0000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.DARK_RED">
+<tt class="descname">DARK_RED</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.StaticColor.DARK_RED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark red color (800000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.GREEN">
+<tt class="descname">GREEN</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.StaticColor.GREEN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Green color (00ff00ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.DARK_GREEN">
+<tt class="descname">DARK_GREEN</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.StaticColor.DARK_GREEN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark green color (008000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.BLUE">
+<tt class="descname">BLUE</tt><em class="property"> = 6</em><a class="headerlink" href="#Clutter.StaticColor.BLUE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blue color (0000ffff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.DARK_BLUE">
+<tt class="descname">DARK_BLUE</tt><em class="property"> = 7</em><a class="headerlink" href="#Clutter.StaticColor.DARK_BLUE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark blue color (000080ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.CYAN">
+<tt class="descname">CYAN</tt><em class="property"> = 8</em><a class="headerlink" href="#Clutter.StaticColor.CYAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cyan color (00ffffff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.DARK_CYAN">
+<tt class="descname">DARK_CYAN</tt><em class="property"> = 9</em><a class="headerlink" href="#Clutter.StaticColor.DARK_CYAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark cyan color (008080ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.MAGENTA">
+<tt class="descname">MAGENTA</tt><em class="property"> = 10</em><a class="headerlink" href="#Clutter.StaticColor.MAGENTA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Magenta color (ff00ffff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.DARK_MAGENTA">
+<tt class="descname">DARK_MAGENTA</tt><em class="property"> = 11</em><a class="headerlink" href="#Clutter.StaticColor.DARK_MAGENTA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark magenta color (800080ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.YELLOW">
+<tt class="descname">YELLOW</tt><em class="property"> = 12</em><a class="headerlink" href="#Clutter.StaticColor.YELLOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yellow color (ffff00ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.DARK_YELLOW">
+<tt class="descname">DARK_YELLOW</tt><em class="property"> = 13</em><a class="headerlink" href="#Clutter.StaticColor.DARK_YELLOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark yellow color (808000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.GRAY">
+<tt class="descname">GRAY</tt><em class="property"> = 14</em><a class="headerlink" href="#Clutter.StaticColor.GRAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gray color (a0a0a4ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.DARK_GRAY">
+<tt class="descname">DARK_GRAY</tt><em class="property"> = 15</em><a class="headerlink" href="#Clutter.StaticColor.DARK_GRAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark Gray color (808080ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.LIGHT_GRAY">
+<tt class="descname">LIGHT_GRAY</tt><em class="property"> = 16</em><a class="headerlink" href="#Clutter.StaticColor.LIGHT_GRAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light gray color (c0c0c0ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.BUTTER">
+<tt class="descname">BUTTER</tt><em class="property"> = 17</em><a class="headerlink" href="#Clutter.StaticColor.BUTTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Butter color (edd400ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.BUTTER_LIGHT">
+<tt class="descname">BUTTER_LIGHT</tt><em class="property"> = 18</em><a class="headerlink" href="#Clutter.StaticColor.BUTTER_LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light butter color (fce94fff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.BUTTER_DARK">
+<tt class="descname">BUTTER_DARK</tt><em class="property"> = 19</em><a class="headerlink" href="#Clutter.StaticColor.BUTTER_DARK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark butter color (c4a000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ORANGE">
+<tt class="descname">ORANGE</tt><em class="property"> = 20</em><a class="headerlink" href="#Clutter.StaticColor.ORANGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orange color (f57900ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ORANGE_LIGHT">
+<tt class="descname">ORANGE_LIGHT</tt><em class="property"> = 21</em><a class="headerlink" href="#Clutter.StaticColor.ORANGE_LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light orange color (fcaf3fff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ORANGE_DARK">
+<tt class="descname">ORANGE_DARK</tt><em class="property"> = 22</em><a class="headerlink" href="#Clutter.StaticColor.ORANGE_DARK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark orange color (ce5c00ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.CHOCOLATE">
+<tt class="descname">CHOCOLATE</tt><em class="property"> = 23</em><a class="headerlink" href="#Clutter.StaticColor.CHOCOLATE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Chocolate color (c17d11ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.CHOCOLATE_LIGHT">
+<tt class="descname">CHOCOLATE_LIGHT</tt><em class="property"> = 24</em><a class="headerlink" href="#Clutter.StaticColor.CHOCOLATE_LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light chocolate color (e9b96eff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.CHOCOLATE_DARK">
+<tt class="descname">CHOCOLATE_DARK</tt><em class="property"> = 25</em><a class="headerlink" href="#Clutter.StaticColor.CHOCOLATE_DARK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark chocolate color (8f5902ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.CHAMELEON">
+<tt class="descname">CHAMELEON</tt><em class="property"> = 26</em><a class="headerlink" href="#Clutter.StaticColor.CHAMELEON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Chameleon color (73d216ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.CHAMELEON_LIGHT">
+<tt class="descname">CHAMELEON_LIGHT</tt><em class="property"> = 27</em><a class="headerlink" href="#Clutter.StaticColor.CHAMELEON_LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light chameleon color (8ae234ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.CHAMELEON_DARK">
+<tt class="descname">CHAMELEON_DARK</tt><em class="property"> = 28</em><a class="headerlink" href="#Clutter.StaticColor.CHAMELEON_DARK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark chameleon color (4e9a06ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.SKY_BLUE">
+<tt class="descname">SKY_BLUE</tt><em class="property"> = 29</em><a class="headerlink" href="#Clutter.StaticColor.SKY_BLUE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sky color (3465a4ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.SKY_BLUE_LIGHT">
+<tt class="descname">SKY_BLUE_LIGHT</tt><em class="property"> = 30</em><a class="headerlink" href="#Clutter.StaticColor.SKY_BLUE_LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light sky color (729fcfff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.SKY_BLUE_DARK">
+<tt class="descname">SKY_BLUE_DARK</tt><em class="property"> = 31</em><a class="headerlink" href="#Clutter.StaticColor.SKY_BLUE_DARK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark sky color (204a87ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.PLUM">
+<tt class="descname">PLUM</tt><em class="property"> = 32</em><a class="headerlink" href="#Clutter.StaticColor.PLUM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plum color (75507bff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.PLUM_LIGHT">
+<tt class="descname">PLUM_LIGHT</tt><em class="property"> = 33</em><a class="headerlink" href="#Clutter.StaticColor.PLUM_LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light plum color (ad7fa8ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.PLUM_DARK">
+<tt class="descname">PLUM_DARK</tt><em class="property"> = 34</em><a class="headerlink" href="#Clutter.StaticColor.PLUM_DARK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark plum color (5c3566ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.SCARLET_RED">
+<tt class="descname">SCARLET_RED</tt><em class="property"> = 35</em><a class="headerlink" href="#Clutter.StaticColor.SCARLET_RED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scarlet red color (cc0000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.SCARLET_RED_LIGHT">
+<tt class="descname">SCARLET_RED_LIGHT</tt><em class="property"> = 36</em><a class="headerlink" href="#Clutter.StaticColor.SCARLET_RED_LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light scarlet red color (ef2929ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.SCARLET_RED_DARK">
+<tt class="descname">SCARLET_RED_DARK</tt><em class="property"> = 37</em><a class="headerlink" href="#Clutter.StaticColor.SCARLET_RED_DARK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dark scarlet red color (a40000ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ALUMINIUM_1">
+<tt class="descname">ALUMINIUM_1</tt><em class="property"> = 38</em><a class="headerlink" href="#Clutter.StaticColor.ALUMINIUM_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aluminium, first variant (eeeeecff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ALUMINIUM_2">
+<tt class="descname">ALUMINIUM_2</tt><em class="property"> = 39</em><a class="headerlink" href="#Clutter.StaticColor.ALUMINIUM_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aluminium, second variant (d3d7cfff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ALUMINIUM_3">
+<tt class="descname">ALUMINIUM_3</tt><em class="property"> = 40</em><a class="headerlink" href="#Clutter.StaticColor.ALUMINIUM_3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aluminium, third variant (babdb6ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ALUMINIUM_4">
+<tt class="descname">ALUMINIUM_4</tt><em class="property"> = 41</em><a class="headerlink" href="#Clutter.StaticColor.ALUMINIUM_4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aluminium, fourth variant (888a85ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ALUMINIUM_5">
+<tt class="descname">ALUMINIUM_5</tt><em class="property"> = 42</em><a class="headerlink" href="#Clutter.StaticColor.ALUMINIUM_5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aluminium, fifth variant (555753ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.ALUMINIUM_6">
+<tt class="descname">ALUMINIUM_6</tt><em class="property"> = 43</em><a class="headerlink" href="#Clutter.StaticColor.ALUMINIUM_6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aluminium, sixth variant (2e3436ff)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StaticColor.TRANSPARENT">
+<tt class="descname">TRANSPARENT</tt><em class="property"> = 44</em><a class="headerlink" href="#Clutter.StaticColor.TRANSPARENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transparent color (00000000)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="stepmode">
+<h2>StepMode<a class="headerlink" href="#stepmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.StepMode">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">StepMode</tt><a class="headerlink" href="#Clutter.StepMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Change the value transition of a step function.</p>
+<p>See <a class="reference internal" href="classes/Timeline.html#Clutter.Timeline.set_step_progress" title="Clutter.Timeline.set_step_progress"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Timeline.set_step_progress</span></tt></a> ().</p>
+<dl class="attribute">
+<dt id="Clutter.StepMode.START">
+<tt class="descname">START</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.StepMode.START" title="Permalink to this definition">¶</a></dt>
+<dd><p>The change in the value of a %CLUTTER_STEP progress mode should occur at the start of the transition</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.StepMode.END">
+<tt class="descname">END</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.StepMode.END" title="Permalink to this definition">¶</a></dt>
+<dd><p>The change in the value of a %CLUTTER_STEP progress mode should occur at the end of the transition</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="tablealignment">
+<h2>TableAlignment<a class="headerlink" href="#tablealignment" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.TableAlignment">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">TableAlignment</tt><a class="headerlink" href="#Clutter.TableAlignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The alignment policies available on each axis of the <a class="reference internal" href="classes/TableLayout.html#Clutter.TableLayout" title="Clutter.TableLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.TableLayout</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.TableAlignment.START">
+<tt class="descname">START</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.TableAlignment.START" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the child to the top or to the left of a cell in the table, depending on the axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TableAlignment.CENTER">
+<tt class="descname">CENTER</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.TableAlignment.CENTER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the child to the center of a cell in the table</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TableAlignment.END">
+<tt class="descname">END</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.TableAlignment.END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Align the child to the bottom or to the right of a cell in the table, depending on the axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="textdirection">
+<h2>TextDirection<a class="headerlink" href="#textdirection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.TextDirection">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">TextDirection</tt><a class="headerlink" href="#Clutter.TextDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The text direction to be used by <a class="reference internal" href="classes/Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> s</p>
+<dl class="attribute">
+<dt id="Clutter.TextDirection.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.TextDirection.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the default setting, as returned by <a class="reference internal" href="functions.html#Clutter.get_default_text_direction" title="Clutter.get_default_text_direction"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.get_default_text_direction</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TextDirection.LTR">
+<tt class="descname">LTR</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.TextDirection.LTR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use left-to-right text direction</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TextDirection.RTL">
+<tt class="descname">RTL</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.TextDirection.RTL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use right-to-left text direction</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="textureerror">
+<h2>TextureError<a class="headerlink" href="#textureerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.TextureError">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">TextureError</tt><a class="headerlink" href="#Clutter.TextureError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error enumeration for <a class="reference internal" href="classes/Texture.html#Clutter.Texture" title="Clutter.Texture"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Texture</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.TextureError.OUT_OF_MEMORY">
+<tt class="descname">OUT_OF_MEMORY</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.TextureError.OUT_OF_MEMORY" title="Permalink to this definition">¶</a></dt>
+<dd><p>OOM condition</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TextureError.NO_YUV">
+<tt class="descname">NO_YUV</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.TextureError.NO_YUV" title="Permalink to this definition">¶</a></dt>
+<dd><p>YUV operation attempted but no YUV support found</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TextureError.BAD_FORMAT">
+<tt class="descname">BAD_FORMAT</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.TextureError.BAD_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The requested format for <a class="reference internal" href="classes/Texture.html#Clutter.Texture.set_from_rgb_data" title="Clutter.Texture.set_from_rgb_data"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Texture.set_from_rgb_data</span></tt></a> or <a class="reference internal" href="classes/Texture.html#Clutter.Texture.set_from_yuv_data" title="Clutter.Texture.set_from_yuv_data"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Texture.set_from_yuv_data</span></tt></a> is unsupported.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="texturequality">
+<h2>TextureQuality<a class="headerlink" href="#texturequality" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.TextureQuality">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">TextureQuality</tt><a class="headerlink" href="#Clutter.TextureQuality" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enumaration controlling the texture quality.</p>
+<dl class="attribute">
+<dt id="Clutter.TextureQuality.LOW">
+<tt class="descname">LOW</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.TextureQuality.LOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>fastest rendering will use nearest neighbour interpolation when rendering. good setting.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TextureQuality.MEDIUM">
+<tt class="descname">MEDIUM</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.TextureQuality.MEDIUM" title="Permalink to this definition">¶</a></dt>
+<dd><p>higher quality rendering without using extra resources.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TextureQuality.HIGH">
+<tt class="descname">HIGH</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.TextureQuality.HIGH" title="Permalink to this definition">¶</a></dt>
+<dd><p>render the texture with the best quality available using extra memory.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="timelinedirection">
+<h2>TimelineDirection<a class="headerlink" href="#timelinedirection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.TimelineDirection">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">TimelineDirection</tt><a class="headerlink" href="#Clutter.TimelineDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The direction of a <a class="reference internal" href="classes/Timeline.html#Clutter.Timeline" title="Clutter.Timeline"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Timeline</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.TimelineDirection.FORWARD">
+<tt class="descname">FORWARD</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.TimelineDirection.FORWARD" title="Permalink to this definition">¶</a></dt>
+<dd><p>forward direction for a timeline</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.TimelineDirection.BACKWARD">
+<tt class="descname">BACKWARD</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.TimelineDirection.BACKWARD" title="Permalink to this definition">¶</a></dt>
+<dd><p>backward direction for a timeline</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="unittype">
+<h2>UnitType<a class="headerlink" href="#unittype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.UnitType">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">UnitType</tt><a class="headerlink" href="#Clutter.UnitType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The type of unit in which a value is expressed</p>
+<p>This enumeration might be expanded at later date</p>
+<dl class="attribute">
+<dt id="Clutter.UnitType.PIXEL">
+<tt class="descname">PIXEL</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.UnitType.PIXEL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unit expressed in pixels (with subpixel precision)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.UnitType.EM">
+<tt class="descname">EM</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.UnitType.EM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unit expressed in em</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.UnitType.MM">
+<tt class="descname">MM</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.UnitType.MM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unit expressed in millimeters</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.UnitType.POINT">
+<tt class="descname">POINT</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.UnitType.POINT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unit expressed in points</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.UnitType.CM">
+<tt class="descname">CM</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.UnitType.CM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unit expressed in centimeters</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="x11filterreturn">
+<h2>X11FilterReturn<a class="headerlink" href="#x11filterreturn" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.X11FilterReturn">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">X11FilterReturn</tt><a class="headerlink" href="#Clutter.X11FilterReturn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.X11FilterReturn.CONTINUE">
+<tt class="descname">CONTINUE</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.X11FilterReturn.CONTINUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.X11FilterReturn.TRANSLATE">
+<tt class="descname">TRANSLATE</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.X11FilterReturn.TRANSLATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.X11FilterReturn.REMOVE">
+<tt class="descname">REMOVE</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.X11FilterReturn.REMOVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="x11xinputeventtypes">
+<h2>X11XInputEventTypes<a class="headerlink" href="#x11xinputeventtypes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.X11XInputEventTypes">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">X11XInputEventTypes</tt><a class="headerlink" href="#Clutter.X11XInputEventTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="Clutter.X11XInputEventTypes.KEY_PRESS_EVENT">
+<tt class="descname">KEY_PRESS_EVENT</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.X11XInputEventTypes.KEY_PRESS_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.X11XInputEventTypes.KEY_RELEASE_EVENT">
+<tt class="descname">KEY_RELEASE_EVENT</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.X11XInputEventTypes.KEY_RELEASE_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.X11XInputEventTypes.BUTTON_PRESS_EVENT">
+<tt class="descname">BUTTON_PRESS_EVENT</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.X11XInputEventTypes.BUTTON_PRESS_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.X11XInputEventTypes.BUTTON_RELEASE_EVENT">
+<tt class="descname">BUTTON_RELEASE_EVENT</tt><em class="property"> = 3</em><a class="headerlink" href="#Clutter.X11XInputEventTypes.BUTTON_RELEASE_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.X11XInputEventTypes.MOTION_NOTIFY_EVENT">
+<tt class="descname">MOTION_NOTIFY_EVENT</tt><em class="property"> = 4</em><a class="headerlink" href="#Clutter.X11XInputEventTypes.MOTION_NOTIFY_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.X11XInputEventTypes.LAST_EVENT">
+<tt class="descname">LAST_EVENT</tt><em class="property"> = 5</em><a class="headerlink" href="#Clutter.X11XInputEventTypes.LAST_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zoomaxis">
+<h2>ZoomAxis<a class="headerlink" href="#zoomaxis" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.ZoomAxis">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">ZoomAxis</tt><a class="headerlink" href="#Clutter.ZoomAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The axis of the constraint that should be applied by the
+zooming action.</p>
+<dl class="attribute">
+<dt id="Clutter.ZoomAxis.X_AXIS">
+<tt class="descname">X_AXIS</tt><em class="property"> = 0</em><a class="headerlink" href="#Clutter.ZoomAxis.X_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale only on the X axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ZoomAxis.Y_AXIS">
+<tt class="descname">Y_AXIS</tt><em class="property"> = 1</em><a class="headerlink" href="#Clutter.ZoomAxis.Y_AXIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale only on the Y axis</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Clutter.ZoomAxis.BOTH">
+<tt class="descname">BOTH</tt><em class="property"> = 2</em><a class="headerlink" href="#Clutter.ZoomAxis.BOTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale on both axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="constants.html" class="btn btn-neutral float-right" title="Constants"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="flags.html" class="btn btn-neutral" title="Flags"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

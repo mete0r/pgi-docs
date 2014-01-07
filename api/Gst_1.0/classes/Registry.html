@@ -1,0 +1,887 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gst.Registry -
+    
+      Classes -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gst.SystemClock" href="SystemClock.html"/>
+        <link rel="prev" title="Gst.ProxyPad" href="ProxyPad.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gst.Registry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gst.Registry</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/classes/Registry" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gst-registry">
+<h1>Gst.Registry<a class="headerlink" href="#gst-registry" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-61e9451af03c0eed03a280154da730a00cd2f7f0.png" alt="Inheritance diagram of Gst.Registry" usemap="#inheritance3ddb732600" class="inheritance"/>
+<map id="inheritance3ddb732600" name="inheritance3ddb732600">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="29,5,125,29"/>
+<area shape="rect" id="node2" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="5,77,149,101"/>
+<area shape="rect" id="node4" href="Object.html#Gst.Object" title="Gst.Object" alt="" coords="41,149,113,173"/>
+<area shape="rect" id="node6" href="#Gst.Registry" title="Gst.Registry" alt="" coords="37,221,117,245"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Registry.fork_is_enabled" title="Gst.Registry.fork_is_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">fork_is_enabled</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Registry.fork_set_enabled" title="Gst.Registry.fork_set_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">fork_set_enabled</span></tt></a>(enabled)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Registry.get" title="Gst.Registry.get"><tt class="xref py py-obj docutils literal"><span class="pre">get</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.add_feature" title="Gst.Registry.add_feature"><tt class="xref py py-obj docutils literal"><span class="pre">add_feature</span></tt></a>(feature)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.add_plugin" title="Gst.Registry.add_plugin"><tt class="xref py py-obj docutils literal"><span class="pre">add_plugin</span></tt></a>(plugin)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.check_feature_version" title="Gst.Registry.check_feature_version"><tt class="xref py py-obj docutils literal"><span class="pre">check_feature_version</span></tt></a>(feature_name, min_major, min_minor, min_micro)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.feature_filter" title="Gst.Registry.feature_filter"><tt class="xref py py-obj docutils literal"><span class="pre">feature_filter</span></tt></a>(filter, first, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.find_feature" title="Gst.Registry.find_feature"><tt class="xref py py-obj docutils literal"><span class="pre">find_feature</span></tt></a>(name, type)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.find_plugin" title="Gst.Registry.find_plugin"><tt class="xref py py-obj docutils literal"><span class="pre">find_plugin</span></tt></a>(name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.get_feature_list" title="Gst.Registry.get_feature_list"><tt class="xref py py-obj docutils literal"><span class="pre">get_feature_list</span></tt></a>(type)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.get_feature_list_by_plugin" title="Gst.Registry.get_feature_list_by_plugin"><tt class="xref py py-obj docutils literal"><span class="pre">get_feature_list_by_plugin</span></tt></a>(name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.get_feature_list_cookie" title="Gst.Registry.get_feature_list_cookie"><tt class="xref py py-obj docutils literal"><span class="pre">get_feature_list_cookie</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.get_plugin_list" title="Gst.Registry.get_plugin_list"><tt class="xref py py-obj docutils literal"><span class="pre">get_plugin_list</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.lookup" title="Gst.Registry.lookup"><tt class="xref py py-obj docutils literal"><span class="pre">lookup</span></tt></a>(filename)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.lookup_feature" title="Gst.Registry.lookup_feature"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_feature</span></tt></a>(name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.plugin_filter" title="Gst.Registry.plugin_filter"><tt class="xref py py-obj docutils literal"><span class="pre">plugin_filter</span></tt></a>(filter, first, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.remove_feature" title="Gst.Registry.remove_feature"><tt class="xref py py-obj docutils literal"><span class="pre">remove_feature</span></tt></a>(feature)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.remove_plugin" title="Gst.Registry.remove_plugin"><tt class="xref py py-obj docutils literal"><span class="pre">remove_plugin</span></tt></a>(plugin)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Registry.scan_path" title="Gst.Registry.scan_path"><tt class="xref py py-obj docutils literal"><span class="pre">scan_path</span></tt></a>(path)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gst-registry-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gst-registry-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="feature-added">feature-added</span></td>
+<td><a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a></td>
+<td>&nbsp;</td>
+<td>Signals that a feature has been added to the registry (possibly replacing a previously-added one by the same name)</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="plugin-added">plugin-added</span></td>
+<td><a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a></td>
+<td>&nbsp;</td>
+<td>Signals that a plugin has been added to the registry (possibly replacing a previously-added one by the same name)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>object</td>
+<td><a class="reference internal" href="Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gst.Registry">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">Registry</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gst.Registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a></p>
+<p>One registry holds the metadata of a set of plugins.</p>
+<p>Design:</p>
+<p>The <a class="reference internal" href="#Gst.Registry" title="Gst.Registry"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry</span></tt></a> object is a list of plugins and some functions for dealing
+with them. Each <a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a> is matched 1-1 with a file on disk, and may or may
+not be loaded at a given time.</p>
+<p>The primary source, at all times, of plugin information is each plugin file
+itself. Thus, if an application wants information about a particular plugin,
+or wants to search for a feature that satisfies given criteria, the primary
+means of doing so is to load every plugin and look at the resulting
+information that is gathered in the default registry. Clearly, this is a time
+consuming process, so we cache information in the registry file. The format
+and location of the cache file is internal to gstreamer.</p>
+<p>On startup, plugins are searched for in the plugin search path. The following
+locations are checked in this order:</p>
+<ul class="simple">
+<li>location from &#8211;gst-plugin-path commandline option.</li>
+<li>the GST_PLUGIN_PATH environment variable.</li>
+<li>the GST_PLUGIN_SYSTEM_PATH environment variable.</li>
+<li>default locations (if GST_PLUGIN_SYSTEM_PATH is not set). Those       default locations are:~/.gstreamer-$GST_API_VERSION/plugins/and$prefix/libs/gstreamer-$GST_API_VERSION/.</li>
+</ul>
+<p>The registry cache file is loaded from
+~/.gstreamer-$GST_API_VERSION/registry-$ARCH.bin or the
+file listed in the GST_REGISTRY env var. One reason to change the registry
+location is for testing.</p>
+<p>For each plugin that is found in the plugin search path, there could be 3
+possibilities for cached information:</p>
+<ul class="simple">
+<li>the cache may not contain information about a given file.</li>
+<li>the cache may have stale information.</li>
+<li>the cache may have current information.</li>
+</ul>
+<p>In the first two cases, the plugin is loaded and the cache updated. In
+addition to these cases, the cache may have entries for plugins that are not
+relevant to the current process. These are marked as not available to the
+current process. If the cache is updated for whatever reason, it is marked
+dirty.</p>
+<p>A dirty cache is written out at the end of initialization. Each entry is
+checked to make sure the information is minimally valid. If not, the entry is
+simply dropped.</p>
+<p>Implementation notes:</p>
+<p>The &#8220;cache&#8221; and &#8220;registry&#8221; are different concepts and can represent
+different sets of plugins. For various reasons, at init time, the cache is
+stored in the default registry, and plugins not relevant to the current
+process are marked with the <a class="reference internal" href="../flags.html#Gst.PluginFlags.CACHED" title="Gst.PluginFlags.CACHED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFlags.CACHED</span></tt></a> bit. These plugins are
+removed at the end of initialization.</p>
+<p>Last reviewed on 2012-03-29 (0.11.3)</p>
+<dl class="staticmethod">
+<dt id="Gst.Registry.fork_is_enabled">
+<em class="property">static </em><tt class="descname">fork_is_enabled</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Registry.fork_is_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if GStreamer will use the child helper process when rebuilding the registry.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>By default GStreamer will perform scanning and rebuilding of the
+registry file using a helper child process.</p>
+<p>Applications might want to disable this behaviour with the
+<a class="reference internal" href="#Gst.Registry.fork_set_enabled" title="Gst.Registry.fork_set_enabled"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry.fork_set_enabled</span></tt></a> () function, in which case new plugins
+are scanned (and loaded) into the application process.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Registry.fork_set_enabled">
+<em class="property">static </em><tt class="descname">fork_set_enabled</tt><big>(</big><em>enabled</em><big>)</big><a class="headerlink" href="#Gst.Registry.fork_set_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether rebuilding the registry can use a temporary child helper process.</td>
+</tr>
+</tbody>
+</table>
+<p>Applications might want to disable/enable spawning of a child helper process
+when rebuilding the registry. See <a class="reference internal" href="#Gst.Registry.fork_is_enabled" title="Gst.Registry.fork_is_enabled"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry.fork_is_enabled</span></tt></a> () for more
+information.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Registry.get">
+<em class="property">static </em><tt class="descname">get</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Registry.get" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#Gst.Registry" title="Gst.Registry"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Registry" title="Gst.Registry"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the singleton plugin registry. The caller does not own a
+reference on the registry, as it is alive as long as GStreamer is
+initialized.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.add_feature">
+<tt class="descname">add_feature</tt><big>(</big><em>feature</em><big>)</big><a class="headerlink" href="#Gst.Registry.add_feature" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>feature</strong> (<a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>) &#8211; the feature to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> on success.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Add the feature to the registry. The feature-added signal will be emitted.
+This function sinks <cite>feature</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.add_plugin">
+<tt class="descname">add_plugin</tt><big>(</big><em>plugin</em><big>)</big><a class="headerlink" href="#Gst.Registry.add_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>plugin</strong> (<a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>) &#8211; the plugin to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> on success.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Add the plugin to the registry. The plugin-added signal will be emitted.
+This function will sink <cite>plugin</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.check_feature_version">
+<tt class="descname">check_feature_version</tt><big>(</big><em>feature_name</em>, <em>min_major</em>, <em>min_minor</em>, <em>min_micro</em><big>)</big><a class="headerlink" href="#Gst.Registry.check_feature_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>feature_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the feature (e.g. &#8220;oggdemux&#8221;)</li>
+<li><strong>min_major</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the minimum major version number</li>
+<li><strong>min_minor</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the minimum minor version number</li>
+<li><strong>min_micro</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the minimum micro version number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the feature could be found and the version is the same as the required version or newer, and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether a plugin feature by the given name exists in
+<cite>registry</cite> and whether its version is at least the
+version required.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.feature_filter">
+<tt class="descname">feature_filter</tt><big>(</big><em>filter</em>, <em>first</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gst.Registry.feature_filter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filter</strong> (<a class="reference internal" href="../callbacks.html#Gst.PluginFeatureFilter" title="Gst.PluginFeatureFilter"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeatureFilter</span></tt></a>) &#8211; the filter to use</li>
+<li><strong>first</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; only return first match</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to the filter function</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>. Use <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature.list_free" title="Gst.PluginFeature.list_free"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature.list_free</span></tt></a> () after usage.  MT safe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Runs a filter against all features of the plugins in the registry
+and returns a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> with the results.
+If the first flag is set, only the first match is
+returned (as a list with a single object).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.find_feature">
+<tt class="descname">find_feature</tt><big>(</big><em>name</em>, <em>type</em><big>)</big><a class="headerlink" href="#Gst.Registry.find_feature" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the pluginfeature name to find</li>
+<li><strong>type</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; the pluginfeature type to find</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the pluginfeature with the given name and type or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the plugin was not found. <a class="reference internal" href="Object.html#Gst.Object.unref" title="Gst.Object.unref"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object.unref</span></tt></a> () after usage.  MT safe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Find the pluginfeature with the given name and type in the registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.find_plugin">
+<tt class="descname">find_plugin</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Gst.Registry.find_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the plugin name to find</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the plugin with the given name or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the plugin was not found. <a class="reference internal" href="Object.html#Gst.Object.unref" title="Gst.Object.unref"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object.unref</span></tt></a> () after usage.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Find the plugin with the given name in the registry.
+The plugin will be reffed; caller is responsible for unreffing.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.get_feature_list">
+<tt class="descname">get_feature_list</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#Gst.Registry.get_feature_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; a <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a> of <cite>type</cite>. Use <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature.list_free" title="Gst.PluginFeature.list_free"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature.list_free</span></tt></a> () after use  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a> of <cite>type</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.get_feature_list_by_plugin">
+<tt class="descname">get_feature_list_by_plugin</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Gst.Registry.get_feature_list_by_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a plugin name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>. Use <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature.list_free" title="Gst.PluginFeature.list_free"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature.list_free</span></tt></a> () after usage.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of features of the plugin with name <cite>name</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.get_feature_list_cookie">
+<tt class="descname">get_feature_list_cookie</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Registry.get_feature_list_cookie" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the feature list cookie.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the registrys feature list cookie. This changes
+every time a feature is added or removed from the registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.get_plugin_list">
+<tt class="descname">get_plugin_list</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Registry.get_plugin_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>. Use <a class="reference internal" href="Plugin.html#Gst.Plugin.list_free" title="Gst.Plugin.list_free"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin.list_free</span></tt></a> () after usage.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Get a copy of all plugins registered in the given registry. The refcount
+of each element in the list in incremented.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.lookup">
+<tt class="descname">lookup</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#Gst.Registry.lookup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the file to look up</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a> if found, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if not. <a class="reference internal" href="Object.html#Gst.Object.unref" title="Gst.Object.unref"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object.unref</span></tt></a> () after usage.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Look up a plugin in the given registry with the given filename.
+If found, plugin is reffed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.lookup_feature">
+<tt class="descname">lookup_feature</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Gst.Registry.lookup_feature" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a> name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a> with its refcount incremented, use <a class="reference internal" href="Object.html#Gst.Object.unref" title="Gst.Object.unref"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object.unref</span></tt></a> () after usage.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Find a <a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a> with <cite>name</cite> in <cite>registry</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.plugin_filter">
+<tt class="descname">plugin_filter</tt><big>(</big><em>filter</em>, <em>first</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gst.Registry.plugin_filter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filter</strong> (<a class="reference internal" href="../callbacks.html#Gst.PluginFilter" title="Gst.PluginFilter"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFilter</span></tt></a>) &#8211; the filter to use</li>
+<li><strong>first</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; only return first match</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to the filter function</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>. Use <a class="reference internal" href="Plugin.html#Gst.Plugin.list_free" title="Gst.Plugin.list_free"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin.list_free</span></tt></a> () after usage.  MT safe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[<a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Runs a filter against all plugins in the registry and returns a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> with
+the results. If the first flag is set, only the first match is
+returned (as a list with a single object).
+Every plugin is reffed; use <a class="reference internal" href="Plugin.html#Gst.Plugin.list_free" title="Gst.Plugin.list_free"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin.list_free</span></tt></a> () after use, which
+will unref again.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.remove_feature">
+<tt class="descname">remove_feature</tt><big>(</big><em>feature</em><big>)</big><a class="headerlink" href="#Gst.Registry.remove_feature" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>feature</strong> (<a class="reference internal" href="PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>) &#8211; the feature to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the feature from the registry.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.remove_plugin">
+<tt class="descname">remove_plugin</tt><big>(</big><em>plugin</em><big>)</big><a class="headerlink" href="#Gst.Registry.remove_plugin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>plugin</strong> (<a class="reference internal" href="Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>) &#8211; the plugin to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the plugin from the registry.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Registry.scan_path">
+<tt class="descname">scan_path</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#Gst.Registry.scan_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the path to scan</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if registry changed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Scan the given path for plugins to add to the registry. The syntax of the
+path is specific to the registry.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="SystemClock.html" class="btn btn-neutral float-right" title="Gst.SystemClock"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="ProxyPad.html" class="btn btn-neutral" title="Gst.ProxyPad"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

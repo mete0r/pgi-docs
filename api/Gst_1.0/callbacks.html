@@ -1,0 +1,1813 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Callbacks -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Gst 1.0" href="index.html"/>
+        <link rel="next" title="Interfaces" href="interfaces/index.html"/>
+        <link rel="prev" title="Functions" href="functions.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Callbacks</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li><a href="">Callbacks</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/callbacks" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="callbacks">
+<h1>Callbacks<a class="headerlink" href="#callbacks" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.BufferForeachMetaFunc" title="Gst.BufferForeachMetaFunc"><tt class="xref py py-obj docutils literal"><span class="pre">BufferForeachMetaFunc</span></tt></a>(buffer, meta, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.BufferListFunc" title="Gst.BufferListFunc"><tt class="xref py py-obj docutils literal"><span class="pre">BufferListFunc</span></tt></a>(buffer, idx, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.BusFunc" title="Gst.BusFunc"><tt class="xref py py-obj docutils literal"><span class="pre">BusFunc</span></tt></a>(bus, message, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.BusSyncHandler" title="Gst.BusSyncHandler"><tt class="xref py py-obj docutils literal"><span class="pre">BusSyncHandler</span></tt></a>(bus, message, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.ClockCallback" title="Gst.ClockCallback"><tt class="xref py py-obj docutils literal"><span class="pre">ClockCallback</span></tt></a>(clock, time, id, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.ControlBindingConvert" title="Gst.ControlBindingConvert"><tt class="xref py py-obj docutils literal"><span class="pre">ControlBindingConvert</span></tt></a>(binding, src_value, dest_value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.ControlSourceGetValue" title="Gst.ControlSourceGetValue"><tt class="xref py py-obj docutils literal"><span class="pre">ControlSourceGetValue</span></tt></a>(self, timestamp, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.ControlSourceGetValueArray" title="Gst.ControlSourceGetValueArray"><tt class="xref py py-obj docutils literal"><span class="pre">ControlSourceGetValueArray</span></tt></a>(self, timestamp, interval, n_values, values)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.DebugFuncPtr" title="Gst.DebugFuncPtr"><tt class="xref py py-obj docutils literal"><span class="pre">DebugFuncPtr</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.IteratorCopyFunction" title="Gst.IteratorCopyFunction"><tt class="xref py py-obj docutils literal"><span class="pre">IteratorCopyFunction</span></tt></a>(it, copy)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.IteratorFoldFunction" title="Gst.IteratorFoldFunction"><tt class="xref py py-obj docutils literal"><span class="pre">IteratorFoldFunction</span></tt></a>(item, ret, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.IteratorForeachFunction" title="Gst.IteratorForeachFunction"><tt class="xref py py-obj docutils literal"><span class="pre">IteratorForeachFunction</span></tt></a>(item, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.IteratorFreeFunction" title="Gst.IteratorFreeFunction"><tt class="xref py py-obj docutils literal"><span class="pre">IteratorFreeFunction</span></tt></a>(it)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.IteratorItemFunction" title="Gst.IteratorItemFunction"><tt class="xref py py-obj docutils literal"><span class="pre">IteratorItemFunction</span></tt></a>(it, item)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.IteratorNextFunction" title="Gst.IteratorNextFunction"><tt class="xref py py-obj docutils literal"><span class="pre">IteratorNextFunction</span></tt></a>(it, result)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.IteratorResyncFunction" title="Gst.IteratorResyncFunction"><tt class="xref py py-obj docutils literal"><span class="pre">IteratorResyncFunction</span></tt></a>(it)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.LogFunction" title="Gst.LogFunction"><tt class="xref py py-obj docutils literal"><span class="pre">LogFunction</span></tt></a>(category, level, file, function, line, object, message, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.MemoryCopyFunction" title="Gst.MemoryCopyFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MemoryCopyFunction</span></tt></a>(mem, offset, size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.MemoryIsSpanFunction" title="Gst.MemoryIsSpanFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MemoryIsSpanFunction</span></tt></a>(mem1, mem2, offset)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.MemoryShareFunction" title="Gst.MemoryShareFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MemoryShareFunction</span></tt></a>(mem, offset, size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.MemoryUnmapFunction" title="Gst.MemoryUnmapFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MemoryUnmapFunction</span></tt></a>(mem)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.MetaFreeFunction" title="Gst.MetaFreeFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MetaFreeFunction</span></tt></a>(meta, buffer)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.MetaInitFunction" title="Gst.MetaInitFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MetaInitFunction</span></tt></a>(meta, params, buffer)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.MetaTransformFunction" title="Gst.MetaTransformFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MetaTransformFunction</span></tt></a>(transbuf, meta, buffer, type, data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.MiniObjectDisposeFunction" title="Gst.MiniObjectDisposeFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MiniObjectDisposeFunction</span></tt></a>(obj)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.MiniObjectFreeFunction" title="Gst.MiniObjectFreeFunction"><tt class="xref py py-obj docutils literal"><span class="pre">MiniObjectFreeFunction</span></tt></a>(obj)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.MiniObjectNotify" title="Gst.MiniObjectNotify"><tt class="xref py py-obj docutils literal"><span class="pre">MiniObjectNotify</span></tt></a>(user_data, obj)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PadActivateFunction" title="Gst.PadActivateFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadActivateFunction</span></tt></a>(pad, parent)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PadActivateModeFunction" title="Gst.PadActivateModeFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadActivateModeFunction</span></tt></a>(pad, parent, mode, active)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PadChainFunction" title="Gst.PadChainFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadChainFunction</span></tt></a>(pad, parent, buffer)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PadChainListFunction" title="Gst.PadChainListFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadChainListFunction</span></tt></a>(pad, parent, list)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PadEventFunction" title="Gst.PadEventFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadEventFunction</span></tt></a>(pad, parent, event)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PadForwardFunction" title="Gst.PadForwardFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadForwardFunction</span></tt></a>(pad, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PadGetRangeFunction" title="Gst.PadGetRangeFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadGetRangeFunction</span></tt></a>(pad, parent, offset, length, buffer)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PadIterIntLinkFunction" title="Gst.PadIterIntLinkFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadIterIntLinkFunction</span></tt></a>(pad, parent)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PadLinkFunction" title="Gst.PadLinkFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadLinkFunction</span></tt></a>(pad, parent, peer)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PadProbeCallback" title="Gst.PadProbeCallback"><tt class="xref py py-obj docutils literal"><span class="pre">PadProbeCallback</span></tt></a>(pad, info, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PadQueryFunction" title="Gst.PadQueryFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadQueryFunction</span></tt></a>(pad, parent, query)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PadStickyEventsForeachFunction" title="Gst.PadStickyEventsForeachFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadStickyEventsForeachFunction</span></tt></a>(pad, event, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PadUnlinkFunction" title="Gst.PadUnlinkFunction"><tt class="xref py py-obj docutils literal"><span class="pre">PadUnlinkFunction</span></tt></a>(pad, parent)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PluginFeatureFilter" title="Gst.PluginFeatureFilter"><tt class="xref py py-obj docutils literal"><span class="pre">PluginFeatureFilter</span></tt></a>(feature, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PluginFilter" title="Gst.PluginFilter"><tt class="xref py py-obj docutils literal"><span class="pre">PluginFilter</span></tt></a>(plugin, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.PluginInitFullFunc" title="Gst.PluginInitFullFunc"><tt class="xref py py-obj docutils literal"><span class="pre">PluginInitFullFunc</span></tt></a>(plugin, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.PluginInitFunc" title="Gst.PluginInitFunc"><tt class="xref py py-obj docutils literal"><span class="pre">PluginInitFunc</span></tt></a>(plugin)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.StructureForeachFunc" title="Gst.StructureForeachFunc"><tt class="xref py py-obj docutils literal"><span class="pre">StructureForeachFunc</span></tt></a>(field_id, value, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.StructureMapFunc" title="Gst.StructureMapFunc"><tt class="xref py py-obj docutils literal"><span class="pre">StructureMapFunc</span></tt></a>(field_id, value, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.TagForeachFunc" title="Gst.TagForeachFunc"><tt class="xref py py-obj docutils literal"><span class="pre">TagForeachFunc</span></tt></a>(list, tag, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.TagMergeFunc" title="Gst.TagMergeFunc"><tt class="xref py py-obj docutils literal"><span class="pre">TagMergeFunc</span></tt></a>(dest, src)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.TaskFunction" title="Gst.TaskFunction"><tt class="xref py py-obj docutils literal"><span class="pre">TaskFunction</span></tt></a>(user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.TaskPoolFunction" title="Gst.TaskPoolFunction"><tt class="xref py py-obj docutils literal"><span class="pre">TaskPoolFunction</span></tt></a>(user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.TaskThreadFunc" title="Gst.TaskThreadFunc"><tt class="xref py py-obj docutils literal"><span class="pre">TaskThreadFunc</span></tt></a>(task, thread, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.TypeFindFunction" title="Gst.TypeFindFunction"><tt class="xref py py-obj docutils literal"><span class="pre">TypeFindFunction</span></tt></a>(find, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.ValueCompareFunc" title="Gst.ValueCompareFunc"><tt class="xref py py-obj docutils literal"><span class="pre">ValueCompareFunc</span></tt></a>(value1, value2)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.ValueDeserializeFunc" title="Gst.ValueDeserializeFunc"><tt class="xref py py-obj docutils literal"><span class="pre">ValueDeserializeFunc</span></tt></a>(dest, s)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.ValueSerializeFunc" title="Gst.ValueSerializeFunc"><tt class="xref py py-obj docutils literal"><span class="pre">ValueSerializeFunc</span></tt></a>(value1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gst.BufferForeachMetaFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">BufferForeachMetaFunc</tt><big>(</big><em>buffer</em>, <em>meta</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.BufferForeachMetaFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buffer</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></li>
+<li><strong>meta</strong> (<a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a>) &#8211; a pointer to a <a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to <a class="reference internal" href="structs/Buffer.html#Gst.Buffer.foreach_meta" title="Gst.Buffer.foreach_meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.foreach_meta</span></tt></a> ()</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> when <a class="reference internal" href="structs/Buffer.html#Gst.Buffer.foreach_meta" title="Gst.Buffer.foreach_meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.foreach_meta</span></tt></a> () should stop</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called from <a class="reference internal" href="structs/Buffer.html#Gst.Buffer.foreach_meta" title="Gst.Buffer.foreach_meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.foreach_meta</span></tt></a> (). The <cite>meta</cite> 
+field will point to a the reference of the meta.</p>
+<p><cite>buffer</cite> should not be modified from this callback.</p>
+<p>When this function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, the next meta will be
+returned. When <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> is returned, <a class="reference internal" href="structs/Buffer.html#Gst.Buffer.foreach_meta" title="Gst.Buffer.foreach_meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.foreach_meta</span></tt></a> () will return.</p>
+<p>When <cite>meta</cite> is set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, the item will be removed from the buffer.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.BufferListFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">BufferListFunc</tt><big>(</big><em>buffer</em>, <em>idx</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.BufferListFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buffer</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; pointer the buffer</li>
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of <cite>buffer</cite></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to <a class="reference internal" href="structs/BufferList.html#Gst.BufferList.foreach" title="Gst.BufferList.foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferList.foreach</span></tt></a> ()</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> when <a class="reference internal" href="structs/BufferList.html#Gst.BufferList.foreach" title="Gst.BufferList.foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferList.foreach</span></tt></a> () should stop</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called from <a class="reference internal" href="structs/BufferList.html#Gst.BufferList.foreach" title="Gst.BufferList.foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferList.foreach</span></tt></a> (). The <cite>buffer</cite> 
+field will point to a the reference of the buffer at <cite>idx</cite>.</p>
+<p>When this function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, the next buffer will be
+returned. When <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> is returned, <a class="reference internal" href="structs/BufferList.html#Gst.BufferList.foreach" title="Gst.BufferList.foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferList.foreach</span></tt></a> () will return.</p>
+<p>When <cite>buffer</cite> is set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, the item will be removed from the bufferlist.
+When <cite>buffer</cite> has been made writable, the new buffer reference can be assigned
+to <cite>buffer</cite>. This function is responsible for unreffing the old buffer when
+removing or modifying.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.BusFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">BusFunc</tt><big>(</big><em>bus</em>, <em>message</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.BusFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>bus</strong> (<a class="reference internal" href="classes/Bus.html#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Bus.html#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a> that sent the message</li>
+<li><strong>message</strong> (<a class="reference internal" href="structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; the <a class="reference internal" href="structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data that has been given, when registering the handler</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the event source should be removed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Specifies the type of function passed to <a class="reference internal" href="classes/Bus.html#Gst.Bus.add_watch" title="Gst.Bus.add_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_watch</span></tt></a> () or
+<a class="reference internal" href="classes/Bus.html#Gst.Bus.add_watch" title="Gst.Bus.add_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_watch</span></tt></a> (), which is called from the mainloop when a message
+is available on the bus.</p>
+<p>The message passed to the function will be unreffed after execution of this
+function so it should not be freed in the function.</p>
+<p>Note that this function is used as a <a class="reference internal" href="../GLib_2.0/callbacks.html#GLib.SourceFunc" title="GLib.SourceFunc"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SourceFunc</span></tt></a> which means that returning
+<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> will remove the <a class="reference internal" href="../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> from the mainloop.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.BusSyncHandler">
+<tt class="descclassname">Gst.</tt><tt class="descname">BusSyncHandler</tt><big>(</big><em>bus</em>, <em>message</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.BusSyncHandler" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>bus</strong> (<a class="reference internal" href="classes/Bus.html#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Bus.html#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a> that sent the message</li>
+<li><strong>message</strong> (<a class="reference internal" href="structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; the <a class="reference internal" href="structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data that has been given, when registering the handler</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#Gst.BusSyncReply" title="Gst.BusSyncReply"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusSyncReply</span></tt></a> stating what to do with the message</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.BusSyncReply" title="Gst.BusSyncReply"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusSyncReply</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Handler will be invoked synchronously, when a new message has been injected
+into the bus. This function is mostly used internally. Only one sync handler
+can be attached to a given bus.</p>
+<p>If the handler returns <a class="reference internal" href="enums.html#Gst.BusSyncReply.DROP" title="Gst.BusSyncReply.DROP"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusSyncReply.DROP</span></tt></a>, it should unref the message, else the
+message should not be unreffed by the sync handler.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.ClockCallback">
+<tt class="descclassname">Gst.</tt><tt class="descname">ClockCallback</tt><big>(</big><em>clock</em>, <em>time</em>, <em>id</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.ClockCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>clock</strong> (<a class="reference internal" href="classes/Clock.html#Gst.Clock" title="Gst.Clock"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Clock</span></tt></a>) &#8211; The clock that triggered the callback</li>
+<li><strong>time</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The time it was triggered</li>
+<li><strong>id</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; The <tt class="xref py py-class docutils literal"><span class="pre">Gst.ClockID</span></tt> that expired</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed in the <a class="reference internal" href="classes/Clock.html#Gst.Clock.id_wait_async" title="Gst.Clock.id_wait_async"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Clock.id_wait_async</span></tt></a> () function</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> (currently unused)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The function prototype of the callback.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.ControlBindingConvert">
+<tt class="descclassname">Gst.</tt><tt class="descname">ControlBindingConvert</tt><big>(</big><em>binding</em>, <em>src_value</em>, <em>dest_value</em><big>)</big><a class="headerlink" href="#Gst.ControlBindingConvert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>binding</strong> (<a class="reference internal" href="classes/ControlBinding.html#Gst.ControlBinding" title="Gst.ControlBinding"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ControlBinding</span></tt></a>) &#8211; </li>
+<li><strong>src_value</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; </li>
+<li><strong>dest_value</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.ControlSourceGetValue">
+<tt class="descclassname">Gst.</tt><tt class="descname">ControlSourceGetValue</tt><big>(</big><em>self</em>, <em>timestamp</em>, <em>value</em><big>)</big><a class="headerlink" href="#Gst.ControlSourceGetValue" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>self</strong> (<a class="reference internal" href="classes/ControlSource.html#Gst.ControlSource" title="Gst.ControlSource"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ControlSource</span></tt></a>) &#8211; the <a class="reference internal" href="classes/ControlSource.html#Gst.ControlSource" title="Gst.ControlSource"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ControlSource</span></tt></a> instance</li>
+<li><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; timestamp for which a value should be calculated</li>
+<li><strong>value</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; a <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a> which will be set to the result. It must be initialized to the correct type.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the value was successfully calculated.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function for returning a value for a given timestamp.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.ControlSourceGetValueArray">
+<tt class="descclassname">Gst.</tt><tt class="descname">ControlSourceGetValueArray</tt><big>(</big><em>self</em>, <em>timestamp</em>, <em>interval</em>, <em>n_values</em>, <em>values</em><big>)</big><a class="headerlink" href="#Gst.ControlSourceGetValueArray" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>self</strong> (<a class="reference internal" href="classes/ControlSource.html#Gst.ControlSource" title="Gst.ControlSource"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ControlSource</span></tt></a>) &#8211; the <a class="reference internal" href="classes/ControlSource.html#Gst.ControlSource" title="Gst.ControlSource"><tt class="xref py py-class docutils literal"><span class="pre">Gst.ControlSource</span></tt></a> instance</li>
+<li><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; timestamp for which a value should be calculated</li>
+<li><strong>interval</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the time spacing between subsequent values</li>
+<li><strong>n_values</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of values</li>
+<li><strong>values</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; array to put control-values in</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the values were successfully calculated.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function for returning an array of values for starting at a given timestamp.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.DebugFuncPtr">
+<tt class="descclassname">Gst.</tt><tt class="descname">DebugFuncPtr</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.DebugFuncPtr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Gst.IteratorCopyFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">IteratorCopyFunction</tt><big>(</big><em>it</em>, <em>copy</em><big>)</big><a class="headerlink" href="#Gst.IteratorCopyFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>it</strong> (<a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a>) &#8211; The original iterator</li>
+<li><strong>copy</strong> (<a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a>) &#8211; The copied iterator</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This function will be called when creating a copy of <cite>it</cite> and should
+create a copy of all custom iterator fields or increase their
+reference counts.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.IteratorFoldFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">IteratorFoldFunction</tt><big>(</big><em>item</em>, <em>ret</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.IteratorFoldFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>item</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; the item to fold</li>
+<li><strong>ret</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; a <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a> collecting the result</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data passed to <a class="reference internal" href="structs/Iterator.html#Gst.Iterator.fold" title="Gst.Iterator.fold"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator.fold</span></tt></a> ()</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the fold should continue, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if it should stop.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function to be passed to <a class="reference internal" href="structs/Iterator.html#Gst.Iterator.fold" title="Gst.Iterator.fold"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator.fold</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.IteratorForeachFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">IteratorForeachFunction</tt><big>(</big><em>item</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.IteratorForeachFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>item</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; The item</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that is called by <a class="reference internal" href="structs/Iterator.html#Gst.Iterator.foreach" title="Gst.Iterator.foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator.foreach</span></tt></a> () for every element.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.IteratorFreeFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">IteratorFreeFunction</tt><big>(</big><em>it</em><big>)</big><a class="headerlink" href="#Gst.IteratorFreeFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>it</strong> (<a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a>) &#8211; the iterator</td>
+</tr>
+</tbody>
+</table>
+<p>This function will be called when the iterator is freed.</p>
+<p>Implementors of a <a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a> should implement this
+function and pass it to the constructor of the custom iterator.
+The function will be called with the iterator lock held.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.IteratorItemFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">IteratorItemFunction</tt><big>(</big><em>it</em>, <em>item</em><big>)</big><a class="headerlink" href="#Gst.IteratorItemFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>it</strong> (<a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a>) &#8211; the iterator</li>
+<li><strong>item</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; the item being retrieved.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the result of the operation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.IteratorItem" title="Gst.IteratorItem"><tt class="xref py py-class docutils literal"><span class="pre">Gst.IteratorItem</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The function that will be called after the next item of the iterator
+has been retrieved. This function can be used to skip items or stop
+the iterator.</p>
+<p>The function will be called with the iterator lock held.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.IteratorNextFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">IteratorNextFunction</tt><big>(</big><em>it</em>, <em>result</em><big>)</big><a class="headerlink" href="#Gst.IteratorNextFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>it</strong> (<a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a>) &#8211; the iterator</li>
+<li><strong>result</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; a pointer to hold the next item</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the result of the operation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.IteratorResult" title="Gst.IteratorResult"><tt class="xref py py-class docutils literal"><span class="pre">Gst.IteratorResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The function that will be called when the next element of the iterator
+should be retrieved.</p>
+<p>Implementors of a <a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a> should implement this
+function and pass it to the constructor of the custom iterator.
+The function will be called with the iterator lock held.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.IteratorResyncFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">IteratorResyncFunction</tt><big>(</big><em>it</em><big>)</big><a class="headerlink" href="#Gst.IteratorResyncFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>it</strong> (<a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a>) &#8211; the iterator</td>
+</tr>
+</tbody>
+</table>
+<p>This function will be called whenever a concurrent update happened
+to the iterated datastructure. The implementor of the iterator should
+restart the iterator from the beginning and clean up any state it might
+have.</p>
+<p>Implementors of a <a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a> should implement this
+function and pass it to the constructor of the custom iterator.
+The function will be called with the iterator lock held.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.LogFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">LogFunction</tt><big>(</big><em>category</em>, <em>level</em>, <em>file</em>, <em>function</em>, <em>line</em>, <em>object</em>, <em>message</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.LogFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>category</strong> (<a class="reference internal" href="structs/DebugCategory.html#Gst.DebugCategory" title="Gst.DebugCategory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.DebugCategory</span></tt></a>) &#8211; a <a class="reference internal" href="structs/DebugCategory.html#Gst.DebugCategory" title="Gst.DebugCategory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.DebugCategory</span></tt></a></li>
+<li><strong>level</strong> (<a class="reference internal" href="enums.html#Gst.DebugLevel" title="Gst.DebugLevel"><tt class="xref py py-class docutils literal"><span class="pre">Gst.DebugLevel</span></tt></a>) &#8211; a <a class="reference internal" href="enums.html#Gst.DebugLevel" title="Gst.DebugLevel"><tt class="xref py py-class docutils literal"><span class="pre">Gst.DebugLevel</span></tt></a></li>
+<li><strong>file</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; file name</li>
+<li><strong>function</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; function name</li>
+<li><strong>line</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; line number</li>
+<li><strong>object</strong> (<a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>) &#8211; a <a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></li>
+<li><strong>message</strong> (<a class="reference internal" href="structs/DebugMessage.html#Gst.DebugMessage" title="Gst.DebugMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gst.DebugMessage</span></tt></a>) &#8211; the message</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data for the log function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function prototype for a logging function that can be registered with
+<a class="reference internal" href="functions.html#Gst.debug_add_log_function" title="Gst.debug_add_log_function"><tt class="xref py py-class docutils literal"><span class="pre">Gst.debug_add_log_function</span></tt></a> ().
+Use G_GNUC_NO_INSTRUMENT on that function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MemoryCopyFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MemoryCopyFunction</tt><big>(</big><em>mem</em>, <em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.MemoryCopyFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mem</strong> (<a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an offset</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a size or -1</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> object wrapping a copy of the requested region in <cite>mem</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Copy <cite>size</cite> bytes from <cite>mem</cite> starting at <cite>offset</cite> and return them wrapped in a
+new <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> object.
+If <cite>size</cite> is set to -1, all bytes starting at <cite>offset</cite> are copied.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MemoryIsSpanFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MemoryIsSpanFunction</tt><big>(</big><em>mem1</em>, <em>mem2</em>, <em>offset</em><big>)</big><a class="headerlink" href="#Gst.MemoryIsSpanFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mem1</strong> (<a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></li>
+<li><strong>mem2</strong> (<a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a result offset</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>mem1</cite> and <cite>mem2</cite> are in contiguous memory.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>mem1</cite> and <cite>mem2</cite> occupy contiguous memory and return the offset of
+<cite>mem1</cite> in the parent buffer in <cite>offset</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MemoryShareFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MemoryShareFunction</tt><big>(</big><em>mem</em>, <em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.MemoryShareFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mem</strong> (<a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an offset</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a size or -1</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> object sharing the requested region in <cite>mem</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Share <cite>size</cite> bytes from <cite>mem</cite> starting at <cite>offset</cite> and return them wrapped in a
+new <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> object. If <cite>size</cite> is set to -1, all bytes starting at <cite>offset</cite> are
+shared. This function does not make a copy of the bytes in <cite>mem</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MemoryUnmapFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MemoryUnmapFunction</tt><big>(</big><em>mem</em><big>)</big><a class="headerlink" href="#Gst.MemoryUnmapFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mem</strong> (<a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> on success.</td>
+</tr>
+</tbody>
+</table>
+<p>Return the pointer previously retrieved with <a class="reference internal" href="structs/Memory.html#Gst.Memory.map" title="Gst.Memory.map"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.map</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MetaFreeFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MetaFreeFunction</tt><big>(</big><em>meta</em>, <em>buffer</em><big>)</big><a class="headerlink" href="#Gst.MetaFreeFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>meta</strong> (<a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></li>
+<li><strong>buffer</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function called when <cite>meta</cite> is freed in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MetaInitFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MetaInitFunction</tt><big>(</big><em>meta</em>, <em>params</em>, <em>buffer</em><big>)</big><a class="headerlink" href="#Gst.MetaInitFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>meta</strong> (<a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></li>
+<li><strong>params</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; parameters passed to the init function</li>
+<li><strong>buffer</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function called when <cite>meta</cite> is initialized in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MetaTransformFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MetaTransformFunction</tt><big>(</big><em>transbuf</em>, <em>meta</em>, <em>buffer</em>, <em>type</em>, <em>data</em><big>)</big><a class="headerlink" href="#Gst.MetaTransformFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>transbuf</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></li>
+<li><strong>meta</strong> (<a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></li>
+<li><strong>buffer</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a <a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></li>
+<li><strong>type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the transform type</li>
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; transform specific data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the transform could be performed</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function called for each <cite>meta</cite> in <cite>buffer</cite> as a result of performing a
+transformation on <cite>transbuf</cite>. Additional <cite>type</cite> specific transform data
+is passed to the function as <cite>data</cite>.</p>
+<p>Implementations should check the <cite>type</cite> of the transform and parse
+additional type specific fields in <cite>data</cite> that should be used to update
+the metadata on <cite>transbuf</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MiniObjectDisposeFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MiniObjectDisposeFunction</tt><big>(</big><em>obj</em><big>)</big><a class="headerlink" href="#Gst.MiniObjectDisposeFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> (<a class="reference internal" href="structs/MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a>) &#8211; MiniObject to dispose</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the object should be cleaned up.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Function prototype for when a miniobject has lost its last refcount.
+Implementation of the mini object are allowed to revive the
+passed object by doing a <tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject.ref</span></tt> (). If the object is not
+revived after the dispose function, the function should return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> 
+and the memory associated with the object is freed.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MiniObjectFreeFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">MiniObjectFreeFunction</tt><big>(</big><em>obj</em><big>)</big><a class="headerlink" href="#Gst.MiniObjectFreeFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> (<a class="reference internal" href="structs/MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a>) &#8211; MiniObject to free</td>
+</tr>
+</tbody>
+</table>
+<p>Virtual function prototype for methods to free ressources used by
+mini-objects.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.MiniObjectNotify">
+<tt class="descclassname">Gst.</tt><tt class="descname">MiniObjectNotify</tt><big>(</big><em>user_data</em>, <em>obj</em><big>)</big><a class="headerlink" href="#Gst.MiniObjectNotify" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data that was provided when the notify was added</li>
+<li><strong>obj</strong> (<a class="reference internal" href="structs/MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a>) &#8211; the mini object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A <a class="reference internal" href="#Gst.MiniObjectNotify" title="Gst.MiniObjectNotify"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObjectNotify</span></tt></a> function can be added to a mini object as a
+callback that gets triggered when <a class="reference internal" href="structs/MiniObject.html#Gst.MiniObject.unref" title="Gst.MiniObject.unref"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject.unref</span></tt></a> () drops the
+last ref and <cite>obj</cite> is about to be freed.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadActivateFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadActivateFunction</tt><big>(</big><em>pad</em>, <em>parent</em><big>)</big><a class="headerlink" href="#Gst.PadActivateFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; a <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a></li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the pad could be activated.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This function is called when the pad is activated during the element
+READY to PAUSED state change. By default this function will call the
+activate function that puts the pad in push mode but elements can
+override this function to activate the pad in pull mode if they wish.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadActivateModeFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadActivateModeFunction</tt><big>(</big><em>pad</em>, <em>parent</em>, <em>mode</em>, <em>active</em><big>)</big><a class="headerlink" href="#Gst.PadActivateModeFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; a <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a></li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite></li>
+<li><strong>mode</strong> (<a class="reference internal" href="enums.html#Gst.PadMode" title="Gst.PadMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode</span></tt></a>) &#8211; the requested activation mode of <cite>pad</cite></li>
+<li><strong>active</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; activate or deactivate the pad.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the pad could be activated or deactivated.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The prototype of the push and pull activate functions.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadChainFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadChainFunction</tt><big>(</big><em>pad</em>, <em>parent</em>, <em>buffer</em><big>)</big><a class="headerlink" href="#Gst.PadChainFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the sink <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> that performed the chain.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+<li><strong>buffer</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; the <a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> that is chained, not <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#Gst.FlowReturn.OK" title="Gst.FlowReturn.OK"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn.OK</span></tt></a> for success</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.FlowReturn" title="Gst.FlowReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called on sinkpads when chaining buffers.
+The function typically processes the data contained in the buffer and
+either consumes the data or passes it on to the internally linked pad(s).</p>
+<p>The implementer of this function receives a refcount to <cite>buffer</cite> and should
+gst_buffer_unref() when the buffer is no longer needed.</p>
+<p>When a chain function detects an error in the data stream, it must post an
+error on the bus and return an appropriate <a class="reference internal" href="enums.html#Gst.FlowReturn" title="Gst.FlowReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn</span></tt></a> value.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadChainListFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadChainListFunction</tt><big>(</big><em>pad</em>, <em>parent</em>, <em>list</em><big>)</big><a class="headerlink" href="#Gst.PadChainListFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the sink <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> that performed the chain.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+<li><strong>list</strong> (<a class="reference internal" href="structs/BufferList.html#Gst.BufferList" title="Gst.BufferList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferList</span></tt></a>) &#8211; the <a class="reference internal" href="structs/BufferList.html#Gst.BufferList" title="Gst.BufferList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferList</span></tt></a> that is chained, not <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#Gst.FlowReturn.OK" title="Gst.FlowReturn.OK"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn.OK</span></tt></a> for success</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.FlowReturn" title="Gst.FlowReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called on sinkpads when chaining buffer lists.
+The function typically processes the data contained in the buffer list and
+either consumes the data or passes it on to the internally linked pad(s).</p>
+<p>The implementer of this function receives a refcount to <cite>list</cite> and
+should gst_buffer_list_unref() when the list is no longer needed.</p>
+<p>When a chainlist function detects an error in the data stream, it must
+post an error on the bus and return an appropriate <a class="reference internal" href="enums.html#Gst.FlowReturn" title="Gst.FlowReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn</span></tt></a> value.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadEventFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadEventFunction</tt><big>(</big><em>pad</em>, <em>parent</em>, <em>event</em><big>)</big><a class="headerlink" href="#Gst.PadEventFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> to handle the event.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+<li><strong>event</strong> (<a class="reference internal" href="structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>) &#8211; the <a class="reference internal" href="structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a> to handle.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the pad could handle the event.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function signature to handle an event for the pad.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadForwardFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadForwardFunction</tt><big>(</big><em>pad</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.PadForwardFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> that is forwarded.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> to optional user data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the dispatching procedure has to be stopped.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A forward function is called for all internally linked pads, see
+<a class="reference internal" href="classes/Pad.html#Gst.Pad.forward" title="Gst.Pad.forward"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.forward</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadGetRangeFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadGetRangeFunction</tt><big>(</big><em>pad</em>, <em>parent</em>, <em>offset</em>, <em>length</em>, <em>buffer</em><big>)</big><a class="headerlink" href="#Gst.PadGetRangeFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the src <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> to perform the getrange on.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset of the range</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the length of the range</li>
+<li><strong>buffer</strong> (<a class="reference internal" href="structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a memory location to hold the result buffer, cannot be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#Gst.FlowReturn.OK" title="Gst.FlowReturn.OK"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn.OK</span></tt></a> for success and a valid buffer in <cite>buffer</cite>. Any other return value leaves <cite>buffer</cite> undefined.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.FlowReturn" title="Gst.FlowReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This function will be called on source pads when a peer element
+request a buffer at the specified <cite>offset</cite> and <cite>length</cite>. If this function
+returns <a class="reference internal" href="enums.html#Gst.FlowReturn.OK" title="Gst.FlowReturn.OK"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn.OK</span></tt></a>, the result buffer will be stored in <cite>buffer</cite>. The
+contents of <cite>buffer</cite> is invalid for any other return value.</p>
+<p>This function is installed on a source pad with
+gst_pad_set_getrange_function() and can only be called on source pads after
+they are successfully activated with <a class="reference internal" href="classes/Pad.html#Gst.Pad.activate_mode" title="Gst.Pad.activate_mode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.activate_mode</span></tt></a> () with the
+<a class="reference internal" href="enums.html#Gst.PadMode.PULL" title="Gst.PadMode.PULL"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode.PULL</span></tt></a>.</p>
+<p><cite>offset</cite> and <cite>length</cite> are always given in byte units. <cite>offset</cite> must normally be a value
+between 0 and the length in bytes of the data available on <cite>pad</cite>. The
+length (duration in bytes) can be retrieved with a <a class="reference internal" href="enums.html#Gst.QueryType.DURATION" title="Gst.QueryType.DURATION"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType.DURATION</span></tt></a> or with a
+<a class="reference internal" href="enums.html#Gst.QueryType.SEEKING" title="Gst.QueryType.SEEKING"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType.SEEKING</span></tt></a>.</p>
+<p>Any <cite>offset</cite> larger or equal than the length will make the function return
+<a class="reference internal" href="enums.html#Gst.FlowReturn.EOS" title="Gst.FlowReturn.EOS"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn.EOS</span></tt></a>, which corresponds to EOS. In this case <cite>buffer</cite> does not
+contain a valid buffer.</p>
+<p>The buffer size of <cite>buffer</cite> will only be smaller than <cite>length</cite> when <cite>offset</cite> is
+near the end of the stream. In all other cases, the size of <cite>buffer</cite> must be
+exactly the requested size.</p>
+<p>It is allowed to call this function with a 0 <cite>length</cite> and valid <cite>offset</cite>, in
+which case <cite>buffer</cite> will contain a 0-sized buffer and the function returns
+<a class="reference internal" href="enums.html#Gst.FlowReturn.OK" title="Gst.FlowReturn.OK"><tt class="xref py py-class docutils literal"><span class="pre">Gst.FlowReturn.OK</span></tt></a>.</p>
+<p>When this function is called with a -1 <cite>offset</cite>, the sequentially next buffer
+of length <cite>length</cite> in the stream is returned.</p>
+<p>When this function is called with a -1 <cite>length</cite>, a buffer with a default
+optimal length is returned in <cite>buffer</cite>. The length might depend on the value
+of <cite>offset</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadIterIntLinkFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadIterIntLinkFunction</tt><big>(</big><em>pad</em>, <em>parent</em><big>)</big><a class="headerlink" href="#Gst.PadIterIntLinkFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; The <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> to query.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a> that will iterate over all pads that are linked to the given pad on the inside of the parent element.  the caller must call <tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator.free</span></tt> () after usage.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="structs/Iterator.html#Gst.Iterator" title="Gst.Iterator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Iterator</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The signature of the internal pad link iterator function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadLinkFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadLinkFunction</tt><big>(</big><em>pad</em>, <em>parent</em>, <em>peer</em><big>)</big><a class="headerlink" href="#Gst.PadLinkFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> that is linked.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+<li><strong>peer</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the peer <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> of the link</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the result of the link with the specified peer.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.PadLinkReturn" title="Gst.PadLinkReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadLinkReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function signature to handle a new link on the pad.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadProbeCallback">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadProbeCallback</tt><big>(</big><em>pad</em>, <em>info</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.PadProbeCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> that is blocked</li>
+<li><strong>info</strong> (<a class="reference internal" href="structs/PadProbeInfo.html#Gst.PadProbeInfo" title="Gst.PadProbeInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadProbeInfo</span></tt></a>) &#8211; <a class="reference internal" href="structs/PadProbeInfo.html#Gst.PadProbeInfo" title="Gst.PadProbeInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadProbeInfo</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> to optional user data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="enums.html#Gst.PadProbeReturn" title="Gst.PadProbeReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadProbeReturn</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#Gst.PadProbeReturn" title="Gst.PadProbeReturn"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadProbeReturn</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Callback used by <a class="reference internal" href="classes/Pad.html#Gst.Pad.add_probe" title="Gst.Pad.add_probe"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.add_probe</span></tt></a> (). Gets called to notify about the current
+blocking type.</p>
+<p>The callback is allowed to modify the data pointer in <cite>info</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadQueryFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadQueryFunction</tt><big>(</big><em>pad</em>, <em>parent</em>, <em>query</em><big>)</big><a class="headerlink" href="#Gst.PadQueryFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> to query.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+<li><strong>query</strong> (<a class="reference internal" href="structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a>) &#8211; the <a class="reference internal" href="structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a> object to execute</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the query could be performed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The signature of the query function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadStickyEventsForeachFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadStickyEventsForeachFunction</tt><big>(</big><em>pad</em>, <em>event</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.PadStickyEventsForeachFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>.</li>
+<li><strong>event</strong> (<a class="reference internal" href="structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>) &#8211; a sticky <a class="reference internal" href="structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> to optional user data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the iteration should continue</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Callback used by <a class="reference internal" href="classes/Pad.html#Gst.Pad.sticky_events_foreach" title="Gst.Pad.sticky_events_foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.sticky_events_foreach</span></tt></a> ().</p>
+<p>When this function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, the next event will be
+returned. When <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> is returned, <a class="reference internal" href="classes/Pad.html#Gst.Pad.sticky_events_foreach" title="Gst.Pad.sticky_events_foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.sticky_events_foreach</span></tt></a> () will return.</p>
+<p>When <cite>event</cite> is set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, the item will be removed from the list of sticky events.
+<cite>event</cite> can be replaced by assigning a new reference to it.
+This function is responsible for unreffing the old event when
+removing or modifying.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PadUnlinkFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">PadUnlinkFunction</tt><big>(</big><em>pad</em>, <em>parent</em><big>)</big><a class="headerlink" href="#Gst.PadUnlinkFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pad</strong> (<a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> that is linked.</li>
+<li><strong>parent</strong> (<a class="reference internal" href="classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; the parent of <cite>pad</cite>. If the <a class="reference internal" href="flags.html#Gst.PadFlags.NEED_PARENT" title="Gst.PadFlags.NEED_PARENT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadFlags.NEED_PARENT</span></tt></a> flag is set, <cite>parent</cite> is guaranteed to be not-NULL and remain valid during the execution of this function.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function signature to handle a unlinking the pad prom its peer.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PluginFeatureFilter">
+<tt class="descclassname">Gst.</tt><tt class="descname">PluginFeatureFilter</tt><big>(</big><em>feature</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.PluginFeatureFilter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>feature</strong> (<a class="reference internal" href="classes/PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>) &#8211; the pluginfeature to check</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the user_data that has been passed on e.g. <a class="reference internal" href="classes/Registry.html#Gst.Registry.feature_filter" title="Gst.Registry.feature_filter"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry.feature_filter</span></tt></a> ()</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for a positive match, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that can be used with e.g. <a class="reference internal" href="classes/Registry.html#Gst.Registry.feature_filter" title="Gst.Registry.feature_filter"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry.feature_filter</span></tt></a> ()
+to get a list of pluginfeature that match certain criteria.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PluginFilter">
+<tt class="descclassname">Gst.</tt><tt class="descname">PluginFilter</tt><big>(</big><em>plugin</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.PluginFilter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>plugin</strong> (<a class="reference internal" href="classes/Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>) &#8211; the plugin to check</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the user_data that has been passed on e.g. <a class="reference internal" href="classes/Registry.html#Gst.Registry.plugin_filter" title="Gst.Registry.plugin_filter"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry.plugin_filter</span></tt></a> ()</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for a positive match, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that can be used with e.g. <a class="reference internal" href="classes/Registry.html#Gst.Registry.plugin_filter" title="Gst.Registry.plugin_filter"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Registry.plugin_filter</span></tt></a> ()
+to get a list of plugins that match certain criteria.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PluginInitFullFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">PluginInitFullFunc</tt><big>(</big><em>plugin</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.PluginInitFullFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>plugin</strong> (<a class="reference internal" href="classes/Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>) &#8211; The plugin object</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; extra data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if plugin initialised successfully</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A plugin should provide a pointer to a function of either <a class="reference internal" href="#Gst.PluginInitFunc" title="Gst.PluginInitFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginInitFunc</span></tt></a> 
+or this type in the plugin_desc struct.
+The function will be called by the loader at startup. One would then
+register each <a class="reference internal" href="classes/PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>. This version allows
+user data to be passed to init function (useful for bindings).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.PluginInitFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">PluginInitFunc</tt><big>(</big><em>plugin</em><big>)</big><a class="headerlink" href="#Gst.PluginInitFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>plugin</strong> (<a class="reference internal" href="classes/Plugin.html#Gst.Plugin" title="Gst.Plugin"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Plugin</span></tt></a>) &#8211; The plugin object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if plugin initialised successfully</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>A plugin should provide a pointer to a function of this type in the
+plugin_desc struct.
+This function will be called by the loader at startup. One would then
+register each <a class="reference internal" href="classes/PluginFeature.html#Gst.PluginFeature" title="Gst.PluginFeature"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PluginFeature</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.StructureForeachFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">StructureForeachFunc</tt><big>(</big><em>field_id</em>, <em>value</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.StructureForeachFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>field_id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the <tt class="xref py py-class docutils literal"><span class="pre">GLib.Quark</span></tt> of the field name</li>
+<li><strong>value</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; the <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a> of the field</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the foreach operation should continue, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the foreach operation should stop with <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called in <a class="reference internal" href="structs/Structure.html#Gst.Structure.foreach" title="Gst.Structure.foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure.foreach</span></tt></a> (). The function may
+not modify <cite>value</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.StructureMapFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">StructureMapFunc</tt><big>(</big><em>field_id</em>, <em>value</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.StructureMapFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>field_id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the <tt class="xref py py-class docutils literal"><span class="pre">GLib.Quark</span></tt> of the field name</li>
+<li><strong>value</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; the <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a> of the field</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the map operation should continue, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the map operation should stop with <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called in <a class="reference internal" href="structs/Structure.html#Gst.Structure.map_in_place" title="Gst.Structure.map_in_place"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure.map_in_place</span></tt></a> (). The function
+may modify <cite>value</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.TagForeachFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">TagForeachFunc</tt><big>(</big><em>list</em>, <em>tag</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.TagForeachFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>list</strong> (<a class="reference internal" href="structs/TagList.html#Gst.TagList" title="Gst.TagList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagList</span></tt></a>) &#8211; the <a class="reference internal" href="structs/TagList.html#Gst.TagList" title="Gst.TagList"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagList</span></tt></a></li>
+<li><strong>tag</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a name of a tag in <cite>list</cite></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called in <a class="reference internal" href="structs/TagList.html#Gst.TagList.foreach" title="Gst.TagList.foreach"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TagList.foreach</span></tt></a> (). The function may
+not modify the tag list.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.TagMergeFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">TagMergeFunc</tt><big>(</big><em>dest</em>, <em>src</em><big>)</big><a class="headerlink" href="#Gst.TagMergeFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>dest</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; the destination <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a></li>
+<li><strong>src</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; the source <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function for merging multiple values of a tag used when registering
+tags.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.TaskFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">TaskFunction</tt><big>(</big><em>user_data</em><big>)</big><a class="headerlink" href="#Gst.TaskFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to the function</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will repeatedly be called in the thread created by
+a <a class="reference internal" href="classes/Task.html#Gst.Task" title="Gst.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Task</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.TaskPoolFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">TaskPoolFunction</tt><big>(</big><em>user_data</em><big>)</big><a class="headerlink" href="#Gst.TaskPoolFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data for the task function</td>
+</tr>
+</tbody>
+</table>
+<p>Task function, see <a class="reference internal" href="classes/TaskPool.html#Gst.TaskPool.push" title="Gst.TaskPool.push"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TaskPool.push</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.TaskThreadFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">TaskThreadFunc</tt><big>(</big><em>task</em>, <em>thread</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.TaskThreadFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>task</strong> (<a class="reference internal" href="classes/Task.html#Gst.Task" title="Gst.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Task</span></tt></a>) &#8211; The <a class="reference internal" href="classes/Task.html#Gst.Task" title="Gst.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Task</span></tt></a></li>
+<li><strong>thread</strong> (<a class="reference internal" href="../GLib_2.0/structs/Thread.html#GLib.Thread" title="GLib.Thread"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Thread</span></tt></a>) &#8211; The <a class="reference internal" href="../GLib_2.0/structs/Thread.html#GLib.Thread" title="GLib.Thread"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Thread</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Custom <a class="reference internal" href="classes/Task.html#Gst.Task" title="Gst.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Task</span></tt></a> thread callback functions that can be installed.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.TypeFindFunction">
+<tt class="descclassname">Gst.</tt><tt class="descname">TypeFindFunction</tt><big>(</big><em>find</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gst.TypeFindFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>find</strong> (<a class="reference internal" href="structs/TypeFind.html#Gst.TypeFind" title="Gst.TypeFind"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TypeFind</span></tt></a>) &#8211; A <a class="reference internal" href="structs/TypeFind.html#Gst.TypeFind" title="Gst.TypeFind"><tt class="xref py py-class docutils literal"><span class="pre">Gst.TypeFind</span></tt></a> structure</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; optionnal data to pass to the function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A function that will be called by typefinding.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.ValueCompareFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">ValueCompareFunc</tt><big>(</big><em>value1</em>, <em>value2</em><big>)</big><a class="headerlink" href="#Gst.ValueCompareFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value1</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; first value for comparison</li>
+<li><strong>value2</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; second value for comparison</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">one of <a class="reference internal" href="constants.html#Gst.VALUE_LESS_THAN" title="Gst.VALUE_LESS_THAN"><tt class="xref py py-class docutils literal"><span class="pre">Gst.VALUE_LESS_THAN</span></tt></a>, <a class="reference internal" href="constants.html#Gst.VALUE_EQUAL" title="Gst.VALUE_EQUAL"><tt class="xref py py-class docutils literal"><span class="pre">Gst.VALUE_EQUAL</span></tt></a>, <a class="reference internal" href="constants.html#Gst.VALUE_GREATER_THAN" title="Gst.VALUE_GREATER_THAN"><tt class="xref py py-class docutils literal"><span class="pre">Gst.VALUE_GREATER_THAN</span></tt></a> or <a class="reference internal" href="constants.html#Gst.VALUE_UNORDERED" title="Gst.VALUE_UNORDERED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.VALUE_UNORDERED</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Used together with <a class="reference internal" href="functions.html#Gst.value_compare" title="Gst.value_compare"><tt class="xref py py-class docutils literal"><span class="pre">Gst.value_compare</span></tt></a> () to compare <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a> items.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.ValueDeserializeFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">ValueDeserializeFunc</tt><big>(</big><em>dest</em>, <em>s</em><big>)</big><a class="headerlink" href="#Gst.ValueDeserializeFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dest</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; a <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a></li>
+<li><strong>s</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Used by <a class="reference internal" href="functions.html#Gst.value_deserialize" title="Gst.value_deserialize"><tt class="xref py py-class docutils literal"><span class="pre">Gst.value_deserialize</span></tt></a> () to parse a non-binary form into the <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gst.ValueSerializeFunc">
+<tt class="descclassname">Gst.</tt><tt class="descname">ValueSerializeFunc</tt><big>(</big><em>value1</em><big>)</big><a class="headerlink" href="#Gst.ValueSerializeFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value1</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; a <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the string representation of the value</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Used by <a class="reference internal" href="functions.html#Gst.value_serialize" title="Gst.value_serialize"><tt class="xref py py-class docutils literal"><span class="pre">Gst.value_serialize</span></tt></a> () to obtain a non-binary form of the <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>.</p>
+<p>Free-function: <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="interfaces/index.html" class="btn btn-neutral float-right" title="Interfaces"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="functions.html" class="btn btn-neutral" title="Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

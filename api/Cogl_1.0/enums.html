@@ -1,0 +1,1285 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      Cogl 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Cogl 1.0" href="index.html"/>
+        <link rel="next" title="Constants" href="constants.html"/>
+        <link rel="prev" title="Flags" href="flags.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Cogl 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Cogl 1.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Cogl_1.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#Cogl.AttributeType" title="Cogl.AttributeType"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.AttributeType</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.BitmapError" title="Cogl.BitmapError"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.BitmapError</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.BlendStringError" title="Cogl.BlendStringError"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.BlendStringError</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.DepthTestFunction" title="Cogl.DepthTestFunction"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.DepthTestFunction</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.FilterReturn" title="Cogl.FilterReturn"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.FilterReturn</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.FogMode" title="Cogl.FogMode"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.FogMode</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.IndicesType" title="Cogl.IndicesType"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.IndicesType</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.MaterialAlphaFunc" title="Cogl.MaterialAlphaFunc"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialAlphaFunc</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.MaterialFilter" title="Cogl.MaterialFilter"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialFilter</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.MaterialLayerType" title="Cogl.MaterialLayerType"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialLayerType</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.MaterialWrapMode" title="Cogl.MaterialWrapMode"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialWrapMode</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.PathFillRule" title="Cogl.PathFillRule"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.PathFillRule</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.PixelFormat" title="Cogl.PixelFormat"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.PixelFormat</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.RendererError" title="Cogl.RendererError"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.RendererError</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.ShaderType" title="Cogl.ShaderType"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.ShaderType</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.SystemError" title="Cogl.SystemError"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.SystemError</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.TextureError" title="Cogl.TextureError"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.TextureError</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.TextureType" title="Cogl.TextureType"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.TextureType</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.VerticesMode" title="Cogl.VerticesMode"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.VerticesMode</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.Winding" title="Cogl.Winding"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Winding</span></tt></a></li>
+<li><a class="reference internal" href="#Cogl.WinsysFeature" title="Cogl.WinsysFeature"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.WinsysFeature</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="attributetype">
+<h2>AttributeType<a class="headerlink" href="#attributetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.AttributeType">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">AttributeType</tt><a class="headerlink" href="#Cogl.AttributeType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Data types for the components of a vertex attribute.</p>
+<dl class="attribute">
+<dt id="Cogl.AttributeType.BYTE">
+<tt class="descname">BYTE</tt><em class="property"> = 5120</em><a class="headerlink" href="#Cogl.AttributeType.BYTE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data is the same size of a byte</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.AttributeType.UNSIGNED_BYTE">
+<tt class="descname">UNSIGNED_BYTE</tt><em class="property"> = 5121</em><a class="headerlink" href="#Cogl.AttributeType.UNSIGNED_BYTE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data is the same size of an unsigned byte</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.AttributeType.SHORT">
+<tt class="descname">SHORT</tt><em class="property"> = 5122</em><a class="headerlink" href="#Cogl.AttributeType.SHORT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data is the same size of a short integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.AttributeType.UNSIGNED_SHORT">
+<tt class="descname">UNSIGNED_SHORT</tt><em class="property"> = 5123</em><a class="headerlink" href="#Cogl.AttributeType.UNSIGNED_SHORT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data is the same size of an unsigned short integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.AttributeType.FLOAT">
+<tt class="descname">FLOAT</tt><em class="property"> = 5126</em><a class="headerlink" href="#Cogl.AttributeType.FLOAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data is the same size of a float</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="bitmaperror">
+<h2>BitmapError<a class="headerlink" href="#bitmaperror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.BitmapError">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">BitmapError</tt><a class="headerlink" href="#Cogl.BitmapError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error codes that can be thrown when performing bitmap
+operations. Note that gdk_pixbuf_new_from_file() can also throw
+errors directly from the underlying image loading library. For
+example, if GdkPixbuf is used then errors #GdkPixbufError s
+will be used directly.</p>
+<dl class="attribute">
+<dt id="Cogl.BitmapError.FAILED">
+<tt class="descname">FAILED</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.BitmapError.FAILED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic failure code, something went wrong.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.BitmapError.UNKNOWN_TYPE">
+<tt class="descname">UNKNOWN_TYPE</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.BitmapError.UNKNOWN_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unknown image type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.BitmapError.CORRUPT_IMAGE">
+<tt class="descname">CORRUPT_IMAGE</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.BitmapError.CORRUPT_IMAGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>An image file was broken somehow.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="blendstringerror">
+<h2>BlendStringError<a class="headerlink" href="#blendstringerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.BlendStringError">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">BlendStringError</tt><a class="headerlink" href="#Cogl.BlendStringError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error enumeration for the blend strings parser</p>
+<dl class="attribute">
+<dt id="Cogl.BlendStringError.PARSE_ERROR">
+<tt class="descname">PARSE_ERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.BlendStringError.PARSE_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic parse error</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.BlendStringError.ARGUMENT_PARSE_ERROR">
+<tt class="descname">ARGUMENT_PARSE_ERROR</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.BlendStringError.ARGUMENT_PARSE_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Argument parse error</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.BlendStringError.INVALID_ERROR">
+<tt class="descname">INVALID_ERROR</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.BlendStringError.INVALID_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal parser error</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.BlendStringError.GPU_UNSUPPORTED_ERROR">
+<tt class="descname">GPU_UNSUPPORTED_ERROR</tt><em class="property"> = 3</em><a class="headerlink" href="#Cogl.BlendStringError.GPU_UNSUPPORTED_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blend string not supported by the GPU</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="depthtestfunction">
+<h2>DepthTestFunction<a class="headerlink" href="#depthtestfunction" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.DepthTestFunction">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">DepthTestFunction</tt><a class="headerlink" href="#Cogl.DepthTestFunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>When using depth testing one of these functions is used to compare
+the depth of an incoming fragment against the depth value currently
+stored in the depth buffer. The function is changed using
+cogl_depth_state_set_test_function().</p>
+<p>The test is only done when depth testing is explicitly enabled. (See
+cogl_depth_state_set_test_enabled())</p>
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.NEVER">
+<tt class="descname">NEVER</tt><em class="property"> = 512</em><a class="headerlink" href="#Cogl.DepthTestFunction.NEVER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Never passes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.LESS">
+<tt class="descname">LESS</tt><em class="property"> = 513</em><a class="headerlink" href="#Cogl.DepthTestFunction.LESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Passes if the fragment&#8217;s depth value is less than the value currently in the depth buffer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.EQUAL">
+<tt class="descname">EQUAL</tt><em class="property"> = 514</em><a class="headerlink" href="#Cogl.DepthTestFunction.EQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Passes if the fragment&#8217;s depth value is equal to the value currently in the depth buffer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.LEQUAL">
+<tt class="descname">LEQUAL</tt><em class="property"> = 515</em><a class="headerlink" href="#Cogl.DepthTestFunction.LEQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Passes if the fragment&#8217;s depth value is less or equal to the value currently in the depth buffer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.GREATER">
+<tt class="descname">GREATER</tt><em class="property"> = 516</em><a class="headerlink" href="#Cogl.DepthTestFunction.GREATER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Passes if the fragment&#8217;s depth value is greater than the value currently in the depth buffer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.NOTEQUAL">
+<tt class="descname">NOTEQUAL</tt><em class="property"> = 517</em><a class="headerlink" href="#Cogl.DepthTestFunction.NOTEQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Passes if the fragment&#8217;s depth value is not equal to the value currently in the depth buffer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.GEQUAL">
+<tt class="descname">GEQUAL</tt><em class="property"> = 518</em><a class="headerlink" href="#Cogl.DepthTestFunction.GEQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Passes if the fragment&#8217;s depth value greater than or equal to the value currently in the depth buffer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.DepthTestFunction.ALWAYS">
+<tt class="descname">ALWAYS</tt><em class="property"> = 519</em><a class="headerlink" href="#Cogl.DepthTestFunction.ALWAYS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always passes.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="filterreturn">
+<h2>FilterReturn<a class="headerlink" href="#filterreturn" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.FilterReturn">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">FilterReturn</tt><a class="headerlink" href="#Cogl.FilterReturn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Return values for the <tt class="xref py py-class docutils literal"><span class="pre">Cogl.XlibFilterFunc</span></tt> and #CoglWin32FilterFunc functions.</p>
+<dl class="attribute">
+<dt id="Cogl.FilterReturn.CONTINUE">
+<tt class="descname">CONTINUE</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.FilterReturn.CONTINUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.FilterReturn.REMOVE">
+<tt class="descname">REMOVE</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.FilterReturn.REMOVE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the event, stops the processing</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="fogmode">
+<h2>FogMode<a class="headerlink" href="#fogmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.FogMode">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">FogMode</tt><a class="headerlink" href="#Cogl.FogMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The fog mode determines the equation used to calculate the fogging blend
+factor while fogging is enabled. The simplest <a class="reference internal" href="#Cogl.FogMode.LINEAR" title="Cogl.FogMode.LINEAR"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.FogMode.LINEAR</span></tt></a> mode
+determines f as:</p>
+<p><tt class="docutils literal"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">end</span> <span class="pre">-</span> <span class="pre">eye_distance</span> <span class="pre">/</span> <span class="pre">end</span> <span class="pre">-</span> <span class="pre">start</span></tt></p>
+<p>Where eye_distance is the distance of the current fragment in eye
+coordinates from the origin.</p>
+<dl class="attribute">
+<dt id="Cogl.FogMode.LINEAR">
+<tt class="descname">LINEAR</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.FogMode.LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the fog blend factor as: <tt class="docutils literal"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">end</span> <span class="pre">-</span> <span class="pre">eye_distance</span> <span class="pre">/</span> <span class="pre">end</span> <span class="pre">-</span> <span class="pre">start</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.FogMode.EXPONENTIAL">
+<tt class="descname">EXPONENTIAL</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.FogMode.EXPONENTIAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the fog blend factor as: <tt class="docutils literal"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">e</span> <span class="pre">^</span> <span class="pre">-(density</span> <span class="pre">*</span> <span class="pre">eye_distance)</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.FogMode.EXPONENTIAL_SQUARED">
+<tt class="descname">EXPONENTIAL_SQUARED</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.FogMode.EXPONENTIAL_SQUARED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the fog blend factor as: <tt class="docutils literal"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">e</span> <span class="pre">^</span> <span class="pre">-(density</span> <span class="pre">*</span> <span class="pre">eye_distance)^2</span></tt></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="indicestype">
+<h2>IndicesType<a class="headerlink" href="#indicestype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.IndicesType">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">IndicesType</tt><a class="headerlink" href="#Cogl.IndicesType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>You should aim to use the smallest data type that gives you enough
+range, since it reduces the size of your index array and can help
+reduce the demand on memory bandwidth.</p>
+<p>Note that <a class="reference internal" href="#Cogl.IndicesType.INT" title="Cogl.IndicesType.INT"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.IndicesType.INT</span></tt></a> is only supported if the
+%COGL_FEATURE_ID_UNSIGNED_INT_INDICES feature is available. This
+should always be available on OpenGL but on OpenGL ES it will only
+be available if the GL_OES_element_index_uint extension is
+advertized.</p>
+<dl class="attribute">
+<dt id="Cogl.IndicesType.BYTE">
+<tt class="descname">BYTE</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.IndicesType.BYTE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your indices are unsigned bytes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.IndicesType.SHORT">
+<tt class="descname">SHORT</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.IndicesType.SHORT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your indices are unsigned shorts</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.IndicesType.INT">
+<tt class="descname">INT</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.IndicesType.INT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your indices are unsigned ints</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="materialalphafunc">
+<h2>MaterialAlphaFunc<a class="headerlink" href="#materialalphafunc" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.MaterialAlphaFunc">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">MaterialAlphaFunc</tt><a class="headerlink" href="#Cogl.MaterialAlphaFunc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Alpha testing happens before blending primitives with the framebuffer and
+gives an opportunity to discard fragments based on a comparison with the
+incoming alpha value and a reference alpha value. The <a class="reference internal" href="#Cogl.MaterialAlphaFunc" title="Cogl.MaterialAlphaFunc"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialAlphaFunc</span></tt></a> 
+determines how the comparison is done.</p>
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.NEVER">
+<tt class="descname">NEVER</tt><em class="property"> = 512</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.NEVER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Never let the fragment through.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.LESS">
+<tt class="descname">LESS</tt><em class="property"> = 513</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.LESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Let the fragment through if the incoming alpha value is less than the reference alpha value</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.EQUAL">
+<tt class="descname">EQUAL</tt><em class="property"> = 514</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.EQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Let the fragment through if the incoming alpha value equals the reference alpha value</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.LEQUAL">
+<tt class="descname">LEQUAL</tt><em class="property"> = 515</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.LEQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Let the fragment through if the incoming alpha value is less than or equal to the reference alpha value</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.GREATER">
+<tt class="descname">GREATER</tt><em class="property"> = 516</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.GREATER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Let the fragment through if the incoming alpha value is greater than the reference alpha value</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.NOTEQUAL">
+<tt class="descname">NOTEQUAL</tt><em class="property"> = 517</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.NOTEQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Let the fragment through if the incoming alpha value does not equal the reference alpha value</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.GEQUAL">
+<tt class="descname">GEQUAL</tt><em class="property"> = 518</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.GEQUAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Let the fragment through if the incoming alpha value is greater than or equal to the reference alpha value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialAlphaFunc.ALWAYS">
+<tt class="descname">ALWAYS</tt><em class="property"> = 519</em><a class="headerlink" href="#Cogl.MaterialAlphaFunc.ALWAYS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always let the fragment through.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="materialfilter">
+<h2>MaterialFilter<a class="headerlink" href="#materialfilter" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.MaterialFilter">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">MaterialFilter</tt><a class="headerlink" href="#Cogl.MaterialFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Texture filtering is used whenever the current pixel maps either to more
+than one texture element (texel) or less than one. These filter enums
+correspond to different strategies used to come up with a pixel color, by
+possibly referring to multiple neighbouring texels and taking a weighted
+average or simply using the nearest texel.</p>
+<dl class="attribute">
+<dt id="Cogl.MaterialFilter.NEAREST">
+<tt class="descname">NEAREST</tt><em class="property"> = 9728</em><a class="headerlink" href="#Cogl.MaterialFilter.NEAREST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Measuring in manhatten distance from the, current pixel center, use the nearest texture texel</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialFilter.LINEAR">
+<tt class="descname">LINEAR</tt><em class="property"> = 9729</em><a class="headerlink" href="#Cogl.MaterialFilter.LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the weighted average of the 4 texels nearest the current pixel center</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialFilter.NEAREST_MIPMAP_NEAREST">
+<tt class="descname">NEAREST_MIPMAP_NEAREST</tt><em class="property"> = 9984</em><a class="headerlink" href="#Cogl.MaterialFilter.NEAREST_MIPMAP_NEAREST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the mimap level whose texel size most closely matches the current pixel, and use the <a class="reference internal" href="#Cogl.MaterialFilter.NEAREST" title="Cogl.MaterialFilter.NEAREST"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialFilter.NEAREST</span></tt></a> criterion</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialFilter.LINEAR_MIPMAP_NEAREST">
+<tt class="descname">LINEAR_MIPMAP_NEAREST</tt><em class="property"> = 9985</em><a class="headerlink" href="#Cogl.MaterialFilter.LINEAR_MIPMAP_NEAREST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the mimap level whose texel size most closely matches the current pixel, and use the <a class="reference internal" href="#Cogl.MaterialFilter.LINEAR" title="Cogl.MaterialFilter.LINEAR"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialFilter.LINEAR</span></tt></a> criterion</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialFilter.NEAREST_MIPMAP_LINEAR">
+<tt class="descname">NEAREST_MIPMAP_LINEAR</tt><em class="property"> = 9986</em><a class="headerlink" href="#Cogl.MaterialFilter.NEAREST_MIPMAP_LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the two mimap levels whose texel size most closely matches the current pixel, use the <a class="reference internal" href="#Cogl.MaterialFilter.NEAREST" title="Cogl.MaterialFilter.NEAREST"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialFilter.NEAREST</span></tt></a> criterion on each one and take their weighted average</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialFilter.LINEAR_MIPMAP_LINEAR">
+<tt class="descname">LINEAR_MIPMAP_LINEAR</tt><em class="property"> = 9987</em><a class="headerlink" href="#Cogl.MaterialFilter.LINEAR_MIPMAP_LINEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the two mimap levels whose texel size most closely matches the current pixel, use the <a class="reference internal" href="#Cogl.MaterialFilter.LINEAR" title="Cogl.MaterialFilter.LINEAR"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialFilter.LINEAR</span></tt></a> criterion on each one and take their weighted average</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="materiallayertype">
+<h2>MaterialLayerType<a class="headerlink" href="#materiallayertype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.MaterialLayerType">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">MaterialLayerType</tt><a class="headerlink" href="#Cogl.MaterialLayerType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Available types of layers for a <a class="reference internal" href="structs/Material.html#Cogl.Material" title="Cogl.Material"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Material</span></tt></a>. This enumeration
+might be expanded in later versions.</p>
+<dl class="attribute">
+<dt id="Cogl.MaterialLayerType.TEXTURE">
+<tt class="descname">TEXTURE</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.MaterialLayerType.TEXTURE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The layer represents a texture</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="materialwrapmode">
+<h2>MaterialWrapMode<a class="headerlink" href="#materialwrapmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.MaterialWrapMode">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">MaterialWrapMode</tt><a class="headerlink" href="#Cogl.MaterialWrapMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The wrap mode specifies what happens when texture coordinates
+outside the range 0→1 are used. Note that if the filter mode is
+anything but <a class="reference internal" href="#Cogl.MaterialFilter.NEAREST" title="Cogl.MaterialFilter.NEAREST"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.MaterialFilter.NEAREST</span></tt></a> then texels outside the
+range 0→1 might be used even when the coordinate is exactly 0 or 1
+because OpenGL will try to sample neighbouring pixels. For example
+if you are trying to render the full texture then you may get
+artifacts around the edges when the pixels from the other side are
+merged in if the wrap mode is set to repeat.</p>
+<dl class="attribute">
+<dt id="Cogl.MaterialWrapMode.AUTOMATIC">
+<tt class="descname">AUTOMATIC</tt><em class="property"> = 519</em><a class="headerlink" href="#Cogl.MaterialWrapMode.AUTOMATIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cogl will try to automatically decide which of the above two to use. For <a class="reference internal" href="functions.html#Cogl.rectangle" title="Cogl.rectangle"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.rectangle</span></tt></a> (), it will use repeat mode if any of the texture coordinates are outside the range 0→1, otherwise it will use clamp to edge. For <a class="reference internal" href="functions.html#Cogl.polygon" title="Cogl.polygon"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.polygon</span></tt></a> () it will always use repeat mode. For <a class="reference internal" href="functions.html#Cogl.vertex_buffer_draw" title="Cogl.vertex_buffer_draw"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.vertex_buffer_draw</span></tt></a> () it will use repeat mode except for layers that have point sprite coordinate generation enabled. This is the default value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialWrapMode.REPEAT">
+<tt class="descname">REPEAT</tt><em class="property"> = 10497</em><a class="headerlink" href="#Cogl.MaterialWrapMode.REPEAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The texture will be repeated. This is useful for example to draw a tiled background.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.MaterialWrapMode.CLAMP_TO_EDGE">
+<tt class="descname">CLAMP_TO_EDGE</tt><em class="property"> = 33071</em><a class="headerlink" href="#Cogl.MaterialWrapMode.CLAMP_TO_EDGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The coordinates outside the range 0→1 will sample copies of the edge pixels of the texture. This is useful to avoid artifacts if only one copy of the texture is being rendered.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pathfillrule">
+<h2>PathFillRule<a class="headerlink" href="#pathfillrule" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.PathFillRule">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">PathFillRule</tt><a class="headerlink" href="#Cogl.PathFillRule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#Cogl.PathFillRule" title="Cogl.PathFillRule"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.PathFillRule</span></tt></a> is used to determine how a path is filled. There
+are two options - &#8216;non-zero&#8217; and &#8216;even-odd&#8217;. To work out whether any
+point will be filled imagine drawing an infinetely long line in any
+direction from that point. The number of times and the direction
+that the edges of the path crosses this line determines whether the
+line is filled as described below. Any open sub paths are treated
+as if there was an extra line joining the first point and the last
+point.</p>
+<p>The default fill rule when creating a path is <a class="reference internal" href="#Cogl.PathFillRule.EVEN_ODD" title="Cogl.PathFillRule.EVEN_ODD"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.PathFillRule.EVEN_ODD</span></tt></a>.</p>
+<p>Example of filling various paths using the non-zero rule</p>
+<p>Example of filling various paths using the even-odd rule</p>
+<dl class="attribute">
+<dt id="Cogl.PathFillRule.NON_ZERO">
+<tt class="descname">NON_ZERO</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.PathFillRule.NON_ZERO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Each time the line crosses an edge of the path from left to right one is added to a counter and each time it crosses from right to left the counter is decremented. If the counter is non-zero then the point will be filled. See .</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PathFillRule.EVEN_ODD">
+<tt class="descname">EVEN_ODD</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.PathFillRule.EVEN_ODD" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the line crosses an edge of the path an odd number of times then the point will filled, otherwise it won&#8217;t. See .</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pixelformat">
+<h2>PixelFormat<a class="headerlink" href="#pixelformat" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.PixelFormat">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">PixelFormat</tt><a class="headerlink" href="#Cogl.PixelFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Pixel formats used by Cogl. For the formats with a byte per
+component, the order of the components specify the order in
+increasing memory addresses. So for example
+<a class="reference internal" href="#Cogl.PixelFormat.RGB_888" title="Cogl.PixelFormat.RGB_888"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.PixelFormat.RGB_888</span></tt></a> would have the red component in the
+lowest address, green in the next address and blue after that
+regardless of the endianness of the system.</p>
+<p>For the formats with non byte aligned components the component
+order specifies the order within a 16-bit or 32-bit number from
+most significant bit to least significant. So for
+<a class="reference internal" href="#Cogl.PixelFormat.RGB_565" title="Cogl.PixelFormat.RGB_565"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.PixelFormat.RGB_565</span></tt></a>, the red component would be in bits
+11-15, the green component would be in 6-11 and the blue component
+would be in 1-5. Therefore the order in memory depends on the
+endianness of the system.</p>
+<p>When uploading a texture <a class="reference internal" href="#Cogl.PixelFormat.ANY" title="Cogl.PixelFormat.ANY"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.PixelFormat.ANY</span></tt></a> can be used as the
+internal format. Cogl will try to pick the best format to use
+internally and convert the texture data if necessary.</p>
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ANY">
+<tt class="descname">ANY</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.PixelFormat.ANY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Any format</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGB_888">
+<tt class="descname">RGB_888</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.PixelFormat.RGB_888" title="Permalink to this definition">¶</a></dt>
+<dd><p>RGB, 24 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGB_565">
+<tt class="descname">RGB_565</tt><em class="property"> = 4</em><a class="headerlink" href="#Cogl.PixelFormat.RGB_565" title="Permalink to this definition">¶</a></dt>
+<dd><p>RGB, 16 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.YUV">
+<tt class="descname">YUV</tt><em class="property"> = 7</em><a class="headerlink" href="#Cogl.PixelFormat.YUV" title="Permalink to this definition">¶</a></dt>
+<dd><p>Not currently supported</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.G_8">
+<tt class="descname">G_8</tt><em class="property"> = 8</em><a class="headerlink" href="#Cogl.PixelFormat.G_8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Single luminance component</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.A_8">
+<tt class="descname">A_8</tt><em class="property"> = 17</em><a class="headerlink" href="#Cogl.PixelFormat.A_8" title="Permalink to this definition">¶</a></dt>
+<dd><p>8 bits alpha mask</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_8888">
+<tt class="descname">RGBA_8888</tt><em class="property"> = 19</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_8888" title="Permalink to this definition">¶</a></dt>
+<dd><p>RGBA, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_4444">
+<tt class="descname">RGBA_4444</tt><em class="property"> = 21</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_4444" title="Permalink to this definition">¶</a></dt>
+<dd><p>RGBA, 16 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_5551">
+<tt class="descname">RGBA_5551</tt><em class="property"> = 22</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_5551" title="Permalink to this definition">¶</a></dt>
+<dd><p>RGBA, 16 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_1010102">
+<tt class="descname">RGBA_1010102</tt><em class="property"> = 29</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_1010102" title="Permalink to this definition">¶</a></dt>
+<dd><p>RGBA, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.BGR_888">
+<tt class="descname">BGR_888</tt><em class="property"> = 34</em><a class="headerlink" href="#Cogl.PixelFormat.BGR_888" title="Permalink to this definition">¶</a></dt>
+<dd><p>BGR, 24 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.BGRA_8888">
+<tt class="descname">BGRA_8888</tt><em class="property"> = 51</em><a class="headerlink" href="#Cogl.PixelFormat.BGRA_8888" title="Permalink to this definition">¶</a></dt>
+<dd><p>BGRA, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.BGRA_1010102">
+<tt class="descname">BGRA_1010102</tt><em class="property"> = 61</em><a class="headerlink" href="#Cogl.PixelFormat.BGRA_1010102" title="Permalink to this definition">¶</a></dt>
+<dd><p>BGRA, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ARGB_8888">
+<tt class="descname">ARGB_8888</tt><em class="property"> = 83</em><a class="headerlink" href="#Cogl.PixelFormat.ARGB_8888" title="Permalink to this definition">¶</a></dt>
+<dd><p>ARGB, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ARGB_2101010">
+<tt class="descname">ARGB_2101010</tt><em class="property"> = 93</em><a class="headerlink" href="#Cogl.PixelFormat.ARGB_2101010" title="Permalink to this definition">¶</a></dt>
+<dd><p>ARGB, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ABGR_8888">
+<tt class="descname">ABGR_8888</tt><em class="property"> = 115</em><a class="headerlink" href="#Cogl.PixelFormat.ABGR_8888" title="Permalink to this definition">¶</a></dt>
+<dd><p>ABGR, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ABGR_2101010">
+<tt class="descname">ABGR_2101010</tt><em class="property"> = 125</em><a class="headerlink" href="#Cogl.PixelFormat.ABGR_2101010" title="Permalink to this definition">¶</a></dt>
+<dd><p>ABGR, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_8888_PRE">
+<tt class="descname">RGBA_8888_PRE</tt><em class="property"> = 147</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_8888_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied RGBA, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_4444_PRE">
+<tt class="descname">RGBA_4444_PRE</tt><em class="property"> = 149</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_4444_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied RGBA, 16 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_5551_PRE">
+<tt class="descname">RGBA_5551_PRE</tt><em class="property"> = 150</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_5551_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied RGBA, 16 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.RGBA_1010102_PRE">
+<tt class="descname">RGBA_1010102_PRE</tt><em class="property"> = 157</em><a class="headerlink" href="#Cogl.PixelFormat.RGBA_1010102_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied RGBA, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.BGRA_8888_PRE">
+<tt class="descname">BGRA_8888_PRE</tt><em class="property"> = 179</em><a class="headerlink" href="#Cogl.PixelFormat.BGRA_8888_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied BGRA, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.BGRA_1010102_PRE">
+<tt class="descname">BGRA_1010102_PRE</tt><em class="property"> = 189</em><a class="headerlink" href="#Cogl.PixelFormat.BGRA_1010102_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied BGRA, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ARGB_8888_PRE">
+<tt class="descname">ARGB_8888_PRE</tt><em class="property"> = 211</em><a class="headerlink" href="#Cogl.PixelFormat.ARGB_8888_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied ARGB, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ARGB_2101010_PRE">
+<tt class="descname">ARGB_2101010_PRE</tt><em class="property"> = 221</em><a class="headerlink" href="#Cogl.PixelFormat.ARGB_2101010_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied ARGB, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ABGR_8888_PRE">
+<tt class="descname">ABGR_8888_PRE</tt><em class="property"> = 243</em><a class="headerlink" href="#Cogl.PixelFormat.ABGR_8888_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied ABGR, 32 bits</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.ABGR_2101010_PRE">
+<tt class="descname">ABGR_2101010_PRE</tt><em class="property"> = 253</em><a class="headerlink" href="#Cogl.PixelFormat.ABGR_2101010_PRE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Premultiplied ABGR, 32 bits, 10 bpc</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.DEPTH_32">
+<tt class="descname">DEPTH_32</tt><em class="property"> = 259</em><a class="headerlink" href="#Cogl.PixelFormat.DEPTH_32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.DEPTH_16">
+<tt class="descname">DEPTH_16</tt><em class="property"> = 265</em><a class="headerlink" href="#Cogl.PixelFormat.DEPTH_16" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.PixelFormat.DEPTH_24_STENCIL_8">
+<tt class="descname">DEPTH_24_STENCIL_8</tt><em class="property"> = 771</em><a class="headerlink" href="#Cogl.PixelFormat.DEPTH_24_STENCIL_8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="renderererror">
+<h2>RendererError<a class="headerlink" href="#renderererror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.RendererError">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">RendererError</tt><a class="headerlink" href="#Cogl.RendererError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="Cogl.RendererError.XLIB_DISPLAY_OPEN">
+<tt class="descname">XLIB_DISPLAY_OPEN</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.RendererError.XLIB_DISPLAY_OPEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.RendererError.BAD_CONSTRAINT">
+<tt class="descname">BAD_CONSTRAINT</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.RendererError.BAD_CONSTRAINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="shadertype">
+<h2>ShaderType<a class="headerlink" href="#shadertype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.ShaderType">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">ShaderType</tt><a class="headerlink" href="#Cogl.ShaderType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Types of shaders</p>
+<dl class="attribute">
+<dt id="Cogl.ShaderType.VERTEX">
+<tt class="descname">VERTEX</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.ShaderType.VERTEX" title="Permalink to this definition">¶</a></dt>
+<dd><p>A program for proccessing vertices</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.ShaderType.FRAGMENT">
+<tt class="descname">FRAGMENT</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.ShaderType.FRAGMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>A program for processing fragments</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="systemerror">
+<h2>SystemError<a class="headerlink" href="#systemerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.SystemError">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">SystemError</tt><a class="headerlink" href="#Cogl.SystemError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error enumeration for Cogl</p>
+<p>The <a class="reference internal" href="#Cogl.SystemError.COGL_SYSTEM_ERROR_UNSUPPORTED" title="Cogl.SystemError.COGL_SYSTEM_ERROR_UNSUPPORTED"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.SystemError.COGL_SYSTEM_ERROR_UNSUPPORTED</span></tt></a> error can be thrown for a
+variety of reasons. For example:</p>
+<ul class="simple">
+<li>You&#8217;ve tried to use a feature that is not   advertised by cogl_has_feature(). This could happen if you create   a 2d texture with a non-power-of-two size when   %COGL_FEATURE_ID_TEXTURE_NPOT is not advertised.</li>
+<li>The GPU can not handle the configuration you have   requested. An example might be if you try to use too many texture   layers in a single #CoglPipeline</li>
+<li>The driver does not support some   configuration.</li>
+</ul>
+<p>Currently this is only used by Cogl API marked as experimental so
+this enum should also be considered experimental.</p>
+<dl class="attribute">
+<dt id="Cogl.SystemError.COGL_SYSTEM_ERROR_UNSUPPORTED">
+<tt class="descname">COGL_SYSTEM_ERROR_UNSUPPORTED</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.SystemError.COGL_SYSTEM_ERROR_UNSUPPORTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>You tried to use a feature or configuration not currently available.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.SystemError.COGL_SYSTEM_ERROR_NO_MEMORY">
+<tt class="descname">COGL_SYSTEM_ERROR_NO_MEMORY</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.SystemError.COGL_SYSTEM_ERROR_NO_MEMORY" title="Permalink to this definition">¶</a></dt>
+<dd><p>You tried to allocate a resource such as a texture and there wasn&#8217;t enough memory.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="textureerror">
+<h2>TextureError<a class="headerlink" href="#textureerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.TextureError">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">TextureError</tt><a class="headerlink" href="#Cogl.TextureError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Error codes that can be thrown when allocating textures.</p>
+<dl class="attribute">
+<dt id="Cogl.TextureError.SIZE">
+<tt class="descname">SIZE</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.TextureError.SIZE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unsupported size</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.TextureError.FORMAT">
+<tt class="descname">FORMAT</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.TextureError.FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.TextureError.BAD_PARAMETER">
+<tt class="descname">BAD_PARAMETER</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.TextureError.BAD_PARAMETER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.TextureError.TYPE">
+<tt class="descname">TYPE</tt><em class="property"> = 3</em><a class="headerlink" href="#Cogl.TextureError.TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="texturetype">
+<h2>TextureType<a class="headerlink" href="#texturetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.TextureType">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">TextureType</tt><a class="headerlink" href="#Cogl.TextureType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Constants representing the underlying hardware texture type of a
+<a class="reference internal" href="structs/Texture.html#Cogl.Texture" title="Cogl.Texture"><tt class="xref py py-class docutils literal"><span class="pre">Cogl.Texture</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="Cogl.TextureType.2D">
+<tt class="descname">2D</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.TextureType.2D" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.TextureType.3D">
+<tt class="descname">3D</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.TextureType.3D" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.TextureType._2D">
+<tt class="descname">_2D</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.TextureType._2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>A #CoglTexture2D</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.TextureType._3D">
+<tt class="descname">_3D</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.TextureType._3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>A #CoglTexture3D</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.TextureType.RECTANGLE">
+<tt class="descname">RECTANGLE</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.TextureType.RECTANGLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A #CoglTextureRectangle</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="verticesmode">
+<h2>VerticesMode<a class="headerlink" href="#verticesmode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.VerticesMode">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">VerticesMode</tt><a class="headerlink" href="#Cogl.VerticesMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Different ways of interpreting vertices when drawing.</p>
+<dl class="attribute">
+<dt id="Cogl.VerticesMode.POINTS">
+<tt class="descname">POINTS</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.VerticesMode.POINTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>FIXME, equivalent to GL_POINTS</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.VerticesMode.LINES">
+<tt class="descname">LINES</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.VerticesMode.LINES" title="Permalink to this definition">¶</a></dt>
+<dd><p>FIXME, equivalent to GL_LINES</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.VerticesMode.LINE_LOOP">
+<tt class="descname">LINE_LOOP</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.VerticesMode.LINE_LOOP" title="Permalink to this definition">¶</a></dt>
+<dd><p>FIXME, equivalent to GL_LINE_LOOP</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.VerticesMode.LINE_STRIP">
+<tt class="descname">LINE_STRIP</tt><em class="property"> = 3</em><a class="headerlink" href="#Cogl.VerticesMode.LINE_STRIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>FIXME, equivalent to GL_LINE_STRIP</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.VerticesMode.TRIANGLES">
+<tt class="descname">TRIANGLES</tt><em class="property"> = 4</em><a class="headerlink" href="#Cogl.VerticesMode.TRIANGLES" title="Permalink to this definition">¶</a></dt>
+<dd><p>FIXME, equivalent to GL_TRIANGLES</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.VerticesMode.TRIANGLE_STRIP">
+<tt class="descname">TRIANGLE_STRIP</tt><em class="property"> = 5</em><a class="headerlink" href="#Cogl.VerticesMode.TRIANGLE_STRIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>FIXME, equivalent to GL_TRIANGLE_STRIP</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.VerticesMode.TRIANGLE_FAN">
+<tt class="descname">TRIANGLE_FAN</tt><em class="property"> = 6</em><a class="headerlink" href="#Cogl.VerticesMode.TRIANGLE_FAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>FIXME, equivalent to GL_TRIANGLE_FAN</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="winding">
+<h2>Winding<a class="headerlink" href="#winding" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.Winding">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">Winding</tt><a class="headerlink" href="#Cogl.Winding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Enum used to represent the two directions of rotation. This can be
+used to set the front face for culling by calling
+cogl_pipeline_set_front_face_winding().</p>
+<dl class="attribute">
+<dt id="Cogl.Winding.CLOCKWISE">
+<tt class="descname">CLOCKWISE</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.Winding.CLOCKWISE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vertices are in a clockwise order</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.Winding.COUNTER_CLOCKWISE">
+<tt class="descname">COUNTER_CLOCKWISE</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.Winding.COUNTER_CLOCKWISE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vertices are in a counter-clockwise order</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="winsysfeature">
+<h2>WinsysFeature<a class="headerlink" href="#winsysfeature" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Cogl.WinsysFeature">
+<em class="property">class </em><tt class="descclassname">Cogl.</tt><tt class="descname">WinsysFeature</tt><a class="headerlink" href="#Cogl.WinsysFeature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.MULTIPLE_ONSCREEN">
+<tt class="descname">MULTIPLE_ONSCREEN</tt><em class="property"> = 0</em><a class="headerlink" href="#Cogl.WinsysFeature.MULTIPLE_ONSCREEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.SWAP_THROTTLE">
+<tt class="descname">SWAP_THROTTLE</tt><em class="property"> = 1</em><a class="headerlink" href="#Cogl.WinsysFeature.SWAP_THROTTLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.VBLANK_COUNTER">
+<tt class="descname">VBLANK_COUNTER</tt><em class="property"> = 2</em><a class="headerlink" href="#Cogl.WinsysFeature.VBLANK_COUNTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.VBLANK_WAIT">
+<tt class="descname">VBLANK_WAIT</tt><em class="property"> = 3</em><a class="headerlink" href="#Cogl.WinsysFeature.VBLANK_WAIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.TEXTURE_FROM_PIXMAP">
+<tt class="descname">TEXTURE_FROM_PIXMAP</tt><em class="property"> = 4</em><a class="headerlink" href="#Cogl.WinsysFeature.TEXTURE_FROM_PIXMAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.SWAP_BUFFERS_EVENT">
+<tt class="descname">SWAP_BUFFERS_EVENT</tt><em class="property"> = 5</em><a class="headerlink" href="#Cogl.WinsysFeature.SWAP_BUFFERS_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.SWAP_REGION">
+<tt class="descname">SWAP_REGION</tt><em class="property"> = 6</em><a class="headerlink" href="#Cogl.WinsysFeature.SWAP_REGION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.SWAP_REGION_THROTTLE">
+<tt class="descname">SWAP_REGION_THROTTLE</tt><em class="property"> = 7</em><a class="headerlink" href="#Cogl.WinsysFeature.SWAP_REGION_THROTTLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.SWAP_REGION_SYNCHRONIZED">
+<tt class="descname">SWAP_REGION_SYNCHRONIZED</tt><em class="property"> = 8</em><a class="headerlink" href="#Cogl.WinsysFeature.SWAP_REGION_SYNCHRONIZED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.BUFFER_AGE">
+<tt class="descname">BUFFER_AGE</tt><em class="property"> = 9</em><a class="headerlink" href="#Cogl.WinsysFeature.BUFFER_AGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.SYNC_AND_COMPLETE_EVENT">
+<tt class="descname">SYNC_AND_COMPLETE_EVENT</tt><em class="property"> = 10</em><a class="headerlink" href="#Cogl.WinsysFeature.SYNC_AND_COMPLETE_EVENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Cogl.WinsysFeature.N_FEATURES">
+<tt class="descname">N_FEATURES</tt><em class="property"> = 11</em><a class="headerlink" href="#Cogl.WinsysFeature.N_FEATURES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="constants.html" class="btn btn-neutral float-right" title="Constants"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="flags.html" class="btn btn-neutral" title="Flags"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

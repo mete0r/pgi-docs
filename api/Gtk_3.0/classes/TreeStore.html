@@ -1,0 +1,862 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.TreeStore -
+    
+      Classes -
+    
+      Gtk 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gtk.TreeView" href="TreeView.html"/>
+        <link rel="prev" title="Gtk.TreeSelection" href="TreeSelection.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gtk 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gtk.TreeStore</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gtk.TreeStore</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gtk_3.0/classes/TreeStore" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gtk-treestore">
+<h1>Gtk.TreeStore<a class="headerlink" href="#gtk-treestore" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-68bcddd40b92bf2dbbf564b910af3dc8762b1d7e.png" alt="Inheritance diagram of Gtk.TreeStore" usemap="#inheritanceb910bb8051" class="inheritance"/>
+<map id="inheritanceb910bb8051" name="inheritanceb910bb8051">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="247,5,361,29"/>
+<area shape="rect" id="node2" href="../interfaces/Buildable.html#Gtk.Buildable" title="Gtk.Buildable" alt="" coords="5,77,91,101"/>
+<area shape="rect" id="node4" href="../interfaces/TreeDragDest.html#Gtk.TreeDragDest" title="Gtk.TreeDragDest" alt="" coords="115,77,221,101"/>
+<area shape="rect" id="node6" href="../interfaces/TreeDragSource.html#Gtk.TreeDragSource" title="Gtk.TreeDragSource" alt="" coords="245,77,363,101"/>
+<area shape="rect" id="node8" href="../interfaces/TreeModel.html#Gtk.TreeModel" title="Gtk.TreeModel" alt="" coords="387,77,477,101"/>
+<area shape="rect" id="node10" href="../interfaces/TreeSortable.html#Gtk.TreeSortable" title="Gtk.TreeSortable" alt="" coords="501,77,603,101"/>
+<area shape="rect" id="node13" href="#Gtk.TreeStore" title="Gtk.TreeStore" alt="" coords="324,149,412,173"/>
+<area shape="rect" id="node12" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="627,77,723,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.new" title="Gtk.TreeStore.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>(types)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.append" title="Gtk.TreeStore.append"><tt class="xref py py-obj docutils literal"><span class="pre">append</span></tt></a>(parent[, row])</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.clear" title="Gtk.TreeStore.clear"><tt class="xref py py-obj docutils literal"><span class="pre">clear</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.insert" title="Gtk.TreeStore.insert"><tt class="xref py py-obj docutils literal"><span class="pre">insert</span></tt></a>(parent, position[, row])</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.insert_after" title="Gtk.TreeStore.insert_after"><tt class="xref py py-obj docutils literal"><span class="pre">insert_after</span></tt></a>(parent, sibling[, row])</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.insert_before" title="Gtk.TreeStore.insert_before"><tt class="xref py py-obj docutils literal"><span class="pre">insert_before</span></tt></a>(parent, sibling[, row])</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.insert_with_values" title="Gtk.TreeStore.insert_with_values"><tt class="xref py py-obj docutils literal"><span class="pre">insert_with_values</span></tt></a>(parent, position, columns, values)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.is_ancestor" title="Gtk.TreeStore.is_ancestor"><tt class="xref py py-obj docutils literal"><span class="pre">is_ancestor</span></tt></a>(iter, descendant)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.iter_depth" title="Gtk.TreeStore.iter_depth"><tt class="xref py py-obj docutils literal"><span class="pre">iter_depth</span></tt></a>(iter)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.iter_is_valid" title="Gtk.TreeStore.iter_is_valid"><tt class="xref py py-obj docutils literal"><span class="pre">iter_is_valid</span></tt></a>(iter)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.move_after" title="Gtk.TreeStore.move_after"><tt class="xref py py-obj docutils literal"><span class="pre">move_after</span></tt></a>(iter, position)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.move_before" title="Gtk.TreeStore.move_before"><tt class="xref py py-obj docutils literal"><span class="pre">move_before</span></tt></a>(iter, position)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.prepend" title="Gtk.TreeStore.prepend"><tt class="xref py py-obj docutils literal"><span class="pre">prepend</span></tt></a>(parent[, row])</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.remove" title="Gtk.TreeStore.remove"><tt class="xref py py-obj docutils literal"><span class="pre">remove</span></tt></a>(iter)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.set" title="Gtk.TreeStore.set"><tt class="xref py py-obj docutils literal"><span class="pre">set</span></tt></a>(treeiter, *args)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.set_column_types" title="Gtk.TreeStore.set_column_types"><tt class="xref py py-obj docutils literal"><span class="pre">set_column_types</span></tt></a>(types)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.set_value" title="Gtk.TreeStore.set_value"><tt class="xref py py-obj docutils literal"><span class="pre">set_value</span></tt></a>(treeiter, column, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.TreeStore.swap" title="Gtk.TreeStore.swap"><tt class="xref py py-obj docutils literal"><span class="pre">swap</span></tt></a>(a, b)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-treestore-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gtk-treestore-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.TreeStore">
+<em class="property">class </em><tt class="descclassname">Gtk.</tt><tt class="descname">TreeStore</tt><big>(</big><em>*column_types</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>, <a class="reference internal" href="../interfaces/Buildable.html#Gtk.Buildable" title="Gtk.Buildable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Buildable</span></tt></a>, <a class="reference internal" href="../interfaces/TreeDragDest.html#Gtk.TreeDragDest" title="Gtk.TreeDragDest"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeDragDest</span></tt></a>, <a class="reference internal" href="../interfaces/TreeDragSource.html#Gtk.TreeDragSource" title="Gtk.TreeDragSource"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeDragSource</span></tt></a>, <a class="reference internal" href="../interfaces/TreeModel.html#Gtk.TreeModel" title="Gtk.TreeModel"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeModel</span></tt></a>, <a class="reference internal" href="../interfaces/TreeSortable.html#Gtk.TreeSortable" title="Gtk.TreeSortable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeSortable</span></tt></a></p>
+<p>The <a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a> object is a list model for use with a <a class="reference internal" href="TreeView.html#Gtk.TreeView" title="Gtk.TreeView"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeView</span></tt></a> 
+widget.  It implements the <a class="reference internal" href="../interfaces/TreeModel.html#Gtk.TreeModel" title="Gtk.TreeModel"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeModel</span></tt></a> interface, and consequentialy,
+can use all of the methods available there.  It also implements the
+<a class="reference internal" href="../interfaces/TreeSortable.html#Gtk.TreeSortable" title="Gtk.TreeSortable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeSortable</span></tt></a> interface so it can be sorted by the view.  Finally,
+it also implements the tree
+drag and drop
+interfaces.</p>
+<p><a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a> as <a class="reference internal" href="../interfaces/Buildable.html#Gtk.Buildable" title="Gtk.Buildable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Buildable</span></tt></a>
+The <a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a> implementation of the <a class="reference internal" href="../interfaces/Buildable.html#Gtk.Buildable" title="Gtk.Buildable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Buildable</span></tt></a> interface allows
+to specify the model columns with a &lt;columns&gt; element that may
+contain multiple &lt;column&gt; elements, each specifying one model
+column. The &#8220;type&#8221; attribute specifies the data type for the column.</p>
+<p>A UI Definition fragment for a tree store</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="o">&lt;</span><span class="n">object</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;GtkTreeStore&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">columns</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">column</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;gchararray&quot;</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">column</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;gchararray&quot;</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">column</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;gint&quot;</span> <span class="o">/&gt;</span>
+  <span class="o">&lt;/</span><span class="n">columns</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<dl class="staticmethod">
+<dt id="Gtk.TreeStore.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><em>types</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>types</strong> ([<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>]) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new tree store as with <cite>n_columns</cite> columns each of the types passed
+in.  Note that only types derived from standard <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a> fundamental types
+are supported.</p>
+<p>As an example, <tt class="docutils literal"><span class="pre">gtk_tree_store_new</span> <span class="pre">(3,</span> <span class="pre">G_TYPE_INT,</span> <span class="pre">G_TYPE_STRING,</span>
+<span class="pre">GDK_TYPE_PIXBUF);</span></tt> will create a new <a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a> with three columns, of type
+<tt class="docutils literal"><span class="pre">int</span></tt>, <tt class="docutils literal"><span class="pre">string</span></tt> and <a class="reference internal" href="../../GdkPixbuf_2.0/classes/Pixbuf.html#GdkPixbuf.Pixbuf" title="GdkPixbuf.Pixbuf"><tt class="xref py py-class docutils literal"><span class="pre">GdkPixbuf.Pixbuf</span></tt></a> respectively.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.append">
+<tt class="descname">append</tt><big>(</big><em>parent</em>, <em>row=None</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.append" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parent</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">iter: <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Appends a new row to <cite>tree_store</cite>.  If <cite>parent</cite> is non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then it will append the
+new row after the last child of <cite>parent</cite>, otherwise it will append a row to
+the top level.  <cite>iter</cite> will be changed to point to this new row.  The row will
+be empty after this function is called.  To fill in values, you need to call
+<a class="reference internal" href="#Gtk.TreeStore.set" title="Gtk.TreeStore.set"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set</span></tt></a> () or <a class="reference internal" href="#Gtk.TreeStore.set_value" title="Gtk.TreeStore.set_value"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set_value</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.clear">
+<tt class="descname">clear</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.TreeStore.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all rows from <cite>tree_store</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.insert">
+<tt class="descname">insert</tt><big>(</big><em>parent</em>, <em>position</em>, <em>row=None</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.insert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>parent</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>position</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position to insert the new row, or -1 for last</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">iter: <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new row at <cite>position</cite>.  If parent is non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then the row will be
+made a child of <cite>parent</cite>.  Otherwise, the row will be created at the toplevel.
+If <cite>position</cite> is -1 or is larger than the number of rows at that level, then
+the new row will be inserted to the end of the list.  <cite>iter</cite> will be changed
+to point to this new row.  The row will be empty after this function is
+called.  To fill in values, you need to call <a class="reference internal" href="#Gtk.TreeStore.set" title="Gtk.TreeStore.set"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set</span></tt></a> () or
+<a class="reference internal" href="#Gtk.TreeStore.set_value" title="Gtk.TreeStore.set_value"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set_value</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.insert_after">
+<tt class="descname">insert_after</tt><big>(</big><em>parent</em>, <em>sibling</em>, <em>row=None</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.insert_after" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>parent</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>sibling</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">iter: <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a new row after <cite>sibling</cite>.  If <cite>sibling</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then the row will be
+prepended to <cite>parent</cite> &#8216;s children.  If <cite>parent</cite> and <cite>sibling</cite> are <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then
+the row will be prepended to the toplevel.  If both <cite>sibling</cite> and <cite>parent</cite> are
+set, then <cite>parent</cite> must be the parent of <cite>sibling</cite>.  When <cite>sibling</cite> is set,
+<cite>parent</cite> is optional.</p>
+<p><cite>iter</cite> will be changed to point to this new row.  The row will be empty after
+this function is called.  To fill in values, you need to call
+<a class="reference internal" href="#Gtk.TreeStore.set" title="Gtk.TreeStore.set"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set</span></tt></a> () or <a class="reference internal" href="#Gtk.TreeStore.set_value" title="Gtk.TreeStore.set_value"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set_value</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.insert_before">
+<tt class="descname">insert_before</tt><big>(</big><em>parent</em>, <em>sibling</em>, <em>row=None</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.insert_before" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>parent</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>sibling</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">iter: <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a new row before <cite>sibling</cite>.  If <cite>sibling</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then the row will
+be appended to <cite>parent</cite> &#8216;s children.  If <cite>parent</cite> and <cite>sibling</cite> are <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then
+the row will be appended to the toplevel.  If both <cite>sibling</cite> and <cite>parent</cite> are
+set, then <cite>parent</cite> must be the parent of <cite>sibling</cite>.  When <cite>sibling</cite> is set,
+<cite>parent</cite> is optional.</p>
+<p><cite>iter</cite> will be changed to point to this new row.  The row will be empty after
+this function is called.  To fill in values, you need to call
+<a class="reference internal" href="#Gtk.TreeStore.set" title="Gtk.TreeStore.set"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set</span></tt></a> () or <a class="reference internal" href="#Gtk.TreeStore.set_value" title="Gtk.TreeStore.set_value"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set_value</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.insert_with_values">
+<tt class="descname">insert_with_values</tt><big>(</big><em>parent</em>, <em>position</em>, <em>columns</em>, <em>values</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.insert_with_values" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>parent</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>position</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position to insert the new row, or -1 to append after existing rows</li>
+<li><strong>columns</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; </li>
+<li><strong>values</strong> ([<a class="reference internal" href="../../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>]) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">iter: <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new row at <cite>position</cite>. <cite>iter</cite> will be changed to point to this
+new row. If <cite>position</cite> is -1, or larger than the number of rows on the list, then
+the new row will be appended to the list. The row will be filled with
+the values given to this function.</p>
+<p>Calling
+<tt class="docutils literal"><span class="pre">gtk_tree_store_insert_with_values</span> <span class="pre">(tree_store,</span> <span class="pre">iter,</span> <span class="pre">position,</span> <span class="pre">...)</span></tt>
+has the same effect as calling</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">gtk_tree_store_insert</span> <span class="p">(</span><span class="n">tree_store</span><span class="p">,</span> <span class="n">iter</span><span class="p">,</span> <span class="n">position</span><span class="p">);</span>
+<span class="n">gtk_tree_store_set</span> <span class="p">(</span><span class="n">tree_store</span><span class="p">,</span> <span class="n">iter</span><span class="p">,</span> <span class="p">...);</span>
+</pre></div>
+</div>
+<p>with the different that the former will only emit a row_inserted signal,
+while the latter will emit row_inserted, row_changed and if the tree store
+is sorted, rows_reordered.  Since emitting the rows_reordered signal
+repeatedly can affect the performance of the program,
+<a class="reference internal" href="#Gtk.TreeStore.insert_with_values" title="Gtk.TreeStore.insert_with_values"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.insert_with_values</span></tt></a> () should generally be preferred when
+inserting rows in a sorted tree store.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.is_ancestor">
+<tt class="descname">is_ancestor</tt><big>(</big><em>iter</em>, <em>descendant</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.is_ancestor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></li>
+<li><strong>descendant</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, if <cite>iter</cite> is an ancestor of <cite>descendant</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>iter</cite> is an ancestor of <cite>descendant</cite>.  That is, <cite>iter</cite> is the
+parent (or grandparent or great-grandparent) of <cite>descendant</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.iter_depth">
+<tt class="descname">iter_depth</tt><big>(</big><em>iter</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.iter_depth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The depth of <cite>iter</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the depth of <cite>iter</cite>.  This will be 0 for anything on the root level, 1
+for anything down a level, etc.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.iter_is_valid">
+<tt class="descname">iter_is_valid</tt><big>(</big><em>iter</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.iter_is_valid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the iter is valid, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the iter is invalid.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>WARNING: This function is slow. Only use it for debugging and/or testing
+purposes.</p>
+<p>Checks if the given iter is a valid iter for this <a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.move_after">
+<tt class="descname">move_after</tt><big>(</big><em>iter</em>, <em>position</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.move_after" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>.</li>
+<li><strong>position</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Moves <cite>iter</cite> in <cite>tree_store</cite> to the position after <cite>position</cite>. <cite>iter</cite> and
+<cite>position</cite> should be in the same level. Note that this function only
+works with unsorted stores. If <cite>position</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, <cite>iter</cite> will be moved
+to the start of the level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.move_before">
+<tt class="descname">move_before</tt><big>(</big><em>iter</em>, <em>position</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.move_before" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>.</li>
+<li><strong>position</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Moves <cite>iter</cite> in <cite>tree_store</cite> to the position before <cite>position</cite>. <cite>iter</cite> and
+<cite>position</cite> should be in the same level. Note that this function only
+works with unsorted stores. If <cite>position</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, <cite>iter</cite> will be
+moved to the end of the level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.prepend">
+<tt class="descname">prepend</tt><big>(</big><em>parent</em>, <em>row=None</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.prepend" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parent</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">iter: <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Prepends a new row to <cite>tree_store</cite>.  If <cite>parent</cite> is non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, then it will prepend
+the new row before the first child of <cite>parent</cite>, otherwise it will prepend a row
+to the top level.  <cite>iter</cite> will be changed to point to this new row.  The row
+will be empty after this function is called.  To fill in values, you need to
+call <a class="reference internal" href="#Gtk.TreeStore.set" title="Gtk.TreeStore.set"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set</span></tt></a> () or <a class="reference internal" href="#Gtk.TreeStore.set_value" title="Gtk.TreeStore.set_value"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore.set_value</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.remove">
+<tt class="descname">remove</tt><big>(</big><em>iter</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.remove" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>iter</cite> is still valid, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if not.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Removes <cite>iter</cite> from <cite>tree_store</cite>.  After being removed, <cite>iter</cite> is set to the
+next valid row at that level, or invalidated if it previously pointed to the
+last one.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.set">
+<tt class="descname">set</tt><big>(</big><em>treeiter</em>, <em>*args</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> for the row being modified</li>
+<li><strong>columns</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; </li>
+<li><strong>values</strong> ([<a class="reference internal" href="../../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>]) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the value of one or more cells in the row referenced by <cite>iter</cite>.
+The variable argument list should contain integer column numbers,
+each column number followed by the value to be set.
+The list is terminated by a -1. For example, to set column 0 with type
+<a class="reference internal" href="../../GObject_2.0/constants.html#GObject.TYPE_STRING" title="GObject.TYPE_STRING"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TYPE_STRING</span></tt></a> to &#8220;Foo&#8221;, you would write
+<tt class="docutils literal"><span class="pre">gtk_tree_store_set</span> <span class="pre">(store,</span> <span class="pre">iter,</span> <span class="pre">0,</span> <span class="pre">&quot;Foo&quot;,</span> <span class="pre">-1)</span></tt>.</p>
+<p>The value will be referenced by the store if it is a <a class="reference internal" href="../../GObject_2.0/constants.html#GObject.TYPE_OBJECT" title="GObject.TYPE_OBJECT"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TYPE_OBJECT</span></tt></a>, and it
+will be copied if it is a <a class="reference internal" href="../../GObject_2.0/constants.html#GObject.TYPE_STRING" title="GObject.TYPE_STRING"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TYPE_STRING</span></tt></a> or <a class="reference internal" href="../../GObject_2.0/constants.html#GObject.TYPE_BOXED" title="GObject.TYPE_BOXED"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TYPE_BOXED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.set_column_types">
+<tt class="descname">set_column_types</tt><big>(</big><em>types</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.set_column_types" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>types</strong> ([<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>]) &#8211; An array of <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> types, one for each column</td>
+</tr>
+</tbody>
+</table>
+<p>This function is meant primarily for <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Objects</span></tt></a> that inherit from
+<a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a>, and should only be used when constructing a new
+<a class="reference internal" href="#Gtk.TreeStore" title="Gtk.TreeStore"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeStore</span></tt></a>.  It will not function after a row has been added,
+or a method on the <a class="reference internal" href="../interfaces/TreeModel.html#Gtk.TreeModel" title="Gtk.TreeModel"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeModel</span></tt></a> interface is called.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.set_value">
+<tt class="descname">set_value</tt><big>(</big><em>treeiter</em>, <em>column</em>, <em>value</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.set_value" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>iter</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A valid <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a> for the row being modified</li>
+<li><strong>column</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; column number to modify</li>
+<li><strong>value</strong> (<a class="reference internal" href="../../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; new value for the cell</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the data in the cell specified by <cite>iter</cite> and <cite>column</cite>.
+The type of <cite>value</cite> must be convertible to the type of the
+column.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.TreeStore.swap">
+<tt class="descname">swap</tt><big>(</big><em>a</em>, <em>b</em><big>)</big><a class="headerlink" href="#Gtk.TreeStore.swap" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>a</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; A <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>.</li>
+<li><strong>b</strong> (<a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>) &#8211; Another <a class="reference internal" href="../structs/TreeIter.html#Gtk.TreeIter" title="Gtk.TreeIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TreeIter</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Swaps <cite>a</cite> and <cite>b</cite> in the same level of <cite>tree_store</cite>. Note that this function
+only works with unsorted stores.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="TreeView.html" class="btn btn-neutral float-right" title="Gtk.TreeView"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="TreeSelection.html" class="btn btn-neutral" title="Gtk.TreeSelection"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

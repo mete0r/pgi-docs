@@ -1,0 +1,972 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GData.Query -
+    
+      Classes -
+    
+      GData 0.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="GData.Service" href="Service.html"/>
+        <link rel="prev" title="GData.PicasaWebUser" href="PicasaWebUser.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GData 0.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GData.Query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GData 0.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">GData.Query</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GData_0.0/classes/Query" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gdata-query">
+<h1>GData.Query<a class="headerlink" href="#gdata-query" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-be698c80b9465a970f39a8bd6ace5a84699a6b9b.png" alt="Inheritance diagram of GData.Query" usemap="#inheritancee9ada0d375" class="inheritance"/>
+<map id="inheritancee9ada0d375" name="inheritancee9ada0d375">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="5,5,101,29"/>
+<area shape="rect" id="node2" href="#GData.Query" title="GData.Query" alt="" coords="12,77,95,101"/>
+</map>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="CalendarQuery.html#GData.CalendarQuery" title="GData.CalendarQuery"><tt class="xref py py-class docutils literal"><span class="pre">GData.CalendarQuery</span></tt></a>, <a class="reference internal" href="ContactsQuery.html#GData.ContactsQuery" title="GData.ContactsQuery"><tt class="xref py py-class docutils literal"><span class="pre">GData.ContactsQuery</span></tt></a>, <a class="reference internal" href="DocumentsQuery.html#GData.DocumentsQuery" title="GData.DocumentsQuery"><tt class="xref py py-class docutils literal"><span class="pre">GData.DocumentsQuery</span></tt></a>, <a class="reference internal" href="PicasaWebQuery.html#GData.PicasaWebQuery" title="GData.PicasaWebQuery"><tt class="xref py py-class docutils literal"><span class="pre">GData.PicasaWebQuery</span></tt></a>, <a class="reference internal" href="YouTubeQuery.html#GData.YouTubeQuery" title="GData.YouTubeQuery"><tt class="xref py py-class docutils literal"><span class="pre">GData.YouTubeQuery</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GData.Query.new" title="GData.Query.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>(q)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GData.Query.new_with_limits" title="GData.Query.new_with_limits"><tt class="xref py py-obj docutils literal"><span class="pre">new_with_limits</span></tt></a>(q, start_index, max_results)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_author" title="GData.Query.get_author"><tt class="xref py py-obj docutils literal"><span class="pre">get_author</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_categories" title="GData.Query.get_categories"><tt class="xref py py-obj docutils literal"><span class="pre">get_categories</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_etag" title="GData.Query.get_etag"><tt class="xref py py-obj docutils literal"><span class="pre">get_etag</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_max_results" title="GData.Query.get_max_results"><tt class="xref py py-obj docutils literal"><span class="pre">get_max_results</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_published_max" title="GData.Query.get_published_max"><tt class="xref py py-obj docutils literal"><span class="pre">get_published_max</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_published_min" title="GData.Query.get_published_min"><tt class="xref py py-obj docutils literal"><span class="pre">get_published_min</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_q" title="GData.Query.get_q"><tt class="xref py py-obj docutils literal"><span class="pre">get_q</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_query_uri" title="GData.Query.get_query_uri"><tt class="xref py py-obj docutils literal"><span class="pre">get_query_uri</span></tt></a>(feed_uri)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_start_index" title="GData.Query.get_start_index"><tt class="xref py py-obj docutils literal"><span class="pre">get_start_index</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_updated_max" title="GData.Query.get_updated_max"><tt class="xref py py-obj docutils literal"><span class="pre">get_updated_max</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.get_updated_min" title="GData.Query.get_updated_min"><tt class="xref py py-obj docutils literal"><span class="pre">get_updated_min</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.is_strict" title="GData.Query.is_strict"><tt class="xref py py-obj docutils literal"><span class="pre">is_strict</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.next_page" title="GData.Query.next_page"><tt class="xref py py-obj docutils literal"><span class="pre">next_page</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.previous_page" title="GData.Query.previous_page"><tt class="xref py py-obj docutils literal"><span class="pre">previous_page</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_author" title="GData.Query.set_author"><tt class="xref py py-obj docutils literal"><span class="pre">set_author</span></tt></a>(author)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_categories" title="GData.Query.set_categories"><tt class="xref py py-obj docutils literal"><span class="pre">set_categories</span></tt></a>(categories)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_etag" title="GData.Query.set_etag"><tt class="xref py py-obj docutils literal"><span class="pre">set_etag</span></tt></a>(etag)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_is_strict" title="GData.Query.set_is_strict"><tt class="xref py py-obj docutils literal"><span class="pre">set_is_strict</span></tt></a>(is_strict)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_max_results" title="GData.Query.set_max_results"><tt class="xref py py-obj docutils literal"><span class="pre">set_max_results</span></tt></a>(max_results)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_published_max" title="GData.Query.set_published_max"><tt class="xref py py-obj docutils literal"><span class="pre">set_published_max</span></tt></a>(published_max)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_published_min" title="GData.Query.set_published_min"><tt class="xref py py-obj docutils literal"><span class="pre">set_published_min</span></tt></a>(published_min)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_q" title="GData.Query.set_q"><tt class="xref py py-obj docutils literal"><span class="pre">set_q</span></tt></a>(q)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_start_index" title="GData.Query.set_start_index"><tt class="xref py py-obj docutils literal"><span class="pre">set_start_index</span></tt></a>(start_index)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_updated_max" title="GData.Query.set_updated_max"><tt class="xref py py-obj docutils literal"><span class="pre">set_updated_max</span></tt></a>(updated_max)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.Query.set_updated_min" title="GData.Query.set_updated_min"><tt class="xref py py-obj docutils literal"><span class="pre">set_updated_min</span></tt></a>(updated_min)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gdata-query-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="author">author</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Author search string.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="categories">categories</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Category search string.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="etag">etag</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>An ETag against which to check.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="is-strict">is-strict</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Should the server be strict about the query?</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="max-results">max-results</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>The maximum number of entries to return.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="published-max">published-max</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Maximum date for returned entries to be published.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="published-min">published-min</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Minimum date for returned entries to be published.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="q">q</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Query terms for which to search.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="start-index">start-index</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>One-based result start index.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="updated-max">updated-max</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Maximum date for updates on returned entries.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="updated-min">updated-min</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Minimum date for updates on returned entries.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gdata-query-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.Query">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">Query</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#GData.Query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<p>All the fields in the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> structure are private and should never be accessed directly.</p>
+<dl class="staticmethod">
+<dt id="GData.Query.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><em>q</em><big>)</big><a class="headerlink" href="#GData.Query.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>q</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a query string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> with its <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#q"><em>:q</em></a> property set to <cite>q</cite>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GData.Query.new_with_limits">
+<em class="property">static </em><tt class="descname">new_with_limits</tt><big>(</big><em>q</em>, <em>start_index</em>, <em>max_results</em><big>)</big><a class="headerlink" href="#GData.Query.new_with_limits" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>q</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a query string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>start_index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a one-based start index for the results, or 0</li>
+<li><strong>max_results</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the maximum number of results to return, or 0</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> with its <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#q"><em>:q</em></a> property set to <cite>q</cite>, and the limits <cite>start_index</cite> and <cite>max_results</cite>
+applied.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_author">
+<tt class="descname">get_author</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_author" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the author property, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if it is unset</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="../../Poppler_0.18/classes/Document.html#author"><em>:author</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_categories">
+<tt class="descname">get_categories</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_categories" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the categories property, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if it is unset</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#categories"><em>:categories</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_etag">
+<tt class="descname">get_etag</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_etag" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the ETag property, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if it is unset</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#etag"><em>:etag</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_max_results">
+<tt class="descname">get_max_results</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_max_results" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the maximum results property, or 0 if it is unset</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#max-results"><em>:max-results</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_published_max">
+<tt class="descname">get_published_max</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_published_max" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the published-max property, or -1</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#published-max"><em>:published-max</em></a> property. If the property is unset, -1 will be returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_published_min">
+<tt class="descname">get_published_min</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_published_min" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the published-min property, or -1</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#published-min"><em>:published-min</em></a> property. If the property is unset, -1 will be returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_q">
+<tt class="descname">get_q</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_q" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the q property, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if it is unset</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#q"><em>:q</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_query_uri">
+<tt class="descname">get_query_uri</tt><big>(</big><em>feed_uri</em><big>)</big><a class="headerlink" href="#GData.Query.get_query_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>feed_uri</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the feed URI on which to build the query URI</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a query URI; free with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ()</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Builds a query URI from the given base feed URI, using the properties of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a>. This function will take care
+of all necessary URI escaping, so it should not be done beforehand.</p>
+<p>The query URI is what functions like <a class="reference internal" href="Service.html#GData.Service.query" title="GData.Service.query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service.query</span></tt></a> () use to query the online service.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_start_index">
+<tt class="descname">get_start_index</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_start_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the start index property, or 0 if it is unset</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#start-index"><em>:start-index</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_updated_max">
+<tt class="descname">get_updated_max</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_updated_max" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the updated-max property, or -1</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#updated-max"><em>:updated-max</em></a> property. If the property is unset, -1 will be returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.get_updated_min">
+<tt class="descname">get_updated_min</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.get_updated_min" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the updated-min property, or -1</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#updated-min"><em>:updated-min</em></a> property. If the property is unset, -1 will be returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.is_strict">
+<tt class="descname">is_strict</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.is_strict" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the strict property</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#is-strict"><em>:is-strict</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.next_page">
+<tt class="descname">next_page</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.next_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the state of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> such that when <a class="reference internal" href="#GData.Query.get_query_uri" title="GData.Query.get_query_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query.get_query_uri</span></tt></a> () is next called, it will build the
+query URI for the next page in the result set.</p>
+<p>Ideally, the URI of the next page is retrieved from a feed automatically when <a class="reference internal" href="Service.html#GData.Service.query" title="GData.Service.query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service.query</span></tt></a> () is called, but
+<a class="reference internal" href="#GData.Query.next_page" title="GData.Query.next_page"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query.next_page</span></tt></a> () will fall back to using <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#start-index"><em>:start-index</em></a> to emulate true pagination if this fails.</p>
+<p>You should not implement pagination manually using <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#start-index"><em>:start-index</em></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.previous_page">
+<tt class="descname">previous_page</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.Query.previous_page" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if there is a previous page and it has been switched to, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Changes the state of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> such that when <a class="reference internal" href="#GData.Query.get_query_uri" title="GData.Query.get_query_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query.get_query_uri</span></tt></a> () is next called, it will build the
+query URI for the previous page in the result set.</p>
+<p>See the documentation for <a class="reference internal" href="#GData.Query.next_page" title="GData.Query.next_page"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query.next_page</span></tt></a> () for an explanation of how query URIs from the feeds are used to this end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_author">
+<tt class="descname">set_author</tt><big>(</big><em>author</em><big>)</big><a class="headerlink" href="#GData.Query.set_author" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>author</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the new author string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="../../Poppler_0.18/classes/Document.html#author"><em>:author</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new author string, <cite>author</cite>.</p>
+<p>Set <cite>author</cite> to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_categories">
+<tt class="descname">set_categories</tt><big>(</big><em>categories</em><big>)</big><a class="headerlink" href="#GData.Query.set_categories" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>categories</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the new category string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#categories"><em>:categories</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new category string, <cite>categories</cite>.</p>
+<p>Set <cite>categories</cite> to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_etag">
+<tt class="descname">set_etag</tt><big>(</big><em>etag</em><big>)</big><a class="headerlink" href="#GData.Query.set_etag" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>etag</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the new ETag, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#etag"><em>:etag</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new ETag, <cite>etag</cite>.</p>
+<p>Set <cite>etag</cite> to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to not check against the server-side ETag.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_is_strict">
+<tt class="descname">set_is_strict</tt><big>(</big><em>is_strict</em><big>)</big><a class="headerlink" href="#GData.Query.set_is_strict" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>is_strict</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new strict value</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#is-strict"><em>:is-strict</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new strict value, <cite>is_strict</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_max_results">
+<tt class="descname">set_max_results</tt><big>(</big><em>max_results</em><big>)</big><a class="headerlink" href="#GData.Query.set_max_results" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>max_results</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new maximum results value, or 0</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#max-results"><em>:max-results</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new maximum results value, <cite>max_results</cite>.</p>
+<p>Set <cite>max_results</cite> to 0 to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_published_max">
+<tt class="descname">set_published_max</tt><big>(</big><em>published_max</em><big>)</big><a class="headerlink" href="#GData.Query.set_published_max" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>published_max</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new maximum publish time, or -1</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#published-max"><em>:published-max</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new maximum publish time, <cite>published_max</cite>.</p>
+<p>Set <cite>published_max</cite> to -1 to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_published_min">
+<tt class="descname">set_published_min</tt><big>(</big><em>published_min</em><big>)</big><a class="headerlink" href="#GData.Query.set_published_min" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>published_min</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new minimum publish time, or -1</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#published-min"><em>:published-min</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new minimum publish time, <cite>published_min</cite>.</p>
+<p>Set <cite>published_min</cite> to -1 to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_q">
+<tt class="descname">set_q</tt><big>(</big><em>q</em><big>)</big><a class="headerlink" href="#GData.Query.set_q" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>q</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a new query string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#q"><em>:q</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new query string, <cite>q</cite>.</p>
+<p>Set <cite>q</cite> to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_start_index">
+<tt class="descname">set_start_index</tt><big>(</big><em>start_index</em><big>)</big><a class="headerlink" href="#GData.Query.set_start_index" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>start_index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new start index, or 0</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#start-index"><em>:start-index</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new one-based start index, <cite>start_index</cite>.</p>
+<p>Set <cite>start_index</cite> to 0 to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_updated_max">
+<tt class="descname">set_updated_max</tt><big>(</big><em>updated_max</em><big>)</big><a class="headerlink" href="#GData.Query.set_updated_max" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>updated_max</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new maximum update time, or -1</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#updated-max"><em>:updated-max</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new maximum update time, <cite>updated_max</cite>.</p>
+<p>Set <cite>updated_max</cite> to -1 to unset the property in the query URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.Query.set_updated_min">
+<tt class="descname">set_updated_min</tt><big>(</big><em>updated_min</em><big>)</big><a class="headerlink" href="#GData.Query.set_updated_min" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>updated_min</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new minimum update time, or -1</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> <a class="reference internal" href="#updated-min"><em>:updated-min</em></a> property of the <a class="reference internal" href="#GData.Query" title="GData.Query"><tt class="xref py py-class docutils literal"><span class="pre">GData.Query</span></tt></a> to the new minimum update time, <cite>updated_min</cite>.</p>
+<p>Set <cite>updated_min</cite> to -1 to unset the property in the query URI.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Service.html" class="btn btn-neutral float-right" title="GData.Service"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="PicasaWebUser.html" class="btn btn-neutral" title="GData.PicasaWebUser"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

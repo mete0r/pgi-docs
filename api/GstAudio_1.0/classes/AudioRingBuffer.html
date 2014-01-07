@@ -1,0 +1,1099 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstAudio.AudioRingBuffer -
+    
+      Classes -
+    
+      GstAudio 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="GstAudio.AudioSink" href="AudioSink.html"/>
+        <link rel="prev" title="GstAudio.AudioFilter" href="AudioFilter.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GstAudio 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GstAudio.AudioRingBuffer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GstAudio 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">GstAudio.AudioRingBuffer</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstAudio_1.0/classes/AudioRingBuffer" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gstaudio-audioringbuffer">
+<h1>GstAudio.AudioRingBuffer<a class="headerlink" href="#gstaudio-audioringbuffer" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-4dcdbd786117354b89398d1b1f93a2131496bfdd.png" alt="Inheritance diagram of GstAudio.AudioRingBuffer" usemap="#inheritance72cc93666e" class="inheritance"/>
+<map id="inheritance72cc93666e" name="inheritance72cc93666e">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="29,5,125,29"/>
+<area shape="rect" id="node2" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="5,77,149,101"/>
+<area shape="rect" id="node4" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object" alt="" coords="41,149,113,173"/>
+<area shape="rect" id="node6" href="#GstAudio.AudioRingBuffer" title="GstAudio.AudioRingBuffer" alt="" coords="5,221,149,245"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.debug_spec_buff" title="GstAudio.AudioRingBuffer.debug_spec_buff"><tt class="xref py py-obj docutils literal"><span class="pre">debug_spec_buff</span></tt></a>(spec)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.debug_spec_caps" title="GstAudio.AudioRingBuffer.debug_spec_caps"><tt class="xref py py-obj docutils literal"><span class="pre">debug_spec_caps</span></tt></a>(spec)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.parse_caps" title="GstAudio.AudioRingBuffer.parse_caps"><tt class="xref py py-obj docutils literal"><span class="pre">parse_caps</span></tt></a>(spec, caps)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.acquire" title="GstAudio.AudioRingBuffer.acquire"><tt class="xref py py-obj docutils literal"><span class="pre">acquire</span></tt></a>(spec)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.activate" title="GstAudio.AudioRingBuffer.activate"><tt class="xref py py-obj docutils literal"><span class="pre">activate</span></tt></a>(active)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.advance" title="GstAudio.AudioRingBuffer.advance"><tt class="xref py py-obj docutils literal"><span class="pre">advance</span></tt></a>(advance)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.clear" title="GstAudio.AudioRingBuffer.clear"><tt class="xref py py-obj docutils literal"><span class="pre">clear</span></tt></a>(segment)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.clear_all" title="GstAudio.AudioRingBuffer.clear_all"><tt class="xref py py-obj docutils literal"><span class="pre">clear_all</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.close_device" title="GstAudio.AudioRingBuffer.close_device"><tt class="xref py py-obj docutils literal"><span class="pre">close_device</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.commit" title="GstAudio.AudioRingBuffer.commit"><tt class="xref py py-obj docutils literal"><span class="pre">commit</span></tt></a>(sample, data, in_samples, out_samples, accum)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.convert" title="GstAudio.AudioRingBuffer.convert"><tt class="xref py py-obj docutils literal"><span class="pre">convert</span></tt></a>(src_fmt, src_val, dest_fmt, dest_val)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.delay" title="GstAudio.AudioRingBuffer.delay"><tt class="xref py py-obj docutils literal"><span class="pre">delay</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.device_is_open" title="GstAudio.AudioRingBuffer.device_is_open"><tt class="xref py py-obj docutils literal"><span class="pre">device_is_open</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.is_acquired" title="GstAudio.AudioRingBuffer.is_acquired"><tt class="xref py py-obj docutils literal"><span class="pre">is_acquired</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.is_active" title="GstAudio.AudioRingBuffer.is_active"><tt class="xref py py-obj docutils literal"><span class="pre">is_active</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.is_flushing" title="GstAudio.AudioRingBuffer.is_flushing"><tt class="xref py py-obj docutils literal"><span class="pre">is_flushing</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.may_start" title="GstAudio.AudioRingBuffer.may_start"><tt class="xref py py-obj docutils literal"><span class="pre">may_start</span></tt></a>(allowed)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.open_device" title="GstAudio.AudioRingBuffer.open_device"><tt class="xref py py-obj docutils literal"><span class="pre">open_device</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.pause" title="GstAudio.AudioRingBuffer.pause"><tt class="xref py py-obj docutils literal"><span class="pre">pause</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.prepare_read" title="GstAudio.AudioRingBuffer.prepare_read"><tt class="xref py py-obj docutils literal"><span class="pre">prepare_read</span></tt></a>(segment, readptr, len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.read" title="GstAudio.AudioRingBuffer.read"><tt class="xref py py-obj docutils literal"><span class="pre">read</span></tt></a>(sample, data, len, timestamp)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.release" title="GstAudio.AudioRingBuffer.release"><tt class="xref py py-obj docutils literal"><span class="pre">release</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.samples_done" title="GstAudio.AudioRingBuffer.samples_done"><tt class="xref py py-obj docutils literal"><span class="pre">samples_done</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.set_callback" title="GstAudio.AudioRingBuffer.set_callback"><tt class="xref py py-obj docutils literal"><span class="pre">set_callback</span></tt></a>(cb, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.set_channel_positions" title="GstAudio.AudioRingBuffer.set_channel_positions"><tt class="xref py py-obj docutils literal"><span class="pre">set_channel_positions</span></tt></a>(position)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.set_flushing" title="GstAudio.AudioRingBuffer.set_flushing"><tt class="xref py py-obj docutils literal"><span class="pre">set_flushing</span></tt></a>(flushing)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.set_sample" title="GstAudio.AudioRingBuffer.set_sample"><tt class="xref py py-obj docutils literal"><span class="pre">set_sample</span></tt></a>(sample)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.set_timestamp" title="GstAudio.AudioRingBuffer.set_timestamp"><tt class="xref py py-obj docutils literal"><span class="pre">set_timestamp</span></tt></a>(readseg, timestamp)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.start" title="GstAudio.AudioRingBuffer.start"><tt class="xref py py-obj docutils literal"><span class="pre">start</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstAudio.AudioRingBuffer.stop" title="GstAudio.AudioRingBuffer.stop"><tt class="xref py py-obj docutils literal"><span class="pre">stop</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gstaudio-audioringbuffer-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gstaudio-audioringbuffer-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>acquired</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>active</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>cond</td>
+<td><a class="reference internal" href="../../GLib_2.0/structs/Cond.html#GLib.Cond" title="GLib.Cond"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Cond</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>empty_seg</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>flushing</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>memory</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>need_reorder</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>object</td>
+<td><a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>open</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>samples_per_seg</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>segbase</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>segdone</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>spec</td>
+<td><a class="reference internal" href="../structs/AudioRingBufferSpec.html#GstAudio.AudioRingBufferSpec" title="GstAudio.AudioRingBufferSpec"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBufferSpec</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>state</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>waiting</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstAudio.AudioRingBuffer">
+<em class="property">class </em><tt class="descclassname">GstAudio.</tt><tt class="descname">AudioRingBuffer</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a></p>
+<p>This object is the base class for audio ringbuffers used by the base
+audio source and sink classes.</p>
+<p>The ringbuffer abstracts a circular buffer of data. One reader and
+one writer can operate on the data from different threads in a lockfree
+manner. The base class is sufficiently flexible to be used as an
+abstraction for DMA based ringbuffers as well as a pure software
+implementations.</p>
+<p>Last reviewed on 2006-02-02 (0.10.4)</p>
+<dl class="staticmethod">
+<dt id="GstAudio.AudioRingBuffer.debug_spec_buff">
+<em class="property">static </em><tt class="descname">debug_spec_buff</tt><big>(</big><em>spec</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.debug_spec_buff" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spec</strong> (<a class="reference internal" href="../structs/AudioRingBufferSpec.html#GstAudio.AudioRingBufferSpec" title="GstAudio.AudioRingBufferSpec"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBufferSpec</span></tt></a>) &#8211; the spec to debug</td>
+</tr>
+</tbody>
+</table>
+<p>Print debug info about the buffer sized in <cite>spec</cite> to the debug log.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstAudio.AudioRingBuffer.debug_spec_caps">
+<em class="property">static </em><tt class="descname">debug_spec_caps</tt><big>(</big><em>spec</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.debug_spec_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spec</strong> (<a class="reference internal" href="../structs/AudioRingBufferSpec.html#GstAudio.AudioRingBufferSpec" title="GstAudio.AudioRingBufferSpec"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBufferSpec</span></tt></a>) &#8211; the spec to debug</td>
+</tr>
+</tbody>
+</table>
+<p>Print debug info about the parsed caps in <cite>spec</cite> to the debug log.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstAudio.AudioRingBuffer.parse_caps">
+<em class="property">static </em><tt class="descname">parse_caps</tt><big>(</big><em>spec</em>, <em>caps</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.parse_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>spec</strong> (<a class="reference internal" href="../structs/AudioRingBufferSpec.html#GstAudio.AudioRingBufferSpec" title="GstAudio.AudioRingBufferSpec"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBufferSpec</span></tt></a>) &#8211; a spec</li>
+<li><strong>caps</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the caps could be parsed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse <cite>caps</cite> into <cite>spec</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.acquire">
+<tt class="descname">acquire</tt><big>(</big><em>spec</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.acquire" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spec</strong> (<a class="reference internal" href="../structs/AudioRingBufferSpec.html#GstAudio.AudioRingBufferSpec" title="GstAudio.AudioRingBufferSpec"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBufferSpec</span></tt></a>) &#8211; the specs of the buffer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be acquired, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Allocate the resources for the ringbuffer. This function fills
+in the data pointer of the ring buffer with a valid <a class="reference internal" href="../../Gst_1.0/structs/Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>
+to which samples can be written.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.activate">
+<tt class="descname">activate</tt><big>(</big><em>active</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.activate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>active</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new mode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be activated in the requested mode, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Activate <cite>buf</cite> to start or stop pulling data.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.advance">
+<tt class="descname">advance</tt><big>(</big><em>advance</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.advance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>advance</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of segments written</td>
+</tr>
+</tbody>
+</table>
+<p>Subclasses should call this function to notify the fact that
+<cite>advance</cite> segments are now processed by the device.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.clear">
+<tt class="descname">clear</tt><big>(</big><em>segment</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.clear" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>segment</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the segment to clear</td>
+</tr>
+</tbody>
+</table>
+<p>Clear the given segment of the buffer with silence samples.
+This function is used by subclasses.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.clear_all">
+<tt class="descname">clear_all</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.clear_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fill the ringbuffer with silence.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.close_device">
+<tt class="descname">close_device</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.close_device" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be closed, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Close the audio device associated with the ring buffer. The ring buffer
+should already have been released via <a class="reference internal" href="#GstAudio.AudioRingBuffer.release" title="GstAudio.AudioRingBuffer.release"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBuffer.release</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.commit">
+<tt class="descname">commit</tt><big>(</big><em>sample</em>, <em>data</em>, <em>in_samples</em>, <em>out_samples</em>, <em>accum</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.commit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sample</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the sample position of the data</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the data to commit</li>
+<li><strong>in_samples</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of samples in the data to commit</li>
+<li><strong>out_samples</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of samples to write to the ringbuffer</li>
+<li><strong>accum</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; accumulator for rate conversion.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The number of samples written to the ringbuffer or -1 on error. The number of samples written can be less than <cite>out_samples</cite> when <cite>buf</cite> was interrupted with a flush or stop.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Commit <cite>in_samples</cite> samples pointed to by <cite>data</cite> to the ringbuffer <cite>buf</cite>.</p>
+<p><cite>in_samples</cite> and <cite>out_samples</cite> define the rate conversion to perform on the
+samples in <cite>data</cite>. For negative rates, <cite>out_samples</cite> must be negative and
+<cite>in_samples</cite> positive.</p>
+<p>When <cite>out_samples</cite> is positive, the first sample will be written at position <cite>sample</cite>
+in the ringbuffer. When <cite>out_samples</cite> is negative, the last sample will be written to
+<cite>sample</cite> in reverse order.</p>
+<p><cite>out_samples</cite> does not need to be a multiple of the segment size of the ringbuffer
+although it is recommended for optimal performance.</p>
+<p><cite>accum</cite> will hold a temporary accumulator used in rate conversion and should be
+set to 0 when this function is first called. In case the commit operation is
+interrupted, one can resume the processing by passing the previously returned
+<cite>accum</cite> value back to this function.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.convert">
+<tt class="descname">convert</tt><big>(</big><em>src_fmt</em>, <em>src_val</em>, <em>dest_fmt</em>, <em>dest_val</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.convert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>src_fmt</strong> (<a class="reference internal" href="../../Gst_1.0/enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the source format</li>
+<li><strong>src_val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the source value</li>
+<li><strong>dest_fmt</strong> (<a class="reference internal" href="../../Gst_1.0/enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the destination format</li>
+<li><strong>dest_val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a location to store the converted value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the conversion succeeded.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convert <cite>src_val</cite> in <cite>src_fmt</cite> to the equivalent value in <cite>dest_fmt</cite>. The result
+will be put in <cite>dest_val</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.delay">
+<tt class="descname">delay</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.delay" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The number of samples queued in the audio device.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of samples queued in the audio device. This is
+usually less than the segment size but can be bigger when the
+implementation uses another internal buffer between the audio
+device.</p>
+<p>For playback ringbuffers this is the amount of samples transfered from the
+ringbuffer to the device but still not played.</p>
+<p>For capture ringbuffers this is the amount of samples in the device that are
+not yet transfered to the ringbuffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.device_is_open">
+<tt class="descname">device_is_open</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.device_is_open" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device was open, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if it was closed.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks the status of the device associated with the ring buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.is_acquired">
+<tt class="descname">is_acquired</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.is_acquired" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the ringbuffer is acquired, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if the ringbuffer is acquired and ready to use.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.is_active">
+<tt class="descname">is_active</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.is_active" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device is active.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>buf</cite> is activated.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.is_flushing">
+<tt class="descname">is_flushing</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.is_flushing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device is flushing.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>buf</cite> is flushing.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.may_start">
+<tt class="descname">may_start</tt><big>(</big><em>allowed</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.may_start" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>allowed</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new value</td>
+</tr>
+</tbody>
+</table>
+<p>Tell the ringbuffer that it is allowed to start playback when
+the ringbuffer is filled with samples.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.open_device">
+<tt class="descname">open_device</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.open_device" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be opened, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Open the audio device associated with the ring buffer. Does not perform any
+setup on the device. You must open the device before acquiring the ring
+buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.pause">
+<tt class="descname">pause</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.pause" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be paused, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Pause processing samples from the ringbuffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.prepare_read">
+<tt class="descname">prepare_read</tt><big>(</big><em>segment</em>, <em>readptr</em>, <em>len</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.prepare_read" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>segment</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the segment to read</li>
+<li><strong>readptr</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the pointer to the memory where samples can be read</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of bytes to read</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the buffer is not started.  MT safe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns a pointer to memory where the data from segment <cite>segment</cite>
+can be found. This function is mostly used by subclasses.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.read">
+<tt class="descname">read</tt><big>(</big><em>sample</em>, <em>data</em>, <em>len</em>, <em>timestamp</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.read" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sample</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the sample position of the data</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; where the data should be read</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of samples in data to read</li>
+<li><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; where the timestamp is returned</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The number of samples read from the ringbuffer or -1 on error.  MT safe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Read <cite>len</cite> samples from the ringbuffer into the memory pointed
+to by <cite>data</cite>.
+The first sample should be read from position <cite>sample</cite> in
+the ringbuffer.</p>
+<p><cite>len</cite> should not be a multiple of the segment size of the ringbuffer
+although it is recommended.</p>
+<p><cite>timestamp</cite> will return the timestamp associated with the data returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.release">
+<tt class="descname">release</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.release" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be released, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Free the resources of the ringbuffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.samples_done">
+<tt class="descname">samples_done</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.samples_done" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The number of samples processed by the ringbuffer.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of samples that were processed by the ringbuffer
+since it was last started. This does not include the number of samples not
+yet processed (see <a class="reference internal" href="#GstAudio.AudioRingBuffer.delay" title="GstAudio.AudioRingBuffer.delay"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBuffer.delay</span></tt></a> ()).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.set_callback">
+<tt class="descname">set_callback</tt><big>(</big><em>cb</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.set_callback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cb</strong> (<a class="reference internal" href="../callbacks.html#GstAudio.AudioRingBufferCallback" title="GstAudio.AudioRingBufferCallback"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioRingBufferCallback</span></tt></a>) &#8211; the callback to set</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to the callback</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the given callback function on the buffer. This function
+will be called every time a segment has been written to a device.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.set_channel_positions">
+<tt class="descname">set_channel_positions</tt><big>(</big><em>position</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.set_channel_positions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>position</strong> (<a class="reference internal" href="../enums.html#GstAudio.AudioChannelPosition" title="GstAudio.AudioChannelPosition"><tt class="xref py py-class docutils literal"><span class="pre">GstAudio.AudioChannelPosition</span></tt></a>) &#8211; the device channel positions</td>
+</tr>
+</tbody>
+</table>
+<p>Tell the ringbuffer about the device&#8217;s channel positions. This must
+be called in when the ringbuffer is acquired.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.set_flushing">
+<tt class="descname">set_flushing</tt><big>(</big><em>flushing</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.set_flushing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flushing</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the new mode</td>
+</tr>
+</tbody>
+</table>
+<p>Set the ringbuffer to flushing mode or normal mode.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.set_sample">
+<tt class="descname">set_sample</tt><big>(</big><em>sample</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.set_sample" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sample</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the sample number to set</td>
+</tr>
+</tbody>
+</table>
+<p>Make sure that the next sample written to the device is
+accounted for as being the <cite>sample</cite> sample written to the
+device. This value will be used in reporting the current
+sample position of the ringbuffer.</p>
+<p>This function will also clear the buffer with silence.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.set_timestamp">
+<tt class="descname">set_timestamp</tt><big>(</big><em>readseg</em>, <em>timestamp</em><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.set_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>readseg</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+<li><strong>timestamp</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.start">
+<tt class="descname">start</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.start" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be started, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Start processing samples from the ringbuffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstAudio.AudioRingBuffer.stop">
+<tt class="descname">stop</tt><big>(</big><big>)</big><a class="headerlink" href="#GstAudio.AudioRingBuffer.stop" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device could be stopped, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> on error.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Stop processing samples from the ringbuffer.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="AudioSink.html" class="btn btn-neutral float-right" title="GstAudio.AudioSink"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="AudioFilter.html" class="btn btn-neutral" title="GstAudio.AudioFilter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

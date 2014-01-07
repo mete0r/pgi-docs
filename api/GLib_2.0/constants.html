@@ -1,0 +1,1346 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Constants -
+    
+      GLib 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="GLib 2.0" href="index.html"/>
+        <link rel="next" title="GMenu 3.0" href="../GMenu_3.0/index.html"/>
+        <link rel="prev" title="Enums" href="enums.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">GLib 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Constants</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">GLib 2.0</a> &raquo;</li>
+  
+  <li><a href="">Constants</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GLib_2.0/constants" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="constants">
+<h1>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#GLib.ASCII_DTOSTR_BUF_SIZE" title="GLib.ASCII_DTOSTR_BUF_SIZE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.ASCII_DTOSTR_BUF_SIZE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.BIG_ENDIAN" title="GLib.BIG_ENDIAN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.BIG_ENDIAN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.CAN_INLINE" title="GLib.CAN_INLINE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.CAN_INLINE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.CSET_A_2_Z" title="GLib.CSET_A_2_Z"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.CSET_A_2_Z</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.CSET_DIGITS" title="GLib.CSET_DIGITS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.CSET_DIGITS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.CSET_a_2_z" title="GLib.CSET_a_2_z"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.CSET_a_2_z</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.DATALIST_FLAGS_MASK" title="GLib.DATALIST_FLAGS_MASK"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.DATALIST_FLAGS_MASK</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.DATE_BAD_DAY" title="GLib.DATE_BAD_DAY"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.DATE_BAD_DAY</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.DATE_BAD_JULIAN" title="GLib.DATE_BAD_JULIAN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.DATE_BAD_JULIAN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.DATE_BAD_YEAR" title="GLib.DATE_BAD_YEAR"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.DATE_BAD_YEAR</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.DIR_SEPARATOR" title="GLib.DIR_SEPARATOR"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.DIR_SEPARATOR</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.DIR_SEPARATOR_S" title="GLib.DIR_SEPARATOR_S"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.DIR_SEPARATOR_S</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.E" title="GLib.E"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.E</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINT16_MODIFIER" title="GLib.GINT16_MODIFIER"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINT16_MODIFIER</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINT32_FORMAT" title="GLib.GINT32_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINT32_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINT32_MODIFIER" title="GLib.GINT32_MODIFIER"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINT32_MODIFIER</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINT64_FORMAT" title="GLib.GINT64_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINT64_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINT64_MODIFIER" title="GLib.GINT64_MODIFIER"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINT64_MODIFIER</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINTPTR_FORMAT" title="GLib.GINTPTR_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINTPTR_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GINTPTR_MODIFIER" title="GLib.GINTPTR_MODIFIER"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GINTPTR_MODIFIER</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GNUC_FUNCTION" title="GLib.GNUC_FUNCTION"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GNUC_FUNCTION</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GNUC_PRETTY_FUNCTION" title="GLib.GNUC_PRETTY_FUNCTION"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GNUC_PRETTY_FUNCTION</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GSIZE_FORMAT" title="GLib.GSIZE_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GSIZE_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GSIZE_MODIFIER" title="GLib.GSIZE_MODIFIER"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GSIZE_MODIFIER</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GSSIZE_FORMAT" title="GLib.GSSIZE_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GSSIZE_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GUINT16_FORMAT" title="GLib.GUINT16_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GUINT16_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GUINT32_FORMAT" title="GLib.GUINT32_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GUINT32_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GUINT64_FORMAT" title="GLib.GUINT64_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GUINT64_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.GUINTPTR_FORMAT" title="GLib.GUINTPTR_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.GUINTPTR_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE_GINT64" title="GLib.HAVE_GINT64"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE_GINT64</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE_GNUC_VARARGS" title="GLib.HAVE_GNUC_VARARGS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE_GNUC_VARARGS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE_GNUC_VISIBILITY" title="GLib.HAVE_GNUC_VISIBILITY"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE_GNUC_VISIBILITY</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE_GROWING_STACK" title="GLib.HAVE_GROWING_STACK"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE_GROWING_STACK</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE_INLINE" title="GLib.HAVE_INLINE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE_INLINE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE_ISO_VARARGS" title="GLib.HAVE_ISO_VARARGS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE_ISO_VARARGS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE___INLINE" title="GLib.HAVE___INLINE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE___INLINE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HAVE___INLINE__" title="GLib.HAVE___INLINE__"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HAVE___INLINE__</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.HOOK_FLAG_USER_SHIFT" title="GLib.HOOK_FLAG_USER_SHIFT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.HOOK_FLAG_USER_SHIFT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.IEEE754_DOUBLE_BIAS" title="GLib.IEEE754_DOUBLE_BIAS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.IEEE754_DOUBLE_BIAS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.IEEE754_FLOAT_BIAS" title="GLib.IEEE754_FLOAT_BIAS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.IEEE754_FLOAT_BIAS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_CATEGORIES" title="GLib.KEY_FILE_DESKTOP_KEY_CATEGORIES"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_CATEGORIES</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_COMMENT" title="GLib.KEY_FILE_DESKTOP_KEY_COMMENT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_COMMENT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_EXEC" title="GLib.KEY_FILE_DESKTOP_KEY_EXEC"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_EXEC</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_FULLNAME" title="GLib.KEY_FILE_DESKTOP_KEY_FULLNAME"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_FULLNAME</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_GENERIC_NAME" title="GLib.KEY_FILE_DESKTOP_KEY_GENERIC_NAME"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_GENERIC_NAME</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_GETTEXT_DOMAIN" title="GLib.KEY_FILE_DESKTOP_KEY_GETTEXT_DOMAIN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_GETTEXT_DOMAIN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_HIDDEN" title="GLib.KEY_FILE_DESKTOP_KEY_HIDDEN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_HIDDEN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_ICON" title="GLib.KEY_FILE_DESKTOP_KEY_ICON"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_ICON</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_KEYWORDS" title="GLib.KEY_FILE_DESKTOP_KEY_KEYWORDS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_KEYWORDS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_MIME_TYPE" title="GLib.KEY_FILE_DESKTOP_KEY_MIME_TYPE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_MIME_TYPE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_NAME" title="GLib.KEY_FILE_DESKTOP_KEY_NAME"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_NAME</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN" title="GLib.KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_NO_DISPLAY" title="GLib.KEY_FILE_DESKTOP_KEY_NO_DISPLAY"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_NO_DISPLAY</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN" title="GLib.KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_PATH" title="GLib.KEY_FILE_DESKTOP_KEY_PATH"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_PATH</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY" title="GLib.KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS" title="GLib.KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_TERMINAL" title="GLib.KEY_FILE_DESKTOP_KEY_TERMINAL"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_TERMINAL</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_TRY_EXEC" title="GLib.KEY_FILE_DESKTOP_KEY_TRY_EXEC"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_TRY_EXEC</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_TYPE" title="GLib.KEY_FILE_DESKTOP_KEY_TYPE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_TYPE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_URL" title="GLib.KEY_FILE_DESKTOP_KEY_URL"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_URL</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_VERSION" title="GLib.KEY_FILE_DESKTOP_KEY_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION" title="GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY" title="GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_TYPE_LINK" title="GLib.KEY_FILE_DESKTOP_TYPE_LINK"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_TYPE_LINK</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.LITTLE_ENDIAN" title="GLib.LITTLE_ENDIAN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.LITTLE_ENDIAN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.LN10" title="GLib.LN10"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.LN10</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.LN2" title="GLib.LN2"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.LN2</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.LOG_2_BASE_10" title="GLib.LOG_2_BASE_10"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.LOG_2_BASE_10</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.LOG_DOMAIN" title="GLib.LOG_DOMAIN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.LOG_DOMAIN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.LOG_FATAL_MASK" title="GLib.LOG_FATAL_MASK"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.LOG_FATAL_MASK</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.LOG_LEVEL_USER_SHIFT" title="GLib.LOG_LEVEL_USER_SHIFT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.LOG_LEVEL_USER_SHIFT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAJOR_VERSION" title="GLib.MAJOR_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAJOR_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXINT16" title="GLib.MAXINT16"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXINT16</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXINT32" title="GLib.MAXINT32"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXINT32</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXINT64" title="GLib.MAXINT64"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXINT64</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXINT8" title="GLib.MAXINT8"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXINT8</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXUINT16" title="GLib.MAXUINT16"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXUINT16</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXUINT32" title="GLib.MAXUINT32"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXUINT32</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXUINT64" title="GLib.MAXUINT64"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXUINT64</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MAXUINT8" title="GLib.MAXUINT8"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MAXUINT8</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MICRO_VERSION" title="GLib.MICRO_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MICRO_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MININT16" title="GLib.MININT16"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MININT16</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MININT32" title="GLib.MININT32"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MININT32</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MININT64" title="GLib.MININT64"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MININT64</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MININT8" title="GLib.MININT8"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MININT8</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MINOR_VERSION" title="GLib.MINOR_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MINOR_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.MODULE_SUFFIX" title="GLib.MODULE_SUFFIX"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.MODULE_SUFFIX</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.OPTION_REMAINING" title="GLib.OPTION_REMAINING"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.OPTION_REMAINING</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PDP_ENDIAN" title="GLib.PDP_ENDIAN"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PDP_ENDIAN</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PI" title="GLib.PI"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PI</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PI_2" title="GLib.PI_2"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PI_2</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PI_4" title="GLib.PI_4"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PI_4</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.POLLFD_FORMAT" title="GLib.POLLFD_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.POLLFD_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PRIORITY_DEFAULT" title="GLib.PRIORITY_DEFAULT"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PRIORITY_DEFAULT</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PRIORITY_DEFAULT_IDLE" title="GLib.PRIORITY_DEFAULT_IDLE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PRIORITY_DEFAULT_IDLE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PRIORITY_HIGH" title="GLib.PRIORITY_HIGH"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PRIORITY_HIGH</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PRIORITY_HIGH_IDLE" title="GLib.PRIORITY_HIGH_IDLE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PRIORITY_HIGH_IDLE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.PRIORITY_LOW" title="GLib.PRIORITY_LOW"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.PRIORITY_LOW</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SEARCHPATH_SEPARATOR" title="GLib.SEARCHPATH_SEPARATOR"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SEARCHPATH_SEPARATOR</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SEARCHPATH_SEPARATOR_S" title="GLib.SEARCHPATH_SEPARATOR_S"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SEARCHPATH_SEPARATOR_S</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SIZEOF_LONG" title="GLib.SIZEOF_LONG"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SIZEOF_LONG</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SIZEOF_SIZE_T" title="GLib.SIZEOF_SIZE_T"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SIZEOF_SIZE_T</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SIZEOF_VOID_P" title="GLib.SIZEOF_VOID_P"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SIZEOF_VOID_P</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SQRT2" title="GLib.SQRT2"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SQRT2</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.STR_DELIMITERS" title="GLib.STR_DELIMITERS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.STR_DELIMITERS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SYSDEF_AF_INET" title="GLib.SYSDEF_AF_INET"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SYSDEF_AF_INET</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SYSDEF_AF_INET6" title="GLib.SYSDEF_AF_INET6"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SYSDEF_AF_INET6</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SYSDEF_AF_UNIX" title="GLib.SYSDEF_AF_UNIX"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SYSDEF_AF_UNIX</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SYSDEF_MSG_DONTROUTE" title="GLib.SYSDEF_MSG_DONTROUTE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SYSDEF_MSG_DONTROUTE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SYSDEF_MSG_OOB" title="GLib.SYSDEF_MSG_OOB"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SYSDEF_MSG_OOB</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.SYSDEF_MSG_PEEK" title="GLib.SYSDEF_MSG_PEEK"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.SYSDEF_MSG_PEEK</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.TIME_SPAN_DAY" title="GLib.TIME_SPAN_DAY"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.TIME_SPAN_DAY</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.TIME_SPAN_HOUR" title="GLib.TIME_SPAN_HOUR"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.TIME_SPAN_HOUR</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.TIME_SPAN_MILLISECOND" title="GLib.TIME_SPAN_MILLISECOND"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.TIME_SPAN_MILLISECOND</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.TIME_SPAN_MINUTE" title="GLib.TIME_SPAN_MINUTE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.TIME_SPAN_MINUTE</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.TIME_SPAN_SECOND" title="GLib.TIME_SPAN_SECOND"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.TIME_SPAN_SECOND</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH" title="GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS" title="GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS" title="GLib.URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.USEC_PER_SEC" title="GLib.USEC_PER_SEC"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.USEC_PER_SEC</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.VA_COPY_AS_ARRAY" title="GLib.VA_COPY_AS_ARRAY"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.VA_COPY_AS_ARRAY</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.VERSION_MIN_REQUIRED" title="GLib.VERSION_MIN_REQUIRED"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.VERSION_MIN_REQUIRED</span></tt></a></li>
+<li><a class="reference internal" href="#GLib.WIN32_MSG_HANDLE" title="GLib.WIN32_MSG_HANDLE"><tt class="xref py py-obj docutils literal"><span class="pre">GLib.WIN32_MSG_HANDLE</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GLib.ASCII_DTOSTR_BUF_SIZE">
+<tt class="descclassname">GLib.</tt><tt class="descname">ASCII_DTOSTR_BUF_SIZE</tt><em class="property"> = 39</em><a class="headerlink" href="#GLib.ASCII_DTOSTR_BUF_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A good size for a buffer to be passed into <a class="reference internal" href="functions.html#GLib.ascii_dtostr" title="GLib.ascii_dtostr"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ascii_dtostr</span></tt></a> ().
+It is guaranteed to be enough for all output of that function
+on systems with 64bit IEEE-compatible doubles.</p>
+<p>The typical usage would be something like:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="n">G_ASCII_DTOSTR_BUF_SIZE</span><span class="p">];</span>
+
+<span class="n">fprintf</span> <span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="s">&quot;value=&amp;percnt;s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">g_ascii_dtostr</span> <span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span> <span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="n">value</span><span class="p">));</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.BIG_ENDIAN">
+<tt class="descclassname">GLib.</tt><tt class="descname">BIG_ENDIAN</tt><em class="property"> = 4321</em><a class="headerlink" href="#GLib.BIG_ENDIAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies one of the possible types of byte order.
+See #G_BYTE_ORDER.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.CAN_INLINE">
+<tt class="descclassname">GLib.</tt><tt class="descname">CAN_INLINE</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.CAN_INLINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.CSET_A_2_Z">
+<tt class="descclassname">GLib.</tt><tt class="descname">CSET_A_2_Z</tt><em class="property"> = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</em><a class="headerlink" href="#GLib.CSET_A_2_Z" title="Permalink to this definition">¶</a></dt>
+<dd><p>The set of uppercase ASCII alphabet characters.
+Used for specifying valid identifier characters
+in <a class="reference internal" href="structs/ScannerConfig.html#GLib.ScannerConfig" title="GLib.ScannerConfig"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ScannerConfig</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.CSET_DIGITS">
+<tt class="descclassname">GLib.</tt><tt class="descname">CSET_DIGITS</tt><em class="property"> = '0123456789'</em><a class="headerlink" href="#GLib.CSET_DIGITS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.CSET_a_2_z">
+<tt class="descclassname">GLib.</tt><tt class="descname">CSET_a_2_z</tt><em class="property"> = 'abcdefghijklmnopqrstuvwxyz'</em><a class="headerlink" href="#GLib.CSET_a_2_z" title="Permalink to this definition">¶</a></dt>
+<dd><p>The set of lowercase ASCII alphabet characters.
+Used for specifying valid identifier characters
+in <a class="reference internal" href="structs/ScannerConfig.html#GLib.ScannerConfig" title="GLib.ScannerConfig"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ScannerConfig</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.DATALIST_FLAGS_MASK">
+<tt class="descclassname">GLib.</tt><tt class="descname">DATALIST_FLAGS_MASK</tt><em class="property"> = 3</em><a class="headerlink" href="#GLib.DATALIST_FLAGS_MASK" title="Permalink to this definition">¶</a></dt>
+<dd><p>A bitmask that restricts the possible flags passed to
+<a class="reference internal" href="functions.html#GLib.datalist_set_flags" title="GLib.datalist_set_flags"><tt class="xref py py-class docutils literal"><span class="pre">GLib.datalist_set_flags</span></tt></a> (). Passing a flags value where
+flags &amp; ~G_DATALIST_FLAGS_MASK != 0 is an error.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.DATE_BAD_DAY">
+<tt class="descclassname">GLib.</tt><tt class="descname">DATE_BAD_DAY</tt><em class="property"> = 0</em><a class="headerlink" href="#GLib.DATE_BAD_DAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents an invalid <tt class="xref py py-class docutils literal"><span class="pre">GLib.DateDay</span></tt>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.DATE_BAD_JULIAN">
+<tt class="descclassname">GLib.</tt><tt class="descname">DATE_BAD_JULIAN</tt><em class="property"> = 0</em><a class="headerlink" href="#GLib.DATE_BAD_JULIAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents an invalid Julian day number.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.DATE_BAD_YEAR">
+<tt class="descclassname">GLib.</tt><tt class="descname">DATE_BAD_YEAR</tt><em class="property"> = 0</em><a class="headerlink" href="#GLib.DATE_BAD_YEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents an invalid year.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.DIR_SEPARATOR">
+<tt class="descclassname">GLib.</tt><tt class="descname">DIR_SEPARATOR</tt><em class="property"> = 92</em><a class="headerlink" href="#GLib.DIR_SEPARATOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The directory separator character.
+This is &#8216;/&#8217; on UNIX machines and &#8216;\&#8217; under Windows.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.DIR_SEPARATOR_S">
+<tt class="descclassname">GLib.</tt><tt class="descname">DIR_SEPARATOR_S</tt><em class="property"> = '\\'</em><a class="headerlink" href="#GLib.DIR_SEPARATOR_S" title="Permalink to this definition">¶</a></dt>
+<dd><p>The directory separator as a string.
+This is &#8220;/&#8221; on UNIX machines and &#8220;\&#8221; under Windows.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.E">
+<tt class="descclassname">GLib.</tt><tt class="descname">E</tt><em class="property"> = 2.718282</em><a class="headerlink" href="#GLib.E" title="Permalink to this definition">¶</a></dt>
+<dd><p>The base of natural logarithms.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINT16_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINT16_FORMAT</tt><em class="property"> = 'hi'</em><a class="headerlink" href="#GLib.GINT16_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning and
+printing values of type #gint16. It is a string literal, but doesn&#8217;t
+include the percent-sign, such that you can add precision and length
+modifiers between percent-sign and conversion specifier.</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">gint16</span> <span class="n">in</span><span class="p">;</span>
+<span class="n">gint32</span> <span class="n">out</span><span class="p">;</span>
+<span class="n">sscanf</span> <span class="p">(</span><span class="s">&quot;42&quot;</span><span class="p">,</span> <span class="s">&quot;%&quot;</span> <span class="n">G_GINT16_FORMAT</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">in</span><span class="p">)</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">in</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">;</span>
+<span class="n">g_print</span> <span class="p">(</span><span class="s">&quot;%&quot;</span> <span class="n">G_GINT32_FORMAT</span><span class="p">,</span> <span class="n">out</span><span class="p">);</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINT16_MODIFIER">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINT16_MODIFIER</tt><em class="property"> = 'h'</em><a class="headerlink" href="#GLib.GINT16_MODIFIER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type #gint16 or #guint16. It
+is a string literal, but doesn&#8217;t include the percent-sign, such
+that you can add precision and length modifiers between percent-sign
+and conversion specifier and append a conversion specifier.</p>
+<p>The following example prints &#8220;0x7b&#8221;;</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">gint16</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
+<span class="n">g_print</span> <span class="p">(</span><span class="s">&quot;%#&quot;</span> <span class="n">G_GINT16_MODIFIER</span> <span class="s">&quot;x&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINT32_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINT32_FORMAT</tt><em class="property"> = 'i'</em><a class="headerlink" href="#GLib.GINT32_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #gint32. See also <a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINT32_MODIFIER">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINT32_MODIFIER</tt><em class="property"> = ''</em><a class="headerlink" href="#GLib.GINT32_MODIFIER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type #gint32 or #guint32. It
+is a string literal. See also <a class="reference internal" href="#GLib.GINT16_MODIFIER" title="GLib.GINT16_MODIFIER"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_MODIFIER</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINT64_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINT64_FORMAT</tt><em class="property"> = 'li'</em><a class="headerlink" href="#GLib.GINT64_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #gint64. See also <a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a>.</p>
+<p>Some platforms do not support scanning and printing 64 bit integers,
+even though the types are supported. On such platforms <a class="reference internal" href="#GLib.GINT64_FORMAT" title="GLib.GINT64_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT64_FORMAT</span></tt></a>
+is not defined. Note that scanf() may not support 64 bit integers, even
+if <a class="reference internal" href="#GLib.GINT64_FORMAT" title="GLib.GINT64_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT64_FORMAT</span></tt></a> is defined. Due to its weak error handling, scanf()
+is not recommended for parsing anyway; consider using <a class="reference internal" href="functions.html#GLib.ascii_strtoull" title="GLib.ascii_strtoull"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ascii_strtoull</span></tt></a> ()
+instead.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINT64_MODIFIER">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINT64_MODIFIER</tt><em class="property"> = 'l'</em><a class="headerlink" href="#GLib.GINT64_MODIFIER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type #gint64 or #guint64.
+It is a string literal.</p>
+<p>Some platforms do not support printing 64 bit integers, even
+though the types are supported. On such platforms <a class="reference internal" href="#GLib.GINT64_MODIFIER" title="GLib.GINT64_MODIFIER"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT64_MODIFIER</span></tt></a>
+is not defined.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINTPTR_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINTPTR_FORMAT</tt><em class="property"> = 'li'</em><a class="headerlink" href="#GLib.GINTPTR_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #gintptr.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GINTPTR_MODIFIER">
+<tt class="descclassname">GLib.</tt><tt class="descname">GINTPTR_MODIFIER</tt><em class="property"> = 'l'</em><a class="headerlink" href="#GLib.GINTPTR_MODIFIER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type #gintptr or #guintptr.
+It is a string literal.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GNUC_FUNCTION">
+<tt class="descclassname">GLib.</tt><tt class="descname">GNUC_FUNCTION</tt><em class="property"> = ''</em><a class="headerlink" href="#GLib.GNUC_FUNCTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expands to &#8220;&#8221; on all modern compilers, and to
+<tt class="docutils literal"><span class="pre">__FUNCTION__</span></tt> on gcc version 2.x.
+Don&#8217;t use it.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GNUC_PRETTY_FUNCTION">
+<tt class="descclassname">GLib.</tt><tt class="descname">GNUC_PRETTY_FUNCTION</tt><em class="property"> = ''</em><a class="headerlink" href="#GLib.GNUC_PRETTY_FUNCTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expands to &#8220;&#8221; on all modern compilers, and to
+<tt class="docutils literal"><span class="pre">__PRETTY_FUNCTION__</span></tt> on gcc
+version 2.x. Don&#8217;t use it.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GSIZE_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GSIZE_FORMAT</tt><em class="property"> = 'lu'</em><a class="headerlink" href="#GLib.GSIZE_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #gsize. See also <a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GSIZE_MODIFIER">
+<tt class="descclassname">GLib.</tt><tt class="descname">GSIZE_MODIFIER</tt><em class="property"> = 'l'</em><a class="headerlink" href="#GLib.GSIZE_MODIFIER" title="Permalink to this definition">¶</a></dt>
+<dd><p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type #gsize or #gssize. It
+is a string literal.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GSSIZE_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GSSIZE_FORMAT</tt><em class="property"> = 'li'</em><a class="headerlink" href="#GLib.GSSIZE_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #gssize. See also <a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GUINT16_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GUINT16_FORMAT</tt><em class="property"> = 'hu'</em><a class="headerlink" href="#GLib.GUINT16_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #guint16. See also <a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GUINT32_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GUINT32_FORMAT</tt><em class="property"> = 'u'</em><a class="headerlink" href="#GLib.GUINT32_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #guint32. See also <a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GUINT64_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GUINT64_FORMAT</tt><em class="property"> = 'lu'</em><a class="headerlink" href="#GLib.GUINT64_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier for scanning
+and printing values of type #guint64. See also <a class="reference internal" href="#GLib.GINT16_FORMAT" title="GLib.GINT16_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT16_FORMAT</span></tt></a>.</p>
+<p>Some platforms do not support scanning and printing 64 bit integers,
+even though the types are supported. On such platforms <a class="reference internal" href="#GLib.GUINT64_FORMAT" title="GLib.GUINT64_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GUINT64_FORMAT</span></tt></a>
+is not defined.  Note that scanf() may not support 64 bit integers, even
+if <a class="reference internal" href="#GLib.GINT64_FORMAT" title="GLib.GINT64_FORMAT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GINT64_FORMAT</span></tt></a> is defined. Due to its weak error handling, scanf()
+is not recommended for parsing anyway; consider using <a class="reference internal" href="functions.html#GLib.ascii_strtoull" title="GLib.ascii_strtoull"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ascii_strtoull</span></tt></a> ()
+instead.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.GUINTPTR_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">GUINTPTR_FORMAT</tt><em class="property"> = 'lu'</em><a class="headerlink" href="#GLib.GUINTPTR_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the platform dependent conversion specifier
+for scanning and printing values of type #guintptr.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE_GINT64">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE_GINT64</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE_GINT64" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE_GNUC_VARARGS">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE_GNUC_VARARGS</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE_GNUC_VARARGS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE_GNUC_VISIBILITY">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE_GNUC_VISIBILITY</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE_GNUC_VISIBILITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE_GROWING_STACK">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE_GROWING_STACK</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE_GROWING_STACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE_INLINE">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE_INLINE</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE_INLINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE_ISO_VARARGS">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE_ISO_VARARGS</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE_ISO_VARARGS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE___INLINE">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE___INLINE</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE___INLINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HAVE___INLINE__">
+<tt class="descclassname">GLib.</tt><tt class="descname">HAVE___INLINE__</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.HAVE___INLINE__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.HOOK_FLAG_USER_SHIFT">
+<tt class="descclassname">GLib.</tt><tt class="descname">HOOK_FLAG_USER_SHIFT</tt><em class="property"> = 4</em><a class="headerlink" href="#GLib.HOOK_FLAG_USER_SHIFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position of the first bit which is not reserved for internal
+use be the <a class="reference internal" href="structs/Hook.html#GLib.Hook" title="GLib.Hook"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Hook</span></tt></a> implementation, i.e.
+<tt class="docutils literal"><span class="pre">1</span> <span class="pre">&lt;&lt;</span> <span class="pre">G_HOOK_FLAG_USER_SHIFT</span></tt> is the first
+bit which can be used for application-defined flags.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.IEEE754_DOUBLE_BIAS">
+<tt class="descclassname">GLib.</tt><tt class="descname">IEEE754_DOUBLE_BIAS</tt><em class="property"> = 1023</em><a class="headerlink" href="#GLib.IEEE754_DOUBLE_BIAS" title="Permalink to this definition">¶</a></dt>
+<dd><p>The bias by which exponents in double-precision floats are offset.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.IEEE754_FLOAT_BIAS">
+<tt class="descclassname">GLib.</tt><tt class="descname">IEEE754_FLOAT_BIAS</tt><em class="property"> = 127</em><a class="headerlink" href="#GLib.IEEE754_FLOAT_BIAS" title="Permalink to this definition">¶</a></dt>
+<dd><p>The bias by which exponents in single-precision floats are offset.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_GROUP">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_GROUP</tt><em class="property"> = 'Desktop Entry'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the main group of a desktop entry file, as defined in the
+Desktop
+Entry Specification. Consult the specification for more
+details about the meanings of the keys below.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_CATEGORIES">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_CATEGORIES</tt><em class="property"> = 'Categories'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_CATEGORIES" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a list
+of strings giving the categories in which the desktop entry
+should be shown in a menu.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_COMMENT">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_COMMENT</tt><em class="property"> = 'Comment'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_COMMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a localized
+string giving the tooltip for the desktop entry.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_EXEC">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_EXEC</tt><em class="property"> = 'Exec'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_EXEC" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a string
+giving the command line to execute. It is only valid for desktop
+entries with the <tt class="docutils literal"><span class="pre">Application</span></tt> type.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_FULLNAME">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_FULLNAME</tt><em class="property"> = 'X-GNOME-FullName'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_FULLNAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_GENERIC_NAME">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_GENERIC_NAME</tt><em class="property"> = 'GenericName'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_GENERIC_NAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a localized
+string giving the generic name of the desktop entry.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_GETTEXT_DOMAIN">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_GETTEXT_DOMAIN</tt><em class="property"> = 'X-GNOME-Gettext-Domain'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_GETTEXT_DOMAIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_HIDDEN">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_HIDDEN</tt><em class="property"> = 'Hidden'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_HIDDEN" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a boolean
+stating whether the desktop entry has been deleted by the user.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_ICON">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_ICON</tt><em class="property"> = 'Icon'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_ICON" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a localized
+string giving the name of the icon to be displayed for the desktop
+entry.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_KEYWORDS">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_KEYWORDS</tt><em class="property"> = 'Keywords'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_KEYWORDS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_MIME_TYPE">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_MIME_TYPE</tt><em class="property"> = 'MimeType'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_MIME_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a list
+of strings giving the MIME types supported by this desktop entry.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_NAME">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_NAME</tt><em class="property"> = 'Name'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_NAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a localized
+string giving the specific name of the desktop entry.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN</tt><em class="property"> = 'NotShowIn'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a list of
+strings identifying the environments that should not display the
+desktop entry.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_NO_DISPLAY">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_NO_DISPLAY</tt><em class="property"> = 'NoDisplay'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_NO_DISPLAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a boolean
+stating whether the desktop entry should be shown in menus.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN</tt><em class="property"> = 'OnlyShowIn'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a list of
+strings identifying the environments that should display the
+desktop entry.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_PATH">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_PATH</tt><em class="property"> = 'Path'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a string
+containing the working directory to run the program in. It is only
+valid for desktop entries with the <tt class="docutils literal"><span class="pre">Application</span></tt> type.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY</tt><em class="property"> = 'StartupNotify'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a boolean
+stating whether the application supports the Startup
+Notification Protocol Specification.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS</tt><em class="property"> = 'StartupWMClass'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is string
+identifying the WM class or name hint of a window that the application
+will create, which can be used to emulate Startup Notification with
+older applications.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_TERMINAL">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_TERMINAL</tt><em class="property"> = 'Terminal'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_TERMINAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a boolean
+stating whether the program should be run in a terminal window.
+It is only valid for desktop entries with the
+<tt class="docutils literal"><span class="pre">Application</span></tt> type.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_TRY_EXEC">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_TRY_EXEC</tt><em class="property"> = 'TryExec'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_TRY_EXEC" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a string
+giving the file name of a binary on disk used to determine if the
+program is actually installed. It is only valid for desktop entries
+with the <tt class="docutils literal"><span class="pre">Application</span></tt> type.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_TYPE">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_TYPE</tt><em class="property"> = 'Type'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a string
+giving the type of the desktop entry. Usually
+<a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION" title="GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION</span></tt></a>,
+<a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_TYPE_LINK" title="GLib.KEY_FILE_DESKTOP_TYPE_LINK"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_TYPE_LINK</span></tt></a>, or
+<a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY" title="GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_URL">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_URL</tt><em class="property"> = 'URL'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_URL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a string
+giving the URL to access. It is only valid for desktop entries
+with the <tt class="docutils literal"><span class="pre">Link</span></tt> type.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_KEY_VERSION">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_KEY_VERSION</tt><em class="property"> = 'Version'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_KEY_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>A key under <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_GROUP" title="GLib.KEY_FILE_DESKTOP_GROUP"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_GROUP</span></tt></a>, whose value is a string
+giving the version of the Desktop Entry Specification used for
+the desktop entry file.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_TYPE_APPLICATION</tt><em class="property"> = 'Application'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value of the <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_TYPE" title="GLib.KEY_FILE_DESKTOP_KEY_TYPE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_TYPE</span></tt></a>, key for desktop
+entries representing applications.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_TYPE_DIRECTORY</tt><em class="property"> = 'Directory'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value of the <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_TYPE" title="GLib.KEY_FILE_DESKTOP_KEY_TYPE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_TYPE</span></tt></a>, key for desktop
+entries representing directories.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.KEY_FILE_DESKTOP_TYPE_LINK">
+<tt class="descclassname">GLib.</tt><tt class="descname">KEY_FILE_DESKTOP_TYPE_LINK</tt><em class="property"> = 'Link'</em><a class="headerlink" href="#GLib.KEY_FILE_DESKTOP_TYPE_LINK" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value of the <a class="reference internal" href="#GLib.KEY_FILE_DESKTOP_KEY_TYPE" title="GLib.KEY_FILE_DESKTOP_KEY_TYPE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.KEY_FILE_DESKTOP_KEY_TYPE</span></tt></a>, key for desktop
+entries representing links to documents.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.LITTLE_ENDIAN">
+<tt class="descclassname">GLib.</tt><tt class="descname">LITTLE_ENDIAN</tt><em class="property"> = 1234</em><a class="headerlink" href="#GLib.LITTLE_ENDIAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies one of the possible types of byte order.
+See #G_BYTE_ORDER.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.LN10">
+<tt class="descclassname">GLib.</tt><tt class="descname">LN10</tt><em class="property"> = 2.302585</em><a class="headerlink" href="#GLib.LN10" title="Permalink to this definition">¶</a></dt>
+<dd><p>The natural logarithm of 10.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.LN2">
+<tt class="descclassname">GLib.</tt><tt class="descname">LN2</tt><em class="property"> = 0.693147</em><a class="headerlink" href="#GLib.LN2" title="Permalink to this definition">¶</a></dt>
+<dd><p>The natural logarithm of 2.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.LOG_2_BASE_10">
+<tt class="descclassname">GLib.</tt><tt class="descname">LOG_2_BASE_10</tt><em class="property"> = 0.30103</em><a class="headerlink" href="#GLib.LOG_2_BASE_10" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplying the base 2 exponent by this number yields the base 10 exponent.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.LOG_DOMAIN">
+<tt class="descclassname">GLib.</tt><tt class="descname">LOG_DOMAIN</tt><em class="property"> = 0</em><a class="headerlink" href="#GLib.LOG_DOMAIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the log domain.</p>
+<p>For applications, this is typically left as the default <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>
+(or &#8220;&#8221;) domain. Libraries should define this so that any messages
+which they log can be differentiated from messages from other
+libraries and application code. But be careful not to define
+it in any public header files.</p>
+<p>For example, GTK+ uses this in its Makefile.am:
+<tt class="docutils literal"><span class="pre">INCLUDES</span> <span class="pre">=</span> <span class="pre">-DG_LOG_DOMAIN=\&quot;Gtk\&quot;</span></tt></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.LOG_FATAL_MASK">
+<tt class="descclassname">GLib.</tt><tt class="descname">LOG_FATAL_MASK</tt><em class="property"> = 0</em><a class="headerlink" href="#GLib.LOG_FATAL_MASK" title="Permalink to this definition">¶</a></dt>
+<dd><p>GLib log levels that are considered fatal by default.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.LOG_LEVEL_USER_SHIFT">
+<tt class="descclassname">GLib.</tt><tt class="descname">LOG_LEVEL_USER_SHIFT</tt><em class="property"> = 8</em><a class="headerlink" href="#GLib.LOG_LEVEL_USER_SHIFT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAJOR_VERSION">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAJOR_VERSION</tt><em class="property"> = 2</em><a class="headerlink" href="#GLib.MAJOR_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The major version number of the GLib library.</p>
+<p>Like #glib_major_version, but from the headers used at
+application compile time, rather than from the library
+linked against at application run time.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXINT16">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXINT16</tt><em class="property"> = 32767</em><a class="headerlink" href="#GLib.MAXINT16" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #gint16.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXINT32">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXINT32</tt><em class="property"> = 2147483647</em><a class="headerlink" href="#GLib.MAXINT32" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #gint32.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXINT64">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXINT64</tt><em class="property"> = 9223372036854775807</em><a class="headerlink" href="#GLib.MAXINT64" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #gint64.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXINT8">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXINT8</tt><em class="property"> = 127</em><a class="headerlink" href="#GLib.MAXINT8" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #gint8.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXUINT16">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXUINT16</tt><em class="property"> = 65535</em><a class="headerlink" href="#GLib.MAXUINT16" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #guint16.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXUINT32">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXUINT32</tt><em class="property"> = 4294967295L</em><a class="headerlink" href="#GLib.MAXUINT32" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #guint32.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXUINT64">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXUINT64</tt><em class="property"> = 18446744073709551615L</em><a class="headerlink" href="#GLib.MAXUINT64" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #guint64.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MAXUINT8">
+<tt class="descclassname">GLib.</tt><tt class="descname">MAXUINT8</tt><em class="property"> = 255</em><a class="headerlink" href="#GLib.MAXUINT8" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum value which can be held in a #guint8.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MICRO_VERSION">
+<tt class="descclassname">GLib.</tt><tt class="descname">MICRO_VERSION</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.MICRO_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The micro version number of the GLib library.</p>
+<p>Like #gtk_micro_version, but from the headers used at
+application compile time, rather than from the library
+linked against at application run time.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MININT16">
+<tt class="descclassname">GLib.</tt><tt class="descname">MININT16</tt><em class="property"> = -32768</em><a class="headerlink" href="#GLib.MININT16" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minimum value which can be held in a #gint16.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MININT32">
+<tt class="descclassname">GLib.</tt><tt class="descname">MININT32</tt><em class="property"> = -2147483648</em><a class="headerlink" href="#GLib.MININT32" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minimum value which can be held in a #gint32.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MININT64">
+<tt class="descclassname">GLib.</tt><tt class="descname">MININT64</tt><em class="property"> = -9223372036854775808</em><a class="headerlink" href="#GLib.MININT64" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minimum value which can be held in a #gint64.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MININT8">
+<tt class="descclassname">GLib.</tt><tt class="descname">MININT8</tt><em class="property"> = -128</em><a class="headerlink" href="#GLib.MININT8" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minimum value which can be held in a #gint8.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MINOR_VERSION">
+<tt class="descclassname">GLib.</tt><tt class="descname">MINOR_VERSION</tt><em class="property"> = 36</em><a class="headerlink" href="#GLib.MINOR_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minor version number of the GLib library.</p>
+<p>Like #gtk_minor_version, but from the headers used at
+application compile time, rather than from the library
+linked against at application run time.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.MODULE_SUFFIX">
+<tt class="descclassname">GLib.</tt><tt class="descname">MODULE_SUFFIX</tt><em class="property"> = 'so'</em><a class="headerlink" href="#GLib.MODULE_SUFFIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.OPTION_REMAINING">
+<tt class="descclassname">GLib.</tt><tt class="descname">OPTION_REMAINING</tt><em class="property"> = ''</em><a class="headerlink" href="#GLib.OPTION_REMAINING" title="Permalink to this definition">¶</a></dt>
+<dd><p>If a long option in the main group has this name, it is not treated as a
+regular option. Instead it collects all non-option arguments which would
+otherwise be left in <tt class="docutils literal"><span class="pre">argv</span></tt>. The option must be of type
+<a class="reference internal" href="enums.html#GLib.OptionArg.CALLBACK" title="GLib.OptionArg.CALLBACK"><tt class="xref py py-class docutils literal"><span class="pre">GLib.OptionArg.CALLBACK</span></tt></a>, <a class="reference internal" href="enums.html#GLib.OptionArg.STRING_ARRAY" title="GLib.OptionArg.STRING_ARRAY"><tt class="xref py py-class docutils literal"><span class="pre">GLib.OptionArg.STRING_ARRAY</span></tt></a>
+or <a class="reference internal" href="enums.html#GLib.OptionArg.FILENAME_ARRAY" title="GLib.OptionArg.FILENAME_ARRAY"><tt class="xref py py-class docutils literal"><span class="pre">GLib.OptionArg.FILENAME_ARRAY</span></tt></a>.</p>
+<p>Using <a class="reference internal" href="#GLib.OPTION_REMAINING" title="GLib.OPTION_REMAINING"><tt class="xref py py-class docutils literal"><span class="pre">GLib.OPTION_REMAINING</span></tt></a> instead of simply scanning <tt class="docutils literal"><span class="pre">argv</span></tt>
+for leftover arguments has the advantage that GOption takes care of
+necessary encoding conversions for strings or filenames.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PDP_ENDIAN">
+<tt class="descclassname">GLib.</tt><tt class="descname">PDP_ENDIAN</tt><em class="property"> = 3412</em><a class="headerlink" href="#GLib.PDP_ENDIAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies one of the possible types of byte order
+(currently unused). See #G_BYTE_ORDER.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PI">
+<tt class="descclassname">GLib.</tt><tt class="descname">PI</tt><em class="property"> = 3.141593</em><a class="headerlink" href="#GLib.PI" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value of pi (ratio of circle&#8217;s circumference to its diameter).</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PI_2">
+<tt class="descclassname">GLib.</tt><tt class="descname">PI_2</tt><em class="property"> = 1.570796</em><a class="headerlink" href="#GLib.PI_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pi divided by 2.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PI_4">
+<tt class="descclassname">GLib.</tt><tt class="descname">PI_4</tt><em class="property"> = 0.785398</em><a class="headerlink" href="#GLib.PI_4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pi divided by 4.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.POLLFD_FORMAT">
+<tt class="descclassname">GLib.</tt><tt class="descname">POLLFD_FORMAT</tt><em class="property"> = '%#I64x'</em><a class="headerlink" href="#GLib.POLLFD_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.PRIORITY_DEFAULT">
+<tt class="descclassname">GLib.</tt><tt class="descname">PRIORITY_DEFAULT</tt><em class="property"> = 0</em><a class="headerlink" href="#GLib.PRIORITY_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this for default priority event sources.</p>
+<p>In GLib this priority is used when adding timeout functions
+with <a class="reference internal" href="functions.html#GLib.timeout_add" title="GLib.timeout_add"><tt class="xref py py-class docutils literal"><span class="pre">GLib.timeout_add</span></tt></a> (). In GDK this priority is used for events
+from the X server.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PRIORITY_DEFAULT_IDLE">
+<tt class="descclassname">GLib.</tt><tt class="descname">PRIORITY_DEFAULT_IDLE</tt><em class="property"> = 200</em><a class="headerlink" href="#GLib.PRIORITY_DEFAULT_IDLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this for default priority idle functions.</p>
+<p>In GLib this priority is used when adding idle functions with
+<a class="reference internal" href="functions.html#GLib.idle_add" title="GLib.idle_add"><tt class="xref py py-class docutils literal"><span class="pre">GLib.idle_add</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PRIORITY_HIGH">
+<tt class="descclassname">GLib.</tt><tt class="descname">PRIORITY_HIGH</tt><em class="property"> = -100</em><a class="headerlink" href="#GLib.PRIORITY_HIGH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this for high priority event sources.</p>
+<p>It is not used within GLib or GTK+.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PRIORITY_HIGH_IDLE">
+<tt class="descclassname">GLib.</tt><tt class="descname">PRIORITY_HIGH_IDLE</tt><em class="property"> = 100</em><a class="headerlink" href="#GLib.PRIORITY_HIGH_IDLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this for high priority idle functions.</p>
+<p>GTK+ uses <a class="reference internal" href="#GLib.PRIORITY_HIGH_IDLE" title="GLib.PRIORITY_HIGH_IDLE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.PRIORITY_HIGH_IDLE</span></tt></a> + 10 for resizing operations,
+and <a class="reference internal" href="#GLib.PRIORITY_HIGH_IDLE" title="GLib.PRIORITY_HIGH_IDLE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.PRIORITY_HIGH_IDLE</span></tt></a> + 20 for redrawing operations. (This is
+done to ensure that any pending resizes are processed before any
+pending redraws, so that widgets are not redrawn twice unnecessarily.)</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.PRIORITY_LOW">
+<tt class="descclassname">GLib.</tt><tt class="descname">PRIORITY_LOW</tt><em class="property"> = 300</em><a class="headerlink" href="#GLib.PRIORITY_LOW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this for very low priority background tasks.</p>
+<p>It is not used within GLib or GTK+.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.SEARCHPATH_SEPARATOR">
+<tt class="descclassname">GLib.</tt><tt class="descname">SEARCHPATH_SEPARATOR</tt><em class="property"> = 59</em><a class="headerlink" href="#GLib.SEARCHPATH_SEPARATOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The search path separator character.
+This is &#8216;:&#8217; on UNIX machines and &#8216;;&#8217; under Windows.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.SEARCHPATH_SEPARATOR_S">
+<tt class="descclassname">GLib.</tt><tt class="descname">SEARCHPATH_SEPARATOR_S</tt><em class="property"> = ';'</em><a class="headerlink" href="#GLib.SEARCHPATH_SEPARATOR_S" title="Permalink to this definition">¶</a></dt>
+<dd><p>The search path separator as a string.
+This is &#8221;:&#8221; on UNIX machines and &#8221;;&#8221; under Windows.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.SIZEOF_LONG">
+<tt class="descclassname">GLib.</tt><tt class="descname">SIZEOF_LONG</tt><em class="property"> = 8</em><a class="headerlink" href="#GLib.SIZEOF_LONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SIZEOF_SIZE_T">
+<tt class="descclassname">GLib.</tt><tt class="descname">SIZEOF_SIZE_T</tt><em class="property"> = 8</em><a class="headerlink" href="#GLib.SIZEOF_SIZE_T" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SIZEOF_VOID_P">
+<tt class="descclassname">GLib.</tt><tt class="descname">SIZEOF_VOID_P</tt><em class="property"> = 8</em><a class="headerlink" href="#GLib.SIZEOF_VOID_P" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SQRT2">
+<tt class="descclassname">GLib.</tt><tt class="descname">SQRT2</tt><em class="property"> = 1.414214</em><a class="headerlink" href="#GLib.SQRT2" title="Permalink to this definition">¶</a></dt>
+<dd><p>The square root of two.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.STR_DELIMITERS">
+<tt class="descclassname">GLib.</tt><tt class="descname">STR_DELIMITERS</tt><em class="property"> = '_-|&gt; &lt;.'</em><a class="headerlink" href="#GLib.STR_DELIMITERS" title="Permalink to this definition">¶</a></dt>
+<dd><p>The standard delimiters, used in <a class="reference internal" href="functions.html#GLib.strdelimit" title="GLib.strdelimit"><tt class="xref py py-class docutils literal"><span class="pre">GLib.strdelimit</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.SYSDEF_AF_INET">
+<tt class="descclassname">GLib.</tt><tt class="descname">SYSDEF_AF_INET</tt><em class="property"> = 2</em><a class="headerlink" href="#GLib.SYSDEF_AF_INET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SYSDEF_AF_INET6">
+<tt class="descclassname">GLib.</tt><tt class="descname">SYSDEF_AF_INET6</tt><em class="property"> = 10</em><a class="headerlink" href="#GLib.SYSDEF_AF_INET6" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SYSDEF_AF_UNIX">
+<tt class="descclassname">GLib.</tt><tt class="descname">SYSDEF_AF_UNIX</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.SYSDEF_AF_UNIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SYSDEF_MSG_DONTROUTE">
+<tt class="descclassname">GLib.</tt><tt class="descname">SYSDEF_MSG_DONTROUTE</tt><em class="property"> = 4</em><a class="headerlink" href="#GLib.SYSDEF_MSG_DONTROUTE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SYSDEF_MSG_OOB">
+<tt class="descclassname">GLib.</tt><tt class="descname">SYSDEF_MSG_OOB</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.SYSDEF_MSG_OOB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.SYSDEF_MSG_PEEK">
+<tt class="descclassname">GLib.</tt><tt class="descname">SYSDEF_MSG_PEEK</tt><em class="property"> = 2</em><a class="headerlink" href="#GLib.SYSDEF_MSG_PEEK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.TIME_SPAN_DAY">
+<tt class="descclassname">GLib.</tt><tt class="descname">TIME_SPAN_DAY</tt><em class="property"> = 86400000000</em><a class="headerlink" href="#GLib.TIME_SPAN_DAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates to a time span of one day.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.TIME_SPAN_HOUR">
+<tt class="descclassname">GLib.</tt><tt class="descname">TIME_SPAN_HOUR</tt><em class="property"> = 3600000000</em><a class="headerlink" href="#GLib.TIME_SPAN_HOUR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates to a time span of one hour.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.TIME_SPAN_MILLISECOND">
+<tt class="descclassname">GLib.</tt><tt class="descname">TIME_SPAN_MILLISECOND</tt><em class="property"> = 1000</em><a class="headerlink" href="#GLib.TIME_SPAN_MILLISECOND" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates to a time span of one millisecond.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.TIME_SPAN_MINUTE">
+<tt class="descclassname">GLib.</tt><tt class="descname">TIME_SPAN_MINUTE</tt><em class="property"> = 60000000</em><a class="headerlink" href="#GLib.TIME_SPAN_MINUTE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates to a time span of one minute.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.TIME_SPAN_SECOND">
+<tt class="descclassname">GLib.</tt><tt class="descname">TIME_SPAN_SECOND</tt><em class="property"> = 1000000</em><a class="headerlink" href="#GLib.TIME_SPAN_SECOND" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates to a time span of one second.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH">
+<tt class="descclassname">GLib.</tt><tt class="descname">UNICHAR_MAX_DECOMPOSITION_LENGTH</tt><em class="property"> = 18</em><a class="headerlink" href="#GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum length (in codepoints) of a compatibility or canonical
+decomposition of a single Unicode character.</p>
+<p>This is as defined by Unicode 6.1.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS">
+<tt class="descclassname">GLib.</tt><tt class="descname">URI_RESERVED_CHARS_GENERIC_DELIMITERS</tt><em class="property"> = ':/?#[]&#64;'</em><a class="headerlink" href="#GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic delimiters characters as defined in RFC 3986. Includes &#8221;:/?#[]&#64;&#8221;.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS">
+<tt class="descclassname">GLib.</tt><tt class="descname">URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS</tt><em class="property"> = &quot;!$&amp;'()*+,;=&quot;</em><a class="headerlink" href="#GLib.URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subcomponent delimiter characters as defined in RFC 3986. Includes &#8221;!$&amp;&#8217;()*+,;=&#8221;.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.USEC_PER_SEC">
+<tt class="descclassname">GLib.</tt><tt class="descname">USEC_PER_SEC</tt><em class="property"> = 1000000</em><a class="headerlink" href="#GLib.USEC_PER_SEC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of microseconds in one second (1 million).
+This macro is provided for code readability.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.VA_COPY_AS_ARRAY">
+<tt class="descclassname">GLib.</tt><tt class="descname">VA_COPY_AS_ARRAY</tt><em class="property"> = 1</em><a class="headerlink" href="#GLib.VA_COPY_AS_ARRAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GLib.VERSION_MIN_REQUIRED">
+<tt class="descclassname">GLib.</tt><tt class="descname">VERSION_MIN_REQUIRED</tt><em class="property"> = 2</em><a class="headerlink" href="#GLib.VERSION_MIN_REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd><p>A macro that should be defined by the user prior to including
+the glib.h header.
+The definition should be one of the predefined GLib version
+macros: %GLIB_VERSION_2_26, %GLIB_VERSION_2_28,...</p>
+<p>This macro defines the earliest version of GLib that the package is
+required to be able to compile against.</p>
+<p>If the compiler is configured to warn about the use of deprecated
+functions, then using functions that were deprecated in version
+<a class="reference internal" href="#GLib.VERSION_MIN_REQUIRED" title="GLib.VERSION_MIN_REQUIRED"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VERSION_MIN_REQUIRED</span></tt></a> or earlier will cause warnings (but
+using functions deprecated in later releases will not).</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GLib.WIN32_MSG_HANDLE">
+<tt class="descclassname">GLib.</tt><tt class="descname">WIN32_MSG_HANDLE</tt><em class="property"> = 19981206</em><a class="headerlink" href="#GLib.WIN32_MSG_HANDLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../GMenu_3.0/index.html" class="btn btn-neutral float-right" title="GMenu 3.0"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="enums.html" class="btn btn-neutral" title="Enums"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,914 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Clutter.BoxLayout -
+    
+      Classes -
+    
+      Clutter 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Clutter.BrightnessContrastEffect" href="BrightnessContrastEffect.html"/>
+        <link rel="prev" title="Clutter.Box" href="Box.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Clutter 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Clutter.BoxLayout</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Clutter 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Clutter.BoxLayout</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Clutter_1.0/classes/BoxLayout" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="clutter-boxlayout">
+<h1>Clutter.BoxLayout<a class="headerlink" href="#clutter-boxlayout" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-e011a4bde499eb44b4180d2d505e4af02394a366.png" alt="Inheritance diagram of Clutter.BoxLayout" usemap="#inheritancef5f82cbbf7" class="inheritance"/>
+<map id="inheritancef5f82cbbf7" name="inheritancef5f82cbbf7">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="29,5,125,29"/>
+<area shape="rect" id="node2" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="5,77,149,101"/>
+<area shape="rect" id="node5" href="LayoutManager.html#Clutter.LayoutManager" title="Clutter.LayoutManager" alt="" coords="12,149,143,173"/>
+<area shape="rect" id="node4" href="#Clutter.BoxLayout" title="Clutter.BoxLayout" alt="" coords="24,221,131,245"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.new" title="Clutter.BoxLayout.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_alignment" title="Clutter.BoxLayout.get_alignment"><tt class="xref py py-obj docutils literal"><span class="pre">get_alignment</span></tt></a>(actor)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_easing_duration" title="Clutter.BoxLayout.get_easing_duration"><tt class="xref py py-obj docutils literal"><span class="pre">get_easing_duration</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_easing_mode" title="Clutter.BoxLayout.get_easing_mode"><tt class="xref py py-obj docutils literal"><span class="pre">get_easing_mode</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_expand" title="Clutter.BoxLayout.get_expand"><tt class="xref py py-obj docutils literal"><span class="pre">get_expand</span></tt></a>(actor)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_fill" title="Clutter.BoxLayout.get_fill"><tt class="xref py py-obj docutils literal"><span class="pre">get_fill</span></tt></a>(actor)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_homogeneous" title="Clutter.BoxLayout.get_homogeneous"><tt class="xref py py-obj docutils literal"><span class="pre">get_homogeneous</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_orientation" title="Clutter.BoxLayout.get_orientation"><tt class="xref py py-obj docutils literal"><span class="pre">get_orientation</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_pack_start" title="Clutter.BoxLayout.get_pack_start"><tt class="xref py py-obj docutils literal"><span class="pre">get_pack_start</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_spacing" title="Clutter.BoxLayout.get_spacing"><tt class="xref py py-obj docutils literal"><span class="pre">get_spacing</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_use_animations" title="Clutter.BoxLayout.get_use_animations"><tt class="xref py py-obj docutils literal"><span class="pre">get_use_animations</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.get_vertical" title="Clutter.BoxLayout.get_vertical"><tt class="xref py py-obj docutils literal"><span class="pre">get_vertical</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.pack" title="Clutter.BoxLayout.pack"><tt class="xref py py-obj docutils literal"><span class="pre">pack</span></tt></a>(actor, expand, x_fill, y_fill, x_align, y_align)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_alignment" title="Clutter.BoxLayout.set_alignment"><tt class="xref py py-obj docutils literal"><span class="pre">set_alignment</span></tt></a>(actor, x_align, y_align)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_easing_duration" title="Clutter.BoxLayout.set_easing_duration"><tt class="xref py py-obj docutils literal"><span class="pre">set_easing_duration</span></tt></a>(msecs)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_easing_mode" title="Clutter.BoxLayout.set_easing_mode"><tt class="xref py py-obj docutils literal"><span class="pre">set_easing_mode</span></tt></a>(mode)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_expand" title="Clutter.BoxLayout.set_expand"><tt class="xref py py-obj docutils literal"><span class="pre">set_expand</span></tt></a>(actor, expand)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_fill" title="Clutter.BoxLayout.set_fill"><tt class="xref py py-obj docutils literal"><span class="pre">set_fill</span></tt></a>(actor, x_fill, y_fill)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_homogeneous" title="Clutter.BoxLayout.set_homogeneous"><tt class="xref py py-obj docutils literal"><span class="pre">set_homogeneous</span></tt></a>(homogeneous)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_orientation" title="Clutter.BoxLayout.set_orientation"><tt class="xref py py-obj docutils literal"><span class="pre">set_orientation</span></tt></a>(orientation)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_pack_start" title="Clutter.BoxLayout.set_pack_start"><tt class="xref py py-obj docutils literal"><span class="pre">set_pack_start</span></tt></a>(pack_start)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_spacing" title="Clutter.BoxLayout.set_spacing"><tt class="xref py py-obj docutils literal"><span class="pre">set_spacing</span></tt></a>(spacing)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_use_animations" title="Clutter.BoxLayout.set_use_animations"><tt class="xref py py-obj docutils literal"><span class="pre">set_use_animations</span></tt></a>(animate)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.BoxLayout.set_vertical" title="Clutter.BoxLayout.set_vertical"><tt class="xref py py-obj docutils literal"><span class="pre">set_vertical</span></tt></a>(vertical)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="clutter-boxlayout-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="easing-duration">easing-duration</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>The duration of the animations</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="easing-mode">easing-mode</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>The easing mode of the animations</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="homogeneous">homogeneous</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether the layout should be homogeneous, i.e. all childs get the same size</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="orientation">orientation</span></td>
+<td><a class="reference internal" href="../enums.html#Clutter.Orientation" title="Clutter.Orientation"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Orientation</span></tt></a></td>
+<td>r/w</td>
+<td>The orientation of the layout</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="pack-start">pack-start</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether to pack items at the start of the box</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="spacing">spacing</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Spacing between children</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="use-animations">use-animations</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether layout changes should be animated</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="vertical">vertical</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether the layout should be vertical, rather than horizontal</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="clutter-boxlayout-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent_instance</td>
+<td><a class="reference internal" href="LayoutManager.html#Clutter.LayoutManager" title="Clutter.LayoutManager"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.LayoutManager</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.BoxLayout">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">BoxLayout</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="LayoutManager.html#Clutter.LayoutManager" title="Clutter.LayoutManager"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.LayoutManager</span></tt></a></p>
+<p>The <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> structure contains only private data
+and should be accessed using the provided API</p>
+<dl class="staticmethod">
+<dt id="Clutter.BoxLayout.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the newly created <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="LayoutManager.html#Clutter.LayoutManager" title="Clutter.LayoutManager"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.LayoutManager</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> layout manager</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_alignment">
+<tt class="descname">get_alignment</tt><big>(</big><em>actor</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_alignment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> child of <cite>layout</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">x_align: <a class="reference internal" href="../enums.html#Clutter.BoxAlignment" title="Clutter.BoxAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxAlignment</span></tt></a>, y_align: <a class="reference internal" href="../enums.html#Clutter.BoxAlignment" title="Clutter.BoxAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxAlignment</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the horizontal and vertical alignment policies for <cite>actor</cite>
+as set using <a class="reference internal" href="#Clutter.BoxLayout.pack" title="Clutter.BoxLayout.pack"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.pack</span></tt></a> () or <a class="reference internal" href="#Clutter.BoxLayout.set_alignment" title="Clutter.BoxLayout.set_alignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_alignment</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_easing_duration">
+<tt class="descname">get_easing_duration</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_easing_duration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the duration of the animations, in milliseconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the duration set using <a class="reference internal" href="#Clutter.BoxLayout.set_easing_duration" title="Clutter.BoxLayout.set_easing_duration"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_easing_duration</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_easing_mode">
+<tt class="descname">get_easing_mode</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_easing_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an easing mode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the easing mode set using <a class="reference internal" href="#Clutter.BoxLayout.set_easing_mode" title="Clutter.BoxLayout.set_easing_mode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_easing_mode</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_expand">
+<tt class="descname">get_expand</tt><big>(</big><em>actor</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_expand" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> child of <cite>layout</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> should expand, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves whether <cite>actor</cite> should expand inside <cite>layout</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_fill">
+<tt class="descname">get_fill</tt><big>(</big><em>actor</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_fill" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> child of <cite>layout</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">x_fill: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, y_fill: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the horizontal and vertical fill policies for <cite>actor</cite>
+as set using <a class="reference internal" href="#Clutter.BoxLayout.pack" title="Clutter.BoxLayout.pack"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.pack</span></tt></a> () or <a class="reference internal" href="#Clutter.BoxLayout.set_fill" title="Clutter.BoxLayout.set_fill"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_fill</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_homogeneous">
+<tt class="descname">get_homogeneous</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> is arranging its children homogeneously, and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves if the children sizes are allocated homogeneously.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_orientation">
+<tt class="descname">get_orientation</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_orientation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the orientation of the layout</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Clutter.Orientation" title="Clutter.Orientation"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Orientation</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the orientation of the <cite>layout</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_pack_start">
+<tt class="descname">get_pack_start</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_pack_start" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> should pack children at the beginning of the layout, and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the value set using <a class="reference internal" href="#Clutter.BoxLayout.set_pack_start" title="Clutter.BoxLayout.set_pack_start"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_pack_start</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_spacing">
+<tt class="descname">get_spacing</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the spacing between children of the <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the spacing set using <a class="reference internal" href="#Clutter.BoxLayout.set_spacing" title="Clutter.BoxLayout.set_spacing"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_spacing</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_use_animations">
+<tt class="descname">get_use_animations</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_use_animations" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the animations should be used, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves whether <cite>layout</cite> should animate changes in the layout properties.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.get_vertical">
+<tt class="descname">get_vertical</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.get_vertical" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> is arranging its children vertically, and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the orientation of the <cite>layout</cite> as set using the
+<a class="reference internal" href="#Clutter.BoxLayout.set_vertical" title="Clutter.BoxLayout.set_vertical"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_vertical</span></tt></a> () function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.pack">
+<tt class="descname">pack</tt><big>(</big><em>actor</em>, <em>expand</em>, <em>x_fill</em>, <em>y_fill</em>, <em>x_align</em>, <em>y_align</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.pack" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></li>
+<li><strong>expand</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether the <cite>actor</cite> should expand</li>
+<li><strong>x_fill</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether the <cite>actor</cite> should fill horizontally</li>
+<li><strong>y_fill</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether the <cite>actor</cite> should fill vertically</li>
+<li><strong>x_align</strong> (<a class="reference internal" href="../enums.html#Clutter.BoxAlignment" title="Clutter.BoxAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxAlignment</span></tt></a>) &#8211; the horizontal alignment policy for <cite>actor</cite></li>
+<li><strong>y_align</strong> (<a class="reference internal" href="../enums.html#Clutter.BoxAlignment" title="Clutter.BoxAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxAlignment</span></tt></a>) &#8211; the vertical alignment policy for <cite>actor</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Packs <cite>actor</cite> inside the <a class="reference internal" href="../interfaces/Container.html#Clutter.Container" title="Clutter.Container"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Container</span></tt></a> associated to <cite>layout</cite>
+and sets the layout properties</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_alignment">
+<tt class="descname">set_alignment</tt><big>(</big><em>actor</em>, <em>x_align</em>, <em>y_align</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_alignment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> child of <cite>layout</cite></li>
+<li><strong>x_align</strong> (<a class="reference internal" href="../enums.html#Clutter.BoxAlignment" title="Clutter.BoxAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxAlignment</span></tt></a>) &#8211; Horizontal alignment policy for <cite>actor</cite></li>
+<li><strong>y_align</strong> (<a class="reference internal" href="../enums.html#Clutter.BoxAlignment" title="Clutter.BoxAlignment"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxAlignment</span></tt></a>) &#8211; Vertical alignment policy for <cite>actor</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the horizontal and vertical alignment policies for <cite>actor</cite>
+inside <cite>layout</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_easing_duration">
+<tt class="descname">set_easing_duration</tt><big>(</big><em>msecs</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_easing_duration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>msecs</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the duration of the animations, in milliseconds</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the duration of the animations used by <cite>layout</cite> when animating changes
+in the layout properties.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_easing_mode">
+<tt class="descname">set_easing_mode</tt><big>(</big><em>mode</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_easing_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mode</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an easing mode, either from <a class="reference internal" href="../enums.html#Clutter.AnimationMode" title="Clutter.AnimationMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.AnimationMode</span></tt></a> or a logical id from <a class="reference internal" href="Alpha.html#Clutter.Alpha.register_func" title="Clutter.Alpha.register_func"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Alpha.register_func</span></tt></a> ()</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the easing mode to be used by <cite>layout</cite> when animating changes in layout
+properties.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_expand">
+<tt class="descname">set_expand</tt><big>(</big><em>actor</em>, <em>expand</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_expand" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> child of <cite>layout</cite></li>
+<li><strong>expand</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether <cite>actor</cite> should expand</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether <cite>actor</cite> should expand inside <cite>layout</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_fill">
+<tt class="descname">set_fill</tt><big>(</big><em>actor</em>, <em>x_fill</em>, <em>y_fill</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_fill" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> child of <cite>layout</cite></li>
+<li><strong>x_fill</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether <cite>actor</cite> should fill horizontally the allocated space</li>
+<li><strong>y_fill</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether <cite>actor</cite> should fill vertically the allocated space</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the horizontal and vertical fill policies for <cite>actor</cite>
+inside <cite>layout</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_homogeneous">
+<tt class="descname">set_homogeneous</tt><big>(</big><em>homogeneous</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_homogeneous" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>homogeneous</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the layout should be homogeneous</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether the size of <cite>layout</cite> children should be
+homogeneous</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_orientation">
+<tt class="descname">set_orientation</tt><big>(</big><em>orientation</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_orientation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>orientation</strong> (<a class="reference internal" href="../enums.html#Clutter.Orientation" title="Clutter.Orientation"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Orientation</span></tt></a>) &#8211; the orientation of the <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the orientation of the <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> layout manager.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_pack_start">
+<tt class="descname">set_pack_start</tt><big>(</big><em>pack_start</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_pack_start" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pack_start</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <cite>layout</cite> should pack children at the beginning of the layout</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether children of <cite>layout</cite> should be layed out by appending
+them or by prepending them</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_spacing">
+<tt class="descname">set_spacing</tt><big>(</big><em>spacing</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_spacing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>spacing</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the spacing between children of the layout, in pixels</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the spacing between children of <cite>layout</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_use_animations">
+<tt class="descname">set_use_animations</tt><big>(</big><em>animate</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_use_animations" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>animate</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <cite>layout</cite> should use animations</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether <cite>layout</cite> should animate changes in the layout properties</p>
+<p>The duration of the animations is controlled by
+<a class="reference internal" href="#Clutter.BoxLayout.set_easing_duration" title="Clutter.BoxLayout.set_easing_duration"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_easing_duration</span></tt></a> (); the easing mode to be used
+by the animations is controlled by <a class="reference internal" href="#Clutter.BoxLayout.set_easing_mode" title="Clutter.BoxLayout.set_easing_mode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout.set_easing_mode</span></tt></a> ().</p>
+<p>Enabling animations will override the easing state of each child
+of the actor using <cite>layout</cite>, and will use the <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> <a class="reference internal" href="TableLayout.html#easing-mode"><em>:easing-mode</em></a>
+and <a class="reference internal" href="#Clutter.BoxLayout" title="Clutter.BoxLayout"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.BoxLayout</span></tt></a> <a class="reference internal" href="TableLayout.html#easing-duration"><em>:easing-duration</em></a> properties instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.BoxLayout.set_vertical">
+<tt class="descname">set_vertical</tt><big>(</big><em>vertical</em><big>)</big><a class="headerlink" href="#Clutter.BoxLayout.set_vertical" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vertical</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the layout should be vertical</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether <cite>layout</cite> should arrange its children vertically alongside
+the Y axis, instead of horizontally alongside the X axis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="BrightnessContrastEffect.html" class="btn btn-neutral float-right" title="Clutter.BrightnessContrastEffect"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Box.html" class="btn btn-neutral" title="Clutter.Box"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

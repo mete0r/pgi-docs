@@ -1,0 +1,782 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Constants -
+    
+      GObject 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="GObject 2.0" href="index.html"/>
+        <link rel="next" title="Grl 0.2" href="../Grl_0.2/index.html"/>
+        <link rel="prev" title="Enums" href="enums.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">GObject 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Constants</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">GObject 2.0</a> &raquo;</li>
+  
+  <li><a href="">Constants</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GObject_2.0/constants" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="constants">
+<h1>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#GObject.G_MAXDOUBLE" title="GObject.G_MAXDOUBLE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXDOUBLE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXFLOAT" title="GObject.G_MAXFLOAT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXFLOAT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXINT" title="GObject.G_MAXINT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXINT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXINT16" title="GObject.G_MAXINT16"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXINT16</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXINT32" title="GObject.G_MAXINT32"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXINT32</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXINT64" title="GObject.G_MAXINT64"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXINT64</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXINT8" title="GObject.G_MAXINT8"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXINT8</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXLONG" title="GObject.G_MAXLONG"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXLONG</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXSHORT" title="GObject.G_MAXSHORT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXSHORT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXSIZE" title="GObject.G_MAXSIZE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXSIZE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXSSIZE" title="GObject.G_MAXSSIZE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXSSIZE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXUINT" title="GObject.G_MAXUINT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXUINT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXUINT16" title="GObject.G_MAXUINT16"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXUINT16</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXUINT32" title="GObject.G_MAXUINT32"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXUINT32</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXUINT64" title="GObject.G_MAXUINT64"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXUINT64</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXUINT8" title="GObject.G_MAXUINT8"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXUINT8</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXULONG" title="GObject.G_MAXULONG"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXULONG</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MAXUSHORT" title="GObject.G_MAXUSHORT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MAXUSHORT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MINDOUBLE" title="GObject.G_MINDOUBLE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MINDOUBLE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MINFLOAT" title="GObject.G_MINFLOAT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MINFLOAT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MININT" title="GObject.G_MININT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MININT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MININT16" title="GObject.G_MININT16"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MININT16</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MININT32" title="GObject.G_MININT32"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MININT32</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MININT64" title="GObject.G_MININT64"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MININT64</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MININT8" title="GObject.G_MININT8"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MININT8</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MINLONG" title="GObject.G_MINLONG"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MINLONG</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MINSHORT" title="GObject.G_MINSHORT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MINSHORT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.G_MINSSIZE" title="GObject.G_MINSSIZE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.G_MINSSIZE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.PARAM_MASK" title="GObject.PARAM_MASK"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.PARAM_MASK</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.PARAM_READWRITE" title="GObject.PARAM_READWRITE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.PARAM_READWRITE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.PARAM_STATIC_STRINGS" title="GObject.PARAM_STATIC_STRINGS"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.PARAM_STATIC_STRINGS</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.PARAM_USER_SHIFT" title="GObject.PARAM_USER_SHIFT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.PARAM_USER_SHIFT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.SIGNAL_FLAGS_MASK" title="GObject.SIGNAL_FLAGS_MASK"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.SIGNAL_FLAGS_MASK</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.SIGNAL_MATCH_MASK" title="GObject.SIGNAL_MATCH_MASK"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.SIGNAL_MATCH_MASK</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_BOOLEAN" title="GObject.TYPE_BOOLEAN"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_BOOLEAN</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_BOXED" title="GObject.TYPE_BOXED"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_BOXED</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_CHAR" title="GObject.TYPE_CHAR"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_CHAR</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_DOUBLE" title="GObject.TYPE_DOUBLE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_DOUBLE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_ENUM" title="GObject.TYPE_ENUM"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_ENUM</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_FLAGS" title="GObject.TYPE_FLAGS"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_FLAGS</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_FLAG_RESERVED_ID_BIT" title="GObject.TYPE_FLAG_RESERVED_ID_BIT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_FLAG_RESERVED_ID_BIT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_FLOAT" title="GObject.TYPE_FLOAT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_FLOAT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_FUNDAMENTAL_MAX" title="GObject.TYPE_FUNDAMENTAL_MAX"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_FUNDAMENTAL_MAX</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_FUNDAMENTAL_SHIFT" title="GObject.TYPE_FUNDAMENTAL_SHIFT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_FUNDAMENTAL_SHIFT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_GSTRING" title="GObject.TYPE_GSTRING"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_GSTRING</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_GTYPE" title="GObject.TYPE_GTYPE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_GTYPE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_INT" title="GObject.TYPE_INT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_INT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_INT64" title="GObject.TYPE_INT64"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_INT64</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_INTERFACE" title="GObject.TYPE_INTERFACE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_INTERFACE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_INVALID" title="GObject.TYPE_INVALID"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_INVALID</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_LONG" title="GObject.TYPE_LONG"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_LONG</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_NONE" title="GObject.TYPE_NONE"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_NONE</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_OBJECT" title="GObject.TYPE_OBJECT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_OBJECT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_PARAM" title="GObject.TYPE_PARAM"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_PARAM</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_POINTER" title="GObject.TYPE_POINTER"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_POINTER</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_PYOBJECT" title="GObject.TYPE_PYOBJECT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_PYOBJECT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_RESERVED_BSE_FIRST" title="GObject.TYPE_RESERVED_BSE_FIRST"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_RESERVED_BSE_FIRST</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_RESERVED_BSE_LAST" title="GObject.TYPE_RESERVED_BSE_LAST"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_RESERVED_BSE_LAST</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_RESERVED_GLIB_FIRST" title="GObject.TYPE_RESERVED_GLIB_FIRST"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_RESERVED_GLIB_FIRST</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_RESERVED_GLIB_LAST" title="GObject.TYPE_RESERVED_GLIB_LAST"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_RESERVED_GLIB_LAST</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_RESERVED_USER_FIRST" title="GObject.TYPE_RESERVED_USER_FIRST"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_RESERVED_USER_FIRST</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_STRING" title="GObject.TYPE_STRING"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_STRING</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_STRV" title="GObject.TYPE_STRV"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_STRV</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_UCHAR" title="GObject.TYPE_UCHAR"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_UCHAR</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_UINT" title="GObject.TYPE_UINT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_UINT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_UINT64" title="GObject.TYPE_UINT64"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_UINT64</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_ULONG" title="GObject.TYPE_ULONG"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_ULONG</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_UNICHAR" title="GObject.TYPE_UNICHAR"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_UNICHAR</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.TYPE_VARIANT" title="GObject.TYPE_VARIANT"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.TYPE_VARIANT</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.VALUE_COLLECT_FORMAT_MAX_LENGTH" title="GObject.VALUE_COLLECT_FORMAT_MAX_LENGTH"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.VALUE_COLLECT_FORMAT_MAX_LENGTH</span></tt></a></li>
+<li><a class="reference internal" href="#GObject.VALUE_NOCOPY_CONTENTS" title="GObject.VALUE_NOCOPY_CONTENTS"><tt class="xref py py-obj docutils literal"><span class="pre">GObject.VALUE_NOCOPY_CONTENTS</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="GObject.G_MAXDOUBLE">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXDOUBLE</tt><em class="property"> = 1.7976931348623157e+308</em><a class="headerlink" href="#GObject.G_MAXDOUBLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXFLOAT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXFLOAT</tt><em class="property"> = 3.4028234663852886e+38</em><a class="headerlink" href="#GObject.G_MAXFLOAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXINT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXINT</tt><em class="property"> = 2147483647</em><a class="headerlink" href="#GObject.G_MAXINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXINT16">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXINT16</tt><em class="property"> = 32767</em><a class="headerlink" href="#GObject.G_MAXINT16" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXINT32">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXINT32</tt><em class="property"> = 2147483647</em><a class="headerlink" href="#GObject.G_MAXINT32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXINT64">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXINT64</tt><em class="property"> = 9223372036854775807</em><a class="headerlink" href="#GObject.G_MAXINT64" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXINT8">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXINT8</tt><em class="property"> = 127</em><a class="headerlink" href="#GObject.G_MAXINT8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXLONG">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXLONG</tt><em class="property"> = 9223372036854775807L</em><a class="headerlink" href="#GObject.G_MAXLONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXSHORT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXSHORT</tt><em class="property"> = 32767</em><a class="headerlink" href="#GObject.G_MAXSHORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXSIZE">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXSIZE</tt><em class="property"> = 18446744073709551615L</em><a class="headerlink" href="#GObject.G_MAXSIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXSSIZE">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXSSIZE</tt><em class="property"> = 9223372036854775807L</em><a class="headerlink" href="#GObject.G_MAXSSIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXUINT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXUINT</tt><em class="property"> = 4294967295</em><a class="headerlink" href="#GObject.G_MAXUINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXUINT16">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXUINT16</tt><em class="property"> = 65535</em><a class="headerlink" href="#GObject.G_MAXUINT16" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXUINT32">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXUINT32</tt><em class="property"> = 4294967295L</em><a class="headerlink" href="#GObject.G_MAXUINT32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXUINT64">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXUINT64</tt><em class="property"> = 18446744073709551615L</em><a class="headerlink" href="#GObject.G_MAXUINT64" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXUINT8">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXUINT8</tt><em class="property"> = 255</em><a class="headerlink" href="#GObject.G_MAXUINT8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXULONG">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXULONG</tt><em class="property"> = 18446744073709551615L</em><a class="headerlink" href="#GObject.G_MAXULONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MAXUSHORT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MAXUSHORT</tt><em class="property"> = 65535</em><a class="headerlink" href="#GObject.G_MAXUSHORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MINDOUBLE">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MINDOUBLE</tt><em class="property"> = 2.2250738585072014e-308</em><a class="headerlink" href="#GObject.G_MINDOUBLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MINFLOAT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MINFLOAT</tt><em class="property"> = 1.1754943508222875e-38</em><a class="headerlink" href="#GObject.G_MINFLOAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MININT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MININT</tt><em class="property"> = -2147483648</em><a class="headerlink" href="#GObject.G_MININT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MININT16">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MININT16</tt><em class="property"> = -32768</em><a class="headerlink" href="#GObject.G_MININT16" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MININT32">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MININT32</tt><em class="property"> = -2147483648</em><a class="headerlink" href="#GObject.G_MININT32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MININT64">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MININT64</tt><em class="property"> = -9223372036854775808</em><a class="headerlink" href="#GObject.G_MININT64" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MININT8">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MININT8</tt><em class="property"> = -128</em><a class="headerlink" href="#GObject.G_MININT8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MINLONG">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MINLONG</tt><em class="property"> = -9223372036854775808L</em><a class="headerlink" href="#GObject.G_MINLONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MINSHORT">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MINSHORT</tt><em class="property"> = -32768</em><a class="headerlink" href="#GObject.G_MINSHORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.G_MINSSIZE">
+<tt class="descclassname">GObject.</tt><tt class="descname">G_MINSSIZE</tt><em class="property"> = -9223372036854775808L</em><a class="headerlink" href="#GObject.G_MINSSIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.PARAM_MASK">
+<tt class="descclassname">GObject.</tt><tt class="descname">PARAM_MASK</tt><em class="property"> = 255</em><a class="headerlink" href="#GObject.PARAM_MASK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mask containing the bits of <a class="reference internal" href="classes/ParamSpec.html#GObject.ParamSpec" title="GObject.ParamSpec"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamSpec</span></tt></a>.flags which are reserved for GLib.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.PARAM_READWRITE">
+<tt class="descclassname">GObject.</tt><tt class="descname">PARAM_READWRITE</tt><em class="property"> = 0</em><a class="headerlink" href="#GObject.PARAM_READWRITE" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="flags.html#GObject.ParamFlags" title="GObject.ParamFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamFlags</span></tt></a> value alias for <a class="reference internal" href="flags.html#GObject.ParamFlags.READABLE" title="GObject.ParamFlags.READABLE"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamFlags.READABLE</span></tt></a> | <a class="reference internal" href="flags.html#GObject.ParamFlags.WRITABLE" title="GObject.ParamFlags.WRITABLE"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamFlags.WRITABLE</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.PARAM_STATIC_STRINGS">
+<tt class="descclassname">GObject.</tt><tt class="descname">PARAM_STATIC_STRINGS</tt><em class="property"> = 0</em><a class="headerlink" href="#GObject.PARAM_STATIC_STRINGS" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="flags.html#GObject.ParamFlags" title="GObject.ParamFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamFlags</span></tt></a> value alias for <a class="reference internal" href="flags.html#GObject.ParamFlags.STATIC_NAME" title="GObject.ParamFlags.STATIC_NAME"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamFlags.STATIC_NAME</span></tt></a> | <a class="reference internal" href="flags.html#GObject.ParamFlags.STATIC_NICK" title="GObject.ParamFlags.STATIC_NICK"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamFlags.STATIC_NICK</span></tt></a> | <a class="reference internal" href="flags.html#GObject.ParamFlags.STATIC_BLURB" title="GObject.ParamFlags.STATIC_BLURB"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamFlags.STATIC_BLURB</span></tt></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.13.0</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.PARAM_USER_SHIFT">
+<tt class="descclassname">GObject.</tt><tt class="descname">PARAM_USER_SHIFT</tt><em class="property"> = 8</em><a class="headerlink" href="#GObject.PARAM_USER_SHIFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum shift count to be used for user defined flags, to be stored in
+<a class="reference internal" href="classes/ParamSpec.html#GObject.ParamSpec" title="GObject.ParamSpec"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ParamSpec</span></tt></a>.flags. The maximum allowed is 30 + <a class="reference internal" href="#GObject.PARAM_USER_SHIFT" title="GObject.PARAM_USER_SHIFT"><tt class="xref py py-class docutils literal"><span class="pre">GObject.PARAM_USER_SHIFT</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.SIGNAL_FLAGS_MASK">
+<tt class="descclassname">GObject.</tt><tt class="descname">SIGNAL_FLAGS_MASK</tt><em class="property"> = 511</em><a class="headerlink" href="#GObject.SIGNAL_FLAGS_MASK" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mask for all <a class="reference internal" href="flags.html#GObject.SignalFlags" title="GObject.SignalFlags"><tt class="xref py py-class docutils literal"><span class="pre">GObject.SignalFlags</span></tt></a> bits.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.SIGNAL_MATCH_MASK">
+<tt class="descclassname">GObject.</tt><tt class="descname">SIGNAL_MATCH_MASK</tt><em class="property"> = 63</em><a class="headerlink" href="#GObject.SIGNAL_MATCH_MASK" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mask for all <a class="reference internal" href="flags.html#GObject.SignalMatchType" title="GObject.SignalMatchType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.SignalMatchType</span></tt></a> bits.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_BOOLEAN">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_BOOLEAN</tt><em class="property"> = &lt;GType gboolean (20)&gt;</em><a class="headerlink" href="#GObject.TYPE_BOOLEAN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_BOXED">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_BOXED</tt><em class="property"> = &lt;GType GBoxed (72)&gt;</em><a class="headerlink" href="#GObject.TYPE_BOXED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_CHAR">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_CHAR</tt><em class="property"> = &lt;GType gchar (12)&gt;</em><a class="headerlink" href="#GObject.TYPE_CHAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_DOUBLE">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_DOUBLE</tt><em class="property"> = &lt;GType gdouble (60)&gt;</em><a class="headerlink" href="#GObject.TYPE_DOUBLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_ENUM">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_ENUM</tt><em class="property"> = &lt;GType GEnum (48)&gt;</em><a class="headerlink" href="#GObject.TYPE_ENUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_FLAGS">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_FLAGS</tt><em class="property"> = &lt;GType GFlags (52)&gt;</em><a class="headerlink" href="#GObject.TYPE_FLAGS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_FLAG_RESERVED_ID_BIT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_FLAG_RESERVED_ID_BIT</tt><em class="property"> = 1L</em><a class="headerlink" href="#GObject.TYPE_FLAG_RESERVED_ID_BIT" title="Permalink to this definition">¶</a></dt>
+<dd><p>A bit in the type number that&#8217;s supposed to be left untouched.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_FLOAT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_FLOAT</tt><em class="property"> = &lt;GType gfloat (56)&gt;</em><a class="headerlink" href="#GObject.TYPE_FLOAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_FUNDAMENTAL_MAX">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_FUNDAMENTAL_MAX</tt><em class="property"> = 255</em><a class="headerlink" href="#GObject.TYPE_FUNDAMENTAL_MAX" title="Permalink to this definition">¶</a></dt>
+<dd><p>An integer constant that represents the number of identifiers reserved
+for types that are assigned at compile-time.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_FUNDAMENTAL_SHIFT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_FUNDAMENTAL_SHIFT</tt><em class="property"> = 2</em><a class="headerlink" href="#GObject.TYPE_FUNDAMENTAL_SHIFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shift value used in converting numbers to type IDs.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_GSTRING">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_GSTRING</tt><em class="property"> = &lt;GType invalid (0)&gt;</em><a class="headerlink" href="#GObject.TYPE_GSTRING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_GTYPE">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_GTYPE</tt><em class="property"> = &lt;GType GType (45378048)&gt;</em><a class="headerlink" href="#GObject.TYPE_GTYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_INT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_INT</tt><em class="property"> = &lt;GType gint (24)&gt;</em><a class="headerlink" href="#GObject.TYPE_INT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_INT64">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_INT64</tt><em class="property"> = &lt;GType gint64 (40)&gt;</em><a class="headerlink" href="#GObject.TYPE_INT64" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_INTERFACE">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_INTERFACE</tt><em class="property"> = &lt;GType GInterface (8)&gt;</em><a class="headerlink" href="#GObject.TYPE_INTERFACE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_INVALID">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_INVALID</tt><em class="property"> = &lt;GType invalid (0)&gt;</em><a class="headerlink" href="#GObject.TYPE_INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_LONG">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_LONG</tt><em class="property"> = &lt;GType glong (32)&gt;</em><a class="headerlink" href="#GObject.TYPE_LONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_NONE">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_NONE</tt><em class="property"> = &lt;GType void (4)&gt;</em><a class="headerlink" href="#GObject.TYPE_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_OBJECT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_OBJECT</tt><em class="property"> = &lt;GType GObject (80)&gt;</em><a class="headerlink" href="#GObject.TYPE_OBJECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_PARAM">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_PARAM</tt><em class="property"> = &lt;GType GParam (76)&gt;</em><a class="headerlink" href="#GObject.TYPE_PARAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_POINTER">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_POINTER</tt><em class="property"> = &lt;GType gpointer (68)&gt;</em><a class="headerlink" href="#GObject.TYPE_POINTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_PYOBJECT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_PYOBJECT</tt><em class="property"> = &lt;GType invalid (0)&gt;</em><a class="headerlink" href="#GObject.TYPE_PYOBJECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_RESERVED_BSE_FIRST">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_RESERVED_BSE_FIRST</tt><em class="property"> = 32</em><a class="headerlink" href="#GObject.TYPE_RESERVED_BSE_FIRST" title="Permalink to this definition">¶</a></dt>
+<dd><p>First fundamental type number to create a new fundamental type id with
+G_TYPE_MAKE_FUNDAMENTAL() reserved for BSE.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_RESERVED_BSE_LAST">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_RESERVED_BSE_LAST</tt><em class="property"> = 48</em><a class="headerlink" href="#GObject.TYPE_RESERVED_BSE_LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Last fundamental type number reserved for BSE.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_RESERVED_GLIB_FIRST">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_RESERVED_GLIB_FIRST</tt><em class="property"> = 22</em><a class="headerlink" href="#GObject.TYPE_RESERVED_GLIB_FIRST" title="Permalink to this definition">¶</a></dt>
+<dd><p>First fundamental type number to create a new fundamental type id with
+G_TYPE_MAKE_FUNDAMENTAL() reserved for GLib.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_RESERVED_GLIB_LAST">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_RESERVED_GLIB_LAST</tt><em class="property"> = 31</em><a class="headerlink" href="#GObject.TYPE_RESERVED_GLIB_LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>Last fundamental type number reserved for GLib.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_RESERVED_USER_FIRST">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_RESERVED_USER_FIRST</tt><em class="property"> = 49</em><a class="headerlink" href="#GObject.TYPE_RESERVED_USER_FIRST" title="Permalink to this definition">¶</a></dt>
+<dd><p>First available fundamental type number to create new fundamental
+type id with G_TYPE_MAKE_FUNDAMENTAL().</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_STRING">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_STRING</tt><em class="property"> = &lt;GType gchararray (64)&gt;</em><a class="headerlink" href="#GObject.TYPE_STRING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_STRV">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_STRV</tt><em class="property"> = &lt;GType invalid (0)&gt;</em><a class="headerlink" href="#GObject.TYPE_STRV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_UCHAR">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_UCHAR</tt><em class="property"> = &lt;GType guchar (16)&gt;</em><a class="headerlink" href="#GObject.TYPE_UCHAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_UINT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_UINT</tt><em class="property"> = &lt;GType guint (28)&gt;</em><a class="headerlink" href="#GObject.TYPE_UINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_UINT64">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_UINT64</tt><em class="property"> = &lt;GType guint64 (44)&gt;</em><a class="headerlink" href="#GObject.TYPE_UINT64" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_ULONG">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_ULONG</tt><em class="property"> = &lt;GType gulong (36)&gt;</em><a class="headerlink" href="#GObject.TYPE_ULONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_UNICHAR">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_UNICHAR</tt><em class="property"> = &lt;GType guint (28)&gt;</em><a class="headerlink" href="#GObject.TYPE_UNICHAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.TYPE_VARIANT">
+<tt class="descclassname">GObject.</tt><tt class="descname">TYPE_VARIANT</tt><em class="property"> = &lt;GType GVariant (84)&gt;</em><a class="headerlink" href="#GObject.TYPE_VARIANT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="GObject.VALUE_COLLECT_FORMAT_MAX_LENGTH">
+<tt class="descclassname">GObject.</tt><tt class="descname">VALUE_COLLECT_FORMAT_MAX_LENGTH</tt><em class="property"> = 8</em><a class="headerlink" href="#GObject.VALUE_COLLECT_FORMAT_MAX_LENGTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximal number of <a class="reference internal" href="unions/TypeCValue.html#GObject.TypeCValue" title="GObject.TypeCValue"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TypeCValue</span></tt></a> s which can be collected for a
+single <a class="reference internal" href="structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="GObject.VALUE_NOCOPY_CONTENTS">
+<tt class="descclassname">GObject.</tt><tt class="descname">VALUE_NOCOPY_CONTENTS</tt><em class="property"> = 134217728</em><a class="headerlink" href="#GObject.VALUE_NOCOPY_CONTENTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>If passed to G_VALUE_COLLECT(), allocated data won&#8217;t be copied
+but used verbatim. This does not affect ref-counted types like
+objects.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../Grl_0.2/index.html" class="btn btn-neutral float-right" title="Grl 0.2"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="enums.html" class="btn btn-neutral" title="Enums"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

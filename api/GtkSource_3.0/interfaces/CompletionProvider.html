@@ -1,0 +1,625 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GtkSource.CompletionProvider -
+    
+      Interfaces -
+    
+      GtkSource 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Interfaces" href="index.html"/>
+        <link rel="next" title="GtkSource.UndoManager" href="UndoManager.html"/>
+        <link rel="prev" title="GtkSource.CompletionProposal" href="CompletionProposal.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GtkSource 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Interfaces</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GtkSource.CompletionProvider</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GtkSource 3.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Interfaces</a> &raquo;</li>
+  
+  <li><a href="">GtkSource.CompletionProvider</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GtkSource_3.0/interfaces/CompletionProvider" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gtksource-completionprovider">
+<h1>GtkSource.CompletionProvider<a class="headerlink" href="#gtksource-completionprovider" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-44b81964032fa4bdbc46c91e839090b3ece77ff0.png" alt="Inheritance diagram of GtkSource.CompletionProvider" usemap="#inheritanceb0720991f3" class="inheritance"/>
+<map id="inheritanceb0720991f3" name="inheritanceb0720991f3">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="33,5,148,29"/>
+<area shape="rect" id="node2" href="#GtkSource.CompletionProvider" title="GtkSource.CompletionProvider" alt="" coords="5,77,176,101"/>
+</map>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="../classes/CompletionWords.html#GtkSource.CompletionWords" title="GtkSource.CompletionWords"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionWords</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.activate_proposal" title="GtkSource.CompletionProvider.activate_proposal"><tt class="xref py py-obj docutils literal"><span class="pre">activate_proposal</span></tt></a>(proposal, iter)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.get_activation" title="GtkSource.CompletionProvider.get_activation"><tt class="xref py py-obj docutils literal"><span class="pre">get_activation</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.get_icon" title="GtkSource.CompletionProvider.get_icon"><tt class="xref py py-obj docutils literal"><span class="pre">get_icon</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.get_info_widget" title="GtkSource.CompletionProvider.get_info_widget"><tt class="xref py py-obj docutils literal"><span class="pre">get_info_widget</span></tt></a>(proposal)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.get_interactive_delay" title="GtkSource.CompletionProvider.get_interactive_delay"><tt class="xref py py-obj docutils literal"><span class="pre">get_interactive_delay</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.get_name" title="GtkSource.CompletionProvider.get_name"><tt class="xref py py-obj docutils literal"><span class="pre">get_name</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.get_priority" title="GtkSource.CompletionProvider.get_priority"><tt class="xref py py-obj docutils literal"><span class="pre">get_priority</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.get_start_iter" title="GtkSource.CompletionProvider.get_start_iter"><tt class="xref py py-obj docutils literal"><span class="pre">get_start_iter</span></tt></a>(context, proposal, iter)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.match" title="GtkSource.CompletionProvider.match"><tt class="xref py py-obj docutils literal"><span class="pre">match</span></tt></a>(context)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.populate" title="GtkSource.CompletionProvider.populate"><tt class="xref py py-obj docutils literal"><span class="pre">populate</span></tt></a>(context)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GtkSource.CompletionProvider.update_info" title="GtkSource.CompletionProvider.update_info"><tt class="xref py py-obj docutils literal"><span class="pre">update_info</span></tt></a>(proposal, info)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtksource-completionprovider-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gtksource-completionprovider-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GtkSource.CompletionProvider">
+<em class="property">class </em><tt class="descclassname">GtkSource.</tt><tt class="descname">CompletionProvider</tt><a class="headerlink" href="#GtkSource.CompletionProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GInterface</span></tt></a></p>
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.activate_proposal">
+<tt class="descname">activate_proposal</tt><big>(</big><em>proposal</em>, <em>iter</em><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.activate_proposal" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>proposal</strong> (<a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>) &#8211; a <a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>.</li>
+<li><strong>iter</strong> (<a class="reference internal" href="../../Gtk_3.0/structs/TextIter.html#Gtk.TextIter" title="Gtk.TextIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TextIter</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gtk_3.0/structs/TextIter.html#Gtk.TextIter" title="Gtk.TextIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TextIter</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> to indicate that the proposal activation has been handled, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Activate <cite>proposal</cite> at <cite>iter</cite>. When this functions returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>, the default
+activation of <cite>proposal</cite> will take place which replaces the word at <cite>iter</cite>
+with the text of <cite>proposal</cite> (see <a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal.get_text" title="GtkSource.CompletionProposal.get_text"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal.get_text</span></tt></a> ()).</p>
+<p>Here is how the default activation selects the boundaries of the word to
+replace. The end of the word is <cite>iter</cite>. For the start of the word, it depends
+on whether a start iter is defined for <cite>proposal</cite> (see
+<a class="reference internal" href="#GtkSource.CompletionProvider.get_start_iter" title="GtkSource.CompletionProvider.get_start_iter"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProvider.get_start_iter</span></tt></a> ()). If a start iter is defined,
+the start of the word is the start iter. Else, the word (as long as possible)
+will contain only alphanumerical and the &#8220;_&#8221; characters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.get_activation">
+<tt class="descname">get_activation</tt><big>(</big><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.get_activation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a combination of <a class="reference internal" href="../flags.html#GtkSource.CompletionActivation" title="GtkSource.CompletionActivation"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionActivation</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#GtkSource.CompletionActivation" title="GtkSource.CompletionActivation"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionActivation</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get with what kind of activation the provider should be activated.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.get_icon">
+<tt class="descname">get_icon</tt><big>(</big><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.get_icon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The icon to be used for the provider, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the provider does not have a special icon.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../GdkPixbuf_2.0/classes/Pixbuf.html#GdkPixbuf.Pixbuf" title="GdkPixbuf.Pixbuf"><tt class="xref py py-class docutils literal"><span class="pre">GdkPixbuf.Pixbuf</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the icon of the provider.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.get_info_widget">
+<tt class="descname">get_info_widget</tt><big>(</big><em>proposal</em><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.get_info_widget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>proposal</strong> (<a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>) &#8211; a currently selected <a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a custom <a class="reference internal" href="../../Gtk_3.0/classes/Widget.html#Gtk.Widget" title="Gtk.Widget"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Widget</span></tt></a> to show extra information about <cite>proposal</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gtk_3.0/classes/Widget.html#Gtk.Widget" title="Gtk.Widget"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Widget</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get a customized info widget to show extra information of a proposal.
+This allows for customized widgets on a proposal basis, although in general
+providers will have the same custom widget for all their proposals and
+<cite>proposal</cite> can be ignored. The implementation of this function is optional.</p>
+<p>If this function is not implemented, the default widget is a <a class="reference internal" href="../../Gtk_3.0/classes/Label.html#Gtk.Label" title="Gtk.Label"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Label</span></tt></a>. The
+return value of <a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal.get_info" title="GtkSource.CompletionProposal.get_info"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal.get_info</span></tt></a> () is used as the
+content of the <a class="reference internal" href="../../Gtk_3.0/classes/Label.html#Gtk.Label" title="Gtk.Label"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Label</span></tt></a>.</p>
+<p>If implemented, <a class="reference internal" href="#GtkSource.CompletionProvider.update_info" title="GtkSource.CompletionProvider.update_info"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProvider.update_info</span></tt></a> ()
+must also be implemented.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.get_interactive_delay">
+<tt class="descname">get_interactive_delay</tt><big>(</big><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.get_interactive_delay" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the interactive delay in milliseconds.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the delay in milliseconds before starting interactive completion for
+this provider. A value of -1 indicates to use the default value as set
+by the <a class="reference internal" href="../classes/Completion.html#GtkSource.Completion" title="GtkSource.Completion"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.Completion</span></tt></a> <a class="reference internal" href="../classes/Completion.html#auto-complete-delay"><em>:auto-complete-delay</em></a> property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.get_name">
+<tt class="descname">get_name</tt><big>(</big><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new string containing the name of the provider.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the name of the provider. This should be a translatable name for
+display to the user. For example: _(&#8220;Document word completion provider&#8221;). The
+returned string must be freed with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.get_priority">
+<tt class="descname">get_priority</tt><big>(</big><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.get_priority" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the provider priority.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the provider priority. The priority determines the order in which
+proposals appear in the completion popup. Higher priorities are sorted
+before lower priorities. The default priority is 0.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.get_start_iter">
+<tt class="descname">get_start_iter</tt><big>(</big><em>context</em>, <em>proposal</em>, <em>iter</em><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.get_start_iter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>context</strong> (<a class="reference internal" href="../classes/CompletionContext.html#GtkSource.CompletionContext" title="GtkSource.CompletionContext"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionContext</span></tt></a>) &#8211; a <a class="reference internal" href="../classes/CompletionContext.html#GtkSource.CompletionContext" title="GtkSource.CompletionContext"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionContext</span></tt></a>.</li>
+<li><strong>proposal</strong> (<a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>) &#8211; a <a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>.</li>
+<li><strong>iter</strong> (<a class="reference internal" href="../../Gtk_3.0/structs/TextIter.html#Gtk.TextIter" title="Gtk.TextIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TextIter</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gtk_3.0/structs/TextIter.html#Gtk.TextIter" title="Gtk.TextIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TextIter</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>iter</cite> was set for <cite>proposal</cite>, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get the <a class="reference internal" href="../../Gtk_3.0/structs/TextIter.html#Gtk.TextIter" title="Gtk.TextIter"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.TextIter</span></tt></a> at which the completion for <cite>proposal</cite> starts. When
+implemented, the completion can use this information to position the
+completion window accordingly when a proposal is selected in the completion
+window.</p>
+<p>When the <cite>proposal</cite> is activated, the default handler uses <cite>iter</cite> as the start
+of the word to replace. See
+<a class="reference internal" href="#GtkSource.CompletionProvider.activate_proposal" title="GtkSource.CompletionProvider.activate_proposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProvider.activate_proposal</span></tt></a> () for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.match">
+<tt class="descname">match</tt><big>(</big><em>context</em><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.match" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>context</strong> (<a class="reference internal" href="../classes/CompletionContext.html#GtkSource.CompletionContext" title="GtkSource.CompletionContext"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionContext</span></tt></a>) &#8211; a <a class="reference internal" href="../classes/CompletionContext.html#GtkSource.CompletionContext" title="GtkSource.CompletionContext"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionContext</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>provider</cite> matches the completion context, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get whether the provider match the context of completion detailed in
+<cite>context</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.populate">
+<tt class="descname">populate</tt><big>(</big><em>context</em><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.populate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>context</strong> (<a class="reference internal" href="../classes/CompletionContext.html#GtkSource.CompletionContext" title="GtkSource.CompletionContext"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionContext</span></tt></a>) &#8211; a <a class="reference internal" href="../classes/CompletionContext.html#GtkSource.CompletionContext" title="GtkSource.CompletionContext"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionContext</span></tt></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Populate <cite>context</cite> with proposals from <cite>provider</cite> added with the
+<a class="reference internal" href="../classes/CompletionContext.html#GtkSource.CompletionContext.add_proposals" title="GtkSource.CompletionContext.add_proposals"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionContext.add_proposals</span></tt></a> () function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GtkSource.CompletionProvider.update_info">
+<tt class="descname">update_info</tt><big>(</big><em>proposal</em>, <em>info</em><big>)</big><a class="headerlink" href="#GtkSource.CompletionProvider.update_info" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>proposal</strong> (<a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>) &#8211; a <a class="reference internal" href="CompletionProposal.html#GtkSource.CompletionProposal" title="GtkSource.CompletionProposal"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProposal</span></tt></a>.</li>
+<li><strong>info</strong> (<a class="reference internal" href="../classes/CompletionInfo.html#GtkSource.CompletionInfo" title="GtkSource.CompletionInfo"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionInfo</span></tt></a>) &#8211; a <a class="reference internal" href="../classes/CompletionInfo.html#GtkSource.CompletionInfo" title="GtkSource.CompletionInfo"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionInfo</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Update extra information shown in <cite>info</cite> for <cite>proposal</cite>.</p>
+<p>This function must be implemented when
+<a class="reference internal" href="#GtkSource.CompletionProvider.get_info_widget" title="GtkSource.CompletionProvider.get_info_widget"><tt class="xref py py-class docutils literal"><span class="pre">GtkSource.CompletionProvider.get_info_widget</span></tt></a> () is implemented.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="UndoManager.html" class="btn btn-neutral float-right" title="GtkSource.UndoManager"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="CompletionProposal.html" class="btn btn-neutral" title="GtkSource.CompletionProposal"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

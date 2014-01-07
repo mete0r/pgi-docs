@@ -1,0 +1,922 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GIRepository.Repository -
+    
+      Classes -
+    
+      GIRepository 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Structures" href="../structs/index.html"/>
+        <link rel="prev" title="Classes" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GIRepository 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GIRepository.Repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GIRepository 2.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">GIRepository.Repository</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GIRepository_2.0/classes/Repository" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="girepository-repository">
+<h1>GIRepository.Repository<a class="headerlink" href="#girepository-repository" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-177c0213453dbf9728245d4ed1a6ac43652f0206.png" alt="Inheritance diagram of GIRepository.Repository" usemap="#inheritance31cef57c0f" class="inheritance"/>
+<map id="inheritance31cef57c0f" name="inheritance31cef57c0f">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="25,5,121,29"/>
+<area shape="rect" id="node2" href="#GIRepository.Repository" title="GIRepository.Repository" alt="" coords="5,77,141,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GIRepository.Repository.dump" title="GIRepository.Repository.dump"><tt class="xref py py-obj docutils literal"><span class="pre">dump</span></tt></a>(arg)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GIRepository.Repository.error_quark" title="GIRepository.Repository.error_quark"><tt class="xref py py-obj docutils literal"><span class="pre">error_quark</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_default" title="GIRepository.Repository.get_default"><tt class="xref py py-obj docutils literal"><span class="pre">get_default</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_search_path" title="GIRepository.Repository.get_search_path"><tt class="xref py py-obj docutils literal"><span class="pre">get_search_path</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GIRepository.Repository.prepend_library_path" title="GIRepository.Repository.prepend_library_path"><tt class="xref py py-obj docutils literal"><span class="pre">prepend_library_path</span></tt></a>(directory)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GIRepository.Repository.prepend_search_path" title="GIRepository.Repository.prepend_search_path"><tt class="xref py py-obj docutils literal"><span class="pre">prepend_search_path</span></tt></a>(directory)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.enumerate_versions" title="GIRepository.Repository.enumerate_versions"><tt class="xref py py-obj docutils literal"><span class="pre">enumerate_versions</span></tt></a>(namespace_)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.find_by_error_domain" title="GIRepository.Repository.find_by_error_domain"><tt class="xref py py-obj docutils literal"><span class="pre">find_by_error_domain</span></tt></a>(domain)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.find_by_gtype" title="GIRepository.Repository.find_by_gtype"><tt class="xref py py-obj docutils literal"><span class="pre">find_by_gtype</span></tt></a>(gtype)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.find_by_name" title="GIRepository.Repository.find_by_name"><tt class="xref py py-obj docutils literal"><span class="pre">find_by_name</span></tt></a>(namespace_, name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_c_prefix" title="GIRepository.Repository.get_c_prefix"><tt class="xref py py-obj docutils literal"><span class="pre">get_c_prefix</span></tt></a>(namespace_)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_dependencies" title="GIRepository.Repository.get_dependencies"><tt class="xref py py-obj docutils literal"><span class="pre">get_dependencies</span></tt></a>(namespace_)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_info" title="GIRepository.Repository.get_info"><tt class="xref py py-obj docutils literal"><span class="pre">get_info</span></tt></a>(namespace_, index)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_loaded_namespaces" title="GIRepository.Repository.get_loaded_namespaces"><tt class="xref py py-obj docutils literal"><span class="pre">get_loaded_namespaces</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_n_infos" title="GIRepository.Repository.get_n_infos"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_infos</span></tt></a>(namespace_)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_shared_library" title="GIRepository.Repository.get_shared_library"><tt class="xref py py-obj docutils literal"><span class="pre">get_shared_library</span></tt></a>(namespace_)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_typelib_path" title="GIRepository.Repository.get_typelib_path"><tt class="xref py py-obj docutils literal"><span class="pre">get_typelib_path</span></tt></a>(namespace_)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.get_version" title="GIRepository.Repository.get_version"><tt class="xref py py-obj docutils literal"><span class="pre">get_version</span></tt></a>(namespace_)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.is_registered" title="GIRepository.Repository.is_registered"><tt class="xref py py-obj docutils literal"><span class="pre">is_registered</span></tt></a>(namespace_, version)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.load_typelib" title="GIRepository.Repository.load_typelib"><tt class="xref py py-obj docutils literal"><span class="pre">load_typelib</span></tt></a>(typelib, flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-obj docutils literal"><span class="pre">require</span></tt></a>(namespace_, version, flags)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GIRepository.Repository.require_private" title="GIRepository.Repository.require_private"><tt class="xref py py-obj docutils literal"><span class="pre">require_private</span></tt></a>(typelib_dir, namespace_, version, flags)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="girepository-repository-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="girepository-repository-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.Repository">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">Repository</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#GIRepository.Repository" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<dl class="staticmethod">
+<dt id="GIRepository.Repository.dump">
+<em class="property">static </em><tt class="descname">dump</tt><big>(</big><em>arg</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.dump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GIRepository.Repository.error_quark">
+<em class="property">static </em><tt class="descname">error_quark</tt><big>(</big><big>)</big><a class="headerlink" href="#GIRepository.Repository.error_quark" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GIRepository.Repository.get_default">
+<em class="property">static </em><tt class="descname">get_default</tt><big>(</big><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_default" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The global singleton <a class="reference internal" href="#GIRepository.Repository" title="GIRepository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GIRepository.Repository" title="GIRepository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the singleton process-global default <a class="reference internal" href="#GIRepository.Repository" title="GIRepository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository</span></tt></a>.  It is
+not currently supported to have multiple repositories in a
+particular process, but this function is provided in the unlikely
+eventuality that it would become possible, and as a convenience for
+higher level language bindings to conform to the <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a> method
+call conventions.</p>
+<p>All methods on <a class="reference internal" href="#GIRepository.Repository" title="GIRepository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository</span></tt></a> also accept <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> as an instance
+parameter to mean this default repository, which is usually more
+convenient for C.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GIRepository.Repository.get_search_path">
+<em class="property">static </em><tt class="descname">get_search_path</tt><big>(</big><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_search_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of strings</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the search path the <a class="reference internal" href="#GIRepository.Repository" title="GIRepository.Repository"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository</span></tt></a> will use when looking for typelibs.
+The string is internal to GIRespository and should not be freed, nor should
+the elements.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GIRepository.Repository.prepend_library_path">
+<em class="property">static </em><tt class="descname">prepend_library_path</tt><big>(</big><em>directory</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.prepend_library_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>directory</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GIRepository.Repository.prepend_search_path">
+<em class="property">static </em><tt class="descname">prepend_search_path</tt><big>(</big><em>directory</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.prepend_search_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>directory</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.enumerate_versions">
+<tt class="descname">enumerate_versions</tt><big>(</big><em>namespace_</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.enumerate_versions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; GI namespace, e.g. &#8220;Gtk&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the array of versions.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Obtain an unordered list of versions (either currently loaded or
+available) for <cite>namespace_</cite> in this <cite>repository</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.find_by_error_domain">
+<tt class="descname">find_by_error_domain</tt><big>(</big><em>domain</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.find_by_error_domain" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>domain</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a <a class="reference internal" href="../../GLib_2.0/structs/Error.html#GLib.Error" title="GLib.Error"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Error</span></tt></a> domain</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.EnumInfo</span></tt> representing metadata about <cite>domain</cite> &#8216;s enum type, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Searches for the enum type corresponding to the given <a class="reference internal" href="../../GLib_2.0/structs/Error.html#GLib.Error" title="GLib.Error"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Error</span></tt></a>
+domain. Before calling this function for a particular namespace,
+you must call <a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.require</span></tt></a> () once to load the namespace, or
+otherwise ensure the namespace has already been loaded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.find_by_gtype">
+<tt class="descname">find_by_gtype</tt><big>(</big><em>gtype</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.find_by_gtype" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gtype</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> to search for</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a> representing metadata about <cite>type</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Searches all loaded namespaces for a particular <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt>.  Note that
+in order to locate the metadata, the namespace corresponding to
+the type must first have been loaded.  There is currently no
+mechanism for determining the namespace which corresponds to an
+arbitrary <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> - thus, this function will operate most reliably
+when you know the <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> to originate from be from a loaded namespace.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.find_by_name">
+<tt class="descname">find_by_name</tt><big>(</big><em>namespace_</em>, <em>name</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.find_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace which will be searched</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Entry name to find</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a> representing metadata about <cite>name</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Searches for a particular entry in a namespace.  Before calling
+this function for a particular namespace, you must call
+<a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.require</span></tt></a> () once to load the namespace, or otherwise
+ensure the namespace has already been loaded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_c_prefix">
+<tt class="descname">get_c_prefix</tt><big>(</big><em>namespace_</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_c_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace to inspect</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">C namespace prefix, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if none associated</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns the &#8220;C prefix&#8221;, or the C level namespace
+associated with the given introspection namespace.  Each C symbol
+starts with this prefix, as well each <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> in the library.</p>
+<p>Note: The namespace must have already been loaded using a function
+such as <a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.require</span></tt></a> () before calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_dependencies">
+<tt class="descname">get_dependencies</tt><big>(</big><em>namespace_</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace of interest</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Zero-terminated string array of versioned dependencies</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Return an array of all (transitive) dependencies for namespace
+<cite>namespace_</cite>, including version.  The returned strings are of the
+form namespace-version.</p>
+<p>Note: The namespace must have already been loaded using a function
+such as <a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.require</span></tt></a> () before calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_info">
+<tt class="descname">get_info</tt><big>(</big><em>namespace_</em>, <em>index</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_info" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace to inspect</li>
+<li><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; 0-based offset into namespace metadata for entry</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a> containing metadata</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This function returns a particular metadata entry in the
+given namespace <cite>namespace_</cite>.  The namespace must have
+already been loaded before calling this function.
+See <a class="reference internal" href="#GIRepository.Repository.get_n_infos" title="GIRepository.Repository.get_n_infos"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.get_n_infos</span></tt></a> () to find the maximum number of
+entries.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_loaded_namespaces">
+<tt class="descname">get_loaded_namespaces</tt><big>(</big><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_loaded_namespaces" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of namespaces</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Return the list of currently loaded namespaces.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_n_infos">
+<tt class="descname">get_n_infos</tt><big>(</big><em>namespace_</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_n_infos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace to inspect</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">number of metadata entries</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns the number of metadata entries in
+given namespace <cite>namespace_</cite>.  The namespace must have
+already been loaded before calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_shared_library">
+<tt class="descname">get_shared_library</tt><big>(</big><em>namespace_</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_shared_library" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace to inspect</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Full path to shared library, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if none associated</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns the full path to the shared C library
+associated with the given namespace <cite>namespace_</cite>. There may be no
+shared library path associated, in which case this function will
+return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</p>
+<p>Note: The namespace must have already been loaded using a function
+such as <a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.require</span></tt></a> () before calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_typelib_path">
+<tt class="descname">get_typelib_path</tt><big>(</big><em>namespace_</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_typelib_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; GI namespace to use, e.g. &#8220;Gtk&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Filesystem path (or $lt;builtin$gt;) if successful, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if namespace is not loaded</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>If namespace <cite>namespace_</cite> is loaded, return the full path to the
+.typelib file it was loaded from.  If the typelib for
+namespace <cite>namespace_</cite> was included in a shared library, return
+the special string &#8220;$lt;builtin$gt;&#8221;.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.get_version">
+<tt class="descname">get_version</tt><big>(</big><em>namespace_</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace to inspect</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Loaded version</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns the loaded version associated with the given
+namespace <cite>namespace_</cite>.</p>
+<p>Note: The namespace must have already been loaded using a function
+such as <a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.require</span></tt></a> () before calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.is_registered">
+<tt class="descname">is_registered</tt><big>(</big><em>namespace_</em>, <em>version</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.is_registered" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Namespace of interest</li>
+<li><strong>version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; Required version, may be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for latest</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if namespace-version is loaded, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Check whether a particular namespace (and optionally, a specific
+version thereof) is currently loaded.  This function is likely to
+only be useful in unusual circumstances; in order to act upon
+metadata in the namespace, you should call <a class="reference internal" href="#GIRepository.Repository.require" title="GIRepository.Repository.require"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Repository.require</span></tt></a> ()
+instead which will ensure the namespace is loaded, and return as
+quickly as this function will if it has already been loaded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.load_typelib">
+<tt class="descname">load_typelib</tt><big>(</big><em>typelib</em>, <em>flags</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.load_typelib" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>typelib</strong> (<a class="reference internal" href="../structs/Typelib.html#GIRepository.Typelib" title="GIRepository.Typelib"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Typelib</span></tt></a>) &#8211; </li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#GIRepository.RepositoryLoadFlags" title="GIRepository.RepositoryLoadFlags"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.RepositoryLoadFlags</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.require">
+<tt class="descname">require</tt><big>(</big><em>namespace_</em>, <em>version</em>, <em>flags</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.require" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; GI namespace to use, e.g. &#8220;Gtk&#8221;</li>
+<li><strong>version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; Version of namespace, may be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for latest</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#GIRepository.RepositoryLoadFlags" title="GIRepository.RepositoryLoadFlags"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.RepositoryLoadFlags</span></tt></a>) &#8211; Set of <a class="reference internal" href="../flags.html#GIRepository.RepositoryLoadFlags" title="GIRepository.RepositoryLoadFlags"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.RepositoryLoadFlags</span></tt></a>, may be 0</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a pointer to the <a class="reference internal" href="../structs/Typelib.html#GIRepository.Typelib" title="GIRepository.Typelib"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Typelib</span></tt></a> if successful, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structs/Typelib.html#GIRepository.Typelib" title="GIRepository.Typelib"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Typelib</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Force the namespace <cite>namespace_</cite> to be loaded if it isn&#8217;t already.
+If <cite>namespace_</cite> is not loaded, this function will search for a
+&#8221;.typelib&#8221; file using the repository search path.  In addition, a
+version <cite>version</cite> of namespace may be specified.  If <cite>version</cite> is
+not specified, the latest will be used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GIRepository.Repository.require_private">
+<tt class="descname">require_private</tt><big>(</big><em>typelib_dir</em>, <em>namespace_</em>, <em>version</em>, <em>flags</em><big>)</big><a class="headerlink" href="#GIRepository.Repository.require_private" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>typelib_dir</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Private directory where to find the requested typelib</li>
+<li><strong>namespace_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; GI namespace to use, e.g. &#8220;Gtk&#8221;</li>
+<li><strong>version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; Version of namespace, may be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for latest</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#GIRepository.RepositoryLoadFlags" title="GIRepository.RepositoryLoadFlags"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.RepositoryLoadFlags</span></tt></a>) &#8211; Set of <a class="reference internal" href="../flags.html#GIRepository.RepositoryLoadFlags" title="GIRepository.RepositoryLoadFlags"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.RepositoryLoadFlags</span></tt></a>, may be 0</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a pointer to the <a class="reference internal" href="../structs/Typelib.html#GIRepository.Typelib" title="GIRepository.Typelib"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Typelib</span></tt></a> if successful, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structs/Typelib.html#GIRepository.Typelib" title="GIRepository.Typelib"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Typelib</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Force the namespace <cite>namespace_</cite> to be loaded if it isn&#8217;t already.
+If <cite>namespace_</cite> is not loaded, this function will search for a
+&#8221;.typelib&#8221; file within the private directory only. In addition, a
+version <cite>version</cite> of namespace should be specified.  If <cite>version</cite> is
+not specified, the latest will be used.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../structs/index.html" class="btn btn-neutral float-right" title="Structures"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Classes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

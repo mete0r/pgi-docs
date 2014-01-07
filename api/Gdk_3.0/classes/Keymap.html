@@ -1,0 +1,765 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gdk.Keymap -
+    
+      Classes -
+    
+      Gdk 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gdk.Screen" href="Screen.html"/>
+        <link rel="prev" title="Gdk.FrameClock" href="FrameClock.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gdk 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gdk.Keymap</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gdk 3.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gdk.Keymap</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gdk_3.0/classes/Keymap" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gdk-keymap">
+<h1>Gdk.Keymap<a class="headerlink" href="#gdk-keymap" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-f92c1fb371794cb5d8b3aba4afcb323ef02f1d8f.png" alt="Inheritance diagram of Gdk.Keymap" usemap="#inheritance189ec56bd3" class="inheritance"/>
+<map id="inheritance189ec56bd3" name="inheritance189ec56bd3">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="5,5,101,29"/>
+<area shape="rect" id="node2" href="#Gdk.Keymap" title="Gdk.Keymap" alt="" coords="13,77,93,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_default" title="Gdk.Keymap.get_default"><tt class="xref py py-obj docutils literal"><span class="pre">get_default</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_for_display" title="Gdk.Keymap.get_for_display"><tt class="xref py py-obj docutils literal"><span class="pre">get_for_display</span></tt></a>(display)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.add_virtual_modifiers" title="Gdk.Keymap.add_virtual_modifiers"><tt class="xref py py-obj docutils literal"><span class="pre">add_virtual_modifiers</span></tt></a>(state)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_caps_lock_state" title="Gdk.Keymap.get_caps_lock_state"><tt class="xref py py-obj docutils literal"><span class="pre">get_caps_lock_state</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_direction" title="Gdk.Keymap.get_direction"><tt class="xref py py-obj docutils literal"><span class="pre">get_direction</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_entries_for_keycode" title="Gdk.Keymap.get_entries_for_keycode"><tt class="xref py py-obj docutils literal"><span class="pre">get_entries_for_keycode</span></tt></a>(hardware_keycode)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_entries_for_keyval" title="Gdk.Keymap.get_entries_for_keyval"><tt class="xref py py-obj docutils literal"><span class="pre">get_entries_for_keyval</span></tt></a>(keyval)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_modifier_mask" title="Gdk.Keymap.get_modifier_mask"><tt class="xref py py-obj docutils literal"><span class="pre">get_modifier_mask</span></tt></a>(intent)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_modifier_state" title="Gdk.Keymap.get_modifier_state"><tt class="xref py py-obj docutils literal"><span class="pre">get_modifier_state</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.get_num_lock_state" title="Gdk.Keymap.get_num_lock_state"><tt class="xref py py-obj docutils literal"><span class="pre">get_num_lock_state</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.have_bidi_layouts" title="Gdk.Keymap.have_bidi_layouts"><tt class="xref py py-obj docutils literal"><span class="pre">have_bidi_layouts</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.lookup_key" title="Gdk.Keymap.lookup_key"><tt class="xref py py-obj docutils literal"><span class="pre">lookup_key</span></tt></a>(key)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.map_virtual_modifiers" title="Gdk.Keymap.map_virtual_modifiers"><tt class="xref py py-obj docutils literal"><span class="pre">map_virtual_modifiers</span></tt></a>(state)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gdk.Keymap.translate_keyboard_state" title="Gdk.Keymap.translate_keyboard_state"><tt class="xref py py-obj docutils literal"><span class="pre">translate_keyboard_state</span></tt></a>(hardware_keycode, state, group)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gdk-keymap-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gdk-keymap-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="direction-changed">direction-changed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="../../Gtk_3.0/classes/Widget.html#direction-changed"><em>::direction-changed</em></a> signal gets emitted when the direction of the keymap changes.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="keys-changed">keys-changed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="../../Gtk_3.0/classes/Window.html#keys-changed"><em>::keys-changed</em></a> signal is emitted when the mapping represented by <cite>keymap</cite> changes.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="state-changed">state-changed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="../../IBus_1.0/classes/PanelService.html#state-changed"><em>::state-changed</em></a> signal is emitted when the state of the keyboard changes, e.g when Caps Lock is turned on or off. See <a class="reference internal" href="#Gdk.Keymap.get_caps_lock_state" title="Gdk.Keymap.get_caps_lock_state"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap.get_caps_lock_state</span></tt></a> ().</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gdk.Keymap">
+<em class="property">class </em><tt class="descclassname">Gdk.</tt><tt class="descname">Keymap</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gdk.Keymap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<p>A <a class="reference internal" href="#Gdk.Keymap" title="Gdk.Keymap"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap</span></tt></a> defines the translation from keyboard state
+(including a hardware key, a modifier mask, and active keyboard group)
+to a keyval. This translation has two phases. The first phase is
+to determine the effective keyboard group and level for the keyboard
+state; the second phase is to look up the keycode/group/level triplet
+in the keymap and see what keyval it corresponds to.</p>
+<dl class="staticmethod">
+<dt id="Gdk.Keymap.get_default">
+<em class="property">static </em><tt class="descname">get_default</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_default" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#Gdk.Keymap" title="Gdk.Keymap"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap</span></tt></a> attached to the default display.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gdk.Keymap" title="Gdk.Keymap"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <a class="reference internal" href="#Gdk.Keymap" title="Gdk.Keymap"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap</span></tt></a> attached to the default display.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gdk.Keymap.get_for_display">
+<em class="property">static </em><tt class="descname">get_for_display</tt><big>(</big><em>display</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_for_display" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>display</strong> (<a class="reference internal" href="Display.html#Gdk.Display" title="Gdk.Display"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Display</span></tt></a>) &#8211; the <a class="reference internal" href="Display.html#Gdk.Display" title="Gdk.Display"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Display</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#Gdk.Keymap" title="Gdk.Keymap"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap</span></tt></a> attached to <cite>display</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gdk.Keymap" title="Gdk.Keymap"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the <a class="reference internal" href="#Gdk.Keymap" title="Gdk.Keymap"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap</span></tt></a> attached to <cite>display</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.add_virtual_modifiers">
+<tt class="descname">add_virtual_modifiers</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.add_virtual_modifiers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>state</strong> (<a class="reference internal" href="../flags.html#Gdk.ModifierType" title="Gdk.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType</span></tt></a>) &#8211; pointer to the modifier mask to change</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">state: <a class="reference internal" href="../flags.html#Gdk.ModifierType" title="Gdk.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Maps the non-virtual modifiers (i.e Mod2, Mod3, ...) which are set
+in <cite>state</cite> to the virtual modifiers (i.e. Super, Hyper and Meta) and
+set the corresponding bits in <cite>state</cite>.</p>
+<p>GDK already does this before delivering key events, but for
+compatibility reasons, it only sets the first virtual modifier
+it finds, whereas this function sets all matching virtual modifiers.</p>
+<p>This function is useful when matching key events against
+accelerators.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.get_caps_lock_state">
+<tt class="descname">get_caps_lock_state</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_caps_lock_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if Caps Lock is on</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the Caps Lock modifer is locked.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.get_direction">
+<tt class="descname">get_direction</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_direction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../../Pango_1.0/enums.html#Pango.Direction.LTR" title="Pango.Direction.LTR"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction.LTR</span></tt></a> or <a class="reference internal" href="../../Pango_1.0/enums.html#Pango.Direction.RTL" title="Pango.Direction.RTL"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction.RTL</span></tt></a> if it can determine the direction. <a class="reference internal" href="../../Pango_1.0/enums.html#Pango.Direction.NEUTRAL" title="Pango.Direction.NEUTRAL"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction.NEUTRAL</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Pango_1.0/enums.html#Pango.Direction" title="Pango.Direction"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the direction of effective layout of the keymap.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.get_entries_for_keycode">
+<tt class="descname">get_entries_for_keycode</tt><big>(</big><em>hardware_keycode</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_entries_for_keycode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>hardware_keycode</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a keycode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if there were any entries</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, keys: [<a class="reference internal" href="../structs/KeymapKey.html#Gdk.KeymapKey" title="Gdk.KeymapKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.KeymapKey</span></tt></a>], keyvals: [<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the keyvals bound to <cite>hardware_keycode</cite>.
+The Nth <a class="reference internal" href="../structs/KeymapKey.html#Gdk.KeymapKey" title="Gdk.KeymapKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.KeymapKey</span></tt></a> in <cite>keys</cite> is bound to the Nth
+keyval in <cite>keyvals</cite>. Free the returned arrays with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ().
+When a keycode is pressed by the user, the keyval from
+this list of entries is selected by considering the effective
+keyboard group and level. See <a class="reference internal" href="#Gdk.Keymap.translate_keyboard_state" title="Gdk.Keymap.translate_keyboard_state"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap.translate_keyboard_state</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.get_entries_for_keyval">
+<tt class="descname">get_entries_for_keyval</tt><big>(</big><em>keyval</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_entries_for_keyval" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>keyval</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a keyval, such as %GDK_a, %GDK_Up, %GDK_Return, etc.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if keys were found and returned</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, keys: [<a class="reference internal" href="../structs/KeymapKey.html#Gdk.KeymapKey" title="Gdk.KeymapKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.KeymapKey</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Obtains a list of keycode/group/level combinations that will
+generate <cite>keyval</cite>. Groups and levels are two kinds of keyboard mode;
+in general, the level determines whether the top or bottom symbol
+on a key is used, and the group determines whether the left or
+right symbol is used. On US keyboards, the shift key changes the
+keyboard level, and there are no groups. A group switch key might
+convert a keyboard between Hebrew to English modes, for example.
+<a class="reference internal" href="../structs/EventKey.html#Gdk.EventKey" title="Gdk.EventKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventKey</span></tt></a> contains a %group field that indicates the active
+keyboard group. The level is computed from the modifier mask.
+The returned array should be freed
+with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.get_modifier_mask">
+<tt class="descname">get_modifier_mask</tt><big>(</big><em>intent</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_modifier_mask" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>intent</strong> (<a class="reference internal" href="../enums.html#Gdk.ModifierIntent" title="Gdk.ModifierIntent"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierIntent</span></tt></a>) &#8211; the use case for the modifier mask</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the modifier mask used for <cite>intent</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#Gdk.ModifierType" title="Gdk.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the modifier mask the <cite>keymap</cite> &#8216;s windowing system backend
+uses for a particular purpose.</p>
+<p>Note that this function always returns real hardware modifiers, not
+virtual ones (e.g. it will return <a class="reference internal" href="../flags.html#Gdk.ModifierType.MOD1_MASK" title="Gdk.ModifierType.MOD1_MASK"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType.MOD1_MASK</span></tt></a> rather than
+<a class="reference internal" href="../flags.html#Gdk.ModifierType.META_MASK" title="Gdk.ModifierType.META_MASK"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType.META_MASK</span></tt></a> if the backend maps MOD1 to META), so there are use
+cases where the return value of this function has to be transformed
+by <a class="reference internal" href="#Gdk.Keymap.add_virtual_modifiers" title="Gdk.Keymap.add_virtual_modifiers"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap.add_virtual_modifiers</span></tt></a> () in order to contain the
+expected result.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.get_modifier_state">
+<tt class="descname">get_modifier_state</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_modifier_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the current modifier state.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current modifier state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.get_num_lock_state">
+<tt class="descname">get_num_lock_state</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.Keymap.get_num_lock_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if Num Lock is on</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the Num Lock modifer is locked.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.have_bidi_layouts">
+<tt class="descname">have_bidi_layouts</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.Keymap.have_bidi_layouts" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if there are layouts in both directions, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if keyboard layouts for both right-to-left and left-to-right
+languages are in use.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.lookup_key">
+<tt class="descname">lookup_key</tt><big>(</big><em>key</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.lookup_key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>key</strong> (<a class="reference internal" href="../structs/KeymapKey.html#Gdk.KeymapKey" title="Gdk.KeymapKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.KeymapKey</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/KeymapKey.html#Gdk.KeymapKey" title="Gdk.KeymapKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.KeymapKey</span></tt></a> with keycode, group, and level initialized</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a keyval, or 0 if none was mapped to the given <cite>key</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Looks up the keyval mapped to a keycode/group/level triplet.
+If no keyval is bound to <cite>key</cite>, returns 0. For normal user input,
+you want to use <a class="reference internal" href="#Gdk.Keymap.translate_keyboard_state" title="Gdk.Keymap.translate_keyboard_state"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Keymap.translate_keyboard_state</span></tt></a> () instead of
+this function, since the effective group/level may not be
+the same as the current keyboard state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.map_virtual_modifiers">
+<tt class="descname">map_virtual_modifiers</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.map_virtual_modifiers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>state</strong> (<a class="reference internal" href="../flags.html#Gdk.ModifierType" title="Gdk.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType</span></tt></a>) &#8211; pointer to the modifier state to map</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if no virtual modifiers were mapped to the same non-virtual modifier. Note that <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> is also returned if a virtual modifier is mapped to a non-virtual modifier that was already set in <cite>state</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, state: <a class="reference internal" href="../flags.html#Gdk.ModifierType" title="Gdk.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Maps the virtual modifiers (i.e. Super, Hyper and Meta) which
+are set in <cite>state</cite> to their non-virtual counterparts (i.e. Mod2,
+Mod3,...) and set the corresponding bits in <cite>state</cite>.</p>
+<p>This function is useful when matching key events against
+accelerators.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.Keymap.translate_keyboard_state">
+<tt class="descname">translate_keyboard_state</tt><big>(</big><em>hardware_keycode</em>, <em>state</em>, <em>group</em><big>)</big><a class="headerlink" href="#Gdk.Keymap.translate_keyboard_state" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hardware_keycode</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a keycode</li>
+<li><strong>state</strong> (<a class="reference internal" href="../flags.html#Gdk.ModifierType" title="Gdk.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType</span></tt></a>) &#8211; a modifier state</li>
+<li><strong>group</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; active keyboard group</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if there was a keyval bound to the keycode/state/group</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, keyval: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, effective_group: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, level: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, consumed_modifiers: <a class="reference internal" href="../flags.html#Gdk.ModifierType" title="Gdk.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.ModifierType</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Translates the contents of a <a class="reference internal" href="../structs/EventKey.html#Gdk.EventKey" title="Gdk.EventKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventKey</span></tt></a> into a keyval, effective
+group, and level. Modifiers that affected the translation and
+are thus unavailable for application use are returned in
+<cite>consumed_modifiers</cite>.
+See  for an explanation of
+groups and levels. The <cite>effective_group</cite> is the group that was
+actually used for the translation; some keys such as Enter are not
+affected by the active keyboard group. The <cite>level</cite> is derived from
+<cite>state</cite>. For convenience, <a class="reference internal" href="../structs/EventKey.html#Gdk.EventKey" title="Gdk.EventKey"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventKey</span></tt></a> already contains the translated
+keyval, so this function isn&#8217;t as useful as you might think.</p>
+<p><cite>consumed_modifiers</cite> gives modifiers that should be masked out
+from <cite>state</cite> when comparing this key press to a hot key. For
+instance, on a US keyboard, the <tt class="docutils literal"><span class="pre">plus</span></tt>
+symbol is shifted, so when comparing a key press to a
+<tt class="docutils literal"><span class="pre">&lt;Control&gt;plus</span></tt> accelerator &lt;Shift&gt; should
+be masked out.</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">sol</span><span class="o">*</span> <span class="n">We</span> <span class="n">want</span> <span class="n">to</span> <span class="n">ignore</span> <span class="n">irrelevant</span> <span class="n">modifiers</span> <span class="n">like</span> <span class="n">ScrollLock</span> <span class="o">*&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">sol</span>
+<span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">numdefine</span> <span class="nf">ALL_ACCELS_MASK</span> <span class="p">(</span><span class="n">GDK_CONTROL_MASK</span> <span class="o">|</span> <span class="n">GDK_SHIFT_MASK</span> <span class="o">|</span> <span class="n">GDK_MOD1_MASK</span><span class="p">)</span>
+<span class="n">gdk_keymap_translate_keyboard_state</span> <span class="p">(</span><span class="n">keymap</span><span class="p">,</span> <span class="n">event</span><span class="o">-&gt;</span><span class="n">hardware_keycode</span><span class="p">,</span>
+                                     <span class="n">event</span><span class="o">-&gt;</span><span class="n">state</span><span class="p">,</span> <span class="n">event</span><span class="o">-&gt;</span><span class="n">group</span><span class="p">,</span>
+                                     <span class="o">&amp;</span><span class="n">keyval</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">consumed</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">keyval</span> <span class="o">==</span> <span class="n">GDK_PLUS</span> <span class="o">&amp;&amp;</span>
+    <span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">consumed</span> <span class="o">&amp;</span> <span class="n">ALL_ACCELS_MASK</span><span class="p">)</span> <span class="o">==</span> <span class="n">GDK_CONTROL_MASK</span><span class="p">)</span>
+  <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">sol</span><span class="o">*</span> <span class="n">Control</span> <span class="n">was</span> <span class="n">pressed</span> <span class="o">*&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">sol</span>
+</pre></div>
+</div>
+<p>An older interpretation <cite>consumed_modifiers</cite> was that it contained
+all modifiers that might affect the translation of the key;
+this allowed accelerators to be stored with irrelevant consumed
+modifiers, by doing:</p>
+<div class="highlight-c"><pre>&amp;amp;sol* XXX Don't do this XXX *&amp;amp;sol
+if (keyval == accel_keyval &amp;&amp;
+    (event-&gt;state &amp; ~consumed &amp; ALL_ACCELS_MASK) == (accel_mods &amp; ~consumed))
+  &amp;amp;sol* Accelerator was pressed *&amp;amp;sol</pre>
+</div>
+<p>However, this did not work if multi-modifier combinations were
+used in the keymap, since, for instance, <tt class="docutils literal"><span class="pre">&lt;Control&gt;</span></tt>
+would be masked out even if only <tt class="docutils literal"><span class="pre">&lt;Control&gt;&lt;Alt&gt;</span></tt>
+was used in the keymap. To support this usage as well as well as
+possible, all single modifier combinations
+that could affect the key for any combination of modifiers will
+be returned in <cite>consumed_modifiers</cite> ; multi-modifier combinations
+are returned only when actually found in <cite>state</cite>. When you store
+accelerators, you should always store them with consumed modifiers
+removed. Store <tt class="docutils literal"><span class="pre">&lt;Control&gt;plus</span></tt>,
+not <tt class="docutils literal"><span class="pre">&lt;Control&gt;&lt;Shift&gt;plus</span></tt>,</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Screen.html" class="btn btn-neutral float-right" title="Gdk.Screen"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="FrameClock.html" class="btn btn-neutral" title="Gdk.FrameClock"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

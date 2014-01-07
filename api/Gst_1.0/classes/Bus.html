@@ -1,0 +1,953 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gst.Bus -
+    
+      Classes -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gst.Clock" href="Clock.html"/>
+        <link rel="prev" title="Gst.BufferPool" href="BufferPool.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gst.Bus</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gst.Bus</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/classes/Bus" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gst-bus">
+<h1>Gst.Bus<a class="headerlink" href="#gst-bus" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-1a12c1422c6c093f53a49b1df3f9fb2c78a271a2.png" alt="Inheritance diagram of Gst.Bus" usemap="#inheritance782bf8ba23" class="inheritance"/>
+<map id="inheritance782bf8ba23" name="inheritance782bf8ba23">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="29,5,125,29"/>
+<area shape="rect" id="node2" href="../../GObject_2.0/classes/InitiallyUnowned.html#GObject.InitiallyUnowned" title="GObject.InitiallyUnowned" alt="" coords="5,77,149,101"/>
+<area shape="rect" id="node4" href="Object.html#Gst.Object" title="Gst.Object" alt="" coords="41,149,113,173"/>
+<area shape="rect" id="node6" href="#Gst.Bus" title="Gst.Bus" alt="" coords="41,221,113,245"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Bus.new" title="Gst.Bus.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.add_signal_watch" title="Gst.Bus.add_signal_watch"><tt class="xref py py-obj docutils literal"><span class="pre">add_signal_watch</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.add_signal_watch_full" title="Gst.Bus.add_signal_watch_full"><tt class="xref py py-obj docutils literal"><span class="pre">add_signal_watch_full</span></tt></a>(priority)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.add_watch" title="Gst.Bus.add_watch"><tt class="xref py py-obj docutils literal"><span class="pre">add_watch</span></tt></a>(priority, func, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.async_signal_func" title="Gst.Bus.async_signal_func"><tt class="xref py py-obj docutils literal"><span class="pre">async_signal_func</span></tt></a>(message, data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.create_watch" title="Gst.Bus.create_watch"><tt class="xref py py-obj docutils literal"><span class="pre">create_watch</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.disable_sync_message_emission" title="Gst.Bus.disable_sync_message_emission"><tt class="xref py py-obj docutils literal"><span class="pre">disable_sync_message_emission</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.enable_sync_message_emission" title="Gst.Bus.enable_sync_message_emission"><tt class="xref py py-obj docutils literal"><span class="pre">enable_sync_message_emission</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.have_pending" title="Gst.Bus.have_pending"><tt class="xref py py-obj docutils literal"><span class="pre">have_pending</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.peek" title="Gst.Bus.peek"><tt class="xref py py-obj docutils literal"><span class="pre">peek</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.poll" title="Gst.Bus.poll"><tt class="xref py py-obj docutils literal"><span class="pre">poll</span></tt></a>(events, timeout)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.pop" title="Gst.Bus.pop"><tt class="xref py py-obj docutils literal"><span class="pre">pop</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.pop_filtered" title="Gst.Bus.pop_filtered"><tt class="xref py py-obj docutils literal"><span class="pre">pop_filtered</span></tt></a>(types)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.post" title="Gst.Bus.post"><tt class="xref py py-obj docutils literal"><span class="pre">post</span></tt></a>(message)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.remove_signal_watch" title="Gst.Bus.remove_signal_watch"><tt class="xref py py-obj docutils literal"><span class="pre">remove_signal_watch</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.set_flushing" title="Gst.Bus.set_flushing"><tt class="xref py py-obj docutils literal"><span class="pre">set_flushing</span></tt></a>(flushing)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.set_sync_handler" title="Gst.Bus.set_sync_handler"><tt class="xref py py-obj docutils literal"><span class="pre">set_sync_handler</span></tt></a>(func, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.sync_signal_handler" title="Gst.Bus.sync_signal_handler"><tt class="xref py py-obj docutils literal"><span class="pre">sync_signal_handler</span></tt></a>(message, data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.timed_pop" title="Gst.Bus.timed_pop"><tt class="xref py py-obj docutils literal"><span class="pre">timed_pop</span></tt></a>(timeout)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Bus.timed_pop_filtered" title="Gst.Bus.timed_pop_filtered"><tt class="xref py py-obj docutils literal"><span class="pre">timed_pop_filtered</span></tt></a>(timeout, types)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gst-bus-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="enable-async">enable-async</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>w/c</td>
+<td>Enable async message delivery for bus watches and <a class="reference internal" href="#Gst.Bus.pop" title="Gst.Bus.pop"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.pop</span></tt></a> ()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gst-bus-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="message">message</span></td>
+<td><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+<td>&nbsp;</td>
+<td>A message has been posted on the bus. This signal is emitted from a <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> added to the mainloop. this signal will only be emitted when there is a mainloop running.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="sync-message">sync-message</span></td>
+<td><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+<td>&nbsp;</td>
+<td>A message has been posted on the bus. This signal is emitted from the thread that posted the message so one has to be careful with locking.  This signal will not be emitted by default, you have to call <a class="reference internal" href="#Gst.Bus.enable_sync_message_emission" title="Gst.Bus.enable_sync_message_emission"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.enable_sync_message_emission</span></tt></a> () before.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>object</td>
+<td><a class="reference internal" href="Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gst.Bus">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">Bus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gst.Bus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a></p>
+<p>The <a class="reference internal" href="#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a> is an object responsible for delivering <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> packets in
+a first-in first-out way from the streaming threads (see <a class="reference internal" href="Task.html#Gst.Task" title="Gst.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Task</span></tt></a> ) to the
+application.</p>
+<p>Since the application typically only wants to deal with delivery of these
+messages from one thread, the <a class="reference internal" href="#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a> will marshall the messages between
+different threads. This is important since the actual streaming of media
+is done in another thread than the application.</p>
+<p>The <a class="reference internal" href="#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a> provides support for <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> based notifications. This makes it
+possible to handle the delivery in the glib mainloop.</p>
+<p>The <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> callback function <a class="reference internal" href="#Gst.Bus.async_signal_func" title="Gst.Bus.async_signal_func"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.async_signal_func</span></tt></a> () can be used to
+convert all bus messages into signal emissions.</p>
+<p>A message is posted on the bus with the <a class="reference internal" href="#Gst.Bus.post" title="Gst.Bus.post"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.post</span></tt></a> () method. With the
+<a class="reference internal" href="#Gst.Bus.peek" title="Gst.Bus.peek"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.peek</span></tt></a> () and <a class="reference internal" href="#Gst.Bus.pop" title="Gst.Bus.pop"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.pop</span></tt></a> () methods one can look at or retrieve a
+previously posted message.</p>
+<p>The bus can be polled with the <a class="reference internal" href="#Gst.Bus.poll" title="Gst.Bus.poll"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.poll</span></tt></a> () method. This methods blocks
+up to the specified timeout value until one of the specified messages types
+is posted on the bus. The application can then <a class="reference internal" href="#Gst.Bus.pop" title="Gst.Bus.pop"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.pop</span></tt></a> () the messages
+from the bus to handle them.
+Alternatively the application can register an asynchronous bus function
+using <a class="reference internal" href="#Gst.Bus.add_watch" title="Gst.Bus.add_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_watch</span></tt></a> () or <a class="reference internal" href="#Gst.Bus.add_watch" title="Gst.Bus.add_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_watch</span></tt></a> (). This function will
+install a <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> in the default glib main loop and will deliver messages
+a short while after they have been posted. Note that the main loop should
+be running for the asynchronous callbacks.</p>
+<p>It is also possible to get messages from the bus without any thread
+marshalling with the <a class="reference internal" href="#Gst.Bus.set_sync_handler" title="Gst.Bus.set_sync_handler"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.set_sync_handler</span></tt></a> () method. This makes it
+possible to react to a message in the same thread that posted the
+message on the bus. This should only be used if the application is able
+to deal with messages from different threads.</p>
+<p>Every <a class="reference internal" href="Pipeline.html#Gst.Pipeline" title="Gst.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pipeline</span></tt></a> has one bus.</p>
+<p>Note that a <a class="reference internal" href="Pipeline.html#Gst.Pipeline" title="Gst.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pipeline</span></tt></a> will set its bus into flushing state when changing
+from READY to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> state.</p>
+<p>Last reviewed on 2012-03-28 (0.11.3)</p>
+<dl class="staticmethod">
+<dt id="Gst.Bus.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a> instance</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Gst.Bus" title="Gst.Bus"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus</span></tt></a> instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.add_signal_watch">
+<tt class="descname">add_signal_watch</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.add_signal_watch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a bus signal watch to the default main context with the default priority
+(<a class="reference internal" href="../../GLib_2.0/constants.html#GLib.PRIORITY_DEFAULT" title="GLib.PRIORITY_DEFAULT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.PRIORITY_DEFAULT</span></tt></a> ). It is also possible to use a non-default
+main context set up using <a class="reference internal" href="../../GLib_2.0/structs/MainContext.html#GLib.MainContext.push_thread_default" title="GLib.MainContext.push_thread_default"><tt class="xref py py-class docutils literal"><span class="pre">GLib.MainContext.push_thread_default</span></tt></a> () (before
+one had to create a bus watch source and attach it to the desired main
+context &#8216;manually&#8217;).</p>
+<p>After calling this statement, the bus will emit the &#8220;message&#8221; signal for each
+message posted on the bus.</p>
+<p>This function may be called multiple times. To clean up, the caller is
+responsible for calling <a class="reference internal" href="#Gst.Bus.remove_signal_watch" title="Gst.Bus.remove_signal_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.remove_signal_watch</span></tt></a> () as many times as this
+function is called.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.add_signal_watch_full">
+<tt class="descname">add_signal_watch_full</tt><big>(</big><em>priority</em><big>)</big><a class="headerlink" href="#Gst.Bus.add_signal_watch_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>priority</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The priority of the watch.</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a bus signal watch to the default main context with the given <cite>priority</cite>
+(e.g. <a class="reference internal" href="../../GLib_2.0/constants.html#GLib.PRIORITY_DEFAULT" title="GLib.PRIORITY_DEFAULT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.PRIORITY_DEFAULT</span></tt></a> ). It is also possible to use a non-default main
+context set up using <a class="reference internal" href="../../GLib_2.0/structs/MainContext.html#GLib.MainContext.push_thread_default" title="GLib.MainContext.push_thread_default"><tt class="xref py py-class docutils literal"><span class="pre">GLib.MainContext.push_thread_default</span></tt></a> ()
+(before one had to create a bus watch source and attach it to the desired
+main context &#8216;manually&#8217;).</p>
+<p>After calling this statement, the bus will emit the &#8220;message&#8221; signal for each
+message posted on the bus when the main loop is running.</p>
+<p>This function may be called multiple times. To clean up, the caller is
+responsible for calling <a class="reference internal" href="#Gst.Bus.remove_signal_watch" title="Gst.Bus.remove_signal_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.remove_signal_watch</span></tt></a> () as many times as this
+function is called.</p>
+<p>There can only be a single bus watch per bus, you must remove any signal
+watch before you can set another type of watch.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.add_watch">
+<tt class="descname">add_watch</tt><big>(</big><em>priority</em>, <em>func</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gst.Bus.add_watch" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>priority</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Gst.BusFunc" title="Gst.BusFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusFunc</span></tt></a>) &#8211; A function to call when a message is received.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to <cite>func</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The event source id.  MT safe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a bus watch to the default main context with the default priority
+(<a class="reference internal" href="../../GLib_2.0/constants.html#GLib.PRIORITY_DEFAULT" title="GLib.PRIORITY_DEFAULT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.PRIORITY_DEFAULT</span></tt></a> ). It is also possible to use a non-default main
+context set up using <a class="reference internal" href="../../GLib_2.0/structs/MainContext.html#GLib.MainContext.push_thread_default" title="GLib.MainContext.push_thread_default"><tt class="xref py py-class docutils literal"><span class="pre">GLib.MainContext.push_thread_default</span></tt></a> () (before
+one had to create a bus watch source and attach it to the desired main
+context &#8216;manually&#8217;).</p>
+<p>This function is used to receive asynchronous messages in the main loop.
+There can only be a single bus watch per bus, you must remove it before you
+can set a new one.</p>
+<p>The watch can be removed using <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source.remove" title="GLib.Source.remove"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source.remove</span></tt></a> () or by returning <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>
+from <cite>func</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.async_signal_func">
+<tt class="descname">async_signal_func</tt><big>(</big><em>message</em>, <em>data</em><big>)</big><a class="headerlink" href="#Gst.Bus.async_signal_func" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; the <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> received</li>
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A helper <a class="reference internal" href="../callbacks.html#Gst.BusFunc" title="Gst.BusFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusFunc</span></tt></a> that can be used to convert all asynchronous messages
+into signals.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.create_watch">
+<tt class="descname">create_watch</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.create_watch" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> that can be added to a mainloop.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create watch for this bus. The <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> will be dispatched whenever
+a message is on the bus. After the <a class="reference internal" href="../../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> is dispatched, the
+message is popped off the bus and unreffed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.disable_sync_message_emission">
+<tt class="descname">disable_sync_message_emission</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.disable_sync_message_emission" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instructs GStreamer to stop emitting the &#8220;sync-message&#8221; signal for this bus.
+See <a class="reference internal" href="#Gst.Bus.enable_sync_message_emission" title="Gst.Bus.enable_sync_message_emission"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.enable_sync_message_emission</span></tt></a> () for more information.</p>
+<p>In the event that multiple pieces of code have called
+<a class="reference internal" href="#Gst.Bus.enable_sync_message_emission" title="Gst.Bus.enable_sync_message_emission"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.enable_sync_message_emission</span></tt></a> (), the sync-message emissions will only
+be stopped after all calls to <a class="reference internal" href="#Gst.Bus.enable_sync_message_emission" title="Gst.Bus.enable_sync_message_emission"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.enable_sync_message_emission</span></tt></a> () were
+&#8220;cancelled&#8221; by calling this function. In this way the semantics are exactly
+the same as <a class="reference internal" href="Object.html#Gst.Object.ref" title="Gst.Object.ref"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object.ref</span></tt></a> () that which calls enable should also call
+disable.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.enable_sync_message_emission">
+<tt class="descname">enable_sync_message_emission</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.enable_sync_message_emission" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instructs GStreamer to emit the &#8220;sync-message&#8221; signal after running the bus&#8217;s
+sync handler. This function is here so that code can ensure that they can
+synchronously receive messages without having to affect what the bin&#8217;s sync
+handler is.</p>
+<p>This function may be called multiple times. To clean up, the caller is
+responsible for calling <a class="reference internal" href="#Gst.Bus.disable_sync_message_emission" title="Gst.Bus.disable_sync_message_emission"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.disable_sync_message_emission</span></tt></a> () as many times
+as this function is called.</p>
+<p>While this function looks similar to <a class="reference internal" href="#Gst.Bus.add_signal_watch" title="Gst.Bus.add_signal_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_signal_watch</span></tt></a> (), it is not
+exactly the same &#8211; this function enables synchronous emission of
+signals when messages arrive; <a class="reference internal" href="#Gst.Bus.add_signal_watch" title="Gst.Bus.add_signal_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_signal_watch</span></tt></a> () adds an idle callback
+to pop messages off the bus asynchronously. The sync-message signal
+comes from the thread of whatever object posted the message; the &#8220;message&#8221;
+signal is marshalled to the main thread via the main loop.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.have_pending">
+<tt class="descname">have_pending</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.have_pending" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if there are messages on the bus to be handled, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if there are pending messages on the bus that
+should be handled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.peek">
+<tt class="descname">peek</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.peek" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> that is on the bus, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the bus is empty.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Peek the message on the top of the bus&#8217; queue. The message will remain
+on the bus&#8217; message queue. A reference is returned, and needs to be unreffed
+by the caller.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.poll">
+<tt class="descname">poll</tt><big>(</big><em>events</em>, <em>timeout</em><big>)</big><a class="headerlink" href="#Gst.Bus.poll" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>events</strong> (<a class="reference internal" href="../flags.html#Gst.MessageType" title="Gst.MessageType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType</span></tt></a>) &#8211; a mask of <a class="reference internal" href="../flags.html#Gst.MessageType" title="Gst.MessageType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType</span></tt></a>, representing the set of message types to poll for.</li>
+<li><strong>timeout</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the poll timeout, as a <tt class="xref py py-class docutils literal"><span class="pre">Gst.ClockTime</span></tt>, or <a class="reference internal" href="../constants.html#Gst.CLOCK_TIME_NONE" title="Gst.CLOCK_TIME_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CLOCK_TIME_NONE</span></tt></a> to poll indefinitely.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the message that was received, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the poll timed out. The message is taken from the bus and needs to be unreffed with gst_message_unref() after usage.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Poll the bus for messages. Will block while waiting for messages to come.
+You can specify a maximum time to poll with the <cite>timeout</cite> parameter. If
+<cite>timeout</cite> is negative, this function will block indefinitely.</p>
+<p>All messages not in <cite>events</cite> will be popped off the bus and will be ignored.</p>
+<p>Because poll is implemented using the &#8220;message&#8221; signal enabled by
+<a class="reference internal" href="#Gst.Bus.add_signal_watch" title="Gst.Bus.add_signal_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_signal_watch</span></tt></a> (), calling <a class="reference internal" href="#Gst.Bus.poll" title="Gst.Bus.poll"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.poll</span></tt></a> () will cause the &#8220;message&#8221;
+signal to be emitted for every message that poll sees. Thus a &#8220;message&#8221;
+signal handler will see the same messages that this function sees &#8211; neither
+will steal messages from the other.</p>
+<p>This function will run a main loop from the default main context when
+polling.</p>
+<p>You should never use this function, since it is pure evil. This is
+especially true for GUI applications based on Gtk+ or Qt, but also for any
+other non-trivial application that uses the GLib main loop. As this function
+runs a GLib main loop, any callback attached to the default GLib main
+context may be invoked. This could be timeouts, GUI events, I/O events etc.;
+even if <a class="reference internal" href="#Gst.Bus.poll" title="Gst.Bus.poll"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.poll</span></tt></a> () is called with a 0 timeout. Any of these callbacks
+may do things you do not expect, e.g. destroy the main application window or
+some other resource; change other application state; display a dialog and
+run another main loop until the user clicks it away. In short, using this
+function may add a lot of complexity to your code through unexpected
+re-entrancy and unexpected changes to your application&#8217;s state.</p>
+<p>For 0 timeouts use <a class="reference internal" href="#Gst.Bus.pop_filtered" title="Gst.Bus.pop_filtered"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.pop_filtered</span></tt></a> () instead of this function; for
+other short timeouts use <a class="reference internal" href="#Gst.Bus.timed_pop_filtered" title="Gst.Bus.timed_pop_filtered"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.timed_pop_filtered</span></tt></a> (); everything else is
+better handled by setting up an asynchronous bus watch and doing things
+from there.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.pop">
+<tt class="descname">pop</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.pop" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> that is on the bus, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the bus is empty. The message is taken from the bus and needs to be unreffed with gst_message_unref() after usage.  MT safe.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get a message from the bus.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.pop_filtered">
+<tt class="descname">pop_filtered</tt><big>(</big><em>types</em><big>)</big><a class="headerlink" href="#Gst.Bus.pop_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>types</strong> (<a class="reference internal" href="../flags.html#Gst.MessageType" title="Gst.MessageType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType</span></tt></a>) &#8211; message types to take into account</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the next <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> matching <cite>type</cite> that is on the bus, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the bus is empty or there is no message matching <cite>type</cite>. The message is taken from the bus and needs to be unreffed with gst_message_unref() after usage.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get a message matching <cite>type</cite> from the bus.  Will discard all messages on
+the bus that do not match <cite>type</cite> and that have been posted before the first
+message that does match <cite>type</cite>.  If there is no message matching <cite>type</cite> on
+the bus, all messages will be discarded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.post">
+<tt class="descname">post</tt><big>(</big><em>message</em><big>)</big><a class="headerlink" href="#Gst.Bus.post" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message</strong> (<a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; the <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> to post</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the message could be posted, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the bus is flushing.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Post a message on the given bus. Ownership of the message
+is taken by the bus.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.remove_signal_watch">
+<tt class="descname">remove_signal_watch</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Bus.remove_signal_watch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes a signal watch previously added with <a class="reference internal" href="#Gst.Bus.add_signal_watch" title="Gst.Bus.add_signal_watch"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.add_signal_watch</span></tt></a> ().</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.set_flushing">
+<tt class="descname">set_flushing</tt><big>(</big><em>flushing</em><big>)</big><a class="headerlink" href="#Gst.Bus.set_flushing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flushing</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether or not to flush the bus</td>
+</tr>
+</tbody>
+</table>
+<p>If <cite>flushing</cite>, flush out and unref any messages queued in the bus. Releases
+references to the message origin objects. Will flush future messages until
+<a class="reference internal" href="#Gst.Bus.set_flushing" title="Gst.Bus.set_flushing"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.set_flushing</span></tt></a> () sets <cite>flushing</cite> to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.set_sync_handler">
+<tt class="descname">set_sync_handler</tt><big>(</big><em>func</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gst.Bus.set_sync_handler" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Gst.BusSyncHandler" title="Gst.BusSyncHandler"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusSyncHandler</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The handler function to install</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data that will be sent to the handler function.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the synchronous handler on the bus. The function will be called
+every time a new message is posted on the bus. Note that the function
+will be called in the same thread context as the posting object. This
+function is usually only called by the creator of the bus. Applications
+should handle messages asynchronously using the gst_bus watch and poll
+functions.</p>
+<p>You cannot replace an existing sync_handler. You can pass <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to this
+function, which will clear the existing handler.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.sync_signal_handler">
+<tt class="descname">sync_signal_handler</tt><big>(</big><em>message</em>, <em>data</em><big>)</big><a class="headerlink" href="#Gst.Bus.sync_signal_handler" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; the <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> received</li>
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#Gst.BusSyncReply.PASS" title="Gst.BusSyncReply.PASS"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusSyncReply.PASS</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#Gst.BusSyncReply" title="Gst.BusSyncReply"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusSyncReply</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A helper <a class="reference internal" href="../callbacks.html#Gst.BusSyncHandler" title="Gst.BusSyncHandler"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BusSyncHandler</span></tt></a> that can be used to convert all synchronous
+messages into signals.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.timed_pop">
+<tt class="descname">timed_pop</tt><big>(</big><em>timeout</em><big>)</big><a class="headerlink" href="#Gst.Bus.timed_pop" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a timeout</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> that is on the bus after the specified timeout or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the bus is empty after the timeout expired. The message is taken from the bus and needs to be unreffed with gst_message_unref() after usage.  MT safe.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get a message from the bus, waiting up to the specified timeout.</p>
+<p>If <cite>timeout</cite> is 0, this function behaves like <a class="reference internal" href="#Gst.Bus.pop" title="Gst.Bus.pop"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.pop</span></tt></a> (). If <cite>timeout</cite> is
+<a class="reference internal" href="../constants.html#Gst.CLOCK_TIME_NONE" title="Gst.CLOCK_TIME_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CLOCK_TIME_NONE</span></tt></a>, this function will block forever until a message was
+posted on the bus.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Bus.timed_pop_filtered">
+<tt class="descname">timed_pop_filtered</tt><big>(</big><em>timeout</em>, <em>types</em><big>)</big><a class="headerlink" href="#Gst.Bus.timed_pop_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>timeout</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a timeout in nanoseconds, or <a class="reference internal" href="../constants.html#Gst.CLOCK_TIME_NONE" title="Gst.CLOCK_TIME_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CLOCK_TIME_NONE</span></tt></a> to wait forever</li>
+<li><strong>types</strong> (<a class="reference internal" href="../flags.html#Gst.MessageType" title="Gst.MessageType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType</span></tt></a>) &#8211; message types to take into account, <a class="reference internal" href="../flags.html#Gst.MessageType.ANY" title="Gst.MessageType.ANY"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MessageType.ANY</span></tt></a> for any type</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> matching the filter in <cite>types</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if no matching message was found on the bus until the timeout expired. The message is taken from the bus and needs to be unreffed with gst_message_unref() after usage.  MT safe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get a message from the bus whose type matches the message type mask <cite>types</cite>,
+waiting up to the specified timeout (and discarding any messages that do not
+match the mask provided).</p>
+<p>If <cite>timeout</cite> is 0, this function behaves like <a class="reference internal" href="#Gst.Bus.pop_filtered" title="Gst.Bus.pop_filtered"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Bus.pop_filtered</span></tt></a> (). If
+<cite>timeout</cite> is <a class="reference internal" href="../constants.html#Gst.CLOCK_TIME_NONE" title="Gst.CLOCK_TIME_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CLOCK_TIME_NONE</span></tt></a>, this function will block forever until a
+matching message was posted on the bus.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Clock.html" class="btn btn-neutral float-right" title="Gst.Clock"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="BufferPool.html" class="btn btn-neutral" title="Gst.BufferPool"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

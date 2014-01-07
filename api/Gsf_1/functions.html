@@ -1,0 +1,1304 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Functions -
+    
+      Gsf 1 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Gsf 1" href="index.html"/>
+        <link rel="next" title="Callbacks" href="callbacks.html"/>
+        <link rel="prev" title="Gsf 1" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gsf 1</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Functions</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Gsf 1</a> &raquo;</li>
+  
+  <li><a href="">Functions</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gsf_1/functions" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.base64_decode_simple" title="Gsf.base64_decode_simple"><tt class="xref py py-obj docutils literal"><span class="pre">base64_decode_simple</span></tt></a>(data, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.base64_decode_step" title="Gsf.base64_decode_step"><tt class="xref py py-obj docutils literal"><span class="pre">base64_decode_step</span></tt></a>(in_, len, out, state, save)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.base64_encode_close" title="Gsf.base64_encode_close"><tt class="xref py py-obj docutils literal"><span class="pre">base64_encode_close</span></tt></a>(in_, inlen, break_lines, out, state, save)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.base64_encode_simple" title="Gsf.base64_encode_simple"><tt class="xref py py-obj docutils literal"><span class="pre">base64_encode_simple</span></tt></a>(data, len)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.base64_encode_step" title="Gsf.base64_encode_step"><tt class="xref py py-obj docutils literal"><span class="pre">base64_encode_step</span></tt></a>(in_, len, break_lines, out, state, save)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.debug_flag" title="Gsf.debug_flag"><tt class="xref py py-obj docutils literal"><span class="pre">debug_flag</span></tt></a>(flag)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.doc_meta_dump" title="Gsf.doc_meta_dump"><tt class="xref py py-obj docutils literal"><span class="pre">doc_meta_dump</span></tt></a>(meta)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.error_quark" title="Gsf.error_quark"><tt class="xref py py-obj docutils literal"><span class="pre">error_quark</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.extension_pointer" title="Gsf.extension_pointer"><tt class="xref py py-obj docutils literal"><span class="pre">extension_pointer</span></tt></a>(path)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.filename_to_utf8" title="Gsf.filename_to_utf8"><tt class="xref py py-obj docutils literal"><span class="pre">filename_to_utf8</span></tt></a>(filename, quoted)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.iconv_close" title="Gsf.iconv_close"><tt class="xref py py-obj docutils literal"><span class="pre">iconv_close</span></tt></a>(handle)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.init" title="Gsf.init"><tt class="xref py py-obj docutils literal"><span class="pre">init</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.init_dynamic" title="Gsf.init_dynamic"><tt class="xref py py-obj docutils literal"><span class="pre">init_dynamic</span></tt></a>(module)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.le_get_double" title="Gsf.le_get_double"><tt class="xref py py-obj docutils literal"><span class="pre">le_get_double</span></tt></a>(p)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.le_get_float" title="Gsf.le_get_float"><tt class="xref py py-obj docutils literal"><span class="pre">le_get_float</span></tt></a>(p)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.le_get_guint64" title="Gsf.le_get_guint64"><tt class="xref py py-obj docutils literal"><span class="pre">le_get_guint64</span></tt></a>(p)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.le_set_double" title="Gsf.le_set_double"><tt class="xref py py-obj docutils literal"><span class="pre">le_set_double</span></tt></a>(p, d)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.le_set_float" title="Gsf.le_set_float"><tt class="xref py py-obj docutils literal"><span class="pre">le_set_float</span></tt></a>(p, f)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.mem_dump" title="Gsf.mem_dump"><tt class="xref py py-obj docutils literal"><span class="pre">mem_dump</span></tt></a>(ptr, len)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.msole_codepage_to_lid" title="Gsf.msole_codepage_to_lid"><tt class="xref py py-obj docutils literal"><span class="pre">msole_codepage_to_lid</span></tt></a>(codepage)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.msole_iconv_win_codepage" title="Gsf.msole_iconv_win_codepage"><tt class="xref py py-obj docutils literal"><span class="pre">msole_iconv_win_codepage</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.msole_language_for_lid" title="Gsf.msole_language_for_lid"><tt class="xref py py-obj docutils literal"><span class="pre">msole_language_for_lid</span></tt></a>(lid)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.msole_lid_for_language" title="Gsf.msole_lid_for_language"><tt class="xref py py-obj docutils literal"><span class="pre">msole_lid_for_language</span></tt></a>(lang)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.msole_lid_to_codepage" title="Gsf.msole_lid_to_codepage"><tt class="xref py py-obj docutils literal"><span class="pre">msole_lid_to_codepage</span></tt></a>(lid)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.msole_lid_to_codepage_str" title="Gsf.msole_lid_to_codepage_str"><tt class="xref py py-obj docutils literal"><span class="pre">msole_lid_to_codepage_str</span></tt></a>(lid)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.odf_get_ns" title="Gsf.odf_get_ns"><tt class="xref py py-obj docutils literal"><span class="pre">odf_get_ns</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.odf_get_version" title="Gsf.odf_get_version"><tt class="xref py py-obj docutils literal"><span class="pre">odf_get_version</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.odf_get_version_string" title="Gsf.odf_get_version_string"><tt class="xref py py-obj docutils literal"><span class="pre">odf_get_version_string</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.open_pkg_error_id" title="Gsf.open_pkg_error_id"><tt class="xref py py-obj docutils literal"><span class="pre">open_pkg_error_id</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.open_pkg_foreach_rel" title="Gsf.open_pkg_foreach_rel"><tt class="xref py py-obj docutils literal"><span class="pre">open_pkg_foreach_rel</span></tt></a>(opkg, func, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.open_pkg_open_rel" title="Gsf.open_pkg_open_rel"><tt class="xref py py-obj docutils literal"><span class="pre">open_pkg_open_rel</span></tt></a>(opkg, rel)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.open_pkg_open_rel_by_id" title="Gsf.open_pkg_open_rel_by_id"><tt class="xref py py-obj docutils literal"><span class="pre">open_pkg_open_rel_by_id</span></tt></a>(opkg, id)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.open_pkg_open_rel_by_type" title="Gsf.open_pkg_open_rel_by_type"><tt class="xref py py-obj docutils literal"><span class="pre">open_pkg_open_rel_by_type</span></tt></a>(opkg, type)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.open_pkg_parse_rel_by_id" title="Gsf.open_pkg_parse_rel_by_id"><tt class="xref py py-obj docutils literal"><span class="pre">open_pkg_parse_rel_by_id</span></tt></a>(xin, id, dtd, ns)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.property_settings_find" title="Gsf.property_settings_find"><tt class="xref py py-obj docutils literal"><span class="pre">property_settings_find</span></tt></a>(name, params, n_params)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.property_settings_free" title="Gsf.property_settings_free"><tt class="xref py py-obj docutils literal"><span class="pre">property_settings_free</span></tt></a>(params, n_params)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.shutdown" title="Gsf.shutdown"><tt class="xref py py-obj docutils literal"><span class="pre">shutdown</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.shutdown_dynamic" title="Gsf.shutdown_dynamic"><tt class="xref py py-obj docutils literal"><span class="pre">shutdown_dynamic</span></tt></a>(module)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.value_get_docprop_varray" title="Gsf.value_get_docprop_varray"><tt class="xref py py-obj docutils literal"><span class="pre">value_get_docprop_varray</span></tt></a>(value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.value_get_docprop_vector" title="Gsf.value_get_docprop_vector"><tt class="xref py py-obj docutils literal"><span class="pre">value_get_docprop_vector</span></tt></a>(value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.vba_inflate" title="Gsf.vba_inflate"><tt class="xref py py-obj docutils literal"><span class="pre">vba_inflate</span></tt></a>(input, offset, size, add_null_terminator)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.xmlDocFormatDump" title="Gsf.xmlDocFormatDump"><tt class="xref py py-obj docutils literal"><span class="pre">xmlDocFormatDump</span></tt></a>(output, cur, encoding, format)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gsf.xml_gvalue_from_str" title="Gsf.xml_gvalue_from_str"><tt class="xref py py-obj docutils literal"><span class="pre">xml_gvalue_from_str</span></tt></a>(res, t, str)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gsf.xml_probe" title="Gsf.xml_probe"><tt class="xref py py-obj docutils literal"><span class="pre">xml_probe</span></tt></a>(input, func)</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gsf.base64_decode_simple">
+<tt class="descclassname">Gsf.</tt><tt class="descname">base64_decode_simple</tt><big>(</big><em>data</em>, <em>len</em><big>)</big><a class="headerlink" href="#Gsf.base64_decode_simple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; data stream</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; max length of data to decode</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the number of bytes converted</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Decodes a chunk of base64 encoded data from <cite>data</cite> back into <cite>data</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.base64_decode_step">
+<tt class="descclassname">Gsf.</tt><tt class="descname">base64_decode_step</tt><big>(</big><em>in_</em>, <em>len</em>, <em>out</em>, <em>state</em>, <em>save</em><big>)</big><a class="headerlink" href="#Gsf.base64_decode_step" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>in_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; input stream</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; max length of data to decode</li>
+<li><strong>out</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; output stream</li>
+<li><strong>state</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; holds the number of bits that are stored in <cite>save</cite></li>
+<li><strong>save</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; leftover bits that have not yet been decoded</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the number of bytes converted</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Decodes a chunk of base64 encoded data</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.base64_encode_close">
+<tt class="descclassname">Gsf.</tt><tt class="descname">base64_encode_close</tt><big>(</big><em>in_</em>, <em>inlen</em>, <em>break_lines</em>, <em>out</em>, <em>state</em>, <em>save</em><big>)</big><a class="headerlink" href="#Gsf.base64_encode_close" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>in_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Data to be encoded</li>
+<li><strong>inlen</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Length of data to be encoded</li>
+<li><strong>break_lines</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; Whether to use line breaks</li>
+<li><strong>out</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Encoded data.</li>
+<li><strong>state</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; holds the number of bits that are stored in <cite>save</cite></li>
+<li><strong>save</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; leftover bits that have not yet been decoded</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a count of the number of bytes in the final block.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This funcion should be called to when finished encoding everything, to
+flush off the last little bit.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.base64_encode_simple">
+<tt class="descclassname">Gsf.</tt><tt class="descname">base64_encode_simple</tt><big>(</big><em>data</em>, <em>len</em><big>)</big><a class="headerlink" href="#Gsf.base64_encode_simple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; data stream</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; max length of data to encode</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the number of bytes encoded</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Encodes data from <cite>data</cite> back into <cite>data</cite> using base64 encoding.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.base64_encode_step">
+<tt class="descclassname">Gsf.</tt><tt class="descname">base64_encode_step</tt><big>(</big><em>in_</em>, <em>len</em>, <em>break_lines</em>, <em>out</em>, <em>state</em>, <em>save</em><big>)</big><a class="headerlink" href="#Gsf.base64_encode_step" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>in_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; input stream</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; max length of data to decode</li>
+<li><strong>break_lines</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; Whether to use line breaks</li>
+<li><strong>out</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; output stream</li>
+<li><strong>state</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; holds the number of bits that are stored in <cite>save</cite></li>
+<li><strong>save</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; leftover bits that have not yet been decoded</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the number of bytes encoded</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Performs an &#8216;encode step&#8217;, only encodes blocks of 3 characters from <cite>in</cite> into
+the output <cite>out</cite> at a time, saves left-over state in <cite>state</cite> and <cite>save</cite> 
+(initialise to 0 on first invocation).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.debug_flag">
+<tt class="descclassname">Gsf.</tt><tt class="descname">debug_flag</tt><big>(</big><em>flag</em><big>)</big><a class="headerlink" href="#Gsf.debug_flag" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flag</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.doc_meta_dump">
+<tt class="descclassname">Gsf.</tt><tt class="descname">doc_meta_dump</tt><big>(</big><em>meta</em><big>)</big><a class="headerlink" href="#Gsf.doc_meta_dump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>meta</strong> (<a class="reference internal" href="classes/DocMetaData.html#Gsf.DocMetaData" title="Gsf.DocMetaData"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.DocMetaData</span></tt></a>) &#8211; <a class="reference internal" href="classes/DocMetaData.html#Gsf.DocMetaData" title="Gsf.DocMetaData"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.DocMetaData</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>A debugging utility to dump the content of <cite>meta</cite> via <tt class="xref py py-class docutils literal"><span class="pre">GLib.print_</span></tt></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.error_quark">
+<tt class="descclassname">Gsf.</tt><tt class="descname">error_quark</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.error_quark" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <tt class="xref py py-class docutils literal"><span class="pre">GLib.Quark</span></tt> used to identify libgsf errors in <a class="reference internal" href="../GLib_2.0/structs/Error.html#GLib.Error" title="GLib.Error"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Error</span></tt></a> structures. Specific error codes come from the <a class="reference internal" href="enums.html#Gsf.Error" title="Gsf.Error"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Error</span></tt></a> enumeration.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.extension_pointer">
+<tt class="descclassname">Gsf.</tt><tt class="descname">extension_pointer</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#Gsf.extension_pointer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; A filename or file path.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A pointer to the extension part of the filename, or a pointer to the end of the string if the filename does not have an extension.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Extracts the extension from the end of a filename (the part after the final
+&#8216;.&#8217; in the filename).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.filename_to_utf8">
+<tt class="descclassname">Gsf.</tt><tt class="descname">filename_to_utf8</tt><big>(</big><em>filename</em>, <em>quoted</em><big>)</big><a class="headerlink" href="#Gsf.filename_to_utf8" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; file name suitable for open(2).</li>
+<li><strong>quoted</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; if <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, the resulting utf8 file name will be quoted (unless it is invalid).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><cite>filename</cite> using utf-8 encoding for display</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A utility wrapper to make sure filenames are valid utf8.
+Caller must <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> the result.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.iconv_close">
+<tt class="descclassname">Gsf.</tt><tt class="descname">iconv_close</tt><big>(</big><em>handle</em><big>)</big><a class="headerlink" href="#Gsf.iconv_close" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>handle</strong> (<a class="reference internal" href="../GLib_2.0/structs/IConv.html#GLib.IConv" title="GLib.IConv"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IConv</span></tt></a>) &#8211; handle to be closed.</td>
+</tr>
+</tbody>
+</table>
+<p>A utility wrapper to safely close an iconv handle.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.init">
+<tt class="descclassname">Gsf.</tt><tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the GSF library</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.init_dynamic">
+<tt class="descclassname">Gsf.</tt><tt class="descname">init_dynamic</tt><big>(</big><em>module</em><big>)</big><a class="headerlink" href="#Gsf.init_dynamic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>module</strong> (<a class="reference internal" href="../GObject_2.0/classes/TypeModule.html#GObject.TypeModule" title="GObject.TypeModule"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TypeModule</span></tt></a>) &#8211; <a class="reference internal" href="../GObject_2.0/classes/TypeModule.html#GObject.TypeModule" title="GObject.TypeModule"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TypeModule</span></tt></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Initializes the GSF library and associates it with a type module <cite>mod</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.le_get_double">
+<tt class="descclassname">Gsf.</tt><tt class="descname">le_get_double</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Gsf.le_get_double" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>p</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; pointer to storage</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">interpreted data</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Interpret binary data as a double in little endian order.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.le_get_float">
+<tt class="descclassname">Gsf.</tt><tt class="descname">le_get_float</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Gsf.le_get_float" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>p</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; pointer to storage</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">interpreted data</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Interpret binary data as a float in little endian order.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.le_get_guint64">
+<tt class="descclassname">Gsf.</tt><tt class="descname">le_get_guint64</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Gsf.le_get_guint64" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>p</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; pointer to storage</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">interpreted data</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Interpret binary data as a guint64 (8 byte unsigned integer type) in little
+endian order.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.le_set_double">
+<tt class="descclassname">Gsf.</tt><tt class="descname">le_set_double</tt><big>(</big><em>p</em>, <em>d</em><big>)</big><a class="headerlink" href="#Gsf.le_set_double" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>p</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; pointer to storage</li>
+<li><strong>d</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; double to be stored</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Store a value of type double in memory in little endian order</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.le_set_float">
+<tt class="descclassname">Gsf.</tt><tt class="descname">le_set_float</tt><big>(</big><em>p</em>, <em>f</em><big>)</big><a class="headerlink" href="#Gsf.le_set_float" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>p</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; pointer to storage</li>
+<li><strong>f</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; float to be stored</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Store a value of type float in memory in little endian order.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.mem_dump">
+<tt class="descclassname">Gsf.</tt><tt class="descname">mem_dump</tt><big>(</big><em>ptr</em>, <em>len</em><big>)</big><a class="headerlink" href="#Gsf.mem_dump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ptr</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; memory area to be dumped.</li>
+<li><strong>len</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; how many bytes will be dumped.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Dump <cite>len</cite> bytes from the memory location given by <cite>ptr</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.msole_codepage_to_lid">
+<tt class="descclassname">Gsf.</tt><tt class="descname">msole_codepage_to_lid</tt><big>(</big><em>codepage</em><big>)</big><a class="headerlink" href="#Gsf.msole_codepage_to_lid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>codepage</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.msole_iconv_win_codepage">
+<tt class="descclassname">Gsf.</tt><tt class="descname">msole_iconv_win_codepage</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.msole_iconv_win_codepage" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">our best guess at the applicable windows code page based on an environment variable or the current locale.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.msole_language_for_lid">
+<tt class="descclassname">Gsf.</tt><tt class="descname">msole_language_for_lid</tt><big>(</big><em>lid</em><big>)</big><a class="headerlink" href="#Gsf.msole_language_for_lid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>lid</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; numerical language id</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the xx_YY style string (can be just xx or xxx) for the given LID.  If the LID is not found, is set to 0x0400, or is set to 0x0000, will return &#8220;-none-&#8220;</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.msole_lid_for_language">
+<tt class="descclassname">Gsf.</tt><tt class="descname">msole_lid_for_language</tt><big>(</big><em>lang</em><big>)</big><a class="headerlink" href="#Gsf.msole_lid_for_language" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>lang</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; Language id, i.e., locale name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the LID (Language Identifier) for the input language. If lang is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, return 0x0400 (&#8220;-none-&#8221;), and not 0x0000 (&#8220;no proofing&#8221;)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.msole_lid_to_codepage">
+<tt class="descclassname">Gsf.</tt><tt class="descname">msole_lid_to_codepage</tt><big>(</big><em>lid</em><big>)</big><a class="headerlink" href="#Gsf.msole_lid_to_codepage" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>lid</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; numerical language id</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">our best guess at the codepage for the given language id</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.msole_lid_to_codepage_str">
+<tt class="descclassname">Gsf.</tt><tt class="descname">msole_lid_to_codepage_str</tt><big>(</big><em>lid</em><big>)</big><a class="headerlink" href="#Gsf.msole_lid_to_codepage_str" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>lid</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; numerical language id</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the Iconv codepage string for the given LID.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.odf_get_ns">
+<tt class="descclassname">Gsf.</tt><tt class="descname">odf_get_ns</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.odf_get_ns" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the used ODF namespace</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="structs/XMLInNS.html#Gsf.XMLInNS" title="Gsf.XMLInNS"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLInNS</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.odf_get_version">
+<tt class="descclassname">Gsf.</tt><tt class="descname">odf_get_version</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.odf_get_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the ODF version: 102.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gives the ODF version used by libgsf when writing Open Document files.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.odf_get_version_string">
+<tt class="descclassname">Gsf.</tt><tt class="descname">odf_get_version_string</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.odf_get_version_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the ODF version as a string: &#8220;1.2&#8221;.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gives the ODF version used by libgsf when writing Open Document files.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.open_pkg_error_id">
+<tt class="descclassname">Gsf.</tt><tt class="descname">open_pkg_error_id</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.open_pkg_error_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.open_pkg_foreach_rel">
+<tt class="descclassname">Gsf.</tt><tt class="descname">open_pkg_foreach_rel</tt><big>(</big><em>opkg</em>, <em>func</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gsf.open_pkg_foreach_rel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>opkg</strong> (<a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a>) &#8211; <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></li>
+<li><strong>func</strong> (<a class="reference internal" href="callbacks.html#Gsf.OpenPkgIter" title="Gsf.OpenPkgIter"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.OpenPkgIter</span></tt></a>) &#8211; <a class="reference internal" href="callbacks.html#Gsf.OpenPkgIter" title="Gsf.OpenPkgIter"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.OpenPkgIter</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>New in 1.14.9</p>
+<p>Walks each relationship associated with <cite>opkg</cite> and calls <cite>func</cite> with <cite>user_data</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.open_pkg_open_rel">
+<tt class="descclassname">Gsf.</tt><tt class="descname">open_pkg_open_rel</tt><big>(</big><em>opkg</em>, <em>rel</em><big>)</big><a class="headerlink" href="#Gsf.open_pkg_open_rel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>opkg</strong> (<a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a>) &#8211; <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></li>
+<li><strong>rel</strong> (<a class="reference internal" href="structs/OpenPkgRel.html#Gsf.OpenPkgRel" title="Gsf.OpenPkgRel"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.OpenPkgRel</span></tt></a>) &#8211; <a class="reference internal" href="structs/OpenPkgRel.html#Gsf.OpenPkgRel" title="Gsf.OpenPkgRel"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.OpenPkgRel</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a> which the called needs to unref, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> and sets <cite>err</cite></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.open_pkg_open_rel_by_id">
+<tt class="descclassname">Gsf.</tt><tt class="descname">open_pkg_open_rel_by_id</tt><big>(</big><em>opkg</em>, <em>id</em><big>)</big><a class="headerlink" href="#Gsf.open_pkg_open_rel_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>opkg</strong> (<a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a>) &#8211; <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; target id</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A new <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, and sets <cite>err</cite> if possible.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>New in 1.14.7</p>
+<p>Open <cite>opkg</cite> &#8216;s relation <cite>id</cite></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.open_pkg_open_rel_by_type">
+<tt class="descclassname">Gsf.</tt><tt class="descname">open_pkg_open_rel_by_type</tt><big>(</big><em>opkg</em>, <em>type</em><big>)</big><a class="headerlink" href="#Gsf.open_pkg_open_rel_by_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>opkg</strong> (<a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a>) &#8211; <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></li>
+<li><strong>type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; target type</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A new <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, and sets <cite>err</cite> if possible.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>New in 1.14.9</p>
+<p>Open one of <cite>opkg</cite> &#8216;s relationships with <a class="reference external" href="mailto:type=&#37;&#52;&#48;type">type=<span>&#64;</span>type</a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.open_pkg_parse_rel_by_id">
+<tt class="descclassname">Gsf.</tt><tt class="descname">open_pkg_parse_rel_by_id</tt><big>(</big><em>xin</em>, <em>id</em>, <em>dtd</em>, <em>ns</em><big>)</big><a class="headerlink" href="#Gsf.open_pkg_parse_rel_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>xin</strong> (<a class="reference internal" href="structs/XMLIn.html#Gsf.XMLIn" title="Gsf.XMLIn"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLIn</span></tt></a>) &#8211; <a class="reference internal" href="structs/XMLIn.html#Gsf.XMLIn" title="Gsf.XMLIn"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLIn</span></tt></a></li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; target id</li>
+<li><strong>dtd</strong> (<a class="reference internal" href="structs/XMLInNode.html#Gsf.XMLInNode" title="Gsf.XMLInNode"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLInNode</span></tt></a>) &#8211; <a class="reference internal" href="structs/XMLInNode.html#Gsf.XMLInNode" title="Gsf.XMLInNode"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLInNode</span></tt></a></li>
+<li><strong>ns</strong> (<a class="reference internal" href="structs/XMLInNS.html#Gsf.XMLInNS" title="Gsf.XMLInNS"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLInNS</span></tt></a>) &#8211; <a class="reference internal" href="structs/XMLInNS.html#Gsf.XMLInNS" title="Gsf.XMLInNS"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLInNS</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on success or a <a class="reference internal" href="../GLib_2.0/structs/Error.html#GLib.Error" title="GLib.Error"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Error</span></tt></a> on failure.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function to parse a related part.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.property_settings_find">
+<tt class="descclassname">Gsf.</tt><tt class="descname">property_settings_find</tt><big>(</big><em>name</em>, <em>params</em>, <em>n_params</em><big>)</big><a class="headerlink" href="#Gsf.property_settings_find" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </li>
+<li><strong>params</strong> (<a class="reference internal" href="../GObject_2.0/structs/Parameter.html#GObject.Parameter" title="GObject.Parameter"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Parameter</span></tt></a>) &#8211; </li>
+<li><strong>n_params</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../GObject_2.0/structs/Parameter.html#GObject.Parameter" title="GObject.Parameter"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Parameter</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.property_settings_free">
+<tt class="descclassname">Gsf.</tt><tt class="descname">property_settings_free</tt><big>(</big><em>params</em>, <em>n_params</em><big>)</big><a class="headerlink" href="#Gsf.property_settings_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>params</strong> (<a class="reference internal" href="../GObject_2.0/structs/Parameter.html#GObject.Parameter" title="GObject.Parameter"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Parameter</span></tt></a>) &#8211; </li>
+<li><strong>n_params</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.shutdown">
+<tt class="descclassname">Gsf.</tt><tt class="descname">shutdown</tt><big>(</big><big>)</big><a class="headerlink" href="#Gsf.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>De-intializes the GSF library
+Currently does nothing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.shutdown_dynamic">
+<tt class="descclassname">Gsf.</tt><tt class="descname">shutdown_dynamic</tt><big>(</big><em>module</em><big>)</big><a class="headerlink" href="#Gsf.shutdown_dynamic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>module</strong> (<a class="reference internal" href="../GObject_2.0/classes/TypeModule.html#GObject.TypeModule" title="GObject.TypeModule"><tt class="xref py py-class docutils literal"><span class="pre">GObject.TypeModule</span></tt></a>) &#8211; currently unused</td>
+</tr>
+</tbody>
+</table>
+<p>De-intializes the GSF library from a type module.
+Currently does nothing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.value_get_docprop_varray">
+<tt class="descclassname">Gsf.</tt><tt class="descname">value_get_docprop_varray</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#Gsf.value_get_docprop_varray" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../GObject_2.0/structs/ValueArray.html#GObject.ValueArray" title="GObject.ValueArray"><tt class="xref py py-class docutils literal"><span class="pre">GObject.ValueArray</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.value_get_docprop_vector">
+<tt class="descclassname">Gsf.</tt><tt class="descname">value_get_docprop_vector</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#Gsf.value_get_docprop_vector" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; A <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a> of type <a class="reference internal" href="classes/DocPropVector.html#Gsf.DocPropVector" title="Gsf.DocPropVector"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.DocPropVector</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A pointer to the <a class="reference internal" href="classes/DocPropVector.html#Gsf.DocPropVector" title="Gsf.DocPropVector"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.DocPropVector</span></tt></a> structure in <cite>value</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="classes/DocPropVector.html#Gsf.DocPropVector" title="Gsf.DocPropVector"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.DocPropVector</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns a pointer to the <a class="reference internal" href="classes/DocPropVector.html#Gsf.DocPropVector" title="Gsf.DocPropVector"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.DocPropVector</span></tt></a> structure in <cite>value</cite>.
+No additional references are created.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.vba_inflate">
+<tt class="descclassname">Gsf.</tt><tt class="descname">vba_inflate</tt><big>(</big><em>input</em>, <em>offset</em>, <em>size</em>, <em>add_null_terminator</em><big>)</big><a class="headerlink" href="#Gsf.vba_inflate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a>) &#8211; stream to read from</li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; offset into it for start byte of compressed stream</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; size of the returned array</li>
+<li><strong>add_null_terminator</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whenever add or not null at the end of array</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A pointer to guint8 array</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Decompresses VBA stream.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.xmlDocFormatDump">
+<tt class="descclassname">Gsf.</tt><tt class="descname">xmlDocFormatDump</tt><big>(</big><em>output</em>, <em>cur</em>, <em>encoding</em>, <em>format</em><big>)</big><a class="headerlink" href="#Gsf.xmlDocFormatDump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>output</strong> (<a class="reference internal" href="classes/Output.html#Gsf.Output" title="Gsf.Output"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Output</span></tt></a>) &#8211; <a class="reference internal" href="classes/Output.html#Gsf.Output" title="Gsf.Output"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Output</span></tt></a></li>
+<li><strong>cur</strong> (<a class="reference internal" href="../libxml2_2.0/structs/Doc.html#libxml2.Doc" title="libxml2.Doc"><tt class="xref py py-class docutils literal"><span class="pre">libxml2.Doc</span></tt></a>) &#8211; <a class="reference internal" href="../libxml2_2.0/structs/DocPtr.html#libxml2.DocPtr" title="libxml2.DocPtr"><tt class="xref py py-class docutils literal"><span class="pre">libxml2.DocPtr</span></tt></a></li>
+<li><strong>encoding</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The encoding to use.</li>
+<li><strong>format</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> to reformat the output.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">status from xmlSaveFormatFileTo.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Dumps the document <cite>cur</cite> into <cite>output</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.xml_gvalue_from_str">
+<tt class="descclassname">Gsf.</tt><tt class="descname">xml_gvalue_from_str</tt><big>(</big><em>res</em>, <em>t</em>, <em>str</em><big>)</big><a class="headerlink" href="#Gsf.xml_gvalue_from_str" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>res</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; Result value</li>
+<li><strong>t</strong> (<a class="reference internal" href="../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; Type of data</li>
+<li><strong>str</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Value string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True when parsing of <cite>str</cite> as a value of type <cite>t</cite> was succesfull; false otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Try to parse <cite>str</cite> as a value of type <cite>t</cite> into <cite>res</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gsf.xml_probe">
+<tt class="descclassname">Gsf.</tt><tt class="descname">xml_probe</tt><big>(</big><em>input</em>, <em>func</em><big>)</big><a class="headerlink" href="#Gsf.xml_probe" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a>) &#8211; <a class="reference internal" href="classes/Input.html#Gsf.Input" title="Gsf.Input"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.Input</span></tt></a></li>
+<li><strong>func</strong> (<a class="reference internal" href="callbacks.html#Gsf.XMLProbeFunc" title="Gsf.XMLProbeFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLProbeFunc</span></tt></a>) &#8211; <a class="reference internal" href="callbacks.html#Gsf.XMLProbeFunc" title="Gsf.XMLProbeFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gsf.XMLProbeFunc</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="callbacks.html" class="btn btn-neutral float-right" title="Callbacks"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Gsf 1"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

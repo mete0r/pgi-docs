@@ -1,0 +1,928 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Json.Object -
+    
+      Structures -
+    
+      Json 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="Enums" href="../enums.html"/>
+        <link rel="prev" title="Json.Node" href="Node.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Json 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Json.Object</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Json 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">Json.Object</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Json_1.0/structs/Object" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="json-object">
+<h1>Json.Object<a class="headerlink" href="#json-object" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Json.Object.new" title="Json.Object.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.add_member" title="Json.Object.add_member"><tt class="xref py py-obj docutils literal"><span class="pre">add_member</span></tt></a>(member_name, node)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.dup_member" title="Json.Object.dup_member"><tt class="xref py py-obj docutils literal"><span class="pre">dup_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.foreach_member" title="Json.Object.foreach_member"><tt class="xref py py-obj docutils literal"><span class="pre">foreach_member</span></tt></a>(func, *data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_array_member" title="Json.Object.get_array_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_array_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_boolean_member" title="Json.Object.get_boolean_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_boolean_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_double_member" title="Json.Object.get_double_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_double_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_int_member" title="Json.Object.get_int_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_int_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_members" title="Json.Object.get_members"><tt class="xref py py-obj docutils literal"><span class="pre">get_members</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_null_member" title="Json.Object.get_null_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_null_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_object_member" title="Json.Object.get_object_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_object_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_size" title="Json.Object.get_size"><tt class="xref py py-obj docutils literal"><span class="pre">get_size</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_string_member" title="Json.Object.get_string_member"><tt class="xref py py-obj docutils literal"><span class="pre">get_string_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.get_values" title="Json.Object.get_values"><tt class="xref py py-obj docutils literal"><span class="pre">get_values</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.has_member" title="Json.Object.has_member"><tt class="xref py py-obj docutils literal"><span class="pre">has_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.ref" title="Json.Object.ref"><tt class="xref py py-obj docutils literal"><span class="pre">ref</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.remove_member" title="Json.Object.remove_member"><tt class="xref py py-obj docutils literal"><span class="pre">remove_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_array_member" title="Json.Object.set_array_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_array_member</span></tt></a>(member_name, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_boolean_member" title="Json.Object.set_boolean_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_boolean_member</span></tt></a>(member_name, value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_double_member" title="Json.Object.set_double_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_double_member</span></tt></a>(member_name, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_int_member" title="Json.Object.set_int_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_int_member</span></tt></a>(member_name, value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_member</span></tt></a>(member_name, node)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_null_member" title="Json.Object.set_null_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_null_member</span></tt></a>(member_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_object_member" title="Json.Object.set_object_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_object_member</span></tt></a>(member_name, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Json.Object.set_string_member" title="Json.Object.set_string_member"><tt class="xref py py-obj docutils literal"><span class="pre">set_string_member</span></tt></a>(member_name, value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Json.Object.unref" title="Json.Object.unref"><tt class="xref py py-obj docutils literal"><span class="pre">unref</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Json.Object">
+<em class="property">class </em><tt class="descclassname">Json.</tt><tt class="descname">Object</tt><a class="headerlink" href="#Json.Object" title="Permalink to this definition">¶</a></dt>
+<dd><p>A JSON object type. The contents of the <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a> structure are private
+and should only be accessed by the provided API</p>
+<dl class="staticmethod">
+<dt id="Json.Object.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Json.Object.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the newly created <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>, an JSON object type representation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.add_member">
+<tt class="descname">add_member</tt><big>(</big><em>member_name</em>, <em>node</em><big>)</big><a class="headerlink" href="#Json.Object.add_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>node</strong> (<a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a member named <cite>member_name</cite> and containing <cite>node</cite> into a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>.
+The object will take ownership of the <a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a>.</p>
+<p>This function will return if the <cite>object</cite> already contains a member
+<cite>member_name</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.dup_member">
+<tt class="descname">dup_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.dup_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the JSON object member to access</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a copy of the node for the requested object member or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. Use <a class="reference internal" href="Node.html#Json.Node.free" title="Json.Node.free"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node.free</span></tt></a> () when done.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves a copy of the <a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a> containing the value of <cite>member_name</cite>
+inside a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.foreach_member">
+<tt class="descname">foreach_member</tt><big>(</big><em>func</em>, <em>*data</em><big>)</big><a class="headerlink" href="#Json.Object.foreach_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Json.ObjectForeach" title="Json.ObjectForeach"><tt class="xref py py-class docutils literal"><span class="pre">Json.ObjectForeach</span></tt></a>) &#8211; the function to be called on each member</li>
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data to be passed to the function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Iterates over all members of <cite>object</cite> and calls <cite>func</cite> on
+each one of them.</p>
+<p>It is safe to change the value of a <a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a> of the <cite>object</cite>
+from within the iterator <cite>func</cite>, but it is not safe to add or
+remove members from the <cite>object</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_array_member">
+<tt class="descname">get_array_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_array_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the array inside the object&#8217;s member</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Array.html#Json.Array" title="Json.Array"><tt class="xref py py-class docutils literal"><span class="pre">Json.Array</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function that retrieves the array
+stored in <cite>member_name</cite> of <cite>object</cite></p>
+<p>See also: <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_boolean_member">
+<tt class="descname">get_boolean_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_boolean_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the boolean value of the object&#8217;s member</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function that retrieves the boolean value
+stored in <cite>member_name</cite> of <cite>object</cite></p>
+<p>See also: <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_double_member">
+<tt class="descname">get_double_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_double_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the floating point value of the object&#8217;s member</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function that retrieves the floating point value
+stored in <cite>member_name</cite> of <cite>object</cite></p>
+<p>See also: <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_int_member">
+<tt class="descname">get_int_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_int_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the integer value of the object&#8217;s member</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function that retrieves the integer value
+stored in <cite>member_name</cite> of <cite>object</cite></p>
+<p>See also: <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_member">
+<tt class="descname">get_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the JSON object member to access</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the node for the requested object member, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the <a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a> containing the value of <cite>member_name</cite> inside
+a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_members">
+<tt class="descname">get_members</tt><big>(</big><big>)</big><a class="headerlink" href="#Json.Object.get_members" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of member names. The content of the list is owned by the <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a> and should never be modified or freed. When you have finished using the returned list, use <tt class="xref py py-class docutils literal"><span class="pre">GLib.List.free</span></tt> () to free the resources it has allocated.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves all the names of the members of a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>. You can
+obtain the value for each member using <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_null_member">
+<tt class="descname">get_null_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_null_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the value is null</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function that checks whether the value
+stored in <cite>member_name</cite> of <cite>object</cite> is null</p>
+<p>See also: <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_object_member">
+<tt class="descname">get_object_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_object_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the object inside the object&#8217;s member</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function that retrieves the object
+stored in <cite>member_name</cite> of <cite>object</cite></p>
+<p>See also: <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_size">
+<tt class="descname">get_size</tt><big>(</big><big>)</big><a class="headerlink" href="#Json.Object.get_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of members</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the number of members of a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_string_member">
+<tt class="descname">get_string_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.get_string_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the string value of the object&#8217;s member</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function that retrieves the string value
+stored in <cite>member_name</cite> of <cite>object</cite></p>
+<p>See also: <a class="reference internal" href="#Json.Object.get_member" title="Json.Object.get_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.get_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.get_values">
+<tt class="descname">get_values</tt><big>(</big><big>)</big><a class="headerlink" href="#Json.Object.get_values" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a> s. The content of the list is owned by the <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a> and should never be modified or freed. When you have finished using the returned list, use <tt class="xref py py-class docutils literal"><span class="pre">GLib.List.free</span></tt> () to free the resources it has allocated.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves all the values of the members of a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.has_member">
+<tt class="descname">has_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.has_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of a JSON object member</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the JSON object has the requested member</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks whether <cite>object</cite> has a member named <cite>member_name</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.ref">
+<tt class="descname">ref</tt><big>(</big><big>)</big><a class="headerlink" href="#Json.Object.ref" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the passed <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>, with the reference count increased by one.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Increase by one the reference count of a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.remove_member">
+<tt class="descname">remove_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.remove_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Removes <cite>member_name</cite> from <cite>object</cite>, freeing its allocated resources.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_array_member">
+<tt class="descname">set_array_member</tt><big>(</big><em>member_name</em>, <em>value</em><big>)</big><a class="headerlink" href="#Json.Object.set_array_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>value</strong> (<a class="reference internal" href="Array.html#Json.Array" title="Json.Array"><tt class="xref py py-class docutils literal"><span class="pre">Json.Array</span></tt></a>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function for setting an array <cite>value</cite> of
+<cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>The <cite>object</cite> will take ownership of the passed <a class="reference internal" href="Array.html#Json.Array" title="Json.Array"><tt class="xref py py-class docutils literal"><span class="pre">Json.Array</span></tt></a></p>
+<p>See also: <a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.set_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_boolean_member">
+<tt class="descname">set_boolean_member</tt><big>(</big><em>member_name</em>, <em>value</em><big>)</big><a class="headerlink" href="#Json.Object.set_boolean_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function for setting a boolean <cite>value</cite> of
+<cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>See also: <a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.set_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_double_member">
+<tt class="descname">set_double_member</tt><big>(</big><em>member_name</em>, <em>value</em><big>)</big><a class="headerlink" href="#Json.Object.set_double_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>value</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function for setting a floating point <cite>value</cite>
+of <cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>See also: <a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.set_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_int_member">
+<tt class="descname">set_int_member</tt><big>(</big><em>member_name</em>, <em>value</em><big>)</big><a class="headerlink" href="#Json.Object.set_int_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function for setting an integer <cite>value</cite> of
+<cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>See also: <a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.set_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_member">
+<tt class="descname">set_member</tt><big>(</big><em>member_name</em>, <em>node</em><big>)</big><a class="headerlink" href="#Json.Object.set_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>node</strong> (<a class="reference internal" href="Node.html#Json.Node" title="Json.Node"><tt class="xref py py-class docutils literal"><span class="pre">Json.Node</span></tt></a>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets <cite>node</cite> as the value of <cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>If <cite>object</cite> already contains a member called <cite>member_name</cite> then
+the member&#8217;s current value is overwritten. Otherwise, a new
+member is added to <cite>object</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_null_member">
+<tt class="descname">set_null_member</tt><big>(</big><em>member_name</em><big>)</big><a class="headerlink" href="#Json.Object.set_null_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function for setting a null <cite>value</cite> of
+<cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>See also: <a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.set_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_object_member">
+<tt class="descname">set_object_member</tt><big>(</big><em>member_name</em>, <em>value</em><big>)</big><a class="headerlink" href="#Json.Object.set_object_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>value</strong> (<a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function for setting an object <cite>value</cite> of
+<cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>The <cite>object</cite> will take ownership of the passed <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a></p>
+<p>See also: <a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.set_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.set_string_member">
+<tt class="descname">set_string_member</tt><big>(</big><em>member_name</em>, <em>value</em><big>)</big><a class="headerlink" href="#Json.Object.set_string_member" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>member_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the name of the member</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the value of the member</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Convenience function for setting a string <cite>value</cite> of
+<cite>member_name</cite> inside <cite>object</cite>.</p>
+<p>See also: <a class="reference internal" href="#Json.Object.set_member" title="Json.Object.set_member"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object.set_member</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Json.Object.unref">
+<tt class="descname">unref</tt><big>(</big><big>)</big><a class="headerlink" href="#Json.Object.unref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decreases by one the reference count of a <a class="reference internal" href="#Json.Object" title="Json.Object"><tt class="xref py py-class docutils literal"><span class="pre">Json.Object</span></tt></a>. If the
+reference count reaches zero, the object is destroyed and all
+its allocated resources are freed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../enums.html" class="btn btn-neutral float-right" title="Enums"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Node.html" class="btn btn-neutral" title="Json.Node"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

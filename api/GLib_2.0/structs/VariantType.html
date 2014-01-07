@@ -1,0 +1,1398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GLib.VariantType -
+    
+      Structures -
+    
+      GLib 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="Unions" href="../unions/index.html"/>
+        <link rel="prev" title="GLib.VariantBuilder" href="VariantBuilder.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GLib 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GLib.VariantType</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GLib 2.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">GLib.VariantType</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GLib_2.0/structs/VariantType" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="glib-varianttype">
+<h1>GLib.VariantType<a class="headerlink" href="#glib-varianttype" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.checked_" title="GLib.VariantType.checked_"><tt class="xref py py-obj docutils literal"><span class="pre">checked_</span></tt></a>(arg0)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.new" title="GLib.VariantType.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>(type_string)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.new_array" title="GLib.VariantType.new_array"><tt class="xref py py-obj docutils literal"><span class="pre">new_array</span></tt></a>(element)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.new_dict_entry" title="GLib.VariantType.new_dict_entry"><tt class="xref py py-obj docutils literal"><span class="pre">new_dict_entry</span></tt></a>(key, value)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.new_maybe" title="GLib.VariantType.new_maybe"><tt class="xref py py-obj docutils literal"><span class="pre">new_maybe</span></tt></a>(element)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.new_tuple" title="GLib.VariantType.new_tuple"><tt class="xref py py-obj docutils literal"><span class="pre">new_tuple</span></tt></a>(items)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.string_is_valid" title="GLib.VariantType.string_is_valid"><tt class="xref py py-obj docutils literal"><span class="pre">string_is_valid</span></tt></a>(type_string)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.VariantType.string_scan" title="GLib.VariantType.string_scan"><tt class="xref py py-obj docutils literal"><span class="pre">string_scan</span></tt></a>(string, limit)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.copy" title="GLib.VariantType.copy"><tt class="xref py py-obj docutils literal"><span class="pre">copy</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.dup_string" title="GLib.VariantType.dup_string"><tt class="xref py py-obj docutils literal"><span class="pre">dup_string</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.element" title="GLib.VariantType.element"><tt class="xref py py-obj docutils literal"><span class="pre">element</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.equal" title="GLib.VariantType.equal"><tt class="xref py py-obj docutils literal"><span class="pre">equal</span></tt></a>(type2)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.first" title="GLib.VariantType.first"><tt class="xref py py-obj docutils literal"><span class="pre">first</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.free" title="GLib.VariantType.free"><tt class="xref py py-obj docutils literal"><span class="pre">free</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.get_string_length" title="GLib.VariantType.get_string_length"><tt class="xref py py-obj docutils literal"><span class="pre">get_string_length</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.hash" title="GLib.VariantType.hash"><tt class="xref py py-obj docutils literal"><span class="pre">hash</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_array" title="GLib.VariantType.is_array"><tt class="xref py py-obj docutils literal"><span class="pre">is_array</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_basic" title="GLib.VariantType.is_basic"><tt class="xref py py-obj docutils literal"><span class="pre">is_basic</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_container" title="GLib.VariantType.is_container"><tt class="xref py py-obj docutils literal"><span class="pre">is_container</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_definite" title="GLib.VariantType.is_definite"><tt class="xref py py-obj docutils literal"><span class="pre">is_definite</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_dict_entry" title="GLib.VariantType.is_dict_entry"><tt class="xref py py-obj docutils literal"><span class="pre">is_dict_entry</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_maybe" title="GLib.VariantType.is_maybe"><tt class="xref py py-obj docutils literal"><span class="pre">is_maybe</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_subtype_of" title="GLib.VariantType.is_subtype_of"><tt class="xref py py-obj docutils literal"><span class="pre">is_subtype_of</span></tt></a>(supertype)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_tuple" title="GLib.VariantType.is_tuple"><tt class="xref py py-obj docutils literal"><span class="pre">is_tuple</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.is_variant" title="GLib.VariantType.is_variant"><tt class="xref py py-obj docutils literal"><span class="pre">is_variant</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.key" title="GLib.VariantType.key"><tt class="xref py py-obj docutils literal"><span class="pre">key</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.n_items" title="GLib.VariantType.n_items"><tt class="xref py py-obj docutils literal"><span class="pre">n_items</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.next" title="GLib.VariantType.next"><tt class="xref py py-obj docutils literal"><span class="pre">next</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.VariantType.value" title="GLib.VariantType.value"><tt class="xref py py-obj docutils literal"><span class="pre">value</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GLib.VariantType">
+<em class="property">class </em><tt class="descclassname">GLib.</tt><tt class="descname">VariantType</tt><a class="headerlink" href="#GLib.VariantType" title="Permalink to this definition">¶</a></dt>
+<dd><p>This section introduces the <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type system.  It is based, in
+large part, on the D-Bus type system, with two major changes and some minor
+lifting of restrictions.  The DBus
+specification, therefore, provides a significant amount of
+information that is useful when working with <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>.</p>
+<p>The first major change with respect to the D-Bus type system is the
+introduction of maybe (or &#8220;nullable&#8221;) types.  Any type in <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> can be
+converted to a maybe type, in which case, &#8220;nothing&#8221; (or &#8220;null&#8221;) becomes a
+valid value.  Maybe types have been added by introducing the
+character &#8220;<tt class="docutils literal"><span class="pre">m</span></tt>&#8221; to type strings.</p>
+<p>The second major change is that the <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type system supports the
+concept of &#8220;indefinite types&#8221; &#8211; types that are less specific than
+the normal types found in D-Bus.  For example, it is possible to speak
+of &#8220;an array of any type&#8221; in <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>, where the D-Bus type system
+would require you to speak of &#8220;an array of integers&#8221; or &#8220;an array of
+strings&#8221;.  Indefinite types have been added by introducing the
+characters &#8220;<tt class="docutils literal"><span class="pre">*</span></tt>&#8221;, &#8220;<tt class="docutils literal"><span class="pre">?</span></tt>&#8221; and
+&#8220;<tt class="docutils literal"><span class="pre">r</span></tt>&#8221; to type strings.</p>
+<p>Finally, all arbitrary restrictions relating to the complexity of
+types are lifted along with the restriction that dictionary entries
+may only appear nested inside of arrays.</p>
+<p>Just as in D-Bus, <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> types are described with strings (&#8220;type
+strings&#8221;).  Subject to the differences mentioned above, these strings
+are of the same form as those found in DBus.  Note, however: D-Bus
+always works in terms of messages and therefore individual type
+strings appear nowhere in its interface.  Instead, &#8220;signatures&#8221;
+are a concatenation of the strings of the type of each argument in a
+message.  <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> deals with single values directly so <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type
+strings always describe the type of exactly one value.  This means
+that a D-Bus signature string is generally not a valid <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type
+string &#8211; except in the case that it is the signature of a message
+containing exactly one argument.</p>
+<p>An indefinite type is similar in spirit to what may be called an
+abstract type in other type systems.  No value can exist that has an
+indefinite type as its type, but values can exist that have types
+that are subtypes of indefinite types.  That is to say,
+<a class="reference internal" href="Variant.html#GLib.Variant.get_type" title="GLib.Variant.get_type"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant.get_type</span></tt></a> () will never return an indefinite type, but
+calling <a class="reference internal" href="Variant.html#GLib.Variant.is_of_type" title="GLib.Variant.is_of_type"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant.is_of_type</span></tt></a> () with an indefinite type may return
+<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>.  For example, you cannot have a value that represents &#8220;an
+array of no particular type&#8221;, but you can have an &#8220;array of integers&#8221;
+which certainly matches the type of &#8220;an array of no particular type&#8221;,
+since &#8220;array of integers&#8221; is a subtype of &#8220;array of no particular
+type&#8221;.</p>
+<p>This is similar to how instances of abstract classes may not
+directly exist in other type systems, but instances of their
+non-abstract subtypes may.  For example, in GTK, no object that has
+the type of #GtkBin can exist (since #GtkBin is an abstract class),
+but a #GtkWindow can certainly be instantiated, and you would say
+that the #GtkWindow is a #GtkBin (since #GtkWindow is a subclass of
+#GtkBin).</p>
+<p>A detailed description of <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type strings is given here:</p>
+<p><a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> Type Strings</p>
+<p>A <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type string can be any of the following:</p>
+<ul class="simple">
+<li>any basic type string (listed below)</li>
+<li>&#8220;v&#8221;, &#8220;r&#8221; or     &#8220;*&#8221;</li>
+<li>one of the characters &#8216;a&#8217; or     &#8216;m&#8217;, followed by another type string</li>
+<li>the character &#8216;(&#8216;, followed by a concatenation     of zero or more other type strings, followed by the character     &#8216;)&#8217;</li>
+<li>the character &#8216;{&#8216;, followed by a basic type     string (see below), followed by another type string, followed by     the character &#8216;}&#8217;</li>
+</ul>
+<p>A basic type string describes a basic type (as per
+<a class="reference internal" href="#GLib.VariantType.is_basic" title="GLib.VariantType.is_basic"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.is_basic</span></tt></a> ()) and is always a single
+character in length.  The valid basic type strings are
+&#8220;<tt class="docutils literal"><span class="pre">b</span></tt>&#8221;, &#8220;<tt class="docutils literal"><span class="pre">y</span></tt>&#8221;,
+&#8220;<tt class="docutils literal"><span class="pre">n</span></tt>&#8221;, &#8220;<tt class="docutils literal"><span class="pre">q</span></tt>&#8221;,
+&#8220;<tt class="docutils literal"><span class="pre">i</span></tt>&#8221;, &#8220;<tt class="docutils literal"><span class="pre">u</span></tt>&#8221;,
+&#8220;<tt class="docutils literal"><span class="pre">x</span></tt>&#8221;, &#8220;<tt class="docutils literal"><span class="pre">t</span></tt>&#8221;,
+&#8220;<tt class="docutils literal"><span class="pre">h</span></tt>&#8221;, &#8220;<tt class="docutils literal"><span class="pre">d</span></tt>&#8221;,
+&#8220;<tt class="docutils literal"><span class="pre">s</span></tt>&#8221;, &#8220;<tt class="docutils literal"><span class="pre">o</span></tt>&#8221;,
+&#8220;<tt class="docutils literal"><span class="pre">g</span></tt>&#8221; and &#8220;<tt class="docutils literal"><span class="pre">?</span></tt>&#8221;.</p>
+<p>The above definition is recursive to arbitrary depth.
+&#8220;<tt class="docutils literal"><span class="pre">aaaaai</span></tt>&#8221; and &#8220;<tt class="docutils literal"><span class="pre">(ui(nq((y)))s)</span></tt>&#8221;
+are both valid type strings, as is
+&#8220;<tt class="docutils literal"><span class="pre">a(aa(ui)(qna{ya(yd)}))</span></tt>&#8221;.</p>
+<p>The meaning of each of the characters is as follows:</p>
+<p>Character</p>
+<p>Meaning</p>
+<p><tt class="docutils literal"><span class="pre">b</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_BOOLEAN; a boolean value.</p>
+<p><tt class="docutils literal"><span class="pre">y</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_BYTE; a byte.</p>
+<p><tt class="docutils literal"><span class="pre">n</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_INT16; a signed 16 bit
+integer.</p>
+<p><tt class="docutils literal"><span class="pre">q</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_UINT16; an unsigned 16 bit
+integer.</p>
+<p><tt class="docutils literal"><span class="pre">i</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_INT32; a signed 32 bit
+integer.</p>
+<p><tt class="docutils literal"><span class="pre">u</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_UINT32; an unsigned 32 bit
+integer.</p>
+<p><tt class="docutils literal"><span class="pre">x</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_INT64; a signed 64 bit
+integer.</p>
+<p><tt class="docutils literal"><span class="pre">t</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_UINT64; an unsigned 64 bit
+integer.</p>
+<p><tt class="docutils literal"><span class="pre">h</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_HANDLE; a signed 32 bit
+value that, by convention, is used as an index into an array
+of file descriptors that are sent alongside a D-Bus message.</p>
+<p><tt class="docutils literal"><span class="pre">d</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_DOUBLE; a double precision
+floating point value.</p>
+<p><tt class="docutils literal"><span class="pre">s</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_STRING; a string.</p>
+<p><tt class="docutils literal"><span class="pre">o</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_OBJECT_PATH; a string in
+the form of a D-Bus object path.</p>
+<p><tt class="docutils literal"><span class="pre">g</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_STRING; a string in the
+form of a D-Bus type signature.</p>
+<p><tt class="docutils literal"><span class="pre">?</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_BASIC; an indefinite type
+that is a supertype of any of the basic types.</p>
+<p><tt class="docutils literal"><span class="pre">v</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_VARIANT; a container type
+that contain any other type of value.</p>
+<p><tt class="docutils literal"><span class="pre">a</span></tt></p>
+<p>used as a prefix on another type string to mean an array of
+that type; the type string &#8220;<tt class="docutils literal"><span class="pre">ai</span></tt>&#8221;, for
+example, is the type of an array of 32 bit signed integers.</p>
+<p><tt class="docutils literal"><span class="pre">m</span></tt></p>
+<p>used as a prefix on another type string to mean a &#8220;maybe&#8221;, or
+&#8220;nullable&#8221;, version of that type; the type string
+&#8220;<tt class="docutils literal"><span class="pre">ms</span></tt>&#8221;, for example, is the type of a value
+that maybe contains a string, or maybe contains nothing.</p>
+<p><tt class="docutils literal"><span class="pre">()</span></tt></p>
+<p>used to enclose zero or more other concatenated type strings
+to create a tuple type; the type string
+&#8220;<tt class="docutils literal"><span class="pre">(is)</span></tt>&#8221;, for example, is the type of a pair
+of an integer and a string.</p>
+<p><tt class="docutils literal"><span class="pre">r</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_TUPLE; an indefinite type
+that is a supertype of any tuple type, regardless of the
+number of items.</p>
+<p><tt class="docutils literal"><span class="pre">{}</span></tt></p>
+<p>used to enclose a basic type string concatenated with another
+type string to create a dictionary entry type, which usually
+appears inside of an array to form a dictionary; the type
+string &#8220;<tt class="docutils literal"><span class="pre">a{sd}</span></tt>&#8221;, for example, is the type of
+a dictionary that maps strings to double precision floating
+point values.</p>
+<p>The first type (the basic type) is the key type and the second
+type is the value type.  The reason that the first type is
+restricted to being a basic type is so that it can easily be
+hashed.</p>
+<p><tt class="docutils literal"><span class="pre">*</span></tt></p>
+<p>the type string of %G_VARIANT_TYPE_ANY; the indefinite type
+that is a supertype of all types.  Note that, as with all type
+strings, this character represents exactly one type.  It
+cannot be used inside of tuples to mean &#8220;any number of items&#8221;.</p>
+<p>Any type string of a container that contains an indefinite type is,
+itself, an indefinite type.  For example, the type string
+&#8220;<tt class="docutils literal"><span class="pre">a*</span></tt>&#8221; (corresponding to %G_VARIANT_TYPE_ARRAY) is
+an indefinite type that is a supertype of every array type.
+&#8220;<tt class="docutils literal"><span class="pre">(*s)</span></tt>&#8221; is a supertype of all tuples that
+contain exactly two items where the second item is a string.</p>
+<p>&#8220;<tt class="docutils literal"><span class="pre">a{?*}</span></tt>&#8221; is an indefinite type that is a
+supertype of all arrays containing dictionary entries where the key
+is any basic type and the value is any type at all.  This is, by
+definition, a dictionary, so this type string corresponds to
+%G_VARIANT_TYPE_DICTIONARY.  Note that, due to the restriction that
+the key of a dictionary entry must be a basic type,
+&#8220;<tt class="docutils literal"><span class="pre">{**}</span></tt>&#8221; is not a valid type string.</p>
+<dl class="staticmethod">
+<dt id="GLib.VariantType.checked_">
+<em class="property">static </em><tt class="descname">checked_</tt><big>(</big><em>arg0</em><big>)</big><a class="headerlink" href="#GLib.VariantType.checked_" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg0</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.VariantType.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><em>type_string</em><big>)</big><a class="headerlink" href="#GLib.VariantType.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type_string</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a valid <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a> corresponding to the type string given
+by <cite>type_string</cite>.  It is appropriate to call <a class="reference internal" href="#GLib.VariantType.free" title="GLib.VariantType.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.free</span></tt></a> () on
+the return value.</p>
+<p>It is a programmer error to call this function with an invalid type
+string.  Use <a class="reference internal" href="#GLib.VariantType.string_is_valid" title="GLib.VariantType.string_is_valid"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.string_is_valid</span></tt></a> () if you are unsure.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.VariantType.new_array">
+<em class="property">static </em><tt class="descname">new_array</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#GLib.VariantType.new_array" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>) &#8211; a <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new array <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs the type corresponding to an array of elements of the
+type <cite>type</cite>.</p>
+<p>It is appropriate to call <a class="reference internal" href="#GLib.VariantType.free" title="GLib.VariantType.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.free</span></tt></a> () on the return value.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.VariantType.new_dict_entry">
+<em class="property">static </em><tt class="descname">new_dict_entry</tt><big>(</big><em>key</em>, <em>value</em><big>)</big><a class="headerlink" href="#GLib.VariantType.new_dict_entry" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> (<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>) &#8211; a basic <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></li>
+<li><strong>value</strong> (<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>) &#8211; a <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>a new dictionary entry <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Constructs the type corresponding to a dictionary entry with a key
+of type <cite>key</cite> and a value of type <cite>value</cite>.</p>
+<p>It is appropriate to call <a class="reference internal" href="#GLib.VariantType.free" title="GLib.VariantType.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.free</span></tt></a> () on the return value.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.VariantType.new_maybe">
+<em class="property">static </em><tt class="descname">new_maybe</tt><big>(</big><em>element</em><big>)</big><a class="headerlink" href="#GLib.VariantType.new_maybe" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>) &#8211; a <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new maybe <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs the type corresponding to a maybe instance containing
+type <cite>type</cite> or Nothing.</p>
+<p>It is appropriate to call <a class="reference internal" href="#GLib.VariantType.free" title="GLib.VariantType.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.free</span></tt></a> () on the return value.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.VariantType.new_tuple">
+<em class="property">static </em><tt class="descname">new_tuple</tt><big>(</big><em>items</em><big>)</big><a class="headerlink" href="#GLib.VariantType.new_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>items</strong> ([<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>]) &#8211; an array of <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantTypes</span></tt></a>, one for each item</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new tuple <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new tuple type, from <cite>items</cite>.</p>
+<p><cite>length</cite> is the number of items in <cite>items</cite>, or -1 to indicate that
+<cite>items</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated.</p>
+<p>It is appropriate to call <a class="reference internal" href="#GLib.VariantType.free" title="GLib.VariantType.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.free</span></tt></a> () on the return value.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.VariantType.string_is_valid">
+<em class="property">static </em><tt class="descname">string_is_valid</tt><big>(</big><em>type_string</em><big>)</big><a class="headerlink" href="#GLib.VariantType.string_is_valid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type_string</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a pointer to any string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type_string</cite> is exactly one valid type string<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks if <cite>type_string</cite> is a valid <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type string.  This call is
+equivalent to calling <a class="reference internal" href="#GLib.VariantType.string_scan" title="GLib.VariantType.string_scan"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.string_scan</span></tt></a> () and confirming
+that the following character is a nul terminator.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.VariantType.string_scan">
+<em class="property">static </em><tt class="descname">string_scan</tt><big>(</big><em>string</em>, <em>limit</em><big>)</big><a class="headerlink" href="#GLib.VariantType.string_scan" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>string</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a pointer to any string</li>
+<li><strong>limit</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the end of <cite>string</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if a valid type string was found</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, endptr: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Scan for a single complete and valid <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> type string in <cite>string</cite>.
+The memory pointed to by <cite>limit</cite> (or bytes beyond it) is never
+accessed.</p>
+<p>If a valid type string is found, <cite>endptr</cite> is updated to point to the
+first character past the end of the string that was found and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>
+is returned.</p>
+<p>If there is no valid type string starting at <cite>string</cite>, or if the type
+string does not end before <cite>limit</cite> then <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> is returned.</p>
+<p>For the simple case of checking if a string is a valid type string,
+see <a class="reference internal" href="#GLib.VariantType.string_is_valid" title="GLib.VariantType.string_is_valid"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.string_is_valid</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.copy">
+<tt class="descname">copy</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Makes a copy of a <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>.  It is appropriate to call
+<a class="reference internal" href="#GLib.VariantType.free" title="GLib.VariantType.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.free</span></tt></a> () on the return value.  <cite>type</cite> may not be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.dup_string">
+<tt class="descname">dup_string</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.dup_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the corresponding type string<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a newly-allocated copy of the type string corresponding to
+<cite>type</cite>.  The returned string is nul-terminated.  It is appropriate to
+call <a class="reference internal" href="../functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () on the return value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.element">
+<tt class="descname">element</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.element" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the element type of <cite>type</cite><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines the element type of an array or maybe type.</p>
+<p>This function may only be used with array or maybe types.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.equal">
+<tt class="descname">equal</tt><big>(</big><em>type2</em><big>)</big><a class="headerlink" href="#GLib.VariantType.equal" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type2</strong> (<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>) &#8211; a <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type1</cite> and <cite>type2</cite> are exactly equal<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Compares <cite>type1</cite> and <cite>type2</cite> for equality.</p>
+<p>Only returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the types are exactly equal.  Even if one type
+is an indefinite type and the other is a subtype of it, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> will
+be returned if they are not exactly equal.  If you want to check for
+subtypes, use <a class="reference internal" href="#GLib.VariantType.is_subtype_of" title="GLib.VariantType.is_subtype_of"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.is_subtype_of</span></tt></a> ().</p>
+<p>The argument types of <cite>type1</cite> and <cite>type2</cite> are only #gconstpointer to
+allow use with <a class="reference internal" href="HashTable.html#GLib.HashTable" title="GLib.HashTable"><tt class="xref py py-class docutils literal"><span class="pre">GLib.HashTable</span></tt></a> without function pointer casting.  For
+both arguments, a valid <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a> must be provided.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.first">
+<tt class="descname">first</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.first" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the first item type of <cite>type</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines the first item type of a tuple or dictionary entry
+type.</p>
+<p>This function may only be used with tuple or dictionary entry types,
+but must not be used with the generic tuple type
+%G_VARIANT_TYPE_TUPLE.</p>
+<p>In the case of a dictionary entry type, this returns the type of
+the key.</p>
+<p><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is returned in case of <cite>type</cite> being %G_VARIANT_TYPE_UNIT.</p>
+<p>This call, together with <a class="reference internal" href="#GLib.VariantType.next" title="GLib.VariantType.next"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.next</span></tt></a> () provides an iterator
+interface over tuple and dictionary entry types.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.free">
+<tt class="descname">free</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.free" title="Permalink to this definition">¶</a></dt>
+<dd><p>Frees a <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a> that was allocated with
+<a class="reference internal" href="#GLib.VariantType.copy" title="GLib.VariantType.copy"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.copy</span></tt></a> (), <a class="reference internal" href="#GLib.VariantType.new" title="GLib.VariantType.new"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.new</span></tt></a> () or one of the container
+type constructor functions.</p>
+<p>In the case that <cite>type</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, this function does nothing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.get_string_length">
+<tt class="descname">get_string_length</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.get_string_length" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the length of the corresponding type string<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the length of the type string corresponding to the given
+<cite>type</cite>.  This function must be used to determine the valid extent of
+the memory region returned by <tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.peek_string</span></tt> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.hash">
+<tt class="descname">hash</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.hash" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the hash value<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Hashes <cite>type</cite>.</p>
+<p>The argument type of <cite>type</cite> is only #gconstpointer to allow use with
+<a class="reference internal" href="HashTable.html#GLib.HashTable" title="GLib.HashTable"><tt class="xref py py-class docutils literal"><span class="pre">GLib.HashTable</span></tt></a> without function pointer casting.  A valid
+<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a> must be provided.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_array">
+<tt class="descname">is_array</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_array" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is an array type<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is an array type.  This is true if the
+type string for <cite>type</cite> starts with an &#8216;a&#8217;.</p>
+<p>This function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for any indefinite type for which every
+definite subtype is an array type &#8211; %G_VARIANT_TYPE_ARRAY, for
+example.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_basic">
+<tt class="descname">is_basic</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_basic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is a basic type<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is a basic type.</p>
+<p>Basic types are booleans, bytes, integers, doubles, strings, object
+paths and signatures.</p>
+<p>Only a basic type may be used as the key of a dictionary entry.</p>
+<p>This function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for all indefinite types except
+%G_VARIANT_TYPE_BASIC.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_container">
+<tt class="descname">is_container</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_container" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is a container type<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is a container type.</p>
+<p>Container types are any array, maybe, tuple, or dictionary
+entry types plus the variant type.</p>
+<p>This function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for any indefinite type for which every
+definite subtype is a container &#8211; %G_VARIANT_TYPE_ARRAY, for
+example.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_definite">
+<tt class="descname">is_definite</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_definite" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is definite<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is definite (ie: not indefinite).</p>
+<p>A type is definite if its type string does not contain any indefinite
+type characters (&#8216;*&#8217;, &#8216;?&#8217;, or &#8216;r&#8217;).</p>
+<p>A <a class="reference internal" href="Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> instance may not have an indefinite type, so calling
+this function on the result of <a class="reference internal" href="Variant.html#GLib.Variant.get_type" title="GLib.Variant.get_type"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant.get_type</span></tt></a> () will always
+result in <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> being returned.  Calling this function on an
+indefinite type like %G_VARIANT_TYPE_ARRAY, however, will result in
+<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> being returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_dict_entry">
+<tt class="descname">is_dict_entry</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_dict_entry" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is a dictionary entry type<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is a dictionary entry type.  This is
+true if the type string for <cite>type</cite> starts with a &#8216;{&#8216;.</p>
+<p>This function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for any indefinite type for which every
+definite subtype is a dictionary entry type &#8211;
+%G_VARIANT_TYPE_DICT_ENTRY, for example.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_maybe">
+<tt class="descname">is_maybe</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_maybe" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is a maybe type<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is a maybe type.  This is true if the
+type string for <cite>type</cite> starts with an &#8216;m&#8217;.</p>
+<p>This function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for any indefinite type for which every
+definite subtype is a maybe type &#8211; %G_VARIANT_TYPE_MAYBE, for
+example.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_subtype_of">
+<tt class="descname">is_subtype_of</tt><big>(</big><em>supertype</em><big>)</big><a class="headerlink" href="#GLib.VariantType.is_subtype_of" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>supertype</strong> (<a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>) &#8211; a <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is a subtype of <cite>supertype</cite><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Checks if <cite>type</cite> is a subtype of <cite>supertype</cite>.</p>
+<p>This function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is a subtype of <cite>supertype</cite>.  All
+types are considered to be subtypes of themselves.  Aside from that,
+only indefinite types can have subtypes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_tuple">
+<tt class="descname">is_tuple</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is a tuple type<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is a tuple type.  This is true if the
+type string for <cite>type</cite> starts with a &#8216;(&#8216; or if <cite>type</cite> is
+%G_VARIANT_TYPE_TUPLE.</p>
+<p>This function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for any indefinite type for which every
+definite subtype is a tuple type &#8211; %G_VARIANT_TYPE_TUPLE, for
+example.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.is_variant">
+<tt class="descname">is_variant</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.is_variant" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>type</cite> is the variant type<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines if the given <cite>type</cite> is the variant type.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.key">
+<tt class="descname">key</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the key type of the dictionary entry<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines the key type of a dictionary entry type.</p>
+<p>This function may only be used with a dictionary entry type.  Other
+than the additional restriction, this call is equivalent to
+<a class="reference internal" href="#GLib.VariantType.first" title="GLib.VariantType.first"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.first</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.n_items">
+<tt class="descname">n_items</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.n_items" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of items in <cite>type</cite><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines the number of items contained in a tuple or
+dictionary entry type.</p>
+<p>This function may only be used with tuple or dictionary entry types,
+but must not be used with the generic tuple type
+%G_VARIANT_TYPE_TUPLE.</p>
+<p>In the case of a dictionary entry type, this function will always
+return 2.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.next">
+<tt class="descname">next</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.next" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the next <a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a> after <cite>type</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines the next item type of a tuple or dictionary entry
+type.</p>
+<p><cite>type</cite> must be the result of a previous call to
+<a class="reference internal" href="#GLib.VariantType.first" title="GLib.VariantType.first"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.first</span></tt></a> () or <a class="reference internal" href="#GLib.VariantType.next" title="GLib.VariantType.next"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType.next</span></tt></a> ().</p>
+<p>If called on the key type of a dictionary entry then this call
+returns the value type.  If called on the value type of a dictionary
+entry then this call returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</p>
+<p>For tuples, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is returned when <cite>type</cite> is the last item in a tuple.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.VariantType.value">
+<tt class="descname">value</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.VariantType.value" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the value type of the dictionary entry<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Since:</th><td class="field-body"><em>2.24</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Determines the value type of a dictionary entry type.</p>
+<p>This function may only be used with a dictionary entry type.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../unions/index.html" class="btn btn-neutral float-right" title="Unions"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="VariantBuilder.html" class="btn btn-neutral" title="GLib.VariantBuilder"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

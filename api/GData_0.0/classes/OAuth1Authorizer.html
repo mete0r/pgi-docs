@@ -1,0 +1,810 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GData.OAuth1Authorizer -
+    
+      Classes -
+    
+      GData 0.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="GData.Parsable" href="Parsable.html"/>
+        <link rel="prev" title="GData.MediaThumbnail" href="MediaThumbnail.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GData 0.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GData.OAuth1Authorizer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GData 0.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">GData.OAuth1Authorizer</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GData_0.0/classes/OAuth1Authorizer" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gdata-oauth1authorizer">
+<h1>GData.OAuth1Authorizer<a class="headerlink" href="#gdata-oauth1authorizer" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-6999e8f8bf238db7a7711e104d526fb05bd385b7.png" alt="Inheritance diagram of GData.OAuth1Authorizer" usemap="#inheritance458b69d60c" class="inheritance"/>
+<map id="inheritance458b69d60c" name="inheritance458b69d60c">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="5,5,120,29"/>
+<area shape="rect" id="node2" href="../interfaces/Authorizer.html#GData.Authorizer" title="GData.Authorizer" alt="" coords="9,77,116,101"/>
+<area shape="rect" id="node5" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer" alt="" coords="55,149,196,173"/>
+<area shape="rect" id="node4" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="140,77,236,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.new" title="GData.OAuth1Authorizer.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>(application_name, service_type)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.new_for_authorization_domains" title="GData.OAuth1Authorizer.new_for_authorization_domains"><tt class="xref py py-obj docutils literal"><span class="pre">new_for_authorization_domains</span></tt></a>(application_name, authorization_domains)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.get_application_name" title="GData.OAuth1Authorizer.get_application_name"><tt class="xref py py-obj docutils literal"><span class="pre">get_application_name</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.get_locale" title="GData.OAuth1Authorizer.get_locale"><tt class="xref py py-obj docutils literal"><span class="pre">get_locale</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.get_proxy_uri" title="GData.OAuth1Authorizer.get_proxy_uri"><tt class="xref py py-obj docutils literal"><span class="pre">get_proxy_uri</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.get_timeout" title="GData.OAuth1Authorizer.get_timeout"><tt class="xref py py-obj docutils literal"><span class="pre">get_timeout</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-obj docutils literal"><span class="pre">request_authentication_uri</span></tt></a>(cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri_async" title="GData.OAuth1Authorizer.request_authentication_uri_async"><tt class="xref py py-obj docutils literal"><span class="pre">request_authentication_uri_async</span></tt></a>(cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri_finish" title="GData.OAuth1Authorizer.request_authentication_uri_finish"><tt class="xref py py-obj docutils literal"><span class="pre">request_authentication_uri_finish</span></tt></a>(async_result)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization" title="GData.OAuth1Authorizer.request_authorization"><tt class="xref py py-obj docutils literal"><span class="pre">request_authorization</span></tt></a>(token, token_secret, verifier, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization_async" title="GData.OAuth1Authorizer.request_authorization_async"><tt class="xref py py-obj docutils literal"><span class="pre">request_authorization_async</span></tt></a>(token, token_secret, verifier, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization_finish" title="GData.OAuth1Authorizer.request_authorization_finish"><tt class="xref py py-obj docutils literal"><span class="pre">request_authorization_finish</span></tt></a>(async_result)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.set_locale" title="GData.OAuth1Authorizer.set_locale"><tt class="xref py py-obj docutils literal"><span class="pre">set_locale</span></tt></a>(locale)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.set_proxy_uri" title="GData.OAuth1Authorizer.set_proxy_uri"><tt class="xref py py-obj docutils literal"><span class="pre">set_proxy_uri</span></tt></a>(proxy_uri)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GData.OAuth1Authorizer.set_timeout" title="GData.OAuth1Authorizer.set_timeout"><tt class="xref py py-obj docutils literal"><span class="pre">set_timeout</span></tt></a>(timeout)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gdata-oauth1authorizer-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="application-name">application-name</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w/c</td>
+<td>The human-readable, translated application name for the client.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="locale">locale</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>The locale to use for network requests, in Unix locale format.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="proxy-uri">proxy-uri</span></td>
+<td><a class="reference internal" href="../../Soup_2.4/structs/URI.html#Soup.URI" title="Soup.URI"><tt class="xref py py-class docutils literal"><span class="pre">Soup.URI</span></tt></a></td>
+<td>r/w</td>
+<td>The proxy URI used internally for all network requests.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="timeout">timeout</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>A timeout, in seconds, for network operations.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gdata-oauth1authorizer-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GData.OAuth1Authorizer">
+<em class="property">class </em><tt class="descclassname">GData.</tt><tt class="descname">OAuth1Authorizer</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>, <a class="reference internal" href="../interfaces/Authorizer.html#GData.Authorizer" title="GData.Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.Authorizer</span></tt></a></p>
+<p>All the fields in the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> structure are private and should never be accessed directly.</p>
+<dl class="staticmethod">
+<dt id="GData.OAuth1Authorizer.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><em>application_name</em>, <em>service_type</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>application_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a human-readable, translated application name to use on authentication pages, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>service_type</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; the <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> of a <a class="reference internal" href="Service.html#GData.Service" title="GData.Service"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service</span></tt></a> subclass which the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> will be used with</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> ; unref with <tt class="xref py py-class docutils literal"><span class="pre">GObject.Object.unref</span></tt> ()</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a>.</p>
+<p>The <a class="reference internal" href="AuthorizationDomain.html#GData.AuthorizationDomain" title="GData.AuthorizationDomain"><tt class="xref py py-class docutils literal"><span class="pre">GData.AuthorizationDomain</span></tt></a> s for the given <cite>service_type</cite> (i.e. as returned by <a class="reference internal" href="Service.html#GData.Service.get_authorization_domains" title="GData.Service.get_authorization_domains"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service.get_authorization_domains</span></tt></a> ()) are the ones the
+user will be requested to authorize access to on the page at the URI returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> ().</p>
+<p>The given <cite>application_name</cite> will set the value of <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> <a class="reference internal" href="../../Mx_1.0/classes/Application.html#application-name"><em>:application-name</em></a> and will be displayed to the user on authentication pages
+returned by Google. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is provided, the value of <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.get_application_name" title="GLib.get_application_name"><tt class="xref py py-class docutils literal"><span class="pre">GLib.get_application_name</span></tt></a> () will be used as a fallback.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GData.OAuth1Authorizer.new_for_authorization_domains">
+<em class="property">static </em><tt class="descname">new_for_authorization_domains</tt><big>(</big><em>application_name</em>, <em>authorization_domains</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.new_for_authorization_domains" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>application_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a human-readable, translated application name to use on authentication pages, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>authorization_domains</strong> ([<a class="reference internal" href="AuthorizationDomain.html#GData.AuthorizationDomain" title="GData.AuthorizationDomain"><tt class="xref py py-class docutils literal"><span class="pre">GData.AuthorizationDomain</span></tt></a>]) &#8211; a non-empty list of <a class="reference internal" href="AuthorizationDomain.html#GData.AuthorizationDomain" title="GData.AuthorizationDomain"><tt class="xref py py-class docutils literal"><span class="pre">GData.AuthorizationDomain</span></tt></a> s to be authorized against by the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> ; unref with <tt class="xref py py-class docutils literal"><span class="pre">GObject.Object.unref</span></tt> ()</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a>. This function is intended to be used only when the default authorization domain list for a single
+<a class="reference internal" href="Service.html#GData.Service" title="GData.Service"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service</span></tt></a>, as used by <a class="reference internal" href="#GData.OAuth1Authorizer.new" title="GData.OAuth1Authorizer.new"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.new</span></tt></a> (), isn&#8217;t suitable. For example, this could be because the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> will be used
+with multiple <a class="reference internal" href="Service.html#GData.Service" title="GData.Service"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service</span></tt></a> subclasses, or because the client requires a specific set of authorization domains.</p>
+<p>The specified <a class="reference internal" href="AuthorizationDomain.html#GData.AuthorizationDomain" title="GData.AuthorizationDomain"><tt class="xref py py-class docutils literal"><span class="pre">GData.AuthorizationDomain</span></tt></a> s are the ones the user will be requested to authorize access to on the page at the URI returned by
+<a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> ().</p>
+<p>The given <cite>application_name</cite> will set the value of <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> <a class="reference internal" href="../../Mx_1.0/classes/Application.html#application-name"><em>:application-name</em></a> and will be displayed to the user on authentication pages
+returned by Google. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is provided, the value of <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.get_application_name" title="GLib.get_application_name"><tt class="xref py py-class docutils literal"><span class="pre">GLib.get_application_name</span></tt></a> () will be used as a fallback.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.get_application_name">
+<tt class="descname">get_application_name</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.get_application_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the application name, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if one isn&#8217;t set</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the application name being used on the authentication page at the URI returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> ();
+i.e. the value of <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> <a class="reference internal" href="../../Mx_1.0/classes/Application.html#application-name"><em>:application-name</em></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.get_locale">
+<tt class="descname">get_locale</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.get_locale" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the current locale</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the locale currently being used for network requests, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the locale is the default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.get_proxy_uri">
+<tt class="descname">get_proxy_uri</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.get_proxy_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the proxy URI, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ; free with <a class="reference internal" href="../../Soup_2.4/structs/URI.html#Soup.URI.free" title="Soup.URI.free"><tt class="xref py py-class docutils literal"><span class="pre">Soup.URI.free</span></tt></a> ()</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Soup_2.4/structs/URI.html#Soup.URI" title="Soup.URI"><tt class="xref py py-class docutils literal"><span class="pre">Soup.URI</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the proxy URI on the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> &#8216;s <a class="reference internal" href="../../Soup_2.4/classes/Session.html#Soup.Session" title="Soup.Session"><tt class="xref py py-class docutils literal"><span class="pre">Soup.Session</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.get_timeout">
+<tt class="descname">get_timeout</tt><big>(</big><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.get_timeout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the timeout, or 0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> <a class="reference internal" href="../../Soup_2.4/classes/Socket.html#timeout"><em>:timeout</em></a> property; the network timeout, in seconds.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.request_authentication_uri">
+<tt class="descname">request_authentication_uri</tt><big>(</big><em>cancellable</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.request_authentication_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; optional <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> object, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the URI of an authentication page for the user to use; free with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ()</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>, token: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>, token_secret: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Requests a fresh unauthenticated token from the Google accounts service and builds and returns the URI of an authentication page for that token.
+This should then be presented to the user (e.g. in an embedded or stand alone web browser). The authentication page will ask the user to log in
+using their Google account, then ask them to grant access to the <a class="reference internal" href="AuthorizationDomain.html#GData.AuthorizationDomain" title="GData.AuthorizationDomain"><tt class="xref py py-class docutils literal"><span class="pre">GData.AuthorizationDomain</span></tt></a> s passed to the constructor of the
+<a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a>. If the user grants access, they will be given a verifier, which can then be passed to
+<a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization" title="GData.OAuth1Authorizer.request_authorization"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authorization</span></tt></a> () (along with the <cite>token</cite> and <cite>token_secret</cite> values returned by this method) to authorize the token.</p>
+<p>This method can fail if the server returns an error, but this is unlikely. If it does happen, a <a class="reference internal" href="../enums.html#GData.ServiceError.PROTOCOL_ERROR" title="GData.ServiceError.PROTOCOL_ERROR"><tt class="xref py py-class docutils literal"><span class="pre">GData.ServiceError.PROTOCOL_ERROR</span></tt></a> will be
+raised, <cite>token</cite> and <cite>token_secret</cite> will be set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> will be returned.</p>
+<p>This method implements Section 2.1 and
+Section 2.2 of the
+OAuth 1.0 protocol.</p>
+<p>When freeing <cite>token_secret</cite>, it&#8217;s advisable to set it to all zeros first, to reduce the chance of the sensitive token being recoverable from the
+free memory pool and (accidentally) leaked by a different part of the process. This can be achieved with the following code:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="n">token_secret</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">memset</span> <span class="p">(</span><span class="n">token_secret</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">strlen</span> <span class="p">(</span><span class="n">token_secret</span><span class="p">));</span>
+        <span class="n">g_free</span> <span class="p">(</span><span class="n">token_secret</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.request_authentication_uri_async">
+<tt class="descname">request_authentication_uri_async</tt><big>(</big><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.request_authentication_uri_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; optional <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> object, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> to call when building the URI is finished</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data to pass to the <cite>callback</cite> function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Requests a fresh unauthenticated token from the Google accounts service and builds and returns the URI of an authentication page for that token.
+<cite>self</cite> is reffed when this method is called, so can safely be unreffed after this method returns.</p>
+<p>For more details, see <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> (), which is the synchronous version of this method.</p>
+<p>When the operation is finished, <cite>callback</cite> will be called. You can then call <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri_finish" title="GData.OAuth1Authorizer.request_authentication_uri_finish"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri_finish</span></tt></a> () to get the
+results of the operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.request_authentication_uri_finish">
+<tt class="descname">request_authentication_uri_finish</tt><big>(</big><em>async_result</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.request_authentication_uri_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>async_result</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the URI of an authentication page for the user to use; free with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ()</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>, token: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>, token_secret: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an asynchronous authentication URI building operation started with <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri_async" title="GData.OAuth1Authorizer.request_authentication_uri_async"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri_async</span></tt></a> ().</p>
+<p>This method can fail if the server has returned an error, but this is unlikely. If it does happen, a <a class="reference internal" href="../enums.html#GData.ServiceError.PROTOCOL_ERROR" title="GData.ServiceError.PROTOCOL_ERROR"><tt class="xref py py-class docutils literal"><span class="pre">GData.ServiceError.PROTOCOL_ERROR</span></tt></a> will be
+raised, <cite>token</cite> and <cite>token_secret</cite> will be set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> will be returned.</p>
+<p>When freeing <cite>token_secret</cite>, it&#8217;s advisable to set it to all zeros first, to reduce the chance of the sensitive token being recoverable from the
+free memory pool and (accidentally) leaked by a different part of the process. This can be achieved with the following code:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="n">token_secret</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">memset</span> <span class="p">(</span><span class="n">token_secret</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">strlen</span> <span class="p">(</span><span class="n">token_secret</span><span class="p">));</span>
+        <span class="n">g_free</span> <span class="p">(</span><span class="n">token_secret</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.request_authorization">
+<tt class="descname">request_authorization</tt><big>(</big><em>token</em>, <em>token_secret</em>, <em>verifier</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.request_authorization" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>token</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the request token returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> ()</li>
+<li><strong>token_secret</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the request token secret returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> ()</li>
+<li><strong>verifier</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the verifier entered by the user from the authentication page</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; optional <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> object, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if authorization was successful, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Requests authorization of the given request <cite>token</cite> from the Google accounts service using the given <cite>verifier</cite> as entered by the user from the
+authentication page at the URI returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> (). <cite>token</cite> and <cite>token_secret</cite> must be the same values
+as were returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> () if it was successful.</p>
+<p>If the verifier is valid (i.e. the user granted access to the application and the Google accounts service has no reason to distrust the client),
+<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> will be returned and any operations performed from that point onwards on <a class="reference internal" href="Service.html#GData.Service" title="GData.Service"><tt class="xref py py-class docutils literal"><span class="pre">GData.Service</span></tt></a> s using this <a class="reference internal" href="../interfaces/Authorizer.html#GData.Authorizer" title="GData.Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.Authorizer</span></tt></a> will be
+authorized.</p>
+<p>If the user denies access to the application or the Google accounts service distrusts it, a bogus verifier could be returned. In this case, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>
+will be returned and a <a class="reference internal" href="../enums.html#GData.ServiceError.FORBIDDEN" title="GData.ServiceError.FORBIDDEN"><tt class="xref py py-class docutils literal"><span class="pre">GData.ServiceError.FORBIDDEN</span></tt></a> error will be raised.</p>
+<p>Note that if the user denies access to the application, it may be the case that they have no verifier to enter. In this case, the client can simply
+not call this method. The <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> stores no state for authentication operations which have succeeded in calling
+<a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> () but not yet successfully called <a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization" title="GData.OAuth1Authorizer.request_authorization"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authorization</span></tt></a> ().</p>
+<p>This method implements Section 2.3 of the
+OAuth 1.0 protocol.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.request_authorization_async">
+<tt class="descname">request_authorization_async</tt><big>(</big><em>token</em>, <em>token_secret</em>, <em>verifier</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.request_authorization_async" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>token</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the request token returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> ()</li>
+<li><strong>token_secret</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the request token secret returned by <a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> ()</li>
+<li><strong>verifier</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the verifier entered by the user from the authentication page</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; an optional <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> to call when authorization is finished</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data to pass to the <cite>callback</cite> function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Requests authorization of the given request <cite>token</cite> from the Google accounts service using the given <cite>verifier</cite> as entered by the user.
+<cite>self</cite>, <cite>token</cite>, <cite>token_secret</cite> and <cite>verifier</cite> are reffed/copied when this method is called, so can safely be freed after this method returns.</p>
+<p>For more details, see <a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization" title="GData.OAuth1Authorizer.request_authorization"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authorization</span></tt></a> (), which is the synchronous version of this method.</p>
+<p>When the operation is finished, <cite>callback</cite> will be called. You can then call <a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization_finish" title="GData.OAuth1Authorizer.request_authorization_finish"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authorization_finish</span></tt></a> () to get the
+results of the operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.request_authorization_finish">
+<tt class="descname">request_authorization_finish</tt><big>(</big><em>async_result</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.request_authorization_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>async_result</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if authorization was successful, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Finishes an asynchronous authorization operation started with <a class="reference internal" href="#GData.OAuth1Authorizer.request_authorization_async" title="GData.OAuth1Authorizer.request_authorization_async"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authorization_async</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.set_locale">
+<tt class="descname">set_locale</tt><big>(</big><em>locale</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.set_locale" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>locale</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the new locale in Unix locale format, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default locale</td>
+</tr>
+</tbody>
+</table>
+<p>Set the locale used for network requests to <cite>locale</cite>, given in standard Unix locale format. See <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> <a class="reference internal" href="../../PackageKitGlib_1.0/classes/Client.html#locale"><em>:locale</em></a> for more details.</p>
+<p>Note that while it&#8217;s possible to change the locale after sending network requests (i.e. calling
+<a class="reference internal" href="#GData.OAuth1Authorizer.request_authentication_uri" title="GData.OAuth1Authorizer.request_authentication_uri"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer.request_authentication_uri</span></tt></a> () for the first time), it is unsupported, as the server-side software may behave unexpectedly.
+The only supported use of this method is after creation of the authorizer, but before any network requests are made.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.set_proxy_uri">
+<tt class="descname">set_proxy_uri</tt><big>(</big><em>proxy_uri</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.set_proxy_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>proxy_uri</strong> (<a class="reference internal" href="../../Soup_2.4/structs/URI.html#Soup.URI" title="Soup.URI"><tt class="xref py py-class docutils literal"><span class="pre">Soup.URI</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the proxy URI, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the proxy URI on the <a class="reference internal" href="../../Soup_2.4/classes/Session.html#Soup.Session" title="Soup.Session"><tt class="xref py py-class docutils literal"><span class="pre">Soup.Session</span></tt></a> used internally by the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a>. This forces all requests through the given proxy.</p>
+<p>If <cite>proxy_uri</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, no proxy will be used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GData.OAuth1Authorizer.set_timeout">
+<tt class="descname">set_timeout</tt><big>(</big><em>timeout</em><big>)</big><a class="headerlink" href="#GData.OAuth1Authorizer.set_timeout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the timeout, or 0</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <a class="reference internal" href="#GData.OAuth1Authorizer" title="GData.OAuth1Authorizer"><tt class="xref py py-class docutils literal"><span class="pre">GData.OAuth1Authorizer</span></tt></a> <a class="reference internal" href="../../Soup_2.4/classes/Socket.html#timeout"><em>:timeout</em></a> property; the network timeout, in seconds.</p>
+<p>If <cite>timeout</cite> is 0, network operations will never time out.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Parsable.html" class="btn btn-neutral float-right" title="GData.Parsable"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="MediaThumbnail.html" class="btn btn-neutral" title="GData.MediaThumbnail"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

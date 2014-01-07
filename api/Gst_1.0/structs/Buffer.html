@@ -1,0 +1,1501 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gst.Buffer -
+    
+      Structures -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="Gst.BufferList" href="BufferList.html"/>
+        <link rel="prev" title="Gst.AtomicQueue" href="AtomicQueue.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gst.Buffer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">Gst.Buffer</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/structs/Buffer" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gst-buffer">
+<h1>Gst.Buffer<a class="headerlink" href="#gst-buffer" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>mini_object</td>
+<td><a class="reference internal" href="MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>pool</td>
+<td><a class="reference internal" href="../classes/BufferPool.html#Gst.BufferPool" title="Gst.BufferPool"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPool</span></tt></a></td>
+<td>r/w</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_max_memory" title="Gst.Buffer.get_max_memory"><tt class="xref py py-obj docutils literal"><span class="pre">get_max_memory</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Buffer.new" title="Gst.Buffer.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Buffer.new_allocate" title="Gst.Buffer.new_allocate"><tt class="xref py py-obj docutils literal"><span class="pre">new_allocate</span></tt></a>(allocator, size, params)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Buffer.new_wrapped" title="Gst.Buffer.new_wrapped"><tt class="xref py py-obj docutils literal"><span class="pre">new_wrapped</span></tt></a>(data)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Buffer.new_wrapped_full" title="Gst.Buffer.new_wrapped_full"><tt class="xref py py-obj docutils literal"><span class="pre">new_wrapped_full</span></tt></a>(flags, data, maxsize, offset, user_data, notify)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.add_meta" title="Gst.Buffer.add_meta"><tt class="xref py py-obj docutils literal"><span class="pre">add_meta</span></tt></a>(info, params)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.append" title="Gst.Buffer.append"><tt class="xref py py-obj docutils literal"><span class="pre">append</span></tt></a>(buf2)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.append_memory" title="Gst.Buffer.append_memory"><tt class="xref py py-obj docutils literal"><span class="pre">append_memory</span></tt></a>(mem)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.append_region" title="Gst.Buffer.append_region"><tt class="xref py py-obj docutils literal"><span class="pre">append_region</span></tt></a>(buf2, offset, size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.copy_into" title="Gst.Buffer.copy_into"><tt class="xref py py-obj docutils literal"><span class="pre">copy_into</span></tt></a>(src, flags, offset, size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.copy_region" title="Gst.Buffer.copy_region"><tt class="xref py py-obj docutils literal"><span class="pre">copy_region</span></tt></a>(flags, offset, size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.extract" title="Gst.Buffer.extract"><tt class="xref py py-obj docutils literal"><span class="pre">extract</span></tt></a>(offset, dest, size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.extract_dup" title="Gst.Buffer.extract_dup"><tt class="xref py py-obj docutils literal"><span class="pre">extract_dup</span></tt></a>(offset, size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.fill" title="Gst.Buffer.fill"><tt class="xref py py-obj docutils literal"><span class="pre">fill</span></tt></a>(offset, src)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.find_memory" title="Gst.Buffer.find_memory"><tt class="xref py py-obj docutils literal"><span class="pre">find_memory</span></tt></a>(offset, size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.foreach_meta" title="Gst.Buffer.foreach_meta"><tt class="xref py py-obj docutils literal"><span class="pre">foreach_meta</span></tt></a>(func, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_all_memory" title="Gst.Buffer.get_all_memory"><tt class="xref py py-obj docutils literal"><span class="pre">get_all_memory</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_memory" title="Gst.Buffer.get_memory"><tt class="xref py py-obj docutils literal"><span class="pre">get_memory</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_memory_range" title="Gst.Buffer.get_memory_range"><tt class="xref py py-obj docutils literal"><span class="pre">get_memory_range</span></tt></a>(idx, length)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_meta" title="Gst.Buffer.get_meta"><tt class="xref py py-obj docutils literal"><span class="pre">get_meta</span></tt></a>(api)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_size" title="Gst.Buffer.get_size"><tt class="xref py py-obj docutils literal"><span class="pre">get_size</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_sizes" title="Gst.Buffer.get_sizes"><tt class="xref py py-obj docutils literal"><span class="pre">get_sizes</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.get_sizes_range" title="Gst.Buffer.get_sizes_range"><tt class="xref py py-obj docutils literal"><span class="pre">get_sizes_range</span></tt></a>(idx, length)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.insert_memory" title="Gst.Buffer.insert_memory"><tt class="xref py py-obj docutils literal"><span class="pre">insert_memory</span></tt></a>(idx, mem)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.iterate_meta" title="Gst.Buffer.iterate_meta"><tt class="xref py py-obj docutils literal"><span class="pre">iterate_meta</span></tt></a>(state)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.map" title="Gst.Buffer.map"><tt class="xref py py-obj docutils literal"><span class="pre">map</span></tt></a>(flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.map_range" title="Gst.Buffer.map_range"><tt class="xref py py-obj docutils literal"><span class="pre">map_range</span></tt></a>(idx, length, flags)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.memcmp" title="Gst.Buffer.memcmp"><tt class="xref py py-obj docutils literal"><span class="pre">memcmp</span></tt></a>(offset, mem)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.memset" title="Gst.Buffer.memset"><tt class="xref py py-obj docutils literal"><span class="pre">memset</span></tt></a>(offset, val, size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.n_memory" title="Gst.Buffer.n_memory"><tt class="xref py py-obj docutils literal"><span class="pre">n_memory</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.peek_memory" title="Gst.Buffer.peek_memory"><tt class="xref py py-obj docutils literal"><span class="pre">peek_memory</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.prepend_memory" title="Gst.Buffer.prepend_memory"><tt class="xref py py-obj docutils literal"><span class="pre">prepend_memory</span></tt></a>(mem)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.remove_all_memory" title="Gst.Buffer.remove_all_memory"><tt class="xref py py-obj docutils literal"><span class="pre">remove_all_memory</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.remove_memory" title="Gst.Buffer.remove_memory"><tt class="xref py py-obj docutils literal"><span class="pre">remove_memory</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.remove_memory_range" title="Gst.Buffer.remove_memory_range"><tt class="xref py py-obj docutils literal"><span class="pre">remove_memory_range</span></tt></a>(idx, length)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.remove_meta" title="Gst.Buffer.remove_meta"><tt class="xref py py-obj docutils literal"><span class="pre">remove_meta</span></tt></a>(meta)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.replace_all_memory" title="Gst.Buffer.replace_all_memory"><tt class="xref py py-obj docutils literal"><span class="pre">replace_all_memory</span></tt></a>(mem)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.replace_memory" title="Gst.Buffer.replace_memory"><tt class="xref py py-obj docutils literal"><span class="pre">replace_memory</span></tt></a>(idx, mem)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.replace_memory_range" title="Gst.Buffer.replace_memory_range"><tt class="xref py py-obj docutils literal"><span class="pre">replace_memory_range</span></tt></a>(idx, length, mem)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.resize" title="Gst.Buffer.resize"><tt class="xref py py-obj docutils literal"><span class="pre">resize</span></tt></a>(offset, size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.resize_range" title="Gst.Buffer.resize_range"><tt class="xref py py-obj docutils literal"><span class="pre">resize_range</span></tt></a>(idx, length, offset, size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.set_size" title="Gst.Buffer.set_size"><tt class="xref py py-obj docutils literal"><span class="pre">set_size</span></tt></a>(size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Buffer.unmap" title="Gst.Buffer.unmap"><tt class="xref py py-obj docutils literal"><span class="pre">unmap</span></tt></a>(info)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gst.Buffer">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">Buffer</tt><a class="headerlink" href="#Gst.Buffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Buffers are the basic unit of data transfer in GStreamer. They contain the
+timing and offset along with other arbitrary metadata that is associated
+with the <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> blocks that the buffer contains.</p>
+<p>Buffers are usually created with <a class="reference internal" href="#Gst.Buffer.new" title="Gst.Buffer.new"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.new</span></tt></a> (). After a buffer has been
+created one will typically allocate memory for it and add it to the buffer.
+The following example creates a buffer that can hold a given video frame
+with a given width, height and bits per plane.</p>
+<p>Creating a buffer for a video frame</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">GstBuffer</span> <span class="o">*</span><span class="n">buffer</span><span class="p">;</span>
+<span class="n">GstMemory</span> <span class="o">*</span><span class="n">memory</span><span class="p">;</span>
+<span class="n">gint</span> <span class="n">size</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">bpp</span><span class="p">;</span>
+<span class="p">...</span>
+<span class="n">size</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span> <span class="o">*</span> <span class="n">bpp</span><span class="p">;</span>
+<span class="n">buffer</span> <span class="o">=</span> <span class="n">gst_buffer_new</span> <span class="p">();</span>
+<span class="n">memory</span> <span class="o">=</span> <span class="n">gst_allocator_alloc</span> <span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="n">gst_buffer_insert_memory</span> <span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">memory</span><span class="p">);</span>
+<span class="p">...</span>
+</pre></div>
+</div>
+<p>Alternatively, use <a class="reference internal" href="#Gst.Buffer.new_allocate" title="Gst.Buffer.new_allocate"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.new_allocate</span></tt></a> ()
+to create a buffer with preallocated data of a given size.</p>
+<p>Buffers can contain a list of <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> objects. You can retrieve how many
+memory objects with <a class="reference internal" href="#Gst.Buffer.n_memory" title="Gst.Buffer.n_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.n_memory</span></tt></a> () and you can get a pointer
+to memory with <a class="reference internal" href="#Gst.Buffer.peek_memory" title="Gst.Buffer.peek_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.peek_memory</span></tt></a> ()</p>
+<p>A buffer will usually have timestamps, and a duration, but neither of these
+are guaranteed (they may be set to <a class="reference internal" href="../constants.html#Gst.CLOCK_TIME_NONE" title="Gst.CLOCK_TIME_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CLOCK_TIME_NONE</span></tt></a> ). Whenever a
+meaningful value can be given for these, they should be set. The timestamps
+and duration are measured in nanoseconds (they are <tt class="xref py py-class docutils literal"><span class="pre">Gst.ClockTime</span></tt> values).</p>
+<p>The buffer DTS refers to the timestamp when the buffer should be decoded and
+is usually monotonically increasing. The buffer PTS refers to the timestamp when
+the buffer content should be presented to the user and is not always
+monotonically increasing.</p>
+<p>A buffer can also have one or both of a start and an end offset. These are
+media-type specific. For video buffers, the start offset will generally be
+the frame number. For audio buffers, it will be the number of samples
+produced so far. For compressed data, it could be the byte offset in a
+source or destination file. Likewise, the end offset will be the offset of
+the end of the buffer. These can only be meaningfully interpreted if you
+know the media type of the buffer (the preceeding CAPS event). Either or both
+can be set to <a class="reference internal" href="../constants.html#Gst.BUFFER_OFFSET_NONE" title="Gst.BUFFER_OFFSET_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BUFFER_OFFSET_NONE</span></tt></a>.</p>
+<p>gst_buffer_ref() is used to increase the refcount of a buffer. This must be
+done when you want to keep a handle to the buffer after pushing it to the
+next element. The buffer refcount determines the writability of the buffer, a
+buffer is only writable when the refcount is exactly 1, i.e. when the caller
+has the only reference to the buffer.</p>
+<p>To efficiently create a smaller buffer out of an existing one, you can
+use <a class="reference internal" href="#Gst.Buffer.copy_region" title="Gst.Buffer.copy_region"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.copy_region</span></tt></a> (). This method tries to share the memory objects
+between the two buffers.</p>
+<p>If a plug-in wants to modify the buffer data or metadata in-place, it should
+first obtain a buffer that is safe to modify by using
+gst_buffer_make_writable().  This function is optimized so that a copy will
+only be made when it is necessary.</p>
+<p>Several flags of the buffer can be set and unset with the
+GST_BUFFER_FLAG_SET() and GST_BUFFER_FLAG_UNSET() macros. Use
+GST_BUFFER_FLAG_IS_SET() to test if a certain <a class="reference internal" href="../flags.html#Gst.BufferFlags" title="Gst.BufferFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferFlag</span></tt></a> is set.</p>
+<p>Buffers can be efficiently merged into a larger buffer with
+<a class="reference internal" href="#Gst.Buffer.append" title="Gst.Buffer.append"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.append</span></tt></a> (). Copying of memory will only be done when absolutely
+needed.</p>
+<p>Arbitrary extra metadata can be set on a buffer with <a class="reference internal" href="#Gst.Buffer.add_meta" title="Gst.Buffer.add_meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.add_meta</span></tt></a> ().
+Metadata can be retrieved with <a class="reference internal" href="#Gst.Buffer.get_meta" title="Gst.Buffer.get_meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.get_meta</span></tt></a> (). See also <a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></p>
+<p>An element should either unref the buffer or push it out on a src pad
+using <a class="reference internal" href="../classes/Pad.html#Gst.Pad.push" title="Gst.Pad.push"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.push</span></tt></a> () (see <a class="reference internal" href="../classes/Pad.html#Gst.Pad" title="Gst.Pad"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad</span></tt></a> ).</p>
+<p>Buffers are usually freed by unreffing them with gst_buffer_unref(). When
+the refcount drops to 0, any memory and metadata pointed to by the buffer is
+unreffed as well. Buffers allocated from a <a class="reference internal" href="../classes/BufferPool.html#Gst.BufferPool" title="Gst.BufferPool"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPool</span></tt></a> will be returned to
+the pool when the refcount drops to 0.</p>
+<p>Last reviewed on 2012-03-28 (0.11.3)</p>
+<dl class="staticmethod">
+<dt id="Gst.Buffer.get_max_memory">
+<em class="property">static </em><tt class="descname">get_max_memory</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Buffer.get_max_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the maximum amount of memory blocks that a buffer can hold.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the maximum amount of memory blocks that a buffer can hold. This is a
+compile time constant that can be queried with the function.</p>
+<p>When more memory blocks are added, existing memory blocks will be merged
+together to make room for the new block.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Buffer.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Buffer.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a newly allocated buffer without any data.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Buffer.new_allocate">
+<em class="property">static </em><tt class="descname">new_allocate</tt><big>(</big><em>allocator</em>, <em>size</em>, <em>params</em><big>)</big><a class="headerlink" href="#Gst.Buffer.new_allocate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>allocator</strong> (<a class="reference internal" href="../classes/Allocator.html#Gst.Allocator" title="Gst.Allocator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the <a class="reference internal" href="../classes/Allocator.html#Gst.Allocator" title="Gst.Allocator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator</span></tt></a> to use, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to use the default allocator</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size in bytes of the new buffer&#8217;s data.</li>
+<li><strong>params</strong> (<a class="reference internal" href="AllocationParams.html#Gst.AllocationParams" title="Gst.AllocationParams"><tt class="xref py py-class docutils literal"><span class="pre">Gst.AllocationParams</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; optional parameters</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the memory couldn&#8217;t be allocated.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Tries to create a newly allocated buffer with data of the given size and
+extra parameters from <cite>allocator</cite>. If the requested amount of memory can&#8217;t be
+allocated, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> will be returned. The allocated buffer memory is not cleared.</p>
+<p>When <cite>allocator</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, the default memory allocator will be used.</p>
+<p>Note that when <cite>size</cite> == 0, the buffer will not have memory associated with it.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Buffer.new_wrapped">
+<em class="property">static </em><tt class="descname">new_wrapped</tt><big>(</big><em>data</em><big>)</big><a class="headerlink" href="#Gst.Buffer.new_wrapped" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; data to wrap</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new buffer that wraps the given <cite>data</cite>. The memory will be freed
+with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> and will be marked writable.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Buffer.new_wrapped_full">
+<em class="property">static </em><tt class="descname">new_wrapped_full</tt><big>(</big><em>flags</em>, <em>data</em>, <em>maxsize</em>, <em>offset</em>, <em>user_data</em>, <em>notify</em><big>)</big><a class="headerlink" href="#Gst.Buffer.new_wrapped_full" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.MemoryFlags" title="Gst.MemoryFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags</span></tt></a>) &#8211; <a class="reference internal" href="../flags.html#Gst.MemoryFlags" title="Gst.MemoryFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags</span></tt></a></li>
+<li><strong>data</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; data to wrap</li>
+<li><strong>maxsize</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; allocated size of <cite>data</cite></li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; offset in <cite>data</cite></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; user_data</li>
+<li><strong>notify</strong> (<a class="reference internal" href="../../GLib_2.0/callbacks.html#GLib.DestroyNotify" title="GLib.DestroyNotify"><tt class="xref py py-class docutils literal"><span class="pre">GLib.DestroyNotify</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; called with <cite>user_data</cite> when the memory is freed</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Allocate a new buffer that wraps the given memory. <cite>data</cite> must point to
+<cite>maxsize</cite> of memory, the wrapped buffer will have the region from <cite>offset</cite> and
+<cite>size</cite> visible.</p>
+<p>When the buffer is destroyed, <cite>notify</cite> will be called with <cite>user_data</cite>.</p>
+<p>The prefix/padding must be filled with 0 if <cite>flags</cite> contains
+<a class="reference internal" href="../flags.html#Gst.MemoryFlags.ZERO_PREFIXED" title="Gst.MemoryFlags.ZERO_PREFIXED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags.ZERO_PREFIXED</span></tt></a> and <a class="reference internal" href="../flags.html#Gst.MemoryFlags.ZERO_PADDED" title="Gst.MemoryFlags.ZERO_PADDED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags.ZERO_PADDED</span></tt></a> respectively.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.add_meta">
+<tt class="descname">add_meta</tt><big>(</big><em>info</em>, <em>params</em><big>)</big><a class="headerlink" href="#Gst.Buffer.add_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>info</strong> (<a class="reference internal" href="MetaInfo.html#Gst.MetaInfo" title="Gst.MetaInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MetaInfo</span></tt></a>) &#8211; a <a class="reference internal" href="MetaInfo.html#Gst.MetaInfo" title="Gst.MetaInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MetaInfo</span></tt></a></li>
+<li><strong>params</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; params for <cite>info</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the metadata for the api in <cite>info</cite> on <cite>buffer</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add metadata for <cite>info</cite> to <cite>buffer</cite> using the parameters in <cite>params</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.append">
+<tt class="descname">append</tt><big>(</big><em>buf2</em><big>)</big><a class="headerlink" href="#Gst.Buffer.append" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>buf2</strong> (<a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; the second source <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> to append.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> that contains the memory of the two source buffers.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Append all the memory from <cite>buf2</cite> to <cite>buf1</cite>. The result buffer will contain a
+concatenation of the memory of <cite>buf1</cite> and <cite>buf2</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.append_memory">
+<tt class="descname">append_memory</tt><big>(</big><em>mem</em><big>)</big><a class="headerlink" href="#Gst.Buffer.append_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mem</strong> (<a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Append the memory block <cite>mem</cite> to <cite>buffer</cite>. This function takes
+ownership of <cite>mem</cite> and thus doesn&#8217;t increase its refcount.</p>
+<p>This function is identical to <a class="reference internal" href="#Gst.Buffer.insert_memory" title="Gst.Buffer.insert_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.insert_memory</span></tt></a> () with an index of -1.
+See <a class="reference internal" href="#Gst.Buffer.insert_memory" title="Gst.Buffer.insert_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.insert_memory</span></tt></a> () for more details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.append_region">
+<tt class="descname">append_region</tt><big>(</big><em>buf2</em>, <em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.append_region" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf2</strong> (<a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; the second source <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> to append.</li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset in <cite>buf2</cite></li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size or -1 of <cite>buf2</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> that contains the memory of the two source buffers.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Append <cite>size</cite> bytes at <cite>offset</cite> from <cite>buf2</cite> to <cite>buf1</cite>. The result buffer will
+contain a concatenation of the memory of <cite>buf1</cite> and the requested region of
+<cite>buf2</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.copy_into">
+<tt class="descname">copy_into</tt><big>(</big><em>src</em>, <em>flags</em>, <em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.copy_into" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>src</strong> (<a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>) &#8211; a source <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.BufferCopyFlags" title="Gst.BufferCopyFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferCopyFlags</span></tt></a>) &#8211; flags indicating what metadata fields should be copied.</li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; offset to copy from</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; total size to copy. If -1, all data is copied.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the copying succeeded, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Copies the information from <cite>src</cite> into <cite>dest</cite>.</p>
+<p>If <cite>dest</cite> already contains memory and <cite>flags</cite> contains <a class="reference internal" href="../flags.html#Gst.BufferCopyFlags.MEMORY" title="Gst.BufferCopyFlags.MEMORY"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferCopyFlags.MEMORY</span></tt></a>,
+the memory from <cite>src</cite> will be appended to <cite>dest</cite>.</p>
+<p><cite>flags</cite> indicate which fields will be copied.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.copy_region">
+<tt class="descname">copy_region</tt><big>(</big><em>flags</em>, <em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.copy_region" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.BufferCopyFlags" title="Gst.BufferCopyFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferCopyFlags</span></tt></a>) &#8211; the <a class="reference internal" href="../flags.html#Gst.BufferCopyFlags" title="Gst.BufferCopyFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferCopyFlags</span></tt></a></li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset into parent <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> at which the new sub-buffer begins.</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size of the new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> sub-buffer, in bytes.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the new <a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the arguments were invalid.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a sub-buffer from <cite>parent</cite> at <cite>offset</cite> and <cite>size</cite>.
+This sub-buffer uses the actual memory space of the parent buffer.
+This function will copy the offset and timestamp fields when the
+offset is 0. If not, they will be set to <a class="reference internal" href="../constants.html#Gst.CLOCK_TIME_NONE" title="Gst.CLOCK_TIME_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CLOCK_TIME_NONE</span></tt></a> and
+<a class="reference internal" href="../constants.html#Gst.BUFFER_OFFSET_NONE" title="Gst.BUFFER_OFFSET_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BUFFER_OFFSET_NONE</span></tt></a>.
+If <cite>offset</cite> equals 0 and <cite>size</cite> equals the total size of <cite>buffer</cite>, the
+duration and offset end fields are also copied. If not they will be set
+to <a class="reference internal" href="../constants.html#Gst.CLOCK_TIME_NONE" title="Gst.CLOCK_TIME_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.CLOCK_TIME_NONE</span></tt></a> and <a class="reference internal" href="../constants.html#Gst.BUFFER_OFFSET_NONE" title="Gst.BUFFER_OFFSET_NONE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BUFFER_OFFSET_NONE</span></tt></a>.</p>
+<p>MT safe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.extract">
+<tt class="descname">extract</tt><big>(</big><em>offset</em>, <em>dest</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.extract" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset to extract</li>
+<li><strong>dest</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the destination address</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size to extract</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The amount of bytes extracted. This value can be lower than <cite>size</cite> when <cite>buffer</cite> did not contain enough data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Copy <cite>size</cite> bytes starting from <cite>offset</cite> in <cite>buffer</cite> to <cite>dest</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.extract_dup">
+<tt class="descname">extract_dup</tt><big>(</big><em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.extract_dup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset to extract</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size to extract</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dest: [<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Extracts a copy of at most <cite>size</cite> bytes the data at <cite>offset</cite> into a <a class="reference internal" href="../../GLib_2.0/structs/Bytes.html#GLib.Bytes" title="GLib.Bytes"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Bytes</span></tt></a>.
+<cite>dest</cite> must be freed using <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () when done.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.fill">
+<tt class="descname">fill</tt><big>(</big><em>offset</em>, <em>src</em><big>)</big><a class="headerlink" href="#Gst.Buffer.fill" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset to fill</li>
+<li><strong>src</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; the source address</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The amount of bytes copied. This value can be lower than <cite>size</cite> when <cite>buffer</cite> did not contain enough data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Copy <cite>size</cite> bytes from <cite>src</cite> to <cite>buffer</cite> at <cite>offset</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.find_memory">
+<tt class="descname">find_memory</tt><big>(</big><em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.find_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an offset</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a size</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> when <cite>size</cite> bytes starting from <cite>offset</cite> could be found in <cite>buffer</cite> and <cite>idx</cite>, <cite>length</cite> and <cite>skip</cite> will be filled.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, idx: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, length: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, skip: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Find the memory blocks that span <cite>size</cite> bytes starting from <cite>offset</cite>
+in <cite>buffer</cite>.</p>
+<p>When this function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, <cite>idx</cite> will contain the index of the first
+memory bock where the byte for <cite>offset</cite> can be found and <cite>length</cite> contains the
+number of memory blocks containing the <cite>size</cite> remaining bytes. <cite>skip</cite> contains
+the number of bytes to skip in the memory bock at <cite>idx</cite> to get to the byte
+for <cite>offset</cite>.</p>
+<p><cite>size</cite> can be -1 to get all the memory blocks after <cite>idx</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.foreach_meta">
+<tt class="descname">foreach_meta</tt><big>(</big><em>func</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Gst.Buffer.foreach_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>func</strong> (<a class="reference internal" href="../callbacks.html#Gst.BufferForeachMetaFunc" title="Gst.BufferForeachMetaFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferForeachMetaFunc</span></tt></a>) &#8211; a <a class="reference internal" href="../callbacks.html#Gst.BufferForeachMetaFunc" title="Gst.BufferForeachMetaFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferForeachMetaFunc</span></tt></a> to call</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to <cite>func</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> when <cite>func</cite> returned <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for one of the metadata.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Call <cite>func</cite> with <cite>user_data</cite> for each meta in <cite>buffer</cite>.</p>
+<p><cite>func</cite> can modify the passed meta pointer or its contents. The return value
+of <cite>func</cite> define if this function returns or if the remaining metadata items
+in the buffer should be skipped.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.get_all_memory">
+<tt class="descname">get_all_memory</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Buffer.get_all_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> that contains the merged memory. Use gst_memory_unref () after usage.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get all the memory block in <cite>buffer</cite>. The memory blocks will be merged
+into one large <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.get_memory">
+<tt class="descname">get_memory</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#Gst.Buffer.get_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> that contains the data of the memory block at <cite>idx</cite>. Use gst_memory_unref () after usage.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the memory block at index <cite>idx</cite> in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.get_memory_range">
+<tt class="descname">get_memory_range</tt><big>(</big><em>idx</em>, <em>length</em><big>)</big><a class="headerlink" href="#Gst.Buffer.get_memory_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a length</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> that contains the merged data of <cite>length</cite> blocks starting at <cite>idx</cite>. Use gst_memory_unref () after usage.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get <cite>length</cite> memory blocks in <cite>buffer</cite> starting at <cite>idx</cite>. The memory blocks will
+be merged into one large <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</p>
+<p>If <cite>length</cite> is -1, all memory starting from <cite>idx</cite> is merged.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.get_meta">
+<tt class="descname">get_meta</tt><big>(</big><em>api</em><big>)</big><a class="headerlink" href="#Gst.Buffer.get_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>api</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; the <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> of an API</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the metadata for <cite>api</cite> on <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the metadata for <cite>api</cite> on buffer. When there is no such
+metadata, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.get_size">
+<tt class="descname">get_size</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Buffer.get_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">total size of the memory blocks in <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the total size of the memory blocks in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.get_sizes">
+<tt class="descname">get_sizes</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Buffer.get_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">total size of the memory blocks in <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, offset: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, maxsize: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the total size of the memory blocks in <cite>b</cite>.</p>
+<p>When not <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, <cite>offset</cite> will contain the offset of the data in the
+first memory block in <cite>buffer</cite> and <cite>maxsize</cite> will contain the sum of
+the size and <cite>offset</cite> and the amount of extra padding on the last
+memory block.  <cite>offset</cite> and <cite>maxsize</cite> can be used to resize the
+buffer memory blocks with <a class="reference internal" href="#Gst.Buffer.resize" title="Gst.Buffer.resize"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.resize</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.get_sizes_range">
+<tt class="descname">get_sizes_range</tt><big>(</big><em>idx</em>, <em>length</em><big>)</big><a class="headerlink" href="#Gst.Buffer.get_sizes_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a length</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">total size of <cite>length</cite> memory blocks starting at <cite>idx</cite> in <cite>buffer</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, offset: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, maxsize: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get the total size of <cite>length</cite> memory blocks stating from <cite>idx</cite> in <cite>buffer</cite>.</p>
+<p>When not <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, <cite>offset</cite> will contain the offset of the data in the
+memory block in <cite>buffer</cite> at <cite>idx</cite> and <cite>maxsize</cite> will contain the sum of the size
+and <cite>offset</cite> and the amount of extra padding on the memory block at <cite>idx</cite> +
+<cite>length</cite> -1.
+<cite>offset</cite> and <cite>maxsize</cite> can be used to resize the buffer memory blocks with
+<a class="reference internal" href="#Gst.Buffer.resize_range" title="Gst.Buffer.resize_range"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.resize_range</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.insert_memory">
+<tt class="descname">insert_memory</tt><big>(</big><em>idx</em>, <em>mem</em><big>)</big><a class="headerlink" href="#Gst.Buffer.insert_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index to add the memory at, or -1 to append it to the end</li>
+<li><strong>mem</strong> (<a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert the memory block <cite>mem</cite> to <cite>buffer</cite> at <cite>idx</cite>. This function takes ownership
+of <cite>mem</cite> and thus doesn&#8217;t increase its refcount.</p>
+<p>Only <a class="reference internal" href="#Gst.Buffer.get_max_memory" title="Gst.Buffer.get_max_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.get_max_memory</span></tt></a> () can be added to a buffer. If more memory is
+added, existing memory blocks will automatically be merged to make room for
+the new memory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.iterate_meta">
+<tt class="descname">iterate_meta</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Gst.Buffer.iterate_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>state</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; an opaque state pointer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The next <a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> when there are no more items.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the next <a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a> after <cite>current</cite>. If <cite>state</cite> points
+to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, the first metadata is returned.</p>
+<p><cite>state</cite> will be updated with an opage state pointer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.map">
+<tt class="descname">map</tt><big>(</big><em>flags</em><big>)</big><a class="headerlink" href="#Gst.Buffer.map" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.MapFlags" title="Gst.MapFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags</span></tt></a>) &#8211; flags for the mapping</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the map succeeded and <cite>info</cite> contains valid data.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, info: <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function fills <cite>info</cite> with the <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a> of all merged memory
+blocks in <cite>buffer</cite>.</p>
+<p><cite>flags</cite> describe the desired access of the memory. When <cite>flags</cite> is
+<a class="reference internal" href="../flags.html#Gst.MapFlags.WRITE" title="Gst.MapFlags.WRITE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags.WRITE</span></tt></a>, <cite>buffer</cite> should be writable (as returned from
+gst_buffer_is_writable()).</p>
+<p>When <cite>buffer</cite> is writable but the memory isn&#8217;t, a writable copy will
+automatically be created and returned. The readonly copy of the
+buffer memory will then also be replaced with this writable copy.</p>
+<p>The memory in <cite>info</cite> should be unmapped with <a class="reference internal" href="#Gst.Buffer.unmap" title="Gst.Buffer.unmap"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.unmap</span></tt></a> () after
+usage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.map_range">
+<tt class="descname">map_range</tt><big>(</big><em>idx</em>, <em>length</em>, <em>flags</em><big>)</big><a class="headerlink" href="#Gst.Buffer.map_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a length</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.MapFlags" title="Gst.MapFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags</span></tt></a>) &#8211; flags for the mapping</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the map succeeded and <cite>info</cite> contains valid data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, info: <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This function fills <cite>info</cite> with the <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a> of <cite>length</cite> merged memory blocks
+starting at <cite>idx</cite> in <cite>buffer</cite>. When <cite>length</cite> is -1, all memory blocks starting
+from <cite>idx</cite> are merged and mapped.</p>
+<p><cite>flags</cite> describe the desired access of the memory. When <cite>flags</cite> is
+<a class="reference internal" href="../flags.html#Gst.MapFlags.WRITE" title="Gst.MapFlags.WRITE"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags.WRITE</span></tt></a>, <cite>buffer</cite> should be writable (as returned from
+gst_buffer_is_writable()).</p>
+<p>When <cite>buffer</cite> is writable but the memory isn&#8217;t, a writable copy will
+automatically be created and returned. The readonly copy of the buffer memory
+will then also be replaced with this writable copy.</p>
+<p>The memory in <cite>info</cite> should be unmapped with <a class="reference internal" href="#Gst.Buffer.unmap" title="Gst.Buffer.unmap"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.unmap</span></tt></a> () after usage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.memcmp">
+<tt class="descname">memcmp</tt><big>(</big><em>offset</em>, <em>mem</em><big>)</big><a class="headerlink" href="#Gst.Buffer.memcmp" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset in <cite>buffer</cite></li>
+<li><strong>mem</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; the memory to compare</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">0 if the memory is equal.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Compare <cite>size</cite> bytes starting from <cite>offset</cite> in <cite>buffer</cite> with the memory in <cite>mem</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.memset">
+<tt class="descname">memset</tt><big>(</big><em>offset</em>, <em>val</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.memset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset in <cite>buffer</cite></li>
+<li><strong>val</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the value to set</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size to set</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The amount of bytes filled. This value can be lower than <cite>size</cite> when <cite>buffer</cite> did not contain enough data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Fill <cite>buf</cite> with <cite>size</cite> bytes with <cite>val</cite> starting from <cite>offset</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.n_memory">
+<tt class="descname">n_memory</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Buffer.n_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the amount of memory block in this buffer.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the amount of memory blocks that this buffer has. This amount is never
+larger than what <a class="reference internal" href="#Gst.Buffer.get_max_memory" title="Gst.Buffer.get_max_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.get_max_memory</span></tt></a> () returns.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.peek_memory">
+<tt class="descname">peek_memory</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#Gst.Buffer.peek_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> at <cite>idx</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the memory block at <cite>idx</cite> in <cite>buffer</cite>. The memory block stays valid until
+the memory block in <cite>buffer</cite> is removed, replaced or merged, typically with
+any call that modifies the memory in <cite>buffer</cite>.</p>
+<p>Since this call does not influence the refcount of the memory,
+gst_memory_is_writable() can be used to check if <cite>buffer</cite> is the sole owner
+of the returned memory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.prepend_memory">
+<tt class="descname">prepend_memory</tt><big>(</big><em>mem</em><big>)</big><a class="headerlink" href="#Gst.Buffer.prepend_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mem</strong> (<a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Prepend the memory block <cite>mem</cite> to <cite>buffer</cite>. This function takes
+ownership of <cite>mem</cite> and thus doesn&#8217;t increase its refcount.</p>
+<p>This function is identical to <a class="reference internal" href="#Gst.Buffer.insert_memory" title="Gst.Buffer.insert_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.insert_memory</span></tt></a> () with an index of 0.
+See <a class="reference internal" href="#Gst.Buffer.insert_memory" title="Gst.Buffer.insert_memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.insert_memory</span></tt></a> () for more details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.remove_all_memory">
+<tt class="descname">remove_all_memory</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Buffer.remove_all_memory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all the memory blocks in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.remove_memory">
+<tt class="descname">remove_memory</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#Gst.Buffer.remove_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the memory block in <cite>b</cite> at index <cite>i</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.remove_memory_range">
+<tt class="descname">remove_memory_range</tt><big>(</big><em>idx</em>, <em>length</em><big>)</big><a class="headerlink" href="#Gst.Buffer.remove_memory_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a length</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Remove <cite>length</cite> memory blocks in <cite>buffer</cite> starting from <cite>idx</cite>.</p>
+<p><cite>length</cite> can be -1, in which case all memory starting from <cite>idx</cite> is removed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.remove_meta">
+<tt class="descname">remove_meta</tt><big>(</big><em>meta</em><big>)</big><a class="headerlink" href="#Gst.Buffer.remove_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>meta</strong> (<a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a>) &#8211; a <a class="reference internal" href="Meta.html#Gst.Meta" title="Gst.Meta"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Meta</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the metadata existed and was removed, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if no such metadata was on <cite>buffer</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Remove the metadata for <cite>meta</cite> on <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.replace_all_memory">
+<tt class="descname">replace_all_memory</tt><big>(</big><em>mem</em><big>)</big><a class="headerlink" href="#Gst.Buffer.replace_all_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mem</strong> (<a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Replaces all memory in <cite>buffer</cite> with <cite>mem</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.replace_memory">
+<tt class="descname">replace_memory</tt><big>(</big><em>idx</em>, <em>mem</em><big>)</big><a class="headerlink" href="#Gst.Buffer.replace_memory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>mem</strong> (<a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replaces the memory block at index <cite>idx</cite> in <cite>buffer</cite> with <cite>mem</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.replace_memory_range">
+<tt class="descname">replace_memory_range</tt><big>(</big><em>idx</em>, <em>length</em>, <em>mem</em><big>)</big><a class="headerlink" href="#Gst.Buffer.replace_memory_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a length should not be 0</li>
+<li><strong>mem</strong> (<a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="Memory.html#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replaces <cite>length</cite> memory blocks in <cite>buffer</cite> starting at <cite>idx</cite> with <cite>mem</cite>.</p>
+<p>If <cite>length</cite> is -1, all memory starting from <cite>idx</cite> will be removed and
+replaced with <cite>mem</cite>.</p>
+<p><cite>buffer</cite> should be writable.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.resize">
+<tt class="descname">resize</tt><big>(</big><em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.resize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset adjustement</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new size or -1 to just adjust the offset</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the offset and total size of the memory blocks in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.resize_range">
+<tt class="descname">resize_range</tt><big>(</big><em>idx</em>, <em>length</em>, <em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.resize_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a length</li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the offset adjustement</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new size or -1 to just adjust the offset</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if resizing succeeded, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the total size of the <cite>length</cite> memory blocks starting at <cite>idx</cite> in
+<cite>buffer</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.set_size">
+<tt class="descname">set_size</tt><big>(</big><em>size</em><big>)</big><a class="headerlink" href="#Gst.Buffer.set_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the new size</td>
+</tr>
+</tbody>
+</table>
+<p>Set the total size of the memory blocks in <cite>buffer</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Buffer.unmap">
+<tt class="descname">unmap</tt><big>(</big><em>info</em><big>)</big><a class="headerlink" href="#Gst.Buffer.unmap" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>info</strong> (<a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a>) &#8211; a <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Release the memory previously mapped with <a class="reference internal" href="#Gst.Buffer.map" title="Gst.Buffer.map"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer.map</span></tt></a> ().</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="BufferList.html" class="btn btn-neutral float-right" title="Gst.BufferList"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="AtomicQueue.html" class="btn btn-neutral" title="Gst.AtomicQueue"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

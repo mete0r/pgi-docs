@@ -1,0 +1,2141 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Colord.Device -
+    
+      Classes -
+    
+      Colord 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Colord.Dom" href="Dom.html"/>
+        <link rel="prev" title="Colord.Client" href="Client.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Colord 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Colord.Device</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Colord 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Colord.Device</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Colord_1.0/classes/Device" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="colord-device">
+<h1>Colord.Device<a class="headerlink" href="#colord-device" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-51c7c1f2b8195b15506f67afc329144341528053.png" alt="Inheritance diagram of Colord.Device" usemap="#inheritancebb8dbfc9d8" class="inheritance"/>
+<map id="inheritancebb8dbfc9d8" name="inheritancebb8dbfc9d8">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="5,5,101,29"/>
+<area shape="rect" id="node2" href="#Colord.Device" title="Colord.Device" alt="" coords="8,77,99,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.error_from_string" title="Colord.Device.error_from_string"><tt class="xref py py-obj docutils literal"><span class="pre">error_from_string</span></tt></a>(error_desc)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.error_quark" title="Colord.Device.error_quark"><tt class="xref py py-obj docutils literal"><span class="pre">error_quark</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.error_to_string" title="Colord.Device.error_to_string"><tt class="xref py py-obj docutils literal"><span class="pre">error_to_string</span></tt></a>(error_enum)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.kind_from_string" title="Colord.Device.kind_from_string"><tt class="xref py py-obj docutils literal"><span class="pre">kind_from_string</span></tt></a>(kind)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.kind_to_profile_kind" title="Colord.Device.kind_to_profile_kind"><tt class="xref py py-obj docutils literal"><span class="pre">kind_to_profile_kind</span></tt></a>(device_kind)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.kind_to_string" title="Colord.Device.kind_to_string"><tt class="xref py py-obj docutils literal"><span class="pre">kind_to_string</span></tt></a>(kind_enum)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.mode_from_string" title="Colord.Device.mode_from_string"><tt class="xref py py-obj docutils literal"><span class="pre">mode_from_string</span></tt></a>(device_mode)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.mode_to_string" title="Colord.Device.mode_to_string"><tt class="xref py py-obj docutils literal"><span class="pre">mode_to_string</span></tt></a>(device_mode)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.new" title="Colord.Device.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.new_with_object_path" title="Colord.Device.new_with_object_path"><tt class="xref py py-obj docutils literal"><span class="pre">new_with_object_path</span></tt></a>(object_path)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.relation_from_string" title="Colord.Device.relation_from_string"><tt class="xref py py-obj docutils literal"><span class="pre">relation_from_string</span></tt></a>(device_relation)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Colord.Device.relation_to_string" title="Colord.Device.relation_to_string"><tt class="xref py py-obj docutils literal"><span class="pre">relation_to_string</span></tt></a>(device_relation)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.add_profile" title="Colord.Device.add_profile"><tt class="xref py py-obj docutils literal"><span class="pre">add_profile</span></tt></a>(relation, profile, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.add_profile_finish" title="Colord.Device.add_profile_finish"><tt class="xref py py-obj docutils literal"><span class="pre">add_profile_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.add_profile_sync" title="Colord.Device.add_profile_sync"><tt class="xref py py-obj docutils literal"><span class="pre">add_profile_sync</span></tt></a>(relation, profile, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.connect" title="Colord.Device.connect"><tt class="xref py py-obj docutils literal"><span class="pre">connect</span></tt></a>(cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.connect_finish" title="Colord.Device.connect_finish"><tt class="xref py py-obj docutils literal"><span class="pre">connect_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.connect_sync" title="Colord.Device.connect_sync"><tt class="xref py py-obj docutils literal"><span class="pre">connect_sync</span></tt></a>(cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.equal" title="Colord.Device.equal"><tt class="xref py py-obj docutils literal"><span class="pre">equal</span></tt></a>(device2)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_colorspace" title="Colord.Device.get_colorspace"><tt class="xref py py-obj docutils literal"><span class="pre">get_colorspace</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_connected" title="Colord.Device.get_connected"><tt class="xref py py-obj docutils literal"><span class="pre">get_connected</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_created" title="Colord.Device.get_created"><tt class="xref py py-obj docutils literal"><span class="pre">get_created</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_default_profile" title="Colord.Device.get_default_profile"><tt class="xref py py-obj docutils literal"><span class="pre">get_default_profile</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_embedded" title="Colord.Device.get_embedded"><tt class="xref py py-obj docutils literal"><span class="pre">get_embedded</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_enabled" title="Colord.Device.get_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">get_enabled</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_format" title="Colord.Device.get_format"><tt class="xref py py-obj docutils literal"><span class="pre">get_format</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_id" title="Colord.Device.get_id"><tt class="xref py py-obj docutils literal"><span class="pre">get_id</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_kind" title="Colord.Device.get_kind"><tt class="xref py py-obj docutils literal"><span class="pre">get_kind</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_metadata_item" title="Colord.Device.get_metadata_item"><tt class="xref py py-obj docutils literal"><span class="pre">get_metadata_item</span></tt></a>(key)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_mode" title="Colord.Device.get_mode"><tt class="xref py py-obj docutils literal"><span class="pre">get_mode</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_model" title="Colord.Device.get_model"><tt class="xref py py-obj docutils literal"><span class="pre">get_model</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_modified" title="Colord.Device.get_modified"><tt class="xref py py-obj docutils literal"><span class="pre">get_modified</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_object_path" title="Colord.Device.get_object_path"><tt class="xref py py-obj docutils literal"><span class="pre">get_object_path</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_owner" title="Colord.Device.get_owner"><tt class="xref py py-obj docutils literal"><span class="pre">get_owner</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_profile_for_qualifiers" title="Colord.Device.get_profile_for_qualifiers"><tt class="xref py py-obj docutils literal"><span class="pre">get_profile_for_qualifiers</span></tt></a>(qualifiers, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_profile_for_qualifiers_finish" title="Colord.Device.get_profile_for_qualifiers_finish"><tt class="xref py py-obj docutils literal"><span class="pre">get_profile_for_qualifiers_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_profile_for_qualifiers_sync" title="Colord.Device.get_profile_for_qualifiers_sync"><tt class="xref py py-obj docutils literal"><span class="pre">get_profile_for_qualifiers_sync</span></tt></a>(qualifiers, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_profile_relation" title="Colord.Device.get_profile_relation"><tt class="xref py py-obj docutils literal"><span class="pre">get_profile_relation</span></tt></a>(profile, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_profile_relation_finish" title="Colord.Device.get_profile_relation_finish"><tt class="xref py py-obj docutils literal"><span class="pre">get_profile_relation_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_profile_relation_sync" title="Colord.Device.get_profile_relation_sync"><tt class="xref py py-obj docutils literal"><span class="pre">get_profile_relation_sync</span></tt></a>(profile, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_profiling_inhibitors" title="Colord.Device.get_profiling_inhibitors"><tt class="xref py py-obj docutils literal"><span class="pre">get_profiling_inhibitors</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_scope" title="Colord.Device.get_scope"><tt class="xref py py-obj docutils literal"><span class="pre">get_scope</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_seat" title="Colord.Device.get_seat"><tt class="xref py py-obj docutils literal"><span class="pre">get_seat</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_serial" title="Colord.Device.get_serial"><tt class="xref py py-obj docutils literal"><span class="pre">get_serial</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.get_vendor" title="Colord.Device.get_vendor"><tt class="xref py py-obj docutils literal"><span class="pre">get_vendor</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.make_profile_default" title="Colord.Device.make_profile_default"><tt class="xref py py-obj docutils literal"><span class="pre">make_profile_default</span></tt></a>(profile, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.make_profile_default_finish" title="Colord.Device.make_profile_default_finish"><tt class="xref py py-obj docutils literal"><span class="pre">make_profile_default_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.make_profile_default_sync" title="Colord.Device.make_profile_default_sync"><tt class="xref py py-obj docutils literal"><span class="pre">make_profile_default_sync</span></tt></a>(profile, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.profiling_inhibit" title="Colord.Device.profiling_inhibit"><tt class="xref py py-obj docutils literal"><span class="pre">profiling_inhibit</span></tt></a>(cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.profiling_inhibit_finish" title="Colord.Device.profiling_inhibit_finish"><tt class="xref py py-obj docutils literal"><span class="pre">profiling_inhibit_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.profiling_inhibit_sync" title="Colord.Device.profiling_inhibit_sync"><tt class="xref py py-obj docutils literal"><span class="pre">profiling_inhibit_sync</span></tt></a>(cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.profiling_uninhibit" title="Colord.Device.profiling_uninhibit"><tt class="xref py py-obj docutils literal"><span class="pre">profiling_uninhibit</span></tt></a>(cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.profiling_uninhibit_finish" title="Colord.Device.profiling_uninhibit_finish"><tt class="xref py py-obj docutils literal"><span class="pre">profiling_uninhibit_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.profiling_uninhibit_sync" title="Colord.Device.profiling_uninhibit_sync"><tt class="xref py py-obj docutils literal"><span class="pre">profiling_uninhibit_sync</span></tt></a>(cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.remove_profile" title="Colord.Device.remove_profile"><tt class="xref py py-obj docutils literal"><span class="pre">remove_profile</span></tt></a>(profile, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.remove_profile_finish" title="Colord.Device.remove_profile_finish"><tt class="xref py py-obj docutils literal"><span class="pre">remove_profile_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.remove_profile_sync" title="Colord.Device.remove_profile_sync"><tt class="xref py py-obj docutils literal"><span class="pre">remove_profile_sync</span></tt></a>(profile, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_colorspace_sync" title="Colord.Device.set_colorspace_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_colorspace_sync</span></tt></a>(colorspace, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_enabled" title="Colord.Device.set_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">set_enabled</span></tt></a>(enabled, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_enabled_finish" title="Colord.Device.set_enabled_finish"><tt class="xref py py-obj docutils literal"><span class="pre">set_enabled_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_enabled_sync" title="Colord.Device.set_enabled_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_enabled_sync</span></tt></a>(enabled, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_kind_sync" title="Colord.Device.set_kind_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_kind_sync</span></tt></a>(kind, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_mode_sync" title="Colord.Device.set_mode_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_mode_sync</span></tt></a>(mode, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_model_sync" title="Colord.Device.set_model_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_model_sync</span></tt></a>(value, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_object_path" title="Colord.Device.set_object_path"><tt class="xref py py-obj docutils literal"><span class="pre">set_object_path</span></tt></a>(object_path)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_property" title="Colord.Device.set_property"><tt class="xref py py-obj docutils literal"><span class="pre">set_property</span></tt></a>(key, value, cancellable, callback, *user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_property_finish" title="Colord.Device.set_property_finish"><tt class="xref py py-obj docutils literal"><span class="pre">set_property_finish</span></tt></a>(res)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_property_sync" title="Colord.Device.set_property_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_property_sync</span></tt></a>(key, value, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_serial_sync" title="Colord.Device.set_serial_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_serial_sync</span></tt></a>(value, cancellable)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Colord.Device.set_vendor_sync" title="Colord.Device.set_vendor_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_vendor_sync</span></tt></a>(value, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Colord.Device.to_string" title="Colord.Device.to_string"><tt class="xref py py-obj docutils literal"><span class="pre">to_string</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="colord-device-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="colorspace">colorspace</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="connected">connected</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="created">created</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="embedded">embedded</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="enabled">enabled</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="format">format</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="id">id</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="kind">kind</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="mode">mode</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="model">model</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="modified">modified</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="object-path">object-path</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="owner">owner</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="profiling-inhibitors">profiling-inhibitors</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">list</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="scope">scope</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="seat">seat</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="serial">serial</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="vendor">vendor</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="colord-device-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="changed">changed</span></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="../../WebKit2_3.0/classes/CookieManager.html#changed"><em>::changed</em></a> signal is emitted when the device data has changed.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>priv</td>
+<td><a class="reference internal" href="../structs/DevicePrivate.html#Colord.DevicePrivate" title="Colord.DevicePrivate"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DevicePrivate</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Colord.Device">
+<em class="property">class </em><tt class="descclassname">Colord.</tt><tt class="descname">Device</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Colord.Device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<dl class="staticmethod">
+<dt id="Colord.Device.error_from_string">
+<em class="property">static </em><tt class="descname">error_from_string</tt><big>(</big><em>error_desc</em><big>)</big><a class="headerlink" href="#Colord.Device.error_from_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>error_desc</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">enumerated value</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.DeviceError" title="Colord.DeviceError"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceError</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a string to a <a class="reference internal" href="../enums.html#Colord.DeviceError" title="Colord.DeviceError"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceError</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.error_quark">
+<em class="property">static </em><tt class="descname">error_quark</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.error_quark" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">An error quark.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.error_to_string">
+<em class="property">static </em><tt class="descname">error_to_string</tt><big>(</big><em>error_enum</em><big>)</big><a class="headerlink" href="#Colord.Device.error_to_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>error_enum</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceError" title="Colord.DeviceError"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceError</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">identifier string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a <a class="reference internal" href="../enums.html#Colord.DeviceError" title="Colord.DeviceError"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceError</span></tt></a> to a string.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.kind_from_string">
+<em class="property">static </em><tt class="descname">kind_from_string</tt><big>(</big><em>kind</em><big>)</big><a class="headerlink" href="#Colord.Device.kind_from_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kind</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">enumerated value</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a string to a <a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.kind_to_profile_kind">
+<em class="property">static </em><tt class="descname">kind_to_profile_kind</tt><big>(</big><em>device_kind</em><big>)</big><a class="headerlink" href="#Colord.Device.kind_to_profile_kind" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>device_kind</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a>) &#8211; A <a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#Colord.ProfileKind" title="Colord.ProfileKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.ProfileKind</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.ProfileKind" title="Colord.ProfileKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.ProfileKind</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the most suitable profile kind for a device kind.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.kind_to_string">
+<em class="property">static </em><tt class="descname">kind_to_string</tt><big>(</big><em>kind_enum</em><big>)</big><a class="headerlink" href="#Colord.Device.kind_to_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kind_enum</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">identifier string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts a <a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a> to a string.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.mode_from_string">
+<em class="property">static </em><tt class="descname">mode_from_string</tt><big>(</big><em>device_mode</em><big>)</big><a class="headerlink" href="#Colord.Device.mode_from_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>device_mode</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.DeviceMode" title="Colord.DeviceMode"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceMode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.mode_to_string">
+<em class="property">static </em><tt class="descname">mode_to_string</tt><big>(</big><em>device_mode</em><big>)</big><a class="headerlink" href="#Colord.Device.mode_to_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>device_mode</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceMode" title="Colord.DeviceMode"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceMode</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a> object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a> object.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.new_with_object_path">
+<em class="property">static </em><tt class="descname">new_with_object_path</tt><big>(</big><em>object_path</em><big>)</big><a class="headerlink" href="#Colord.Device.new_with_object_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The colord object path.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new device object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a> object with a known object path.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.relation_from_string">
+<em class="property">static </em><tt class="descname">relation_from_string</tt><big>(</big><em>device_relation</em><big>)</big><a class="headerlink" href="#Colord.Device.relation_from_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>device_relation</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Colord.Device.relation_to_string">
+<em class="property">static </em><tt class="descname">relation_to_string</tt><big>(</big><em>device_relation</em><big>)</big><a class="headerlink" href="#Colord.Device.relation_to_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>device_relation</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.add_profile">
+<tt class="descname">add_profile</tt><big>(</big><em>relation</em>, <em>profile</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.add_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>relation</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a>) &#8211; a <a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a>, e.g. <a class="reference internal" href="../enums.html#Colord.DeviceRelation.HARD" title="Colord.DeviceRelation.HARD"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation.HARD</span></tt></a></li>
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a profile to a device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.add_profile_finish">
+<tt class="descname">add_profile_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.add_profile_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.add_profile_sync">
+<tt class="descname">add_profile_sync</tt><big>(</big><em>relation</em>, <em>profile</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.add_profile_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>relation</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a>) &#8211; a <a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a>, e.g. <a class="reference internal" href="../enums.html#Colord.DeviceRelation.HARD" title="Colord.DeviceRelation.HARD"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation.HARD</span></tt></a></li>
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds a profile to a device.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.connect">
+<tt class="descname">connect</tt><big>(</big><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.connect" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Connects to the object and fills up initial properties.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.connect_finish">
+<tt class="descname">connect_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.connect_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.connect_sync">
+<tt class="descname">connect_sync</tt><big>(</big><em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.connect_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Connects to the object and fills up initial properties.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.equal">
+<tt class="descname">equal</tt><big>(</big><em>device2</em><big>)</big><a class="headerlink" href="#Colord.Device.equal" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>device2</strong> (<a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a>) &#8211; another <a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a> instance.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the devices are the same device</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Tests two devices for equality.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_colorspace">
+<tt class="descname">get_colorspace</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_colorspace" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A colorspace, e.g. <a class="reference internal" href="../enums.html#Colord.Colorspace.RGB" title="Colord.Colorspace.RGB"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Colorspace.RGB</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.Colorspace" title="Colord.Colorspace"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Colorspace</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device colorspace.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_connected">
+<tt class="descname">get_connected</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_connected" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if properties are valid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets if the device has been connected.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_created">
+<tt class="descname">get_created</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_created" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A value in microseconds, or 0 for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device creation date.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_default_profile">
+<tt class="descname">get_default_profile</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_default_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> &#8216;s or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the default device profile. A profile will not be returned
+if the device is being profiled or is disabled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_embedded">
+<tt class="descname">get_embedded</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_embedded" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if embedded.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns if the device is embedded in the computer and cannot be
+removed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_enabled">
+<tt class="descname">get_enabled</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device is enabled</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device enabled state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_format">
+<tt class="descname">get_format</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device format.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_id">
+<tt class="descname">get_id</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device ID.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_kind">
+<tt class="descname">get_kind</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_kind" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A device kind, e.g. <a class="reference internal" href="../enums.html#Colord.DeviceKind.DISPLAY" title="Colord.DeviceKind.DISPLAY"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind.DISPLAY</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device kind.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_metadata_item">
+<tt class="descname">get_metadata_item</tt><big>(</big><em>key</em><big>)</big><a class="headerlink" href="#Colord.Device.get_metadata_item" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a key for the metadata dictionary</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the metadata value, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if not set.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the device metadata for a specific key.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_mode">
+<tt class="descname">get_mode</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A colorspace, e.g. <a class="reference internal" href="../enums.html#Colord.DeviceMode.VIRTUAL" title="Colord.DeviceMode.VIRTUAL"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceMode.VIRTUAL</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.DeviceMode" title="Colord.DeviceMode"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceMode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device mode.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_model">
+<tt class="descname">get_model</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_modified">
+<tt class="descname">get_modified</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_modified" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A value in microseconds, or 0 for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device modified date.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_object_path">
+<tt class="descname">get_object_path</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_object_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the object path, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the object path for the device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_owner">
+<tt class="descname">get_owner</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_owner" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The UID of the user that created the device</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device owner.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_profile_for_qualifiers">
+<tt class="descname">get_profile_for_qualifiers</tt><big>(</big><em>qualifiers</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.get_profile_for_qualifiers" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>qualifiers</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a set of qualifiers that can included wildcards</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the prefered profile for some qualifiers.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_profile_for_qualifiers_finish">
+<tt class="descname">get_profile_for_qualifiers_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.get_profile_for_qualifiers_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_profile_for_qualifiers_sync">
+<tt class="descname">get_profile_for_qualifiers_sync</tt><big>(</big><em>qualifiers</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.get_profile_for_qualifiers_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>qualifiers</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a set of qualifiers that can included wildcards</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the prefered profile for some qualifiers.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_profile_relation">
+<tt class="descname">get_profile_relation</tt><big>(</big><em>profile</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.get_profile_relation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the property relationship to the device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_profile_relation_finish">
+<tt class="descname">get_profile_relation_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.get_profile_relation_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_profile_relation_sync">
+<tt class="descname">get_profile_relation_sync</tt><big>(</big><em>profile</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.get_profile_relation_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance.</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#Colord.DeviceRelation" title="Colord.DeviceRelation"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceRelation</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Gets the property relationship to the device.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_profiling_inhibitors">
+<tt class="descname">get_profiling_inhibitors</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_profiling_inhibitors" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A strv, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Gets any profiling inhibitors for the device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_scope">
+<tt class="descname">get_scope</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_scope" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">An object scope, e.g. <a class="reference internal" href="../enums.html#Colord.ObjectScope.TEMP" title="Colord.ObjectScope.TEMP"><tt class="xref py py-class docutils literal"><span class="pre">Colord.ObjectScope.TEMP</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Colord.ObjectScope" title="Colord.ObjectScope"><tt class="xref py py-class docutils literal"><span class="pre">Colord.ObjectScope</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device scope.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_seat">
+<tt class="descname">get_seat</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_seat" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device seat identifier.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_serial">
+<tt class="descname">get_serial</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_serial" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device serial number.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.get_vendor">
+<tt class="descname">get_vendor</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.get_vendor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for invalid</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the device vendor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.make_profile_default">
+<tt class="descname">make_profile_default</tt><big>(</big><em>profile</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.make_profile_default" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Makes an already added profile default for a device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.make_profile_default_finish">
+<tt class="descname">make_profile_default_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.make_profile_default_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.make_profile_default_sync">
+<tt class="descname">make_profile_default_sync</tt><big>(</big><em>profile</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.make_profile_default_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Makes an already added profile default for a device.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.profiling_inhibit">
+<tt class="descname">profiling_inhibit</tt><big>(</big><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.profiling_inhibit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets up the device for profiling and causes no profiles to be
+returned if <a class="reference internal" href="#Colord.Device.get_profile_for_qualifiers_sync" title="Colord.Device.get_profile_for_qualifiers_sync"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device.get_profile_for_qualifiers_sync</span></tt></a> () is used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.profiling_inhibit_finish">
+<tt class="descname">profiling_inhibit_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.profiling_inhibit_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.profiling_inhibit_sync">
+<tt class="descname">profiling_inhibit_sync</tt><big>(</big><em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.profiling_inhibit_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets up the device for profiling and causes no profiles to be
+returned if <a class="reference internal" href="#Colord.Device.get_profile_for_qualifiers_sync" title="Colord.Device.get_profile_for_qualifiers_sync"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device.get_profile_for_qualifiers_sync</span></tt></a> () is used.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.profiling_uninhibit">
+<tt class="descname">profiling_uninhibit</tt><big>(</big><em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.profiling_uninhibit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Restores the device after profiling and causes normal profiles to be
+returned if <a class="reference internal" href="#Colord.Device.get_profile_for_qualifiers_sync" title="Colord.Device.get_profile_for_qualifiers_sync"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device.get_profile_for_qualifiers_sync</span></tt></a> () is used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.profiling_uninhibit_finish">
+<tt class="descname">profiling_uninhibit_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.profiling_uninhibit_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.profiling_uninhibit_sync">
+<tt class="descname">profiling_uninhibit_sync</tt><big>(</big><em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.profiling_uninhibit_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets up the device for profiling and causes no profiles to be
+returned if <a class="reference internal" href="#Colord.Device.get_profile_for_qualifiers_sync" title="Colord.Device.get_profile_for_qualifiers_sync"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device.get_profile_for_qualifiers_sync</span></tt></a> () is used.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.remove_profile">
+<tt class="descname">remove_profile</tt><big>(</big><em>profile</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.remove_profile" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Removes a profile from a device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.remove_profile_finish">
+<tt class="descname">remove_profile_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.remove_profile_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.remove_profile_sync">
+<tt class="descname">remove_profile_sync</tt><big>(</big><em>profile</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.remove_profile_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>profile</strong> (<a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a>) &#8211; a <a class="reference internal" href="Profile.html#Colord.Profile" title="Colord.Profile"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Profile</span></tt></a> instance</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Removes a profile from a device.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_colorspace_sync">
+<tt class="descname">set_colorspace_sync</tt><big>(</big><em>colorspace</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_colorspace_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>colorspace</strong> (<a class="reference internal" href="../enums.html#Colord.Colorspace" title="Colord.Colorspace"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Colorspace</span></tt></a>) &#8211; The device colorspace, e.g. <a class="reference internal" href="../enums.html#Colord.Colorspace.RGB" title="Colord.Colorspace.RGB"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Colorspace.RGB</span></tt></a></li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> and <cite>error</cite> is used</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the device kind.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_enabled">
+<tt class="descname">set_enabled</tt><big>(</big><em>enabled</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.set_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the enabled state</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enables or disables a device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_enabled_finish">
+<tt class="descname">set_enabled_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.set_enabled_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_enabled_sync">
+<tt class="descname">set_enabled_sync</tt><big>(</big><em>enabled</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_enabled_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the enabled state</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Enables or disables a device.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_kind_sync">
+<tt class="descname">set_kind_sync</tt><big>(</big><em>kind</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_kind_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>kind</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceKind" title="Colord.DeviceKind"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind</span></tt></a>) &#8211; The device kind, e.g. <a class="reference internal" href="../enums.html#Colord.DeviceKind.DISPLAY" title="Colord.DeviceKind.DISPLAY"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceKind.DISPLAY</span></tt></a></li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> and <cite>error</cite> is used</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the device kind.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_mode_sync">
+<tt class="descname">set_mode_sync</tt><big>(</big><em>mode</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_mode_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mode</strong> (<a class="reference internal" href="../enums.html#Colord.DeviceMode" title="Colord.DeviceMode"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceMode</span></tt></a>) &#8211; The device kind, e.g. <a class="reference internal" href="../enums.html#Colord.DeviceMode.VIRTUAL" title="Colord.DeviceMode.VIRTUAL"><tt class="xref py py-class docutils literal"><span class="pre">Colord.DeviceMode.VIRTUAL</span></tt></a></li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> and <cite>error</cite> is used</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the device mode.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_model_sync">
+<tt class="descname">set_model_sync</tt><big>(</big><em>value</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_model_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The model.</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> and <cite>error</cite> is used</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the device model.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_object_path">
+<tt class="descname">set_object_path</tt><big>(</big><em>object_path</em><big>)</big><a class="headerlink" href="#Colord.Device.set_object_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The colord object path.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the object path of the device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_property">
+<tt class="descname">set_property</tt><big>(</big><em>key</em>, <em>value</em>, <em>cancellable</em>, <em>callback</em>, <em>*user_data</em><big>)</big><a class="headerlink" href="#Colord.Device.set_property" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a property key</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a property key</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>callback</strong> (<a class="reference internal" href="../../Gio_2.0/callbacks.html#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncReadyCallback</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the function to run on completion</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to <cite>callback</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets a property on the device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_property_finish">
+<tt class="descname">set_property_finish</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#Colord.Device.set_property_finish" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; the <a class="reference internal" href="../../Gio_2.0/interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">success</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the result from the asynchronous function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_property_sync">
+<tt class="descname">set_property_sync</tt><big>(</big><em>key</em>, <em>value</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_property_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The property key</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The property value</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets an object property.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_serial_sync">
+<tt class="descname">set_serial_sync</tt><big>(</big><em>value</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_serial_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The string value.</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> and <cite>error</cite> is used</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the device serial number.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.set_vendor_sync">
+<tt class="descname">set_vendor_sync</tt><big>(</big><em>value</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Colord.Device.set_vendor_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The string value.</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gio_2.0/classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for success, else <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> and <cite>error</cite> is used</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the device vendor.</p>
+<p>WARNING: This function is synchronous, and may block.
+Do not use it in GUI applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Colord.Device.to_string">
+<tt class="descname">to_string</tt><big>(</big><big>)</big><a class="headerlink" href="#Colord.Device.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">text representation of <a class="reference internal" href="#Colord.Device" title="Colord.Device"><tt class="xref py py-class docutils literal"><span class="pre">Colord.Device</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts the device to a string description.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Dom.html" class="btn btn-neutral float-right" title="Colord.Dom"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Client.html" class="btn btn-neutral" title="Colord.Client"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

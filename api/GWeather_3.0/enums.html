@@ -1,0 +1,953 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      GWeather 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="GWeather 3.0" href="index.html"/>
+        <link rel="next" title="Constants" href="constants.html"/>
+        <link rel="prev" title="Flags" href="flags.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">GWeather 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">GWeather 3.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GWeather_3.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#GWeather.ConditionPhenomenon" title="GWeather.ConditionPhenomenon"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.ConditionPhenomenon</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.ConditionQualifier" title="GWeather.ConditionQualifier"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.ConditionQualifier</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.DistanceUnit" title="GWeather.DistanceUnit"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.DistanceUnit</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.ForecastType" title="GWeather.ForecastType"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.ForecastType</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.LocationLevel" title="GWeather.LocationLevel"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.LocationLevel</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.PressureUnit" title="GWeather.PressureUnit"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.PressureUnit</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.Sky" title="GWeather.Sky"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.Sky</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.SpeedUnit" title="GWeather.SpeedUnit"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.SpeedUnit</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.TemperatureUnit" title="GWeather.TemperatureUnit"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.TemperatureUnit</span></tt></a></li>
+<li><a class="reference internal" href="#GWeather.WindDirection" title="GWeather.WindDirection"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.WindDirection</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="conditionphenomenon">
+<h2>ConditionPhenomenon<a class="headerlink" href="#conditionphenomenon" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.ConditionPhenomenon">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">ConditionPhenomenon</tt><a class="headerlink" href="#GWeather.ConditionPhenomenon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = -1</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.DRIZZLE">
+<tt class="descname">DRIZZLE</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.DRIZZLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.RAIN">
+<tt class="descname">RAIN</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.RAIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SNOW">
+<tt class="descname">SNOW</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SNOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SNOW_GRAINS">
+<tt class="descname">SNOW_GRAINS</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SNOW_GRAINS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.ICE_CRYSTALS">
+<tt class="descname">ICE_CRYSTALS</tt><em class="property"> = 5</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.ICE_CRYSTALS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.ICE_PELLETS">
+<tt class="descname">ICE_PELLETS</tt><em class="property"> = 6</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.ICE_PELLETS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.HAIL">
+<tt class="descname">HAIL</tt><em class="property"> = 7</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.HAIL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SMALL_HAIL">
+<tt class="descname">SMALL_HAIL</tt><em class="property"> = 8</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SMALL_HAIL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.UNKNOWN_PRECIPITATION">
+<tt class="descname">UNKNOWN_PRECIPITATION</tt><em class="property"> = 9</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.UNKNOWN_PRECIPITATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.MIST">
+<tt class="descname">MIST</tt><em class="property"> = 10</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.MIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.FOG">
+<tt class="descname">FOG</tt><em class="property"> = 11</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.FOG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SMOKE">
+<tt class="descname">SMOKE</tt><em class="property"> = 12</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SMOKE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.VOLCANIC_ASH">
+<tt class="descname">VOLCANIC_ASH</tt><em class="property"> = 13</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.VOLCANIC_ASH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SAND">
+<tt class="descname">SAND</tt><em class="property"> = 14</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SAND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.HAZE">
+<tt class="descname">HAZE</tt><em class="property"> = 15</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.HAZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SPRAY">
+<tt class="descname">SPRAY</tt><em class="property"> = 16</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SPRAY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.DUST">
+<tt class="descname">DUST</tt><em class="property"> = 17</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.DUST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SQUALL">
+<tt class="descname">SQUALL</tt><em class="property"> = 18</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SQUALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.SANDSTORM">
+<tt class="descname">SANDSTORM</tt><em class="property"> = 19</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.SANDSTORM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.DUSTSTORM">
+<tt class="descname">DUSTSTORM</tt><em class="property"> = 20</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.DUSTSTORM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.FUNNEL_CLOUD">
+<tt class="descname">FUNNEL_CLOUD</tt><em class="property"> = 21</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.FUNNEL_CLOUD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.TORNADO">
+<tt class="descname">TORNADO</tt><em class="property"> = 22</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.TORNADO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.DUST_WHIRLS">
+<tt class="descname">DUST_WHIRLS</tt><em class="property"> = 23</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.DUST_WHIRLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionPhenomenon.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 24</em><a class="headerlink" href="#GWeather.ConditionPhenomenon.LAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="conditionqualifier">
+<h2>ConditionQualifier<a class="headerlink" href="#conditionqualifier" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.ConditionQualifier">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">ConditionQualifier</tt><a class="headerlink" href="#GWeather.ConditionQualifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = -1</em><a class="headerlink" href="#GWeather.ConditionQualifier.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.ConditionQualifier.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.VICINITY">
+<tt class="descname">VICINITY</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.ConditionQualifier.VICINITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.LIGHT">
+<tt class="descname">LIGHT</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.ConditionQualifier.LIGHT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.MODERATE">
+<tt class="descname">MODERATE</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.ConditionQualifier.MODERATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.HEAVY">
+<tt class="descname">HEAVY</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.ConditionQualifier.HEAVY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.SHALLOW">
+<tt class="descname">SHALLOW</tt><em class="property"> = 5</em><a class="headerlink" href="#GWeather.ConditionQualifier.SHALLOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.PATCHES">
+<tt class="descname">PATCHES</tt><em class="property"> = 6</em><a class="headerlink" href="#GWeather.ConditionQualifier.PATCHES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.PARTIAL">
+<tt class="descname">PARTIAL</tt><em class="property"> = 7</em><a class="headerlink" href="#GWeather.ConditionQualifier.PARTIAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.THUNDERSTORM">
+<tt class="descname">THUNDERSTORM</tt><em class="property"> = 8</em><a class="headerlink" href="#GWeather.ConditionQualifier.THUNDERSTORM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.BLOWING">
+<tt class="descname">BLOWING</tt><em class="property"> = 9</em><a class="headerlink" href="#GWeather.ConditionQualifier.BLOWING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.SHOWERS">
+<tt class="descname">SHOWERS</tt><em class="property"> = 10</em><a class="headerlink" href="#GWeather.ConditionQualifier.SHOWERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.DRIFTING">
+<tt class="descname">DRIFTING</tt><em class="property"> = 11</em><a class="headerlink" href="#GWeather.ConditionQualifier.DRIFTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.FREEZING">
+<tt class="descname">FREEZING</tt><em class="property"> = 12</em><a class="headerlink" href="#GWeather.ConditionQualifier.FREEZING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ConditionQualifier.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 13</em><a class="headerlink" href="#GWeather.ConditionQualifier.LAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="distanceunit">
+<h2>DistanceUnit<a class="headerlink" href="#distanceunit" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.DistanceUnit">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">DistanceUnit</tt><a class="headerlink" href="#GWeather.DistanceUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.DistanceUnit.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.DistanceUnit.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.DistanceUnit.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.DistanceUnit.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.DistanceUnit.METERS">
+<tt class="descname">METERS</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.DistanceUnit.METERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.DistanceUnit.KM">
+<tt class="descname">KM</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.DistanceUnit.KM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.DistanceUnit.MILES">
+<tt class="descname">MILES</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.DistanceUnit.MILES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="forecasttype">
+<h2>ForecastType<a class="headerlink" href="#forecasttype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.ForecastType">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">ForecastType</tt><a class="headerlink" href="#GWeather.ForecastType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.ForecastType.STATE">
+<tt class="descname">STATE</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.ForecastType.STATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ForecastType.ZONE">
+<tt class="descname">ZONE</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.ForecastType.ZONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.ForecastType.LIST">
+<tt class="descname">LIST</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.ForecastType.LIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="locationlevel">
+<h2>LocationLevel<a class="headerlink" href="#locationlevel" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.LocationLevel">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">LocationLevel</tt><a class="headerlink" href="#GWeather.LocationLevel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The size/scope of a particular <a class="reference internal" href="structs/Location.html#GWeather.Location" title="GWeather.Location"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.Location</span></tt></a>.</p>
+<p>Locations form a hierarchy, with a <a class="reference internal" href="#GWeather.LocationLevel.WORLD" title="GWeather.LocationLevel.WORLD"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.LocationLevel.WORLD</span></tt></a> 
+location at the top, divided into regions or countries, and so on.
+Countries may or may not be divided into &#8220;adm1&#8221;s, and &#8220;adm1&#8221;s may
+or may not be divided into &#8220;adm2&#8221;s. A city will have at least one,
+and possibly several, weather stations inside it. Weather stations
+will never appear outside of cities.</p>
+<p>Building a database with <a class="reference internal" href="structs/Location.html#GWeather.Location.new_world" title="GWeather.Location.new_world"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.Location.new_world</span></tt></a> () will never
+create detached instances, but deserializing might.</p>
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.WORLD">
+<tt class="descname">WORLD</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.LocationLevel.WORLD" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location representing the entire world.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.REGION">
+<tt class="descname">REGION</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.LocationLevel.REGION" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location representing a continent or other top-level region.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.COUNTRY">
+<tt class="descname">COUNTRY</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.LocationLevel.COUNTRY" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location representing a &#8220;country&#8221; (or other geographic unit that has an ISO-3166 country code)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.ADM1">
+<tt class="descname">ADM1</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.LocationLevel.ADM1" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location representing a &#8220;first-level administrative division&#8221;; ie, a state, province, or similar division.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.ADM2">
+<tt class="descname">ADM2</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.LocationLevel.ADM2" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location representing a subdivision of a <a class="reference internal" href="#GWeather.LocationLevel.ADM1" title="GWeather.LocationLevel.ADM1"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.LocationLevel.ADM1</span></tt></a> location, or a direct subdivision of a country that is not represented in a <a class="reference internal" href="classes/LocationEntry.html#GWeather.LocationEntry" title="GWeather.LocationEntry"><tt class="xref py py-class docutils literal"><span class="pre">GWeather.LocationEntry</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.CITY">
+<tt class="descname">CITY</tt><em class="property"> = 5</em><a class="headerlink" href="#GWeather.LocationLevel.CITY" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location representing a city</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.WEATHER_STATION">
+<tt class="descname">WEATHER_STATION</tt><em class="property"> = 6</em><a class="headerlink" href="#GWeather.LocationLevel.WEATHER_STATION" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location representing a weather station.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.LocationLevel.DETACHED">
+<tt class="descname">DETACHED</tt><em class="property"> = 7</em><a class="headerlink" href="#GWeather.LocationLevel.DETACHED" title="Permalink to this definition">¶</a></dt>
+<dd><p>A location that is detached from the database, for example because it was loaded from external storage and could not be fully recovered. The parent of this location is the nearest weather station.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="pressureunit">
+<h2>PressureUnit<a class="headerlink" href="#pressureunit" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.PressureUnit">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">PressureUnit</tt><a class="headerlink" href="#GWeather.PressureUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.PressureUnit.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.PressureUnit.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.KPA">
+<tt class="descname">KPA</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.PressureUnit.KPA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.HPA">
+<tt class="descname">HPA</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.PressureUnit.HPA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.MB">
+<tt class="descname">MB</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.PressureUnit.MB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.MM_HG">
+<tt class="descname">MM_HG</tt><em class="property"> = 5</em><a class="headerlink" href="#GWeather.PressureUnit.MM_HG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.INCH_HG">
+<tt class="descname">INCH_HG</tt><em class="property"> = 6</em><a class="headerlink" href="#GWeather.PressureUnit.INCH_HG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.PressureUnit.ATM">
+<tt class="descname">ATM</tt><em class="property"> = 7</em><a class="headerlink" href="#GWeather.PressureUnit.ATM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="sky">
+<h2>Sky<a class="headerlink" href="#sky" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.Sky">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">Sky</tt><a class="headerlink" href="#GWeather.Sky" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.Sky.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = -1</em><a class="headerlink" href="#GWeather.Sky.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.Sky.CLEAR">
+<tt class="descname">CLEAR</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.Sky.CLEAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.Sky.BROKEN">
+<tt class="descname">BROKEN</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.Sky.BROKEN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.Sky.SCATTERED">
+<tt class="descname">SCATTERED</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.Sky.SCATTERED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.Sky.FEW">
+<tt class="descname">FEW</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.Sky.FEW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.Sky.OVERCAST">
+<tt class="descname">OVERCAST</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.Sky.OVERCAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.Sky.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 5</em><a class="headerlink" href="#GWeather.Sky.LAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="speedunit">
+<h2>SpeedUnit<a class="headerlink" href="#speedunit" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.SpeedUnit">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">SpeedUnit</tt><a class="headerlink" href="#GWeather.SpeedUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.SpeedUnit.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.SpeedUnit.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.SpeedUnit.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.SpeedUnit.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.SpeedUnit.MS">
+<tt class="descname">MS</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.SpeedUnit.MS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.SpeedUnit.KPH">
+<tt class="descname">KPH</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.SpeedUnit.KPH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.SpeedUnit.MPH">
+<tt class="descname">MPH</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.SpeedUnit.MPH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.SpeedUnit.KNOTS">
+<tt class="descname">KNOTS</tt><em class="property"> = 5</em><a class="headerlink" href="#GWeather.SpeedUnit.KNOTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.SpeedUnit.BFT">
+<tt class="descname">BFT</tt><em class="property"> = 6</em><a class="headerlink" href="#GWeather.SpeedUnit.BFT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="temperatureunit">
+<h2>TemperatureUnit<a class="headerlink" href="#temperatureunit" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.TemperatureUnit">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">TemperatureUnit</tt><a class="headerlink" href="#GWeather.TemperatureUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.TemperatureUnit.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.TemperatureUnit.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.TemperatureUnit.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.TemperatureUnit.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.TemperatureUnit.KELVIN">
+<tt class="descname">KELVIN</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.TemperatureUnit.KELVIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.TemperatureUnit.CENTIGRADE">
+<tt class="descname">CENTIGRADE</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.TemperatureUnit.CENTIGRADE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.TemperatureUnit.FAHRENHEIT">
+<tt class="descname">FAHRENHEIT</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.TemperatureUnit.FAHRENHEIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="winddirection">
+<h2>WindDirection<a class="headerlink" href="#winddirection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GWeather.WindDirection">
+<em class="property">class </em><tt class="descclassname">GWeather.</tt><tt class="descname">WindDirection</tt><a class="headerlink" href="#GWeather.WindDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GWeather.WindDirection.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = -1</em><a class="headerlink" href="#GWeather.WindDirection.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.VARIABLE">
+<tt class="descname">VARIABLE</tt><em class="property"> = 0</em><a class="headerlink" href="#GWeather.WindDirection.VARIABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.N">
+<tt class="descname">N</tt><em class="property"> = 1</em><a class="headerlink" href="#GWeather.WindDirection.N" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.NNE">
+<tt class="descname">NNE</tt><em class="property"> = 2</em><a class="headerlink" href="#GWeather.WindDirection.NNE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.NE">
+<tt class="descname">NE</tt><em class="property"> = 3</em><a class="headerlink" href="#GWeather.WindDirection.NE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.ENE">
+<tt class="descname">ENE</tt><em class="property"> = 4</em><a class="headerlink" href="#GWeather.WindDirection.ENE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.E">
+<tt class="descname">E</tt><em class="property"> = 5</em><a class="headerlink" href="#GWeather.WindDirection.E" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.ESE">
+<tt class="descname">ESE</tt><em class="property"> = 6</em><a class="headerlink" href="#GWeather.WindDirection.ESE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.SE">
+<tt class="descname">SE</tt><em class="property"> = 7</em><a class="headerlink" href="#GWeather.WindDirection.SE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.SSE">
+<tt class="descname">SSE</tt><em class="property"> = 8</em><a class="headerlink" href="#GWeather.WindDirection.SSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.S">
+<tt class="descname">S</tt><em class="property"> = 9</em><a class="headerlink" href="#GWeather.WindDirection.S" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.SSW">
+<tt class="descname">SSW</tt><em class="property"> = 10</em><a class="headerlink" href="#GWeather.WindDirection.SSW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.SW">
+<tt class="descname">SW</tt><em class="property"> = 11</em><a class="headerlink" href="#GWeather.WindDirection.SW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.WSW">
+<tt class="descname">WSW</tt><em class="property"> = 12</em><a class="headerlink" href="#GWeather.WindDirection.WSW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.W">
+<tt class="descname">W</tt><em class="property"> = 13</em><a class="headerlink" href="#GWeather.WindDirection.W" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.WNW">
+<tt class="descname">WNW</tt><em class="property"> = 14</em><a class="headerlink" href="#GWeather.WindDirection.WNW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.NW">
+<tt class="descname">NW</tt><em class="property"> = 15</em><a class="headerlink" href="#GWeather.WindDirection.NW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.NNW">
+<tt class="descname">NNW</tt><em class="property"> = 16</em><a class="headerlink" href="#GWeather.WindDirection.NNW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GWeather.WindDirection.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 17</em><a class="headerlink" href="#GWeather.WindDirection.LAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="constants.html" class="btn btn-neutral float-right" title="Constants"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="flags.html" class="btn btn-neutral" title="Flags"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

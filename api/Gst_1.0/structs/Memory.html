@@ -1,0 +1,666 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gst.Memory -
+    
+      Structures -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="Gst.Message" href="Message.html"/>
+        <link rel="prev" title="Gst.MapInfo" href="MapInfo.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gst.Memory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">Gst.Memory</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/structs/Memory" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gst-memory">
+<h1>Gst.Memory<a class="headerlink" href="#gst-memory" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>allocator</td>
+<td><a class="reference internal" href="../classes/Allocator.html#Gst.Allocator" title="Gst.Allocator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>mini_object</td>
+<td><a class="reference internal" href="MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></td>
+<td>r/w</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Memory.new_wrapped" title="Gst.Memory.new_wrapped"><tt class="xref py py-obj docutils literal"><span class="pre">new_wrapped</span></tt></a>(flags, data, maxsize, offset, user_data, notify)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.copy" title="Gst.Memory.copy"><tt class="xref py py-obj docutils literal"><span class="pre">copy</span></tt></a>(offset, size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.get_sizes" title="Gst.Memory.get_sizes"><tt class="xref py py-obj docutils literal"><span class="pre">get_sizes</span></tt></a>(offset, maxsize)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.is_span" title="Gst.Memory.is_span"><tt class="xref py py-obj docutils literal"><span class="pre">is_span</span></tt></a>(mem2, offset)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.is_type" title="Gst.Memory.is_type"><tt class="xref py py-obj docutils literal"><span class="pre">is_type</span></tt></a>(mem_type)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.make_mapped" title="Gst.Memory.make_mapped"><tt class="xref py py-obj docutils literal"><span class="pre">make_mapped</span></tt></a>(flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.map" title="Gst.Memory.map"><tt class="xref py py-obj docutils literal"><span class="pre">map</span></tt></a>(flags)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.resize" title="Gst.Memory.resize"><tt class="xref py py-obj docutils literal"><span class="pre">resize</span></tt></a>(offset, size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.share" title="Gst.Memory.share"><tt class="xref py py-obj docutils literal"><span class="pre">share</span></tt></a>(offset, size)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Memory.unmap" title="Gst.Memory.unmap"><tt class="xref py py-obj docutils literal"><span class="pre">unmap</span></tt></a>(info)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gst.Memory">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">Memory</tt><a class="headerlink" href="#Gst.Memory" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> is a lightweight refcounted object that wraps a region of memory.
+They are typically used to manage the data of a <a class="reference internal" href="Buffer.html#Gst.Buffer" title="Gst.Buffer"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Buffer</span></tt></a>.</p>
+<p>A <a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> object has an allocated region of memory of maxsize. The maximum
+size does not change during the lifetime of the memory object. The memory
+also has an offset and size property that specifies the valid range of memory
+in the allocated region.</p>
+<p>Memory is usually created by allocators with a <a class="reference internal" href="../classes/Allocator.html#Gst.Allocator.alloc" title="Gst.Allocator.alloc"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator.alloc</span></tt></a> ()
+method call. When <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is used as the allocator, the default allocator will
+be used.</p>
+<p>New allocators can be registered with <a class="reference internal" href="../classes/Allocator.html#Gst.Allocator.register" title="Gst.Allocator.register"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator.register</span></tt></a> ().
+Allocators are identified by name and can be retrieved with
+<a class="reference internal" href="../classes/Allocator.html#Gst.Allocator.find" title="Gst.Allocator.find"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator.find</span></tt></a> (). <a class="reference internal" href="../classes/Allocator.html#Gst.Allocator.set_default" title="Gst.Allocator.set_default"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator.set_default</span></tt></a> () can be used to change the
+default allocator.</p>
+<p>New memory can be created with <a class="reference internal" href="#Gst.Memory.new_wrapped" title="Gst.Memory.new_wrapped"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.new_wrapped</span></tt></a> () that wraps the memory
+allocated elsewhere.</p>
+<p>Refcounting of the memory block is performed with gst_memory_ref() and
+gst_memory_unref().</p>
+<p>The size of the memory can be retrieved and changed with
+<a class="reference internal" href="#Gst.Memory.get_sizes" title="Gst.Memory.get_sizes"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.get_sizes</span></tt></a> () and <a class="reference internal" href="#Gst.Memory.resize" title="Gst.Memory.resize"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.resize</span></tt></a> () respectively.</p>
+<p>Getting access to the data of the memory is performed with <a class="reference internal" href="#Gst.Memory.map" title="Gst.Memory.map"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.map</span></tt></a> ().
+The call will return a pointer to offset bytes into the region of memory.
+After the memory access is completed, <a class="reference internal" href="#Gst.Memory.unmap" title="Gst.Memory.unmap"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.unmap</span></tt></a> () should be called.</p>
+<p>Memory can be copied with <a class="reference internal" href="#Gst.Memory.copy" title="Gst.Memory.copy"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.copy</span></tt></a> (), which will return a writable
+copy. <a class="reference internal" href="#Gst.Memory.share" title="Gst.Memory.share"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.share</span></tt></a> () will create a new memory block that shares the
+memory with an existing memory block at a custom offset and with a custom
+size.</p>
+<p>Memory can be efficiently merged when <a class="reference internal" href="#Gst.Memory.is_span" title="Gst.Memory.is_span"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.is_span</span></tt></a> () returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>.</p>
+<p>Last reviewed on 2012-03-28 (0.11.3)</p>
+<dl class="staticmethod">
+<dt id="Gst.Memory.new_wrapped">
+<em class="property">static </em><tt class="descname">new_wrapped</tt><big>(</big><em>flags</em>, <em>data</em>, <em>maxsize</em>, <em>offset</em>, <em>user_data</em>, <em>notify</em><big>)</big><a class="headerlink" href="#Gst.Memory.new_wrapped" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.MemoryFlags" title="Gst.MemoryFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags</span></tt></a>) &#8211; <a class="reference internal" href="../flags.html#Gst.MemoryFlags" title="Gst.MemoryFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags</span></tt></a></li>
+<li><strong>data</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; data to wrap</li>
+<li><strong>maxsize</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; allocated size of <cite>data</cite></li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; offset in <cite>data</cite></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; user_data</li>
+<li><strong>notify</strong> (<a class="reference internal" href="../../GLib_2.0/callbacks.html#GLib.DestroyNotify" title="GLib.DestroyNotify"><tt class="xref py py-class docutils literal"><span class="pre">GLib.DestroyNotify</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; called with <cite>user_data</cite> when the memory is freed</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Allocate a new memory block that wraps the given <cite>data</cite>.</p>
+<p>The prefix/padding must be filled with 0 if <cite>flags</cite> contains
+<a class="reference internal" href="../flags.html#Gst.MemoryFlags.ZERO_PREFIXED" title="Gst.MemoryFlags.ZERO_PREFIXED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags.ZERO_PREFIXED</span></tt></a> and <a class="reference internal" href="../flags.html#Gst.MemoryFlags.ZERO_PADDED" title="Gst.MemoryFlags.ZERO_PADDED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags.ZERO_PADDED</span></tt></a> respectively.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.copy">
+<tt class="descname">copy</tt><big>(</big><em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Memory.copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an offset to copy</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; size to copy or -1 to copy all bytes from offset</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Return a copy of <cite>size</cite> bytes from <cite>mem</cite> starting from <cite>offset</cite>. This copy is
+guaranteed to be writable. <cite>size</cite> can be set to -1 to return a copy all bytes
+from <cite>offset</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.get_sizes">
+<tt class="descname">get_sizes</tt><big>(</big><em>offset</em>, <em>maxsize</em><big>)</big><a class="headerlink" href="#Gst.Memory.get_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; pointer to offset</li>
+<li><strong>maxsize</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; pointer to maxsize</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the current sizes of <cite>mem</cite></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get the current <cite>size</cite>, <cite>offset</cite> and <cite>maxsize</cite> of <cite>mem</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.is_span">
+<tt class="descname">is_span</tt><big>(</big><em>mem2</em>, <em>offset</em><big>)</big><a class="headerlink" href="#Gst.Memory.is_span" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mem2</strong> (<a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>) &#8211; a <a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></li>
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a pointer to a result offset</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the memory is contiguous and of a common parent.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>mem1</cite> and mem2 share the memory with a common parent memory object
+and that the memory is contiguous.</p>
+<p>If this is the case, the memory of <cite>mem1</cite> and <cite>mem2</cite> can be merged
+efficiently by performing <a class="reference internal" href="#Gst.Memory.share" title="Gst.Memory.share"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.share</span></tt></a> () on the parent object from
+the returned <cite>offset</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.is_type">
+<tt class="descname">is_type</tt><big>(</big><em>mem_type</em><big>)</big><a class="headerlink" href="#Gst.Memory.is_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mem_type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a memory type</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if <cite>mem</cite> was allocated from an allocator for <cite>mem_type</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>mem</cite> if allocated with an allocator for <cite>mem_type</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.make_mapped">
+<tt class="descname">make_mapped</tt><big>(</big><em>flags</em><big>)</big><a class="headerlink" href="#Gst.Memory.make_mapped" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.MapFlags" title="Gst.MapFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags</span></tt></a>) &#8211; mapping flags</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> object mapped with <cite>flags</cite> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> when a mapping is not possible.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>, info: <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a <a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a> object that is mapped with <cite>flags</cite>. If <cite>mem</cite> is mappable
+with <cite>flags</cite>, this function returns the mapped <cite>mem</cite> directly. Otherwise a
+mapped copy of <cite>mem</cite> is returned.</p>
+<p>This function takes ownership of old <cite>mem</cite> and returns a reference to a new
+<a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.map">
+<tt class="descname">map</tt><big>(</big><em>flags</em><big>)</big><a class="headerlink" href="#Gst.Memory.map" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.MapFlags" title="Gst.MapFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapFlags</span></tt></a>) &#8211; mapping flags</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the map operation was successful.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, info: <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Fill <cite>info</cite> with the pointer and sizes of the memory in <cite>mem</cite> that can be
+accessed according to <cite>flags</cite>.</p>
+<p>This function can return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for various reasons:
+- the memory backed by <cite>mem</cite> is not accessible with the given <cite>flags</cite>.
+- the memory was already mapped with a different mapping.</p>
+<p><cite>info</cite> and its contents remain valid for as long as <cite>mem</cite> is valid and
+until <a class="reference internal" href="#Gst.Memory.unmap" title="Gst.Memory.unmap"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.unmap</span></tt></a> () is called.</p>
+<p>For each <a class="reference internal" href="#Gst.Memory.map" title="Gst.Memory.map"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.map</span></tt></a> () call, a corresponding <a class="reference internal" href="#Gst.Memory.unmap" title="Gst.Memory.unmap"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.unmap</span></tt></a> () call
+should be done.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.resize">
+<tt class="descname">resize</tt><big>(</big><em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Memory.resize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a new offset</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a new size</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Resize the memory region. <cite>mem</cite> should be writable and offset + size should be
+less than the maxsize of <cite>mem</cite>.</p>
+<p><a class="reference internal" href="../flags.html#Gst.MemoryFlags.ZERO_PREFIXED" title="Gst.MemoryFlags.ZERO_PREFIXED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags.ZERO_PREFIXED</span></tt></a> and <a class="reference internal" href="../flags.html#Gst.MemoryFlags.ZERO_PADDED" title="Gst.MemoryFlags.ZERO_PADDED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MemoryFlags.ZERO_PADDED</span></tt></a> will be
+cleared when offset or padding is increased respectively.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.share">
+<tt class="descname">share</tt><big>(</big><em>offset</em>, <em>size</em><big>)</big><a class="headerlink" href="#Gst.Memory.share" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an offset to share</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; size to share or -1 to share bytes from offset</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Memory" title="Gst.Memory"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Return a shared copy of <cite>size</cite> bytes from <cite>mem</cite> starting from <cite>offset</cite>. No
+memory copy is performed and the memory region is simply shared. The result
+is guaranteed to be not-writable. <cite>size</cite> can be set to -1 to return a share
+all bytes from <cite>offset</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Memory.unmap">
+<tt class="descname">unmap</tt><big>(</big><em>info</em><big>)</big><a class="headerlink" href="#Gst.Memory.unmap" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>info</strong> (<a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a>) &#8211; a <a class="reference internal" href="MapInfo.html#Gst.MapInfo" title="Gst.MapInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MapInfo</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Release the memory obtained with <a class="reference internal" href="#Gst.Memory.map" title="Gst.Memory.map"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Memory.map</span></tt></a> ()</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Message.html" class="btn btn-neutral float-right" title="Gst.Message"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="MapInfo.html" class="btn btn-neutral" title="Gst.MapInfo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

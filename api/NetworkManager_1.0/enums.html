@@ -1,0 +1,2535 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      NetworkManager 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="NetworkManager 1.0" href="index.html"/>
+        <link rel="next" title="Constants" href="constants.html"/>
+        <link rel="prev" title="NetworkManager.IP6Route" href="structs/IP6Route.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">NetworkManager 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">NetworkManager 1.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/NetworkManager_1.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#NetworkManager.ActiveConnectionState" title="NetworkManager.ActiveConnectionState"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.ActiveConnectionState</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.BluetoothCapabilities" title="NetworkManager.BluetoothCapabilities"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.BluetoothCapabilities</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.ConnectionError" title="NetworkManager.ConnectionError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.ConnectionError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.DeviceCapabilities" title="NetworkManager.DeviceCapabilities"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceCapabilities</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.DeviceModemCapabilities" title="NetworkManager.DeviceModemCapabilities"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceModemCapabilities</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.DeviceState" title="NetworkManager.DeviceState"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceState</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.DeviceStateReason" title="NetworkManager.DeviceStateReason"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceStateReason</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.DeviceType" title="NetworkManager.DeviceType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceType</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.DeviceWifiCapabilities" title="NetworkManager.DeviceWifiCapabilities"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceWifiCapabilities</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.Setting8021xCKFormat" title="NetworkManager.Setting8021xCKFormat"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting8021xCKFormat</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.Setting8021xCKScheme" title="NetworkManager.Setting8021xCKScheme"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting8021xCKScheme</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.Setting8021xError" title="NetworkManager.Setting8021xError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting8021xError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingAdslError" title="NetworkManager.SettingAdslError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingAdslError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingBluetoothError" title="NetworkManager.SettingBluetoothError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingBluetoothError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingBondError" title="NetworkManager.SettingBondError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingBondError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingBridgeError" title="NetworkManager.SettingBridgeError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingBridgeError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingBridgePortError" title="NetworkManager.SettingBridgePortError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingBridgePortError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingCdmaError" title="NetworkManager.SettingCdmaError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingCdmaError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingCompareFlags" title="NetworkManager.SettingCompareFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingCompareFlags</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingConnectionError" title="NetworkManager.SettingConnectionError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingConnectionError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingDiffResult" title="NetworkManager.SettingDiffResult"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingDiffResult</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingError" title="NetworkManager.SettingError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingGsmError" title="NetworkManager.SettingGsmError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingGsmError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingGsmNetworkBand" title="NetworkManager.SettingGsmNetworkBand"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingGsmNetworkBand</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingGsmNetworkType" title="NetworkManager.SettingGsmNetworkType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingGsmNetworkType</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingHashFlags" title="NetworkManager.SettingHashFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingHashFlags</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingIP4ConfigError" title="NetworkManager.SettingIP4ConfigError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingIP4ConfigError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingIP6ConfigError" title="NetworkManager.SettingIP6ConfigError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingIP6ConfigError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingIP6ConfigPrivacy" title="NetworkManager.SettingIP6ConfigPrivacy"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingIP6ConfigPrivacy</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingInfinibandError" title="NetworkManager.SettingInfinibandError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingInfinibandError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingOlpcMeshError" title="NetworkManager.SettingOlpcMeshError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingOlpcMeshError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingPPPError" title="NetworkManager.SettingPPPError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingPPPError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingPPPOEError" title="NetworkManager.SettingPPPOEError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingPPPOEError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingSecretFlags" title="NetworkManager.SettingSecretFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingSerialError" title="NetworkManager.SettingSerialError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSerialError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingVlanError" title="NetworkManager.SettingVlanError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingVlanError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingVpnError" title="NetworkManager.SettingVpnError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingVpnError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingWimaxError" title="NetworkManager.SettingWimaxError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWimaxError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingWiredError" title="NetworkManager.SettingWiredError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWiredError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingWirelessError" title="NetworkManager.SettingWirelessError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.SettingWirelessSecurityError" title="NetworkManager.SettingWirelessSecurityError"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurityError</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.State" title="NetworkManager.State"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.State</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.UtilsSecurityType" title="NetworkManager.UtilsSecurityType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.UtilsSecurityType</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.VPNConnectionState" title="NetworkManager.VPNConnectionState"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.VPNConnectionState</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.VPNConnectionStateReason" title="NetworkManager.VPNConnectionStateReason"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.VPNConnectionStateReason</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.VPNPluginFailure" title="NetworkManager.VPNPluginFailure"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.VPNPluginFailure</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.VPNServiceState" title="NetworkManager.VPNServiceState"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.VPNServiceState</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.VlanFlags" title="NetworkManager.VlanFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.VlanFlags</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.VlanPriorityMap" title="NetworkManager.VlanPriorityMap"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.VlanPriorityMap</span></tt></a></li>
+<li><a class="reference internal" href="#NetworkManager.WepKeyType" title="NetworkManager.WepKeyType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.WepKeyType</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="activeconnectionstate">
+<h2>ActiveConnectionState<a class="headerlink" href="#activeconnectionstate" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.ActiveConnectionState">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">ActiveConnectionState</tt><a class="headerlink" href="#NetworkManager.ActiveConnectionState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.ActiveConnectionState" title="NetworkManager.ActiveConnectionState"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.ActiveConnectionState</span></tt></a> values indicate the state of a connection to a
+specific network while it is starting, connected, or disconnecting from that
+network.</p>
+<dl class="attribute">
+<dt id="NetworkManager.ActiveConnectionState.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.ActiveConnectionState.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>the state of the connection is unknown</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.ActiveConnectionState.ACTIVATING">
+<tt class="descname">ACTIVATING</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.ActiveConnectionState.ACTIVATING" title="Permalink to this definition">¶</a></dt>
+<dd><p>a network connection is being prepared</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.ActiveConnectionState.ACTIVATED">
+<tt class="descname">ACTIVATED</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.ActiveConnectionState.ACTIVATED" title="Permalink to this definition">¶</a></dt>
+<dd><p>there is a connection to the network</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.ActiveConnectionState.DEACTIVATING">
+<tt class="descname">DEACTIVATING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.ActiveConnectionState.DEACTIVATING" title="Permalink to this definition">¶</a></dt>
+<dd><p>the network connection is being torn down and cleaned up</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.ActiveConnectionState.DEACTIVATED">
+<tt class="descname">DEACTIVATED</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.ActiveConnectionState.DEACTIVATED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the network connection is disconnected and will be removed</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="bluetoothcapabilities">
+<h2>BluetoothCapabilities<a class="headerlink" href="#bluetoothcapabilities" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.BluetoothCapabilities">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">BluetoothCapabilities</tt><a class="headerlink" href="#NetworkManager.BluetoothCapabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.BluetoothCapabilities" title="NetworkManager.BluetoothCapabilities"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.BluetoothCapabilities</span></tt></a> values indicate the usable capabilities of a
+Bluetooth device.</p>
+<dl class="attribute">
+<dt id="NetworkManager.BluetoothCapabilities.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.BluetoothCapabilities.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>device has no usable capabilities</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.BluetoothCapabilities.DUN">
+<tt class="descname">DUN</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.BluetoothCapabilities.DUN" title="Permalink to this definition">¶</a></dt>
+<dd><p>device provides Dial-Up Networking capability</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.BluetoothCapabilities.NAP">
+<tt class="descname">NAP</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.BluetoothCapabilities.NAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>device provides Network Access Point capability</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="connectionerror">
+<h2>ConnectionError<a class="headerlink" href="#connectionerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.ConnectionError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">ConnectionError</tt><a class="headerlink" href="#NetworkManager.ConnectionError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Describes errors that may result from operations involving a <a class="reference internal" href="classes/Connection.html#NetworkManager.Connection" title="NetworkManager.Connection"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Connection</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="NetworkManager.ConnectionError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.ConnectionError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.ConnectionError.CONNECTIONSETTINGNOTFOUND">
+<tt class="descname">CONNECTIONSETTINGNOTFOUND</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.ConnectionError.CONNECTIONSETTINGNOTFOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.ConnectionError.CONNECTIONTYPEINVALID">
+<tt class="descname">CONNECTIONTYPEINVALID</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.ConnectionError.CONNECTIONTYPEINVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.ConnectionError.SETTINGNOTFOUND">
+<tt class="descname">SETTINGNOTFOUND</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.ConnectionError.SETTINGNOTFOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="devicecapabilities">
+<h2>DeviceCapabilities<a class="headerlink" href="#devicecapabilities" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.DeviceCapabilities">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">DeviceCapabilities</tt><a class="headerlink" href="#NetworkManager.DeviceCapabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>General device capability flags.</p>
+<dl class="attribute">
+<dt id="NetworkManager.DeviceCapabilities.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.DeviceCapabilities.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>device has no special capabilities</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceCapabilities.NM_SUPPORTED">
+<tt class="descname">NM_SUPPORTED</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.DeviceCapabilities.NM_SUPPORTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>NetworkManager supports this device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceCapabilities.CARRIER_DETECT">
+<tt class="descname">CARRIER_DETECT</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.DeviceCapabilities.CARRIER_DETECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>this device can indicate carrier status</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="devicemodemcapabilities">
+<h2>DeviceModemCapabilities<a class="headerlink" href="#devicemodemcapabilities" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.DeviceModemCapabilities">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">DeviceModemCapabilities</tt><a class="headerlink" href="#NetworkManager.DeviceModemCapabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.DeviceModemCapabilities" title="NetworkManager.DeviceModemCapabilities"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceModemCapabilities</span></tt></a> values indicate the generic radio access
+technology families a modem device supports.  For more information on the
+specific access technologies the device supports use the ModemManager D-Bus
+API.</p>
+<dl class="attribute">
+<dt id="NetworkManager.DeviceModemCapabilities.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.DeviceModemCapabilities.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>modem has no usable capabilities</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceModemCapabilities.POTS">
+<tt class="descname">POTS</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.DeviceModemCapabilities.POTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>modem uses the analog wired telephone network and is not a wireless/cellular device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceModemCapabilities.CDMA_EVDO">
+<tt class="descname">CDMA_EVDO</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.DeviceModemCapabilities.CDMA_EVDO" title="Permalink to this definition">¶</a></dt>
+<dd><p>modem supports at least one of CDMA 1xRTT, EVDO revision 0, EVDO revision A, or EVDO revision B</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceModemCapabilities.GSM_UMTS">
+<tt class="descname">GSM_UMTS</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.DeviceModemCapabilities.GSM_UMTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>modem supports at least one of GSM, GPRS, EDGE, UMTS, HSDPA, HSUPA, or HSPA+ packet switched data capability</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceModemCapabilities.LTE">
+<tt class="descname">LTE</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.DeviceModemCapabilities.LTE" title="Permalink to this definition">¶</a></dt>
+<dd><p>modem has LTE data capability</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="devicestate">
+<h2>DeviceState<a class="headerlink" href="#devicestate" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.DeviceState">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">DeviceState</tt><a class="headerlink" href="#NetworkManager.DeviceState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.DeviceState.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device&#8217;s state is unknown</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.UNMANAGED">
+<tt class="descname">UNMANAGED</tt><em class="property"> = 10</em><a class="headerlink" href="#NetworkManager.DeviceState.UNMANAGED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device is recognized, but not managed by NetworkManager</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.UNAVAILABLE">
+<tt class="descname">UNAVAILABLE</tt><em class="property"> = 20</em><a class="headerlink" href="#NetworkManager.DeviceState.UNAVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device is managed by NetworkManager, but is not available for use.  Reasons may include the wireless switched off, missing firmware, no ethernet carrier, missing supplicant or modem manager, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.DISCONNECTED">
+<tt class="descname">DISCONNECTED</tt><em class="property"> = 30</em><a class="headerlink" href="#NetworkManager.DeviceState.DISCONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device can be activated, but is currently idle and not connected to a network.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.PREPARE">
+<tt class="descname">PREPARE</tt><em class="property"> = 40</em><a class="headerlink" href="#NetworkManager.DeviceState.PREPARE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device is preparing the connection to the network.  This may include operations like changing the MAC address, setting physical link properties, and anything else required to connect to the requested network.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.CONFIG">
+<tt class="descname">CONFIG</tt><em class="property"> = 50</em><a class="headerlink" href="#NetworkManager.DeviceState.CONFIG" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device is connecting to the requested network. This may include operations like associating with the WiFi AP, dialing the modem, connecting to the remote Bluetooth device, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.NEED_AUTH">
+<tt class="descname">NEED_AUTH</tt><em class="property"> = 60</em><a class="headerlink" href="#NetworkManager.DeviceState.NEED_AUTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device requires more information to continue connecting to the requested network.  This includes secrets like WiFi passphrases, login passwords, PIN codes, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.IP_CONFIG">
+<tt class="descname">IP_CONFIG</tt><em class="property"> = 70</em><a class="headerlink" href="#NetworkManager.DeviceState.IP_CONFIG" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device is requesting IPv4 and/or IPv6 addresses and routing information from the network.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.IP_CHECK">
+<tt class="descname">IP_CHECK</tt><em class="property"> = 80</em><a class="headerlink" href="#NetworkManager.DeviceState.IP_CHECK" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device is checking whether further action is required for the requested network connection.  This may include checking whether only local network access is available, whether a captive portal is blocking access to the Internet, etc.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.SECONDARIES">
+<tt class="descname">SECONDARIES</tt><em class="property"> = 90</em><a class="headerlink" href="#NetworkManager.DeviceState.SECONDARIES" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device is waiting for a secondary connection (like a VPN) which must activated before the device can be activated</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.ACTIVATED">
+<tt class="descname">ACTIVATED</tt><em class="property"> = 100</em><a class="headerlink" href="#NetworkManager.DeviceState.ACTIVATED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device has a network connection, either local or global.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.DEACTIVATING">
+<tt class="descname">DEACTIVATING</tt><em class="property"> = 110</em><a class="headerlink" href="#NetworkManager.DeviceState.DEACTIVATING" title="Permalink to this definition">¶</a></dt>
+<dd><p>a disconnection from the current network connection was requested, and the device is cleaning up resources used for that connection.  The network connection may still be valid.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceState.FAILED">
+<tt class="descname">FAILED</tt><em class="property"> = 120</em><a class="headerlink" href="#NetworkManager.DeviceState.FAILED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the device failed to connect to the requested network and is cleaning up the connection request</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="devicestatereason">
+<h2>DeviceStateReason<a class="headerlink" href="#devicestatereason" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.DeviceStateReason">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">DeviceStateReason</tt><a class="headerlink" href="#NetworkManager.DeviceStateReason" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.NOW_MANAGED">
+<tt class="descname">NOW_MANAGED</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.NOW_MANAGED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.NOW_UNMANAGED">
+<tt class="descname">NOW_UNMANAGED</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.NOW_UNMANAGED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.CONFIG_FAILED">
+<tt class="descname">CONFIG_FAILED</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.CONFIG_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.IP_CONFIG_UNAVAILABLE">
+<tt class="descname">IP_CONFIG_UNAVAILABLE</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.IP_CONFIG_UNAVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.IP_CONFIG_EXPIRED">
+<tt class="descname">IP_CONFIG_EXPIRED</tt><em class="property"> = 6</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.IP_CONFIG_EXPIRED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.NO_SECRETS">
+<tt class="descname">NO_SECRETS</tt><em class="property"> = 7</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.NO_SECRETS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SUPPLICANT_DISCONNECT">
+<tt class="descname">SUPPLICANT_DISCONNECT</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SUPPLICANT_DISCONNECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SUPPLICANT_CONFIG_FAILED">
+<tt class="descname">SUPPLICANT_CONFIG_FAILED</tt><em class="property"> = 9</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SUPPLICANT_CONFIG_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SUPPLICANT_FAILED">
+<tt class="descname">SUPPLICANT_FAILED</tt><em class="property"> = 10</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SUPPLICANT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SUPPLICANT_TIMEOUT">
+<tt class="descname">SUPPLICANT_TIMEOUT</tt><em class="property"> = 11</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SUPPLICANT_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.PPP_START_FAILED">
+<tt class="descname">PPP_START_FAILED</tt><em class="property"> = 12</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.PPP_START_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.PPP_DISCONNECT">
+<tt class="descname">PPP_DISCONNECT</tt><em class="property"> = 13</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.PPP_DISCONNECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.PPP_FAILED">
+<tt class="descname">PPP_FAILED</tt><em class="property"> = 14</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.PPP_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.DHCP_START_FAILED">
+<tt class="descname">DHCP_START_FAILED</tt><em class="property"> = 15</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.DHCP_START_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.DHCP_ERROR">
+<tt class="descname">DHCP_ERROR</tt><em class="property"> = 16</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.DHCP_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.DHCP_FAILED">
+<tt class="descname">DHCP_FAILED</tt><em class="property"> = 17</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.DHCP_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SHARED_START_FAILED">
+<tt class="descname">SHARED_START_FAILED</tt><em class="property"> = 18</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SHARED_START_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SHARED_FAILED">
+<tt class="descname">SHARED_FAILED</tt><em class="property"> = 19</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SHARED_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.AUTOIP_START_FAILED">
+<tt class="descname">AUTOIP_START_FAILED</tt><em class="property"> = 20</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.AUTOIP_START_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.AUTOIP_ERROR">
+<tt class="descname">AUTOIP_ERROR</tt><em class="property"> = 21</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.AUTOIP_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.AUTOIP_FAILED">
+<tt class="descname">AUTOIP_FAILED</tt><em class="property"> = 22</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.AUTOIP_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_BUSY">
+<tt class="descname">MODEM_BUSY</tt><em class="property"> = 23</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_BUSY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_NO_DIAL_TONE">
+<tt class="descname">MODEM_NO_DIAL_TONE</tt><em class="property"> = 24</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_NO_DIAL_TONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_NO_CARRIER">
+<tt class="descname">MODEM_NO_CARRIER</tt><em class="property"> = 25</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_NO_CARRIER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_DIAL_TIMEOUT">
+<tt class="descname">MODEM_DIAL_TIMEOUT</tt><em class="property"> = 26</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_DIAL_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_DIAL_FAILED">
+<tt class="descname">MODEM_DIAL_FAILED</tt><em class="property"> = 27</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_DIAL_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_INIT_FAILED">
+<tt class="descname">MODEM_INIT_FAILED</tt><em class="property"> = 28</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_INIT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_APN_FAILED">
+<tt class="descname">GSM_APN_FAILED</tt><em class="property"> = 29</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_APN_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_REGISTRATION_NOT_SEARCHING">
+<tt class="descname">GSM_REGISTRATION_NOT_SEARCHING</tt><em class="property"> = 30</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_REGISTRATION_NOT_SEARCHING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_REGISTRATION_DENIED">
+<tt class="descname">GSM_REGISTRATION_DENIED</tt><em class="property"> = 31</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_REGISTRATION_DENIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_REGISTRATION_TIMEOUT">
+<tt class="descname">GSM_REGISTRATION_TIMEOUT</tt><em class="property"> = 32</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_REGISTRATION_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_REGISTRATION_FAILED">
+<tt class="descname">GSM_REGISTRATION_FAILED</tt><em class="property"> = 33</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_REGISTRATION_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_PIN_CHECK_FAILED">
+<tt class="descname">GSM_PIN_CHECK_FAILED</tt><em class="property"> = 34</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_PIN_CHECK_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.FIRMWARE_MISSING">
+<tt class="descname">FIRMWARE_MISSING</tt><em class="property"> = 35</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.FIRMWARE_MISSING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.REMOVED">
+<tt class="descname">REMOVED</tt><em class="property"> = 36</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.REMOVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SLEEPING">
+<tt class="descname">SLEEPING</tt><em class="property"> = 37</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SLEEPING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.CONNECTION_REMOVED">
+<tt class="descname">CONNECTION_REMOVED</tt><em class="property"> = 38</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.CONNECTION_REMOVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.USER_REQUESTED">
+<tt class="descname">USER_REQUESTED</tt><em class="property"> = 39</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.USER_REQUESTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.CARRIER">
+<tt class="descname">CARRIER</tt><em class="property"> = 40</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.CARRIER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.CONNECTION_ASSUMED">
+<tt class="descname">CONNECTION_ASSUMED</tt><em class="property"> = 41</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.CONNECTION_ASSUMED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SUPPLICANT_AVAILABLE">
+<tt class="descname">SUPPLICANT_AVAILABLE</tt><em class="property"> = 42</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SUPPLICANT_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_NOT_FOUND">
+<tt class="descname">MODEM_NOT_FOUND</tt><em class="property"> = 43</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_NOT_FOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.BT_FAILED">
+<tt class="descname">BT_FAILED</tt><em class="property"> = 44</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.BT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_SIM_NOT_INSERTED">
+<tt class="descname">GSM_SIM_NOT_INSERTED</tt><em class="property"> = 45</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_SIM_NOT_INSERTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_SIM_PIN_REQUIRED">
+<tt class="descname">GSM_SIM_PIN_REQUIRED</tt><em class="property"> = 46</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_SIM_PIN_REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_SIM_PUK_REQUIRED">
+<tt class="descname">GSM_SIM_PUK_REQUIRED</tt><em class="property"> = 47</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_SIM_PUK_REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.GSM_SIM_WRONG">
+<tt class="descname">GSM_SIM_WRONG</tt><em class="property"> = 48</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.GSM_SIM_WRONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.INFINIBAND_MODE">
+<tt class="descname">INFINIBAND_MODE</tt><em class="property"> = 49</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.INFINIBAND_MODE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.DEPENDENCY_FAILED">
+<tt class="descname">DEPENDENCY_FAILED</tt><em class="property"> = 50</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.DEPENDENCY_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.BR2684_FAILED">
+<tt class="descname">BR2684_FAILED</tt><em class="property"> = 51</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.BR2684_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.MODEM_MANAGER_UNAVAILABLE">
+<tt class="descname">MODEM_MANAGER_UNAVAILABLE</tt><em class="property"> = 52</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.MODEM_MANAGER_UNAVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SSID_NOT_FOUND">
+<tt class="descname">SSID_NOT_FOUND</tt><em class="property"> = 53</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SSID_NOT_FOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.SECONDARY_CONNECTION_FAILED">
+<tt class="descname">SECONDARY_CONNECTION_FAILED</tt><em class="property"> = 54</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.SECONDARY_CONNECTION_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceStateReason.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 65535</em><a class="headerlink" href="#NetworkManager.DeviceStateReason.LAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="devicetype">
+<h2>DeviceType<a class="headerlink" href="#devicetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.DeviceType">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">DeviceType</tt><a class="headerlink" href="#NetworkManager.DeviceType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.DeviceType" title="NetworkManager.DeviceType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.DeviceType</span></tt></a> values indicate the type of hardware represented by
+an #NMDevice.</p>
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.DeviceType.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.ETHERNET">
+<tt class="descname">ETHERNET</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.DeviceType.ETHERNET" title="Permalink to this definition">¶</a></dt>
+<dd><p>a wired ethernet device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.WIFI">
+<tt class="descname">WIFI</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.DeviceType.WIFI" title="Permalink to this definition">¶</a></dt>
+<dd><p>an 802.11 WiFi device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.UNUSED1">
+<tt class="descname">UNUSED1</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.DeviceType.UNUSED1" title="Permalink to this definition">¶</a></dt>
+<dd><p>not used</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.UNUSED2">
+<tt class="descname">UNUSED2</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.DeviceType.UNUSED2" title="Permalink to this definition">¶</a></dt>
+<dd><p>not used</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.BT">
+<tt class="descname">BT</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.DeviceType.BT" title="Permalink to this definition">¶</a></dt>
+<dd><p>a Bluetooth device supporting PAN or DUN access protocols</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.OLPC_MESH">
+<tt class="descname">OLPC_MESH</tt><em class="property"> = 6</em><a class="headerlink" href="#NetworkManager.DeviceType.OLPC_MESH" title="Permalink to this definition">¶</a></dt>
+<dd><p>an OLPC XO mesh networking device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.WIMAX">
+<tt class="descname">WIMAX</tt><em class="property"> = 7</em><a class="headerlink" href="#NetworkManager.DeviceType.WIMAX" title="Permalink to this definition">¶</a></dt>
+<dd><p>an 802.16e Mobile WiMAX broadband device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.MODEM">
+<tt class="descname">MODEM</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.DeviceType.MODEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>a modem supporting analog telephone, CDMA/EVDO, GSM/UMTS, or LTE network access protocols</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.INFINIBAND">
+<tt class="descname">INFINIBAND</tt><em class="property"> = 9</em><a class="headerlink" href="#NetworkManager.DeviceType.INFINIBAND" title="Permalink to this definition">¶</a></dt>
+<dd><p>an IP-over-InfiniBand device</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.BOND">
+<tt class="descname">BOND</tt><em class="property"> = 10</em><a class="headerlink" href="#NetworkManager.DeviceType.BOND" title="Permalink to this definition">¶</a></dt>
+<dd><p>a bond master interface</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.VLAN">
+<tt class="descname">VLAN</tt><em class="property"> = 11</em><a class="headerlink" href="#NetworkManager.DeviceType.VLAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>an 802.1Q VLAN interface</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.ADSL">
+<tt class="descname">ADSL</tt><em class="property"> = 12</em><a class="headerlink" href="#NetworkManager.DeviceType.ADSL" title="Permalink to this definition">¶</a></dt>
+<dd><p>ADSL modem</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceType.BRIDGE">
+<tt class="descname">BRIDGE</tt><em class="property"> = 13</em><a class="headerlink" href="#NetworkManager.DeviceType.BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>a bridge master interface</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="devicewificapabilities">
+<h2>DeviceWifiCapabilities<a class="headerlink" href="#devicewificapabilities" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.DeviceWifiCapabilities">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">DeviceWifiCapabilities</tt><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>802.11 specific device encryption and authentication capabilities.</p>
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>device has no encryption/authentication capabilities</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.CIPHER_WEP40">
+<tt class="descname">CIPHER_WEP40</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.CIPHER_WEP40" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports 40/64-bit WEP encryption</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.CIPHER_WEP104">
+<tt class="descname">CIPHER_WEP104</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.CIPHER_WEP104" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports 104/128-bit WEP encryption</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.CIPHER_TKIP">
+<tt class="descname">CIPHER_TKIP</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.CIPHER_TKIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports TKIP encryption</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.CIPHER_CCMP">
+<tt class="descname">CIPHER_CCMP</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.CIPHER_CCMP" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports AES/CCMP encryption</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.WPA">
+<tt class="descname">WPA</tt><em class="property"> = 16</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.WPA" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports WPA1 authentication</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.RSN">
+<tt class="descname">RSN</tt><em class="property"> = 32</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.RSN" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports WPA2/RSN authentication</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.AP">
+<tt class="descname">AP</tt><em class="property"> = 64</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.AP" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports Access Point mode</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.DeviceWifiCapabilities.ADHOC">
+<tt class="descname">ADHOC</tt><em class="property"> = 128</em><a class="headerlink" href="#NetworkManager.DeviceWifiCapabilities.ADHOC" title="Permalink to this definition">¶</a></dt>
+<dd><p>device supports Ad-Hoc mode</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="setting8021xckformat">
+<h2>Setting8021xCKFormat<a class="headerlink" href="#setting8021xckformat" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.Setting8021xCKFormat">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">Setting8021xCKFormat</tt><a class="headerlink" href="#NetworkManager.Setting8021xCKFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.Setting8021xCKFormat" title="NetworkManager.Setting8021xCKFormat"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting8021xCKFormat</span></tt></a> values indicate the general type of a certificate
+or private key</p>
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xCKFormat.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.Setting8021xCKFormat.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown file format</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xCKFormat.X509">
+<tt class="descname">X509</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.Setting8021xCKFormat.X509" title="Permalink to this definition">¶</a></dt>
+<dd><p>file contains an X.509 format certificate</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xCKFormat.RAW_KEY">
+<tt class="descname">RAW_KEY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.Setting8021xCKFormat.RAW_KEY" title="Permalink to this definition">¶</a></dt>
+<dd><p>file contains an old-style OpenSSL PEM or DER private key</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xCKFormat.PKCS12">
+<tt class="descname">PKCS12</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.Setting8021xCKFormat.PKCS12" title="Permalink to this definition">¶</a></dt>
+<dd><p>file contains a PKCS#12 certificate and private key</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="setting8021xckscheme">
+<h2>Setting8021xCKScheme<a class="headerlink" href="#setting8021xckscheme" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.Setting8021xCKScheme">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">Setting8021xCKScheme</tt><a class="headerlink" href="#NetworkManager.Setting8021xCKScheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.Setting8021xCKScheme" title="NetworkManager.Setting8021xCKScheme"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting8021xCKScheme</span></tt></a> values indicate how a certificate or private key is
+stored in the setting properties, either as a blob of the item&#8217;s data, or as
+a path to a certificate or private key file on the filesystem</p>
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xCKScheme.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.Setting8021xCKScheme.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown certificate or private key scheme</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xCKScheme.BLOB">
+<tt class="descname">BLOB</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.Setting8021xCKScheme.BLOB" title="Permalink to this definition">¶</a></dt>
+<dd><p>certificate or key is stored as the raw item data</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xCKScheme.PATH">
+<tt class="descname">PATH</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.Setting8021xCKScheme.PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>certificate or key is stored as a path to a file containing the certificate or key data</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="setting8021xerror">
+<h2>Setting8021xError<a class="headerlink" href="#setting8021xerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.Setting8021xError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">Setting8021xError</tt><a class="headerlink" href="#NetworkManager.Setting8021xError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.Setting8021xError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.Setting8021xError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.Setting8021xError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.Setting8021xError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingadslerror">
+<h2>SettingAdslError<a class="headerlink" href="#settingadslerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingAdslError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingAdslError</tt><a class="headerlink" href="#NetworkManager.SettingAdslError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingAdslError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingAdslError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingAdslError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingAdslError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingAdslError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingAdslError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingbluetootherror">
+<h2>SettingBluetoothError<a class="headerlink" href="#settingbluetootherror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingBluetoothError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingBluetoothError</tt><a class="headerlink" href="#NetworkManager.SettingBluetoothError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingBluetoothError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingBluetoothError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBluetoothError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingBluetoothError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBluetoothError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingBluetoothError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBluetoothError.TYPESETTINGNOTFOUND">
+<tt class="descname">TYPESETTINGNOTFOUND</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingBluetoothError.TYPESETTINGNOTFOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingbonderror">
+<h2>SettingBondError<a class="headerlink" href="#settingbonderror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingBondError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingBondError</tt><a class="headerlink" href="#NetworkManager.SettingBondError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingBondError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingBondError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBondError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingBondError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBondError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingBondError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBondError.INVALIDOPTION">
+<tt class="descname">INVALIDOPTION</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingBondError.INVALIDOPTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBondError.MISSINGOPTION">
+<tt class="descname">MISSINGOPTION</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingBondError.MISSINGOPTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingbridgeerror">
+<h2>SettingBridgeError<a class="headerlink" href="#settingbridgeerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingBridgeError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingBridgeError</tt><a class="headerlink" href="#NetworkManager.SettingBridgeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingBridgeError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingBridgeError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBridgeError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingBridgeError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBridgeError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingBridgeError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingbridgeporterror">
+<h2>SettingBridgePortError<a class="headerlink" href="#settingbridgeporterror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingBridgePortError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingBridgePortError</tt><a class="headerlink" href="#NetworkManager.SettingBridgePortError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingBridgePortError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingBridgePortError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBridgePortError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingBridgePortError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingBridgePortError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingBridgePortError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingcdmaerror">
+<h2>SettingCdmaError<a class="headerlink" href="#settingcdmaerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingCdmaError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingCdmaError</tt><a class="headerlink" href="#NetworkManager.SettingCdmaError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingCdmaError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingCdmaError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCdmaError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingCdmaError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCdmaError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingCdmaError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCdmaError.MISSINGSERIALSETTING">
+<tt class="descname">MISSINGSERIALSETTING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingCdmaError.MISSINGSERIALSETTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingcompareflags">
+<h2>SettingCompareFlags<a class="headerlink" href="#settingcompareflags" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingCompareFlags">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingCompareFlags</tt><a class="headerlink" href="#NetworkManager.SettingCompareFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>These flags modify the comparison behavior when comparing two settings or
+two connections.</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingCompareFlags.EXACT">
+<tt class="descname">EXACT</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingCompareFlags.EXACT" title="Permalink to this definition">¶</a></dt>
+<dd><p>match all properties exactly</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCompareFlags.FUZZY">
+<tt class="descname">FUZZY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingCompareFlags.FUZZY" title="Permalink to this definition">¶</a></dt>
+<dd><p>match only important attributes, like SSID, type, security settings, etc.  Does not match, for example, connection ID or UUID.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCompareFlags.IGNORE_ID">
+<tt class="descname">IGNORE_ID</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingCompareFlags.IGNORE_ID" title="Permalink to this definition">¶</a></dt>
+<dd><p>ignore the connection&#8217;s ID</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCompareFlags.IGNORE_SECRETS">
+<tt class="descname">IGNORE_SECRETS</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingCompareFlags.IGNORE_SECRETS" title="Permalink to this definition">¶</a></dt>
+<dd><p>ignore all secrets</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCompareFlags.IGNORE_AGENT_OWNED_SECRETS">
+<tt class="descname">IGNORE_AGENT_OWNED_SECRETS</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.SettingCompareFlags.IGNORE_AGENT_OWNED_SECRETS" title="Permalink to this definition">¶</a></dt>
+<dd><p>ignore secrets for which the secret&#8217;s flags indicate the secret is owned by a user secret agent (ie, the secret&#8217;s flag includes <a class="reference internal" href="#NetworkManager.SettingSecretFlags.AGENT_OWNED" title="NetworkManager.SettingSecretFlags.AGENT_OWNED"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags.AGENT_OWNED</span></tt></a> )</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingCompareFlags.IGNORE_NOT_SAVED_SECRETS">
+<tt class="descname">IGNORE_NOT_SAVED_SECRETS</tt><em class="property"> = 16</em><a class="headerlink" href="#NetworkManager.SettingCompareFlags.IGNORE_NOT_SAVED_SECRETS" title="Permalink to this definition">¶</a></dt>
+<dd><p>ignore secrets for which the secret&#8217;s flags indicate the secret should not be saved to persistent storage (ie, the secret&#8217;s flag includes <a class="reference internal" href="#NetworkManager.SettingSecretFlags.NOT_SAVED" title="NetworkManager.SettingSecretFlags.NOT_SAVED"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags.NOT_SAVED</span></tt></a> )</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingconnectionerror">
+<h2>SettingConnectionError<a class="headerlink" href="#settingconnectionerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingConnectionError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingConnectionError</tt><a class="headerlink" href="#NetworkManager.SettingConnectionError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Describes errors that may result from operations involving a
+<a class="reference internal" href="classes/SettingConnection.html#NetworkManager.SettingConnection" title="NetworkManager.SettingConnection"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingConnection</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingConnectionError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingConnectionError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingConnectionError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingConnectionError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingConnectionError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingConnectionError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingConnectionError.TYPESETTINGNOTFOUND">
+<tt class="descname">TYPESETTINGNOTFOUND</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingConnectionError.TYPESETTINGNOTFOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingConnectionError.IPCONFIGNOTALLOWED">
+<tt class="descname">IPCONFIGNOTALLOWED</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingConnectionError.IPCONFIGNOTALLOWED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingdiffresult">
+<h2>SettingDiffResult<a class="headerlink" href="#settingdiffresult" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingDiffResult">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingDiffResult</tt><a class="headerlink" href="#NetworkManager.SettingDiffResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>These values indicate the result of a setting difference operation.</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingDiffResult.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingDiffResult.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown result</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingDiffResult.IN_A">
+<tt class="descname">IN_A</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingDiffResult.IN_A" title="Permalink to this definition">¶</a></dt>
+<dd><p>the property is present in setting A</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingDiffResult.IN_B">
+<tt class="descname">IN_B</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingDiffResult.IN_B" title="Permalink to this definition">¶</a></dt>
+<dd><p>the property is present in setting B</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingerror">
+<h2>SettingError<a class="headerlink" href="#settingerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingError</tt><a class="headerlink" href="#NetworkManager.SettingError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Describes errors that may result from operations involving a <a class="reference internal" href="classes/Setting.html#NetworkManager.Setting" title="NetworkManager.Setting"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting</span></tt></a>.</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingError.PROPERTYNOTFOUND">
+<tt class="descname">PROPERTYNOTFOUND</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingError.PROPERTYNOTFOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingError.PROPERTYNOTSECRET">
+<tt class="descname">PROPERTYNOTSECRET</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingError.PROPERTYNOTSECRET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingError.PROPERTYTYPEMISMATCH">
+<tt class="descname">PROPERTYTYPEMISMATCH</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingError.PROPERTYTYPEMISMATCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settinggsmerror">
+<h2>SettingGsmError<a class="headerlink" href="#settinggsmerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingGsmError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingGsmError</tt><a class="headerlink" href="#NetworkManager.SettingGsmError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingGsmError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingGsmError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingGsmError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmError.MISSINGSERIALSETTING">
+<tt class="descname">MISSINGSERIALSETTING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingGsmError.MISSINGSERIALSETTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settinggsmnetworkband">
+<h2>SettingGsmNetworkBand<a class="headerlink" href="#settinggsmnetworkband" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingGsmNetworkBand">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingGsmNetworkBand</tt><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.SettingGsmNetworkBand" title="NetworkManager.SettingGsmNetworkBand"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingGsmNetworkBand</span></tt></a> values indicate the allowed frequency bands
+the device may use when connecting to this network.</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown or no band specified</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.ANY">
+<tt class="descname">ANY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.ANY" title="Permalink to this definition">¶</a></dt>
+<dd><p>any band is allowed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.EGSM">
+<tt class="descname">EGSM</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.EGSM" title="Permalink to this definition">¶</a></dt>
+<dd><p>900 MHz original GSM band</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.DCS">
+<tt class="descname">DCS</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.DCS" title="Permalink to this definition">¶</a></dt>
+<dd><p>1800 MHz DCS band</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.PCS">
+<tt class="descname">PCS</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.PCS" title="Permalink to this definition">¶</a></dt>
+<dd><p>US 1900 MHz PCS band</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.G850">
+<tt class="descname">G850</tt><em class="property"> = 16</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.G850" title="Permalink to this definition">¶</a></dt>
+<dd><p>US 850 MHz Cellular band</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U2100">
+<tt class="descname">U2100</tt><em class="property"> = 32</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U2100" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 2100 MHz (Class I)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U1800">
+<tt class="descname">U1800</tt><em class="property"> = 64</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U1800" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 1800 MHz (Class III)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U17IV">
+<tt class="descname">U17IV</tt><em class="property"> = 128</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U17IV" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP AWS 1700/2100 MHz (Class IV)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U800">
+<tt class="descname">U800</tt><em class="property"> = 256</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U800" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 800 MHz (Class VI)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U850">
+<tt class="descname">U850</tt><em class="property"> = 512</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U850" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 850 MHz (Class V)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U900">
+<tt class="descname">U900</tt><em class="property"> = 1024</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U900" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 900 MHz (Class VIII)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U17IX">
+<tt class="descname">U17IX</tt><em class="property"> = 2048</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U17IX" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 1700 MHz (Class IX)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U1900">
+<tt class="descname">U1900</tt><em class="property"> = 4096</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U1900" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 1900 MHz (Class II)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkBand.U2600">
+<tt class="descname">U2600</tt><em class="property"> = 8192</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkBand.U2600" title="Permalink to this definition">¶</a></dt>
+<dd><p>WCDMA 3GPP UMTS 2600 MHz (Class VII, internal)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settinggsmnetworktype">
+<h2>SettingGsmNetworkType<a class="headerlink" href="#settinggsmnetworktype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingGsmNetworkType">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingGsmNetworkType</tt><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.SettingGsmNetworkType" title="NetworkManager.SettingGsmNetworkType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingGsmNetworkType</span></tt></a> values indicate the allowed access technologies
+the device may use when connecting to this network.</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType.4G">
+<tt class="descname">4G</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType.4G" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType.ANY">
+<tt class="descname">ANY</tt><em class="property"> = -1</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType.ANY" title="Permalink to this definition">¶</a></dt>
+<dd><p>any access technology may be used</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType.UMTS_HSPA">
+<tt class="descname">UMTS_HSPA</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType.UMTS_HSPA" title="Permalink to this definition">¶</a></dt>
+<dd><p>only 3G-type (UMTS and HSPA) technologies may be used</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType.GPRS_EDGE">
+<tt class="descname">GPRS_EDGE</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType.GPRS_EDGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>only 2G-type (GPRS and EDGE) technologies may be used</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType.PREFER_UMTS_HSPA">
+<tt class="descname">PREFER_UMTS_HSPA</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType.PREFER_UMTS_HSPA" title="Permalink to this definition">¶</a></dt>
+<dd><p>3G-type technologies are preferred but 2G-type technologies may be used as a fallback</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType.PREFER_GPRS_EDGE">
+<tt class="descname">PREFER_GPRS_EDGE</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType.PREFER_GPRS_EDGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>2G-type technologies are preferred but 3G-type technologies may be used as a fallback</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType.PREFER_4G">
+<tt class="descname">PREFER_4G</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType.PREFER_4G" title="Permalink to this definition">¶</a></dt>
+<dd><p>4G/LTE-type technologies are preferred but 3G/2/-type technologies may be used as a fallback</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingGsmNetworkType._4G">
+<tt class="descname">_4G</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.SettingGsmNetworkType._4G" title="Permalink to this definition">¶</a></dt>
+<dd><p>only 4G/LTE type technologies may be used</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settinghashflags">
+<h2>SettingHashFlags<a class="headerlink" href="#settinghashflags" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingHashFlags">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingHashFlags</tt><a class="headerlink" href="#NetworkManager.SettingHashFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>These flags determine which properties are added to the resulting hash
+when calling <tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting.to_hash</span></tt> ().</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingHashFlags.ALL">
+<tt class="descname">ALL</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingHashFlags.ALL" title="Permalink to this definition">¶</a></dt>
+<dd><p>hash all properties (including secrets)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingHashFlags.NO_SECRETS">
+<tt class="descname">NO_SECRETS</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingHashFlags.NO_SECRETS" title="Permalink to this definition">¶</a></dt>
+<dd><p>do not include secrets</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingHashFlags.ONLY_SECRETS">
+<tt class="descname">ONLY_SECRETS</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingHashFlags.ONLY_SECRETS" title="Permalink to this definition">¶</a></dt>
+<dd><p>only hash secrets</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingip4configerror">
+<h2>SettingIP4ConfigError<a class="headerlink" href="#settingip4configerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingIP4ConfigError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingIP4ConfigError</tt><a class="headerlink" href="#NetworkManager.SettingIP4ConfigError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP4ConfigError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingIP4ConfigError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP4ConfigError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingIP4ConfigError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP4ConfigError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingIP4ConfigError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP4ConfigError.NOTALLOWEDFORMETHOD">
+<tt class="descname">NOTALLOWEDFORMETHOD</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingIP4ConfigError.NOTALLOWEDFORMETHOD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingip6configerror">
+<h2>SettingIP6ConfigError<a class="headerlink" href="#settingip6configerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingIP6ConfigError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingIP6ConfigError</tt><a class="headerlink" href="#NetworkManager.SettingIP6ConfigError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigError.NOTALLOWEDFORMETHOD">
+<tt class="descname">NOTALLOWEDFORMETHOD</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigError.NOTALLOWEDFORMETHOD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingip6configprivacy">
+<h2>SettingIP6ConfigPrivacy<a class="headerlink" href="#settingip6configprivacy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingIP6ConfigPrivacy">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingIP6ConfigPrivacy</tt><a class="headerlink" href="#NetworkManager.SettingIP6ConfigPrivacy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.SettingIP6ConfigPrivacy" title="NetworkManager.SettingIP6ConfigPrivacy"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingIP6ConfigPrivacy</span></tt></a> values indicate if and how IPv6 Privacy
+Extensions are used (RFC4941).</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigPrivacy.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = -1</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigPrivacy.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown or no value specified</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigPrivacy.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigPrivacy.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd><p>IPv6 Privacy Extensions are disabled</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigPrivacy.PREFER_PUBLIC_ADDR">
+<tt class="descname">PREFER_PUBLIC_ADDR</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigPrivacy.PREFER_PUBLIC_ADDR" title="Permalink to this definition">¶</a></dt>
+<dd><p>IPv6 Privacy Extensions are enabled, but public addresses are preferred over temporary addresses</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingIP6ConfigPrivacy.PREFER_TEMP_ADDR">
+<tt class="descname">PREFER_TEMP_ADDR</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingIP6ConfigPrivacy.PREFER_TEMP_ADDR" title="Permalink to this definition">¶</a></dt>
+<dd><p>IPv6 Privacy Extensions are enabled and temporary addresses are preferred over public addresses</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settinginfinibanderror">
+<h2>SettingInfinibandError<a class="headerlink" href="#settinginfinibanderror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingInfinibandError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingInfinibandError</tt><a class="headerlink" href="#NetworkManager.SettingInfinibandError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingInfinibandError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingInfinibandError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingInfinibandError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingInfinibandError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingInfinibandError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingInfinibandError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingolpcmesherror">
+<h2>SettingOlpcMeshError<a class="headerlink" href="#settingolpcmesherror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingOlpcMeshError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingOlpcMeshError</tt><a class="headerlink" href="#NetworkManager.SettingOlpcMeshError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingOlpcMeshError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingOlpcMeshError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingOlpcMeshError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingOlpcMeshError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingOlpcMeshError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingOlpcMeshError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingppperror">
+<h2>SettingPPPError<a class="headerlink" href="#settingppperror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingPPPError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingPPPError</tt><a class="headerlink" href="#NetworkManager.SettingPPPError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingPPPError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingPPPError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingPPPError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPError.REQUIREMPPENOTALLOWED">
+<tt class="descname">REQUIREMPPENOTALLOWED</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingPPPError.REQUIREMPPENOTALLOWED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingpppoeerror">
+<h2>SettingPPPOEError<a class="headerlink" href="#settingpppoeerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingPPPOEError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingPPPOEError</tt><a class="headerlink" href="#NetworkManager.SettingPPPOEError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPOEError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingPPPOEError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPOEError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingPPPOEError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPOEError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingPPPOEError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingPPPOEError.MISSINGPPPSETTING">
+<tt class="descname">MISSINGPPPSETTING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingPPPOEError.MISSINGPPPSETTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingsecretflags">
+<h2>SettingSecretFlags<a class="headerlink" href="#settingsecretflags" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingSecretFlags">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingSecretFlags</tt><a class="headerlink" href="#NetworkManager.SettingSecretFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>These flags indicate specific behavior related to handling of a secret.  Each
+secret has a corresponding set of these flags which indicate how the secret
+is to be stored and/or requested when it is needed.</p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingSecretFlags.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingSecretFlags.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the system is responsible for providing and storing this secret (default)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingSecretFlags.AGENT_OWNED">
+<tt class="descname">AGENT_OWNED</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingSecretFlags.AGENT_OWNED" title="Permalink to this definition">¶</a></dt>
+<dd><p>a user secret agent is responsible for providing and storing this secret; when it is required agents will be asked to retrieve it</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingSecretFlags.NOT_SAVED">
+<tt class="descname">NOT_SAVED</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingSecretFlags.NOT_SAVED" title="Permalink to this definition">¶</a></dt>
+<dd><p>this secret should not be saved, but should be requested from the user each time it is needed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingSecretFlags.NOT_REQUIRED">
+<tt class="descname">NOT_REQUIRED</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingSecretFlags.NOT_REQUIRED" title="Permalink to this definition">¶</a></dt>
+<dd><p>in situations where it cannot be automatically determined that the secret is required (some VPNs and PPP providers dont require all secrets) this flag indicates that the specific secret is not required</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingserialerror">
+<h2>SettingSerialError<a class="headerlink" href="#settingserialerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingSerialError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingSerialError</tt><a class="headerlink" href="#NetworkManager.SettingSerialError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingSerialError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingSerialError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingSerialError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingSerialError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingSerialError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingSerialError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingSerialError.MISSINGPPPSETTING">
+<tt class="descname">MISSINGPPPSETTING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingSerialError.MISSINGPPPSETTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingvlanerror">
+<h2>SettingVlanError<a class="headerlink" href="#settingvlanerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingVlanError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingVlanError</tt><a class="headerlink" href="#NetworkManager.SettingVlanError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingVlanError.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingVlanError.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingVlanError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingVlanError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingVlanError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingVlanError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingVlanError.INVALIDPARENT">
+<tt class="descname">INVALIDPARENT</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingVlanError.INVALIDPARENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingvpnerror">
+<h2>SettingVpnError<a class="headerlink" href="#settingvpnerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingVpnError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingVpnError</tt><a class="headerlink" href="#NetworkManager.SettingVpnError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingVpnError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingVpnError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingVpnError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingVpnError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingVpnError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingVpnError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingwimaxerror">
+<h2>SettingWimaxError<a class="headerlink" href="#settingwimaxerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingWimaxError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingWimaxError</tt><a class="headerlink" href="#NetworkManager.SettingWimaxError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingWimaxError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingWimaxError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWimaxError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingWimaxError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWimaxError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingWimaxError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingwirederror">
+<h2>SettingWiredError<a class="headerlink" href="#settingwirederror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingWiredError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingWiredError</tt><a class="headerlink" href="#NetworkManager.SettingWiredError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingWiredError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingWiredError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWiredError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingWiredError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWiredError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingWiredError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingwirelesserror">
+<h2>SettingWirelessError<a class="headerlink" href="#settingwirelesserror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingWirelessError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingWirelessError</tt><a class="headerlink" href="#NetworkManager.SettingWirelessError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingWirelessError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingWirelessError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingWirelessError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessError.MISSINGSECURITYSETTING">
+<tt class="descname">MISSINGSECURITYSETTING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingWirelessError.MISSINGSECURITYSETTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessError.CHANNELREQUIRESBAND">
+<tt class="descname">CHANNELREQUIRESBAND</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingWirelessError.CHANNELREQUIRESBAND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="settingwirelesssecurityerror">
+<h2>SettingWirelessSecurityError<a class="headerlink" href="#settingwirelesssecurityerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingWirelessSecurityError">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingWirelessSecurityError</tt><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessSecurityError.UNKNOWNERROR">
+<tt class="descname">UNKNOWNERROR</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError.UNKNOWNERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessSecurityError.INVALIDPROPERTY">
+<tt class="descname">INVALIDPROPERTY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError.INVALIDPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessSecurityError.MISSINGPROPERTY">
+<tt class="descname">MISSINGPROPERTY</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError.MISSINGPROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessSecurityError.MISSING8021XSETTING">
+<tt class="descname">MISSING8021XSETTING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError.MISSING8021XSETTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessSecurityError.LEAPREQUIRES8021X">
+<tt class="descname">LEAPREQUIRES8021X</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError.LEAPREQUIRES8021X" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessSecurityError.LEAPREQUIRESUSERNAME">
+<tt class="descname">LEAPREQUIRESUSERNAME</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError.LEAPREQUIRESUSERNAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.SettingWirelessSecurityError.SHAREDKEYREQUIRESWEP">
+<tt class="descname">SHAREDKEYREQUIRESWEP</tt><em class="property"> = 6</em><a class="headerlink" href="#NetworkManager.SettingWirelessSecurityError.SHAREDKEYREQUIRESWEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="state">
+<h2>State<a class="headerlink" href="#state" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.State">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">State</tt><a class="headerlink" href="#NetworkManager.State" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.State" title="NetworkManager.State"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.State</span></tt></a> values indicate the current overall networking state.</p>
+<dl class="attribute">
+<dt id="NetworkManager.State.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.State.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>networking state is unknown</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.State.ASLEEP">
+<tt class="descname">ASLEEP</tt><em class="property"> = 10</em><a class="headerlink" href="#NetworkManager.State.ASLEEP" title="Permalink to this definition">¶</a></dt>
+<dd><p>networking is not enabled</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.State.DISCONNECTED">
+<tt class="descname">DISCONNECTED</tt><em class="property"> = 20</em><a class="headerlink" href="#NetworkManager.State.DISCONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>there is no active network connection</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.State.DISCONNECTING">
+<tt class="descname">DISCONNECTING</tt><em class="property"> = 30</em><a class="headerlink" href="#NetworkManager.State.DISCONNECTING" title="Permalink to this definition">¶</a></dt>
+<dd><p>network connections are being cleaned up</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.State.CONNECTING">
+<tt class="descname">CONNECTING</tt><em class="property"> = 40</em><a class="headerlink" href="#NetworkManager.State.CONNECTING" title="Permalink to this definition">¶</a></dt>
+<dd><p>a network connection is being started</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.State.CONNECTED_LOCAL">
+<tt class="descname">CONNECTED_LOCAL</tt><em class="property"> = 50</em><a class="headerlink" href="#NetworkManager.State.CONNECTED_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>there is only local IPv4 and/or IPv6 connectivity</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.State.CONNECTED_SITE">
+<tt class="descname">CONNECTED_SITE</tt><em class="property"> = 60</em><a class="headerlink" href="#NetworkManager.State.CONNECTED_SITE" title="Permalink to this definition">¶</a></dt>
+<dd><p>there is only site-wide IPv4 and/or IPv6 connectivity</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.State.CONNECTED_GLOBAL">
+<tt class="descname">CONNECTED_GLOBAL</tt><em class="property"> = 70</em><a class="headerlink" href="#NetworkManager.State.CONNECTED_GLOBAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>there is global IPv4 and/or IPv6 Internet connectivity</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="utilssecuritytype">
+<h2>UtilsSecurityType<a class="headerlink" href="#utilssecuritytype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.UtilsSecurityType">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">UtilsSecurityType</tt><a class="headerlink" href="#NetworkManager.UtilsSecurityType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Describes generic security mechanisms that 802.11 access points may offer.
+Used with <a class="reference internal" href="functions.html#NetworkManager.utils_security_valid" title="NetworkManager.utils_security_valid"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.utils_security_valid</span></tt></a> () for checking whether a given access
+point is compatible with a network device.</p>
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown or invalid security, placeholder and not used</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>unencrypted and open</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.STATIC_WEP">
+<tt class="descname">STATIC_WEP</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.STATIC_WEP" title="Permalink to this definition">¶</a></dt>
+<dd><p>static WEP keys are used for encryption</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.LEAP">
+<tt class="descname">LEAP</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.LEAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cisco LEAP is used for authentication and for generating the dynamic WEP keys automatically</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.DYNAMIC_WEP">
+<tt class="descname">DYNAMIC_WEP</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.DYNAMIC_WEP" title="Permalink to this definition">¶</a></dt>
+<dd><p>standard 802.1x is used for authentication and generating the dynamic WEP keys automatically</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.WPA_PSK">
+<tt class="descname">WPA_PSK</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.WPA_PSK" title="Permalink to this definition">¶</a></dt>
+<dd><p>WPA1 is used with Pre-Shared Keys (PSK)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.WPA_ENTERPRISE">
+<tt class="descname">WPA_ENTERPRISE</tt><em class="property"> = 6</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.WPA_ENTERPRISE" title="Permalink to this definition">¶</a></dt>
+<dd><p>WPA1 is used with 802.1x authentication</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.WPA2_PSK">
+<tt class="descname">WPA2_PSK</tt><em class="property"> = 7</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.WPA2_PSK" title="Permalink to this definition">¶</a></dt>
+<dd><p>WPA2/RSN is used with Pre-Shared Keys (PSK)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.UtilsSecurityType.WPA2_ENTERPRISE">
+<tt class="descname">WPA2_ENTERPRISE</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.UtilsSecurityType.WPA2_ENTERPRISE" title="Permalink to this definition">¶</a></dt>
+<dd><p>WPA2 is used with 802.1x authentication</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vpnconnectionstate">
+<h2>VPNConnectionState<a class="headerlink" href="#vpnconnectionstate" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.VPNConnectionState">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">VPNConnectionState</tt><a class="headerlink" href="#NetworkManager.VPNConnectionState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.PREPARE">
+<tt class="descname">PREPARE</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.PREPARE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.NEED_AUTH">
+<tt class="descname">NEED_AUTH</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.NEED_AUTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.CONNECT">
+<tt class="descname">CONNECT</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.CONNECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.IP_CONFIG_GET">
+<tt class="descname">IP_CONFIG_GET</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.IP_CONFIG_GET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.ACTIVATED">
+<tt class="descname">ACTIVATED</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.ACTIVATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.FAILED">
+<tt class="descname">FAILED</tt><em class="property"> = 6</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionState.DISCONNECTED">
+<tt class="descname">DISCONNECTED</tt><em class="property"> = 7</em><a class="headerlink" href="#NetworkManager.VPNConnectionState.DISCONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vpnconnectionstatereason">
+<h2>VPNConnectionStateReason<a class="headerlink" href="#vpnconnectionstatereason" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.VPNConnectionStateReason">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">VPNConnectionStateReason</tt><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.USER_DISCONNECTED">
+<tt class="descname">USER_DISCONNECTED</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.USER_DISCONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.DEVICE_DISCONNECTED">
+<tt class="descname">DEVICE_DISCONNECTED</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.DEVICE_DISCONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.SERVICE_STOPPED">
+<tt class="descname">SERVICE_STOPPED</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.SERVICE_STOPPED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.IP_CONFIG_INVALID">
+<tt class="descname">IP_CONFIG_INVALID</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.IP_CONFIG_INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.CONNECT_TIMEOUT">
+<tt class="descname">CONNECT_TIMEOUT</tt><em class="property"> = 6</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.CONNECT_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.SERVICE_START_TIMEOUT">
+<tt class="descname">SERVICE_START_TIMEOUT</tt><em class="property"> = 7</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.SERVICE_START_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.SERVICE_START_FAILED">
+<tt class="descname">SERVICE_START_FAILED</tt><em class="property"> = 8</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.SERVICE_START_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.NO_SECRETS">
+<tt class="descname">NO_SECRETS</tt><em class="property"> = 9</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.NO_SECRETS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.LOGIN_FAILED">
+<tt class="descname">LOGIN_FAILED</tt><em class="property"> = 10</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.LOGIN_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNConnectionStateReason.CONNECTION_REMOVED">
+<tt class="descname">CONNECTION_REMOVED</tt><em class="property"> = 11</em><a class="headerlink" href="#NetworkManager.VPNConnectionStateReason.CONNECTION_REMOVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vpnpluginfailure">
+<h2>VPNPluginFailure<a class="headerlink" href="#vpnpluginfailure" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.VPNPluginFailure">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">VPNPluginFailure</tt><a class="headerlink" href="#NetworkManager.VPNPluginFailure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.VPNPluginFailure.LOGIN_FAILED">
+<tt class="descname">LOGIN_FAILED</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.VPNPluginFailure.LOGIN_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNPluginFailure.CONNECT_FAILED">
+<tt class="descname">CONNECT_FAILED</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.VPNPluginFailure.CONNECT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNPluginFailure.BAD_IP_CONFIG">
+<tt class="descname">BAD_IP_CONFIG</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.VPNPluginFailure.BAD_IP_CONFIG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vpnservicestate">
+<h2>VPNServiceState<a class="headerlink" href="#vpnservicestate" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.VPNServiceState">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">VPNServiceState</tt><a class="headerlink" href="#NetworkManager.VPNServiceState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="NetworkManager.VPNServiceState.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.VPNServiceState.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNServiceState.INIT">
+<tt class="descname">INIT</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.VPNServiceState.INIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNServiceState.SHUTDOWN">
+<tt class="descname">SHUTDOWN</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.VPNServiceState.SHUTDOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNServiceState.STARTING">
+<tt class="descname">STARTING</tt><em class="property"> = 3</em><a class="headerlink" href="#NetworkManager.VPNServiceState.STARTING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNServiceState.STARTED">
+<tt class="descname">STARTED</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.VPNServiceState.STARTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNServiceState.STOPPING">
+<tt class="descname">STOPPING</tt><em class="property"> = 5</em><a class="headerlink" href="#NetworkManager.VPNServiceState.STOPPING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VPNServiceState.STOPPED">
+<tt class="descname">STOPPED</tt><em class="property"> = 6</em><a class="headerlink" href="#NetworkManager.VPNServiceState.STOPPED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vlanflags">
+<h2>VlanFlags<a class="headerlink" href="#vlanflags" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.VlanFlags">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">VlanFlags</tt><a class="headerlink" href="#NetworkManager.VlanFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p><a class="reference internal" href="#NetworkManager.VlanFlags" title="NetworkManager.VlanFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.VlanFlags</span></tt></a> values control the behavior of the VLAN interface.</p>
+<dl class="attribute">
+<dt id="NetworkManager.VlanFlags.REORDER_HEADERS">
+<tt class="descname">REORDER_HEADERS</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.VlanFlags.REORDER_HEADERS" title="Permalink to this definition">¶</a></dt>
+<dd><p>indicates that this interface should reorder outgoing packet headers to look more like a non-VLAN ethernet interface</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VlanFlags.GVRP">
+<tt class="descname">GVRP</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.VlanFlags.GVRP" title="Permalink to this definition">¶</a></dt>
+<dd><p>indicates that this interface should use GVRP to register itself with it&#8217;s switch</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VlanFlags.LOOSE_BINDING">
+<tt class="descname">LOOSE_BINDING</tt><em class="property"> = 4</em><a class="headerlink" href="#NetworkManager.VlanFlags.LOOSE_BINDING" title="Permalink to this definition">¶</a></dt>
+<dd><p>indicates that this interface&#8217;s operating state is tied to the underlying network interface but other details (like routing) are not.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vlanprioritymap">
+<h2>VlanPriorityMap<a class="headerlink" href="#vlanprioritymap" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.VlanPriorityMap">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">VlanPriorityMap</tt><a class="headerlink" href="#NetworkManager.VlanPriorityMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>A selector for traffic priority maps; these map Linux SKB priorities
+to 802.1p priorities used in VLANs.</p>
+<dl class="attribute">
+<dt id="NetworkManager.VlanPriorityMap.INGRESS_MAP">
+<tt class="descname">INGRESS_MAP</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.VlanPriorityMap.INGRESS_MAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>map for incoming data</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.VlanPriorityMap.EGRESS_MAP">
+<tt class="descname">EGRESS_MAP</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.VlanPriorityMap.EGRESS_MAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>map for outgoing data</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="wepkeytype">
+<h2>WepKeyType<a class="headerlink" href="#wepkeytype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.WepKeyType">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">WepKeyType</tt><a class="headerlink" href="#NetworkManager.WepKeyType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The <a class="reference internal" href="#NetworkManager.WepKeyType" title="NetworkManager.WepKeyType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.WepKeyType</span></tt></a> values specify how any WEP keys present in the setting
+are intepreted.  There are no standards governing how to hash the various WEP
+key/passphrase formats into the actual WEP key.  Unfortunately some WEP keys
+can be interpreted in multiple ways, requring the setting to specify how to
+interpret the any WEP keys.  For example, the key &#8220;732f2d712e4a394a375d366931&#8221;
+is both a valid Hexadecimal WEP key and a WEP passphrase.  Further, many
+ASCII keys are also valid WEP passphrases, but since passphrases and ASCII
+keys are hashed differently to determine the actual WEP key the type must be
+specified.</p>
+<dl class="attribute">
+<dt id="NetworkManager.WepKeyType.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 0</em><a class="headerlink" href="#NetworkManager.WepKeyType.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown WEP key type</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.WepKeyType.KEY">
+<tt class="descname">KEY</tt><em class="property"> = 1</em><a class="headerlink" href="#NetworkManager.WepKeyType.KEY" title="Permalink to this definition">¶</a></dt>
+<dd><p>indicates a hexadecimal or ASCII formatted WEP key. Hex keys are either 10 or 26 hexadecimal characters (ie &#8220;5f782f2f5f&#8221; or &#8220;732f2d712e4a394a375d366931&#8221;), while ASCII keys are either 5 or 13 ASCII characters (ie &#8220;abcde&#8221; or &#8220;blahblah99$*1&#8221;).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.WepKeyType.LAST">
+<tt class="descname">LAST</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.WepKeyType.LAST" title="Permalink to this definition">¶</a></dt>
+<dd><p>placeholder value for bounds-checking</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="NetworkManager.WepKeyType.PASSPHRASE">
+<tt class="descname">PASSPHRASE</tt><em class="property"> = 2</em><a class="headerlink" href="#NetworkManager.WepKeyType.PASSPHRASE" title="Permalink to this definition">¶</a></dt>
+<dd><p>indicates a WEP passphrase (ex &#8220;I bought a duck on my way back from the market 235Q&amp;^%^*%&#8221;) instead of a hexadecimal or ASCII key.  Passphrases are between 8 and 64 characters inclusive and are hashed the actual WEP key using the MD5 hash algorithm.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="constants.html" class="btn btn-neutral float-right" title="Constants"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="structs/IP6Route.html" class="btn btn-neutral" title="NetworkManager.IP6Route"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

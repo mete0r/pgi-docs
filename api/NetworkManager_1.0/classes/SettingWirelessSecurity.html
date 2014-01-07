@@ -1,0 +1,980 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    NetworkManager.SettingWirelessSecurity -
+    
+      Classes -
+    
+      NetworkManager 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Structures" href="../structs/index.html"/>
+        <link rel="prev" title="NetworkManager.SettingWireless" href="SettingWireless.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NetworkManager 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">NetworkManager.SettingWirelessSecurity</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">NetworkManager 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">NetworkManager.SettingWirelessSecurity</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/NetworkManager_1.0/classes/SettingWirelessSecurity" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="networkmanager-settingwirelesssecurity">
+<h1>NetworkManager.SettingWirelessSecurity<a class="headerlink" href="#networkmanager-settingwirelesssecurity" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-c8f1b4f9a2b5ec8bffcb6132cdd530b736517dde.png" alt="Inheritance diagram of NetworkManager.SettingWirelessSecurity" usemap="#inheritancef8d0f25c27" class="inheritance"/>
+<map id="inheritancef8d0f25c27" name="inheritancef8d0f25c27">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="68,5,164,29"/>
+<area shape="rect" id="node2" href="Setting.html#NetworkManager.Setting" title="NetworkManager.Setting" alt="" coords="45,77,187,101"/>
+<area shape="rect" id="node4" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity" alt="" coords="5,149,227,173"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.new" title="NetworkManager.SettingWirelessSecurity.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.add_group" title="NetworkManager.SettingWirelessSecurity.add_group"><tt class="xref py py-obj docutils literal"><span class="pre">add_group</span></tt></a>(group)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.add_pairwise" title="NetworkManager.SettingWirelessSecurity.add_pairwise"><tt class="xref py py-obj docutils literal"><span class="pre">add_pairwise</span></tt></a>(pairwise)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.add_proto" title="NetworkManager.SettingWirelessSecurity.add_proto"><tt class="xref py py-obj docutils literal"><span class="pre">add_proto</span></tt></a>(proto)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.clear_groups" title="NetworkManager.SettingWirelessSecurity.clear_groups"><tt class="xref py py-obj docutils literal"><span class="pre">clear_groups</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.clear_pairwise" title="NetworkManager.SettingWirelessSecurity.clear_pairwise"><tt class="xref py py-obj docutils literal"><span class="pre">clear_pairwise</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.clear_protos" title="NetworkManager.SettingWirelessSecurity.clear_protos"><tt class="xref py py-obj docutils literal"><span class="pre">clear_protos</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_auth_alg" title="NetworkManager.SettingWirelessSecurity.get_auth_alg"><tt class="xref py py-obj docutils literal"><span class="pre">get_auth_alg</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_group" title="NetworkManager.SettingWirelessSecurity.get_group"><tt class="xref py py-obj docutils literal"><span class="pre">get_group</span></tt></a>(i)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_key_mgmt" title="NetworkManager.SettingWirelessSecurity.get_key_mgmt"><tt class="xref py py-obj docutils literal"><span class="pre">get_key_mgmt</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_leap_password" title="NetworkManager.SettingWirelessSecurity.get_leap_password"><tt class="xref py py-obj docutils literal"><span class="pre">get_leap_password</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_leap_password_flags" title="NetworkManager.SettingWirelessSecurity.get_leap_password_flags"><tt class="xref py py-obj docutils literal"><span class="pre">get_leap_password_flags</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_leap_username" title="NetworkManager.SettingWirelessSecurity.get_leap_username"><tt class="xref py py-obj docutils literal"><span class="pre">get_leap_username</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_num_groups" title="NetworkManager.SettingWirelessSecurity.get_num_groups"><tt class="xref py py-obj docutils literal"><span class="pre">get_num_groups</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_num_pairwise" title="NetworkManager.SettingWirelessSecurity.get_num_pairwise"><tt class="xref py py-obj docutils literal"><span class="pre">get_num_pairwise</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_num_protos" title="NetworkManager.SettingWirelessSecurity.get_num_protos"><tt class="xref py py-obj docutils literal"><span class="pre">get_num_protos</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_pairwise" title="NetworkManager.SettingWirelessSecurity.get_pairwise"><tt class="xref py py-obj docutils literal"><span class="pre">get_pairwise</span></tt></a>(i)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_proto" title="NetworkManager.SettingWirelessSecurity.get_proto"><tt class="xref py py-obj docutils literal"><span class="pre">get_proto</span></tt></a>(i)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_psk" title="NetworkManager.SettingWirelessSecurity.get_psk"><tt class="xref py py-obj docutils literal"><span class="pre">get_psk</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_psk_flags" title="NetworkManager.SettingWirelessSecurity.get_psk_flags"><tt class="xref py py-obj docutils literal"><span class="pre">get_psk_flags</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_wep_key" title="NetworkManager.SettingWirelessSecurity.get_wep_key"><tt class="xref py py-obj docutils literal"><span class="pre">get_wep_key</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_wep_key_flags" title="NetworkManager.SettingWirelessSecurity.get_wep_key_flags"><tt class="xref py py-obj docutils literal"><span class="pre">get_wep_key_flags</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_wep_key_type" title="NetworkManager.SettingWirelessSecurity.get_wep_key_type"><tt class="xref py py-obj docutils literal"><span class="pre">get_wep_key_type</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.get_wep_tx_keyidx" title="NetworkManager.SettingWirelessSecurity.get_wep_tx_keyidx"><tt class="xref py py-obj docutils literal"><span class="pre">get_wep_tx_keyidx</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.remove_group" title="NetworkManager.SettingWirelessSecurity.remove_group"><tt class="xref py py-obj docutils literal"><span class="pre">remove_group</span></tt></a>(i)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.remove_pairwise" title="NetworkManager.SettingWirelessSecurity.remove_pairwise"><tt class="xref py py-obj docutils literal"><span class="pre">remove_pairwise</span></tt></a>(i)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.remove_proto" title="NetworkManager.SettingWirelessSecurity.remove_proto"><tt class="xref py py-obj docutils literal"><span class="pre">remove_proto</span></tt></a>(i)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#NetworkManager.SettingWirelessSecurity.set_wep_key" title="NetworkManager.SettingWirelessSecurity.set_wep_key"><tt class="xref py py-obj docutils literal"><span class="pre">set_wep_key</span></tt></a>(idx, key)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="networkmanager-settingwirelesssecurity-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="auth-alg">auth-alg</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>When WEP is used (ie, key-mgmt = &#8216;none&#8217; or &#8216;ieee8021x&#8217;) indicate the 802.11 authentication algorithm required by the AP here.  One of &#8216;open&#8217; for Open System, &#8216;shared&#8217; for Shared Key, or &#8216;leap&#8217; for Cisco LEAP.  When using Cisco LEAP (ie, key-mgmt = &#8216;ieee8021x&#8217; and auth-alg = &#8216;leap&#8217;) the &#8216;leap-username&#8217; and &#8216;leap-password&#8217; properties must be specified.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="key-mgmt">key-mgmt</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Key management used for the connection.  One of &#8216;none&#8217; (WEP), &#8216;ieee8021x&#8217; (Dynamic WEP), &#8216;wpa-none&#8217; (WPA-PSK Ad-Hoc), &#8216;wpa-psk&#8217; (infrastructure WPA-PSK), or &#8216;wpa-eap&#8217; (WPA-Enterprise).  This property must be set for any WiFi connection that uses security.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="leap-password">leap-password</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>The login password for legacy LEAP connections (ie, key-mgmt = &#8216;ieee8021x&#8217; and auth-alg = &#8216;leap&#8217;).</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="leap-password-flags">leap-password-flags</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Flags indicating how to handle the LEAP password.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="leap-username">leap-username</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>The login username for legacy LEAP connections (ie, key-mgmt = &#8216;ieee8021x&#8217; and auth-alg = &#8216;leap&#8217;).</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="psk">psk</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Pre-Shared-Key for WPA networks.  If the key is 64-characters long, it must contain only hexadecimal characters and is interpreted as a hexadecimal WPA key.  Otherwise, the key must be between 8 and 63 ASCII characters (as specified in the 802.11i standard) and is interpreted as a WPA passphrase, and is hashed to derive the actual WPA-PSK used when connecting to the WiFi network.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="psk-flags">psk-flags</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Flags indicating how to handle the WPA PSK key.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="wep-key0">wep-key0</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Index 0 WEP key.  This is the WEP key used in most networks.  See the &#8216;wep-key-type&#8217; property for a description of how this key is interpreted.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="wep-key1">wep-key1</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Index 1 WEP key.  This WEP index is not used by most networks.  See the &#8216;wep-key-type&#8217; property for a description of how this key is interpreted.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="wep-key2">wep-key2</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Index 2 WEP key.  This WEP index is not used by most networks.  See the &#8216;wep-key-type&#8217; property for a description of how this key is interpreted.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="wep-key3">wep-key3</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w</td>
+<td>Index 3 WEP key.  This WEP index is not used by most networks.  See the &#8216;wep-key-type&#8217; property for a description of how this key is interpreted.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="wep-key-flags">wep-key-flags</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Flags indicating how to handle the WEP keys.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="wep-key-type">wep-key-type</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>Controls the interpretation of WEP keys.  Allowed values are 1 (interpret WEP keys as hexadecimal or ASCII keys) or 2 (interpret WEP keys as WEP Passphrases).  If set to 1 and the keys are hexadecimal, they must be either 10 or 26 characters in length.  If set to 1 and the keys are ASCII keys, they must be either 5 or 13 characters in length.  If set to 2, the passphrase is hashed using  the de-facto MD5 method to derive the actual WEP key.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="wep-tx-keyidx">wep-tx-keyidx</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w</td>
+<td>When static WEP is used (ie, key-mgmt = &#8216;none&#8217;) and a non-default WEP key index is used by the AP, put that WEP key index here.  Valid values are 0 (default key) through 3.  Note that some consumer access points (like the Linksys WRT54G) number the keys 1 - 4.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="networkmanager-settingwirelesssecurity-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>parent</td>
+<td><a class="reference internal" href="Setting.html#NetworkManager.Setting" title="NetworkManager.Setting"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="NetworkManager.SettingWirelessSecurity">
+<em class="property">class </em><tt class="descclassname">NetworkManager.</tt><tt class="descname">SettingWirelessSecurity</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Setting.html#NetworkManager.Setting" title="NetworkManager.Setting"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting</span></tt></a></p>
+<dl class="staticmethod">
+<dt id="NetworkManager.SettingWirelessSecurity.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the new empty <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Setting.html#NetworkManager.Setting" title="NetworkManager.Setting"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.Setting</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> object with default values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.add_group">
+<tt class="descname">add_group</tt><big>(</big><em>group</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.add_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>group</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the encryption algorithm to add, one of &#8220;wep40&#8221;, &#8220;wep104&#8221;, &#8220;tkip&#8221;, or &#8220;ccmp&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the algorithm was added to the list, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if it was already in the list</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds an encryption algorithm to the list of allowed groupwise encryption
+algorithms.  If the list is not empty, then only access points that support
+one or more of the encryption algorithms in the list will be considered
+compatible with this connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.add_pairwise">
+<tt class="descname">add_pairwise</tt><big>(</big><em>pairwise</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.add_pairwise" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pairwise</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the encryption algorithm to add, one of &#8220;wep40&#8221;, &#8220;wep104&#8221;, &#8220;tkip&#8221;, or &#8220;ccmp&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the algorithm was added to the list, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if it was already in the list</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds an encryption algorithm to the list of allowed pairwise encryption
+algorithms.  If the list is not empty, then only access points that support
+one or more of the encryption algorithms in the list will be considered
+compatible with this connection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.add_proto">
+<tt class="descname">add_proto</tt><big>(</big><em>proto</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.add_proto" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>proto</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the protocol to add, one of &#8220;wpa&#8221; or &#8220;rsn&#8221;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the protocol was new and and was added to the allowed protocol list, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if it was already in the list</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds a WiFi security protocol (one of &#8220;wpa&#8221; or &#8220;rsn&#8221;) to the allowed list;
+only protocols in this list will be used when finding and connecting to
+the WiFi network specified by this connection.  For example, if the
+protocol list contains only &#8220;wpa&#8221; but the access point for the SSID specified
+by this connection only supports WPA2/RSN, the connection cannot be used
+with the access point.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.clear_groups">
+<tt class="descname">clear_groups</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.clear_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all algorithms from the allowed list.  If there are no algorithms
+specified then all groupwise encryption algorithms are allowed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.clear_pairwise">
+<tt class="descname">clear_pairwise</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.clear_pairwise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all algorithms from the allowed list.  If there are no algorithms
+specified then all pairwise encryption algorithms are allowed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.clear_protos">
+<tt class="descname">clear_protos</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.clear_protos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all protocols from the allowed list.  If there are no protocols
+specified then all protocols are allowed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_auth_alg">
+<tt class="descname">get_auth_alg</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_auth_alg" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#auth-alg"><em>:auth-alg</em></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_group">
+<tt class="descname">get_group</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>i</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; index of an item in the allowed groupwise encryption algorithm list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the groupwise encryption algorithm at index <cite>i</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the allowed groupwise encryption algorithm from allowed algorithm
+list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_key_mgmt">
+<tt class="descname">get_key_mgmt</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_key_mgmt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#key-mgmt"><em>:key-mgmt</em></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_leap_password">
+<tt class="descname">get_leap_password</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_leap_password" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#leap-password"><em>:leap-password</em></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_leap_password_flags">
+<tt class="descname">get_leap_password_flags</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_leap_password_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../enums.html#NetworkManager.SettingSecretFlags" title="NetworkManager.SettingSecretFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags</span></tt></a> pertaining to the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#leap-password"><em>:leap-password</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#NetworkManager.SettingSecretFlags" title="NetworkManager.SettingSecretFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_leap_username">
+<tt class="descname">get_leap_username</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_leap_username" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#leap-username"><em>:leap-username</em></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_num_groups">
+<tt class="descname">get_num_groups</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_num_groups" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of groupwise encryption algorithms in the allowed list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_num_pairwise">
+<tt class="descname">get_num_pairwise</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_num_pairwise" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of pairwise encryption algorithms in the allowed list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_num_protos">
+<tt class="descname">get_num_protos</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_num_protos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of security protocols this connection allows when connecting to secure WiFi networks</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_pairwise">
+<tt class="descname">get_pairwise</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_pairwise" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>i</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; index of an item in the allowed pairwise encryption algorithm list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the pairwise encryption algorithm at index <cite>i</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the allowed pairwise encryption algorithm from allowed algorithm
+list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_proto">
+<tt class="descname">get_proto</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_proto" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>i</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index into the protocol list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the protocol at index <cite>i</cite></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_psk">
+<tt class="descname">get_psk</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_psk" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#psk"><em>:psk</em></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_psk_flags">
+<tt class="descname">get_psk_flags</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_psk_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../enums.html#NetworkManager.SettingSecretFlags" title="NetworkManager.SettingSecretFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags</span></tt></a> pertaining to the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#psk"><em>:psk</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#NetworkManager.SettingSecretFlags" title="NetworkManager.SettingSecretFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_wep_key">
+<tt class="descname">get_wep_key</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_wep_key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the WEP key index (0..3 inclusive)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the WEP key at the given index</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_wep_key_flags">
+<tt class="descname">get_wep_key_flags</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_wep_key_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="../enums.html#NetworkManager.SettingSecretFlags" title="NetworkManager.SettingSecretFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags</span></tt></a> pertaining to the all WEP keys</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#NetworkManager.SettingSecretFlags" title="NetworkManager.SettingSecretFlags"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingSecretFlags</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_wep_key_type">
+<tt class="descname">get_wep_key_type</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_wep_key_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#wep-key-type"><em>:wep-key-type</em></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#NetworkManager.WepKeyType" title="NetworkManager.WepKeyType"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.WepKeyType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.get_wep_tx_keyidx">
+<tt class="descname">get_wep_tx_keyidx</tt><big>(</big><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.get_wep_tx_keyidx" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#wep-tx-keyidx"><em>:wep-tx-keyidx</em></a> property of the setting</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.remove_group">
+<tt class="descname">remove_group</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.remove_group" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>i</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of an item in the allowed groupwise encryption algorithm list</td>
+</tr>
+</tbody>
+</table>
+<p>Removes an encryption algorithm from the allowed groupwise encryption
+algorithm list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.remove_pairwise">
+<tt class="descname">remove_pairwise</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.remove_pairwise" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>i</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of an item in the allowed pairwise encryption algorithm list</td>
+</tr>
+</tbody>
+</table>
+<p>Removes an encryption algorithm from the allowed pairwise encryption
+algorithm list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.remove_proto">
+<tt class="descname">remove_proto</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.remove_proto" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>i</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; index of the protocol to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Removes a protocol from the allowed protocol list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="NetworkManager.SettingWirelessSecurity.set_wep_key">
+<tt class="descname">set_wep_key</tt><big>(</big><em>idx</em>, <em>key</em><big>)</big><a class="headerlink" href="#NetworkManager.SettingWirelessSecurity.set_wep_key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of the key (0..3 inclusive)</li>
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the WEP key as a string, in either hexadecimal, ASCII, or passphrase form as determiend by the value of the <a class="reference internal" href="#NetworkManager.SettingWirelessSecurity" title="NetworkManager.SettingWirelessSecurity"><tt class="xref py py-class docutils literal"><span class="pre">NetworkManager.SettingWirelessSecurity</span></tt></a> <a class="reference internal" href="#wep-key-type"><em>:wep-key-type</em></a> property.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets a WEP key in the given index.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../structs/index.html" class="btn btn-neutral float-right" title="Structures"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="SettingWireless.html" class="btn btn-neutral" title="NetworkManager.SettingWireless"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

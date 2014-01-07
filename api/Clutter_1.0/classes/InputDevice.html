@@ -1,0 +1,1036 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Clutter.InputDevice -
+    
+      Classes -
+    
+      Clutter 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Clutter.Interval" href="Interval.html"/>
+        <link rel="prev" title="Clutter.Image" href="Image.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Clutter 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Clutter.InputDevice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Clutter 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Clutter.InputDevice</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Clutter_1.0/classes/InputDevice" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="clutter-inputdevice">
+<h1>Clutter.InputDevice<a class="headerlink" href="#clutter-inputdevice" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-5368d6e8cb45095000271e95eab55964aeb4fdb0.png" alt="Inheritance diagram of Clutter.InputDevice" usemap="#inheritance096cc98eff" class="inheritance"/>
+<map id="inheritance096cc98eff" name="inheritance096cc98eff">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="15,5,111,29"/>
+<area shape="rect" id="node2" href="#Clutter.InputDevice" title="Clutter.InputDevice" alt="" coords="5,77,120,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_associated_device" title="Clutter.InputDevice.get_associated_device"><tt class="xref py py-obj docutils literal"><span class="pre">get_associated_device</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_axis" title="Clutter.InputDevice.get_axis"><tt class="xref py py-obj docutils literal"><span class="pre">get_axis</span></tt></a>(index_)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_axis_value" title="Clutter.InputDevice.get_axis_value"><tt class="xref py py-obj docutils literal"><span class="pre">get_axis_value</span></tt></a>(axes, axis)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_coords" title="Clutter.InputDevice.get_coords"><tt class="xref py py-obj docutils literal"><span class="pre">get_coords</span></tt></a>(sequence)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_device_coords" title="Clutter.InputDevice.get_device_coords"><tt class="xref py py-obj docutils literal"><span class="pre">get_device_coords</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_device_id" title="Clutter.InputDevice.get_device_id"><tt class="xref py py-obj docutils literal"><span class="pre">get_device_id</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_device_mode" title="Clutter.InputDevice.get_device_mode"><tt class="xref py py-obj docutils literal"><span class="pre">get_device_mode</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_device_name" title="Clutter.InputDevice.get_device_name"><tt class="xref py py-obj docutils literal"><span class="pre">get_device_name</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_device_type" title="Clutter.InputDevice.get_device_type"><tt class="xref py py-obj docutils literal"><span class="pre">get_device_type</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_enabled" title="Clutter.InputDevice.get_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">get_enabled</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_grabbed_actor" title="Clutter.InputDevice.get_grabbed_actor"><tt class="xref py py-obj docutils literal"><span class="pre">get_grabbed_actor</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_has_cursor" title="Clutter.InputDevice.get_has_cursor"><tt class="xref py py-obj docutils literal"><span class="pre">get_has_cursor</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_key" title="Clutter.InputDevice.get_key"><tt class="xref py py-obj docutils literal"><span class="pre">get_key</span></tt></a>(index_)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_n_axes" title="Clutter.InputDevice.get_n_axes"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_axes</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_n_keys" title="Clutter.InputDevice.get_n_keys"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_keys</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_pointer_actor" title="Clutter.InputDevice.get_pointer_actor"><tt class="xref py py-obj docutils literal"><span class="pre">get_pointer_actor</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_pointer_stage" title="Clutter.InputDevice.get_pointer_stage"><tt class="xref py py-obj docutils literal"><span class="pre">get_pointer_stage</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.get_slave_devices" title="Clutter.InputDevice.get_slave_devices"><tt class="xref py py-obj docutils literal"><span class="pre">get_slave_devices</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.grab" title="Clutter.InputDevice.grab"><tt class="xref py py-obj docutils literal"><span class="pre">grab</span></tt></a>(actor)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.keycode_to_evdev" title="Clutter.InputDevice.keycode_to_evdev"><tt class="xref py py-obj docutils literal"><span class="pre">keycode_to_evdev</span></tt></a>(hardware_keycode, evdev_keycode)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.sequence_get_grabbed_actor" title="Clutter.InputDevice.sequence_get_grabbed_actor"><tt class="xref py py-obj docutils literal"><span class="pre">sequence_get_grabbed_actor</span></tt></a>(sequence)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.sequence_grab" title="Clutter.InputDevice.sequence_grab"><tt class="xref py py-obj docutils literal"><span class="pre">sequence_grab</span></tt></a>(sequence, actor)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.sequence_ungrab" title="Clutter.InputDevice.sequence_ungrab"><tt class="xref py py-obj docutils literal"><span class="pre">sequence_ungrab</span></tt></a>(sequence)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.set_enabled" title="Clutter.InputDevice.set_enabled"><tt class="xref py py-obj docutils literal"><span class="pre">set_enabled</span></tt></a>(enabled)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.set_key" title="Clutter.InputDevice.set_key"><tt class="xref py py-obj docutils literal"><span class="pre">set_key</span></tt></a>(index_, keyval, modifiers)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.ungrab" title="Clutter.InputDevice.ungrab"><tt class="xref py py-obj docutils literal"><span class="pre">ungrab</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Clutter.InputDevice.update_from_event" title="Clutter.InputDevice.update_from_event"><tt class="xref py py-obj docutils literal"><span class="pre">update_from_event</span></tt></a>(event, update_stage)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="clutter-inputdevice-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="backend">backend</span></td>
+<td><a class="reference internal" href="Backend.html#Clutter.Backend" title="Clutter.Backend"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Backend</span></tt></a></td>
+<td>r/w/c</td>
+<td>The backend instance</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="device-manager">device-manager</span></td>
+<td><a class="reference internal" href="DeviceManager.html#Clutter.DeviceManager" title="Clutter.DeviceManager"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.DeviceManager</span></tt></a></td>
+<td>r/w/c</td>
+<td>The device manager instance</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="device-mode">device-mode</span></td>
+<td><a class="reference internal" href="../enums.html#Clutter.InputMode" title="Clutter.InputMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputMode</span></tt></a></td>
+<td>r/w/c</td>
+<td>The mode of the device</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="device-type">device-type</span></td>
+<td><a class="reference internal" href="../enums.html#Clutter.InputDeviceType" title="Clutter.InputDeviceType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDeviceType</span></tt></a></td>
+<td>r/w/c</td>
+<td>The type of the device</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="enabled">enabled</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether the device is enabled</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="has-cursor">has-cursor</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w/c</td>
+<td>Whether the device has a cursor</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="id">id</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r/w/c</td>
+<td>Unique identifier of the device</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="n-axes">n-axes</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt></td>
+<td>r</td>
+<td>The number of axes on the device</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="name">name</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt></td>
+<td>r/w/c</td>
+<td>The name of the device</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="clutter-inputdevice-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Clutter.InputDevice">
+<em class="property">class </em><tt class="descclassname">Clutter.</tt><tt class="descname">InputDevice</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<p>Generic representation of an input device. The actual contents of this
+structure depend on the backend used.</p>
+<dl class="method">
+<dt id="Clutter.InputDevice.get_associated_device">
+<tt class="descname">get_associated_device</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_associated_device" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves a pointer to the <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a> that has been
+associated to <cite>device</cite>.</p>
+<p>If the <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a> <a class="reference internal" href="#device-mode"><em>:device-mode</em></a> property of <cite>device</cite> is
+set to <a class="reference internal" href="../enums.html#Clutter.InputMode.MASTER" title="Clutter.InputMode.MASTER"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputMode.MASTER</span></tt></a>, this function will return
+<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_axis">
+<tt class="descname">get_axis</tt><big>(</big><em>index_</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_axis" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of the axis</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the axis type</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Clutter.InputAxis" title="Clutter.InputAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputAxis</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the type of axis on <cite>device</cite> at the given index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_axis_value">
+<tt class="descname">get_axis_value</tt><big>(</big><em>axes</em>, <em>axis</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_axis_value" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>axes</strong> ([<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>]) &#8211; an array of axes values, typically coming from <a class="reference internal" href="../unions/Event.html#Clutter.Event.get_axes" title="Clutter.Event.get_axes"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Event.get_axes</span></tt></a> ()</li>
+<li><strong>axis</strong> (<a class="reference internal" href="../enums.html#Clutter.InputAxis" title="Clutter.InputAxis"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputAxis</span></tt></a>) &#8211; the axis to extract</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the value was set, and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, value: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Extracts the value of the given <cite>axis</cite> of a <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a> from
+an array of axis values.</p>
+<p>An example of typical usage for this function is:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">ClutterInputDevice</span> <span class="o">*</span><span class="n">device</span> <span class="o">=</span> <span class="n">clutter_event_get_device</span> <span class="p">(</span><span class="n">event</span><span class="p">);</span>
+<span class="n">gdouble</span> <span class="o">*</span><span class="n">axes</span> <span class="o">=</span> <span class="n">clutter_event_get_axes</span> <span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="n">gdouble</span> <span class="n">pressure_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="n">clutter_input_device_get_axis_value</span> <span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">axes</span><span class="p">,</span>
+                                     <span class="n">CLUTTER_INPUT_AXIS_PRESSURE</span><span class="p">,</span>
+                                     <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">pressure_value</span><span class="p">);</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_coords">
+<tt class="descname">get_coords</tt><big>(</big><em>sequence</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_coords" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sequence</strong> (<a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the device is not touch-based</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the device&#8217;s sequence hasn&#8217;t been found, and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, point: <a class="reference internal" href="../structs/Point.html#Clutter.Point" title="Clutter.Point"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Point</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the latest coordinates of a pointer or touch point of
+<cite>device</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_device_coords">
+<tt class="descname">get_device_coords</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_device_coords" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">x: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, y: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the latest coordinates of the pointer of <cite>device</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_device_id">
+<tt class="descname">get_device_id</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_device_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the identifier of the device</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the unique identifier of <cite>device</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_device_mode">
+<tt class="descname">get_device_mode</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_device_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the device mode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Clutter.InputMode" title="Clutter.InputMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputMode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the <a class="reference internal" href="../enums.html#Clutter.InputMode" title="Clutter.InputMode"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputMode</span></tt></a> of <cite>device</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_device_name">
+<tt class="descname">get_device_name</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_device_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the name of the device, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. The returned string is owned by the <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a> and should never be modified or freed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the name of the <cite>device</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_device_type">
+<tt class="descname">get_device_type</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_device_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the type of the device</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Clutter.InputDeviceType" title="Clutter.InputDeviceType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDeviceType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the type of <cite>device</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_enabled">
+<tt class="descname">get_enabled</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device is enabled</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves whether <cite>device</cite> is enabled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_grabbed_actor">
+<tt class="descname">get_grabbed_actor</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_grabbed_actor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves a pointer to the <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> currently grabbing all
+the events coming from <cite>device</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_has_cursor">
+<tt class="descname">get_has_cursor</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_has_cursor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the device has a cursor</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves whether <cite>device</cite> has a pointer that follows the
+device motion.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_key">
+<tt class="descname">get_key</tt><big>(</big><em>index_</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of the key</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if a key was set at the given index</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, keyval: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, modifiers: <a class="reference internal" href="../flags.html#Clutter.ModifierType" title="Clutter.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ModifierType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the key set using <a class="reference internal" href="#Clutter.InputDevice.set_key" title="Clutter.InputDevice.set_key"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice.set_key</span></tt></a> ()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_n_axes">
+<tt class="descname">get_n_axes</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_n_axes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of axes on the device</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the number of axes available on <cite>device</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_n_keys">
+<tt class="descname">get_n_keys</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_n_keys" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of registered keys</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the number of keys registered for <cite>device</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_pointer_actor">
+<tt class="descname">get_pointer_actor</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_pointer_actor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> underneath the pointer of <cite>device</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_pointer_stage">
+<tt class="descname">get_pointer_stage</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_pointer_stage" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the <a class="reference internal" href="Stage.html#Clutter.Stage" title="Clutter.Stage"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Stage</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Stage.html#Clutter.Stage" title="Clutter.Stage"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Stage</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the <a class="reference internal" href="Stage.html#Clutter.Stage" title="Clutter.Stage"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Stage</span></tt></a> underneath the pointer of <cite>device</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.get_slave_devices">
+<tt class="descname">get_slave_devices</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.get_slave_devices" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. The contents of the list are owned by the device. Use <tt class="xref py py-class docutils literal"><span class="pre">GLib.List.free</span></tt> () when done</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the slave devices attached to <cite>device</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.grab">
+<tt class="descname">grab</tt><big>(</big><em>actor</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.grab" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Acquires a grab on <cite>actor</cite> for the given <cite>device</cite>.</p>
+<p>Any event coming from <cite>device</cite> will be delivered to <cite>actor</cite>, bypassing
+the usual event delivery mechanism, until the grab is released by
+calling <a class="reference internal" href="#Clutter.InputDevice.ungrab" title="Clutter.InputDevice.ungrab"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice.ungrab</span></tt></a> ().</p>
+<p>The grab is client-side: even if the windowing system used by the Clutter
+backend has the concept of &#8220;device grabs&#8221;, Clutter will not use them.</p>
+<p>Only <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a> of types <a class="reference internal" href="../enums.html#Clutter.InputDeviceType.POINTER_DEVICE" title="Clutter.InputDeviceType.POINTER_DEVICE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDeviceType.POINTER_DEVICE</span></tt></a> and
+<a class="reference internal" href="../enums.html#Clutter.InputDeviceType.KEYBOARD_DEVICE" title="Clutter.InputDeviceType.KEYBOARD_DEVICE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDeviceType.KEYBOARD_DEVICE</span></tt></a> can hold a grab.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.keycode_to_evdev">
+<tt class="descname">keycode_to_evdev</tt><big>(</big><em>hardware_keycode</em>, <em>evdev_keycode</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.keycode_to_evdev" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hardware_keycode</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The hardware keycode from a <a class="reference internal" href="../structs/KeyEvent.html#Clutter.KeyEvent" title="Clutter.KeyEvent"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.KeyEvent</span></tt></a></li>
+<li><strong>evdev_keycode</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The return location for the evdev keycode</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the conversion succeeded, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Translates a hardware keycode from a <a class="reference internal" href="../structs/KeyEvent.html#Clutter.KeyEvent" title="Clutter.KeyEvent"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.KeyEvent</span></tt></a> to the
+equivalent evdev keycode. Note that depending on the input backend
+used by Clutter this function can fail if there is no obvious
+mapping between the key codes. The hardware keycode can be taken
+from the <a class="reference internal" href="../structs/KeyEvent.html#Clutter.KeyEvent" title="Clutter.KeyEvent"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.KeyEvent</span></tt></a>.hardware_keycode member of <a class="reference internal" href="../structs/KeyEvent.html#Clutter.KeyEvent" title="Clutter.KeyEvent"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.KeyEvent</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.sequence_get_grabbed_actor">
+<tt class="descname">sequence_get_grabbed_actor</tt><big>(</big><em>sequence</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.sequence_get_grabbed_actor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sequence</strong> (<a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves a pointer to the <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a> currently grabbing the
+touch events coming from <cite>device</cite> given the <cite>sequence</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.sequence_grab">
+<tt class="descname">sequence_grab</tt><big>(</big><em>sequence</em>, <em>actor</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.sequence_grab" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sequence</strong> (<a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a></li>
+<li><strong>actor</strong> (<a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a>) &#8211; a <a class="reference internal" href="Actor.html#Clutter.Actor" title="Clutter.Actor"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Actor</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Acquires a grab on <cite>actor</cite> for the given <cite>device</cite> and the given touch
+<cite>sequence</cite>.</p>
+<p>Any touch event coming from <cite>device</cite> and from <cite>sequence</cite> will be
+delivered to <cite>actor</cite>, bypassing the usual event delivery mechanism,
+until the grab is released by calling
+<a class="reference internal" href="#Clutter.InputDevice.sequence_ungrab" title="Clutter.InputDevice.sequence_ungrab"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice.sequence_ungrab</span></tt></a> ().</p>
+<p>The grab is client-side: even if the windowing system used by the Clutter
+backend has the concept of &#8220;device grabs&#8221;, Clutter will not use them.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.sequence_ungrab">
+<tt class="descname">sequence_ungrab</tt><big>(</big><em>sequence</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.sequence_ungrab" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sequence</strong> (<a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/EventSequence.html#Clutter.EventSequence" title="Clutter.EventSequence"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventSequence</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Releases the grab on the <cite>device</cite> for the given <cite>sequence</cite>, if one is
+in place.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.set_enabled">
+<tt class="descname">set_enabled</tt><big>(</big><em>enabled</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.set_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enabled</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> to enable the <cite>device</cite></td>
+</tr>
+</tbody>
+</table>
+<p>Enables or disables a <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a>.</p>
+<p>Only devices with a <a class="reference internal" href="#Clutter.InputDevice" title="Clutter.InputDevice"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice</span></tt></a> <a class="reference internal" href="#device-mode"><em>:device-mode</em></a> property set
+to <a class="reference internal" href="../enums.html#Clutter.InputMode.SLAVE" title="Clutter.InputMode.SLAVE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputMode.SLAVE</span></tt></a> or <a class="reference internal" href="../enums.html#Clutter.InputMode.FLOATING" title="Clutter.InputMode.FLOATING"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputMode.FLOATING</span></tt></a> can
+be disabled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.set_key">
+<tt class="descname">set_key</tt><big>(</big><em>index_</em>, <em>keyval</em>, <em>modifiers</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.set_key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index_</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index of the key</li>
+<li><strong>keyval</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the keyval</li>
+<li><strong>modifiers</strong> (<a class="reference internal" href="../flags.html#Clutter.ModifierType" title="Clutter.ModifierType"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ModifierType</span></tt></a>) &#8211; a bitmask of modifiers</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the keyval and modifiers at the given <cite>index_</cite> for <cite>device</cite>.</p>
+<p>Clutter will use the keyval and modifiers set when filling out
+an event coming from the same input device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.ungrab">
+<tt class="descname">ungrab</tt><big>(</big><big>)</big><a class="headerlink" href="#Clutter.InputDevice.ungrab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Releases the grab on the <cite>device</cite>, if one is in place.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Clutter.InputDevice.update_from_event">
+<tt class="descname">update_from_event</tt><big>(</big><em>event</em>, <em>update_stage</em><big>)</big><a class="headerlink" href="#Clutter.InputDevice.update_from_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>event</strong> (<a class="reference internal" href="../unions/Event.html#Clutter.Event" title="Clutter.Event"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Event</span></tt></a>) &#8211; a <a class="reference internal" href="../unions/Event.html#Clutter.Event" title="Clutter.Event"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Event</span></tt></a></li>
+<li><strong>update_stage</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether to update the <a class="reference internal" href="Stage.html#Clutter.Stage" title="Clutter.Stage"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Stage</span></tt></a> of the <cite>device</cite> using the stage of the event</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Forcibly updates the state of the <cite>device</cite> using a <a class="reference internal" href="../unions/Event.html#Clutter.Event" title="Clutter.Event"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Event</span></tt></a></p>
+<p>This function should never be used by applications: it is meant
+for integration with embedding toolkits, like clutter-gtk</p>
+<p>Embedding toolkits that disable the event collection inside Clutter
+need to use this function to update the state of input devices depending
+on a <a class="reference internal" href="../unions/Event.html#Clutter.Event" title="Clutter.Event"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Event</span></tt></a> that they are going to submit to the event handling code
+in Clutter though <a class="reference internal" href="../functions.html#Clutter.do_event" title="Clutter.do_event"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.do_event</span></tt></a> (). Since the input devices hold the state
+that is going to be used to fill in fields like the <a class="reference internal" href="../structs/ButtonEvent.html#Clutter.ButtonEvent" title="Clutter.ButtonEvent"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.ButtonEvent</span></tt></a>
+click count, or to emit synthesized events like <a class="reference internal" href="../enums.html#Clutter.EventType.ENTER" title="Clutter.EventType.ENTER"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventType.ENTER</span></tt></a> and
+<a class="reference internal" href="../enums.html#Clutter.EventType.LEAVE" title="Clutter.EventType.LEAVE"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.EventType.LEAVE</span></tt></a>, it is necessary for embedding toolkits to also be
+responsible of updating the input device state.</p>
+<p>For instance, this might be the code to translate an embedding toolkit
+native motion notification into a Clutter <a class="reference internal" href="../structs/MotionEvent.html#Clutter.MotionEvent" title="Clutter.MotionEvent"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.MotionEvent</span></tt></a> and ask
+Clutter to process it:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">ClutterEvent</span> <span class="n">c_event</span><span class="p">;</span>
+
+<span class="n">translate_native_event_to_clutter</span> <span class="p">(</span><span class="n">native_event</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">c_event</span><span class="p">);</span>
+
+<span class="n">clutter_do_event</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">c_event</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Before letting <a class="reference internal" href="../functions.html#Clutter.do_event" title="Clutter.do_event"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.do_event</span></tt></a> () process the event, it is necessary to call
+<a class="reference internal" href="#Clutter.InputDevice.update_from_event" title="Clutter.InputDevice.update_from_event"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.InputDevice.update_from_event</span></tt></a> ():</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">ClutterEvent</span> <span class="n">c_event</span><span class="p">;</span>
+<span class="n">ClutterDeviceManager</span> <span class="o">*</span><span class="n">manager</span><span class="p">;</span>
+<span class="n">ClutterInputDevice</span> <span class="o">*</span><span class="n">device</span><span class="p">;</span>
+
+<span class="n">translate_native_event_to_clutter</span> <span class="p">(</span><span class="n">native_event</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">c_event</span><span class="p">);</span>
+
+<span class="o">/&amp;</span><span class="n">ast</span><span class="p">;</span> <span class="n">get</span> <span class="n">the</span> <span class="n">device</span> <span class="n">manager</span> <span class="o">&amp;</span><span class="n">ast</span><span class="p">;</span><span class="o">/</span>
+<span class="n">manager</span> <span class="o">=</span> <span class="n">clutter_device_manager_get_default</span> <span class="p">();</span>
+
+<span class="o">/&amp;</span><span class="n">ast</span><span class="p">;</span> <span class="n">use</span> <span class="n">the</span> <span class="k">default</span> <span class="n">Core</span> <span class="n">Pointer</span> <span class="n">that</span> <span class="n">Clutter</span>
+ <span class="o">&amp;</span><span class="n">ast</span><span class="p">;</span> <span class="n">backends</span> <span class="k">register</span> <span class="n">by</span> <span class="k">default</span>
+ <span class="o">&amp;</span><span class="n">ast</span><span class="p">;</span><span class="o">/</span>
+<span class="n">device</span> <span class="o">=</span> <span class="n">clutter_device_manager_get_core_device</span> <span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="o">%</span><span class="n">CLUTTER_POINTER_DEVICE</span><span class="p">);</span>
+
+<span class="o">/&amp;</span><span class="n">ast</span><span class="p">;</span> <span class="n">update</span> <span class="n">the</span> <span class="n">state</span> <span class="n">of</span> <span class="n">the</span> <span class="n">input</span> <span class="n">device</span> <span class="o">&amp;</span><span class="n">ast</span><span class="p">;</span><span class="o">/</span>
+<span class="n">clutter_input_device_update_from_event</span> <span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">c_event</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">);</span>
+
+<span class="n">clutter_do_event</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">c_event</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The <cite>update_stage</cite> boolean argument should be used when the input device
+enters and leaves a <a class="reference internal" href="Stage.html#Clutter.Stage" title="Clutter.Stage"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Stage</span></tt></a> ; it will use the <a class="reference internal" href="Stage.html#Clutter.Stage" title="Clutter.Stage"><tt class="xref py py-class docutils literal"><span class="pre">Clutter.Stage</span></tt></a> field
+of the passed <cite>event</cite> to update the stage associated to the input device.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Interval.html" class="btn btn-neutral float-right" title="Clutter.Interval"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Image.html" class="btn btn-neutral" title="Clutter.Image"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

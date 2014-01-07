@@ -1,0 +1,935 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstVideo.Navigation -
+    
+      Interfaces -
+    
+      GstVideo 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Interfaces" href="index.html"/>
+        <link rel="next" title="GstVideo.VideoOrientation" href="VideoOrientation.html"/>
+        <link rel="prev" title="GstVideo.ColorBalance" href="ColorBalance.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GstVideo 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Interfaces</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GstVideo.Navigation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GstVideo 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Interfaces</a> &raquo;</li>
+  
+  <li><a href="">GstVideo.Navigation</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstVideo_1.0/interfaces/Navigation" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gstvideo-navigation">
+<h1>GstVideo.Navigation<a class="headerlink" href="#gstvideo-navigation" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-079e9656c6ad1f439841716bdd3611bd27ca9211.png" alt="Inheritance diagram of GstVideo.Navigation" usemap="#inheritancec3bc9980c9" class="inheritance"/>
+<map id="inheritancec3bc9980c9" name="inheritancec3bc9980c9">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="8,5,123,29"/>
+<area shape="rect" id="node2" href="#GstVideo.Navigation" title="GstVideo.Navigation" alt="" coords="5,77,125,101"/>
+</map>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="../../ClutterGst_2.0/classes/VideoSink.html#ClutterGst.VideoSink" title="ClutterGst.VideoSink"><tt class="xref py py-class docutils literal"><span class="pre">ClutterGst.VideoSink</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.event_get_type" title="GstVideo.Navigation.event_get_type"><tt class="xref py py-obj docutils literal"><span class="pre">event_get_type</span></tt></a>(event)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.event_parse_command" title="GstVideo.Navigation.event_parse_command"><tt class="xref py py-obj docutils literal"><span class="pre">event_parse_command</span></tt></a>(event, command)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.event_parse_key_event" title="GstVideo.Navigation.event_parse_key_event"><tt class="xref py py-obj docutils literal"><span class="pre">event_parse_key_event</span></tt></a>(event, key)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.event_parse_mouse_button_event" title="GstVideo.Navigation.event_parse_mouse_button_event"><tt class="xref py py-obj docutils literal"><span class="pre">event_parse_mouse_button_event</span></tt></a>(event, button, x, y)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.event_parse_mouse_move_event" title="GstVideo.Navigation.event_parse_mouse_move_event"><tt class="xref py py-obj docutils literal"><span class="pre">event_parse_mouse_move_event</span></tt></a>(event, x, y)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.message_get_type" title="GstVideo.Navigation.message_get_type"><tt class="xref py py-obj docutils literal"><span class="pre">message_get_type</span></tt></a>(message)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.message_new_angles_changed" title="GstVideo.Navigation.message_new_angles_changed"><tt class="xref py py-obj docutils literal"><span class="pre">message_new_angles_changed</span></tt></a>(src, cur_angle, n_angles)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.message_new_commands_changed" title="GstVideo.Navigation.message_new_commands_changed"><tt class="xref py py-obj docutils literal"><span class="pre">message_new_commands_changed</span></tt></a>(src)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.message_new_mouse_over" title="GstVideo.Navigation.message_new_mouse_over"><tt class="xref py py-obj docutils literal"><span class="pre">message_new_mouse_over</span></tt></a>(src, active)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.message_parse_angles_changed" title="GstVideo.Navigation.message_parse_angles_changed"><tt class="xref py py-obj docutils literal"><span class="pre">message_parse_angles_changed</span></tt></a>(message, cur_angle, n_angles)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.message_parse_mouse_over" title="GstVideo.Navigation.message_parse_mouse_over"><tt class="xref py py-obj docutils literal"><span class="pre">message_parse_mouse_over</span></tt></a>(message, active)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_get_type" title="GstVideo.Navigation.query_get_type"><tt class="xref py py-obj docutils literal"><span class="pre">query_get_type</span></tt></a>(query)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_new_angles" title="GstVideo.Navigation.query_new_angles"><tt class="xref py py-obj docutils literal"><span class="pre">query_new_angles</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_new_commands" title="GstVideo.Navigation.query_new_commands"><tt class="xref py py-obj docutils literal"><span class="pre">query_new_commands</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_parse_angles" title="GstVideo.Navigation.query_parse_angles"><tt class="xref py py-obj docutils literal"><span class="pre">query_parse_angles</span></tt></a>(query, cur_angle, n_angles)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_parse_commands_length" title="GstVideo.Navigation.query_parse_commands_length"><tt class="xref py py-obj docutils literal"><span class="pre">query_parse_commands_length</span></tt></a>(query)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_parse_commands_nth" title="GstVideo.Navigation.query_parse_commands_nth"><tt class="xref py py-obj docutils literal"><span class="pre">query_parse_commands_nth</span></tt></a>(query, nth)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_set_angles" title="GstVideo.Navigation.query_set_angles"><tt class="xref py py-obj docutils literal"><span class="pre">query_set_angles</span></tt></a>(query, cur_angle, n_angles)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.query_set_commandsv" title="GstVideo.Navigation.query_set_commandsv"><tt class="xref py py-obj docutils literal"><span class="pre">query_set_commandsv</span></tt></a>(query, n_cmds, cmds)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.send_command" title="GstVideo.Navigation.send_command"><tt class="xref py py-obj docutils literal"><span class="pre">send_command</span></tt></a>(command)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.send_event" title="GstVideo.Navigation.send_event"><tt class="xref py py-obj docutils literal"><span class="pre">send_event</span></tt></a>(structure)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.send_key_event" title="GstVideo.Navigation.send_key_event"><tt class="xref py py-obj docutils literal"><span class="pre">send_key_event</span></tt></a>(event, key)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstVideo.Navigation.send_mouse_event" title="GstVideo.Navigation.send_mouse_event"><tt class="xref py py-obj docutils literal"><span class="pre">send_mouse_event</span></tt></a>(event, button, x, y)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gstvideo-navigation-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gstvideo-navigation-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstVideo.Navigation">
+<em class="property">class </em><tt class="descclassname">GstVideo.</tt><tt class="descname">Navigation</tt><a class="headerlink" href="#GstVideo.Navigation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GInterface</span></tt></a></p>
+<p>The Navigation interface is used for creating and injecting navigation related
+events such as mouse button presses, cursor motion and key presses. The associated
+library also provides methods for parsing received events, and for sending and
+receiving navigation related bus events. One main usecase is DVD menu navigation.</p>
+<p>The main parts of the API are:</p>
+<ul class="simple">
+<li>The <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> interface, implemented by elements which provide an application with the ability to create and inject navigation events into the pipeline.</li>
+<li><a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> event handling API. <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> events are created in response to calls on a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> interface implementation, and sent in the pipeline. Upstream elements can use the navigation event API functions to parse the contents of received messages.</li>
+<li><a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> message handling API. <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> messages may be sent on the message bus to inform applications of navigation related changes in the pipeline, such as the mouse moving over a clickable region, or the set of available angles changing.  The <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> message functions provide functions for creating and parsing custom bus messages for signaling <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> changes.</li>
+</ul>
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.event_get_type">
+<em class="property">static </em><tt class="descname">event_get_type</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.event_get_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>event</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a> to inspect.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstVideo.NavigationEventType" title="GstVideo.NavigationEventType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationEventType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Inspect a <a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a> and return the <a class="reference internal" href="../enums.html#GstVideo.NavigationEventType" title="GstVideo.NavigationEventType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationEventType</span></tt></a> of the event, or
+<a class="reference internal" href="../enums.html#GstVideo.NavigationEventType.INVALID" title="GstVideo.NavigationEventType.INVALID"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationEventType.INVALID</span></tt></a> if the event is not a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> event.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.event_parse_command">
+<em class="property">static </em><tt class="descname">event_parse_command</tt><big>(</big><em>event</em>, <em>command</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.event_parse_command" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>event</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a> to inspect.</li>
+<li><strong>command</strong> (<a class="reference internal" href="../enums.html#GstVideo.NavigationCommand" title="GstVideo.NavigationCommand"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationCommand</span></tt></a>) &#8211; Pointer to <a class="reference internal" href="../enums.html#GstVideo.NavigationCommand" title="GstVideo.NavigationCommand"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationCommand</span></tt></a> to receive the type of the navigation event.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the navigation command could be extracted, otherwise <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inspect a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> command event and retrieve the enum value of the
+associated command.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.event_parse_key_event">
+<em class="property">static </em><tt class="descname">event_parse_key_event</tt><big>(</big><em>event</em>, <em>key</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.event_parse_key_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>event</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a> to inspect.</li>
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; A pointer to a location to receive the string identifying the key press. The returned string is owned by the event, and valid only until the event is unreffed.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.event_parse_mouse_button_event">
+<em class="property">static </em><tt class="descname">event_parse_mouse_button_event</tt><big>(</big><em>event</em>, <em>button</em>, <em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.event_parse_mouse_button_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>event</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a> to inspect.</li>
+<li><strong>button</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> that will receive the button number associated with the event.</li>
+<li><strong>x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt></a> to receive the x coordinate of the mouse button event.</li>
+<li><strong>y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt></a> to receive the y coordinate of the mouse button event.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the button number and both coordinates could be extracted, otherwise <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the details of either a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> mouse button press event or
+a mouse button release event. Determine which type the event is using
+<a class="reference internal" href="#GstVideo.Navigation.event_get_type" title="GstVideo.Navigation.event_get_type"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation.event_get_type</span></tt></a> () to retrieve the <a class="reference internal" href="../enums.html#GstVideo.NavigationEventType" title="GstVideo.NavigationEventType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationEventType</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.event_parse_mouse_move_event">
+<em class="property">static </em><tt class="descname">event_parse_mouse_move_event</tt><big>(</big><em>event</em>, <em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.event_parse_mouse_move_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>event</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Event.html#Gst.Event" title="Gst.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Event</span></tt></a> to inspect.</li>
+<li><strong>x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt></a> to receive the x coordinate of the mouse movement.</li>
+<li><strong>y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; Pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt></a> to receive the y coordinate of the mouse movement.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if both coordinates could be extracted, otherwise <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inspect a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> mouse movement event and extract the coordinates
+of the event.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.message_get_type">
+<em class="property">static </em><tt class="descname">message_get_type</tt><big>(</big><em>message</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.message_get_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> to inspect.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The type of the <a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>, or <a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType.INVALID" title="GstVideo.NavigationMessageType.INVALID"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType.INVALID</span></tt></a> if the message is not a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> notification.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType" title="GstVideo.NavigationMessageType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check a bus message to see if it is a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> event, and return
+the <a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType" title="GstVideo.NavigationMessageType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType</span></tt></a> identifying the type of the message if so.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.message_new_angles_changed">
+<em class="property">static </em><tt class="descname">message_new_angles_changed</tt><big>(</big><em>src</em>, <em>cur_angle</em>, <em>n_angles</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.message_new_angles_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>src</strong> (<a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a> to set as source of the new message.</li>
+<li><strong>cur_angle</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The currently selected angle.</li>
+<li><strong>n_angles</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The number of viewing angles now available.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The new <a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> message with type
+<a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType.ANGLES_CHANGED" title="GstVideo.NavigationMessageType.ANGLES_CHANGED"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType.ANGLES_CHANGED</span></tt></a> for notifying an application
+that the current angle, or current number of angles available in a
+multiangle video has changed.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.message_new_commands_changed">
+<em class="property">static </em><tt class="descname">message_new_commands_changed</tt><big>(</big><em>src</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.message_new_commands_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>src</strong> (<a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a> to set as source of the new message.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The new <a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> message with type
+<a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType.COMMANDS_CHANGED" title="GstVideo.NavigationMessageType.COMMANDS_CHANGED"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType.COMMANDS_CHANGED</span></tt></a></p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.message_new_mouse_over">
+<em class="property">static </em><tt class="descname">message_new_mouse_over</tt><big>(</big><em>src</em>, <em>active</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.message_new_mouse_over" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>src</strong> (<a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/classes/Object.html#Gst.Object" title="Gst.Object"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object</span></tt></a> to set as source of the new message.</li>
+<li><strong>active</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the mouse has entered a clickable area of the display. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if it over a non-clickable area.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The new <a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> message with type
+<a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType.MOUSE_OVER" title="GstVideo.NavigationMessageType.MOUSE_OVER"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType.MOUSE_OVER</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.message_parse_angles_changed">
+<em class="property">static </em><tt class="descname">message_parse_angles_changed</tt><big>(</big><em>message</em>, <em>cur_angle</em>, <em>n_angles</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.message_parse_angles_changed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> to inspect.</li>
+<li><strong>cur_angle</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; A pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> to receive the new current angle number, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>n_angles</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; A pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> to receive the new angle count, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the message could be successfully parsed. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if not.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> message of type <a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType.ANGLES_CHANGED" title="GstVideo.NavigationMessageType.ANGLES_CHANGED"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType.ANGLES_CHANGED</span></tt></a>
+and extract the <cite>cur_angle</cite> and <cite>n_angles</cite> parameters.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.message_parse_mouse_over">
+<em class="property">static </em><tt class="descname">message_parse_mouse_over</tt><big>(</big><em>message</em>, <em>active</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.message_parse_mouse_over" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>message</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a>) &#8211; A <a class="reference internal" href="../../Gst_1.0/structs/Message.html#Gst.Message" title="Gst.Message"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Message</span></tt></a> to inspect.</li>
+<li><strong>active</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; A pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> to receive the active/inactive state, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the message could be successfully parsed. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if not.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> message of type <a class="reference internal" href="../enums.html#GstVideo.NavigationMessageType.MOUSE_OVER" title="GstVideo.NavigationMessageType.MOUSE_OVER"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationMessageType.MOUSE_OVER</span></tt></a>
+and extract the active/inactive flag. If the mouse over event is marked
+active, it indicates that the mouse is over a clickable area.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_get_type">
+<em class="property">static </em><tt class="descname">query_get_type</tt><big>(</big><em>query</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_get_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a>) &#8211; The query to inspect</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The <a class="reference internal" href="../enums.html#GstVideo.NavigationQueryType" title="GstVideo.NavigationQueryType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationQueryType</span></tt></a> of the query, or <a class="reference internal" href="../enums.html#GstVideo.NavigationQueryType.INVALID" title="GstVideo.NavigationQueryType.INVALID"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationQueryType.INVALID</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstVideo.NavigationQueryType" title="GstVideo.NavigationQueryType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationQueryType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Inspect a <a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a> and return the <a class="reference internal" href="../enums.html#GstVideo.NavigationQueryType" title="GstVideo.NavigationQueryType"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationQueryType</span></tt></a> associated with
+it if it is a <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> query.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_new_angles">
+<em class="property">static </em><tt class="descname">query_new_angles</tt><big>(</big><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_new_angles" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The new query.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a new <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> angles query. When executed, it will
+query the pipeline for the set of currently available angles, which may be
+greater than one in a multiangle video.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_new_commands">
+<em class="property">static </em><tt class="descname">query_new_commands</tt><big>(</big><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_new_commands" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The new query.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a new <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> commands query. When executed, it will
+query the pipeline for the set of currently available commands.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_parse_angles">
+<em class="property">static </em><tt class="descname">query_parse_angles</tt><big>(</big><em>query</em>, <em>cur_angle</em>, <em>n_angles</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_parse_angles" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></li>
+<li><strong>cur_angle</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> into which to store the currently selected angle value from the query, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>n_angles</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Pointer to a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> into which to store the number of angles value from the query, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the query could be successfully parsed. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if not.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse the current angle number in the <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> angles <cite>query</cite> into the
+<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> pointed to by the <cite>cur_angle</cite> variable, and the number of available
+angles into the <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> pointed to by the <cite>n_angles</cite> variable.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_parse_commands_length">
+<em class="property">static </em><tt class="descname">query_parse_commands_length</tt><big>(</big><em>query</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_parse_commands_length" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>query</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the query could be successfully parsed. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if not.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, n_cmds: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse the number of commands in the <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> commands <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_parse_commands_nth">
+<em class="property">static </em><tt class="descname">query_parse_commands_nth</tt><big>(</big><em>query</em>, <em>nth</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_parse_commands_nth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></li>
+<li><strong>nth</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the nth command to retrieve.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the query could be successfully parsed. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if not.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, cmd: <a class="reference internal" href="../enums.html#GstVideo.NavigationCommand" title="GstVideo.NavigationCommand"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationCommand</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse the <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> command query and retrieve the <cite>nth</cite> command from
+it into <cite>cmd</cite>. If the list contains less elements than <cite>nth</cite>, <cite>cmd</cite> will be
+set to <a class="reference internal" href="../enums.html#GstVideo.NavigationCommand.INVALID" title="GstVideo.NavigationCommand.INVALID"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationCommand.INVALID</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_set_angles">
+<em class="property">static </em><tt class="descname">query_set_angles</tt><big>(</big><em>query</em>, <em>cur_angle</em>, <em>n_angles</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_set_angles" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>query</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></li>
+<li><strong>cur_angle</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the current viewing angle to set.</li>
+<li><strong>n_angles</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of viewing angles to set.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> angles query result field in <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstVideo.Navigation.query_set_commandsv">
+<em class="property">static </em><tt class="descname">query_set_commandsv</tt><big>(</big><em>query</em>, <em>n_cmds</em>, <em>cmds</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.query_set_commandsv" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>query</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a>) &#8211; a <a class="reference internal" href="../../Gst_1.0/structs/Query.html#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></li>
+<li><strong>n_cmds</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of commands to set.</li>
+<li><strong>cmds</strong> (<a class="reference internal" href="../enums.html#GstVideo.NavigationCommand" title="GstVideo.NavigationCommand"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationCommand</span></tt></a>) &#8211; An array containing <cite>n_cmds</cite> <a class="reference internal" href="../enums.html#GstVideo.NavigationCommand" title="GstVideo.NavigationCommand"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationCommand</span></tt></a> values.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> command query result fields in <cite>query</cite>. The number
+of commands passed must be equal to <cite>n_commands</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.Navigation.send_command">
+<tt class="descname">send_command</tt><big>(</big><em>command</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.send_command" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>command</strong> (<a class="reference internal" href="../enums.html#GstVideo.NavigationCommand" title="GstVideo.NavigationCommand"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.NavigationCommand</span></tt></a>) &#8211; The command to issue</td>
+</tr>
+</tbody>
+</table>
+<p>Sends the indicated command to the navigation interface.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.Navigation.send_event">
+<tt class="descname">send_event</tt><big>(</big><em>structure</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.send_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>structure</strong> (<a class="reference internal" href="../../Gst_1.0/structs/Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.Navigation.send_key_event">
+<tt class="descname">send_key_event</tt><big>(</big><em>event</em>, <em>key</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.send_key_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>event</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The type of the key event. Recognised values are &#8220;key-press&#8221; and &#8220;key-release&#8221;</li>
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Character representation of the key. This is typically as produced by XKeysymToString.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstVideo.Navigation.send_mouse_event">
+<tt class="descname">send_mouse_event</tt><big>(</big><em>event</em>, <em>button</em>, <em>x</em>, <em>y</em><big>)</big><a class="headerlink" href="#GstVideo.Navigation.send_mouse_event" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>event</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The type of mouse event, as a text string. Recognised values are &#8220;mouse-button-press&#8221;, &#8220;mouse-button-release&#8221; and &#8220;mouse-move&#8221;.</li>
+<li><strong>button</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The button number of the button being pressed or released. Pass 0 for mouse-move events.</li>
+<li><strong>x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The x coordinate of the mouse event.</li>
+<li><strong>y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; The y coordinate of the mouse event.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sends a mouse event to the navigation interface. Mouse event coordinates
+are sent relative to the display space of the related output area. This is
+usually the size in pixels of the window associated with the element
+implementing the <a class="reference internal" href="#GstVideo.Navigation" title="GstVideo.Navigation"><tt class="xref py py-class docutils literal"><span class="pre">GstVideo.Navigation</span></tt></a> interface.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="VideoOrientation.html" class="btn btn-neutral float-right" title="GstVideo.VideoOrientation"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="ColorBalance.html" class="btn btn-neutral" title="GstVideo.ColorBalance"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

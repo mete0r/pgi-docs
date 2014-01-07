@@ -1,0 +1,2035 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gst.Query -
+    
+      Structures -
+    
+      Gst 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="Gst.Sample" href="Sample.html"/>
+        <link rel="prev" title="Gst.PollFD" href="PollFD.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gst 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gst.Query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gst 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">Gst.Query</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gst_1.0/structs/Query" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gst-query">
+<h1>Gst.Query<a class="headerlink" href="#gst-query" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>mini_object</td>
+<td><a class="reference internal" href="MiniObject.html#Gst.MiniObject" title="Gst.MiniObject"><tt class="xref py py-class docutils literal"><span class="pre">Gst.MiniObject</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>type</td>
+<td><a class="reference internal" href="../enums.html#Gst.QueryType" title="Gst.QueryType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType</span></tt></a></td>
+<td>r/w</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_accept_caps" title="Gst.Query.new_accept_caps"><tt class="xref py py-obj docutils literal"><span class="pre">new_accept_caps</span></tt></a>(caps)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_allocation" title="Gst.Query.new_allocation"><tt class="xref py py-obj docutils literal"><span class="pre">new_allocation</span></tt></a>(caps, need_pool)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_buffering" title="Gst.Query.new_buffering"><tt class="xref py py-obj docutils literal"><span class="pre">new_buffering</span></tt></a>(format)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_caps" title="Gst.Query.new_caps"><tt class="xref py py-obj docutils literal"><span class="pre">new_caps</span></tt></a>(filter)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_context" title="Gst.Query.new_context"><tt class="xref py py-obj docutils literal"><span class="pre">new_context</span></tt></a>(context_type)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_convert" title="Gst.Query.new_convert"><tt class="xref py py-obj docutils literal"><span class="pre">new_convert</span></tt></a>(src_format, value, dest_format)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_custom" title="Gst.Query.new_custom"><tt class="xref py py-obj docutils literal"><span class="pre">new_custom</span></tt></a>(type, structure)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_drain" title="Gst.Query.new_drain"><tt class="xref py py-obj docutils literal"><span class="pre">new_drain</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_duration" title="Gst.Query.new_duration"><tt class="xref py py-obj docutils literal"><span class="pre">new_duration</span></tt></a>(format)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_formats" title="Gst.Query.new_formats"><tt class="xref py py-obj docutils literal"><span class="pre">new_formats</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_latency" title="Gst.Query.new_latency"><tt class="xref py py-obj docutils literal"><span class="pre">new_latency</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_position" title="Gst.Query.new_position"><tt class="xref py py-obj docutils literal"><span class="pre">new_position</span></tt></a>(format)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_scheduling" title="Gst.Query.new_scheduling"><tt class="xref py py-obj docutils literal"><span class="pre">new_scheduling</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_seeking" title="Gst.Query.new_seeking"><tt class="xref py py-obj docutils literal"><span class="pre">new_seeking</span></tt></a>(format)</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_segment" title="Gst.Query.new_segment"><tt class="xref py py-obj docutils literal"><span class="pre">new_segment</span></tt></a>(format)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#Gst.Query.new_uri" title="Gst.Query.new_uri"><tt class="xref py py-obj docutils literal"><span class="pre">new_uri</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.add_allocation_meta" title="Gst.Query.add_allocation_meta"><tt class="xref py py-obj docutils literal"><span class="pre">add_allocation_meta</span></tt></a>(api, params)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.add_allocation_param" title="Gst.Query.add_allocation_param"><tt class="xref py py-obj docutils literal"><span class="pre">add_allocation_param</span></tt></a>(allocator, params)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.add_allocation_pool" title="Gst.Query.add_allocation_pool"><tt class="xref py py-obj docutils literal"><span class="pre">add_allocation_pool</span></tt></a>(pool, size, min_buffers, max_buffers)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.add_buffering_range" title="Gst.Query.add_buffering_range"><tt class="xref py py-obj docutils literal"><span class="pre">add_buffering_range</span></tt></a>(start, stop)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.add_scheduling_mode" title="Gst.Query.add_scheduling_mode"><tt class="xref py py-obj docutils literal"><span class="pre">add_scheduling_mode</span></tt></a>(mode)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.find_allocation_meta" title="Gst.Query.find_allocation_meta"><tt class="xref py py-obj docutils literal"><span class="pre">find_allocation_meta</span></tt></a>(api)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.get_n_allocation_metas" title="Gst.Query.get_n_allocation_metas"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_allocation_metas</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.get_n_allocation_params" title="Gst.Query.get_n_allocation_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_allocation_params</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.get_n_allocation_pools" title="Gst.Query.get_n_allocation_pools"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_allocation_pools</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.get_n_buffering_ranges" title="Gst.Query.get_n_buffering_ranges"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_buffering_ranges</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.get_n_scheduling_modes" title="Gst.Query.get_n_scheduling_modes"><tt class="xref py py-obj docutils literal"><span class="pre">get_n_scheduling_modes</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.get_structure" title="Gst.Query.get_structure"><tt class="xref py py-obj docutils literal"><span class="pre">get_structure</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.has_scheduling_mode" title="Gst.Query.has_scheduling_mode"><tt class="xref py py-obj docutils literal"><span class="pre">has_scheduling_mode</span></tt></a>(mode)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.has_scheduling_mode_with_flags" title="Gst.Query.has_scheduling_mode_with_flags"><tt class="xref py py-obj docutils literal"><span class="pre">has_scheduling_mode_with_flags</span></tt></a>(mode, flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_accept_caps" title="Gst.Query.parse_accept_caps"><tt class="xref py py-obj docutils literal"><span class="pre">parse_accept_caps</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_accept_caps_result" title="Gst.Query.parse_accept_caps_result"><tt class="xref py py-obj docutils literal"><span class="pre">parse_accept_caps_result</span></tt></a>(result)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_allocation" title="Gst.Query.parse_allocation"><tt class="xref py py-obj docutils literal"><span class="pre">parse_allocation</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_buffering_percent" title="Gst.Query.parse_buffering_percent"><tt class="xref py py-obj docutils literal"><span class="pre">parse_buffering_percent</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_buffering_range" title="Gst.Query.parse_buffering_range"><tt class="xref py py-obj docutils literal"><span class="pre">parse_buffering_range</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_buffering_stats" title="Gst.Query.parse_buffering_stats"><tt class="xref py py-obj docutils literal"><span class="pre">parse_buffering_stats</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_caps" title="Gst.Query.parse_caps"><tt class="xref py py-obj docutils literal"><span class="pre">parse_caps</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_caps_result" title="Gst.Query.parse_caps_result"><tt class="xref py py-obj docutils literal"><span class="pre">parse_caps_result</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_context" title="Gst.Query.parse_context"><tt class="xref py py-obj docutils literal"><span class="pre">parse_context</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_context_type" title="Gst.Query.parse_context_type"><tt class="xref py py-obj docutils literal"><span class="pre">parse_context_type</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_convert" title="Gst.Query.parse_convert"><tt class="xref py py-obj docutils literal"><span class="pre">parse_convert</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_duration" title="Gst.Query.parse_duration"><tt class="xref py py-obj docutils literal"><span class="pre">parse_duration</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_latency" title="Gst.Query.parse_latency"><tt class="xref py py-obj docutils literal"><span class="pre">parse_latency</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_n_formats" title="Gst.Query.parse_n_formats"><tt class="xref py py-obj docutils literal"><span class="pre">parse_n_formats</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_nth_allocation_meta" title="Gst.Query.parse_nth_allocation_meta"><tt class="xref py py-obj docutils literal"><span class="pre">parse_nth_allocation_meta</span></tt></a>(index)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_nth_allocation_param" title="Gst.Query.parse_nth_allocation_param"><tt class="xref py py-obj docutils literal"><span class="pre">parse_nth_allocation_param</span></tt></a>(index)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_nth_allocation_pool" title="Gst.Query.parse_nth_allocation_pool"><tt class="xref py py-obj docutils literal"><span class="pre">parse_nth_allocation_pool</span></tt></a>(index)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_nth_buffering_range" title="Gst.Query.parse_nth_buffering_range"><tt class="xref py py-obj docutils literal"><span class="pre">parse_nth_buffering_range</span></tt></a>(index)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_nth_format" title="Gst.Query.parse_nth_format"><tt class="xref py py-obj docutils literal"><span class="pre">parse_nth_format</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_nth_scheduling_mode" title="Gst.Query.parse_nth_scheduling_mode"><tt class="xref py py-obj docutils literal"><span class="pre">parse_nth_scheduling_mode</span></tt></a>(index)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_position" title="Gst.Query.parse_position"><tt class="xref py py-obj docutils literal"><span class="pre">parse_position</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_scheduling" title="Gst.Query.parse_scheduling"><tt class="xref py py-obj docutils literal"><span class="pre">parse_scheduling</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_seeking" title="Gst.Query.parse_seeking"><tt class="xref py py-obj docutils literal"><span class="pre">parse_seeking</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_segment" title="Gst.Query.parse_segment"><tt class="xref py py-obj docutils literal"><span class="pre">parse_segment</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_uri" title="Gst.Query.parse_uri"><tt class="xref py py-obj docutils literal"><span class="pre">parse_uri</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.parse_uri_redirection" title="Gst.Query.parse_uri_redirection"><tt class="xref py py-obj docutils literal"><span class="pre">parse_uri_redirection</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.remove_nth_allocation_meta" title="Gst.Query.remove_nth_allocation_meta"><tt class="xref py py-obj docutils literal"><span class="pre">remove_nth_allocation_meta</span></tt></a>(index)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.remove_nth_allocation_param" title="Gst.Query.remove_nth_allocation_param"><tt class="xref py py-obj docutils literal"><span class="pre">remove_nth_allocation_param</span></tt></a>(index)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.remove_nth_allocation_pool" title="Gst.Query.remove_nth_allocation_pool"><tt class="xref py py-obj docutils literal"><span class="pre">remove_nth_allocation_pool</span></tt></a>(index)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_accept_caps_result" title="Gst.Query.set_accept_caps_result"><tt class="xref py py-obj docutils literal"><span class="pre">set_accept_caps_result</span></tt></a>(result)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_buffering_percent" title="Gst.Query.set_buffering_percent"><tt class="xref py py-obj docutils literal"><span class="pre">set_buffering_percent</span></tt></a>(busy, percent)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_buffering_range" title="Gst.Query.set_buffering_range"><tt class="xref py py-obj docutils literal"><span class="pre">set_buffering_range</span></tt></a>(format, start, stop, estimated_total)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_buffering_stats" title="Gst.Query.set_buffering_stats"><tt class="xref py py-obj docutils literal"><span class="pre">set_buffering_stats</span></tt></a>(mode, avg_in, avg_out, buffering_left)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_caps_result" title="Gst.Query.set_caps_result"><tt class="xref py py-obj docutils literal"><span class="pre">set_caps_result</span></tt></a>(caps)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_context" title="Gst.Query.set_context"><tt class="xref py py-obj docutils literal"><span class="pre">set_context</span></tt></a>(context)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_convert" title="Gst.Query.set_convert"><tt class="xref py py-obj docutils literal"><span class="pre">set_convert</span></tt></a>(src_format, src_value, dest_format, dest_value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_duration" title="Gst.Query.set_duration"><tt class="xref py py-obj docutils literal"><span class="pre">set_duration</span></tt></a>(format, duration)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_formatsv" title="Gst.Query.set_formatsv"><tt class="xref py py-obj docutils literal"><span class="pre">set_formatsv</span></tt></a>(formats)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_latency" title="Gst.Query.set_latency"><tt class="xref py py-obj docutils literal"><span class="pre">set_latency</span></tt></a>(live, min_latency, max_latency)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_nth_allocation_param" title="Gst.Query.set_nth_allocation_param"><tt class="xref py py-obj docutils literal"><span class="pre">set_nth_allocation_param</span></tt></a>(index, allocator, params)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_nth_allocation_pool" title="Gst.Query.set_nth_allocation_pool"><tt class="xref py py-obj docutils literal"><span class="pre">set_nth_allocation_pool</span></tt></a>(index, pool, size, min_buffers, max_buffers)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_position" title="Gst.Query.set_position"><tt class="xref py py-obj docutils literal"><span class="pre">set_position</span></tt></a>(format, cur)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_scheduling" title="Gst.Query.set_scheduling"><tt class="xref py py-obj docutils literal"><span class="pre">set_scheduling</span></tt></a>(flags, minsize, maxsize, align)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_seeking" title="Gst.Query.set_seeking"><tt class="xref py py-obj docutils literal"><span class="pre">set_seeking</span></tt></a>(format, seekable, segment_start, segment_end)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_segment" title="Gst.Query.set_segment"><tt class="xref py py-obj docutils literal"><span class="pre">set_segment</span></tt></a>(rate, format, start_value, stop_value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_uri" title="Gst.Query.set_uri"><tt class="xref py py-obj docutils literal"><span class="pre">set_uri</span></tt></a>(uri)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gst.Query.set_uri_redirection" title="Gst.Query.set_uri_redirection"><tt class="xref py py-obj docutils literal"><span class="pre">set_uri_redirection</span></tt></a>(uri)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gst.Query.writable_structure" title="Gst.Query.writable_structure"><tt class="xref py py-obj docutils literal"><span class="pre">writable_structure</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gst.Query">
+<em class="property">class </em><tt class="descclassname">Gst.</tt><tt class="descname">Query</tt><a class="headerlink" href="#Gst.Query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries can be performed on pads (<a class="reference internal" href="../classes/Pad.html#Gst.Pad.query" title="Gst.Pad.query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Pad.query</span></tt></a> ()) and elements
+(<a class="reference internal" href="../classes/Element.html#Gst.Element.query" title="Gst.Element.query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Element.query</span></tt></a> ()). Please note that some queries might need a running
+pipeline to work.</p>
+<p>Queries can be created using the gst_query_new_*() functions.
+Query values can be set using gst_query_set_*(), and parsed using
+gst_query_parse_*() helpers.</p>
+<p>The following example shows how to query the duration of a pipeline:</p>
+<p>Query duration on a pipeline</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="n">GstQuery</span> <span class="o">*</span><span class="n">query</span><span class="p">;</span>
+<span class="n">gboolean</span> <span class="n">res</span><span class="p">;</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">gst_query_new_duration</span> <span class="p">(</span><span class="n">GST_FORMAT_TIME</span><span class="p">);</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">gst_element_query</span> <span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">query</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">gint64</span> <span class="n">duration</span><span class="p">;</span>
+  <span class="n">gst_query_parse_duration</span> <span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">duration</span><span class="p">);</span>
+  <span class="n">g_print</span> <span class="p">(</span><span class="s">&quot;duration = %&quot;</span><span class="n">GST_TIME_FORMAT</span><span class="p">,</span> <span class="n">GST_TIME_ARGS</span> <span class="p">(</span><span class="n">duration</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+  <span class="n">g_print</span> <span class="p">(</span><span class="s">&quot;duration query failed...&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">gst_query_unref</span> <span class="p">(</span><span class="n">query</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Last reviewed on 2012-03-29 (0.11.3)</p>
+<dl class="staticmethod">
+<dt id="Gst.Query.new_accept_caps">
+<em class="property">static </em><tt class="descname">new_accept_caps</tt><big>(</big><em>caps</em><big>)</big><a class="headerlink" href="#Gst.Query.new_accept_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; a fixed <a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying if <cite>caps</cite> are accepted.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_allocation">
+<em class="property">static </em><tt class="descname">new_allocation</tt><big>(</big><em>caps</em>, <em>need_pool</em><big>)</big><a class="headerlink" href="#Gst.Query.new_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>caps</strong> (<a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; the negotiated caps</li>
+<li><strong>need_pool</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; return a pool</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying the allocation properties.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_buffering">
+<em class="property">static </em><tt class="descname">new_buffering</tt><big>(</big><em>format</em><big>)</big><a class="headerlink" href="#Gst.Query.new_buffering" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the default <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> for the new query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying the buffering status of
+a stream.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_caps">
+<em class="property">static </em><tt class="descname">new_caps</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#Gst.Query.new_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filter</strong> (<a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; a filter</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying the caps.</p>
+<p>The CAPS query should return the allowable caps for a pad in the context
+of the element&#8217;s state, its link to other elements, and the devices or files
+it has opened. These caps must be a subset of the pad template caps. In the
+<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> state with no links, the CAPS query should ideally return the same caps
+as the pad template. In rare circumstances, an object property can affect
+the caps returned by the CAPS query, but this is discouraged.</p>
+<p>For most filters, the caps returned by CAPS query is directly affected by the
+allowed caps on other pads. For demuxers and decoders, the caps returned by
+the srcpad&#8217;s getcaps function is directly related to the stream data. Again,
+the CAPS query should return the most specific caps it reasonably can, since this
+helps with autoplugging.</p>
+<p>The <cite>filter</cite> is used to restrict the result caps, only the caps matching
+<cite>filter</cite> should be returned from the CAPS query. Specifying a filter might
+greatly reduce the amount of processing an element needs to do.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_context">
+<em class="property">static </em><tt class="descname">new_context</tt><big>(</big><em>context_type</em><big>)</big><a class="headerlink" href="#Gst.Query.new_context" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>context_type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Context type to query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying the pipeline-local context.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_convert">
+<em class="property">static </em><tt class="descname">new_convert</tt><big>(</big><em>src_format</em>, <em>value</em>, <em>dest_format</em><big>)</big><a class="headerlink" href="#Gst.Query.new_convert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>src_format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the source <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> for the new query</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the value to convert</li>
+<li><strong>dest_format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the target <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new convert query object. Use gst_query_unref()
+when done with it. A convert query is used to ask for a conversion between
+one format and another.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_custom">
+<em class="property">static </em><tt class="descname">new_custom</tt><big>(</big><em>type</em>, <em>structure</em><big>)</big><a class="headerlink" href="#Gst.Query.new_custom" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type</strong> (<a class="reference internal" href="../enums.html#Gst.QueryType" title="Gst.QueryType"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType</span></tt></a>) &#8211; the query type</li>
+<li><strong>structure</strong> (<a class="reference internal" href="Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a structure for the query</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new custom query object. Use gst_query_unref()
+when done with it.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_drain">
+<em class="property">static </em><tt class="descname">new_drain</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.new_drain" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying the drain state.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_duration">
+<em class="property">static </em><tt class="descname">new_duration</tt><big>(</big><em>format</em><big>)</big><a class="headerlink" href="#Gst.Query.new_duration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> for this duration query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new stream duration query object to query in the given format.
+Use gst_query_unref() when done with it. A duration query will give the
+total length of the stream.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_formats">
+<em class="property">static </em><tt class="descname">new_formats</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.new_formats" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying formats of
+the stream.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_latency">
+<em class="property">static </em><tt class="descname">new_latency</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.new_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new latency query object.
+Use gst_query_unref() when done with it. A latency query is usually performed
+by sinks to compensate for additional latency introduced by elements in the
+pipeline.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_position">
+<em class="property">static </em><tt class="descname">new_position</tt><big>(</big><em>format</em><big>)</big><a class="headerlink" href="#Gst.Query.new_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the default <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> for the new query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query stream position query object. Use gst_query_unref()
+when done with it. A position query is used to query the current position
+of playback in the streams, in some format.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_scheduling">
+<em class="property">static </em><tt class="descname">new_scheduling</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.new_scheduling" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying the scheduling properties.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_seeking">
+<em class="property">static </em><tt class="descname">new_seeking</tt><big>(</big><em>format</em><big>)</big><a class="headerlink" href="#Gst.Query.new_seeking" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the default <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> for the new query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query object for querying seeking properties of
+the stream.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_segment">
+<em class="property">static </em><tt class="descname">new_segment</tt><big>(</big><em>format</em><big>)</big><a class="headerlink" href="#Gst.Query.new_segment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> for the new query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new segment query object. Use gst_query_unref()
+when done with it. A segment query is used to discover information about the
+currently configured segment for playback.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Gst.Query.new_uri">
+<em class="property">static </em><tt class="descname">new_uri</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.new_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Gst.Query" title="Gst.Query"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a new query URI query object. Use gst_query_unref()
+when done with it. An URI query is used to query the current URI
+that is used by the source or sink.</p>
+<p>Free-function: gst_query_unref</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.add_allocation_meta">
+<tt class="descname">add_allocation_meta</tt><big>(</big><em>api</em>, <em>params</em><big>)</big><a class="headerlink" href="#Gst.Query.add_allocation_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>api</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; the metadata API</li>
+<li><strong>params</strong> (<a class="reference internal" href="Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; API specific parameters</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add <cite>api</cite> with <cite>params</cite> as one of the supported metadata API to <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.add_allocation_param">
+<tt class="descname">add_allocation_param</tt><big>(</big><em>allocator</em>, <em>params</em><big>)</big><a class="headerlink" href="#Gst.Query.add_allocation_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>allocator</strong> (<a class="reference internal" href="../classes/Allocator.html#Gst.Allocator" title="Gst.Allocator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the memory allocator</li>
+<li><strong>params</strong> (<a class="reference internal" href="AllocationParams.html#Gst.AllocationParams" title="Gst.AllocationParams"><tt class="xref py py-class docutils literal"><span class="pre">Gst.AllocationParams</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="AllocationParams.html#Gst.AllocationParams" title="Gst.AllocationParams"><tt class="xref py py-class docutils literal"><span class="pre">Gst.AllocationParams</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add <cite>allocator</cite> and its <cite>params</cite> as a supported memory allocator.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.add_allocation_pool">
+<tt class="descname">add_allocation_pool</tt><big>(</big><em>pool</em>, <em>size</em>, <em>min_buffers</em>, <em>max_buffers</em><big>)</big><a class="headerlink" href="#Gst.Query.add_allocation_pool" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pool</strong> (<a class="reference internal" href="../classes/BufferPool.html#Gst.BufferPool" title="Gst.BufferPool"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPool</span></tt></a>) &#8211; the <a class="reference internal" href="../classes/BufferPool.html#Gst.BufferPool" title="Gst.BufferPool"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPool</span></tt></a></li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size</li>
+<li><strong>min_buffers</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the min buffers</li>
+<li><strong>max_buffers</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the max buffers</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the pool parameters in <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.add_buffering_range">
+<tt class="descname">add_buffering_range</tt><big>(</big><em>start</em>, <em>stop</em><big>)</big><a class="headerlink" href="#Gst.Query.add_buffering_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; start position of the range</li>
+<li><strong>stop</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; stop position of the range</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> indicating if the range was added or not.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the buffering-ranges array field in <cite>query</cite>. The current last
+start position of the array should be inferior to <cite>start</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.add_scheduling_mode">
+<tt class="descname">add_scheduling_mode</tt><big>(</big><em>mode</em><big>)</big><a class="headerlink" href="#Gst.Query.add_scheduling_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mode</strong> (<a class="reference internal" href="../enums.html#Gst.PadMode" title="Gst.PadMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode</span></tt></a>) &#8211; a <a class="reference internal" href="../enums.html#Gst.PadMode" title="Gst.PadMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Add <cite>mode</cite> as aone of the supported scheduling modes to <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.find_allocation_meta">
+<tt class="descname">find_allocation_meta</tt><big>(</big><em>api</em><big>)</big><a class="headerlink" href="#Gst.Query.find_allocation_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>api</strong> (<a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>) &#8211; the metadata API</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> when <cite>api</cite> is in the list of metadata.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, index: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>query</cite> has metadata <cite>api</cite> set. When this function returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>,
+<cite>index</cite> will contain the index where the requested API and the flags can be
+found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.get_n_allocation_metas">
+<tt class="descname">get_n_allocation_metas</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.get_n_allocation_metas" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the metadata API array size as a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the number of values currently stored in the
+meta API array of the query&#8217;s structure.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.get_n_allocation_params">
+<tt class="descname">get_n_allocation_params</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.get_n_allocation_params" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the allocator array size as a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the number of values currently stored in the
+allocator params array of the query&#8217;s structure.</p>
+<p>If no memory allocator is specified, the downstream element can handle
+the default memory allocator. The first memory allocator in the query
+should be generic and allow mapping to system memory, all following
+allocators should be ordered by preference with the preferred one first.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.get_n_allocation_pools">
+<tt class="descname">get_n_allocation_pools</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.get_n_allocation_pools" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the pool array size as a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the number of values currently stored in the
+pool array of the query&#8217;s structure.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.get_n_buffering_ranges">
+<tt class="descname">get_n_buffering_ranges</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.get_n_buffering_ranges" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the range array size as a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the number of values currently stored in the
+buffered-ranges array of the query&#8217;s structure.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.get_n_scheduling_modes">
+<tt class="descname">get_n_scheduling_modes</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.get_n_scheduling_modes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the scheduling mode array size as a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the number of values currently stored in the
+scheduling mode array of the query&#8217;s structure.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.get_structure">
+<tt class="descname">get_structure</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.get_structure" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a> of the query. The structure is still owned by the query and will therefore be freed when the query is unreffed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the structure of a query.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.has_scheduling_mode">
+<tt class="descname">has_scheduling_mode</tt><big>(</big><em>mode</em><big>)</big><a class="headerlink" href="#Gst.Query.has_scheduling_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mode</strong> (<a class="reference internal" href="../enums.html#Gst.PadMode" title="Gst.PadMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode</span></tt></a>) &#8211; the scheduling mode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> when <cite>mode</cite> is in the list of scheduling modes.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>query</cite> has scheduling mode set.</p>
+<p>When checking if upstream supports pull mode, it is usually not
+enough to just check for <a class="reference internal" href="../enums.html#Gst.PadMode.PULL" title="Gst.PadMode.PULL"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode.PULL</span></tt></a> with this function, you
+also want to check whether the scheduling flags returned by
+<a class="reference internal" href="#Gst.Query.parse_scheduling" title="Gst.Query.parse_scheduling"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query.parse_scheduling</span></tt></a> () have the seeking flag set (meaning
+random access is supported, not only sequential pulls).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.has_scheduling_mode_with_flags">
+<tt class="descname">has_scheduling_mode_with_flags</tt><big>(</big><em>mode</em>, <em>flags</em><big>)</big><a class="headerlink" href="#Gst.Query.has_scheduling_mode_with_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mode</strong> (<a class="reference internal" href="../enums.html#Gst.PadMode" title="Gst.PadMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode</span></tt></a>) &#8211; the scheduling mode</li>
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.SchedulingFlags" title="Gst.SchedulingFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SchedulingFlags</span></tt></a>) &#8211; <a class="reference internal" href="../flags.html#Gst.SchedulingFlags" title="Gst.SchedulingFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SchedulingFlags</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> when <cite>mode</cite> is in the list of scheduling modes and <cite>flags</cite> are compatible with query flags.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Check if <cite>query</cite> has scheduling mode set and <cite>flags</cite> is set in
+query scheduling flags.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_accept_caps">
+<tt class="descname">parse_accept_caps</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_accept_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">caps: <a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the caps from <cite>query</cite>. The caps remains valid as long as <cite>query</cite> remains
+valid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_accept_caps_result">
+<tt class="descname">parse_accept_caps_result</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#Gst.Query.parse_accept_caps_result" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; location for the result</td>
+</tr>
+</tbody>
+</table>
+<p>Parse the result from <cite>query</cite> and store in <cite>result</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_allocation">
+<tt class="descname">parse_allocation</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_allocation" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">caps: <a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>, need_pool: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an allocation query, writing the requested caps in <cite>caps</cite> and
+whether a pool is needed in <cite>need_pool</cite>, if the respective parameters
+are non-NULL.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_buffering_percent">
+<tt class="descname">parse_buffering_percent</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_buffering_percent" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">busy: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, percent: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the percentage of buffered data. This is a value between 0 and 100.
+The <cite>busy</cite> indicator is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> when the buffering is in progress.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_buffering_range">
+<tt class="descname">parse_buffering_range</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_buffering_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>, start: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, stop: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, estimated_total: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an available query, writing the format into <cite>format</cite>, and
+other results into the passed parameters, if the respective parameters
+are non-NULL</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_buffering_stats">
+<tt class="descname">parse_buffering_stats</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_buffering_stats" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">mode: <a class="reference internal" href="../enums.html#Gst.BufferingMode" title="Gst.BufferingMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferingMode</span></tt></a>, avg_in: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, avg_out: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, buffering_left: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Extracts the buffering stats values from <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_caps">
+<tt class="descname">parse_caps</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_caps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">filter: <a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the filter from the caps <cite>query</cite>. The caps remains valid as long as
+<cite>query</cite> remains valid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_caps_result">
+<tt class="descname">parse_caps_result</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_caps_result" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">caps: <a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the caps result from <cite>query</cite>. The caps remains valid as long as
+<cite>query</cite> remains valid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_context">
+<tt class="descname">parse_context</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_context" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">context: <a class="reference internal" href="Context.html#Gst.Context" title="Gst.Context"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Context</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the context from the context <cite>query</cite>. The context remains valid as long as
+<cite>query</cite> remains valid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_context_type">
+<tt class="descname">parse_context_type</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_context_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> indicating if the parsing succeeded.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, context_type: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse a context type from an existing <a class="reference internal" href="../enums.html#Gst.QueryType.CONTEXT" title="Gst.QueryType.CONTEXT"><tt class="xref py py-class docutils literal"><span class="pre">Gst.QueryType.CONTEXT</span></tt></a> query.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_convert">
+<tt class="descname">parse_convert</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_convert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">src_format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>, src_value: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, dest_format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>, dest_value: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse a convert query answer. Any of <cite>src_format</cite>, <cite>src_value</cite>, <cite>dest_format</cite>,
+and <cite>dest_value</cite> may be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, in which case that value is omitted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_duration">
+<tt class="descname">parse_duration</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_duration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>, duration: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse a duration query answer. Write the format of the duration into <cite>format</cite>,
+and the value into <cite>duration</cite>, if the respective variables are non-NULL.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_latency">
+<tt class="descname">parse_latency</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">live: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, min_latency: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, max_latency: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse a latency query answer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_n_formats">
+<tt class="descname">parse_n_formats</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_n_formats" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">n_formats: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse the number of formats in the formats <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_nth_allocation_meta">
+<tt class="descname">parse_nth_allocation_meta</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.parse_nth_allocation_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the metadata API array to read</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> of the metadata API at <cite>index</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a>, params: <a class="reference internal" href="Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an available query and get the metadata API
+at <cite>index</cite> of the metadata API array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_nth_allocation_param">
+<tt class="descname">parse_nth_allocation_param</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.parse_nth_allocation_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the allocator array to read</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">allocator: <a class="reference internal" href="../classes/Allocator.html#Gst.Allocator" title="Gst.Allocator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator</span></tt></a>, params: <a class="reference internal" href="AllocationParams.html#Gst.AllocationParams" title="Gst.AllocationParams"><tt class="xref py py-class docutils literal"><span class="pre">Gst.AllocationParams</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an available query and get the alloctor and its params
+at <cite>index</cite> of the allocator array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_nth_allocation_pool">
+<tt class="descname">parse_nth_allocation_pool</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.parse_nth_allocation_pool" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; index to parse</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">pool: <a class="reference internal" href="../classes/BufferPool.html#Gst.BufferPool" title="Gst.BufferPool"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPool</span></tt></a>, size: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, min_buffers: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, max_buffers: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the pool parameters in <cite>query</cite>.</p>
+<p>Unref <cite>pool</cite> with <a class="reference internal" href="../classes/Object.html#Gst.Object.unref" title="Gst.Object.unref"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Object.unref</span></tt></a> () when it&#8217;s not needed any more.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_nth_buffering_range">
+<tt class="descname">parse_nth_buffering_range</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.parse_nth_buffering_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the buffered-ranges array to read</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a> indicating if the parsing succeeded.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, start: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, stop: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an available query and get the start and stop values stored
+at the <cite>index</cite> of the buffered ranges array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_nth_format">
+<tt class="descname">parse_nth_format</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_nth_format" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">nth: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse the format query and retrieve the <cite>nth</cite> format from it into
+<cite>format</cite>. If the list contains less elements than <cite>nth</cite>, <cite>format</cite> will be
+set to <a class="reference internal" href="../enums.html#Gst.Format.UNDEFINED" title="Gst.Format.UNDEFINED"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format.UNDEFINED</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_nth_scheduling_mode">
+<tt class="descname">parse_nth_scheduling_mode</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.parse_nth_scheduling_mode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the scheduling modes array to read</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#Gst.PadMode" title="Gst.PadMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode</span></tt></a> of the scheduling mode at <cite>index</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Gst.PadMode" title="Gst.PadMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.PadMode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an available query and get the scheduling mode
+at <cite>index</cite> of the scheduling modes array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_position">
+<tt class="descname">parse_position</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>, cur: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse a position query, writing the format into <cite>format</cite>, and the position
+into <cite>cur</cite>, if the respective parameters are non-NULL.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_scheduling">
+<tt class="descname">parse_scheduling</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_scheduling" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">flags: <a class="reference internal" href="../flags.html#Gst.SchedulingFlags" title="Gst.SchedulingFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SchedulingFlags</span></tt></a>, minsize: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, maxsize: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, align: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the scheduling properties.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_seeking">
+<tt class="descname">parse_seeking</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_seeking" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>, seekable: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, segment_start: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, segment_end: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse a seeking query, writing the format into <cite>format</cite>, and
+other results into the passed parameters, if the respective parameters
+are non-NULL</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_segment">
+<tt class="descname">parse_segment</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_segment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">rate: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>, format: <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>, start_value: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, stop_value: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse a segment query answer. Any of <cite>rate</cite>, <cite>format</cite>, <cite>start_value</cite>, and
+<cite>stop_value</cite> may be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, which will cause this value to be omitted.</p>
+<p>See <a class="reference internal" href="#Gst.Query.set_segment" title="Gst.Query.set_segment"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Query.set_segment</span></tt></a> () for an explanation of the function arguments.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_uri">
+<tt class="descname">parse_uri</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">uri: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an URI query, writing the URI into <cite>uri</cite> as a newly
+allocated string, if the respective parameters are non-NULL.
+Free the string with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () after usage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.parse_uri_redirection">
+<tt class="descname">parse_uri_redirection</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.parse_uri_redirection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">uri: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Parse an URI query, writing the URI into <cite>uri</cite> as a newly
+allocated string, if the respective parameters are non-NULL.
+Free the string with <a class="reference internal" href="../../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () after usage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.remove_nth_allocation_meta">
+<tt class="descname">remove_nth_allocation_meta</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.remove_nth_allocation_meta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the metadata API array to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the metadata API at <cite>index</cite> of the metadata API array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.remove_nth_allocation_param">
+<tt class="descname">remove_nth_allocation_param</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.remove_nth_allocation_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the allocation param array to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the allocation param at <cite>index</cite> of the allocation param array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.remove_nth_allocation_pool">
+<tt class="descname">remove_nth_allocation_pool</tt><big>(</big><em>index</em><big>)</big><a class="headerlink" href="#Gst.Query.remove_nth_allocation_pool" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the allocation pool array to remove</td>
+</tr>
+</tbody>
+</table>
+<p>Remove the allocation pool at <cite>index</cite> of the allocation pool array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_accept_caps_result">
+<tt class="descname">set_accept_caps_result</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#Gst.Query.set_accept_caps_result" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the result to set</td>
+</tr>
+</tbody>
+</table>
+<p>Set <cite>result</cite> as the result for the <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_buffering_percent">
+<tt class="descname">set_buffering_percent</tt><big>(</big><em>busy</em>, <em>percent</em><big>)</big><a class="headerlink" href="#Gst.Query.set_buffering_percent" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>busy</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; if buffering is busy</li>
+<li><strong>percent</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a buffering percent</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the percentage of buffered data. This is a value between 0 and 100.
+The <cite>busy</cite> indicator is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> when the buffering is in progress.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_buffering_range">
+<tt class="descname">set_buffering_range</tt><big>(</big><em>format</em>, <em>start</em>, <em>stop</em>, <em>estimated_total</em><big>)</big><a class="headerlink" href="#Gst.Query.set_buffering_range" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the format to set for the <cite>start</cite> and <cite>stop</cite> values</li>
+<li><strong>start</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the start to set</li>
+<li><strong>stop</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the stop to set</li>
+<li><strong>estimated_total</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; estimated total amount of download time remaining in miliseconds</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the available query result fields in <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_buffering_stats">
+<tt class="descname">set_buffering_stats</tt><big>(</big><em>mode</em>, <em>avg_in</em>, <em>avg_out</em>, <em>buffering_left</em><big>)</big><a class="headerlink" href="#Gst.Query.set_buffering_stats" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>mode</strong> (<a class="reference internal" href="../enums.html#Gst.BufferingMode" title="Gst.BufferingMode"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferingMode</span></tt></a>) &#8211; a buffering mode</li>
+<li><strong>avg_in</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the average input rate</li>
+<li><strong>avg_out</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the average output rate</li>
+<li><strong>buffering_left</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; amount of buffering time left in milliseconds</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Configures the buffering stats values in <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_caps_result">
+<tt class="descname">set_caps_result</tt><big>(</big><em>caps</em><big>)</big><a class="headerlink" href="#Gst.Query.set_caps_result" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>caps</strong> (<a class="reference internal" href="Caps.html#Gst.Caps" title="Gst.Caps"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Caps</span></tt></a>) &#8211; A pointer to the caps</td>
+</tr>
+</tbody>
+</table>
+<p>Set the <cite>caps</cite> result in <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_context">
+<tt class="descname">set_context</tt><big>(</big><em>context</em><big>)</big><a class="headerlink" href="#Gst.Query.set_context" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>context</strong> (<a class="reference internal" href="Context.html#Gst.Context" title="Gst.Context"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Context</span></tt></a>) &#8211; the requested <a class="reference internal" href="Context.html#Gst.Context" title="Gst.Context"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Context</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Answer a context query by setting the requested context.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_convert">
+<tt class="descname">set_convert</tt><big>(</big><em>src_format</em>, <em>src_value</em>, <em>dest_format</em>, <em>dest_value</em><big>)</big><a class="headerlink" href="#Gst.Query.set_convert" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>src_format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the source <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a></li>
+<li><strong>src_value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the source value</li>
+<li><strong>dest_format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the destination <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a></li>
+<li><strong>dest_value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the destination value</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Answer a convert query by setting the requested values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_duration">
+<tt class="descname">set_duration</tt><big>(</big><em>format</em>, <em>duration</em><big>)</big><a class="headerlink" href="#Gst.Query.set_duration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> for the duration</li>
+<li><strong>duration</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the duration of the stream</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Answer a duration query by setting the requested value in the given format.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_formatsv">
+<tt class="descname">set_formatsv</tt><big>(</big><em>formats</em><big>)</big><a class="headerlink" href="#Gst.Query.set_formatsv" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>formats</strong> ([<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>]) &#8211; an array containing <cite>n_formats</cite> <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> values.</td>
+</tr>
+</tbody>
+</table>
+<p>Set the formats query result fields in <cite>query</cite>. The number of formats passed
+in the <cite>formats</cite> array must be equal to <cite>n_formats</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_latency">
+<tt class="descname">set_latency</tt><big>(</big><em>live</em>, <em>min_latency</em>, <em>max_latency</em><big>)</big><a class="headerlink" href="#Gst.Query.set_latency" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>live</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; if there is a live element upstream</li>
+<li><strong>min_latency</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the minimal latency of the upstream elements</li>
+<li><strong>max_latency</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the maximal latency of the upstream elements</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Answer a latency query by setting the requested values in the given format.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_nth_allocation_param">
+<tt class="descname">set_nth_allocation_param</tt><big>(</big><em>index</em>, <em>allocator</em>, <em>params</em><big>)</big><a class="headerlink" href="#Gst.Query.set_nth_allocation_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; position in the allocator array to set</li>
+<li><strong>allocator</strong> (<a class="reference internal" href="../classes/Allocator.html#Gst.Allocator" title="Gst.Allocator"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Allocator</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; new allocator to set</li>
+<li><strong>params</strong> (<a class="reference internal" href="AllocationParams.html#Gst.AllocationParams" title="Gst.AllocationParams"><tt class="xref py py-class docutils literal"><span class="pre">Gst.AllocationParams</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; parameters for the allocator</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse an available query and get the alloctor and its params
+at <cite>index</cite> of the allocator array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_nth_allocation_pool">
+<tt class="descname">set_nth_allocation_pool</tt><big>(</big><em>index</em>, <em>pool</em>, <em>size</em>, <em>min_buffers</em>, <em>max_buffers</em><big>)</big><a class="headerlink" href="#Gst.Query.set_nth_allocation_pool" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; index to modify</li>
+<li><strong>pool</strong> (<a class="reference internal" href="../classes/BufferPool.html#Gst.BufferPool" title="Gst.BufferPool"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPool</span></tt></a>) &#8211; the <a class="reference internal" href="../classes/BufferPool.html#Gst.BufferPool" title="Gst.BufferPool"><tt class="xref py py-class docutils literal"><span class="pre">Gst.BufferPool</span></tt></a></li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size</li>
+<li><strong>min_buffers</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the min buffers</li>
+<li><strong>max_buffers</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the max buffers</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the pool parameters in <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_position">
+<tt class="descname">set_position</tt><big>(</big><em>format</em>, <em>cur</em><big>)</big><a class="headerlink" href="#Gst.Query.set_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the requested <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a></li>
+<li><strong>cur</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the position to set</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Answer a position query by setting the requested value in the given format.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_scheduling">
+<tt class="descname">set_scheduling</tt><big>(</big><em>flags</em>, <em>minsize</em>, <em>maxsize</em>, <em>align</em><big>)</big><a class="headerlink" href="#Gst.Query.set_scheduling" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>flags</strong> (<a class="reference internal" href="../flags.html#Gst.SchedulingFlags" title="Gst.SchedulingFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SchedulingFlags</span></tt></a>) &#8211; <a class="reference internal" href="../flags.html#Gst.SchedulingFlags" title="Gst.SchedulingFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gst.SchedulingFlags</span></tt></a></li>
+<li><strong>minsize</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the suggested minimum size of pull requests</li>
+<li><strong>maxsize</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the suggested maximum size of pull requests</li>
+<li><strong>align</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the suggested alignment of pull requests</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the scheduling properties.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_seeking">
+<tt class="descname">set_seeking</tt><big>(</big><em>format</em>, <em>seekable</em>, <em>segment_start</em>, <em>segment_end</em><big>)</big><a class="headerlink" href="#Gst.Query.set_seeking" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the format to set for the <cite>segment_start</cite> and <cite>segment_end</cite> values</li>
+<li><strong>seekable</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; the seekable flag to set</li>
+<li><strong>segment_start</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the segment_start to set</li>
+<li><strong>segment_end</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the segment_end to set</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the seeking query result fields in <cite>query</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_segment">
+<tt class="descname">set_segment</tt><big>(</big><em>rate</em>, <em>format</em>, <em>start_value</em>, <em>stop_value</em><big>)</big><a class="headerlink" href="#Gst.Query.set_segment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rate</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the rate of the segment</li>
+<li><strong>format</strong> (<a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a>) &#8211; the <a class="reference internal" href="../enums.html#Gst.Format" title="Gst.Format"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Format</span></tt></a> of the segment values (<cite>start_value</cite> and <cite>stop_value</cite> )</li>
+<li><strong>start_value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the start value</li>
+<li><strong>stop_value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the stop value</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Answer a segment query by setting the requested values. The normal
+playback segment of a pipeline is 0 to duration at the default rate of
+1.0. If a seek was performed on the pipeline to play a different
+segment, this query will return the range specified in the last seek.</p>
+<p><cite>start_value</cite> and <cite>stop_value</cite> will respectively contain the configured
+playback range start and stop values expressed in <cite>format</cite>.
+The values are always between 0 and the duration of the media and
+<cite>start_value</cite> &lt;= <cite>stop_value</cite>. <cite>rate</cite> will contain the playback rate. For
+negative rates, playback will actually happen from <cite>stop_value</cite> to
+<cite>start_value</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_uri">
+<tt class="descname">set_uri</tt><big>(</big><em>uri</em><big>)</big><a class="headerlink" href="#Gst.Query.set_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the URI to set</td>
+</tr>
+</tbody>
+</table>
+<p>Answer a URI query by setting the requested URI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.set_uri_redirection">
+<tt class="descname">set_uri_redirection</tt><big>(</big><em>uri</em><big>)</big><a class="headerlink" href="#Gst.Query.set_uri_redirection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the URI to set</td>
+</tr>
+</tbody>
+</table>
+<p>Answer a URI query by setting the requested URI redirection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gst.Query.writable_structure">
+<tt class="descname">writable_structure</tt><big>(</big><big>)</big><a class="headerlink" href="#Gst.Query.writable_structure" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a> of the query. The structure is still owned by the query and will therefore be freed when the query is unreffed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Structure.html#Gst.Structure" title="Gst.Structure"><tt class="xref py py-class docutils literal"><span class="pre">Gst.Structure</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the structure of a query. This method should be called with a writable
+<cite>query</cite> so that the returned structure is guranteed to be writable.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Sample.html" class="btn btn-neutral float-right" title="Gst.Sample"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="PollFD.html" class="btn btn-neutral" title="Gst.PollFD"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,644 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.PrintContext -
+    
+      Classes -
+    
+      Gtk 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gtk.PrintOperation" href="PrintOperation.html"/>
+        <link rel="prev" title="Gtk.Plug" href="Plug.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gtk 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gtk.PrintContext</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gtk.PrintContext</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gtk_3.0/classes/PrintContext" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gtk-printcontext">
+<h1>Gtk.PrintContext<a class="headerlink" href="#gtk-printcontext" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-e9083fa8c84695013eacdf2544cac138d7a6b341.png" alt="Inheritance diagram of Gtk.PrintContext" usemap="#inheritance64c7b59a5c" class="inheritance"/>
+<map id="inheritance64c7b59a5c" name="inheritance64c7b59a5c">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="8,5,104,29"/>
+<area shape="rect" id="node2" href="#Gtk.PrintContext" title="Gtk.PrintContext" alt="" coords="5,77,107,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.create_pango_context" title="Gtk.PrintContext.create_pango_context"><tt class="xref py py-obj docutils literal"><span class="pre">create_pango_context</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.create_pango_layout" title="Gtk.PrintContext.create_pango_layout"><tt class="xref py py-obj docutils literal"><span class="pre">create_pango_layout</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_cairo_context" title="Gtk.PrintContext.get_cairo_context"><tt class="xref py py-obj docutils literal"><span class="pre">get_cairo_context</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_dpi_x" title="Gtk.PrintContext.get_dpi_x"><tt class="xref py py-obj docutils literal"><span class="pre">get_dpi_x</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_dpi_y" title="Gtk.PrintContext.get_dpi_y"><tt class="xref py py-obj docutils literal"><span class="pre">get_dpi_y</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_hard_margins" title="Gtk.PrintContext.get_hard_margins"><tt class="xref py py-obj docutils literal"><span class="pre">get_hard_margins</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_height" title="Gtk.PrintContext.get_height"><tt class="xref py py-obj docutils literal"><span class="pre">get_height</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_page_setup" title="Gtk.PrintContext.get_page_setup"><tt class="xref py py-obj docutils literal"><span class="pre">get_page_setup</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_pango_fontmap" title="Gtk.PrintContext.get_pango_fontmap"><tt class="xref py py-obj docutils literal"><span class="pre">get_pango_fontmap</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.get_width" title="Gtk.PrintContext.get_width"><tt class="xref py py-obj docutils literal"><span class="pre">get_width</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.PrintContext.set_cairo_context" title="Gtk.PrintContext.set_cairo_context"><tt class="xref py py-obj docutils literal"><span class="pre">set_cairo_context</span></tt></a>(cr, dpi_x, dpi_y)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-printcontext-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="gtk-printcontext-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.PrintContext">
+<em class="property">class </em><tt class="descclassname">Gtk.</tt><tt class="descname">PrintContext</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gtk.PrintContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<p>A <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a> encapsulates context information that is required when
+drawing pages for printing, such as the cairo context and important
+parameters like page size and resolution. It also lets you easily
+create <a class="reference internal" href="../../Pango_1.0/classes/Layout.html#Pango.Layout" title="Pango.Layout"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Layout</span></tt></a> and <a class="reference internal" href="../../Pango_1.0/classes/Context.html#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a> objects that match the font metrics
+of the cairo surface.</p>
+<p><a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a> objects gets passed to the <a class="reference internal" href="PrintOperation.html#Gtk.PrintOperation" title="Gtk.PrintOperation"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintOperation</span></tt></a> <a class="reference internal" href="PrintOperation.html#begin-print"><em>::begin-print</em></a>,
+<a class="reference internal" href="PrintOperation.html#Gtk.PrintOperation" title="Gtk.PrintOperation"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintOperation</span></tt></a> <a class="reference internal" href="PrintOperation.html#end-print"><em>::end-print</em></a>, <a class="reference internal" href="PrintOperation.html#Gtk.PrintOperation" title="Gtk.PrintOperation"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintOperation</span></tt></a> <a class="reference internal" href="PrintOperation.html#request-page-setup"><em>::request-page-setup</em></a> and
+<a class="reference internal" href="PrintOperation.html#Gtk.PrintOperation" title="Gtk.PrintOperation"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintOperation</span></tt></a> <a class="reference internal" href="PrintOperation.html#draw-page"><em>::draw-page</em></a> signals on the <a class="reference internal" href="PrintOperation.html#Gtk.PrintOperation" title="Gtk.PrintOperation"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintOperation</span></tt></a>.</p>
+<p>Using <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a> in a <a class="reference internal" href="PrintOperation.html#Gtk.PrintOperation" title="Gtk.PrintOperation"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintOperation</span></tt></a> <a class="reference internal" href="PrintOperation.html#draw-page"><em>::draw-page</em></a> callback</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">draw_page</span> <span class="p">(</span><span class="n">GtkPrintOperation</span> <span class="o">*</span><span class="n">operation</span><span class="p">,</span>
+       <span class="n">GtkPrintContext</span>   <span class="o">*</span><span class="n">context</span><span class="p">,</span>
+       <span class="kt">int</span>                <span class="n">page_nr</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">cairo_t</span> <span class="o">*</span><span class="n">cr</span><span class="p">;</span>
+  <span class="n">PangoLayout</span> <span class="o">*</span><span class="n">layout</span><span class="p">;</span>
+  <span class="n">PangoFontDescription</span> <span class="o">*</span><span class="n">desc</span><span class="p">;</span>
+
+  <span class="n">cr</span> <span class="o">=</span> <span class="n">gtk_print_context_get_cairo_context</span> <span class="p">(</span><span class="n">context</span><span class="p">);</span>
+
+  <span class="c1">// Draw a red rectangle, as wide as the paper (inside the margins)</span>
+  <span class="n">cairo_set_source_rgb</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">cairo_rectangle</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">gtk_print_context_get_width</span> <span class="p">(</span><span class="n">context</span><span class="p">),</span> <span class="mi">50</span><span class="p">);</span>
+
+  <span class="n">cairo_fill</span> <span class="p">(</span><span class="n">cr</span><span class="p">);</span>
+
+  <span class="c1">// Draw some lines</span>
+  <span class="n">cairo_move_to</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+  <span class="n">cairo_line_to</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+  <span class="n">cairo_arc</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">M_PI</span><span class="p">);</span>
+  <span class="n">cairo_line_to</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+
+  <span class="n">cairo_set_source_rgb</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">cairo_set_line_width</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+  <span class="n">cairo_set_line_cap</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="n">CAIRO_LINE_CAP_ROUND</span><span class="p">);</span>
+  <span class="n">cairo_set_line_join</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="n">CAIRO_LINE_JOIN_ROUND</span><span class="p">);</span>
+
+  <span class="n">cairo_stroke</span> <span class="p">(</span><span class="n">cr</span><span class="p">);</span>
+
+  <span class="c1">// Draw some text</span>
+  <span class="n">layout</span> <span class="o">=</span> <span class="n">gtk_print_context_create_layout</span> <span class="p">(</span><span class="n">context</span><span class="p">);</span>
+  <span class="n">pango_layout_set_text</span> <span class="p">(</span><span class="n">layout</span><span class="p">,</span> <span class="s">&quot;Hello World! Printing is easy&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">desc</span> <span class="o">=</span> <span class="n">pango_font_description_from_string</span> <span class="p">(</span><span class="s">&quot;sans 28&quot;</span><span class="p">);</span>
+  <span class="n">pango_layout_set_font_description</span> <span class="p">(</span><span class="n">layout</span><span class="p">,</span> <span class="n">desc</span><span class="p">);</span>
+  <span class="n">pango_font_description_free</span> <span class="p">(</span><span class="n">desc</span><span class="p">);</span>
+
+  <span class="n">cairo_move_to</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+  <span class="n">pango_cairo_layout_path</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="n">layout</span><span class="p">);</span>
+
+  <span class="c1">// Font Outline</span>
+  <span class="n">cairo_set_source_rgb</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mf">0.93</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.47</span><span class="p">);</span>
+  <span class="n">cairo_set_line_width</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+  <span class="n">cairo_stroke_preserve</span> <span class="p">(</span><span class="n">cr</span><span class="p">);</span>
+
+  <span class="c1">// Font Fill</span>
+  <span class="n">cairo_set_source_rgb</span> <span class="p">(</span><span class="n">cr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+  <span class="n">cairo_fill</span> <span class="p">(</span><span class="n">cr</span><span class="p">);</span>
+
+  <span class="n">g_object_unref</span> <span class="p">(</span><span class="n">layout</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Printing support was added in GTK+ 2.10.</p>
+<dl class="method">
+<dt id="Gtk.PrintContext.create_pango_context">
+<tt class="descname">create_pango_context</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.create_pango_context" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new Pango context for <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Pango_1.0/classes/Context.html#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="../../Pango_1.0/classes/Context.html#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a> that can be used with the
+<a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.create_pango_layout">
+<tt class="descname">create_pango_layout</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.create_pango_layout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new Pango layout for <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Pango_1.0/classes/Layout.html#Pango.Layout" title="Pango.Layout"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Layout</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="../../Pango_1.0/classes/Layout.html#Pango.Layout" title="Pango.Layout"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Layout</span></tt></a> that is suitable for use
+with the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_cairo_context">
+<tt class="descname">get_cairo_context</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_cairo_context" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the cairo context of <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://cairographics.org/documentation/pycairo/2/reference/context.html#cairo.Context" title="(in Pycairo v1.10)"><tt class="xref py py-class docutils literal"><span class="pre">cairo.Context</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Obtains the cairo context that is associated with the
+<a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_dpi_x">
+<tt class="descname">get_dpi_x</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_dpi_x" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the horizontal resolution of <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Obtains the horizontal resolution of the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>,
+in dots per inch.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_dpi_y">
+<tt class="descname">get_dpi_y</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_dpi_y" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the vertical resolution of <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Obtains the vertical resolution of the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>,
+in dots per inch.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_hard_margins">
+<tt class="descname">get_hard_margins</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_hard_margins" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the hard margins were retrieved</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, top: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>, bottom: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>, left: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>, right: <tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Obtains the hardware printer margins of the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>, in units.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_height">
+<tt class="descname">get_height</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the height of <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Obtains the height of the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>, in pixels.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_page_setup">
+<tt class="descname">get_page_setup</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_page_setup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the page setup of <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="PageSetup.html#Gtk.PageSetup" title="Gtk.PageSetup"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PageSetup</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Obtains the <a class="reference internal" href="PageSetup.html#Gtk.PageSetup" title="Gtk.PageSetup"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PageSetup</span></tt></a> that determines the page
+dimensions of the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_pango_fontmap">
+<tt class="descname">get_pango_fontmap</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_pango_fontmap" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the font map of <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../../Pango_1.0/classes/FontMap.html#Pango.FontMap" title="Pango.FontMap"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMap</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns a <a class="reference internal" href="../../Pango_1.0/classes/FontMap.html#Pango.FontMap" title="Pango.FontMap"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMap</span></tt></a> that is suitable for use
+with the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.get_width">
+<tt class="descname">get_width</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.PrintContext.get_width" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the width of <cite>context</cite></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">float</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Obtains the width of the <a class="reference internal" href="#Gtk.PrintContext" title="Gtk.PrintContext"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.PrintContext</span></tt></a>, in pixels.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.PrintContext.set_cairo_context">
+<tt class="descname">set_cairo_context</tt><big>(</big><em>cr</em>, <em>dpi_x</em>, <em>dpi_y</em><big>)</big><a class="headerlink" href="#Gtk.PrintContext.set_cairo_context" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cr</strong> (<a class="reference external" href="http://cairographics.org/documentation/pycairo/2/reference/context.html#cairo.Context" title="(in Pycairo v1.10)"><tt class="xref py py-class docutils literal"><span class="pre">cairo.Context</span></tt></a>) &#8211; the cairo context</li>
+<li><strong>dpi_x</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the horizontal resolution to use with <cite>cr</cite></li>
+<li><strong>dpi_y</strong> (<tt class="xref py py-class docutils literal"><span class="pre">float</span></tt>) &#8211; the vertical resolution to use with <cite>cr</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets a new cairo context on a print context.</p>
+<p>This function is intended to be used when implementing
+an internal print preview, it is not needed for printing,
+since GTK+ itself creates a suitable cairo context in that
+case.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="PrintOperation.html" class="btn btn-neutral float-right" title="Gtk.PrintOperation"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Plug.html" class="btn btn-neutral" title="Gtk.Plug"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

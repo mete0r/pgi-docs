@@ -1,0 +1,1249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GLib.IOChannel -
+    
+      Structures -
+    
+      GLib 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="GLib.IOFuncs" href="IOFuncs.html"/>
+        <link rel="prev" title="GLib.IConv" href="IConv.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GLib 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GLib.IOChannel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GLib 2.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">GLib.IOChannel</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GLib_2.0/structs/IOChannel" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="glib-iochannel">
+<h1>GLib.IOChannel<a class="headerlink" href="#glib-iochannel" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>close_on_unref</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>do_encode</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>encoded_read_buf</td>
+<td><a class="reference internal" href="String.html#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>encoding</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>funcs</td>
+<td><a class="reference internal" href="IOFuncs.html#GLib.IOFuncs" title="GLib.IOFuncs"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOFuncs</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>is_readable</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>is_seekable</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>is_writeable</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>line_term</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>line_term_len</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>read_buf</td>
+<td><a class="reference internal" href="String.html#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>read_cd</td>
+<td><a class="reference internal" href="IConv.html#GLib.IConv" title="GLib.IConv"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IConv</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>ref_count</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>use_buffer</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-even"><td>write_buf</td>
+<td><a class="reference internal" href="String.html#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a></td>
+<td>r</td>
+</tr>
+<tr class="row-odd"><td>write_cd</td>
+<td><a class="reference internal" href="IConv.html#GLib.IConv" title="GLib.IConv"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IConv</span></tt></a></td>
+<td>r</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.IOChannel.error_from_errno" title="GLib.IOChannel.error_from_errno"><tt class="xref py py-obj docutils literal"><span class="pre">error_from_errno</span></tt></a>(en)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.IOChannel.error_quark" title="GLib.IOChannel.error_quark"><tt class="xref py py-obj docutils literal"><span class="pre">error_quark</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.IOChannel.new_file" title="GLib.IOChannel.new_file"><tt class="xref py py-obj docutils literal"><span class="pre">new_file</span></tt></a>(filename, mode)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GLib.IOChannel.unix_new" title="GLib.IOChannel.unix_new"><tt class="xref py py-obj docutils literal"><span class="pre">unix_new</span></tt></a>(fd)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.close" title="GLib.IOChannel.close"><tt class="xref py py-obj docutils literal"><span class="pre">close</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.flush" title="GLib.IOChannel.flush"><tt class="xref py py-obj docutils literal"><span class="pre">flush</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.get_buffer_condition" title="GLib.IOChannel.get_buffer_condition"><tt class="xref py py-obj docutils literal"><span class="pre">get_buffer_condition</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.get_buffer_size" title="GLib.IOChannel.get_buffer_size"><tt class="xref py py-obj docutils literal"><span class="pre">get_buffer_size</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.get_buffered" title="GLib.IOChannel.get_buffered"><tt class="xref py py-obj docutils literal"><span class="pre">get_buffered</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.get_close_on_unref" title="GLib.IOChannel.get_close_on_unref"><tt class="xref py py-obj docutils literal"><span class="pre">get_close_on_unref</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.get_encoding" title="GLib.IOChannel.get_encoding"><tt class="xref py py-obj docutils literal"><span class="pre">get_encoding</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.get_flags" title="GLib.IOChannel.get_flags"><tt class="xref py py-obj docutils literal"><span class="pre">get_flags</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.get_line_term" title="GLib.IOChannel.get_line_term"><tt class="xref py py-obj docutils literal"><span class="pre">get_line_term</span></tt></a>(length)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.init" title="GLib.IOChannel.init"><tt class="xref py py-obj docutils literal"><span class="pre">init</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.read" title="GLib.IOChannel.read"><tt class="xref py py-obj docutils literal"><span class="pre">read</span></tt></a>(buf, count, bytes_read)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.read_chars" title="GLib.IOChannel.read_chars"><tt class="xref py py-obj docutils literal"><span class="pre">read_chars</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.read_line" title="GLib.IOChannel.read_line"><tt class="xref py py-obj docutils literal"><span class="pre">read_line</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.read_line_string" title="GLib.IOChannel.read_line_string"><tt class="xref py py-obj docutils literal"><span class="pre">read_line_string</span></tt></a>(buffer, terminator_pos)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.read_to_end" title="GLib.IOChannel.read_to_end"><tt class="xref py py-obj docutils literal"><span class="pre">read_to_end</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.read_unichar" title="GLib.IOChannel.read_unichar"><tt class="xref py py-obj docutils literal"><span class="pre">read_unichar</span></tt></a>(thechar)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.ref" title="GLib.IOChannel.ref"><tt class="xref py py-obj docutils literal"><span class="pre">ref</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.seek" title="GLib.IOChannel.seek"><tt class="xref py py-obj docutils literal"><span class="pre">seek</span></tt></a>(offset, type)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.seek_position" title="GLib.IOChannel.seek_position"><tt class="xref py py-obj docutils literal"><span class="pre">seek_position</span></tt></a>(offset, type)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.set_buffer_size" title="GLib.IOChannel.set_buffer_size"><tt class="xref py py-obj docutils literal"><span class="pre">set_buffer_size</span></tt></a>(size)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.set_buffered" title="GLib.IOChannel.set_buffered"><tt class="xref py py-obj docutils literal"><span class="pre">set_buffered</span></tt></a>(buffered)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.set_close_on_unref" title="GLib.IOChannel.set_close_on_unref"><tt class="xref py py-obj docutils literal"><span class="pre">set_close_on_unref</span></tt></a>(do_close)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.set_encoding" title="GLib.IOChannel.set_encoding"><tt class="xref py py-obj docutils literal"><span class="pre">set_encoding</span></tt></a>(encoding)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.set_flags" title="GLib.IOChannel.set_flags"><tt class="xref py py-obj docutils literal"><span class="pre">set_flags</span></tt></a>(flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.set_line_term" title="GLib.IOChannel.set_line_term"><tt class="xref py py-obj docutils literal"><span class="pre">set_line_term</span></tt></a>(line_term, length)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.shutdown" title="GLib.IOChannel.shutdown"><tt class="xref py py-obj docutils literal"><span class="pre">shutdown</span></tt></a>(flush)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.unix_get_fd" title="GLib.IOChannel.unix_get_fd"><tt class="xref py py-obj docutils literal"><span class="pre">unix_get_fd</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.unref" title="GLib.IOChannel.unref"><tt class="xref py py-obj docutils literal"><span class="pre">unref</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.write" title="GLib.IOChannel.write"><tt class="xref py py-obj docutils literal"><span class="pre">write</span></tt></a>(buf, count, bytes_written)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.write_chars" title="GLib.IOChannel.write_chars"><tt class="xref py py-obj docutils literal"><span class="pre">write_chars</span></tt></a>(buf, count)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GLib.IOChannel.write_unichar" title="GLib.IOChannel.write_unichar"><tt class="xref py py-obj docutils literal"><span class="pre">write_unichar</span></tt></a>(thechar)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GLib.IOChannel">
+<em class="property">class </em><tt class="descclassname">GLib.</tt><tt class="descname">IOChannel</tt><a class="headerlink" href="#GLib.IOChannel" title="Permalink to this definition">¶</a></dt>
+<dd><p>A data structure representing an IO Channel. The fields should be
+considered private and should only be accessed with the following
+functions.</p>
+<dl class="staticmethod">
+<dt id="GLib.IOChannel.error_from_errno">
+<em class="property">static </em><tt class="descname">error_from_errno</tt><big>(</big><em>en</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.error_from_errno" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>en</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an <tt class="docutils literal"><span class="pre">errno</span></tt> error number, e.g. <tt class="docutils literal"><span class="pre">EINVAL</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GLib.IOChannelError" title="GLib.IOChannelError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannelError</span></tt></a> error number, e.g. <a class="reference internal" href="../enums.html#GLib.IOChannelError.INVAL" title="GLib.IOChannelError.INVAL"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannelError.INVAL</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOChannelError" title="GLib.IOChannelError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannelError</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Converts an <tt class="docutils literal"><span class="pre">errno</span></tt> error number to a <a class="reference internal" href="../enums.html#GLib.IOChannelError" title="GLib.IOChannelError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannelError</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.IOChannel.error_quark">
+<em class="property">static </em><tt class="descname">error_quark</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.error_quark" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the quark used as %G_IO_CHANNEL_ERROR</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.IOChannel.new_file">
+<em class="property">static </em><tt class="descname">new_file</tt><big>(</big><em>filename</em>, <em>mode</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.new_file" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; A string containing the name of a file</li>
+<li><strong>mode</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; One of &#8220;r&#8221;, &#8220;w&#8221;, &#8220;a&#8221;, &#8220;r+&#8221;, &#8220;w+&#8221;, &#8220;a+&#8221;. These have the same meaning as in fopen()</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> on success, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> on failure.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Open a file <cite>filename</cite> as a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> using mode <cite>mode</cite>. This
+channel will be closed when the last reference to it is dropped,
+so there is no need to call <a class="reference internal" href="#GLib.IOChannel.close" title="GLib.IOChannel.close"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.close</span></tt></a> () (though doing
+so will not cause problems, as long as no attempt is made to
+access the channel after it is closed).</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GLib.IOChannel.unix_new">
+<em class="property">static </em><tt class="descname">unix_new</tt><big>(</big><em>fd</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.unix_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fd</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a file descriptor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> given a file descriptor. On UNIX systems
+this works for plain files, pipes, and sockets.</p>
+<p>The returned <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> has a reference count of 1.</p>
+<p>The default encoding for <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> is UTF-8. If your application
+is reading output from a command using via pipe, you may need to set
+the encoding to the encoding of the current locale (see
+<a class="reference internal" href="../functions.html#GLib.get_charset" title="GLib.get_charset"><tt class="xref py py-class docutils literal"><span class="pre">GLib.get_charset</span></tt></a> ()) with the <a class="reference internal" href="#GLib.IOChannel.set_encoding" title="GLib.IOChannel.set_encoding"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.set_encoding</span></tt></a> () function.</p>
+<p>If you want to read raw binary data without interpretation, then
+call the <a class="reference internal" href="#GLib.IOChannel.set_encoding" title="GLib.IOChannel.set_encoding"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.set_encoding</span></tt></a> () function with <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the
+encoding argument.</p>
+<p>This function is available in GLib on Windows, too, but you should
+avoid using it on Windows. The domain of file descriptors and
+sockets overlap. There is no way for GLib to know which one you mean
+in case the argument you pass to this function happens to be both a
+valid file descriptor and socket. If that happens a warning is
+issued, and GLib assumes that it is the file descriptor you mean.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.close">
+<tt class="descname">close</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close an IO channel. Any pending data to be written will be
+flushed, ignoring errors. The channel will not be freed until the
+last reference is dropped using <a class="reference internal" href="#GLib.IOChannel.unref" title="GLib.IOChannel.unref"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.unref</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.flush">
+<tt class="descname">flush</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.flush" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the status of the operation: One of <a class="reference internal" href="../enums.html#GLib.IOStatus.NORMAL" title="GLib.IOStatus.NORMAL"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.NORMAL</span></tt></a>, <a class="reference internal" href="../enums.html#GLib.IOStatus.AGAIN" title="GLib.IOStatus.AGAIN"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.AGAIN</span></tt></a>, or <a class="reference internal" href="../enums.html#GLib.IOStatus.ERROR" title="GLib.IOStatus.ERROR"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.ERROR</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Flushes the write buffer for the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.get_buffer_condition">
+<tt class="descname">get_buffer_condition</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.get_buffer_condition" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="../flags.html#GLib.IOCondition" title="GLib.IOCondition"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOCondition</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#GLib.IOCondition" title="GLib.IOCondition"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOCondition</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This function returns a <a class="reference internal" href="../flags.html#GLib.IOCondition" title="GLib.IOCondition"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOCondition</span></tt></a> depending on whether there
+is data to be read/space to write data in the internal buffers in
+the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>. Only the flags <a class="reference internal" href="../flags.html#GLib.IOCondition.IN" title="GLib.IOCondition.IN"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOCondition.IN</span></tt></a> and <a class="reference internal" href="../flags.html#GLib.IOCondition.OUT" title="GLib.IOCondition.OUT"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOCondition.OUT</span></tt></a> may be set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.get_buffer_size">
+<tt class="descname">get_buffer_size</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.get_buffer_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the size of the buffer.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the buffer size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.get_buffered">
+<tt class="descname">get_buffered</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.get_buffered" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the <cite>channel</cite> is buffered.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether <cite>channel</cite> is buffered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.get_close_on_unref">
+<tt class="descname">get_close_on_unref</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.get_close_on_unref" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Whether the channel will be closed on the final unref of the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> data structure.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns whether the file/socket/whatever associated with <cite>channel</cite>
+will be closed when <cite>channel</cite> receives its final unref and is
+destroyed. The default value of this is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for channels created
+by <a class="reference internal" href="#GLib.IOChannel.new_file" title="GLib.IOChannel.new_file"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.new_file</span></tt></a> (), and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for all other channels.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.get_encoding">
+<tt class="descname">get_encoding</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.get_encoding" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string containing the encoding, this string is owned by GLib and must not be freed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the encoding for the input/output of the channel.
+The internal encoding is always UTF-8. The encoding <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>
+makes the channel safe for binary data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.get_flags">
+<tt class="descname">get_flags</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.get_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the flags which are set on the channel</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../flags.html#GLib.IOFlags" title="GLib.IOFlags"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOFlags</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the current flags for a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>, including read-only
+flags such as <a class="reference internal" href="../flags.html#GLib.IOFlags.IS_READABLE" title="GLib.IOFlags.IS_READABLE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOFlags.IS_READABLE</span></tt></a>.</p>
+<p>The values of the flags <a class="reference internal" href="../flags.html#GLib.IOFlags.IS_READABLE" title="GLib.IOFlags.IS_READABLE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOFlags.IS_READABLE</span></tt></a> and <a class="reference internal" href="../flags.html#GLib.IOFlags.IS_WRITABLE" title="GLib.IOFlags.IS_WRITABLE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOFlags.IS_WRITABLE</span></tt></a>
+are cached for internal use by the channel when it is created.
+If they should change at some later point (e.g. partial shutdown
+of a socket with the UNIX shutdown() function), the user
+should immediately call <a class="reference internal" href="#GLib.IOChannel.get_flags" title="GLib.IOChannel.get_flags"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.get_flags</span></tt></a> () to update
+the internal values of these flags.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.get_line_term">
+<tt class="descname">get_line_term</tt><big>(</big><em>length</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.get_line_term" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a location to return the length of the line terminator</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The line termination string. This value is owned by GLib and must not be freed.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This returns the string that <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> uses to determine
+where in the file a line break occurs. A value of <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>
+indicates autodetection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.init">
+<tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> struct.</p>
+<p>This is called by each of the above functions when creating a
+<a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>, and so is not often needed by the application
+programmer (unless you are creating a new type of <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> ).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.read">
+<tt class="descname">read</tt><big>(</big><em>buf</em>, <em>count</em>, <em>bytes_read</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.read" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a buffer to read the data into (which should be at least count bytes long)</li>
+<li><strong>count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of bytes to read from the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a></li>
+<li><strong>bytes_read</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; returns the number of bytes actually read</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GLib.IOError.NONE" title="GLib.IOError.NONE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOError.NONE</span></tt></a> if the operation was successful.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GLib.IOError" title="GLib.IOError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOError</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Reads data from a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.read_chars">
+<tt class="descname">read_chars</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.read_chars" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the status of the operation.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a>, buf: [<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>], bytes_read: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Replacement for <a class="reference internal" href="#GLib.IOChannel.read" title="GLib.IOChannel.read"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.read</span></tt></a> () with the new API.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.read_line">
+<tt class="descname">read_line</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.read_line" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the status of the operation.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a>, str_return: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>, length: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>, terminator_pos: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Reads a line, including the terminating character(s),
+from a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> into a newly-allocated string.
+<cite>str_return</cite> will contain allocated memory if the return
+is <a class="reference internal" href="../enums.html#GLib.IOStatus.NORMAL" title="GLib.IOStatus.NORMAL"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.NORMAL</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.read_line_string">
+<tt class="descname">read_line_string</tt><big>(</big><em>buffer</em>, <em>terminator_pos</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.read_line_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buffer</strong> (<a class="reference internal" href="String.html#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a>) &#8211; a <a class="reference internal" href="String.html#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> into which the line will be written. If <cite>buffer</cite> already contains data, the old data will be overwritten.</li>
+<li><strong>terminator_pos</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; location to store position of line terminator, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the status of the operation.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Reads a line from a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>, using a <a class="reference internal" href="String.html#GLib.String" title="GLib.String"><tt class="xref py py-class docutils literal"><span class="pre">GLib.String</span></tt></a> as a buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.read_to_end">
+<tt class="descname">read_to_end</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.read_to_end" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus.NORMAL" title="GLib.IOStatus.NORMAL"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.NORMAL</span></tt></a> on success. This function never returns <a class="reference internal" href="../enums.html#GLib.IOStatus.EOF" title="GLib.IOStatus.EOF"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.EOF</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a>, str_return: [<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Reads all the remaining data from the file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.read_unichar">
+<tt class="descname">read_unichar</tt><big>(</big><em>thechar</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.read_unichar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>thechar</strong> (<tt class="xref py py-class docutils literal"><span class="pre">unicode</span></tt>) &#8211; a location to return a character</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Reads a Unicode character from <cite>channel</cite>.
+This function cannot be called on a channel with <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> encoding.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.ref">
+<tt class="descname">ref</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.ref" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <cite>channel</cite> that was passed in (since 2.6)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Increments the reference count of a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.seek">
+<tt class="descname">seek</tt><big>(</big><em>offset</em>, <em>type</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.seek" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an offset, in bytes, which is added to the position specified by <cite>type</cite></li>
+<li><strong>type</strong> (<a class="reference internal" href="../enums.html#GLib.SeekType" title="GLib.SeekType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType</span></tt></a>) &#8211; the position in the file, which can be <a class="reference internal" href="../enums.html#GLib.SeekType.CUR" title="GLib.SeekType.CUR"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType.CUR</span></tt></a> (the current position), <a class="reference internal" href="../enums.html#GLib.SeekType.SET" title="GLib.SeekType.SET"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType.SET</span></tt></a> (the start of the file), or <a class="reference internal" href="../enums.html#GLib.SeekType.END" title="GLib.SeekType.END"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType.END</span></tt></a> (the end of the file)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GLib.IOError.NONE" title="GLib.IOError.NONE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOError.NONE</span></tt></a> if the operation was successful.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GLib.IOError" title="GLib.IOError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOError</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the current position in the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>, similar to the standard
+library function fseek().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.seek_position">
+<tt class="descname">seek_position</tt><big>(</big><em>offset</em>, <em>type</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.seek_position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>offset</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The offset in bytes from the position specified by <cite>type</cite></li>
+<li><strong>type</strong> (<a class="reference internal" href="../enums.html#GLib.SeekType" title="GLib.SeekType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType</span></tt></a>) &#8211; a <a class="reference internal" href="../enums.html#GLib.SeekType" title="GLib.SeekType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType</span></tt></a>. The type <a class="reference internal" href="../enums.html#GLib.SeekType.CUR" title="GLib.SeekType.CUR"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType.CUR</span></tt></a> is only allowed in those cases where a call to <a class="reference internal" href="#GLib.IOChannel.set_encoding" title="GLib.IOChannel.set_encoding"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.set_encoding</span></tt></a> () is allowed. See the documentation for <a class="reference internal" href="#GLib.IOChannel.set_encoding" title="GLib.IOChannel.set_encoding"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.set_encoding</span></tt></a> () for details.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the status of the operation.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replacement for <a class="reference internal" href="#GLib.IOChannel.seek" title="GLib.IOChannel.seek"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.seek</span></tt></a> () with the new API.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.set_buffer_size">
+<tt class="descname">set_buffer_size</tt><big>(</big><em>size</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.set_buffer_size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size of the buffer, or 0 to let GLib pick a good size</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the buffer size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.set_buffered">
+<tt class="descname">set_buffered</tt><big>(</big><em>buffered</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.set_buffered" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>buffered</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether to set the channel buffered or unbuffered</td>
+</tr>
+</tbody>
+</table>
+<p>The buffering state can only be set if the channel&#8217;s encoding
+is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. For any other encoding, the channel must be buffered.</p>
+<p>A buffered channel can only be set unbuffered if the channel&#8217;s
+internal buffers have been flushed. Newly created channels or
+channels which have returned <a class="reference internal" href="../enums.html#GLib.IOStatus.EOF" title="GLib.IOStatus.EOF"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.EOF</span></tt></a>
+not require such a flush. For write-only channels, a call to
+<a class="reference internal" href="#GLib.IOChannel.flush" title="GLib.IOChannel.flush"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.flush</span></tt></a> () is sufficient. For all other channels,
+the buffers may be flushed by a call to <a class="reference internal" href="#GLib.IOChannel.seek_position" title="GLib.IOChannel.seek_position"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.seek_position</span></tt></a> ().
+This includes the possibility of seeking with seek type <a class="reference internal" href="../enums.html#GLib.SeekType.CUR" title="GLib.SeekType.CUR"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType.CUR</span></tt></a>
+and an offset of zero. Note that this means that socket-based
+channels cannot be set unbuffered once they have had data
+read from them.</p>
+<p>On unbuffered channels, it is safe to mix read and write
+calls from the new and old APIs, if this is necessary for
+maintaining old code.</p>
+<p>The default state of the channel is buffered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.set_close_on_unref">
+<tt class="descname">set_close_on_unref</tt><big>(</big><em>do_close</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.set_close_on_unref" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>do_close</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; Whether to close the channel on the final unref of the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> data structure. The default value of this is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for channels created by <a class="reference internal" href="#GLib.IOChannel.new_file" title="GLib.IOChannel.new_file"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.new_file</span></tt></a> (), and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> for all other channels.</td>
+</tr>
+</tbody>
+</table>
+<p>Setting this flag to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> for a channel you have already closed
+can cause problems.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.set_encoding">
+<tt class="descname">set_encoding</tt><big>(</big><em>encoding</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.set_encoding" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>encoding</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the encoding type</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus.NORMAL" title="GLib.IOStatus.NORMAL"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.NORMAL</span></tt></a> if the encoding was successfully set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the encoding for the input/output of the channel.
+The internal encoding is always UTF-8. The default encoding
+for the external file is UTF-8.</p>
+<p>The encoding <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is safe to use with binary data.</p>
+<p>The encoding can only be set if one of the following conditions
+is true:</p>
+<ul class="simple">
+<li>The channel was just created, and has not been written to or read    from yet.</li>
+<li>The channel is write-only.</li>
+<li>The channel is a file, and the file pointer was just    repositioned by a call to <a class="reference internal" href="#GLib.IOChannel.seek_position" title="GLib.IOChannel.seek_position"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.seek_position</span></tt></a> ().    (This flushes all the internal buffers.)</li>
+<li>The current encoding is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> or UTF-8.</li>
+<li>One of the (new API) read functions has just returned <a class="reference internal" href="../enums.html#GLib.IOStatus.EOF" title="GLib.IOStatus.EOF"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.EOF</span></tt></a>     (or, in the case of <a class="reference internal" href="#GLib.IOChannel.read_to_end" title="GLib.IOChannel.read_to_end"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.read_to_end</span></tt></a> (), <a class="reference internal" href="../enums.html#GLib.IOStatus.NORMAL" title="GLib.IOStatus.NORMAL"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.NORMAL</span></tt></a> ).</li>
+<li>One of the functions <a class="reference internal" href="#GLib.IOChannel.read_chars" title="GLib.IOChannel.read_chars"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.read_chars</span></tt></a> () or    <a class="reference internal" href="#GLib.IOChannel.read_unichar" title="GLib.IOChannel.read_unichar"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.read_unichar</span></tt></a> () has returned <a class="reference internal" href="../enums.html#GLib.IOStatus.AGAIN" title="GLib.IOStatus.AGAIN"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.AGAIN</span></tt></a> or    <a class="reference internal" href="../enums.html#GLib.IOStatus.ERROR" title="GLib.IOStatus.ERROR"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus.ERROR</span></tt></a>. This may be useful in the case of    <a class="reference internal" href="../enums.html#GLib.ConvertError.ILLEGAL_SEQUENCE" title="GLib.ConvertError.ILLEGAL_SEQUENCE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ConvertError.ILLEGAL_SEQUENCE</span></tt></a>.    Returning one of these statuses from <a class="reference internal" href="#GLib.IOChannel.read_line" title="GLib.IOChannel.read_line"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.read_line</span></tt></a> (),    <a class="reference internal" href="#GLib.IOChannel.read_line_string" title="GLib.IOChannel.read_line_string"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.read_line_string</span></tt></a> (), or <a class="reference internal" href="#GLib.IOChannel.read_to_end" title="GLib.IOChannel.read_to_end"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.read_to_end</span></tt></a> ()    doesnotguarantee that the encoding can    be changed.</li>
+</ul>
+<p>Channels which do not meet one of the above conditions cannot call
+<a class="reference internal" href="#GLib.IOChannel.seek_position" title="GLib.IOChannel.seek_position"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.seek_position</span></tt></a> () with an offset of <a class="reference internal" href="../enums.html#GLib.SeekType.CUR" title="GLib.SeekType.CUR"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SeekType.CUR</span></tt></a>, and, if
+they are &#8220;seekable&#8221;, cannot call <a class="reference internal" href="#GLib.IOChannel.write_chars" title="GLib.IOChannel.write_chars"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.write_chars</span></tt></a> () after
+calling one of the API &#8220;read&#8221; functions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.set_flags">
+<tt class="descname">set_flags</tt><big>(</big><em>flags</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.set_flags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flags</strong> (<a class="reference internal" href="../flags.html#GLib.IOFlags" title="GLib.IOFlags"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOFlags</span></tt></a>) &#8211; the flags to set on the IO channel</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the status of the operation.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the (writeable) flags in <cite>channel</cite> to (<cite>flags</cite> &amp; <a class="reference internal" href="../flags.html#GLib.IOFlags.SET_MASK" title="GLib.IOFlags.SET_MASK"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOFlags.SET_MASK</span></tt></a> ).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.set_line_term">
+<tt class="descname">set_line_term</tt><big>(</big><em>line_term</em>, <em>length</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.set_line_term" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>line_term</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The line termination string. Use <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for autodetect.  Autodetection breaks on &#8220;\n&#8221;, &#8220;\r\n&#8221;, &#8220;\r&#8221;, &#8220;\0&#8221;, and the Unicode paragraph separator. Autodetection should not be used for anything other than file-based channels.</li>
+<li><strong>length</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The length of the termination string. If -1 is passed, the string is assumed to be nul-terminated. This option allows termination strings with embedded nuls.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This sets the string that <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a> uses to determine
+where in the file a line break occurs.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.shutdown">
+<tt class="descname">shutdown</tt><big>(</big><em>flush</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>flush</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; if <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, flush pending</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the status of the operation.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Close an IO channel. Any pending data to be written will be
+flushed if <cite>flush</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>. The channel will not be freed until the
+last reference is dropped using <a class="reference internal" href="#GLib.IOChannel.unref" title="GLib.IOChannel.unref"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.unref</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.unix_get_fd">
+<tt class="descname">unix_get_fd</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.unix_get_fd" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the file descriptor of the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the file descriptor of the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</p>
+<p>On Windows this function returns the file descriptor or socket of
+the <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.unref">
+<tt class="descname">unref</tt><big>(</big><big>)</big><a class="headerlink" href="#GLib.IOChannel.unref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decrements the reference count of a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.write">
+<tt class="descname">write</tt><big>(</big><em>buf</em>, <em>count</em>, <em>bytes_written</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.write" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the buffer containing the data to write</li>
+<li><strong>count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of bytes to write</li>
+<li><strong>bytes_written</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of bytes actually written</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GLib.IOError.NONE" title="GLib.IOError.NONE"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOError.NONE</span></tt></a> if the operation was successful.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GLib.IOError" title="GLib.IOError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOError</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Writes data to a <a class="reference internal" href="#GLib.IOChannel" title="GLib.IOChannel"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.write_chars">
+<tt class="descname">write_chars</tt><big>(</big><em>buf</em>, <em>count</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.write_chars" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>buf</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>]) &#8211; a buffer to write data from</li>
+<li><strong>count</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size of the buffer. If -1, the buffer is taken to be a nul-terminated string.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the status of the operation.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a>, bytes_written: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replacement for <a class="reference internal" href="#GLib.IOChannel.write" title="GLib.IOChannel.write"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.write</span></tt></a> () with the new API.</p>
+<p>On seekable channels with encodings other than <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> or UTF-8, generic
+mixing of reading and writing is not allowed. A call to <a class="reference internal" href="#GLib.IOChannel.write_chars" title="GLib.IOChannel.write_chars"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.write_chars</span></tt></a> ()
+may only be made on a channel from which data has been read in the
+cases described in the documentation for <a class="reference internal" href="#GLib.IOChannel.set_encoding" title="GLib.IOChannel.set_encoding"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOChannel.set_encoding</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GLib.IOChannel.write_unichar">
+<tt class="descname">write_unichar</tt><big>(</big><em>thechar</em><big>)</big><a class="headerlink" href="#GLib.IOChannel.write_unichar" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>thechar</strong> (<tt class="xref py py-class docutils literal"><span class="pre">unicode</span></tt>) &#8211; a character</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="../classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GLib.IOStatus" title="GLib.IOStatus"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOStatus</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Writes a Unicode character to <cite>channel</cite>.
+This function cannot be called on a channel with <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> encoding.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="IOFuncs.html" class="btn btn-neutral float-right" title="GLib.IOFuncs"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="IConv.html" class="btn btn-neutral" title="GLib.IConv"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

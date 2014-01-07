@@ -1,0 +1,927 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Constants -
+    
+      Libosinfo 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Libosinfo 1.0" href="index.html"/>
+        <link rel="next" title="LibvirtGConfig 1.0" href="../LibvirtGConfig_1.0/index.html"/>
+        <link rel="prev" title="Enums" href="enums.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Libosinfo 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Constants</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Libosinfo 1.0</a> &raquo;</li>
+  
+  <li><a href="">Constants</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Libosinfo_1.0/constants" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="constants">
+<h1>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#Libosinfo.ARCHITECTURE_ALL" title="Libosinfo.ARCHITECTURE_ALL"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.ARCHITECTURE_ALL</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.AVATAR_FORMAT_PROP_ALPHA" title="Libosinfo.AVATAR_FORMAT_PROP_ALPHA"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.AVATAR_FORMAT_PROP_ALPHA</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.AVATAR_FORMAT_PROP_HEIGHT" title="Libosinfo.AVATAR_FORMAT_PROP_HEIGHT"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.AVATAR_FORMAT_PROP_HEIGHT</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.AVATAR_FORMAT_PROP_MIME_TYPE" title="Libosinfo.AVATAR_FORMAT_PROP_MIME_TYPE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.AVATAR_FORMAT_PROP_MIME_TYPE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.AVATAR_FORMAT_PROP_WIDTH" title="Libosinfo.AVATAR_FORMAT_PROP_WIDTH"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.AVATAR_FORMAT_PROP_WIDTH</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICELINK_PROP_DRIVER" title="Libosinfo.DEVICELINK_PROP_DRIVER"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICELINK_PROP_DRIVER</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_DRIVER_PROP_ARCHITECTURE" title="Libosinfo.DEVICE_DRIVER_PROP_ARCHITECTURE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_DRIVER_PROP_ARCHITECTURE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_DRIVER_PROP_DEVICE" title="Libosinfo.DEVICE_DRIVER_PROP_DEVICE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_DRIVER_PROP_DEVICE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_DRIVER_PROP_FILE" title="Libosinfo.DEVICE_DRIVER_PROP_FILE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_DRIVER_PROP_FILE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_DRIVER_PROP_LOCATION" title="Libosinfo.DEVICE_DRIVER_PROP_LOCATION"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_DRIVER_PROP_LOCATION</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_DRIVER_PROP_PRE_INSTALLABLE" title="Libosinfo.DEVICE_DRIVER_PROP_PRE_INSTALLABLE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_DRIVER_PROP_PRE_INSTALLABLE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_DRIVER_PROP_SIGNED" title="Libosinfo.DEVICE_DRIVER_PROP_SIGNED"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_DRIVER_PROP_SIGNED</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_BUS_TYPE" title="Libosinfo.DEVICE_PROP_BUS_TYPE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_BUS_TYPE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_CLASS" title="Libosinfo.DEVICE_PROP_CLASS"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_CLASS</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_NAME" title="Libosinfo.DEVICE_PROP_NAME"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_NAME</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_PRODUCT" title="Libosinfo.DEVICE_PROP_PRODUCT"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_PRODUCT</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_PRODUCT_ID" title="Libosinfo.DEVICE_PROP_PRODUCT_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_PRODUCT_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_SUBSYSTEM" title="Libosinfo.DEVICE_PROP_SUBSYSTEM"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_SUBSYSTEM</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_VENDOR" title="Libosinfo.DEVICE_PROP_VENDOR"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_VENDOR</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.DEVICE_PROP_VENDOR_ID" title="Libosinfo.DEVICE_PROP_VENDOR_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.DEVICE_PROP_VENDOR_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.ENTITY_PROP_ID" title="Libosinfo.ENTITY_PROP_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.ENTITY_PROP_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.GIBIBYTES" title="Libosinfo.GIBIBYTES"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.GIBIBYTES</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PARAM_PROP_DATAMAP" title="Libosinfo.INSTALL_CONFIG_PARAM_PROP_DATAMAP"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PARAM_PROP_DATAMAP</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PARAM_PROP_NAME" title="Libosinfo.INSTALL_CONFIG_PARAM_PROP_NAME"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PARAM_PROP_NAME</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PARAM_PROP_POLICY" title="Libosinfo.INSTALL_CONFIG_PARAM_PROP_POLICY"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PARAM_PROP_POLICY</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_ADMIN_PASSWORD" title="Libosinfo.INSTALL_CONFIG_PROP_ADMIN_PASSWORD"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_ADMIN_PASSWORD</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_AVATAR_DISK" title="Libosinfo.INSTALL_CONFIG_PROP_AVATAR_DISK"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_AVATAR_DISK</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_AVATAR_LOCATION" title="Libosinfo.INSTALL_CONFIG_PROP_AVATAR_LOCATION"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_AVATAR_LOCATION</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_DRIVER_SIGNING" title="Libosinfo.INSTALL_CONFIG_PROP_DRIVER_SIGNING"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_DRIVER_SIGNING</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_HARDWARE_ARCH" title="Libosinfo.INSTALL_CONFIG_PROP_HARDWARE_ARCH"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_HARDWARE_ARCH</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_HOSTNAME" title="Libosinfo.INSTALL_CONFIG_PROP_HOSTNAME"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_HOSTNAME</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_L10N_KEYBOARD" title="Libosinfo.INSTALL_CONFIG_PROP_L10N_KEYBOARD"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_L10N_KEYBOARD</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_L10N_LANGUAGE" title="Libosinfo.INSTALL_CONFIG_PROP_L10N_LANGUAGE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_L10N_LANGUAGE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_L10N_TIMEZONE" title="Libosinfo.INSTALL_CONFIG_PROP_L10N_TIMEZONE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_L10N_TIMEZONE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_DISK" title="Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_DISK"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_DISK</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_LOCATION" title="Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_LOCATION"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_LOCATION</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_DISK" title="Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_DISK"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_DISK</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_LOCATION" title="Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_LOCATION"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_LOCATION</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_REG_LOGIN" title="Libosinfo.INSTALL_CONFIG_PROP_REG_LOGIN"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_REG_LOGIN</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_REG_PASSWORD" title="Libosinfo.INSTALL_CONFIG_PROP_REG_PASSWORD"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_REG_PASSWORD</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_REG_PRODUCTKEY" title="Libosinfo.INSTALL_CONFIG_PROP_REG_PRODUCTKEY"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_REG_PRODUCTKEY</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_SCRIPT_DISK" title="Libosinfo.INSTALL_CONFIG_PROP_SCRIPT_DISK"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_SCRIPT_DISK</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_TARGET_DISK" title="Libosinfo.INSTALL_CONFIG_PROP_TARGET_DISK"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_TARGET_DISK</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_ADMIN" title="Libosinfo.INSTALL_CONFIG_PROP_USER_ADMIN"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_USER_ADMIN</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_AUTOLOGIN" title="Libosinfo.INSTALL_CONFIG_PROP_USER_AUTOLOGIN"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_USER_AUTOLOGIN</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_LOGIN" title="Libosinfo.INSTALL_CONFIG_PROP_USER_LOGIN"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_USER_LOGIN</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_PASSWORD" title="Libosinfo.INSTALL_CONFIG_PROP_USER_PASSWORD"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_USER_PASSWORD</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_REALNAME" title="Libosinfo.INSTALL_CONFIG_PROP_USER_REALNAME"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_CONFIG_PROP_USER_REALNAME</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP" title="Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS" title="Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_CAN_POST_INSTALL_DRIVERS" title="Libosinfo.INSTALL_SCRIPT_PROP_CAN_POST_INSTALL_DRIVERS"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_CAN_POST_INSTALL_DRIVERS</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_CAN_PRE_INSTALL_DRIVERS" title="Libosinfo.INSTALL_SCRIPT_PROP_CAN_PRE_INSTALL_DRIVERS"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_CAN_PRE_INSTALL_DRIVERS</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_EXPECTED_FILENAME" title="Libosinfo.INSTALL_SCRIPT_PROP_EXPECTED_FILENAME"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_EXPECTED_FILENAME</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_PATH_FORMAT" title="Libosinfo.INSTALL_SCRIPT_PROP_PATH_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_PATH_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_POST_INSTALL_DRIVERS_SIGNING_REQ" title="Libosinfo.INSTALL_SCRIPT_PROP_POST_INSTALL_DRIVERS_SIGNING_REQ"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_POST_INSTALL_DRIVERS_SIGNING_REQ</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_PRE_INSTALL_DRIVERS_SIGNING_REQ" title="Libosinfo.INSTALL_SCRIPT_PROP_PRE_INSTALL_DRIVERS_SIGNING_REQ"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_PRE_INSTALL_DRIVERS_SIGNING_REQ</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_PRODUCT_KEY_FORMAT" title="Libosinfo.INSTALL_SCRIPT_PROP_PRODUCT_KEY_FORMAT"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_PRODUCT_KEY_FORMAT</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_PROFILE" title="Libosinfo.INSTALL_SCRIPT_PROP_PROFILE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_PROFILE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_DATA" title="Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_DATA"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_DATA</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_URI" title="Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_URI"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_URI</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.KIBIBYTES" title="Libosinfo.KIBIBYTES"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.KIBIBYTES</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEBIBYTES" title="Libosinfo.MEBIBYTES"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEBIBYTES</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_APPLICATION_ID" title="Libosinfo.MEDIA_PROP_APPLICATION_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_APPLICATION_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_ARCHITECTURE" title="Libosinfo.MEDIA_PROP_ARCHITECTURE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_ARCHITECTURE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_INITRD" title="Libosinfo.MEDIA_PROP_INITRD"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_INITRD</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_INSTALLER" title="Libosinfo.MEDIA_PROP_INSTALLER"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_INSTALLER</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_INSTALLER_REBOOTS" title="Libosinfo.MEDIA_PROP_INSTALLER_REBOOTS"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_INSTALLER_REBOOTS</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_KERNEL" title="Libosinfo.MEDIA_PROP_KERNEL"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_KERNEL</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_LANG" title="Libosinfo.MEDIA_PROP_LANG"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_LANG</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_LANG_MAP" title="Libosinfo.MEDIA_PROP_LANG_MAP"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_LANG_MAP</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_LANG_REGEX" title="Libosinfo.MEDIA_PROP_LANG_REGEX"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_LANG_REGEX</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_LIVE" title="Libosinfo.MEDIA_PROP_LIVE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_LIVE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_PUBLISHER_ID" title="Libosinfo.MEDIA_PROP_PUBLISHER_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_PUBLISHER_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_SYSTEM_ID" title="Libosinfo.MEDIA_PROP_SYSTEM_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_SYSTEM_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_URL" title="Libosinfo.MEDIA_PROP_URL"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_URL</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEDIA_PROP_VOLUME_ID" title="Libosinfo.MEDIA_PROP_VOLUME_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEDIA_PROP_VOLUME_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.MEGAHERTZ" title="Libosinfo.MEGAHERTZ"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.MEGAHERTZ</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.OS_PROP_DISTRO" title="Libosinfo.OS_PROP_DISTRO"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.OS_PROP_DISTRO</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.OS_PROP_FAMILY" title="Libosinfo.OS_PROP_FAMILY"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.OS_PROP_FAMILY</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_CODENAME" title="Libosinfo.PRODUCT_PROP_CODENAME"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_CODENAME</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_EOL_DATE" title="Libosinfo.PRODUCT_PROP_EOL_DATE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_EOL_DATE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_LOGO" title="Libosinfo.PRODUCT_PROP_LOGO"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_LOGO</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_NAME" title="Libosinfo.PRODUCT_PROP_NAME"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_NAME</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_RELEASE_DATE" title="Libosinfo.PRODUCT_PROP_RELEASE_DATE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_RELEASE_DATE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_SHORT_ID" title="Libosinfo.PRODUCT_PROP_SHORT_ID"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_SHORT_ID</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_VENDOR" title="Libosinfo.PRODUCT_PROP_VENDOR"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_VENDOR</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.PRODUCT_PROP_VERSION" title="Libosinfo.PRODUCT_PROP_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.PRODUCT_PROP_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.RESOURCES_PROP_ARCHITECTURE" title="Libosinfo.RESOURCES_PROP_ARCHITECTURE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.RESOURCES_PROP_ARCHITECTURE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.RESOURCES_PROP_CPU" title="Libosinfo.RESOURCES_PROP_CPU"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.RESOURCES_PROP_CPU</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.RESOURCES_PROP_N_CPUS" title="Libosinfo.RESOURCES_PROP_N_CPUS"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.RESOURCES_PROP_N_CPUS</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.RESOURCES_PROP_RAM" title="Libosinfo.RESOURCES_PROP_RAM"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.RESOURCES_PROP_RAM</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.RESOURCES_PROP_STORAGE" title="Libosinfo.RESOURCES_PROP_STORAGE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.RESOURCES_PROP_STORAGE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_ARCHITECTURE" title="Libosinfo.TREE_PROP_ARCHITECTURE"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_ARCHITECTURE</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_BOOT_ISO" title="Libosinfo.TREE_PROP_BOOT_ISO"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_BOOT_ISO</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_INITRD" title="Libosinfo.TREE_PROP_INITRD"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_INITRD</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_KERNEL" title="Libosinfo.TREE_PROP_KERNEL"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_KERNEL</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_TREEINFO_ARCH" title="Libosinfo.TREE_PROP_TREEINFO_ARCH"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_TREEINFO_ARCH</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_TREEINFO_FAMILY" title="Libosinfo.TREE_PROP_TREEINFO_FAMILY"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_TREEINFO_FAMILY</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_TREEINFO_VARIANT" title="Libosinfo.TREE_PROP_TREEINFO_VARIANT"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_TREEINFO_VARIANT</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_TREEINFO_VERSION" title="Libosinfo.TREE_PROP_TREEINFO_VERSION"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_TREEINFO_VERSION</span></tt></a></li>
+<li><a class="reference internal" href="#Libosinfo.TREE_PROP_URL" title="Libosinfo.TREE_PROP_URL"><tt class="xref py py-obj docutils literal"><span class="pre">Libosinfo.TREE_PROP_URL</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="data">
+<dt id="Libosinfo.ARCHITECTURE_ALL">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">ARCHITECTURE_ALL</tt><em class="property"> = 'all'</em><a class="headerlink" href="#Libosinfo.ARCHITECTURE_ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.AVATAR_FORMAT_PROP_ALPHA">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">AVATAR_FORMAT_PROP_ALPHA</tt><em class="property"> = 'alpha'</em><a class="headerlink" href="#Libosinfo.AVATAR_FORMAT_PROP_ALPHA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.AVATAR_FORMAT_PROP_HEIGHT">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">AVATAR_FORMAT_PROP_HEIGHT</tt><em class="property"> = 'height'</em><a class="headerlink" href="#Libosinfo.AVATAR_FORMAT_PROP_HEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.AVATAR_FORMAT_PROP_MIME_TYPE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">AVATAR_FORMAT_PROP_MIME_TYPE</tt><em class="property"> = 'mime-type'</em><a class="headerlink" href="#Libosinfo.AVATAR_FORMAT_PROP_MIME_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.AVATAR_FORMAT_PROP_WIDTH">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">AVATAR_FORMAT_PROP_WIDTH</tt><em class="property"> = 'width'</em><a class="headerlink" href="#Libosinfo.AVATAR_FORMAT_PROP_WIDTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICELINK_PROP_DRIVER">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICELINK_PROP_DRIVER</tt><em class="property"> = 'driver'</em><a class="headerlink" href="#Libosinfo.DEVICELINK_PROP_DRIVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_DRIVER_PROP_ARCHITECTURE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_DRIVER_PROP_ARCHITECTURE</tt><em class="property"> = 'arch'</em><a class="headerlink" href="#Libosinfo.DEVICE_DRIVER_PROP_ARCHITECTURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_DRIVER_PROP_DEVICE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_DRIVER_PROP_DEVICE</tt><em class="property"> = 'device'</em><a class="headerlink" href="#Libosinfo.DEVICE_DRIVER_PROP_DEVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_DRIVER_PROP_FILE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_DRIVER_PROP_FILE</tt><em class="property"> = 'file'</em><a class="headerlink" href="#Libosinfo.DEVICE_DRIVER_PROP_FILE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_DRIVER_PROP_LOCATION">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_DRIVER_PROP_LOCATION</tt><em class="property"> = 'location'</em><a class="headerlink" href="#Libosinfo.DEVICE_DRIVER_PROP_LOCATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_DRIVER_PROP_PRE_INSTALLABLE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_DRIVER_PROP_PRE_INSTALLABLE</tt><em class="property"> = 'pre-installable'</em><a class="headerlink" href="#Libosinfo.DEVICE_DRIVER_PROP_PRE_INSTALLABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_DRIVER_PROP_SIGNED">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_DRIVER_PROP_SIGNED</tt><em class="property"> = 'signed'</em><a class="headerlink" href="#Libosinfo.DEVICE_DRIVER_PROP_SIGNED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_BUS_TYPE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_BUS_TYPE</tt><em class="property"> = 'bus-type'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_BUS_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_CLASS">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_CLASS</tt><em class="property"> = 'class'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_CLASS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_NAME">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_NAME</tt><em class="property"> = 'name'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_PRODUCT">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_PRODUCT</tt><em class="property"> = 'product'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_PRODUCT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_PRODUCT_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_PRODUCT_ID</tt><em class="property"> = 'product-id'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_PRODUCT_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_SUBSYSTEM">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_SUBSYSTEM</tt><em class="property"> = 'subsystem'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_SUBSYSTEM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_VENDOR">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_VENDOR</tt><em class="property"> = 'vendor'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_VENDOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.DEVICE_PROP_VENDOR_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">DEVICE_PROP_VENDOR_ID</tt><em class="property"> = 'vendor-id'</em><a class="headerlink" href="#Libosinfo.DEVICE_PROP_VENDOR_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.ENTITY_PROP_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">ENTITY_PROP_ID</tt><em class="property"> = 'id'</em><a class="headerlink" href="#Libosinfo.ENTITY_PROP_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.GIBIBYTES">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">GIBIBYTES</tt><em class="property"> = 1073741824</em><a class="headerlink" href="#Libosinfo.GIBIBYTES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PARAM_PROP_DATAMAP">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PARAM_PROP_DATAMAP</tt><em class="property"> = 'value-map'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PARAM_PROP_DATAMAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PARAM_PROP_NAME">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PARAM_PROP_NAME</tt><em class="property"> = 'name'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PARAM_PROP_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PARAM_PROP_POLICY">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PARAM_PROP_POLICY</tt><em class="property"> = 'policy'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PARAM_PROP_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_ADMIN_PASSWORD">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_ADMIN_PASSWORD</tt><em class="property"> = 'admin-password'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_ADMIN_PASSWORD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_AVATAR_DISK">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_AVATAR_DISK</tt><em class="property"> = 'avatar-disk'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_AVATAR_DISK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_AVATAR_LOCATION">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_AVATAR_LOCATION</tt><em class="property"> = 'avatar-location'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_AVATAR_LOCATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_DRIVER_SIGNING">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_DRIVER_SIGNING</tt><em class="property"> = 'driver-signing'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_DRIVER_SIGNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_HARDWARE_ARCH">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_HARDWARE_ARCH</tt><em class="property"> = 'hardware-arch'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_HARDWARE_ARCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_HOSTNAME">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_HOSTNAME</tt><em class="property"> = 'hostname'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_HOSTNAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_L10N_KEYBOARD">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_L10N_KEYBOARD</tt><em class="property"> = 'l10n-keyboard'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_L10N_KEYBOARD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_L10N_LANGUAGE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_L10N_LANGUAGE</tt><em class="property"> = 'l10n-language'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_L10N_LANGUAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_L10N_TIMEZONE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_L10N_TIMEZONE</tt><em class="property"> = 'l10n-timezone'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_L10N_TIMEZONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_DISK">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_DISK</tt><em class="property"> = 'post-install-drivers-disk'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_DISK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_LOCATION">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_LOCATION</tt><em class="property"> = 'post-install-drivers-location'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_POST_INSTALL_DRIVERS_LOCATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_DISK">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_DISK</tt><em class="property"> = 'pre-install-drivers-disk'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_DISK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_LOCATION">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_LOCATION</tt><em class="property"> = 'pre-install-drivers-location'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_PRE_INSTALL_DRIVERS_LOCATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_REG_LOGIN">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_REG_LOGIN</tt><em class="property"> = 'reg-login'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_REG_LOGIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_REG_PASSWORD">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_REG_PASSWORD</tt><em class="property"> = 'reg-password'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_REG_PASSWORD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_REG_PRODUCTKEY">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_REG_PRODUCTKEY</tt><em class="property"> = 'reg-product-key'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_REG_PRODUCTKEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_SCRIPT_DISK">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_SCRIPT_DISK</tt><em class="property"> = 'script-disk'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_SCRIPT_DISK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_TARGET_DISK">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_TARGET_DISK</tt><em class="property"> = 'target-disk'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_TARGET_DISK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_USER_ADMIN">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_USER_ADMIN</tt><em class="property"> = 'user-admin'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_ADMIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_USER_AUTOLOGIN">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_USER_AUTOLOGIN</tt><em class="property"> = 'user-autologin'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_AUTOLOGIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_USER_LOGIN">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_USER_LOGIN</tt><em class="property"> = 'user-login'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_LOGIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_USER_PASSWORD">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_USER_PASSWORD</tt><em class="property"> = 'user-password'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_PASSWORD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_CONFIG_PROP_USER_REALNAME">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_CONFIG_PROP_USER_REALNAME</tt><em class="property"> = 'user-realname'</em><a class="headerlink" href="#Libosinfo.INSTALL_CONFIG_PROP_USER_REALNAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROFILE_DESKTOP</tt><em class="property"> = 'desktop'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROFILE_DESKTOP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROFILE_JEOS</tt><em class="property"> = 'jeos'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROFILE_JEOS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_CAN_POST_INSTALL_DRIVERS">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_CAN_POST_INSTALL_DRIVERS</tt><em class="property"> = 'can-post-install-drivers'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_CAN_POST_INSTALL_DRIVERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_CAN_PRE_INSTALL_DRIVERS">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_CAN_PRE_INSTALL_DRIVERS</tt><em class="property"> = 'can-pre-install-drivers'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_CAN_PRE_INSTALL_DRIVERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_EXPECTED_FILENAME">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_EXPECTED_FILENAME</tt><em class="property"> = 'expected-filename'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_EXPECTED_FILENAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_PATH_FORMAT">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_PATH_FORMAT</tt><em class="property"> = 'path-format'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_PATH_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_POST_INSTALL_DRIVERS_SIGNING_REQ">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_POST_INSTALL_DRIVERS_SIGNING_REQ</tt><em class="property"> = 'post-install-drivers-signing-req'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_POST_INSTALL_DRIVERS_SIGNING_REQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_PRE_INSTALL_DRIVERS_SIGNING_REQ">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_PRE_INSTALL_DRIVERS_SIGNING_REQ</tt><em class="property"> = 'pre-install-drivers-signing-req'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_PRE_INSTALL_DRIVERS_SIGNING_REQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_PRODUCT_KEY_FORMAT">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_PRODUCT_KEY_FORMAT</tt><em class="property"> = 'product-key-format'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_PRODUCT_KEY_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_PROFILE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_PROFILE</tt><em class="property"> = 'profile'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_PROFILE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_DATA">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_TEMPLATE_DATA</tt><em class="property"> = 'template-data'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_DATA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_URI">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">INSTALL_SCRIPT_PROP_TEMPLATE_URI</tt><em class="property"> = 'template-uri'</em><a class="headerlink" href="#Libosinfo.INSTALL_SCRIPT_PROP_TEMPLATE_URI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.KIBIBYTES">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">KIBIBYTES</tt><em class="property"> = 1024</em><a class="headerlink" href="#Libosinfo.KIBIBYTES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEBIBYTES">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEBIBYTES</tt><em class="property"> = 1048576</em><a class="headerlink" href="#Libosinfo.MEBIBYTES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_APPLICATION_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_APPLICATION_ID</tt><em class="property"> = 'application-id'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_APPLICATION_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_ARCHITECTURE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_ARCHITECTURE</tt><em class="property"> = 'architecture'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_ARCHITECTURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_INITRD">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_INITRD</tt><em class="property"> = 'initrd'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_INITRD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_INSTALLER">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_INSTALLER</tt><em class="property"> = 'installer'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_INSTALLER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_INSTALLER_REBOOTS">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_INSTALLER_REBOOTS</tt><em class="property"> = 'installer-reboots'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_INSTALLER_REBOOTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_KERNEL">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_KERNEL</tt><em class="property"> = 'kernel'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_KERNEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_LANG">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_LANG</tt><em class="property"> = 'l10n-language'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_LANG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_LANG_MAP">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_LANG_MAP</tt><em class="property"> = 'l10n-language-map'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_LANG_MAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_LANG_REGEX">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_LANG_REGEX</tt><em class="property"> = 'l10n-language-regex'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_LANG_REGEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_LIVE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_LIVE</tt><em class="property"> = 'live'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_LIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_PUBLISHER_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_PUBLISHER_ID</tt><em class="property"> = 'publisher-id'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_PUBLISHER_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_SYSTEM_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_SYSTEM_ID</tt><em class="property"> = 'system-id'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_SYSTEM_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_URL">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_URL</tt><em class="property"> = 'url'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_URL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEDIA_PROP_VOLUME_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEDIA_PROP_VOLUME_ID</tt><em class="property"> = 'volume-id'</em><a class="headerlink" href="#Libosinfo.MEDIA_PROP_VOLUME_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.MEGAHERTZ">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">MEGAHERTZ</tt><em class="property"> = 1000000</em><a class="headerlink" href="#Libosinfo.MEGAHERTZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.OS_PROP_DISTRO">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">OS_PROP_DISTRO</tt><em class="property"> = 'distro'</em><a class="headerlink" href="#Libosinfo.OS_PROP_DISTRO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.OS_PROP_FAMILY">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">OS_PROP_FAMILY</tt><em class="property"> = 'family'</em><a class="headerlink" href="#Libosinfo.OS_PROP_FAMILY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_CODENAME">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_CODENAME</tt><em class="property"> = 'codename'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_CODENAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_EOL_DATE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_EOL_DATE</tt><em class="property"> = 'eol-date'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_EOL_DATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_LOGO">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_LOGO</tt><em class="property"> = 'logo'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_LOGO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_NAME">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_NAME</tt><em class="property"> = 'name'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_RELEASE_DATE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_RELEASE_DATE</tt><em class="property"> = 'release-date'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_RELEASE_DATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_SHORT_ID">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_SHORT_ID</tt><em class="property"> = 'short-id'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_SHORT_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_VENDOR">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_VENDOR</tt><em class="property"> = 'vendor'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_VENDOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.PRODUCT_PROP_VERSION">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">PRODUCT_PROP_VERSION</tt><em class="property"> = 'version'</em><a class="headerlink" href="#Libosinfo.PRODUCT_PROP_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.RESOURCES_PROP_ARCHITECTURE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">RESOURCES_PROP_ARCHITECTURE</tt><em class="property"> = 'architecture'</em><a class="headerlink" href="#Libosinfo.RESOURCES_PROP_ARCHITECTURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.RESOURCES_PROP_CPU">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">RESOURCES_PROP_CPU</tt><em class="property"> = 'cpu'</em><a class="headerlink" href="#Libosinfo.RESOURCES_PROP_CPU" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.RESOURCES_PROP_N_CPUS">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">RESOURCES_PROP_N_CPUS</tt><em class="property"> = 'n-cpus'</em><a class="headerlink" href="#Libosinfo.RESOURCES_PROP_N_CPUS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.RESOURCES_PROP_RAM">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">RESOURCES_PROP_RAM</tt><em class="property"> = 'ram'</em><a class="headerlink" href="#Libosinfo.RESOURCES_PROP_RAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.RESOURCES_PROP_STORAGE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">RESOURCES_PROP_STORAGE</tt><em class="property"> = 'storage'</em><a class="headerlink" href="#Libosinfo.RESOURCES_PROP_STORAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_ARCHITECTURE">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_ARCHITECTURE</tt><em class="property"> = 'architecture'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_ARCHITECTURE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_BOOT_ISO">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_BOOT_ISO</tt><em class="property"> = 'boot-iso'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_BOOT_ISO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_INITRD">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_INITRD</tt><em class="property"> = 'initrd'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_INITRD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_KERNEL">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_KERNEL</tt><em class="property"> = 'kernel'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_KERNEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_TREEINFO_ARCH">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_TREEINFO_ARCH</tt><em class="property"> = 'treeinfo-arch'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_TREEINFO_ARCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_TREEINFO_FAMILY">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_TREEINFO_FAMILY</tt><em class="property"> = 'treeinfo-family'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_TREEINFO_FAMILY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_TREEINFO_VARIANT">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_TREEINFO_VARIANT</tt><em class="property"> = 'treeinfo-variant'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_TREEINFO_VARIANT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_TREEINFO_VERSION">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_TREEINFO_VERSION</tt><em class="property"> = 'treeinfo-version'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_TREEINFO_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="Libosinfo.TREE_PROP_URL">
+<tt class="descclassname">Libosinfo.</tt><tt class="descname">TREE_PROP_URL</tt><em class="property"> = 'url'</em><a class="headerlink" href="#Libosinfo.TREE_PROP_URL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../LibvirtGConfig_1.0/index.html" class="btn btn-neutral float-right" title="LibvirtGConfig 1.0"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="enums.html" class="btn btn-neutral" title="Enums"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

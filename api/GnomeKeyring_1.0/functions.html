@@ -1,0 +1,1404 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Functions -
+    
+      GnomeKeyring 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="GnomeKeyring 1.0" href="index.html"/>
+        <link rel="next" title="Callbacks" href="callbacks.html"/>
+        <link rel="prev" title="GnomeKeyring 1.0" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">GnomeKeyring 1.0</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Functions</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="callbacks.html">Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">GnomeKeyring 1.0</a> &raquo;</li>
+  
+  <li><a href="">Functions</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GnomeKeyring_1.0/functions" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.acl_copy" title="GnomeKeyring.acl_copy"><tt class="xref py py-obj docutils literal"><span class="pre">acl_copy</span></tt></a>(list)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.acl_free" title="GnomeKeyring.acl_free"><tt class="xref py py-obj docutils literal"><span class="pre">acl_free</span></tt></a>(acl)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.attribute_list_append_string" title="GnomeKeyring.attribute_list_append_string"><tt class="xref py py-obj docutils literal"><span class="pre">attribute_list_append_string</span></tt></a>(attributes, name, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.attribute_list_append_uint32" title="GnomeKeyring.attribute_list_append_uint32"><tt class="xref py py-obj docutils literal"><span class="pre">attribute_list_append_uint32</span></tt></a>(attributes, name, value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.attribute_list_copy" title="GnomeKeyring.attribute_list_copy"><tt class="xref py py-obj docutils literal"><span class="pre">attribute_list_copy</span></tt></a>(attributes)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.attribute_list_free" title="GnomeKeyring.attribute_list_free"><tt class="xref py py-obj docutils literal"><span class="pre">attribute_list_free</span></tt></a>(attributes)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.attribute_list_get_type" title="GnomeKeyring.attribute_list_get_type"><tt class="xref py py-obj docutils literal"><span class="pre">attribute_list_get_type</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.attribute_list_new" title="GnomeKeyring.attribute_list_new"><tt class="xref py py-obj docutils literal"><span class="pre">attribute_list_new</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.attribute_list_to_glist" title="GnomeKeyring.attribute_list_to_glist"><tt class="xref py py-obj docutils literal"><span class="pre">attribute_list_to_glist</span></tt></a>(attributes)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.cancel_request" title="GnomeKeyring.cancel_request"><tt class="xref py py-obj docutils literal"><span class="pre">cancel_request</span></tt></a>(request)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.change_password_sync" title="GnomeKeyring.change_password_sync"><tt class="xref py py-obj docutils literal"><span class="pre">change_password_sync</span></tt></a>(keyring, original, password)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.create_sync" title="GnomeKeyring.create_sync"><tt class="xref py py-obj docutils literal"><span class="pre">create_sync</span></tt></a>(keyring_name, password)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.daemon_prepare_environment_sync" title="GnomeKeyring.daemon_prepare_environment_sync"><tt class="xref py py-obj docutils literal"><span class="pre">daemon_prepare_environment_sync</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.daemon_set_display_sync" title="GnomeKeyring.daemon_set_display_sync"><tt class="xref py py-obj docutils literal"><span class="pre">daemon_set_display_sync</span></tt></a>(display)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.delete_sync" title="GnomeKeyring.delete_sync"><tt class="xref py py-obj docutils literal"><span class="pre">delete_sync</span></tt></a>(keyring)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.found_list_free" title="GnomeKeyring.found_list_free"><tt class="xref py py-obj docutils literal"><span class="pre">found_list_free</span></tt></a>(found_list)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.free_password" title="GnomeKeyring.free_password"><tt class="xref py py-obj docutils literal"><span class="pre">free_password</span></tt></a>(password)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.get_default_keyring_sync" title="GnomeKeyring.get_default_keyring_sync"><tt class="xref py py-obj docutils literal"><span class="pre">get_default_keyring_sync</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.get_info_sync" title="GnomeKeyring.get_info_sync"><tt class="xref py py-obj docutils literal"><span class="pre">get_info_sync</span></tt></a>(keyring)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.is_available" title="GnomeKeyring.is_available"><tt class="xref py py-obj docutils literal"><span class="pre">is_available</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_ac_get_access_type" title="GnomeKeyring.item_ac_get_access_type"><tt class="xref py py-obj docutils literal"><span class="pre">item_ac_get_access_type</span></tt></a>(ac)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_ac_get_display_name" title="GnomeKeyring.item_ac_get_display_name"><tt class="xref py py-obj docutils literal"><span class="pre">item_ac_get_display_name</span></tt></a>(ac)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_ac_get_path_name" title="GnomeKeyring.item_ac_get_path_name"><tt class="xref py py-obj docutils literal"><span class="pre">item_ac_get_path_name</span></tt></a>(ac)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_ac_set_access_type" title="GnomeKeyring.item_ac_set_access_type"><tt class="xref py py-obj docutils literal"><span class="pre">item_ac_set_access_type</span></tt></a>(ac, value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_ac_set_display_name" title="GnomeKeyring.item_ac_set_display_name"><tt class="xref py py-obj docutils literal"><span class="pre">item_ac_set_display_name</span></tt></a>(ac, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_ac_set_path_name" title="GnomeKeyring.item_ac_set_path_name"><tt class="xref py py-obj docutils literal"><span class="pre">item_ac_set_path_name</span></tt></a>(ac, value)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_create_sync" title="GnomeKeyring.item_create_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_create_sync</span></tt></a>(keyring, type, display_name, attributes, secret, update_if_exists)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_delete_sync" title="GnomeKeyring.item_delete_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_delete_sync</span></tt></a>(keyring, id)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_get_attributes_sync" title="GnomeKeyring.item_get_attributes_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_get_attributes_sync</span></tt></a>(keyring, id, attributes)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_get_info_full_sync" title="GnomeKeyring.item_get_info_full_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_get_info_full_sync</span></tt></a>(keyring, id, flags)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_get_info_sync" title="GnomeKeyring.item_get_info_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_get_info_sync</span></tt></a>(keyring, id)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_grant_access_rights_sync" title="GnomeKeyring.item_grant_access_rights_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_grant_access_rights_sync</span></tt></a>(keyring, display_name, full_path, id, rights)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_set_acl_sync" title="GnomeKeyring.item_set_acl_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_set_acl_sync</span></tt></a>(keyring, id, acl)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_set_attributes_sync" title="GnomeKeyring.item_set_attributes_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_set_attributes_sync</span></tt></a>(keyring, id, attributes)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.item_set_info_sync" title="GnomeKeyring.item_set_info_sync"><tt class="xref py py-obj docutils literal"><span class="pre">item_set_info_sync</span></tt></a>(keyring, id, info)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.lock_all_sync" title="GnomeKeyring.lock_all_sync"><tt class="xref py py-obj docutils literal"><span class="pre">lock_all_sync</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.lock_sync" title="GnomeKeyring.lock_sync"><tt class="xref py py-obj docutils literal"><span class="pre">lock_sync</span></tt></a>(keyring)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.network_password_free" title="GnomeKeyring.network_password_free"><tt class="xref py py-obj docutils literal"><span class="pre">network_password_free</span></tt></a>(data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.network_password_list_free" title="GnomeKeyring.network_password_list_free"><tt class="xref py py-obj docutils literal"><span class="pre">network_password_list_free</span></tt></a>(list)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.result_to_message" title="GnomeKeyring.result_to_message"><tt class="xref py py-obj docutils literal"><span class="pre">result_to_message</span></tt></a>(res)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.set_default_keyring_sync" title="GnomeKeyring.set_default_keyring_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_default_keyring_sync</span></tt></a>(keyring)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.set_info_sync" title="GnomeKeyring.set_info_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_info_sync</span></tt></a>(keyring, info)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.set_network_password_sync" title="GnomeKeyring.set_network_password_sync"><tt class="xref py py-obj docutils literal"><span class="pre">set_network_password_sync</span></tt></a>(keyring, user, domain, server, object, protocol, authtype, port, password)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.string_list_free" title="GnomeKeyring.string_list_free"><tt class="xref py py-obj docutils literal"><span class="pre">string_list_free</span></tt></a>(strings)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GnomeKeyring.unlock_sync" title="GnomeKeyring.unlock_sync"><tt class="xref py py-obj docutils literal"><span class="pre">unlock_sync</span></tt></a>(keyring, password)</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="GnomeKeyring.acl_copy">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">acl_copy</tt><big>(</big><em>list</em><big>)</big><a class="headerlink" href="#GnomeKeyring.acl_copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>list</strong> ([<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>]) &#8211; A list of <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointers.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new list of <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> items. Use <a class="reference internal" href="#GnomeKeyring.acl_free" title="GnomeKeyring.acl_free"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.acl_free</span></tt></a> () to free the memory.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Copy an access control list.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.acl_free">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">acl_free</tt><big>(</big><em>acl</em><big>)</big><a class="headerlink" href="#GnomeKeyring.acl_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>acl</strong> ([<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>]) &#8211; A list of <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointers.</td>
+</tr>
+</tbody>
+</table>
+<p>Free an access control list.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.attribute_list_append_string">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">attribute_list_append_string</tt><big>(</big><em>attributes</em>, <em>name</em>, <em>value</em><big>)</big><a class="headerlink" href="#GnomeKeyring.attribute_list_append_string" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; A <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt></li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the new attribute</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The value to store in <cite>attributes</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Store a key-value-pair with a string value in <cite>attributes</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.attribute_list_append_uint32">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">attribute_list_append_uint32</tt><big>(</big><em>attributes</em>, <em>name</em>, <em>value</em><big>)</big><a class="headerlink" href="#GnomeKeyring.attribute_list_append_uint32" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; A <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt></li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the new attribute</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The value to store in <cite>attributes</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Store a key-value-pair with an unsigned 32bit number value in <cite>attributes</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.attribute_list_copy">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">attribute_list_copy</tt><big>(</big><em>attributes</em><big>)</big><a class="headerlink" href="#GnomeKeyring.attribute_list_copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; A <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt> to copy.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The new <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Copy a list of item attributes.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.attribute_list_free">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">attribute_list_free</tt><big>(</big><em>attributes</em><big>)</big><a class="headerlink" href="#GnomeKeyring.attribute_list_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; A <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Free the memory used by <cite>attributes</cite>.</p>
+<p>If a <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> pointer is passed, it is ignored.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.attribute_list_get_type">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">attribute_list_get_type</tt><big>(</big><big>)</big><a class="headerlink" href="#GnomeKeyring.attribute_list_get_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.attribute_list_new">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">attribute_list_new</tt><big>(</big><big>)</big><a class="headerlink" href="#GnomeKeyring.attribute_list_new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The new <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Create a new <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.attribute_list_to_glist">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">attribute_list_to_glist</tt><big>(</big><em>attributes</em><big>)</big><a class="headerlink" href="#GnomeKeyring.attribute_list_to_glist" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; A <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="structs/Attribute.html#GnomeKeyring.Attribute" title="GnomeKeyring.Attribute"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Attribute</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="structs/Attribute.html#GnomeKeyring.Attribute" title="GnomeKeyring.Attribute"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Attribute</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Create <a class="reference internal" href="../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="structs/Attribute.html#GnomeKeyring.Attribute" title="GnomeKeyring.Attribute"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Attribute</span></tt></a> pointers from <cite>attributes</cite>. This is
+mostly useful in language bindings which cannot directly use a <a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.cancel_request">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">cancel_request</tt><big>(</big><em>request</em><big>)</big><a class="headerlink" href="#GnomeKeyring.cancel_request" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>request</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; The request returned from the asynchronous call function.</td>
+</tr>
+</tbody>
+</table>
+<p>Cancel an asynchronous request.</p>
+<p>If a callback was registered when making the asynchronous request, that callback
+function will be called with a result of <a class="reference internal" href="enums.html#GnomeKeyring.Result.CANCELLED" title="GnomeKeyring.Result.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.CANCELLED</span></tt></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.change_password_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">change_password_sync</tt><big>(</big><em>keyring</em>, <em>original</em>, <em>password</em><big>)</big><a class="headerlink" href="#GnomeKeyring.change_password_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the keyring to change the password for. Cannot be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>original</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The old keyring password, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to prompt the user for it.</li>
+<li><strong>password</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The new keyring password, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to prompt the user for it.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Change the password for <cite>keyring</cite>. In most cases you would specify <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for
+both the <cite>original</cite> and <cite>password</cite> arguments and allow the user to type the
+correct passwords.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.change_password</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.create_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">create_sync</tt><big>(</big><em>keyring_name</em>, <em>password</em><big>)</big><a class="headerlink" href="#GnomeKeyring.create_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The new keyring name. Must not be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>password</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The password for the new keyring. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> user will be prompted.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Create a new keyring with the specified name. In most cases <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> will be
+passed in as the <cite>password</cite>, which will prompt the user to enter a password
+of their choice.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.create</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.daemon_prepare_environment_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">daemon_prepare_environment_sync</tt><big>(</big><big>)</big><a class="headerlink" href="#GnomeKeyring.daemon_prepare_environment_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Deprecated. No longer supported, call is ignored.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.daemon_set_display_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">daemon_set_display_sync</tt><big>(</big><em>display</em><big>)</big><a class="headerlink" href="#GnomeKeyring.daemon_set_display_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>display</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Deprecated</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.DENIED" title="GnomeKeyring.Result.DENIED"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.DENIED</span></tt></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Deprecated. No longer supported, always fails.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.delete_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">delete_sync</tt><big>(</big><em>keyring</em><big>)</big><a class="headerlink" href="#GnomeKeyring.delete_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the keyring to delete. Cannot be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Delete <cite>keyring</cite>. Once a keyring is deleted there is no mechanism for
+recovery of its contents.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.delete</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.found_list_free">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">found_list_free</tt><big>(</big><em>found_list</em><big>)</big><a class="headerlink" href="#GnomeKeyring.found_list_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>found_list</strong> ([<a class="reference internal" href="structs/Found.html#GnomeKeyring.Found" title="GnomeKeyring.Found"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Found</span></tt></a>]) &#8211; a <a class="reference internal" href="../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of <a class="reference internal" href="structs/Found.html#GnomeKeyring.Found" title="GnomeKeyring.Found"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Found</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Free the memory used by the <a class="reference internal" href="structs/Found.html#GnomeKeyring.Found" title="GnomeKeyring.Found"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Found</span></tt></a> items in <cite>found_list</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.free_password">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">free_password</tt><big>(</big><em>password</em><big>)</big><a class="headerlink" href="#GnomeKeyring.free_password" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>password</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the password to be freed</td>
+</tr>
+</tbody>
+</table>
+<p>Clears the memory used by password by filling with &#8216;\0&#8217; and frees the memory
+after doing this. You should use this function instead of <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> () for
+secret information.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.get_default_keyring_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">get_default_keyring_sync</tt><big>(</big><big>)</big><a class="headerlink" href="#GnomeKeyring.get_default_keyring_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>, keyring: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the default keyring name.</p>
+<p>The string returned in <cite>keyring</cite> must be freed with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ().</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.get_default_keyring</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.get_info_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">get_info_sync</tt><big>(</big><em>keyring</em><big>)</big><a class="headerlink" href="#GnomeKeyring.get_info_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>, info: <a class="reference internal" href="structs/Info.html#GnomeKeyring.Info" title="GnomeKeyring.Info"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Info</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get information about <cite>keyring</cite>.</p>
+<p>The <a class="reference internal" href="structs/Info.html#GnomeKeyring.Info" title="GnomeKeyring.Info"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Info</span></tt></a> structure returned in <cite>info</cite> must be freed with
+<a class="reference internal" href="structs/Info.html#GnomeKeyring.Info.free" title="GnomeKeyring.Info.free"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Info.free</span></tt></a> ().</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.get_info</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.is_available">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">is_available</tt><big>(</big><big>)</big><a class="headerlink" href="#GnomeKeyring.is_available" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if you can&#8217;t communicate with the daemon (so you can&#8217;t load and save passwords).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Check whether you can communicate with a gnome-keyring-daemon.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_ac_get_access_type">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_ac_get_access_type</tt><big>(</big><em>ac</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_ac_get_access_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ac</strong> (<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>) &#8211; A <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointer.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The access rights.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="flags.html#GnomeKeyring.AccessType" title="GnomeKeyring.AccessType"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the application access rights for the access control.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_ac_get_display_name">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_ac_get_display_name</tt><big>(</big><em>ac</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_ac_get_display_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ac</strong> (<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>) &#8211; A <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointer.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A newly allocated string containing the display name.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the access control application&#8217;s display name.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_ac_get_path_name">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_ac_get_path_name</tt><big>(</big><em>ac</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_ac_get_path_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ac</strong> (<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>) &#8211; A <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointer.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A newly allocated string containing the display name.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the access control application&#8217;s full path name.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_ac_set_access_type">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_ac_set_access_type</tt><big>(</big><em>ac</em>, <em>value</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_ac_set_access_type" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ac</strong> (<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>) &#8211; A <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointer.</li>
+<li><strong>value</strong> (<a class="reference internal" href="flags.html#GnomeKeyring.AccessType" title="GnomeKeyring.AccessType"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessType</span></tt></a>) &#8211; The new access rights.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the application access rights for the access control.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_ac_set_display_name">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_ac_set_display_name</tt><big>(</big><em>ac</em>, <em>value</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_ac_set_display_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ac</strong> (<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>) &#8211; A <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointer.</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The new application display name.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the access control application&#8217;s display name.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_ac_set_path_name">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_ac_set_path_name</tt><big>(</big><em>ac</em>, <em>value</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_ac_set_path_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ac</strong> (<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>) &#8211; A <a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a> pointer</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The new application full path.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set the access control application&#8217;s full path name.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_create_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_create_sync</tt><big>(</big><em>keyring</em>, <em>type</em>, <em>display_name</em>, <em>attributes</em>, <em>secret</em>, <em>update_if_exists</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_create_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring in which to create the item, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>type</strong> (<a class="reference internal" href="enums.html#GnomeKeyring.ItemType" title="GnomeKeyring.ItemType"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemType</span></tt></a>) &#8211; The item type.</li>
+<li><strong>display_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the item. This will be displayed to the user where necessary.</li>
+<li><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; A (possibly empty) list of attributes to store with the item.</li>
+<li><strong>secret</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The password or secret of the item.</li>
+<li><strong>update_if_exists</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; If true, then another item matching the type, and attributes will be updated instead of creating a new item.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>, item_id: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Create a new item in a keyring.</p>
+<p>The <cite>secret</cite> must be a null terminated string. It should be allocated using secure
+memory whenever possible. See <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.memory_strdup</span></tt> ()</p>
+<p>The user may have been prompted to unlock necessary keyrings. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is
+specified as the <cite>keyring</cite> and no default keyring exists, the user will be
+prompted to create a new keyring.</p>
+<p>When <cite>update_if_exists</cite> is set to <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a>, the user may be prompted for access
+to the previously existing item.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.item_create</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_delete_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_delete_sync</tt><big>(</big><em>keyring</em>, <em>id</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_delete_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring from which to delete the item, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Delete an item in a keyring.</p>
+<p>The user may be prompted if the calling application doesn&#8217;t have necessary
+access to delete the item.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.item_delete</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_get_attributes_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_get_attributes_sync</tt><big>(</big><em>keyring</em>, <em>id</em>, <em>attributes</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_get_attributes_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring in which the item exists, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item</li>
+<li><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; The location to return a pointer to the attribute list.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get all attributes for an item.</p>
+<p>A <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AttributeList</span></tt> will be returned in <cite>attributes</cite>. This should be
+freed using <a class="reference internal" href="structs/Attribute.html#GnomeKeyring.Attribute.list_free" title="GnomeKeyring.Attribute.list_free"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Attribute.list_free</span></tt></a> ().</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.item_get_attributes</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_get_info_full_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_get_info_full_sync</tt><big>(</big><em>keyring</em>, <em>id</em>, <em>flags</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_get_info_full_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring in which the item exists, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item</li>
+<li><strong>flags</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The parts of the item to retrieve.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>, info: <a class="reference internal" href="structs/ItemInfo.html#GnomeKeyring.ItemInfo" title="GnomeKeyring.ItemInfo"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfo</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get information about an item, optionally retrieving its secret.</p>
+<p>If <cite>flags</cite> includes <a class="reference internal" href="flags.html#GnomeKeyring.ItemInfoFlags.SECRET" title="GnomeKeyring.ItemInfoFlags.SECRET"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfoFlags.SECRET</span></tt></a> then the user may be
+prompted if the calling application doesn&#8217;t have necessary access to read
+the item with its secret.</p>
+<p>A <a class="reference internal" href="structs/ItemInfo.html#GnomeKeyring.ItemInfo" title="GnomeKeyring.ItemInfo"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfo</span></tt></a> structure will be returned in <cite>info</cite>. Certain fields
+of this structure may be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> or zero if they were not specified in <cite>flags</cite>.
+This must be freed using <a class="reference internal" href="structs/ItemInfo.html#GnomeKeyring.ItemInfo.free" title="GnomeKeyring.ItemInfo.free"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfo.free</span></tt></a> ().</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.item_get_info_full</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_get_info_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_get_info_sync</tt><big>(</big><em>keyring</em>, <em>id</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_get_info_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring in which the item exists, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>, info: <a class="reference internal" href="structs/ItemInfo.html#GnomeKeyring.ItemInfo" title="GnomeKeyring.ItemInfo"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfo</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get information about an item and its secret.</p>
+<p>The user may be prompted if the calling application doesn&#8217;t have necessary
+access to read the item with its secret.</p>
+<p>A <a class="reference internal" href="structs/ItemInfo.html#GnomeKeyring.ItemInfo" title="GnomeKeyring.ItemInfo"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfo</span></tt></a> structure will be returned in <cite>info</cite>. This must be
+freed using <a class="reference internal" href="structs/ItemInfo.html#GnomeKeyring.ItemInfo.free" title="GnomeKeyring.ItemInfo.free"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfo.free</span></tt></a> ().</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.item_get_info</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_grant_access_rights_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_grant_access_rights_sync</tt><big>(</big><em>keyring</em>, <em>display_name</em>, <em>full_path</em>, <em>id</em>, <em>rights</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_grant_access_rights_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The keyring name, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>display_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The display name for the application, as returned by <a class="reference internal" href="../GLib_2.0/functions.html#GLib.get_application_name" title="GLib.get_application_name"><tt class="xref py py-class docutils literal"><span class="pre">GLib.get_application_name</span></tt></a> ().</li>
+<li><strong>full_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The full filepath to the application.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item to grant access to.</li>
+<li><strong>rights</strong> (<a class="reference internal" href="flags.html#GnomeKeyring.AccessType" title="GnomeKeyring.AccessType"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessType</span></tt></a>) &#8211; The type of rights to grant.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Will grant the application access rights to the item, provided
+callee has write access to said item.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_set_acl_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_set_acl_sync</tt><big>(</big><em>keyring</em>, <em>id</em>, <em>acl</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_set_acl_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring in which the item exists, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item</li>
+<li><strong>acl</strong> ([<a class="reference internal" href="structs/AccessControl.html#GnomeKeyring.AccessControl" title="GnomeKeyring.AccessControl"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.AccessControl</span></tt></a>]) &#8211; The access control list to set on the item.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_set_attributes_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_set_attributes_sync</tt><big>(</big><em>keyring</em>, <em>id</em>, <em>attributes</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_set_attributes_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring in which the item exists, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item</li>
+<li><strong>attributes</strong> (<a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a>) &#8211; The full list of attributes to set on the item.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set all the attributes for an item. This will replace any previous attributes
+set on the item.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.item_set_attributes</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.item_set_info_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">item_set_info_sync</tt><big>(</big><em>keyring</em>, <em>id</em>, <em>info</em><big>)</big><a class="headerlink" href="#GnomeKeyring.item_set_info_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring in which the item exists, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The id of the item</li>
+<li><strong>info</strong> (<a class="reference internal" href="structs/ItemInfo.html#GnomeKeyring.ItemInfo" title="GnomeKeyring.ItemInfo"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemInfo</span></tt></a>) &#8211; The item info to save into the item.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set information on an item, like its display name, secret etc...</p>
+<p>Only the fields in the <cite>info</cite> pointer that are non-null or non-zero will be
+set on the item.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.item_set_info</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.lock_all_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">lock_all_sync</tt><big>(</big><big>)</big><a class="headerlink" href="#GnomeKeyring.lock_all_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Lock all the keyrings, so that their contents may not eb accessed without
+first unlocking them with a password.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.lock_all</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.lock_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">lock_sync</tt><big>(</big><em>keyring</em><big>)</big><a class="headerlink" href="#GnomeKeyring.lock_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring to lock, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Lock a <cite>keyring</cite>, so that its contents may not be accessed without first
+supplying a password.</p>
+<p>Most keyring opretaions involving items require that you first unlock the
+keyring. One exception is <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.find_items_sync</span></tt> () and related functions.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.lock</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.network_password_free">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">network_password_free</tt><big>(</big><em>data</em><big>)</big><a class="headerlink" href="#GnomeKeyring.network_password_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> (<a class="reference internal" href="structs/NetworkPasswordData.html#GnomeKeyring.NetworkPasswordData" title="GnomeKeyring.NetworkPasswordData"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.NetworkPasswordData</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; A <a class="reference internal" href="structs/NetworkPasswordData.html#GnomeKeyring.NetworkPasswordData" title="GnomeKeyring.NetworkPasswordData"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.NetworkPasswordData</span></tt></a> pointer.</td>
+</tr>
+</tbody>
+</table>
+<p>Free a network password data pointer. If <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> is passed in,
+nothing happens.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.network_password_list_free">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">network_password_list_free</tt><big>(</big><em>list</em><big>)</big><a class="headerlink" href="#GnomeKeyring.network_password_list_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>list</strong> ([<a class="reference internal" href="structs/NetworkPasswordData.html#GnomeKeyring.NetworkPasswordData" title="GnomeKeyring.NetworkPasswordData"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.NetworkPasswordData</span></tt></a>]) &#8211; A list of <a class="reference internal" href="structs/NetworkPasswordData.html#GnomeKeyring.NetworkPasswordData" title="GnomeKeyring.NetworkPasswordData"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.NetworkPasswordData</span></tt></a> pointers.</td>
+</tr>
+</tbody>
+</table>
+<p>Free a list of network password data.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.result_to_message">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">result_to_message</tt><big>(</big><em>res</em><big>)</big><a class="headerlink" href="#GnomeKeyring.result_to_message" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>res</strong> (<a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>) &#8211; A <a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a string suitable for display to the user for a given <a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>, or an empty string if the message wouldn&#8217;t make sense to a user.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> and <a class="reference internal" href="enums.html#GnomeKeyring.Result.CANCELLED" title="GnomeKeyring.Result.CANCELLED"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.CANCELLED</span></tt></a> 
+codes will return an empty string.</p>
+<p>Note that there are some results for which the application will need to
+take appropriate action rather than just display an error message to
+the user.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.set_default_keyring_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">set_default_keyring_sync</tt><big>(</big><em>keyring</em><big>)</big><a class="headerlink" href="#GnomeKeyring.set_default_keyring_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The keyring to make default</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Change the default keyring.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.set_default_keyring</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.set_info_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">set_info_sync</tt><big>(</big><em>keyring</em>, <em>info</em><big>)</big><a class="headerlink" href="#GnomeKeyring.set_info_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>info</strong> (<a class="reference internal" href="structs/Info.html#GnomeKeyring.Info" title="GnomeKeyring.Info"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Info</span></tt></a>) &#8211; A structure containing flags and info for the keyring.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Set flags and info for <cite>keyring</cite>. The only fields in <cite>info</cite> that are used
+are lock_on_idle and lock_timeout.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.set_info</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.set_network_password_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">set_network_password_sync</tt><big>(</big><em>keyring</em>, <em>user</em>, <em>domain</em>, <em>server</em>, <em>object</em>, <em>protocol</em>, <em>authtype</em>, <em>port</em>, <em>password</em><big>)</big><a class="headerlink" href="#GnomeKeyring.set_network_password_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The keyring to store the password in, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>user</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The user name or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>domain</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The domain name or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>server</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The server or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>object</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The remote object or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>protocol</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The network protocol or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>authtype</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The authentication type or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>port</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; The network port or zero.</li>
+<li><strong>password</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The password to store, must not be <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a>, item_id: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Store a network password.</p>
+<p>If an item already exists for with this network info (ie: user, server etc...)
+then it will be updated.</p>
+<p>The created or updated item id will be returned in <cite>item_id</cite>.</p>
+<p>Network passwords are items with the item type <a class="reference internal" href="enums.html#GnomeKeyring.ItemType.NETWORK_PASSWORD" title="GnomeKeyring.ItemType.NETWORK_PASSWORD"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.ItemType.NETWORK_PASSWORD</span></tt></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.string_list_free">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">string_list_free</tt><big>(</big><em>strings</em><big>)</big><a class="headerlink" href="#GnomeKeyring.string_list_free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>strings</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]) &#8211; A <a class="reference internal" href="../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a> of string pointers.</td>
+</tr>
+</tbody>
+</table>
+<p>Free a list of string pointers.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="GnomeKeyring.unlock_sync">
+<tt class="descclassname">GnomeKeyring.</tt><tt class="descname">unlock_sync</tt><big>(</big><em>keyring</em>, <em>password</em><big>)</big><a class="headerlink" href="#GnomeKeyring.unlock_sync" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>keyring</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The name of the keyring to unlock, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the default keyring.</li>
+<li><strong>password</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The password to unlock the keyring with, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to prompt the user.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="enums.html#GnomeKeyring.Result.OK" title="GnomeKeyring.Result.OK"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result.OK</span></tt></a> if the operation was succcessful or an error result otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="enums.html#GnomeKeyring.Result" title="GnomeKeyring.Result"><tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.Result</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Unlock a <cite>keyring</cite>, so that its contents may be accessed. In most cases <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> 
+will be passed in as the <cite>password</cite>, which will prompt the user to enter the
+correct password.</p>
+<p>Most keyring opretaions involving items require that yo ufirst unlock the
+keyring. One exception is <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.find_items_sync</span></tt> () and related functions.</p>
+<p>For an asynchronous version of this function see <tt class="xref py py-class docutils literal"><span class="pre">GnomeKeyring.unlock</span></tt> ().</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="callbacks.html" class="btn btn-neutral float-right" title="Callbacks"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="GnomeKeyring 1.0"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,796 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Enums -
+    
+      GIRepository 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="GIRepository 2.0" href="index.html"/>
+        <link rel="next" title="Gkbd 3.0" href="../Gkbd_3.0/index.html"/>
+        <link rel="prev" title="Flags" href="flags.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">GIRepository 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Enums</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">GIRepository 2.0</a> &raquo;</li>
+  
+  <li><a href="">Enums</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GIRepository_2.0/enums" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#GIRepository.ArrayType" title="GIRepository.ArrayType"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ArrayType</span></tt></a></li>
+<li><a class="reference internal" href="#GIRepository.Direction" title="GIRepository.Direction"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Direction</span></tt></a></li>
+<li><a class="reference internal" href="#GIRepository.InfoType" title="GIRepository.InfoType"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.InfoType</span></tt></a></li>
+<li><a class="reference internal" href="#GIRepository.RepositoryError" title="GIRepository.RepositoryError"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.RepositoryError</span></tt></a></li>
+<li><a class="reference internal" href="#GIRepository.ScopeType" title="GIRepository.ScopeType"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ScopeType</span></tt></a></li>
+<li><a class="reference internal" href="#GIRepository.Transfer" title="GIRepository.Transfer"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Transfer</span></tt></a></li>
+<li><a class="reference internal" href="#GIRepository.TypeTag" title="GIRepository.TypeTag"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.TypeTag</span></tt></a></li>
+<li><a class="reference internal" href="#GIRepository.nvokeError" title="GIRepository.nvokeError"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.nvokeError</span></tt></a></li>
+</ul>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="arraytype">
+<h2>ArrayType<a class="headerlink" href="#arraytype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.ArrayType">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">ArrayType</tt><a class="headerlink" href="#GIRepository.ArrayType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The type of array in a <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.TypeInfo</span></tt>.</p>
+<dl class="attribute">
+<dt id="GIRepository.ArrayType.C">
+<tt class="descname">C</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.ArrayType.C" title="Permalink to this definition">¶</a></dt>
+<dd><p>a C array, <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> [] for instance</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.ArrayType.ARRAY">
+<tt class="descname">ARRAY</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.ArrayType.ARRAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <a class="reference internal" href="../GLib_2.0/structs/Array.html#GLib.Array" title="GLib.Array"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Array</span></tt></a> array</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.ArrayType.PTR_ARRAY">
+<tt class="descname">PTR_ARRAY</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.ArrayType.PTR_ARRAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <a class="reference internal" href="../GLib_2.0/structs/PtrArray.html#GLib.PtrArray" title="GLib.PtrArray"><tt class="xref py py-class docutils literal"><span class="pre">GLib.PtrArray</span></tt></a> array</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.ArrayType.BYTE_ARRAY">
+<tt class="descname">BYTE_ARRAY</tt><em class="property"> = 3</em><a class="headerlink" href="#GIRepository.ArrayType.BYTE_ARRAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <a class="reference internal" href="../GLib_2.0/structs/ByteArray.html#GLib.ByteArray" title="GLib.ByteArray"><tt class="xref py py-class docutils literal"><span class="pre">GLib.ByteArray</span></tt></a> array</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="direction">
+<h2>Direction<a class="headerlink" href="#direction" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.Direction">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">Direction</tt><a class="headerlink" href="#GIRepository.Direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The direction of a <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ArgInfo</span></tt>.</p>
+<dl class="attribute">
+<dt id="GIRepository.Direction.IN">
+<tt class="descname">IN</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.Direction.IN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.Direction.OUT">
+<tt class="descname">OUT</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.Direction.OUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>out argument.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.Direction.INOUT">
+<tt class="descname">INOUT</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.Direction.INOUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>in and out argument.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="infotype">
+<h2>InfoType<a class="headerlink" href="#infotype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.InfoType">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">InfoType</tt><a class="headerlink" href="#GIRepository.InfoType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The type of a <a class="reference internal" href="structs/BaseInfo.html#GIRepository.BaseInfo" title="GIRepository.BaseInfo"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.BaseInfo</span></tt></a> struct.</p>
+<dl class="attribute">
+<dt id="GIRepository.InfoType.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.InfoType.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>invalid type</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.FUNCTION">
+<tt class="descname">FUNCTION</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.InfoType.FUNCTION" title="Permalink to this definition">¶</a></dt>
+<dd><p>function, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.FunctionInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.CALLBACK">
+<tt class="descname">CALLBACK</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.InfoType.CALLBACK" title="Permalink to this definition">¶</a></dt>
+<dd><p>callback, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.FunctionInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.STRUCT">
+<tt class="descname">STRUCT</tt><em class="property"> = 3</em><a class="headerlink" href="#GIRepository.InfoType.STRUCT" title="Permalink to this definition">¶</a></dt>
+<dd><p>struct, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.StructInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.BOXED">
+<tt class="descname">BOXED</tt><em class="property"> = 4</em><a class="headerlink" href="#GIRepository.InfoType.BOXED" title="Permalink to this definition">¶</a></dt>
+<dd><p>boxed, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.StructInfo</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.UnionInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.ENUM">
+<tt class="descname">ENUM</tt><em class="property"> = 5</em><a class="headerlink" href="#GIRepository.InfoType.ENUM" title="Permalink to this definition">¶</a></dt>
+<dd><p>enum, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.EnumInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.FLAGS">
+<tt class="descname">FLAGS</tt><em class="property"> = 6</em><a class="headerlink" href="#GIRepository.InfoType.FLAGS" title="Permalink to this definition">¶</a></dt>
+<dd><p>flags, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.EnumInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.OBJECT">
+<tt class="descname">OBJECT</tt><em class="property"> = 7</em><a class="headerlink" href="#GIRepository.InfoType.OBJECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>object, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ObjectInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.INTERFACE">
+<tt class="descname">INTERFACE</tt><em class="property"> = 8</em><a class="headerlink" href="#GIRepository.InfoType.INTERFACE" title="Permalink to this definition">¶</a></dt>
+<dd><p>interface, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.InterfaceInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.CONSTANT">
+<tt class="descname">CONSTANT</tt><em class="property"> = 9</em><a class="headerlink" href="#GIRepository.InfoType.CONSTANT" title="Permalink to this definition">¶</a></dt>
+<dd><p>contant, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ConstantInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.INVALID_0">
+<tt class="descname">INVALID_0</tt><em class="property"> = 10</em><a class="headerlink" href="#GIRepository.InfoType.INVALID_0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.UNION">
+<tt class="descname">UNION</tt><em class="property"> = 11</em><a class="headerlink" href="#GIRepository.InfoType.UNION" title="Permalink to this definition">¶</a></dt>
+<dd><p>union, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.UnionInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.VALUE">
+<tt class="descname">VALUE</tt><em class="property"> = 12</em><a class="headerlink" href="#GIRepository.InfoType.VALUE" title="Permalink to this definition">¶</a></dt>
+<dd><p>enum value, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ValueInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.SIGNAL">
+<tt class="descname">SIGNAL</tt><em class="property"> = 13</em><a class="headerlink" href="#GIRepository.InfoType.SIGNAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>signal, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.SignalInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.VFUNC">
+<tt class="descname">VFUNC</tt><em class="property"> = 14</em><a class="headerlink" href="#GIRepository.InfoType.VFUNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>virtual function, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.VFuncInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.PROPERTY">
+<tt class="descname">PROPERTY</tt><em class="property"> = 15</em><a class="headerlink" href="#GIRepository.InfoType.PROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a> property, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.PropertyInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.FIELD">
+<tt class="descname">FIELD</tt><em class="property"> = 16</em><a class="headerlink" href="#GIRepository.InfoType.FIELD" title="Permalink to this definition">¶</a></dt>
+<dd><p>struct or union field, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.FieldInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.ARG">
+<tt class="descname">ARG</tt><em class="property"> = 17</em><a class="headerlink" href="#GIRepository.InfoType.ARG" title="Permalink to this definition">¶</a></dt>
+<dd><p>argument of a function or callback, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ArgInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.TYPE">
+<tt class="descname">TYPE</tt><em class="property"> = 18</em><a class="headerlink" href="#GIRepository.InfoType.TYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>type information, see <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.TypeInfo</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.InfoType.UNRESOLVED">
+<tt class="descname">UNRESOLVED</tt><em class="property"> = 19</em><a class="headerlink" href="#GIRepository.InfoType.UNRESOLVED" title="Permalink to this definition">¶</a></dt>
+<dd><p>unresolved type, a type which is not present in the typelib, or any of its dependencies.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="repositoryerror">
+<h2>RepositoryError<a class="headerlink" href="#repositoryerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.RepositoryError">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">RepositoryError</tt><a class="headerlink" href="#GIRepository.RepositoryError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<dl class="attribute">
+<dt id="GIRepository.RepositoryError.TYPELIB_NOT_FOUND">
+<tt class="descname">TYPELIB_NOT_FOUND</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.RepositoryError.TYPELIB_NOT_FOUND" title="Permalink to this definition">¶</a></dt>
+<dd><p>the typelib could not be found.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.RepositoryError.NAMESPACE_MISMATCH">
+<tt class="descname">NAMESPACE_MISMATCH</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.RepositoryError.NAMESPACE_MISMATCH" title="Permalink to this definition">¶</a></dt>
+<dd><p>the namespace does not match the requested namespace.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.RepositoryError.NAMESPACE_VERSION_CONFLICT">
+<tt class="descname">NAMESPACE_VERSION_CONFLICT</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.RepositoryError.NAMESPACE_VERSION_CONFLICT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the version of the typelib does not match the requested version.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.RepositoryError.LIBRARY_NOT_FOUND">
+<tt class="descname">LIBRARY_NOT_FOUND</tt><em class="property"> = 3</em><a class="headerlink" href="#GIRepository.RepositoryError.LIBRARY_NOT_FOUND" title="Permalink to this definition">¶</a></dt>
+<dd><p>the library used by the typelib could not be found.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="scopetype">
+<h2>ScopeType<a class="headerlink" href="#scopetype" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.ScopeType">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">ScopeType</tt><a class="headerlink" href="#GIRepository.ScopeType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>Scope type of a <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.ArgInfo</span></tt> representing callback, determines how the
+callback is invoked and is used to decided when the invoke structs
+can be freed.</p>
+<dl class="attribute">
+<dt id="GIRepository.ScopeType.INVALID">
+<tt class="descname">INVALID</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.ScopeType.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>The argument is not of callback type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.ScopeType.CALL">
+<tt class="descname">CALL</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.ScopeType.CALL" title="Permalink to this definition">¶</a></dt>
+<dd><p>The callback and associated user_data is only used during the call to this function.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.ScopeType.ASYNC">
+<tt class="descname">ASYNC</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.ScopeType.ASYNC" title="Permalink to this definition">¶</a></dt>
+<dd><p>The callback and associated user_data is only used until the callback is invoked, and the callback. is invoked always exactly once.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.ScopeType.NOTIFIED">
+<tt class="descname">NOTIFIED</tt><em class="property"> = 3</em><a class="headerlink" href="#GIRepository.ScopeType.NOTIFIED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The callback and and associated user_data is used until the caller is notfied via the destroy_notify.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="transfer">
+<h2>Transfer<a class="headerlink" href="#transfer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.Transfer">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">Transfer</tt><a class="headerlink" href="#GIRepository.Transfer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The transfer is the exchange of data between two parts, from the callee to
+the caller. The callee is either a function/method/signal or an
+object/interface where a property is defined. The caller is the side
+accessing a property or calling a function.
+<a class="reference internal" href="#GIRepository.Transfer" title="GIRepository.Transfer"><tt class="xref py py-class docutils literal"><span class="pre">GIRepository.Transfer</span></tt></a> specifies who&#8217;s responsible for freeing the resources after the
+ownership transfer is complete. In case of a containing type such as a list,
+an array or a hash table the container itself is specified differently from
+the items within the container itself. Each container is freed differently,
+check the documentation for the types themselves for information on how to
+free them.</p>
+<dl class="attribute">
+<dt id="GIRepository.Transfer.NOTHING">
+<tt class="descname">NOTHING</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.Transfer.NOTHING" title="Permalink to this definition">¶</a></dt>
+<dd><p>transfer nothing from the callee (function or the type instance the property belongs to) to the caller. The callee retains the ownership of the transfer and the caller doesn&#8217;t need to do anything to free up the resources of this transfer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.Transfer.CONTAINER">
+<tt class="descname">CONTAINER</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.Transfer.CONTAINER" title="Permalink to this definition">¶</a></dt>
+<dd><p>transfer the container (list, array, hash table) from the callee to the caller. The callee retains the ownership of the individual items in the container and the caller has to free up the container resources (<tt class="xref py py-class docutils literal"><span class="pre">GLib.List.free</span></tt> ()/g_hash_table_destroy() etc) of this transfer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.Transfer.EVERYTHING">
+<tt class="descname">EVERYTHING</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.Transfer.EVERYTHING" title="Permalink to this definition">¶</a></dt>
+<dd><p>transfer everything, eg the container and its contents from the callee to the caller. This is the case when the callee creates a copy of all the data it returns. The caller is responsible for cleaning up the container and item resources of this transfer.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="typetag">
+<h2>TypeTag<a class="headerlink" href="#typetag" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.TypeTag">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">TypeTag</tt><a class="headerlink" href="#GIRepository.TypeTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>The type tag of a <tt class="xref py py-class docutils literal"><span class="pre">GIRepository.TypeInfo</span></tt>.</p>
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.VOID">
+<tt class="descname">VOID</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.TypeTag.VOID" title="Permalink to this definition">¶</a></dt>
+<dd><p>void</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.BOOLEAN">
+<tt class="descname">BOOLEAN</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.TypeTag.BOOLEAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>boolean</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.INT8">
+<tt class="descname">INT8</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.TypeTag.INT8" title="Permalink to this definition">¶</a></dt>
+<dd><p>8-bit signed integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.UINT8">
+<tt class="descname">UINT8</tt><em class="property"> = 3</em><a class="headerlink" href="#GIRepository.TypeTag.UINT8" title="Permalink to this definition">¶</a></dt>
+<dd><p>8-bit unsigned integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.INT16">
+<tt class="descname">INT16</tt><em class="property"> = 4</em><a class="headerlink" href="#GIRepository.TypeTag.INT16" title="Permalink to this definition">¶</a></dt>
+<dd><p>16-bit signed integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.UINT16">
+<tt class="descname">UINT16</tt><em class="property"> = 5</em><a class="headerlink" href="#GIRepository.TypeTag.UINT16" title="Permalink to this definition">¶</a></dt>
+<dd><p>16-bit unsigned integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.INT32">
+<tt class="descname">INT32</tt><em class="property"> = 6</em><a class="headerlink" href="#GIRepository.TypeTag.INT32" title="Permalink to this definition">¶</a></dt>
+<dd><p>32-bit signed integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.UINT32">
+<tt class="descname">UINT32</tt><em class="property"> = 7</em><a class="headerlink" href="#GIRepository.TypeTag.UINT32" title="Permalink to this definition">¶</a></dt>
+<dd><p>32-bit unsigned integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.INT64">
+<tt class="descname">INT64</tt><em class="property"> = 8</em><a class="headerlink" href="#GIRepository.TypeTag.INT64" title="Permalink to this definition">¶</a></dt>
+<dd><p>64-bit signed integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.UINT64">
+<tt class="descname">UINT64</tt><em class="property"> = 9</em><a class="headerlink" href="#GIRepository.TypeTag.UINT64" title="Permalink to this definition">¶</a></dt>
+<dd><p>64-bit unsigned integer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.FLOAT">
+<tt class="descname">FLOAT</tt><em class="property"> = 10</em><a class="headerlink" href="#GIRepository.TypeTag.FLOAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>float</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.DOUBLE">
+<tt class="descname">DOUBLE</tt><em class="property"> = 11</em><a class="headerlink" href="#GIRepository.TypeTag.DOUBLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>double floating point</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.GTYPE">
+<tt class="descname">GTYPE</tt><em class="property"> = 12</em><a class="headerlink" href="#GIRepository.TypeTag.GTYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.UTF8">
+<tt class="descname">UTF8</tt><em class="property"> = 13</em><a class="headerlink" href="#GIRepository.TypeTag.UTF8" title="Permalink to this definition">¶</a></dt>
+<dd><p>a UTF-8 encoded string</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.FILENAME">
+<tt class="descname">FILENAME</tt><em class="property"> = 14</em><a class="headerlink" href="#GIRepository.TypeTag.FILENAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>a filename, encoded in the same encoding as the native filesystem is using.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.ARRAY">
+<tt class="descname">ARRAY</tt><em class="property"> = 15</em><a class="headerlink" href="#GIRepository.TypeTag.ARRAY" title="Permalink to this definition">¶</a></dt>
+<dd><p>an array</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.INTERFACE">
+<tt class="descname">INTERFACE</tt><em class="property"> = 16</em><a class="headerlink" href="#GIRepository.TypeTag.INTERFACE" title="Permalink to this definition">¶</a></dt>
+<dd><p>an extended interface object</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.GLIST">
+<tt class="descname">GLIST</tt><em class="property"> = 17</em><a class="headerlink" href="#GIRepository.TypeTag.GLIST" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <a class="reference internal" href="../GLib_2.0/structs/List.html#GLib.List" title="GLib.List"><tt class="xref py py-class docutils literal"><span class="pre">GLib.List</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.GSLIST">
+<tt class="descname">GSLIST</tt><em class="property"> = 18</em><a class="headerlink" href="#GIRepository.TypeTag.GSLIST" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <a class="reference internal" href="../GLib_2.0/structs/SList.html#GLib.SList" title="GLib.SList"><tt class="xref py py-class docutils literal"><span class="pre">GLib.SList</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.GHASH">
+<tt class="descname">GHASH</tt><em class="property"> = 19</em><a class="headerlink" href="#GIRepository.TypeTag.GHASH" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <a class="reference internal" href="../GLib_2.0/structs/HashTable.html#GLib.HashTable" title="GLib.HashTable"><tt class="xref py py-class docutils literal"><span class="pre">GLib.HashTable</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.ERROR">
+<tt class="descname">ERROR</tt><em class="property"> = 20</em><a class="headerlink" href="#GIRepository.TypeTag.ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>a <a class="reference internal" href="../GLib_2.0/structs/Error.html#GLib.Error" title="GLib.Error"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Error</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.TypeTag.UNICHAR">
+<tt class="descname">UNICHAR</tt><em class="property"> = 21</em><a class="headerlink" href="#GIRepository.TypeTag.UNICHAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unicode character</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="nvokeerror">
+<h2>nvokeError<a class="headerlink" href="#nvokeerror" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GIRepository.nvokeError">
+<em class="property">class </em><tt class="descclassname">GIRepository.</tt><tt class="descname">nvokeError</tt><a class="headerlink" href="#GIRepository.nvokeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../GObject_2.0/enums.html#GObject.GEnum" title="GObject.GEnum"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GEnum</span></tt></a></p>
+<p>An error occuring while invoking a function via
+<tt class="xref py py-class docutils literal"><span class="pre">GIRepository.function_info_invoke</span></tt> ().</p>
+<dl class="attribute">
+<dt id="GIRepository.nvokeError.FAILED">
+<tt class="descname">FAILED</tt><em class="property"> = 0</em><a class="headerlink" href="#GIRepository.nvokeError.FAILED" title="Permalink to this definition">¶</a></dt>
+<dd><p>invokation failed, unknown error.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.nvokeError.SYMBOL_NOT_FOUND">
+<tt class="descname">SYMBOL_NOT_FOUND</tt><em class="property"> = 1</em><a class="headerlink" href="#GIRepository.nvokeError.SYMBOL_NOT_FOUND" title="Permalink to this definition">¶</a></dt>
+<dd><p>symbol couldn&#8217;t be found in any of the libraries associated with the typelib of the function.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="GIRepository.nvokeError.ARGUMENT_MISMATCH">
+<tt class="descname">ARGUMENT_MISMATCH</tt><em class="property"> = 2</em><a class="headerlink" href="#GIRepository.nvokeError.ARGUMENT_MISMATCH" title="Permalink to this definition">¶</a></dt>
+<dd><p>the arguments provided didn&#8217;t match the expected arguments for the functions type signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../Gkbd_3.0/index.html" class="btn btn-neutral float-right" title="Gkbd 3.0"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="flags.html" class="btn btn-neutral" title="Flags"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

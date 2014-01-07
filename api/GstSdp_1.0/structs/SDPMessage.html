@@ -1,0 +1,1885 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    GstSdp.SDPMessage -
+    
+      Structures -
+    
+      GstSdp 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Structures" href="index.html"/>
+        <link rel="next" title="GstSdp.SDPOrigin" href="SDPOrigin.html"/>
+        <link rel="prev" title="GstSdp.SDPMedia" href="SDPMedia.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GstSdp 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Structures</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">GstSdp.SDPMessage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">GstSdp 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Structures</a> &raquo;</li>
+  
+  <li><a href="">GstSdp.SDPMessage</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/GstSdp_1.0/structs/SDPMessage" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gstsdp-sdpmessage">
+<h1>GstSdp.SDPMessage<a class="headerlink" href="#gstsdp-sdpmessage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="91%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Access</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>connection</td>
+<td><a class="reference internal" href="SDPConnection.html#GstSdp.SDPConnection" title="GstSdp.SDPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPConnection</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>information</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>key</td>
+<td><a class="reference internal" href="SDPKey.html#GstSdp.SDPKey" title="GstSdp.SDPKey"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPKey</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>origin</td>
+<td><a class="reference internal" href="SDPOrigin.html#GstSdp.SDPOrigin" title="GstSdp.SDPOrigin"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPOrigin</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>session_name</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-odd"><td>uri</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+<td>r/w</td>
+</tr>
+<tr class="row-even"><td>version</td>
+<td><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+<td>r/w</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.as_uri" title="GstSdp.SDPMessage.as_uri"><tt class="xref py py-obj docutils literal"><span class="pre">as_uri</span></tt></a>(scheme, msg)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.new" title="GstSdp.SDPMessage.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.parse_buffer" title="GstSdp.SDPMessage.parse_buffer"><tt class="xref py py-obj docutils literal"><span class="pre">parse_buffer</span></tt></a>(data, size, msg)</td>
+</tr>
+<tr class="row-even"><td><em>static</em></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.parse_uri" title="GstSdp.SDPMessage.parse_uri"><tt class="xref py py-obj docutils literal"><span class="pre">parse_uri</span></tt></a>(uri, msg)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.add_attribute" title="GstSdp.SDPMessage.add_attribute"><tt class="xref py py-obj docutils literal"><span class="pre">add_attribute</span></tt></a>(key, value)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.add_bandwidth" title="GstSdp.SDPMessage.add_bandwidth"><tt class="xref py py-obj docutils literal"><span class="pre">add_bandwidth</span></tt></a>(bwtype, bandwidth)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.add_email" title="GstSdp.SDPMessage.add_email"><tt class="xref py py-obj docutils literal"><span class="pre">add_email</span></tt></a>(email)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.add_media" title="GstSdp.SDPMessage.add_media"><tt class="xref py py-obj docutils literal"><span class="pre">add_media</span></tt></a>(media)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.add_phone" title="GstSdp.SDPMessage.add_phone"><tt class="xref py py-obj docutils literal"><span class="pre">add_phone</span></tt></a>(phone)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.add_time" title="GstSdp.SDPMessage.add_time"><tt class="xref py py-obj docutils literal"><span class="pre">add_time</span></tt></a>(start, stop, repeat)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.add_zone" title="GstSdp.SDPMessage.add_zone"><tt class="xref py py-obj docutils literal"><span class="pre">add_zone</span></tt></a>(adj_time, typed_time)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.as_text" title="GstSdp.SDPMessage.as_text"><tt class="xref py py-obj docutils literal"><span class="pre">as_text</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.attributes_len" title="GstSdp.SDPMessage.attributes_len"><tt class="xref py py-obj docutils literal"><span class="pre">attributes_len</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.bandwidths_len" title="GstSdp.SDPMessage.bandwidths_len"><tt class="xref py py-obj docutils literal"><span class="pre">bandwidths_len</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.copy" title="GstSdp.SDPMessage.copy"><tt class="xref py py-obj docutils literal"><span class="pre">copy</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.dump" title="GstSdp.SDPMessage.dump"><tt class="xref py py-obj docutils literal"><span class="pre">dump</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.emails_len" title="GstSdp.SDPMessage.emails_len"><tt class="xref py py-obj docutils literal"><span class="pre">emails_len</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.free" title="GstSdp.SDPMessage.free"><tt class="xref py py-obj docutils literal"><span class="pre">free</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_attribute" title="GstSdp.SDPMessage.get_attribute"><tt class="xref py py-obj docutils literal"><span class="pre">get_attribute</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_attribute_val" title="GstSdp.SDPMessage.get_attribute_val"><tt class="xref py py-obj docutils literal"><span class="pre">get_attribute_val</span></tt></a>(key)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_attribute_val_n" title="GstSdp.SDPMessage.get_attribute_val_n"><tt class="xref py py-obj docutils literal"><span class="pre">get_attribute_val_n</span></tt></a>(key, nth)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_bandwidth" title="GstSdp.SDPMessage.get_bandwidth"><tt class="xref py py-obj docutils literal"><span class="pre">get_bandwidth</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_connection" title="GstSdp.SDPMessage.get_connection"><tt class="xref py py-obj docutils literal"><span class="pre">get_connection</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_email" title="GstSdp.SDPMessage.get_email"><tt class="xref py py-obj docutils literal"><span class="pre">get_email</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_information" title="GstSdp.SDPMessage.get_information"><tt class="xref py py-obj docutils literal"><span class="pre">get_information</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_key" title="GstSdp.SDPMessage.get_key"><tt class="xref py py-obj docutils literal"><span class="pre">get_key</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_media" title="GstSdp.SDPMessage.get_media"><tt class="xref py py-obj docutils literal"><span class="pre">get_media</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_origin" title="GstSdp.SDPMessage.get_origin"><tt class="xref py py-obj docutils literal"><span class="pre">get_origin</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_phone" title="GstSdp.SDPMessage.get_phone"><tt class="xref py py-obj docutils literal"><span class="pre">get_phone</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_session_name" title="GstSdp.SDPMessage.get_session_name"><tt class="xref py py-obj docutils literal"><span class="pre">get_session_name</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_time" title="GstSdp.SDPMessage.get_time"><tt class="xref py py-obj docutils literal"><span class="pre">get_time</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_uri" title="GstSdp.SDPMessage.get_uri"><tt class="xref py py-obj docutils literal"><span class="pre">get_uri</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_version" title="GstSdp.SDPMessage.get_version"><tt class="xref py py-obj docutils literal"><span class="pre">get_version</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.get_zone" title="GstSdp.SDPMessage.get_zone"><tt class="xref py py-obj docutils literal"><span class="pre">get_zone</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.init" title="GstSdp.SDPMessage.init"><tt class="xref py py-obj docutils literal"><span class="pre">init</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.insert_attribute" title="GstSdp.SDPMessage.insert_attribute"><tt class="xref py py-obj docutils literal"><span class="pre">insert_attribute</span></tt></a>(idx, attr)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.insert_bandwidth" title="GstSdp.SDPMessage.insert_bandwidth"><tt class="xref py py-obj docutils literal"><span class="pre">insert_bandwidth</span></tt></a>(idx, bw)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.insert_email" title="GstSdp.SDPMessage.insert_email"><tt class="xref py py-obj docutils literal"><span class="pre">insert_email</span></tt></a>(idx, email)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.insert_phone" title="GstSdp.SDPMessage.insert_phone"><tt class="xref py py-obj docutils literal"><span class="pre">insert_phone</span></tt></a>(idx, phone)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.insert_time" title="GstSdp.SDPMessage.insert_time"><tt class="xref py py-obj docutils literal"><span class="pre">insert_time</span></tt></a>(idx, t)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.insert_zone" title="GstSdp.SDPMessage.insert_zone"><tt class="xref py py-obj docutils literal"><span class="pre">insert_zone</span></tt></a>(idx, zone)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.medias_len" title="GstSdp.SDPMessage.medias_len"><tt class="xref py py-obj docutils literal"><span class="pre">medias_len</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.phones_len" title="GstSdp.SDPMessage.phones_len"><tt class="xref py py-obj docutils literal"><span class="pre">phones_len</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.remove_attribute" title="GstSdp.SDPMessage.remove_attribute"><tt class="xref py py-obj docutils literal"><span class="pre">remove_attribute</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.remove_bandwidth" title="GstSdp.SDPMessage.remove_bandwidth"><tt class="xref py py-obj docutils literal"><span class="pre">remove_bandwidth</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.remove_email" title="GstSdp.SDPMessage.remove_email"><tt class="xref py py-obj docutils literal"><span class="pre">remove_email</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.remove_phone" title="GstSdp.SDPMessage.remove_phone"><tt class="xref py py-obj docutils literal"><span class="pre">remove_phone</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.remove_time" title="GstSdp.SDPMessage.remove_time"><tt class="xref py py-obj docutils literal"><span class="pre">remove_time</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.remove_zone" title="GstSdp.SDPMessage.remove_zone"><tt class="xref py py-obj docutils literal"><span class="pre">remove_zone</span></tt></a>(idx)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.replace_attribute" title="GstSdp.SDPMessage.replace_attribute"><tt class="xref py py-obj docutils literal"><span class="pre">replace_attribute</span></tt></a>(idx, attr)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.replace_bandwidth" title="GstSdp.SDPMessage.replace_bandwidth"><tt class="xref py py-obj docutils literal"><span class="pre">replace_bandwidth</span></tt></a>(idx, bw)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.replace_email" title="GstSdp.SDPMessage.replace_email"><tt class="xref py py-obj docutils literal"><span class="pre">replace_email</span></tt></a>(idx, email)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.replace_phone" title="GstSdp.SDPMessage.replace_phone"><tt class="xref py py-obj docutils literal"><span class="pre">replace_phone</span></tt></a>(idx, phone)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.replace_time" title="GstSdp.SDPMessage.replace_time"><tt class="xref py py-obj docutils literal"><span class="pre">replace_time</span></tt></a>(idx, t)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.replace_zone" title="GstSdp.SDPMessage.replace_zone"><tt class="xref py py-obj docutils literal"><span class="pre">replace_zone</span></tt></a>(idx, zone)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.set_connection" title="GstSdp.SDPMessage.set_connection"><tt class="xref py py-obj docutils literal"><span class="pre">set_connection</span></tt></a>(nettype, addrtype, address, ttl, addr_number)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.set_information" title="GstSdp.SDPMessage.set_information"><tt class="xref py py-obj docutils literal"><span class="pre">set_information</span></tt></a>(information)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.set_key" title="GstSdp.SDPMessage.set_key"><tt class="xref py py-obj docutils literal"><span class="pre">set_key</span></tt></a>(type, data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.set_origin" title="GstSdp.SDPMessage.set_origin"><tt class="xref py py-obj docutils literal"><span class="pre">set_origin</span></tt></a>(username, sess_id, sess_version, nettype, addrtype, addr)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.set_session_name" title="GstSdp.SDPMessage.set_session_name"><tt class="xref py py-obj docutils literal"><span class="pre">set_session_name</span></tt></a>(session_name)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.set_uri" title="GstSdp.SDPMessage.set_uri"><tt class="xref py py-obj docutils literal"><span class="pre">set_uri</span></tt></a>(uri)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.set_version" title="GstSdp.SDPMessage.set_version"><tt class="xref py py-obj docutils literal"><span class="pre">set_version</span></tt></a>(version)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.times_len" title="GstSdp.SDPMessage.times_len"><tt class="xref py py-obj docutils literal"><span class="pre">times_len</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.uninit" title="GstSdp.SDPMessage.uninit"><tt class="xref py py-obj docutils literal"><span class="pre">uninit</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#GstSdp.SDPMessage.zones_len" title="GstSdp.SDPMessage.zones_len"><tt class="xref py py-obj docutils literal"><span class="pre">zones_len</span></tt></a>()</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="GstSdp.SDPMessage">
+<em class="property">class </em><tt class="descclassname">GstSdp.</tt><tt class="descname">SDPMessage</tt><a class="headerlink" href="#GstSdp.SDPMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a> helper functions makes it easy to parse and create SDP
+messages.</p>
+<p>Last reviewed on 2007-07-24 (0.10.14)</p>
+<dl class="staticmethod">
+<dt id="GstSdp.SDPMessage.as_uri">
+<em class="property">static </em><tt class="descname">as_uri</tt><big>(</big><em>scheme</em>, <em>msg</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.as_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>scheme</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; ///[#type=value *[&amp;amp;type=value]]</li>
+<li><strong>msg</strong> (<a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a>) &#8211; the <a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a uri for <cite>msg</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Creates a uri from <cite>msg</cite> with the given <cite>scheme</cite>. The uri has the format:</p>
+<p>Where each value is url encoded.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstSdp.SDPMessage.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>, msg: <a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Allocate a new <a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a> and store the result in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstSdp.SDPMessage.parse_buffer">
+<em class="property">static </em><tt class="descname">parse_buffer</tt><big>(</big><em>data</em>, <em>size</em>, <em>msg</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.parse_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the start of the buffer</li>
+<li><strong>size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size of the buffer</li>
+<li><strong>msg</strong> (<a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a>) &#8211; the result <a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstSdp.SDPResult.OK" title="GstSdp.SDPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult.OK</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse the contents of <cite>size</cite> bytes pointed to by <cite>data</cite> and store the result in
+<cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="GstSdp.SDPMessage.parse_uri">
+<em class="property">static </em><tt class="descname">parse_uri</tt><big>(</big><em>uri</em>, <em>msg</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.parse_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the start of the uri</li>
+<li><strong>msg</strong> (<a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a>) &#8211; the result <a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstSdp.SDPResult.OK" title="GstSdp.SDPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult.OK</span></tt></a> on success.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Parse the null-terminated <cite>uri</cite> and store the result in <cite>msg</cite>.</p>
+<p>The uri should be of the form:</p>
+<p>scheme://[address[:ttl=ttl][:noa=noa]]/[sessionname]
+[#type=value *[&amp;amp;type=value]]</p>
+<p>where value is url encoded. This looslely resembles
+http://tools.ietf.org/html/draft-fujikawa-sdp-url-01</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.add_attribute">
+<tt class="descname">add_attribute</tt><big>(</big><em>key</em>, <em>value</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.add_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the key</li>
+<li><strong>value</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstSdp.SDPResult.OK" title="GstSdp.SDPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult.OK</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add the attribute with <cite>key</cite> and <cite>value</cite> to <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.add_bandwidth">
+<tt class="descname">add_bandwidth</tt><big>(</big><em>bwtype</em>, <em>bandwidth</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.add_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>bwtype</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the bandwidth modifier type</li>
+<li><strong>bandwidth</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the bandwidth in kilobits per second</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add the specified bandwidth information to <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.add_email">
+<tt class="descname">add_email</tt><big>(</big><em>email</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.add_email" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>email</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; an email</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Add <cite>email</cite> to the list of emails in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.add_media">
+<tt class="descname">add_media</tt><big>(</big><em>media</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.add_media" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>media</strong> (<a class="reference internal" href="SDPMedia.html#GstSdp.SDPMedia" title="GstSdp.SDPMedia"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMedia</span></tt></a>) &#8211; a <a class="reference internal" href="SDPMedia.html#GstSdp.SDPMedia" title="GstSdp.SDPMedia"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMedia</span></tt></a> to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Adds <cite>media</cite> to the array of medias in <cite>msg</cite>. This function takes ownership of
+the contents of <cite>media</cite> so that <cite>media</cite> will have to be reinitialized with
+<a class="reference internal" href="SDPMedia.html#GstSdp.SDPMedia.init" title="GstSdp.SDPMedia.init"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMedia.init</span></tt></a> () before it can be used again.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.add_phone">
+<tt class="descname">add_phone</tt><big>(</big><em>phone</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.add_phone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>phone</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a phone</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Add <cite>phone</cite> to the list of phones in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.add_time">
+<tt class="descname">add_time</tt><big>(</big><em>start</em>, <em>stop</em>, <em>repeat</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.add_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the start time</li>
+<li><strong>stop</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the stop time</li>
+<li><strong>repeat</strong> ([<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>]) &#8211; the repeat times</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add time information <cite>start</cite> and <cite>stop</cite> to <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.add_zone">
+<tt class="descname">add_zone</tt><big>(</big><em>adj_time</em>, <em>typed_time</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.add_zone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>adj_time</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the NTP time that a time zone adjustment happens</li>
+<li><strong>typed_time</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the offset from the time when the session was first scheduled</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Add time zone information to <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.as_text">
+<tt class="descname">as_text</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.as_text" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A dynamically allocated string representing the SDP description.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Convert the contents of <cite>msg</cite> to a text string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.attributes_len">
+<tt class="descname">attributes_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.attributes_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of attributes in <cite>msg</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of attributes in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.bandwidths_len">
+<tt class="descname">bandwidths_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.bandwidths_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of bandwidth information in <cite>msg</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of bandwidth information in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.copy">
+<tt class="descname">copy</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>, copy: <a class="reference internal" href="#GstSdp.SDPMessage" title="GstSdp.SDPMessage"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Allocate a new copy of <cite>msg</cite> and store the result in <cite>copy</cite>. The value in
+<cite>copy</cite> should be release with <a class="reference internal" href="#GstSdp.SDPMessage.free" title="GstSdp.SDPMessage.free"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage.free</span></tt></a> function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.dump">
+<tt class="descname">dump</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.dump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Dump the parsed contents of <cite>msg</cite> to stdout.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.emails_len">
+<tt class="descname">emails_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.emails_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of emails in <cite>msg</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of emails in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.free">
+<tt class="descname">free</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.free" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Free all resources allocated by <cite>msg</cite>. <cite>msg</cite> should not be used anymore after
+this function. This function should be used when <cite>msg</cite> was dynamically
+allocated with <a class="reference internal" href="#GstSdp.SDPMessage.new" title="GstSdp.SDPMessage.new"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage.new</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_attribute">
+<tt class="descname">get_attribute</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="SDPAttribute.html#GstSdp.SDPAttribute" title="GstSdp.SDPAttribute"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPAttribute</span></tt></a> at position <cite>idx</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPAttribute.html#GstSdp.SDPAttribute" title="GstSdp.SDPAttribute"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPAttribute</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the attribute at position <cite>idx</cite> in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_attribute_val">
+<tt class="descname">get_attribute_val</tt><big>(</big><em>key</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_attribute_val" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the key</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the attribute value of the first attribute with <cite>key</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the first attribute with key <cite>key</cite> in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_attribute_val_n">
+<tt class="descname">get_attribute_val_n</tt><big>(</big><em>key</em>, <em>nth</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_attribute_val_n" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the key</li>
+<li><strong>nth</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the attribute value of the <cite>nth</cite> attribute with <cite>key</cite>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get the <cite>nth</cite> attribute with key <cite>key</cite> in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_bandwidth">
+<tt class="descname">get_bandwidth</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the bandwidth index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="SDPBandwidth.html#GstSdp.SDPBandwidth" title="GstSdp.SDPBandwidth"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPBandwidth</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPBandwidth.html#GstSdp.SDPBandwidth" title="GstSdp.SDPBandwidth"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPBandwidth</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the bandwidth at index <cite>idx</cite> from <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_connection">
+<tt class="descname">get_connection</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_connection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="SDPConnection.html#GstSdp.SDPConnection" title="GstSdp.SDPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPConnection</span></tt></a>. The result remains valid as long as <cite>msg</cite> is valid.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPConnection.html#GstSdp.SDPConnection" title="GstSdp.SDPConnection"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPConnection</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the connection of <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_email">
+<tt class="descname">get_email</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_email" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an email index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the email at position <cite>idx</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the email with number <cite>idx</cite> from <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_information">
+<tt class="descname">get_information</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_information" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the information in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_key">
+<tt class="descname">get_key</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="SDPKey.html#GstSdp.SDPKey" title="GstSdp.SDPKey"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPKey</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPKey.html#GstSdp.SDPKey" title="GstSdp.SDPKey"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPKey</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the encryption information from <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_media">
+<tt class="descname">get_media</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_media" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="SDPMedia.html#GstSdp.SDPMedia" title="GstSdp.SDPMedia"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMedia</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPMedia.html#GstSdp.SDPMedia" title="GstSdp.SDPMedia"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMedia</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the media description at index <cite>idx</cite> in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_origin">
+<tt class="descname">get_origin</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_origin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="SDPOrigin.html#GstSdp.SDPOrigin" title="GstSdp.SDPOrigin"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPOrigin</span></tt></a>. The result remains valid as long as <cite>msg</cite> is valid.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPOrigin.html#GstSdp.SDPOrigin" title="GstSdp.SDPOrigin"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPOrigin</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the origin of <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_phone">
+<tt class="descname">get_phone</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_phone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a phone index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the phone at position <cite>idx</cite>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the phone with number <cite>idx</cite> from <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_session_name">
+<tt class="descname">get_session_name</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_session_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the session name in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_time">
+<tt class="descname">get_time</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the time index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="SDPTime.html#GstSdp.SDPTime" title="GstSdp.SDPTime"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPTime</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPTime.html#GstSdp.SDPTime" title="GstSdp.SDPTime"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPTime</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get time information with index <cite>idx</cite> from <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_uri">
+<tt class="descname">get_uri</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the URI in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_version">
+<tt class="descname">get_version</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the version in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.get_zone">
+<tt class="descname">get_zone</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.get_zone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the zone index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="SDPZone.html#GstSdp.SDPZone" title="GstSdp.SDPZone"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPZone</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="SDPZone.html#GstSdp.SDPZone" title="GstSdp.SDPZone"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPZone</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get time zone information with index <cite>idx</cite> from <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.init">
+<tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.init" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Initialize <cite>msg</cite> so that its contents are as if it was freshly allocated
+with <a class="reference internal" href="#GstSdp.SDPMessage.new" title="GstSdp.SDPMessage.new"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage.new</span></tt></a> (). This function is mostly used to initialize a message
+allocated on the stack. <a class="reference internal" href="#GstSdp.SDPMessage.uninit" title="GstSdp.SDPMessage.uninit"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage.uninit</span></tt></a> () undoes this operation.</p>
+<p>When this function is invoked on newly allocated data (with malloc or on the
+stack), its contents should be set to 0 before calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.insert_attribute">
+<tt class="descname">insert_attribute</tt><big>(</big><em>idx</em>, <em>attr</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.insert_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>attr</strong> (<a class="reference internal" href="SDPAttribute.html#GstSdp.SDPAttribute" title="GstSdp.SDPAttribute"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPAttribute</span></tt></a>) &#8211; a <a class="reference internal" href="SDPAttribute.html#GstSdp.SDPAttribute" title="GstSdp.SDPAttribute"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPAttribute</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert attribute into the array of attributes in <cite>msg</cite>
+at index <cite>idx</cite>.
+When -1 is given as <cite>idx</cite>, the attribute is inserted at the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.insert_bandwidth">
+<tt class="descname">insert_bandwidth</tt><big>(</big><em>idx</em>, <em>bw</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.insert_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>bw</strong> (<a class="reference internal" href="SDPBandwidth.html#GstSdp.SDPBandwidth" title="GstSdp.SDPBandwidth"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPBandwidth</span></tt></a>) &#8211; the bandwidth</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert bandwidth parameters into the array of bandwidths in <cite>msg</cite>
+at index <cite>idx</cite>.
+When -1 is given as <cite>idx</cite>, the bandwidth is inserted at the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.insert_email">
+<tt class="descname">insert_email</tt><big>(</big><em>idx</em>, <em>email</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.insert_email" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>email</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; an email</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert <cite>email</cite> into the array of emails in <cite>msg</cite> at index <cite>idx</cite>.
+When -1 is given as <cite>idx</cite>, the email is inserted at the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.insert_phone">
+<tt class="descname">insert_phone</tt><big>(</big><em>idx</em>, <em>phone</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.insert_phone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a phone index</li>
+<li><strong>phone</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a phone</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert <cite>phone</cite> into the array of phone numbers in <cite>msg</cite> at index <cite>idx</cite>.
+When -1 is given as <cite>idx</cite>, the phone is inserted at the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.insert_time">
+<tt class="descname">insert_time</tt><big>(</big><em>idx</em>, <em>t</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.insert_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index</li>
+<li><strong>t</strong> (<a class="reference internal" href="SDPTime.html#GstSdp.SDPTime" title="GstSdp.SDPTime"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPTime</span></tt></a>) &#8211; a <a class="reference internal" href="SDPTime.html#GstSdp.SDPTime" title="GstSdp.SDPTime"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPTime</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert time parameters into the array of times in <cite>msg</cite>
+at index <cite>idx</cite>.
+When -1 is given as <cite>idx</cite>, the times are inserted at the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.insert_zone">
+<tt class="descname">insert_zone</tt><big>(</big><em>idx</em>, <em>zone</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.insert_zone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an index <cite>zone</cite> a <a class="reference internal" href="SDPZone.html#GstSdp.SDPZone" title="GstSdp.SDPZone"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPZone</span></tt></a></li>
+<li><strong>zone</strong> (<a class="reference internal" href="SDPZone.html#GstSdp.SDPZone" title="GstSdp.SDPZone"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPZone</span></tt></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Insert zone parameters into the array of zones in <cite>msg</cite>
+at index <cite>idx</cite>.
+When -1 is given as <cite>idx</cite>, the zone is inserted at the end.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.medias_len">
+<tt class="descname">medias_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.medias_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of media descriptions in <cite>msg</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of media descriptions in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.phones_len">
+<tt class="descname">phones_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.phones_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of phones in <cite>msg</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of phones in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.remove_attribute">
+<tt class="descname">remove_attribute</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.remove_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Remove the attribute in <cite>msg</cite> at index <cite>idx</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.remove_bandwidth">
+<tt class="descname">remove_bandwidth</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.remove_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the bandwidth index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Remove the bandwidth information in <cite>msg</cite> at index <cite>idx</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.remove_email">
+<tt class="descname">remove_email</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.remove_email" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an email index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Remove the email in <cite>msg</cite> at index <cite>idx</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.remove_phone">
+<tt class="descname">remove_phone</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.remove_phone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a phone index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Remove the phone number in <cite>msg</cite> at index <cite>idx</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.remove_time">
+<tt class="descname">remove_time</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.remove_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Remove the time information in <cite>msg</cite> at index <cite>idx</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.remove_zone">
+<tt class="descname">remove_zone</tt><big>(</big><em>idx</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.remove_zone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Remove the zone information in <cite>msg</cite> at index <cite>idx</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.replace_attribute">
+<tt class="descname">replace_attribute</tt><big>(</big><em>idx</em>, <em>attr</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.replace_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</li>
+<li><strong>attr</strong> (<a class="reference internal" href="SDPAttribute.html#GstSdp.SDPAttribute" title="GstSdp.SDPAttribute"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPAttribute</span></tt></a>) &#8211; a <a class="reference internal" href="SDPAttribute.html#GstSdp.SDPAttribute" title="GstSdp.SDPAttribute"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPAttribute</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replace the attribute in <cite>msg</cite> at index <cite>idx</cite> with <cite>attr</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.replace_bandwidth">
+<tt class="descname">replace_bandwidth</tt><big>(</big><em>idx</em>, <em>bw</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.replace_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the bandwidth index</li>
+<li><strong>bw</strong> (<a class="reference internal" href="SDPBandwidth.html#GstSdp.SDPBandwidth" title="GstSdp.SDPBandwidth"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPBandwidth</span></tt></a>) &#8211; the bandwidth</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replace the bandwidth information in <cite>msg</cite> at index <cite>idx</cite> with <cite>bw</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.replace_email">
+<tt class="descname">replace_email</tt><big>(</big><em>idx</em>, <em>email</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.replace_email" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; an email index</li>
+<li><strong>email</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; an email</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replace the email in <cite>msg</cite> at index <cite>idx</cite> with <cite>email</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.replace_phone">
+<tt class="descname">replace_phone</tt><big>(</big><em>idx</em>, <em>phone</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.replace_phone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; a phone index</li>
+<li><strong>phone</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a phone</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replace the phone number in <cite>msg</cite> at index <cite>idx</cite> with <cite>phone</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.replace_time">
+<tt class="descname">replace_time</tt><big>(</big><em>idx</em>, <em>t</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.replace_time" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</li>
+<li><strong>t</strong> (<a class="reference internal" href="SDPTime.html#GstSdp.SDPTime" title="GstSdp.SDPTime"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPTime</span></tt></a>) &#8211; a <a class="reference internal" href="SDPTime.html#GstSdp.SDPTime" title="GstSdp.SDPTime"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPTime</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replace the time information in <cite>msg</cite> at index <cite>idx</cite> with <cite>t</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.replace_zone">
+<tt class="descname">replace_zone</tt><big>(</big><em>idx</em>, <em>zone</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.replace_zone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>idx</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the index</li>
+<li><strong>zone</strong> (<a class="reference internal" href="SDPZone.html#GstSdp.SDPZone" title="GstSdp.SDPZone"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPZone</span></tt></a>) &#8211; a <a class="reference internal" href="SDPZone.html#GstSdp.SDPZone" title="GstSdp.SDPZone"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPZone</span></tt></a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Replace the zone information in <cite>msg</cite> at index <cite>idx</cite> with <cite>zone</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.set_connection">
+<tt class="descname">set_connection</tt><big>(</big><em>nettype</em>, <em>addrtype</em>, <em>address</em>, <em>ttl</em>, <em>addr_number</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.set_connection" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nettype</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the type of network. &#8220;IN&#8221; is defined to have the meaning &#8220;Internet&#8221;.</li>
+<li><strong>addrtype</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the type of address.</li>
+<li><strong>address</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the address</li>
+<li><strong>ttl</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the time to live of the address</li>
+<li><strong>addr_number</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the number of layers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Configure the SDP connection in <cite>msg</cite> with the given parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.set_information">
+<tt class="descname">set_information</tt><big>(</big><em>information</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.set_information" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>information</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the information</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the information in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.set_key">
+<tt class="descname">set_key</tt><big>(</big><em>type</em>, <em>data</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.set_key" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the encryption type</li>
+<li><strong>data</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the encryption data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds the encryption information to <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.set_origin">
+<tt class="descname">set_origin</tt><big>(</big><em>username</em>, <em>sess_id</em>, <em>sess_version</em>, <em>nettype</em>, <em>addrtype</em>, <em>addr</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.set_origin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>username</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the user name</li>
+<li><strong>sess_id</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a session id</li>
+<li><strong>sess_version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a session version</li>
+<li><strong>nettype</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; a network type</li>
+<li><strong>addrtype</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; an address type</li>
+<li><strong>addr</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; an address</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="../enums.html#GstSdp.SDPResult.OK" title="GstSdp.SDPResult.OK"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult.OK</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Configure the SDP origin in <cite>msg</cite> with the given parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.set_session_name">
+<tt class="descname">set_session_name</tt><big>(</big><em>session_name</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.set_session_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>session_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the session name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the session name in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.set_uri">
+<tt class="descname">set_uri</tt><big>(</big><em>uri</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.set_uri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uri</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the URI</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the URI in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.set_version">
+<tt class="descname">set_version</tt><big>(</big><em>version</em><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.set_version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>version</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the version</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Set the version in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.times_len">
+<tt class="descname">times_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.times_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of time information entries in <cite>msg</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of time information entries in <cite>msg</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.uninit">
+<tt class="descname">uninit</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.uninit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a <a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#GstSdp.SDPResult" title="GstSdp.SDPResult"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPResult</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Free all resources allocated in <cite>msg</cite>. <cite>msg</cite> should not be used anymore after
+this function. This function should be used when <cite>msg</cite> was allocated on the
+stack and initialized with <a class="reference internal" href="#GstSdp.SDPMessage.init" title="GstSdp.SDPMessage.init"><tt class="xref py py-class docutils literal"><span class="pre">GstSdp.SDPMessage.init</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GstSdp.SDPMessage.zones_len">
+<tt class="descname">zones_len</tt><big>(</big><big>)</big><a class="headerlink" href="#GstSdp.SDPMessage.zones_len" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the number of time zone information entries in <cite>msg</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Get the number of time zone information entries in <cite>msg</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="SDPOrigin.html" class="btn btn-neutral float-right" title="GstSdp.SDPOrigin"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="SDPMedia.html" class="btn btn-neutral" title="GstSdp.SDPMedia"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

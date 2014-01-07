@@ -1,0 +1,750 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gtk.Activatable -
+    
+      Interfaces -
+    
+      Gtk 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Interfaces" href="index.html"/>
+        <link rel="next" title="Gtk.AppChooser" href="AppChooser.html"/>
+        <link rel="prev" title="Gtk.Actionable" href="Actionable.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gtk 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Interfaces</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gtk.Activatable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gtk 3.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Interfaces</a> &raquo;</li>
+  
+  <li><a href="">Gtk.Activatable</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gtk_3.0/interfaces/Activatable" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gtk-activatable">
+<h1>Gtk.Activatable<a class="headerlink" href="#gtk-activatable" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-25fa266469130268a7d5b139340aa01f13c8cfcb.png" alt="Inheritance diagram of Gtk.Activatable" usemap="#inheritance0f1cfb74a4" class="inheritance"/>
+<map id="inheritance0f1cfb74a4" name="inheritance0f1cfb74a4">
+<area shape="rect" id="node1" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface" alt="" coords="5,5,120,29"/>
+<area shape="rect" id="node2" href="#Gtk.Activatable" title="Gtk.Activatable" alt="" coords="15,77,111,101"/>
+</map>
+</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Subclasses:</th><td class="field-body"><a class="reference internal" href="../classes/Button.html#Gtk.Button" title="Gtk.Button"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Button</span></tt></a>, <a class="reference internal" href="../classes/MenuItem.html#Gtk.MenuItem" title="Gtk.MenuItem"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.MenuItem</span></tt></a>, <a class="reference internal" href="../classes/RecentChooserMenu.html#Gtk.RecentChooserMenu" title="Gtk.RecentChooserMenu"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.RecentChooserMenu</span></tt></a>, <a class="reference internal" href="../classes/Switch.html#Gtk.Switch" title="Gtk.Switch"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Switch</span></tt></a>, <a class="reference internal" href="../classes/ToolItem.html#Gtk.ToolItem" title="Gtk.ToolItem"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.ToolItem</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.Activatable.do_set_related_action" title="Gtk.Activatable.do_set_related_action"><tt class="xref py py-obj docutils literal"><span class="pre">do_set_related_action</span></tt></a>(action)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.Activatable.get_related_action" title="Gtk.Activatable.get_related_action"><tt class="xref py py-obj docutils literal"><span class="pre">get_related_action</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.Activatable.get_use_action_appearance" title="Gtk.Activatable.get_use_action_appearance"><tt class="xref py py-obj docutils literal"><span class="pre">get_use_action_appearance</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.Activatable.set_related_action" title="Gtk.Activatable.set_related_action"><tt class="xref py py-obj docutils literal"><span class="pre">set_related_action</span></tt></a>(action)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gtk.Activatable.set_use_action_appearance" title="Gtk.Activatable.set_use_action_appearance"><tt class="xref py py-obj docutils literal"><span class="pre">set_use_action_appearance</span></tt></a>(use_appearance)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gtk.Activatable.sync_action_properties" title="Gtk.Activatable.sync_action_properties"><tt class="xref py py-obj docutils literal"><span class="pre">sync_action_properties</span></tt></a>(action)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gtk-activatable-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="related-action">related-action</span></td>
+<td><a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a></td>
+<td>r/w</td>
+<td>The action this activatable will activate and receive updates from</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="use-action-appearance">use-action-appearance</span></td>
+<td><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt></td>
+<td>r/w</td>
+<td>Whether to use the related actions appearance properties</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gtk-activatable-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gtk.Activatable">
+<em class="property">class </em><tt class="descclassname">Gtk.</tt><tt class="descname">Activatable</tt><a class="headerlink" href="#Gtk.Activatable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/interfaces/GInterface.html#GObject.GInterface" title="GObject.GInterface"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GInterface</span></tt></a></p>
+<p>Activatable widgets can be connected to a <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> and reflects
+the state of its action. A <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> can also provide feedback
+through its action, as they are responsible for activating their
+related actions.</p>
+<p>Implementing <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a></p>
+<p>When extending a class that is already <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> ; it is only
+necessary to implement the <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a>- &gt;sync_action_properties()
+and <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a>- &gt;update() methods and chain up to the parent
+implementation, however when introducing
+a new <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> class; the <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> <a class="reference internal" href="#related-action"><em>:related-action</em></a> and
+<a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> <a class="reference internal" href="#use-action-appearance"><em>:use-action-appearance</em></a> properties need to be handled by
+the implementor. Handling these properties is mostly a matter of installing
+the action pointer and boolean flag on your instance, and calling
+<a class="reference internal" href="#Gtk.Activatable.do_set_related_action" title="Gtk.Activatable.do_set_related_action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable.do_set_related_action</span></tt></a> () and
+<a class="reference internal" href="#Gtk.Activatable.sync_action_properties" title="Gtk.Activatable.sync_action_properties"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable.sync_action_properties</span></tt></a> () at the appropriate times.</p>
+<p>A class fragment implementing <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a></p>
+<div class="highlight-c"><div class="highlight"><pre><span class="k">enum</span> <span class="p">{</span>
+<span class="p">...</span>
+
+<span class="n">PROP_ACTIVATABLE_RELATED_ACTION</span><span class="p">,</span>
+<span class="n">PROP_ACTIVATABLE_USE_ACTION_APPEARANCE</span>
+<span class="p">}</span>
+
+<span class="k">struct</span> <span class="n">_FooBarPrivate</span>
+<span class="p">{</span>
+
+  <span class="p">...</span>
+
+  <span class="n">GtkAction</span>      <span class="o">*</span><span class="n">action</span><span class="p">;</span>
+  <span class="n">gboolean</span>        <span class="n">use_action_appearance</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="p">...</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="n">foo_bar_activatable_interface_init</span>         <span class="p">(</span><span class="n">GtkActivatableIface</span>  <span class="o">*</span><span class="n">iface</span><span class="p">);</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">foo_bar_activatable_update</span>                 <span class="p">(</span><span class="n">GtkActivatable</span>       <span class="o">*</span><span class="n">activatable</span><span class="p">,</span>
+                                                       <span class="n">GtkAction</span>            <span class="o">*</span><span class="n">action</span><span class="p">,</span>
+                                                       <span class="k">const</span> <span class="n">gchar</span>          <span class="o">*</span><span class="n">property_name</span><span class="p">);</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">foo_bar_activatable_sync_action_properties</span> <span class="p">(</span><span class="n">GtkActivatable</span>       <span class="o">*</span><span class="n">activatable</span><span class="p">,</span>
+                                                       <span class="n">GtkAction</span>            <span class="o">*</span><span class="n">action</span><span class="p">);</span>
+<span class="p">...</span>
+
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">foo_bar_class_init</span> <span class="p">(</span><span class="n">FooBarClass</span> <span class="o">*</span><span class="n">klass</span><span class="p">)</span>
+<span class="p">{</span>
+
+  <span class="p">...</span>
+
+  <span class="n">g_object_class_override_property</span> <span class="p">(</span><span class="n">gobject_class</span><span class="p">,</span> <span class="n">PROP_ACTIVATABLE_RELATED_ACTION</span><span class="p">,</span> <span class="s">&quot;related-action&quot;</span><span class="p">);</span>
+  <span class="n">g_object_class_override_property</span> <span class="p">(</span><span class="n">gobject_class</span><span class="p">,</span> <span class="n">PROP_ACTIVATABLE_USE_ACTION_APPEARANCE</span><span class="p">,</span> <span class="s">&quot;use-action-appearance&quot;</span><span class="p">);</span>
+
+  <span class="p">...</span>
+<span class="p">}</span>
+
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">foo_bar_activatable_interface_init</span> <span class="p">(</span><span class="n">GtkActivatableIface</span>  <span class="o">*</span><span class="n">iface</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">iface</span><span class="o">-&gt;</span><span class="n">update</span> <span class="o">=</span> <span class="n">foo_bar_activatable_update</span><span class="p">;</span>
+  <span class="n">iface</span><span class="o">-&gt;</span><span class="n">sync_action_properties</span> <span class="o">=</span> <span class="n">foo_bar_activatable_sync_action_properties</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">...</span> <span class="n">Break</span> <span class="n">the</span> <span class="n">reference</span> <span class="n">using</span> <span class="n">gtk_activatable_do_set_related_action</span><span class="p">()...</span>
+
+<span class="k">static</span> <span class="kt">void</span> 
+<span class="n">foo_bar_dispose</span> <span class="p">(</span><span class="n">GObject</span> <span class="o">*</span><span class="n">object</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">FooBar</span> <span class="o">*</span><span class="n">bar</span> <span class="o">=</span> <span class="n">FOO_BAR</span> <span class="p">(</span><span class="n">object</span><span class="p">);</span>
+  <span class="n">FooBarPrivate</span> <span class="o">*</span><span class="n">priv</span> <span class="o">=</span> <span class="n">FOO_BAR_GET_PRIVATE</span> <span class="p">(</span><span class="n">bar</span><span class="p">);</span>
+
+  <span class="p">...</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">priv</span><span class="o">-&gt;</span><span class="n">action</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">gtk_activatable_do_set_related_action</span> <span class="p">(</span><span class="n">GTK_ACTIVATABLE</span> <span class="p">(</span><span class="n">bar</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span>
+      <span class="n">priv</span><span class="o">-&gt;</span><span class="n">action</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="n">G_OBJECT_CLASS</span> <span class="p">(</span><span class="n">foo_bar_parent_class</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">dispose</span> <span class="p">(</span><span class="n">object</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">...</span> <span class="n">Handle</span> <span class="n">the</span> <span class="s">&quot;related-action&quot;</span> <span class="n">and</span> <span class="s">&quot;use-action-appearance&quot;</span> <span class="n">properties</span> <span class="p">...</span>
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">foo_bar_set_property</span> <span class="p">(</span><span class="n">GObject</span>         <span class="o">*</span><span class="n">object</span><span class="p">,</span>
+                      <span class="n">guint</span>            <span class="n">prop_id</span><span class="p">,</span>
+                      <span class="k">const</span> <span class="n">GValue</span>    <span class="o">*</span><span class="n">value</span><span class="p">,</span>
+                      <span class="n">GParamSpec</span>      <span class="o">*</span><span class="n">pspec</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">FooBar</span> <span class="o">*</span><span class="n">bar</span> <span class="o">=</span> <span class="n">FOO_BAR</span> <span class="p">(</span><span class="n">object</span><span class="p">);</span>
+  <span class="n">FooBarPrivate</span> <span class="o">*</span><span class="n">priv</span> <span class="o">=</span> <span class="n">FOO_BAR_GET_PRIVATE</span> <span class="p">(</span><span class="n">bar</span><span class="p">);</span>
+
+  <span class="k">switch</span> <span class="p">(</span><span class="n">prop_id</span><span class="p">)</span>
+    <span class="p">{</span>
+
+      <span class="p">...</span>
+
+    <span class="k">case</span> <span class="n">PROP_ACTIVATABLE_RELATED_ACTION</span>:
+      <span class="n">foo_bar_set_related_action</span> <span class="p">(</span><span class="n">bar</span><span class="p">,</span> <span class="n">g_value_get_object</span> <span class="p">(</span><span class="n">value</span><span class="p">));</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="n">PROP_ACTIVATABLE_USE_ACTION_APPEARANCE</span>:
+      <span class="n">foo_bar_set_use_action_appearance</span> <span class="p">(</span><span class="n">bar</span><span class="p">,</span> <span class="n">g_value_get_boolean</span> <span class="p">(</span><span class="n">value</span><span class="p">));</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="nl">default:</span>
+      <span class="n">G_OBJECT_WARN_INVALID_PROPERTY_ID</span> <span class="p">(</span><span class="n">object</span><span class="p">,</span> <span class="n">prop_id</span><span class="p">,</span> <span class="n">pspec</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">foo_bar_get_property</span> <span class="p">(</span><span class="n">GObject</span>         <span class="o">*</span><span class="n">object</span><span class="p">,</span>
+                         <span class="n">guint</span>            <span class="n">prop_id</span><span class="p">,</span>
+                         <span class="n">GValue</span>          <span class="o">*</span><span class="n">value</span><span class="p">,</span>
+                         <span class="n">GParamSpec</span>      <span class="o">*</span><span class="n">pspec</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">FooBar</span> <span class="o">*</span><span class="n">bar</span> <span class="o">=</span> <span class="n">FOO_BAR</span> <span class="p">(</span><span class="n">object</span><span class="p">);</span>
+  <span class="n">FooBarPrivate</span> <span class="o">*</span><span class="n">priv</span> <span class="o">=</span> <span class="n">FOO_BAR_GET_PRIVATE</span> <span class="p">(</span><span class="n">bar</span><span class="p">);</span>
+
+  <span class="k">switch</span> <span class="p">(</span><span class="n">prop_id</span><span class="p">)</span>
+    <span class="p">{</span> 
+
+      <span class="p">...</span>
+
+    <span class="k">case</span> <span class="n">PROP_ACTIVATABLE_RELATED_ACTION</span>:
+      <span class="n">g_value_set_object</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">priv</span><span class="o">-&gt;</span><span class="n">action</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="n">PROP_ACTIVATABLE_USE_ACTION_APPEARANCE</span>:
+      <span class="n">g_value_set_boolean</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">priv</span><span class="o">-&gt;</span><span class="n">use_action_appearance</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="nl">default:</span>
+      <span class="n">G_OBJECT_WARN_INVALID_PROPERTY_ID</span> <span class="p">(</span><span class="n">object</span><span class="p">,</span> <span class="n">prop_id</span><span class="p">,</span> <span class="n">pspec</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">foo_bar_set_use_action_appearance</span> <span class="p">(</span><span class="n">FooBar</span>   <span class="o">*</span><span class="n">bar</span><span class="p">,</span> 
+                               <span class="n">gboolean</span>  <span class="n">use_appearance</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">FooBarPrivate</span> <span class="o">*</span><span class="n">priv</span> <span class="o">=</span> <span class="n">FOO_BAR_GET_PRIVATE</span> <span class="p">(</span><span class="n">bar</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">priv</span><span class="o">-&gt;</span><span class="n">use_action_appearance</span> <span class="o">!=</span> <span class="n">use_appearance</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">priv</span><span class="o">-&gt;</span><span class="n">use_action_appearance</span> <span class="o">=</span> <span class="n">use_appearance</span><span class="p">;</span>
+      
+      <span class="n">gtk_activatable_sync_action_properties</span> <span class="p">(</span><span class="n">GTK_ACTIVATABLE</span> <span class="p">(</span><span class="n">bar</span><span class="p">),</span> <span class="n">priv</span><span class="o">-&gt;</span><span class="n">action</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">...</span> <span class="n">call</span> <span class="n">gtk_activatable_do_set_related_action</span><span class="p">()</span> <span class="n">and</span> <span class="n">then</span> <span class="n">assign</span> <span class="n">the</span> <span class="n">action</span> <span class="n">pointer</span><span class="p">,</span> 
+<span class="n">no</span> <span class="n">need</span> <span class="n">to</span> <span class="n">reference</span> <span class="n">the</span> <span class="n">action</span> <span class="n">here</span> <span class="n">since</span> <span class="n">gtk_activatable_do_set_related_action</span><span class="p">()</span> <span class="n">already</span> 
+<span class="n">holds</span> <span class="n">a</span> <span class="n">reference</span> <span class="n">here</span> <span class="k">for</span> <span class="n">you</span><span class="p">...</span>
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">foo_bar_set_related_action</span> <span class="p">(</span><span class="n">FooBar</span>    <span class="o">*</span><span class="n">bar</span><span class="p">,</span> 
+                        <span class="n">GtkAction</span> <span class="o">*</span><span class="n">action</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">FooBarPrivate</span> <span class="o">*</span><span class="n">priv</span> <span class="o">=</span> <span class="n">FOO_BAR_GET_PRIVATE</span> <span class="p">(</span><span class="n">bar</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">priv</span><span class="o">-&gt;</span><span class="n">action</span> <span class="o">==</span> <span class="n">action</span><span class="p">)</span>
+    <span class="k">return</span><span class="p">;</span>
+
+  <span class="n">gtk_activatable_do_set_related_action</span> <span class="p">(</span><span class="n">GTK_ACTIVATABLE</span> <span class="p">(</span><span class="n">bar</span><span class="p">),</span> <span class="n">action</span><span class="p">);</span>
+
+  <span class="n">priv</span><span class="o">-&gt;</span><span class="n">action</span> <span class="o">=</span> <span class="n">action</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">...</span> <span class="n">Selectively</span> <span class="n">reset</span> <span class="n">and</span> <span class="n">update</span> <span class="n">activatable</span> <span class="n">depending</span> <span class="n">on</span> <span class="n">the</span> <span class="n">use</span><span class="o">-</span><span class="n">action</span><span class="o">-</span><span class="n">appearance</span> <span class="n">property</span> <span class="p">...</span>
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">gtk_button_activatable_sync_action_properties</span> <span class="p">(</span><span class="n">GtkActivatable</span>       <span class="o">*</span><span class="n">activatable</span><span class="p">,</span>
+                                              <span class="n">GtkAction</span>            <span class="o">*</span><span class="n">action</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">GtkButtonPrivate</span> <span class="o">*</span><span class="n">priv</span> <span class="o">=</span> <span class="n">GTK_BUTTON_GET_PRIVATE</span> <span class="p">(</span><span class="n">activatable</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">action</span><span class="p">)</span>
+    <span class="k">return</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">gtk_action_is_visible</span> <span class="p">(</span><span class="n">action</span><span class="p">))</span>
+    <span class="n">gtk_widget_show</span> <span class="p">(</span><span class="n">GTK_WIDGET</span> <span class="p">(</span><span class="n">activatable</span><span class="p">));</span>
+  <span class="k">else</span>
+    <span class="nf">gtk_widget_hide</span> <span class="p">(</span><span class="n">GTK_WIDGET</span> <span class="p">(</span><span class="n">activatable</span><span class="p">));</span>
+  
+  <span class="n">gtk_widget_set_sensitive</span> <span class="p">(</span><span class="n">GTK_WIDGET</span> <span class="p">(</span><span class="n">activatable</span><span class="p">),</span> <span class="n">gtk_action_is_sensitive</span> <span class="p">(</span><span class="n">action</span><span class="p">));</span>
+
+  <span class="p">...</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="n">priv</span><span class="o">-&gt;</span><span class="n">use_action_appearance</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">gtk_action_get_stock_id</span> <span class="p">(</span><span class="n">action</span><span class="p">))</span>
+    <span class="n">foo_bar_set_stock</span> <span class="p">(</span><span class="n">button</span><span class="p">,</span> <span class="n">gtk_action_get_stock_id</span> <span class="p">(</span><span class="n">action</span><span class="p">));</span>
+      <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">gtk_action_get_label</span> <span class="p">(</span><span class="n">action</span><span class="p">))</span>
+    <span class="n">foo_bar_set_label</span> <span class="p">(</span><span class="n">button</span><span class="p">,</span> <span class="n">gtk_action_get_label</span> <span class="p">(</span><span class="n">action</span><span class="p">));</span>
+
+      <span class="p">...</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> 
+<span class="n">foo_bar_activatable_update</span> <span class="p">(</span><span class="n">GtkActivatable</span>       <span class="o">*</span><span class="n">activatable</span><span class="p">,</span>
+                           <span class="n">GtkAction</span>            <span class="o">*</span><span class="n">action</span><span class="p">,</span>
+                           <span class="k">const</span> <span class="n">gchar</span>          <span class="o">*</span><span class="n">property_name</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">FooBarPrivate</span> <span class="o">*</span><span class="n">priv</span> <span class="o">=</span> <span class="n">FOO_BAR_GET_PRIVATE</span> <span class="p">(</span><span class="n">activatable</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span> <span class="p">(</span><span class="n">property_name</span><span class="p">,</span> <span class="s">&quot;visible&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">gtk_action_is_visible</span> <span class="p">(</span><span class="n">action</span><span class="p">))</span>
+    <span class="n">gtk_widget_show</span> <span class="p">(</span><span class="n">GTK_WIDGET</span> <span class="p">(</span><span class="n">activatable</span><span class="p">));</span>
+      <span class="k">else</span>
+    <span class="nf">gtk_widget_hide</span> <span class="p">(</span><span class="n">GTK_WIDGET</span> <span class="p">(</span><span class="n">activatable</span><span class="p">));</span>
+    <span class="p">}</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span> <span class="p">(</span><span class="n">property_name</span><span class="p">,</span> <span class="s">&quot;sensitive&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">gtk_widget_set_sensitive</span> <span class="p">(</span><span class="n">GTK_WIDGET</span> <span class="p">(</span><span class="n">activatable</span><span class="p">),</span> <span class="n">gtk_action_is_sensitive</span> <span class="p">(</span><span class="n">action</span><span class="p">));</span>
+
+  <span class="p">...</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">priv</span><span class="o">-&gt;</span><span class="n">use_action_appearance</span><span class="p">)</span>
+    <span class="k">return</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span> <span class="p">(</span><span class="n">property_name</span><span class="p">,</span> <span class="s">&quot;stock-id&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">foo_bar_set_stock</span> <span class="p">(</span><span class="n">button</span><span class="p">,</span> <span class="n">gtk_action_get_stock_id</span> <span class="p">(</span><span class="n">action</span><span class="p">));</span>
+  <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">strcmp</span> <span class="p">(</span><span class="n">property_name</span><span class="p">,</span> <span class="s">&quot;label&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">foo_bar_set_label</span> <span class="p">(</span><span class="n">button</span><span class="p">,</span> <span class="n">gtk_action_get_label</span> <span class="p">(</span><span class="n">action</span><span class="p">));</span>
+
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="Gtk.Activatable.do_set_related_action">
+<tt class="descname">do_set_related_action</tt><big>(</big><em>action</em><big>)</big><a class="headerlink" href="#Gtk.Activatable.do_set_related_action" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action</strong> (<a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a>) &#8211; the <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> to set</td>
+</tr>
+</tbody>
+</table>
+<p>This is a utility function for <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> implementors.</p>
+<p>When implementing <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> you must call this when
+handling changes of the <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> <a class="reference internal" href="#related-action"><em>:related-action</em></a>, and
+you must also use this to break references in <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>- &gt;dispose().</p>
+<p>This function adds a reference to the currently set related
+action for you, it also makes sure the <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a>- &gt;update()
+method is called when the related <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> properties change
+and registers to the action&#8217;s proxy list.</p>
+<p>Be careful to call this before setting the local
+copy of the <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> property, since this function uses
+<a class="reference internal" href="#Gtk.Activatable.get_related_action" title="Gtk.Activatable.get_related_action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable.get_related_action</span></tt></a> () to retrieve the
+previous action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Activatable.get_related_action">
+<tt class="descname">get_related_action</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.Activatable.get_related_action" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the related <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> if one is set.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the related <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> for <cite>activatable</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Activatable.get_use_action_appearance">
+<tt class="descname">get_use_action_appearance</tt><big>(</big><big>)</big><a class="headerlink" href="#Gtk.Activatable.get_use_action_appearance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether <cite>activatable</cite> uses its actions appearance.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets whether this activatable should reset its layout
+and appearance when setting the related action or when
+the action changes appearance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Activatable.set_related_action">
+<tt class="descname">set_related_action</tt><big>(</big><em>action</em><big>)</big><a class="headerlink" href="#Gtk.Activatable.set_related_action" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action</strong> (<a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a>) &#8211; the <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> to set</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the related action on the <cite>activatable</cite> object.</p>
+<p><a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> implementors need to handle the <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> <a class="reference internal" href="#related-action"><em>:related-action</em></a>
+property and call <a class="reference internal" href="#Gtk.Activatable.do_set_related_action" title="Gtk.Activatable.do_set_related_action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable.do_set_related_action</span></tt></a> () when it changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Activatable.set_use_action_appearance">
+<tt class="descname">set_use_action_appearance</tt><big>(</big><em>use_appearance</em><big>)</big><a class="headerlink" href="#Gtk.Activatable.set_use_action_appearance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>use_appearance</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; whether to use the actions appearance</td>
+</tr>
+</tbody>
+</table>
+<p>Sets whether this activatable should reset its layout and appearance
+when setting the related action or when the action changes appearance</p>
+<p><a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> implementors need to handle the
+<a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> <a class="reference internal" href="#use-action-appearance"><em>:use-action-appearance</em></a> property and call
+<a class="reference internal" href="#Gtk.Activatable.sync_action_properties" title="Gtk.Activatable.sync_action_properties"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable.sync_action_properties</span></tt></a> () to update <cite>activatable</cite>
+if needed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gtk.Activatable.sync_action_properties">
+<tt class="descname">sync_action_properties</tt><big>(</big><em>action</em><big>)</big><a class="headerlink" href="#Gtk.Activatable.sync_action_properties" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action</strong> (<a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the related <a class="reference internal" href="../classes/Action.html#Gtk.Action" title="Gtk.Action"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Action</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>This is called to update the activatable completely, this is called
+internally when the <a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> <a class="reference internal" href="#related-action"><em>:related-action</em></a> property is set
+or unset and by the implementing class when
+<a class="reference internal" href="#Gtk.Activatable" title="Gtk.Activatable"><tt class="xref py py-class docutils literal"><span class="pre">Gtk.Activatable</span></tt></a> <a class="reference internal" href="#use-action-appearance"><em>:use-action-appearance</em></a> changes.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="AppChooser.html" class="btn btn-neutral float-right" title="Gtk.AppChooser"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Actionable.html" class="btn btn-neutral" title="Gtk.Actionable"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

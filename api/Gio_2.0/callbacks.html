@@ -1,0 +1,1125 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Callbacks -
+    
+      Gio 2.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../index.html"/>
+        <link rel="up" title="Gio 2.0" href="index.html"/>
+        <link rel="next" title="Interfaces" href="interfaces/index.html"/>
+        <link rel="prev" title="Functions" href="functions.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gio 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Callbacks</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/index.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/index.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Gio 2.0</a> &raquo;</li>
+  
+  <li><a href="">Callbacks</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gio_2.0/callbacks" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="callbacks">
+<h1>Callbacks<a class="headerlink" href="#callbacks" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.AsyncReadyCallback" title="Gio.AsyncReadyCallback"><tt class="xref py py-obj docutils literal"><span class="pre">AsyncReadyCallback</span></tt></a>(source_object, res, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.BusAcquiredCallback" title="Gio.BusAcquiredCallback"><tt class="xref py py-obj docutils literal"><span class="pre">BusAcquiredCallback</span></tt></a>(connection, name, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.BusNameAcquiredCallback" title="Gio.BusNameAcquiredCallback"><tt class="xref py py-obj docutils literal"><span class="pre">BusNameAcquiredCallback</span></tt></a>(connection, name, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.BusNameAppearedCallback" title="Gio.BusNameAppearedCallback"><tt class="xref py py-obj docutils literal"><span class="pre">BusNameAppearedCallback</span></tt></a>(connection, name, name_owner, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.BusNameLostCallback" title="Gio.BusNameLostCallback"><tt class="xref py py-obj docutils literal"><span class="pre">BusNameLostCallback</span></tt></a>(connection, name, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.BusNameVanishedCallback" title="Gio.BusNameVanishedCallback"><tt class="xref py py-obj docutils literal"><span class="pre">BusNameVanishedCallback</span></tt></a>(connection, name, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.CancellableSourceFunc" title="Gio.CancellableSourceFunc"><tt class="xref py py-obj docutils literal"><span class="pre">CancellableSourceFunc</span></tt></a>(cancellable, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.DBusInterfaceGetPropertyFunc" title="Gio.DBusInterfaceGetPropertyFunc"><tt class="xref py py-obj docutils literal"><span class="pre">DBusInterfaceGetPropertyFunc</span></tt></a>(connection, sender, object_path, interface_name, property_name, error, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.DBusInterfaceMethodCallFunc" title="Gio.DBusInterfaceMethodCallFunc"><tt class="xref py py-obj docutils literal"><span class="pre">DBusInterfaceMethodCallFunc</span></tt></a>(connection, sender, object_path, interface_name, method_name, parameters, invocation, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.DBusInterfaceSetPropertyFunc" title="Gio.DBusInterfaceSetPropertyFunc"><tt class="xref py py-obj docutils literal"><span class="pre">DBusInterfaceSetPropertyFunc</span></tt></a>(connection, sender, object_path, interface_name, property_name, value, error, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.DBusMessageFilterFunction" title="Gio.DBusMessageFilterFunction"><tt class="xref py py-obj docutils literal"><span class="pre">DBusMessageFilterFunction</span></tt></a>(connection, message, incoming, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.DBusProxyTypeFunc" title="Gio.DBusProxyTypeFunc"><tt class="xref py py-obj docutils literal"><span class="pre">DBusProxyTypeFunc</span></tt></a>(manager, object_path, interface_name, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.DBusSignalCallback" title="Gio.DBusSignalCallback"><tt class="xref py py-obj docutils literal"><span class="pre">DBusSignalCallback</span></tt></a>(connection, sender_name, object_path, interface_name, signal_name, parameters, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.DBusSubtreeDispatchFunc" title="Gio.DBusSubtreeDispatchFunc"><tt class="xref py py-obj docutils literal"><span class="pre">DBusSubtreeDispatchFunc</span></tt></a>(connection, sender, object_path, interface_name, node, out_user_data, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.DBusSubtreeIntrospectFunc" title="Gio.DBusSubtreeIntrospectFunc"><tt class="xref py py-obj docutils literal"><span class="pre">DBusSubtreeIntrospectFunc</span></tt></a>(connection, sender, object_path, node, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.DesktopAppLaunchCallback" title="Gio.DesktopAppLaunchCallback"><tt class="xref py py-obj docutils literal"><span class="pre">DesktopAppLaunchCallback</span></tt></a>(appinfo, pid, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.FileProgressCallback" title="Gio.FileProgressCallback"><tt class="xref py py-obj docutils literal"><span class="pre">FileProgressCallback</span></tt></a>(current_num_bytes, total_num_bytes, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.FileReadMoreCallback" title="Gio.FileReadMoreCallback"><tt class="xref py py-obj docutils literal"><span class="pre">FileReadMoreCallback</span></tt></a>(file_contents, file_size, callback_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.IOSchedulerJobFunc" title="Gio.IOSchedulerJobFunc"><tt class="xref py py-obj docutils literal"><span class="pre">IOSchedulerJobFunc</span></tt></a>(job, cancellable, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.PollableSourceFunc" title="Gio.PollableSourceFunc"><tt class="xref py py-obj docutils literal"><span class="pre">PollableSourceFunc</span></tt></a>(pollable_stream, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.SettingsBindGetMapping" title="Gio.SettingsBindGetMapping"><tt class="xref py py-obj docutils literal"><span class="pre">SettingsBindGetMapping</span></tt></a>(value, variant, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.SettingsBindSetMapping" title="Gio.SettingsBindSetMapping"><tt class="xref py py-obj docutils literal"><span class="pre">SettingsBindSetMapping</span></tt></a>(value, expected_type, user_data)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.SettingsGetMapping" title="Gio.SettingsGetMapping"><tt class="xref py py-obj docutils literal"><span class="pre">SettingsGetMapping</span></tt></a>(value, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.SimpleAsyncThreadFunc" title="Gio.SimpleAsyncThreadFunc"><tt class="xref py py-obj docutils literal"><span class="pre">SimpleAsyncThreadFunc</span></tt></a>(res, object, cancellable)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gio.SocketSourceFunc" title="Gio.SocketSourceFunc"><tt class="xref py py-obj docutils literal"><span class="pre">SocketSourceFunc</span></tt></a>(socket, condition, user_data)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gio.TaskThreadFunc" title="Gio.TaskThreadFunc"><tt class="xref py py-obj docutils literal"><span class="pre">TaskThreadFunc</span></tt></a>(task, source_object, task_data, cancellable)</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Gio.AsyncReadyCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">AsyncReadyCallback</tt><big>(</big><em>source_object</em>, <em>res</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.AsyncReadyCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>source_object</strong> (<a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>) &#8211; the object the asynchronous operation was started with.</li>
+<li><strong>res</strong> (<a class="reference internal" href="interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>) &#8211; a <a class="reference internal" href="interfaces/AsyncResult.html#Gio.AsyncResult" title="Gio.AsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.AsyncResult</span></tt></a>.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to the callback.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Type definition for a function that will be called back when an asynchronous
+operation within GIO has been completed.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.BusAcquiredCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">BusAcquiredCallback</tt><big>(</big><em>connection</em>, <em>name</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.BusAcquiredCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; The <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a> to a message bus.</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name that is requested to be owned.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data passed to <a class="reference internal" href="functions.html#Gio.bus_own_name" title="Gio.bus_own_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.bus_own_name</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Invoked when a connection to a message bus has been obtained.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.BusNameAcquiredCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">BusNameAcquiredCallback</tt><big>(</big><em>connection</em>, <em>name</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.BusNameAcquiredCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; The <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a> on which to acquired the name.</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name being owned.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data passed to <a class="reference internal" href="functions.html#Gio.bus_own_name" title="Gio.bus_own_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.bus_own_name</span></tt></a> () or <a class="reference internal" href="functions.html#Gio.bus_own_name_on_connection" title="Gio.bus_own_name_on_connection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.bus_own_name_on_connection</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Invoked when the name is acquired.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.BusNameAppearedCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">BusNameAppearedCallback</tt><big>(</big><em>connection</em>, <em>name</em>, <em>name_owner</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.BusNameAppearedCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; The <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a> the name is being watched on.</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name being watched.</li>
+<li><strong>name_owner</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; Unique name of the owner of the name being watched.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data passed to <a class="reference internal" href="functions.html#Gio.bus_watch_name" title="Gio.bus_watch_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.bus_watch_name</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Invoked when the name being watched is known to have to have a owner.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.BusNameLostCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">BusNameLostCallback</tt><big>(</big><em>connection</em>, <em>name</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.BusNameLostCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; The <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a> on which to acquire the name or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if the connection was disconnected.</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name being owned.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data passed to <a class="reference internal" href="functions.html#Gio.bus_own_name" title="Gio.bus_own_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.bus_own_name</span></tt></a> () or <a class="reference internal" href="functions.html#Gio.bus_own_name_on_connection" title="Gio.bus_own_name_on_connection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.bus_own_name_on_connection</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Invoked when the name is lost or <cite>connection</cite> has been closed.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.BusNameVanishedCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">BusNameVanishedCallback</tt><big>(</big><em>connection</em>, <em>name</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.BusNameVanishedCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; The <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a> the name is being watched on, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</li>
+<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name being watched.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data passed to <a class="reference internal" href="functions.html#Gio.bus_watch_name" title="Gio.bus_watch_name"><tt class="xref py py-class docutils literal"><span class="pre">Gio.bus_watch_name</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Invoked when the name being watched is known not to have to have a owner.</p>
+<p>This is also invoked when the #GDBusConection on which the watch was
+established has been closed.  In that case, <cite>connection</cite> will be
+<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.CancellableSourceFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">CancellableSourceFunc</tt><big>(</big><em>cancellable</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.CancellableSourceFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cancellable</strong> (<a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data passed in by the user.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">it should return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the source should be removed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This is the function type of the callback used for the <a class="reference internal" href="../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> 
+returned by <tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable.source_new</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusInterfaceGetPropertyFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusInterfaceGetPropertyFunc</tt><big>(</big><em>connection</em>, <em>sender</em>, <em>object_path</em>, <em>interface_name</em>, <em>property_name</em>, <em>error</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusInterfaceGetPropertyFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>.</li>
+<li><strong>sender</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The unique bus name of the remote caller.</li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The object path that the method was invoked on.</li>
+<li><strong>interface_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The D-Bus interface name for the property.</li>
+<li><strong>property_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the property to get the value of.</li>
+<li><strong>error</strong> (<a class="reference internal" href="../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a>) &#8211; Return location for error.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; The <cite>user_data</cite> <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> passed to <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.register_object" title="Gio.DBusConnection.register_object"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.register_object</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> with the value for <cite>property_name</cite> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if <cite>error</cite> is set. If the returned <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> is floating, it is consumed - otherwise its reference count is decreased by one.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type of the <cite>get_property</cite> function in <a class="reference internal" href="structs/DBusInterfaceVTable.html#Gio.DBusInterfaceVTable" title="Gio.DBusInterfaceVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceVTable</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusInterfaceMethodCallFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusInterfaceMethodCallFunc</tt><big>(</big><em>connection</em>, <em>sender</em>, <em>object_path</em>, <em>interface_name</em>, <em>method_name</em>, <em>parameters</em>, <em>invocation</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusInterfaceMethodCallFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>.</li>
+<li><strong>sender</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The unique bus name of the remote caller.</li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The object path that the method was invoked on.</li>
+<li><strong>interface_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The D-Bus interface name the method was invoked on.</li>
+<li><strong>method_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the method that was invoked.</li>
+<li><strong>parameters</strong> (<a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>) &#8211; A <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> tuple with parameters.</li>
+<li><strong>invocation</strong> (<a class="reference internal" href="classes/DBusMethodInvocation.html#Gio.DBusMethodInvocation" title="Gio.DBusMethodInvocation"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMethodInvocation</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusMethodInvocation.html#Gio.DBusMethodInvocation" title="Gio.DBusMethodInvocation"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMethodInvocation</span></tt></a> object that can be used to return a value or error.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; The <cite>user_data</cite> <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> passed to <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.register_object" title="Gio.DBusConnection.register_object"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.register_object</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type of the <cite>method_call</cite> function in <a class="reference internal" href="structs/DBusInterfaceVTable.html#Gio.DBusInterfaceVTable" title="Gio.DBusInterfaceVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceVTable</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusInterfaceSetPropertyFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusInterfaceSetPropertyFunc</tt><big>(</big><em>connection</em>, <em>sender</em>, <em>object_path</em>, <em>interface_name</em>, <em>property_name</em>, <em>value</em>, <em>error</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusInterfaceSetPropertyFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>.</li>
+<li><strong>sender</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The unique bus name of the remote caller.</li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The object path that the method was invoked on.</li>
+<li><strong>interface_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The D-Bus interface name for the property.</li>
+<li><strong>property_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the property to get the value of.</li>
+<li><strong>value</strong> (<a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>) &#8211; The value to set the property to.</li>
+<li><strong>error</strong> (<a class="reference internal" href="../GLib_2.0/classes/GError.html#GLib.GError" title="GLib.GError"><tt class="xref py py-class docutils literal"><span class="pre">GLib.GError</span></tt></a>) &#8211; Return location for error.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; The <cite>user_data</cite> <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> passed to <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.register_object" title="Gio.DBusConnection.register_object"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.register_object</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the property was set to <cite>value</cite>, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if <cite>error</cite> is set.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type of the <cite>set_property</cite> function in <a class="reference internal" href="structs/DBusInterfaceVTable.html#Gio.DBusInterfaceVTable" title="Gio.DBusInterfaceVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceVTable</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusMessageFilterFunction">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusMessageFilterFunction</tt><big>(</big><em>connection</em>, <em>message</em>, <em>incoming</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusMessageFilterFunction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>.</li>
+<li><strong>message</strong> (<a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage" title="Gio.DBusMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage</span></tt></a>) &#8211; A locked <a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage" title="Gio.DBusMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage</span></tt></a> that the filter function takes ownership of.</li>
+<li><strong>incoming</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>) &#8211; <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if it is a message received from the other peer, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if it is a message to be sent to the other peer.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data passed when adding the filter.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage" title="Gio.DBusMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage</span></tt></a> that will be freed with <tt class="xref py py-class docutils literal"><span class="pre">GObject.Object.unref</span></tt> () or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to drop the message. Passive filter functions can simply return the passed <cite>message</cite> object.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage" title="Gio.DBusMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Signature for function used in <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.add_filter" title="Gio.DBusConnection.add_filter"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.add_filter</span></tt></a> ().</p>
+<p>A filter function is passed a <a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage" title="Gio.DBusMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage</span></tt></a> and expected to return
+a <a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage" title="Gio.DBusMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage</span></tt></a> too. Passive filter functions that don&#8217;t modify the
+message can simply return the <cite>message</cite> object:</p>
+<div class="highlight-c"><pre>static GDBusMessage *
+passive_filter (GDBusConnection *connection
+                GDBusMessage    *message,
+                gboolean         incoming,
+                gpointer         user_data)
+{
+  /&lt;!-- --&gt;* inspect @message *&lt;!-- --&gt;/
+  return message;
+}</pre>
+</div>
+<p>Filter functions that wants to drop a message can simply return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>:</p>
+<div class="highlight-c"><div class="highlight"><pre><span class="k">static</span> <span class="n">GDBusMessage</span> <span class="o">*</span>
+<span class="nf">drop_filter</span> <span class="p">(</span><span class="n">GDBusConnection</span> <span class="o">*</span><span class="n">connection</span>
+             <span class="n">GDBusMessage</span>    <span class="o">*</span><span class="n">message</span><span class="p">,</span>
+             <span class="n">gboolean</span>         <span class="n">incoming</span><span class="p">,</span>
+             <span class="n">gpointer</span>         <span class="n">user_data</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">should_drop_message</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">g_object_unref</span> <span class="p">(</span><span class="n">message</span><span class="p">);</span>
+      <span class="n">message</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="k">return</span> <span class="n">message</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Finally, a filter function may modify a message by copying it:</p>
+<div class="highlight-c"><pre>static GDBusMessage *
+modifying_filter (GDBusConnection *connection
+                  GDBusMessage    *message,
+                  gboolean         incoming,
+                  gpointer         user_data)
+{
+  GDBusMessage *copy;
+  GError *error;
+
+  error = NULL;
+  copy = g_dbus_message_copy (message, &amp;error);
+  /&lt;!-- --&gt;* handle @error being is set *&lt;!-- --&gt;/
+  g_object_unref (message);
+
+  /&lt;!-- --&gt;* modify @copy *&lt;!-- --&gt;/
+
+  return copy;
+}</pre>
+</div>
+<p>If the returned <a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage" title="Gio.DBusMessage"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage</span></tt></a> is different from <cite>message</cite> and cannot
+be sent on <cite>connection</cite> (it could use features, such as file
+descriptors, not compatible with <cite>connection</cite> ), then a warning is
+logged to standard error. Applications can
+check this ahead of time using <a class="reference internal" href="classes/DBusMessage.html#Gio.DBusMessage.to_blob" title="Gio.DBusMessage.to_blob"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusMessage.to_blob</span></tt></a> () passing a
+<a class="reference internal" href="flags.html#Gio.DBusCapabilityFlags" title="Gio.DBusCapabilityFlags"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusCapabilityFlags</span></tt></a> value obtained from <cite>connection</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusProxyTypeFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusProxyTypeFunc</tt><big>(</big><em>manager</em>, <em>object_path</em>, <em>interface_name</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusProxyTypeFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>manager</strong> (<a class="reference internal" href="classes/DBusObjectManagerClient.html#Gio.DBusObjectManagerClient" title="Gio.DBusObjectManagerClient"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusObjectManagerClient</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusObjectManagerClient.html#Gio.DBusObjectManagerClient" title="Gio.DBusObjectManagerClient"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusObjectManagerClient</span></tt></a>.</li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The object path of the remote object.</li>
+<li><strong>interface_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; The interface name of the remote object or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if a <a class="reference internal" href="classes/DBusObjectProxy.html#Gio.DBusObjectProxy" title="Gio.DBusObjectProxy"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusObjectProxy</span></tt></a> <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> is requested.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> to use for the remote object. The returned type must be a <a class="reference internal" href="classes/DBusProxy.html#Gio.DBusProxy" title="Gio.DBusProxy"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusProxy</span></tt></a> - or <a class="reference internal" href="classes/DBusObjectProxy.html#Gio.DBusObjectProxy" title="Gio.DBusObjectProxy"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusObjectProxy</span></tt></a> -derived type.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../GObject_2.0/classes/GType.html#GObject.GType" title="GObject.GType"><tt class="xref py py-class docutils literal"><span class="pre">GObject.GType</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Function signature for a function used to determine the <tt class="xref py py-class docutils literal"><span class="pre">GObject.Type</span></tt> to
+use for an interface proxy (if <cite>interface_name</cite> is not <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ) or
+object proxy (if <cite>interface_name</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ).</p>
+<p>This function is called in the
+thread-default main loop
+that <cite>manager</cite> was constructed in.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusSignalCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusSignalCallback</tt><big>(</big><em>connection</em>, <em>sender_name</em>, <em>object_path</em>, <em>interface_name</em>, <em>signal_name</em>, <em>parameters</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusSignalCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>.</li>
+<li><strong>sender_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The unique bus name of the sender of the signal.</li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The object path that the signal was emitted on.</li>
+<li><strong>interface_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the interface.</li>
+<li><strong>signal_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The name of the signal.</li>
+<li><strong>parameters</strong> (<a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>) &#8211; A <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> tuple with parameters for the signal.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data passed when subscribing to the signal.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Signature for callback function used in <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.signal_subscribe" title="Gio.DBusConnection.signal_subscribe"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.signal_subscribe</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusSubtreeDispatchFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusSubtreeDispatchFunc</tt><big>(</big><em>connection</em>, <em>sender</em>, <em>object_path</em>, <em>interface_name</em>, <em>node</em>, <em>out_user_data</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusSubtreeDispatchFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>.</li>
+<li><strong>sender</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The unique bus name of the remote caller.</li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The object path that was registered with <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.register_subtree" title="Gio.DBusConnection.register_subtree"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.register_subtree</span></tt></a> ().</li>
+<li><strong>interface_name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The D-Bus interface name that the method call or property access is for.</li>
+<li><strong>node</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; A node that is a child of <cite>object_path</cite> (relative to <cite>object_path</cite> ) or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the root of the subtree.</li>
+<li><strong>out_user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; Return location for user data to pass to functions in the returned <a class="reference internal" href="structs/DBusInterfaceVTable.html#Gio.DBusInterfaceVTable" title="Gio.DBusInterfaceVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceVTable</span></tt></a> (never <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ).</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; The <cite>user_data</cite> <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> passed to <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.register_subtree" title="Gio.DBusConnection.register_subtree"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.register_subtree</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference internal" href="structs/DBusInterfaceVTable.html#Gio.DBusInterfaceVTable" title="Gio.DBusInterfaceVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceVTable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if you don&#8217;t want to handle the methods.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="structs/DBusInterfaceVTable.html#Gio.DBusInterfaceVTable" title="Gio.DBusInterfaceVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceVTable</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type of the <cite>dispatch</cite> function in <a class="reference internal" href="structs/DBusSubtreeVTable.html#Gio.DBusSubtreeVTable" title="Gio.DBusSubtreeVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusSubtreeVTable</span></tt></a>.</p>
+<p>Subtrees are flat.  <cite>node</cite>, if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, is always exactly one
+segment of the object path (ie: it never contains a slash).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DBusSubtreeIntrospectFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">DBusSubtreeIntrospectFunc</tt><big>(</big><em>connection</em>, <em>sender</em>, <em>object_path</em>, <em>node</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DBusSubtreeIntrospectFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>connection</strong> (<a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>) &#8211; A <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection" title="Gio.DBusConnection"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection</span></tt></a>.</li>
+<li><strong>sender</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The unique bus name of the remote caller.</li>
+<li><strong>object_path</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; The object path that was registered with <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.register_subtree" title="Gio.DBusConnection.register_subtree"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.register_subtree</span></tt></a> ().</li>
+<li><strong>node</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; A node that is a child of <cite>object_path</cite> (relative to <cite>object_path</cite> ) or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> for the root of the subtree.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; The <cite>user_data</cite> <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">object</span></tt></a> passed to <a class="reference internal" href="classes/DBusConnection.html#Gio.DBusConnection.register_subtree" title="Gio.DBusConnection.register_subtree"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusConnection.register_subtree</span></tt></a> ().</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated array of pointers to <a class="reference internal" href="structs/DBusInterfaceInfo.html#Gio.DBusInterfaceInfo" title="Gio.DBusInterfaceInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceInfo</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="structs/DBusInterfaceInfo.html#Gio.DBusInterfaceInfo" title="Gio.DBusInterfaceInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceInfo</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type of the <cite>introspect</cite> function in <a class="reference internal" href="structs/DBusSubtreeVTable.html#Gio.DBusSubtreeVTable" title="Gio.DBusSubtreeVTable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusSubtreeVTable</span></tt></a>.</p>
+<p>Subtrees are flat.  <cite>node</cite>, if non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, is always exactly one
+segment of the object path (ie: it never contains a slash).</p>
+<p>This function should return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to indicate that there is no object
+at this node.</p>
+<p>If this function returns non-<a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>, the return value is expected to
+be a <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>-terminated array of pointers to <a class="reference internal" href="structs/DBusInterfaceInfo.html#Gio.DBusInterfaceInfo" title="Gio.DBusInterfaceInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceInfo</span></tt></a> 
+structures describing the interfaces implemented by <cite>node</cite>.  This
+array will have <a class="reference internal" href="structs/DBusInterfaceInfo.html#Gio.DBusInterfaceInfo.unref" title="Gio.DBusInterfaceInfo.unref"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DBusInterfaceInfo.unref</span></tt></a> () called on each item
+before being freed with <a class="reference internal" href="../GLib_2.0/functions.html#GLib.free" title="GLib.free"><tt class="xref py py-class docutils literal"><span class="pre">GLib.free</span></tt></a> ().</p>
+<p>The difference between returning <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> and an array containing zero
+items is that the standard DBus interfaces will returned to the
+remote introspector in the empty array case, but not in the <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> 
+case.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.DesktopAppLaunchCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">DesktopAppLaunchCallback</tt><big>(</big><em>appinfo</em>, <em>pid</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.DesktopAppLaunchCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>appinfo</strong> (<a class="reference internal" href="classes/DesktopAppInfo.html#Gio.DesktopAppInfo" title="Gio.DesktopAppInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DesktopAppInfo</span></tt></a>) &#8211; a <a class="reference internal" href="classes/DesktopAppInfo.html#Gio.DesktopAppInfo" title="Gio.DesktopAppInfo"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DesktopAppInfo</span></tt></a></li>
+<li><strong>pid</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; Process identifier</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; User data</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>During invocation, <a class="reference internal" href="classes/DesktopAppInfo.html#Gio.DesktopAppInfo.launch_uris_as_manager" title="Gio.DesktopAppInfo.launch_uris_as_manager"><tt class="xref py py-class docutils literal"><span class="pre">Gio.DesktopAppInfo.launch_uris_as_manager</span></tt></a> () may
+create one or more child processes.  This callback is invoked once
+for each, providing the process ID.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.FileProgressCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">FileProgressCallback</tt><big>(</big><em>current_num_bytes</em>, <em>total_num_bytes</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.FileProgressCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>current_num_bytes</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the current number of bytes in the operation.</li>
+<li><strong>total_num_bytes</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the total number of bytes in the operation.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data passed to the callback.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>When doing file operations that may take a while, such as moving
+a file or copying a file, a progress callback is used to pass how
+far along that operation is to the application.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.FileReadMoreCallback">
+<tt class="descclassname">Gio.</tt><tt class="descname">FileReadMoreCallback</tt><big>(</big><em>file_contents</em>, <em>file_size</em>, <em>callback_data</em><big>)</big><a class="headerlink" href="#Gio.FileReadMoreCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_contents</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">str</span></tt></a>) &#8211; the data as currently read.</li>
+<li><strong>file_size</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a>) &#8211; the size of the data currently read.</li>
+<li><strong>callback_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data passed to the callback.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if more data should be read back. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>When loading the partial contents of a file with <tt class="xref py py-class docutils literal"><span class="pre">Gio.File.load_partial_contents_async</span></tt> (),
+it may become necessary to determine if any more data from the file should be loaded.
+A <a class="reference internal" href="#Gio.FileReadMoreCallback" title="Gio.FileReadMoreCallback"><tt class="xref py py-class docutils literal"><span class="pre">Gio.FileReadMoreCallback</span></tt></a> function facilitates this by returning <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if more data
+should be read, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> otherwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.IOSchedulerJobFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">IOSchedulerJobFunc</tt><big>(</big><em>job</em>, <em>cancellable</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.IOSchedulerJobFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>job</strong> (<a class="reference internal" href="structs/IOSchedulerJob.html#Gio.IOSchedulerJob" title="Gio.IOSchedulerJob"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOSchedulerJob</span></tt></a>) &#8211; a <a class="reference internal" href="structs/IOSchedulerJob.html#Gio.IOSchedulerJob" title="Gio.IOSchedulerJob"><tt class="xref py py-class docutils literal"><span class="pre">Gio.IOSchedulerJob</span></tt></a>.</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; optional <a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> object, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to ignore.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the data to pass to callback function</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if this function should be called again to complete the job, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the job is complete (or cancelled)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>I/O Job function.</p>
+<p>Long-running jobs should periodically check the <cite>cancellable</cite> 
+to see if they have been cancelled.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.PollableSourceFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">PollableSourceFunc</tt><big>(</big><em>pollable_stream</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.PollableSourceFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pollable_stream</strong> (<a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>) &#8211; the <a class="reference internal" href="interfaces/PollableInputStream.html#Gio.PollableInputStream" title="Gio.PollableInputStream"><tt class="xref py py-class docutils literal"><span class="pre">Gio.PollableInputStream</span></tt></a> or <a class="reference internal" href="interfaces/PollableOutputStream.html#Gio.PollableOutputStream" title="Gio.PollableOutputStream"><tt class="xref py py-class docutils literal"><span class="pre">Gio.PollableOutputStream</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data passed in by the user.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">it should return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the source should be removed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This is the function type of the callback used for the <a class="reference internal" href="../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> 
+returned by <a class="reference internal" href="interfaces/PollableInputStream.html#Gio.PollableInputStream.create_source" title="Gio.PollableInputStream.create_source"><tt class="xref py py-class docutils literal"><span class="pre">Gio.PollableInputStream.create_source</span></tt></a> () and
+<a class="reference internal" href="interfaces/PollableOutputStream.html#Gio.PollableOutputStream.create_source" title="Gio.PollableOutputStream.create_source"><tt class="xref py py-class docutils literal"><span class="pre">Gio.PollableOutputStream.create_source</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.SettingsBindGetMapping">
+<tt class="descclassname">Gio.</tt><tt class="descname">SettingsBindGetMapping</tt><big>(</big><em>value</em>, <em>variant</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.SettingsBindGetMapping" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; return location for the property value</li>
+<li><strong>variant</strong> (<a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>) &#8211; the <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data that was specified when the binding was created</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the conversion succeeded, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> in case of an error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type for the function that is used to convert from <a class="reference internal" href="classes/Settings.html#Gio.Settings" title="Gio.Settings"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Settings</span></tt></a> to
+an object property. The <cite>value</cite> is already initialized to hold values
+of the appropriate type.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.SettingsBindSetMapping">
+<tt class="descclassname">Gio.</tt><tt class="descname">SettingsBindSetMapping</tt><big>(</big><em>value</em>, <em>expected_type</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.SettingsBindSetMapping" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a>) &#8211; a <a class="reference internal" href="../GObject_2.0/structs/Value.html#GObject.Value" title="GObject.Value"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Value</span></tt></a> containing the property value to map</li>
+<li><strong>expected_type</strong> (<a class="reference internal" href="../GLib_2.0/structs/VariantType.html#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a>) &#8211; the <a class="reference internal" href="../GLib_2.0/structs/VariantType.html#GLib.VariantType" title="GLib.VariantType"><tt class="xref py py-class docutils literal"><span class="pre">GLib.VariantType</span></tt></a> to create</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; user data that was specified when the binding was created</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> holding the data from <cite>value</cite>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> in case of an error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type for the function that is used to convert an object property
+value to a <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> for storing it in <a class="reference internal" href="classes/Settings.html#Gio.Settings" title="Gio.Settings"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Settings</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.SettingsGetMapping">
+<tt class="descclassname">Gio.</tt><tt class="descname">SettingsGetMapping</tt><big>(</big><em>value</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.SettingsGetMapping" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a>) &#8211; the <a class="reference internal" href="../GLib_2.0/structs/Variant.html#GLib.Variant" title="GLib.Variant"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Variant</span></tt></a> to map, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; the user data that was passed to <a class="reference internal" href="classes/Settings.html#Gio.Settings.get_mapped" title="Gio.Settings.get_mapped"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Settings.get_mapped</span></tt></a> ()</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> if the conversion succeeded, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> in case of an error</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a>, result: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The type of the function that is used to convert from a value stored
+in a <a class="reference internal" href="classes/Settings.html#Gio.Settings" title="Gio.Settings"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Settings</span></tt></a> to a value that is useful to the application.</p>
+<p>If the value is successfully mapped, the result should be stored at
+<cite>result</cite> and <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> returned.  If mapping fails (for example, if <cite>value</cite> 
+is not in the right format) then <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> should be returned.</p>
+<p>If <cite>value</cite> is <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> then it means that the mapping function is being
+given a &#8220;last chance&#8221; to successfully return a valid value.  <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#True" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">True</span></tt></a> 
+must be returned in this case.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.SimpleAsyncThreadFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">SimpleAsyncThreadFunc</tt><big>(</big><em>res</em>, <em>object</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Gio.SimpleAsyncThreadFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>res</strong> (<a class="reference internal" href="classes/SimpleAsyncResult.html#Gio.SimpleAsyncResult" title="Gio.SimpleAsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SimpleAsyncResult</span></tt></a>) &#8211; a <a class="reference internal" href="classes/SimpleAsyncResult.html#Gio.SimpleAsyncResult" title="Gio.SimpleAsyncResult"><tt class="xref py py-class docutils literal"><span class="pre">Gio.SimpleAsyncResult</span></tt></a>.</li>
+<li><strong>object</strong> (<a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>) &#8211; a <a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>.</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; optional <a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> object, <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to ignore.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Simple thread function that runs an asynchronous operation and
+checks for cancellation.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.SocketSourceFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">SocketSourceFunc</tt><big>(</big><em>socket</em>, <em>condition</em>, <em>user_data</em><big>)</big><a class="headerlink" href="#Gio.SocketSourceFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>socket</strong> (<a class="reference internal" href="classes/Socket.html#Gio.Socket" title="Gio.Socket"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Socket</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Socket.html#Gio.Socket" title="Gio.Socket"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Socket</span></tt></a></li>
+<li><strong>condition</strong> (<a class="reference internal" href="../GLib_2.0/flags.html#GLib.IOCondition" title="GLib.IOCondition"><tt class="xref py py-class docutils literal"><span class="pre">GLib.IOCondition</span></tt></a>) &#8211; the current condition at the source fired.</li>
+<li><strong>user_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; data passed in by the user.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">it should return <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#False" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">False</span></tt></a> if the source should be removed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This is the function type of the callback used for the <a class="reference internal" href="../GLib_2.0/structs/Source.html#GLib.Source" title="GLib.Source"><tt class="xref py py-class docutils literal"><span class="pre">GLib.Source</span></tt></a> 
+returned by <tt class="xref py py-class docutils literal"><span class="pre">Gio.Socket.create_source</span></tt> ().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Gio.TaskThreadFunc">
+<tt class="descclassname">Gio.</tt><tt class="descname">TaskThreadFunc</tt><big>(</big><em>task</em>, <em>source_object</em>, <em>task_data</em>, <em>cancellable</em><big>)</big><a class="headerlink" href="#Gio.TaskThreadFunc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>task</strong> (<a class="reference internal" href="classes/Task.html#Gio.Task" title="Gio.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Task</span></tt></a>) &#8211; the <a class="reference internal" href="classes/Task.html#Gio.Task" title="Gio.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Task</span></tt></a></li>
+<li><strong>source_object</strong> (<a class="reference internal" href="../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a>) &#8211; <cite>task</cite> &#8216;s source object</li>
+<li><strong>task_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; <cite>task</cite> &#8216;s task data</li>
+<li><strong>cancellable</strong> (<a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; <cite>task</cite> &#8216;s <a class="reference internal" href="classes/Cancellable.html#Gio.Cancellable" title="Gio.Cancellable"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Cancellable</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The prototype for a task function to be run in a thread via
+<tt class="xref py py-class docutils literal"><span class="pre">Gio.Task.run_in_thread</span></tt> () or <tt class="xref py py-class docutils literal"><span class="pre">Gio.Task.run_in_thread_sync</span></tt> ().</p>
+<p>If the return-on-cancel flag is set on <cite>task</cite>, and <cite>cancellable</cite> gets
+cancelled, then the <a class="reference internal" href="classes/Task.html#Gio.Task" title="Gio.Task"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Task</span></tt></a> will be completed immediately (as though
+<a class="reference internal" href="classes/Task.html#Gio.Task.return_error_if_cancelled" title="Gio.Task.return_error_if_cancelled"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Task.return_error_if_cancelled</span></tt></a> () had been called), without
+waiting for the task function to complete. However, the task
+function will continue running in its thread in the background. The
+function therefore needs to be careful about how it uses
+externally-visible state in this case. See
+<a class="reference internal" href="classes/Task.html#Gio.Task.set_return_on_cancel" title="Gio.Task.set_return_on_cancel"><tt class="xref py py-class docutils literal"><span class="pre">Gio.Task.set_return_on_cancel</span></tt></a> () for more details.</p>
+<p>Other than in that case, <cite>task</cite> will be completed when the
+<a class="reference internal" href="#Gio.TaskThreadFunc" title="Gio.TaskThreadFunc"><tt class="xref py py-class docutils literal"><span class="pre">Gio.TaskThreadFunc</span></tt></a> returns, not when it calls
+a <tt class="docutils literal"><span class="pre">g_task_return_</span></tt> function.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="interfaces/index.html" class="btn btn-neutral float-right" title="Interfaces"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="functions.html" class="btn btn-neutral" title="Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

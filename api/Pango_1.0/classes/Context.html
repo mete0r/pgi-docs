@@ -1,0 +1,827 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Pango.Context -
+    
+      Classes -
+    
+      Pango 1.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Pango.Font" href="Font.html"/>
+        <link rel="prev" title="Classes" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdk_3.0/index.html">Gdk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Pango 1.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Pango.Context</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Pango 1.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Pango.Context</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Pango_1.0/classes/Context" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="pango-context">
+<h1>Pango.Context<a class="headerlink" href="#pango-context" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-f066d8e56aac13cf7f3cce4a9d893784376605b3.png" alt="Inheritance diagram of Pango.Context" usemap="#inheritance724bb4ca7f" class="inheritance"/>
+<map id="inheritance724bb4ca7f" name="inheritance724bb4ca7f">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="5,5,101,29"/>
+<area shape="rect" id="node2" href="#Pango.Context" title="Pango.Context" alt="" coords="7,77,100,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><em>static</em></td>
+<td><a class="reference internal" href="#Pango.Context.new" title="Pango.Context.new"><tt class="xref py py-obj docutils literal"><span class="pre">new</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.changed" title="Pango.Context.changed"><tt class="xref py py-obj docutils literal"><span class="pre">changed</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_base_dir" title="Pango.Context.get_base_dir"><tt class="xref py py-obj docutils literal"><span class="pre">get_base_dir</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_base_gravity" title="Pango.Context.get_base_gravity"><tt class="xref py py-obj docutils literal"><span class="pre">get_base_gravity</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_font_description" title="Pango.Context.get_font_description"><tt class="xref py py-obj docutils literal"><span class="pre">get_font_description</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_font_map" title="Pango.Context.get_font_map"><tt class="xref py py-obj docutils literal"><span class="pre">get_font_map</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_gravity" title="Pango.Context.get_gravity"><tt class="xref py py-obj docutils literal"><span class="pre">get_gravity</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_gravity_hint" title="Pango.Context.get_gravity_hint"><tt class="xref py py-obj docutils literal"><span class="pre">get_gravity_hint</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_language" title="Pango.Context.get_language"><tt class="xref py py-obj docutils literal"><span class="pre">get_language</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_matrix" title="Pango.Context.get_matrix"><tt class="xref py py-obj docutils literal"><span class="pre">get_matrix</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_metrics" title="Pango.Context.get_metrics"><tt class="xref py py-obj docutils literal"><span class="pre">get_metrics</span></tt></a>(desc[, language])</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.get_serial" title="Pango.Context.get_serial"><tt class="xref py py-obj docutils literal"><span class="pre">get_serial</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.list_families" title="Pango.Context.list_families"><tt class="xref py py-obj docutils literal"><span class="pre">list_families</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.load_font" title="Pango.Context.load_font"><tt class="xref py py-obj docutils literal"><span class="pre">load_font</span></tt></a>(desc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.load_fontset" title="Pango.Context.load_fontset"><tt class="xref py py-obj docutils literal"><span class="pre">load_fontset</span></tt></a>(desc, language)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.set_base_dir" title="Pango.Context.set_base_dir"><tt class="xref py py-obj docutils literal"><span class="pre">set_base_dir</span></tt></a>(direction)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.set_base_gravity" title="Pango.Context.set_base_gravity"><tt class="xref py py-obj docutils literal"><span class="pre">set_base_gravity</span></tt></a>(gravity)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.set_font_description" title="Pango.Context.set_font_description"><tt class="xref py py-obj docutils literal"><span class="pre">set_font_description</span></tt></a>(desc)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.set_font_map" title="Pango.Context.set_font_map"><tt class="xref py py-obj docutils literal"><span class="pre">set_font_map</span></tt></a>(font_map)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.set_gravity_hint" title="Pango.Context.set_gravity_hint"><tt class="xref py py-obj docutils literal"><span class="pre">set_gravity_hint</span></tt></a>(hint)</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Pango.Context.set_language" title="Pango.Context.set_language"><tt class="xref py py-obj docutils literal"><span class="pre">set_language</span></tt></a>(language)</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Pango.Context.set_matrix" title="Pango.Context.set_matrix"><tt class="xref py py-obj docutils literal"><span class="pre">set_matrix</span></tt></a>(matrix)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="pango-context-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="signals">
+<span id="pango-context-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Pango.Context">
+<em class="property">class </em><tt class="descclassname">Pango.</tt><tt class="descname">Context</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Pango.Context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<dl class="staticmethod">
+<dt id="Pango.Context.new">
+<em class="property">static </em><tt class="descname">new</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.new" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the newly allocated <a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a>, which should be freed with <tt class="xref py py-class docutils literal"><span class="pre">GObject.Object.unref</span></tt> ().</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Creates a new <a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a> initialized to default values.</p>
+<p>This function is not particularly useful as it should always
+be followed by a <a class="reference internal" href="#Pango.Context.set_font_map" title="Pango.Context.set_font_map"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context.set_font_map</span></tt></a> () call, and the
+function <a class="reference internal" href="FontMap.html#Pango.FontMap.create_context" title="Pango.FontMap.create_context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMap.create_context</span></tt></a> () does these two steps
+together and hence users are recommended to use that.</p>
+<p>If you are using Pango as part of a higher-level system,
+that system may have it&#8217;s own way of create a <a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a>.
+For instance, the GTK+ toolkit has, among others,
+gdk_pango_context_get_for_screen(), and
+gtk_widget_get_pango_context().  Use those instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.changed">
+<tt class="descname">changed</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forces a change in the context, which will cause any <a class="reference internal" href="Layout.html#Pango.Layout" title="Pango.Layout"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Layout</span></tt></a>
+using this context to re-layout.</p>
+<p>This function is only useful when implementing a new backend
+for Pango, something applications won&#8217;t do. Backends should
+call this function if they have attached extra data to the context
+and such data is changed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_base_dir">
+<tt class="descname">get_base_dir</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_base_dir" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the base direction for the context.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Pango.Direction" title="Pango.Direction"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the base direction for the context. See
+<a class="reference internal" href="#Pango.Context.set_base_dir" title="Pango.Context.set_base_dir"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context.set_base_dir</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_base_gravity">
+<tt class="descname">get_base_gravity</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_base_gravity" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the base gravity for the context.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Pango.Gravity" title="Pango.Gravity"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Gravity</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the base gravity for the context. See
+<a class="reference internal" href="#Pango.Context.set_base_gravity" title="Pango.Context.set_base_gravity"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context.set_base_gravity</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_font_description">
+<tt class="descname">get_font_description</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_font_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a pointer to the context&#8217;s default font description. This value must not be modified or freed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieve the default font description for the context.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_font_map">
+<tt class="descname">get_font_map</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_font_map" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the font map for the <a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a>. This value is owned by Pango and should not be unreferenced.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="FontMap.html#Pango.FontMap" title="Pango.FontMap"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMap</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the #PangoFontmap used to look up fonts for this context.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_gravity">
+<tt class="descname">get_gravity</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_gravity" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the resolved gravity for the context.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Pango.Gravity" title="Pango.Gravity"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Gravity</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the gravity for the context. This is similar to
+<a class="reference internal" href="#Pango.Context.get_base_gravity" title="Pango.Context.get_base_gravity"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context.get_base_gravity</span></tt></a> (), except for when the base gravity
+is <a class="reference internal" href="../enums.html#Pango.Gravity.AUTO" title="Pango.Gravity.AUTO"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Gravity.AUTO</span></tt></a> for which <tt class="xref py py-class docutils literal"><span class="pre">Pango.Gravity.get_for_matrix</span></tt> () is used
+to return the gravity from the current context matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_gravity_hint">
+<tt class="descname">get_gravity_hint</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_gravity_hint" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the gravity hint for the context.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../enums.html#Pango.GravityHint" title="Pango.GravityHint"><tt class="xref py py-class docutils literal"><span class="pre">Pango.GravityHint</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the gravity hint for the context. See
+<a class="reference internal" href="#Pango.Context.set_gravity_hint" title="Pango.Context.set_gravity_hint"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context.set_gravity_hint</span></tt></a> () for details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_language">
+<tt class="descname">get_language</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_language" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the global language tag.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/Language.html#Pango.Language" title="Pango.Language"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Language</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves the global language tag for the context.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_matrix">
+<tt class="descname">get_matrix</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the matrix, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if no matrix has been set (which is the same as the identity matrix). The returned matrix is owned by Pango and must not be modified or freed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../structs/Matrix.html#Pango.Matrix" title="Pango.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Matrix</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the transformation matrix that will be applied when
+rendering with this context. See <a class="reference internal" href="#Pango.Context.set_matrix" title="Pango.Context.set_matrix"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context.set_matrix</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_metrics">
+<tt class="descname">get_metrics</tt><big>(</big><em>desc</em>, <em>language=None</em><big>)</big><a class="headerlink" href="#Pango.Context.get_metrics" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>desc</strong> (<a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a> structure.  <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> means that the font description from the context will be used.</li>
+<li><strong>language</strong> (<a class="reference internal" href="../structs/Language.html#Pango.Language" title="Pango.Language"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Language</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; language tag used to determine which script to get the metrics for. <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> means that the language tag from the context will be used. If no language tag is set on the context, metrics for the default language (as determined by <a class="reference internal" href="../structs/Language.html#Pango.Language.get_default" title="Pango.Language.get_default"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Language.get_default</span></tt></a> ()) will be returned.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a <a class="reference internal" href="../structs/FontMetrics.html#Pango.FontMetrics" title="Pango.FontMetrics"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMetrics</span></tt></a> object. The caller must call <a class="reference internal" href="../structs/FontMetrics.html#Pango.FontMetrics.unref" title="Pango.FontMetrics.unref"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMetrics.unref</span></tt></a> () when finished using the object.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structs/FontMetrics.html#Pango.FontMetrics" title="Pango.FontMetrics"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMetrics</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Get overall metric information for a particular font
+description.  Since the metrics may be substantially different for
+different scripts, a language tag can be provided to indicate that
+the metrics should be retrieved that correspond to the script(s)
+used by that language.</p>
+<p>The <a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a> is interpreted in the same way as
+by <a class="reference internal" href="../functions.html#Pango.itemize" title="Pango.itemize"><tt class="xref py py-class docutils literal"><span class="pre">Pango.itemize</span></tt></a> (), and the family name may be a comma separated
+list of figures. If characters from multiple of these families
+would be used to render the string, then the returned fonts would
+be a composite of the metrics for the fonts loaded for the
+individual families.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.get_serial">
+<tt class="descname">get_serial</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.get_serial" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The current serial number of <cite>context</cite>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the current serial number of <cite>context</cite>.  The serial number is
+initialized to an small number larger than zero when a new context
+is created and is increased whenever the context is changed using any
+of the setter functions, or the <a class="reference internal" href="FontMap.html#Pango.FontMap" title="Pango.FontMap"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMap</span></tt></a> it uses to find fonts has
+changed. The serial may wrap, but will never have the value 0. Since it
+can wrap, never compare it with &#8220;less than&#8221;, always use &#8220;not equals&#8221;.</p>
+<p>This can be used to automatically detect changes to a <a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a>, and
+is only useful when implementing objects that need update when their
+<a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a> changes, like <a class="reference internal" href="Layout.html#Pango.Layout" title="Pango.Layout"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Layout</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.list_families">
+<tt class="descname">list_families</tt><big>(</big><big>)</big><a class="headerlink" href="#Pango.Context.list_families" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">families: [<a class="reference internal" href="FontFamily.html#Pango.FontFamily" title="Pango.FontFamily"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontFamily</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>List all families for a context.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.load_font">
+<tt class="descname">load_font</tt><big>(</big><em>desc</em><big>)</big><a class="headerlink" href="#Pango.Context.load_font" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>desc</strong> (<a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a> describing the font to load</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the newly allocated <a class="reference internal" href="Font.html#Pango.Font" title="Pango.Font"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Font</span></tt></a> that was loaded, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if no font matched.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Font.html#Pango.Font" title="Pango.Font"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Font</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Loads the font in one of the fontmaps in the context
+that is the closest match for <cite>desc</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.load_fontset">
+<tt class="descname">load_fontset</tt><big>(</big><em>desc</em>, <em>language</em><big>)</big><a class="headerlink" href="#Pango.Context.load_fontset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>desc</strong> (<a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a> describing the fonts to load</li>
+<li><strong>language</strong> (<a class="reference internal" href="../structs/Language.html#Pango.Language" title="Pango.Language"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Language</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/Language.html#Pango.Language" title="Pango.Language"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Language</span></tt></a> the fonts will be used for</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the newly allocated <a class="reference internal" href="Fontset.html#Pango.Fontset" title="Pango.Fontset"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Fontset</span></tt></a> loaded, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> if no font matched.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="Fontset.html#Pango.Fontset" title="Pango.Fontset"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Fontset</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Load a set of fonts in the context that can be used to render
+a font matching <cite>desc</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.set_base_dir">
+<tt class="descname">set_base_dir</tt><big>(</big><em>direction</em><big>)</big><a class="headerlink" href="#Pango.Context.set_base_dir" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>direction</strong> (<a class="reference internal" href="../enums.html#Pango.Direction" title="Pango.Direction"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction</span></tt></a>) &#8211; the new base direction</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the base direction for the context.</p>
+<p>The base direction is used in applying the Unicode bidirectional
+algorithm; if the <cite>direction</cite> is <a class="reference internal" href="../enums.html#Pango.Direction.LTR" title="Pango.Direction.LTR"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction.LTR</span></tt></a> or
+<a class="reference internal" href="../enums.html#Pango.Direction.RTL" title="Pango.Direction.RTL"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction.RTL</span></tt></a>, then the value will be used as the paragraph
+direction in the Unicode bidirectional algorithm.  A value of
+<a class="reference internal" href="../enums.html#Pango.Direction.WEAK_LTR" title="Pango.Direction.WEAK_LTR"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction.WEAK_LTR</span></tt></a> or <a class="reference internal" href="../enums.html#Pango.Direction.WEAK_RTL" title="Pango.Direction.WEAK_RTL"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Direction.WEAK_RTL</span></tt></a> is used only
+for paragraphs that do not contain any strong characters themselves.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.set_base_gravity">
+<tt class="descname">set_base_gravity</tt><big>(</big><em>gravity</em><big>)</big><a class="headerlink" href="#Pango.Context.set_base_gravity" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gravity</strong> (<a class="reference internal" href="../enums.html#Pango.Gravity" title="Pango.Gravity"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Gravity</span></tt></a>) &#8211; the new base gravity</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the base gravity for the context.</p>
+<p>The base gravity is used in laying vertical text out.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.set_font_description">
+<tt class="descname">set_font_description</tt><big>(</big><em>desc</em><big>)</big><a class="headerlink" href="#Pango.Context.set_font_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>desc</strong> (<a class="reference internal" href="../structs/FontDescription.html#Pango.FontDescription" title="Pango.FontDescription"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontDescription</span></tt></a>) &#8211; the new pango font description</td>
+</tr>
+</tbody>
+</table>
+<p>Set the default font description for the context</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.set_font_map">
+<tt class="descname">set_font_map</tt><big>(</big><em>font_map</em><big>)</big><a class="headerlink" href="#Pango.Context.set_font_map" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>font_map</strong> (<a class="reference internal" href="FontMap.html#Pango.FontMap" title="Pango.FontMap"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMap</span></tt></a>) &#8211; the <a class="reference internal" href="FontMap.html#Pango.FontMap" title="Pango.FontMap"><tt class="xref py py-class docutils literal"><span class="pre">Pango.FontMap</span></tt></a> to set.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the font map to be searched when fonts are looked-up in this context.
+This is only for internal use by Pango backends, a <a class="reference internal" href="#Pango.Context" title="Pango.Context"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context</span></tt></a> obtained
+via one of the recommended methods should already have a suitable font map.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.set_gravity_hint">
+<tt class="descname">set_gravity_hint</tt><big>(</big><em>hint</em><big>)</big><a class="headerlink" href="#Pango.Context.set_gravity_hint" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>hint</strong> (<a class="reference internal" href="../enums.html#Pango.GravityHint" title="Pango.GravityHint"><tt class="xref py py-class docutils literal"><span class="pre">Pango.GravityHint</span></tt></a>) &#8211; the new gravity hint</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the gravity hint for the context.</p>
+<p>The gravity hint is used in laying vertical text out, and is only relevant
+if gravity of the context as returned by <a class="reference internal" href="#Pango.Context.get_gravity" title="Pango.Context.get_gravity"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Context.get_gravity</span></tt></a> ()
+is set <a class="reference internal" href="../enums.html#Pango.Gravity.EAST" title="Pango.Gravity.EAST"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Gravity.EAST</span></tt></a> or <a class="reference internal" href="../enums.html#Pango.Gravity.WEST" title="Pango.Gravity.WEST"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Gravity.WEST</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.set_language">
+<tt class="descname">set_language</tt><big>(</big><em>language</em><big>)</big><a class="headerlink" href="#Pango.Context.set_language" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>language</strong> (<a class="reference internal" href="../structs/Language.html#Pango.Language" title="Pango.Language"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Language</span></tt></a>) &#8211; the new language tag.</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the global language tag for the context.  The default language
+for the locale of the running process can be found using
+<a class="reference internal" href="../structs/Language.html#Pango.Language.get_default" title="Pango.Language.get_default"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Language.get_default</span></tt></a> ().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Pango.Context.set_matrix">
+<tt class="descname">set_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#Pango.Context.set_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>matrix</strong> (<a class="reference internal" href="../structs/Matrix.html#Pango.Matrix" title="Pango.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Matrix</span></tt></a> or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>) &#8211; a <a class="reference internal" href="../structs/Matrix.html#Pango.Matrix" title="Pango.Matrix"><tt class="xref py py-class docutils literal"><span class="pre">Pango.Matrix</span></tt></a>, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> to unset any existing matrix. (No matrix set is the same as setting the identity matrix.)</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the transformation matrix that will be applied when rendering
+with this context. Note that reported metrics are in the user space
+coordinates before the application of the matrix, not device-space
+coordinates after the application of the matrix. So, they don&#8217;t scale
+with the matrix, though they may change slightly for different
+matrices, depending on how the text is fit to the pixel grid.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Font.html" class="btn btn-neutral float-right" title="Pango.Font"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Classes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>

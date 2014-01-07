@@ -1,0 +1,558 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    Gdk.DeviceManager -
+    
+      Classes -
+    
+      Gdk 3.0 -
+    
+    Python GI API Reference
+  </title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #75507b !important;
+}
+.wy-side-nav-search input[type="text"] {
+    border-color: #75507b !important;
+}
+
+@media screen and (max-width: 768px){
+    img {
+        width: auto !important;
+    }
+}
+
+.wy-table-responsive table th,
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+</style>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../../',
+        VERSION:'0.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Python GI API Reference 0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Classes" href="index.html"/>
+        <link rel="next" title="Gdk.Display" href="Display.html"/>
+        <link rel="prev" title="Gdk.Device" href="Device.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> Python GI API Reference</a>
+        <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../AccountsService_1.0/index.html">AccountsService 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anjuta_3.0/index.html">Anjuta 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Anthy_9000/index.html">Anthy 9000</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../AppIndicator3_0.1/index.html">AppIndicator3 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atk_1.0/index.html">Atk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Atspi_2.0/index.html">Atspi 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cally_1.0/index.html">Cally 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Caribou_1.0/index.html">Caribou 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Champlain_0.12/index.html">Champlain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cheese_3.0/index.html">Cheese 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Clutter_1.0/index.html">Clutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGdk_1.0/index.html">ClutterGdk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterGst_2.0/index.html">ClutterGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ClutterX11_1.0/index.html">ClutterX11 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Cogl_1.0/index.html">Cogl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CoglPango_1.0/index.html">CoglPango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Colord_1.0/index.html">Colord 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColordGtk_1.0/index.html">ColordGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ColorHug_1.0/index.html">ColorHug 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CryptUI_0.0/index.html">CryptUI 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBus_1.0/index.html">DBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBusGLib_1.0/index.html">DBusGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dbusmenu_0.4/index.html">Dbusmenu 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DbusmenuGtk3_0.4/index.html">DbusmenuGtk3 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Dee_1.0/index.html">Dee 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBook_1.2/index.html">EBook 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EBookContacts_1.2/index.html">EBookContacts 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EDataServer_1.2/index.html">EDataServer 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Evd_0.1/index.html">Evd 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceDocument_3.0/index.html">EvinceDocument 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../EvinceView_3.0/index.html">EvinceView 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fcitx_1.0/index.html">Fcitx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fontconfig_2.0/index.html">fontconfig 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../freetype2_2.0/index.html">freetype2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gck_1/index.html">Gck 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GConf_2.0/index.html">GConf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gcr_3/index.html">Gcr 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GcrUi_3/index.html">GcrUi 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GData_0.0/index.html">GData 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GDesktopEnums_3.0/index.html">GDesktopEnums 3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gdk 3.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../callbacks.html">Callbacks</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gdk.DeviceManager</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structs/index.html">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unions/index.html">Unions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flags.html">Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constants.html">Constants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkPixbuf_2.0/index.html">GdkPixbuf 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GdkX11_3.0/index.html">GdkX11 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdl_3/index.html">Gdl 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gdm_1.0/index.html">Gdm 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GeocodeGlib_1.0/index.html">GeocodeGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GExiv2_0.4/index.html">GExiv2 0.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gio_2.0/index.html">Gio 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIRepository_2.0/index.html">GIRepository 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gkbd_3.0/index.html">Gkbd 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GL_1.0/index.html">GL 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GLib_2.0/index.html">GLib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GMenu_3.0/index.html">GMenu 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GModule_2.0/index.html">GModule 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeBluetooth_1.0/index.html">GnomeBluetooth 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeDesktop_3.0/index.html">GnomeDesktop 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GnomeKeyring_1.0/index.html">GnomeKeyring 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Goa_1.0/index.html">Goa 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GObject_2.0/index.html">GObject 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Grl_0.2/index.html">Grl 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GrlNet_0.2/index.html">GrlNet 0.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gsf_1/index.html">Gsf 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GSSDP_1.0/index.html">GSSDP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gst_1.0/index.html">Gst 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAllocators_1.0/index.html">GstAllocators 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstApp_1.0/index.html">GstApp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstAudio_1.0/index.html">GstAudio 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstBase_1.0/index.html">GstBase 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstCheck_1.0/index.html">GstCheck 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstController_1.0/index.html">GstController 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstFft_1.0/index.html">GstFft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstNet_1.0/index.html">GstNet 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstPbutils_1.0/index.html">GstPbutils 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRiff_1.0/index.html">GstRiff 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtp_1.0/index.html">GstRtp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstRtsp_1.0/index.html">GstRtsp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstSdp_1.0/index.html">GstSdp 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstTag_1.0/index.html">GstTag 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GstVideo_1.0/index.html">GstVideo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gtk_3.0/index.html">Gtk 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkChamplain_0.12/index.html">GtkChamplain 0.12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkClutter_1.0/index.html">GtkClutter 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSource_3.0/index.html">GtkSource 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkSpell_3.0/index.html">GtkSpell 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GtkVnc_2.0/index.html">GtkVnc 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gucharmap_2.90/index.html">Gucharmap 2.90</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUdev_1.0/index.html">GUdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnP_1.0/index.html">GUPnP 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPAV_1.0/index.html">GUPnPAV 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNA_2.0/index.html">GUPnPDLNA 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPDLNAGst_2.0/index.html">GUPnPDLNAGst 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUPnPIgd_1.0/index.html">GUPnPIgd 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GUsb_1.0/index.html">GUsb 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVnc_1.0/index.html">GVnc 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GVncPulse_1.0/index.html">GVncPulse 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GWeather_3.0/index.html">GWeather 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GXPS_0.1/index.html">GXPS 0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IBus_1.0/index.html">IBus 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Indicate_0.7/index.html">Indicate 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Itl_1.0/index.html">Itl 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../JavaScriptCore_3.0/index.html">JavaScriptCore 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Json_1.0/index.html">Json 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Keybinder_0.0/index.html">Keybinder 0.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LangTag_0.5/index.html">LangTag 0.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libisocodes_1.0/index.html">libisocodes 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Libosinfo_1.0/index.html">Libosinfo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGConfig_1.0/index.html">LibvirtGConfig 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGLib_1.0/index.html">LibvirtGLib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LibvirtGObject_1.0/index.html">LibvirtGObject 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libxml2_2.0/index.html">libxml2 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LunarDate_2.0/index.html">LunarDate 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mx_1.0/index.html">Mx 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nautilus_3.0/index.html">Nautilus 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Nemo_3.0/index.html">Nemo 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NetworkManager_1.0/index.html">NetworkManager 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Notify_0.7/index.html">Notify 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitGlib_1.0/index.html">PackageKitGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PackageKitPlugin_1.0/index.html">PackageKitPlugin 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PanelApplet_4.0/index.html">PanelApplet 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pango_1.0/index.html">Pango 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoCairo_1.0/index.html">PangoCairo 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoFT2_1.0/index.html">PangoFT2 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PangoXft_1.0/index.html">PangoXft 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Peas_1.0/index.html">Peas 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PeasGtk_1.0/index.html">PeasGtk 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Polkit_1.0/index.html">Polkit 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../PolkitAgent_1.0/index.html">PolkitAgent 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Poppler_0.18/index.html">Poppler 0.18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rest_0.7/index.html">Rest 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RestExtras_0.7/index.html">RestExtras 0.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Rsvg_2.0/index.html">Rsvg 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Soup_2.4/index.html">Soup 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UDisks_2.0/index.html">UDisks 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UMockdev_1.0/index.html">UMockdev 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../UPowerGlib_1.0/index.html">UPowerGlib 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../WebKit2_3.0/index.html">WebKit2 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xfixes_4.0/index.html">xfixes 4.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xft_2.0/index.html">xft 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xlib_2.0/index.html">xlib 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xrandr_1.3/index.html">xrandr 1.3</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../../../index.html">Python GI API Reference</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+  <li></li><a href="../index.html">Gdk 3.0</a> &raquo;</li>
+  
+  <li></li><a href="index.html">Classes</a> &raquo;</li>
+  
+  <li><a href="">Gdk.DeviceManager</a></li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/lazka/pgi-docgen/issues/new?title=BUG: api/Gdk_3.0/classes/DeviceManager" class="icon icon-github"> Report a Bug</a>
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="gdk-devicemanager">
+<h1>Gdk.DeviceManager<a class="headerlink" href="#gdk-devicemanager" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img src="../../../_images/inheritance-b9493da26846006e1d1af92775d7a4fdcadc1c8f.png" alt="Inheritance diagram of Gdk.DeviceManager" usemap="#inheritance3fb0492740" class="inheritance"/>
+<map id="inheritance3fb0492740" name="inheritance3fb0492740">
+<area shape="rect" id="node1" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object" alt="" coords="16,5,112,29"/>
+<area shape="rect" id="node2" href="#Gdk.DeviceManager" title="Gdk.DeviceManager" alt="" coords="5,77,123,101"/>
+</map>
+</p>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="0%" />
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.DeviceManager.get_client_pointer" title="Gdk.DeviceManager.get_client_pointer"><tt class="xref py py-obj docutils literal"><span class="pre">get_client_pointer</span></tt></a>()</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><a class="reference internal" href="#Gdk.DeviceManager.get_display" title="Gdk.DeviceManager.get_display"><tt class="xref py py-obj docutils literal"><span class="pre">get_display</span></tt></a>()</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><a class="reference internal" href="#Gdk.DeviceManager.list_devices" title="Gdk.DeviceManager.list_devices"><tt class="xref py py-obj docutils literal"><span class="pre">list_devices</span></tt></a>(type)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties">
+<span id="gdk-devicemanager-props"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="1%" />
+<col width="1%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Flags</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="display">display</span></td>
+<td><a class="reference internal" href="Display.html#Gdk.Display" title="Gdk.Display"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Display</span></tt></a></td>
+<td>r/w/c</td>
+<td>Display for the device manager</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="signals">
+<span id="gdk-devicemanager-sigs"></span><h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="7%" />
+<col width="7%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Parameters</th>
+<th class="head">Return</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="target" id="device-added">device-added</span></td>
+<td><a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a></td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="../../UPowerGlib_1.0/classes/Client.html#device-added"><em>::device-added</em></a> signal is emitted either when a new master pointer is created, or when a slave (Hardware) input device is plugged in.</td>
+</tr>
+<tr class="row-odd"><td><span class="target" id="device-changed">device-changed</span></td>
+<td><a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a></td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="../../UPowerGlib_1.0/classes/Client.html#device-changed"><em>::device-changed</em></a> signal is emitted whenever a device has changed in the hierarchy, either slave devices being disconnected from their master device or connected to another one, or master devices being added or removed a slave device.  If a slave device is detached from all master devices (<a class="reference internal" href="Device.html#Gdk.Device.get_associated_device" title="Gdk.Device.get_associated_device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device.get_associated_device</span></tt></a> () returns <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a> ), its <a class="reference internal" href="../enums.html#Gdk.DeviceType" title="Gdk.DeviceType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.DeviceType</span></tt></a> will change to <a class="reference internal" href="../enums.html#Gdk.DeviceType.FLOATING" title="Gdk.DeviceType.FLOATING"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.DeviceType.FLOATING</span></tt></a>, if it&#8217;s attached, it will change to <a class="reference internal" href="../enums.html#Gdk.DeviceType.SLAVE" title="Gdk.DeviceType.SLAVE"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.DeviceType.SLAVE</span></tt></a>.</td>
+</tr>
+<tr class="row-even"><td><span class="target" id="device-removed">device-removed</span></td>
+<td><a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a></td>
+<td>&nbsp;</td>
+<td>The <a class="reference internal" href="../../UPowerGlib_1.0/classes/Client.html#device-removed"><em>::device-removed</em></a> signal is emitted either when a master pointer is removed, or when a slave (Hardware) input device is unplugged.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gdk.DeviceManager">
+<em class="property">class </em><tt class="descclassname">Gdk.</tt><tt class="descname">DeviceManager</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#Gdk.DeviceManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../GObject_2.0/classes/Object.html#GObject.Object" title="GObject.Object"><tt class="xref py py-class docutils literal"><span class="pre">GObject.Object</span></tt></a></p>
+<p>In addition to a single pointer and keyboard for user interface input,
+GDK contains support for a variety of input devices, including graphics
+tablets, touchscreens and multiple pointers/keyboards interacting
+simultaneously with the user interface. Such input devices often have
+additional features, such as sub-pixel positioning information and
+additional device-dependent information.</p>
+<p>In order to query the device hierarchy and be aware of changes in the
+device hierarchy (such as virtual devices being created or removed, or
+physical devices being plugged or unplugged), GDK provides
+<a class="reference internal" href="#Gdk.DeviceManager" title="Gdk.DeviceManager"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.DeviceManager</span></tt></a>.</p>
+<p>By default, and if the platform supports it, GDK is aware of multiple
+keyboard/pointer pairs and multitouch devices. This behavior can be
+changed by calling <a class="reference internal" href="../functions.html#Gdk.disable_multidevice" title="Gdk.disable_multidevice"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.disable_multidevice</span></tt></a> () before <a class="reference internal" href="Display.html#Gdk.Display.open" title="Gdk.Display.open"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Display.open</span></tt></a> ().
+There should rarely be a need to do that though, since GDK defaults
+to a compatibility mode in which it will emit just one enter/leave
+event pair for all devices on a window. To enable per-device
+enter/leave events and other multi-pointer interaction features,
+<a class="reference internal" href="Window.html#Gdk.Window.set_support_multidevice" title="Gdk.Window.set_support_multidevice"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Window.set_support_multidevice</span></tt></a> () must be called on
+<a class="reference internal" href="Window.html#Gdk.Window" title="Gdk.Window"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Windows</span></tt></a> (or gtk_widget_set_support_multidevice() on widgets).
+window. See the <a class="reference internal" href="Window.html#Gdk.Window.set_support_multidevice" title="Gdk.Window.set_support_multidevice"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Window.set_support_multidevice</span></tt></a> () documentation
+for more information.</p>
+<p>On X11, multi-device support is implemented through XInput 2.
+Unless <a class="reference internal" href="../functions.html#Gdk.disable_multidevice" title="Gdk.disable_multidevice"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.disable_multidevice</span></tt></a> () is called, the XInput 2
+<a class="reference internal" href="#Gdk.DeviceManager" title="Gdk.DeviceManager"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.DeviceManager</span></tt></a> implementation will be used as the input source.
+Otherwise either the core or XInput 1 implementations will be used.</p>
+<p>For simple applications that don&#8217;t have any special interest in
+input devices, the so-called client pointer
+provides a reasonable approximation to a simple setup with a single
+pointer and keyboard. The device that has been set as the client
+pointer can be accessed via <a class="reference internal" href="#Gdk.DeviceManager.get_client_pointer" title="Gdk.DeviceManager.get_client_pointer"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.DeviceManager.get_client_pointer</span></tt></a> ().</p>
+<p>Conceptually, in multidevice mode there are 2 device types. Virtual
+devices (or master devices) are represented by the pointer cursors
+and keyboard foci that are seen on the screen. Physical devices (or
+slave devices) represent the hardware that is controlling the virtual
+devices, and thus have no visible cursor on the screen.</p>
+<p>Virtual devices are always paired, so there is a keyboard device for every
+pointer device. Associations between devices may be inspected through
+<a class="reference internal" href="Device.html#Gdk.Device.get_associated_device" title="Gdk.Device.get_associated_device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device.get_associated_device</span></tt></a> ().</p>
+<p>There may be several virtual devices, and several physical devices could
+be controlling each of these virtual devices. Physical devices may also
+be &#8220;floating&#8221;, which means they are not attached to any virtual device.</p>
+<p>Master and slave devices</p>
+<p>carlos`sacarino:` ~$ xinput list
+⎡ Virtual core pointer                          id=2    [master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]
+⎜   ↳ Wacom ISDv4 E6 Pen stylus                 id=10   [slave  pointer  (2)]
+⎜   ↳ Wacom ISDv4 E6 Finger touch               id=11   [slave  pointer  (2)]
+⎜   ↳ SynPS/2 Synaptics TouchPad                id=13   [slave  pointer  (2)]
+⎜   ↳ TPPS/2 IBM TrackPoint                     id=14   [slave  pointer  (2)]
+⎜   ↳ Wacom ISDv4 E6 Pen eraser                 id=16   [slave  pointer  (2)]
+⎣ Virtual core keyboard                         id=3    [master keyboard (2)]
+↳ Virtual core XTEST keyboard               id=5    [slave  keyboard (3)]
+↳ Power Button                              id=6    [slave  keyboard (3)]
+↳ Video Bus                                 id=7    [slave  keyboard (3)]
+↳ Sleep Button                              id=8    [slave  keyboard (3)]
+↳ Integrated Camera                         id=9    [slave  keyboard (3)]
+↳ AT Translated Set 2 keyboard              id=12   [slave  keyboard (3)]
+↳ ThinkPad Extra Buttons                    id=15   [slave  keyboard (3)]</p>
+<p>By default, GDK will automatically listen for events coming from all
+master devices, setting the <a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a> for all events coming from input
+devices. Events containing device information are <a class="reference internal" href="../enums.html#Gdk.EventType.MOTION_NOTIFY" title="Gdk.EventType.MOTION_NOTIFY"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.MOTION_NOTIFY</span></tt></a>,
+<a class="reference internal" href="../enums.html#Gdk.EventType.BUTTON_PRESS" title="Gdk.EventType.BUTTON_PRESS"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.BUTTON_PRESS</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType._2BUTTON_PRESS" title="Gdk.EventType._2BUTTON_PRESS"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType._2BUTTON_PRESS</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType._3BUTTON_PRESS" title="Gdk.EventType._3BUTTON_PRESS"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType._3BUTTON_PRESS</span></tt></a>,
+<a class="reference internal" href="../enums.html#Gdk.EventType.BUTTON_RELEASE" title="Gdk.EventType.BUTTON_RELEASE"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.BUTTON_RELEASE</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.SCROLL" title="Gdk.EventType.SCROLL"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.SCROLL</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.KEY_PRESS" title="Gdk.EventType.KEY_PRESS"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.KEY_PRESS</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.KEY_RELEASE" title="Gdk.EventType.KEY_RELEASE"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.KEY_RELEASE</span></tt></a>,
+<a class="reference internal" href="../enums.html#Gdk.EventType.ENTER_NOTIFY" title="Gdk.EventType.ENTER_NOTIFY"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.ENTER_NOTIFY</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.LEAVE_NOTIFY" title="Gdk.EventType.LEAVE_NOTIFY"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.LEAVE_NOTIFY</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.FOCUS_CHANGE" title="Gdk.EventType.FOCUS_CHANGE"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.FOCUS_CHANGE</span></tt></a>,
+<a class="reference internal" href="../enums.html#Gdk.EventType.PROXIMITY_IN" title="Gdk.EventType.PROXIMITY_IN"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.PROXIMITY_IN</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.PROXIMITY_OUT" title="Gdk.EventType.PROXIMITY_OUT"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.PROXIMITY_OUT</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.DRAG_ENTER" title="Gdk.EventType.DRAG_ENTER"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.DRAG_ENTER</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.DRAG_LEAVE" title="Gdk.EventType.DRAG_LEAVE"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.DRAG_LEAVE</span></tt></a>,
+<a class="reference internal" href="../enums.html#Gdk.EventType.DRAG_MOTION" title="Gdk.EventType.DRAG_MOTION"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.DRAG_MOTION</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.DRAG_STATUS" title="Gdk.EventType.DRAG_STATUS"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.DRAG_STATUS</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.DROP_START" title="Gdk.EventType.DROP_START"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.DROP_START</span></tt></a>, <a class="reference internal" href="../enums.html#Gdk.EventType.DROP_FINISHED" title="Gdk.EventType.DROP_FINISHED"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.DROP_FINISHED</span></tt></a> 
+and <a class="reference internal" href="../enums.html#Gdk.EventType.GRAB_BROKEN" title="Gdk.EventType.GRAB_BROKEN"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.EventType.GRAB_BROKEN</span></tt></a>. When dealing with an event on a master device,
+it is possible to get the source (slave) device that the event originated
+from via <a class="reference internal" href="../unions/Event.html#Gdk.Event.get_source_device" title="Gdk.Event.get_source_device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Event.get_source_device</span></tt></a> ().</p>
+<p>In order to listen for events coming from devices
+other than a virtual device, <a class="reference internal" href="Window.html#Gdk.Window.set_device_events" title="Gdk.Window.set_device_events"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Window.set_device_events</span></tt></a> () must be
+called. Generally, this function can be used to modify the event mask
+for any given device.</p>
+<p>Input devices may also provide additional information besides X/Y.
+For example, graphics tablets may also provide pressure and X/Y tilt
+information. This information is device-dependent, and may be
+queried through <tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device.get_axis</span></tt> (). In multidevice mode, virtual
+devices will change axes in order to always represent the physical
+device that is routing events through it. Whenever the physical device
+changes, the <a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a> <a class="reference internal" href="Device.html#n-axes"><em>:n-axes</em></a> property will be notified, and
+<a class="reference internal" href="Device.html#Gdk.Device.list_axes" title="Gdk.Device.list_axes"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device.list_axes</span></tt></a> () will return the new device axes.</p>
+<p>Devices may also have associated keys or
+macro buttons. Such keys can be globally set to map into normal X
+keyboard events. The mapping is set using <a class="reference internal" href="Device.html#Gdk.Device.set_key" title="Gdk.Device.set_key"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device.set_key</span></tt></a> ().</p>
+<dl class="method">
+<dt id="Gdk.DeviceManager.get_client_pointer">
+<tt class="descname">get_client_pointer</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.DeviceManager.get_client_pointer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The client pointer. This memory is owned by GDK and must not be freed or unreferenced.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the client pointer, that is, the master pointer that acts as the core pointer
+for this application. In X11, window managers may change this depending on the interaction
+pattern under the presence of several pointers.</p>
+<p>You should use this function seldomly, only in code that isn&#8217;t triggered by a <a class="reference internal" href="../unions/Event.html#Gdk.Event" title="Gdk.Event"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Event</span></tt></a>
+and there aren&#8217;t other means to get a meaningful <a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a> to operate on.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.DeviceManager.get_display">
+<tt class="descname">get_display</tt><big>(</big><big>)</big><a class="headerlink" href="#Gdk.DeviceManager.get_display" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the <a class="reference internal" href="Display.html#Gdk.Display" title="Gdk.Display"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Display</span></tt></a> to which <cite>device_manager</cite> is associated to, or <a class="reference external" href="http://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><tt class="xref py py-obj docutils literal"><span class="pre">None</span></tt></a>. This memory is owned by GDK and must not be freed or unreferenced.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="Display.html#Gdk.Display" title="Gdk.Display"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Display</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Gets the <a class="reference internal" href="Display.html#Gdk.Display" title="Gdk.Display"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Display</span></tt></a> associated to <cite>device_manager</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gdk.DeviceManager.list_devices">
+<tt class="descname">list_devices</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#Gdk.DeviceManager.list_devices" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<a class="reference internal" href="../enums.html#Gdk.DeviceType" title="Gdk.DeviceType"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.DeviceType</span></tt></a>) &#8211; device type to get.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of <a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a> s. The returned list must be freed with <tt class="xref py py-class docutils literal"><span class="pre">GLib.List.free</span></tt> (). The list elements are owned by GTK+ and must not be freed or unreffed.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">[<a class="reference internal" href="Device.html#Gdk.Device" title="Gdk.Device"><tt class="xref py py-class docutils literal"><span class="pre">Gdk.Device</span></tt></a>]</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the list of devices of type <cite>type</cite> currently attached to
+<cite>device_manager</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Display.html" class="btn btn-neutral float-right" title="Gdk.Display"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="Device.html" class="btn btn-neutral" title="Gdk.Device"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright .
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>
